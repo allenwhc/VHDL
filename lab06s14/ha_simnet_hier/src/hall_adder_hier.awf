@@ -1,0 +1,52 @@
+$WAVE4
+$RESOLUTION 1000
+$ENDTIME 80000
+I 1 "c#9#STD_LOGICc9 UX01ZWLH-"
+$S 13 1 "/ha_mixed_tb/a_tb"
+$S +1 1 13 3 b
+$S +2 1 13 3 carry_out
+$S 15 1 13 3 sum
+P 0 13-+3 CS "0"
+$WAVES 13
+=0 T 0
+=1 D 0 1
+=2 D 40k 1
+$VALUES
+V 3
+U
+0
+1
+$END
+$WAVES +1
+*0
+*1
+R 1 3 =3 D 20k 1
+$VALUES
+V 1
+U
+R 2 2 0 1
+$END
+$WAVES +1
+*0
+=4 D 0 3
+R 1 2 =5 D 20k 3
+=6 D 0 4
+=7 D 20k 4
+$VALUES
+V 1
+U
+R 2 2 0 1
+V 1
+0
+$END
+$WAVES +1
+*0
+=8 D 0 2
+=9 D 60k 2
+$VALUES
+V 3
+U
+0
+1
+$END
+$ENDWAVE

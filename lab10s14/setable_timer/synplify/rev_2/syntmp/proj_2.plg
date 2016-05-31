@@ -1,0 +1,20 @@
+@P:  Worst Slack : -1.309
+@P:  count_down_timer|clk - Estimated Frequency : 101.2 MHz
+@P:  count_down_timer|clk - Requested Frequency : 116.6 MHz
+@P:  count_down_timer|clk - Estimated Period : 9.884
+@P:  count_down_timer|clk - Requested Period : 8.575
+@P:  count_down_timer|clk - Slack : -1.309
+@P:  Worst Slack(min analysis) : 0.771
+@P:  count_down_timer|clk - Estimated Frequency(min analysis) : 101.2 MHz
+@P:  count_down_timer|clk - Requested Frequency(min analysis) : 116.6 MHz
+@P:  count_down_timer|clk - Estimated Period(min analysis) : 9.884
+@P:  count_down_timer|clk - Requested Period(min analysis) : 8.575
+@P:  count_down_timer|clk - Slack(min analysis) : -1.309
+@P:  Total Area : 99.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  CPU Time : 0h:00m:02s

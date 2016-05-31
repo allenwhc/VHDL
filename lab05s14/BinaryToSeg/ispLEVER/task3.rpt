@@ -1,0 +1,808 @@
+|--------------------------------------------|
+|- ispLEVER Fitter Report File              -|
+|- Version 7.0.00.10.16.07                       -|
+|- (c)Copyright, Lattice Semiconductor 2002 -|
+|--------------------------------------------|
+
+
+
+
+Project_Summary
+~~~~~~~~~~~~~~~
+
+Project Name :          task3
+Project Path :          H:\ese382\lab05s14\BinaryToSeg\ispLEVER
+Project Fitted on :     Tue Mar 11 13:42:02 2014
+
+Device :                M4A5-64/32
+Package :               44PLCC
+Speed :                 -10
+Partnumber :            M4A5-64/32-10JC
+Source Format :         EDIF
+
+
+// Project 'task3' was Fitted Successfully! //
+
+
+Compilation_Times
+~~~~~~~~~~~~~~~~~
+Reading/DRC                                   0 sec
+Partition                                     0 sec
+Place                                         0 sec
+Route                                         0 sec
+Jedec/Report generation                       0 sec
+                                         --------
+Fitter                                   00:00:00
+
+
+Design_Summary
+~~~~~~~~~~~~~~
+  Total Input Pins :                  6
+  Total Output Pins :                14
+  Total Bidir I/O Pins :              0
+  Total Flip-Flops :                  0
+  Total Product Terms :             187
+  Total Reserved Pins :               0
+  Total Reserved Blocks :             0
+
+
+Device_Resource_Summary
+~~~~~~~~~~~~~~~~~~~~~~~
+                                 Total
+                               Available  Used  Available  Utilization
+Dedicated Pins
+  Input-Only Pins                ..       ..     ..    -->    ..
+  Clock/Input Pins                2        0      2    -->     0%
+I/O Pins                         32       20     12    -->    62%
+Logic Macrocells                 64       25     39    -->    39%
+  Input Registers                32        0     32    -->     0%
+  Unusable Macrocells            ..        5     ..
+
+CSM Outputs/Total Block Inputs  132       39     93    -->    29%
+Logical Product Terms           320      191    129    -->    59%
+Product Term Clusters            64       46     18    -->    71%
+
+
+Blocks_Resource_Summary
+~~~~~~~~~~~~~~~~~~~~~~~
+                                                                  # of PT  
+                   I/O    Inp    Macrocells   Macrocells   logic  clusters 
+          Fanin    Pins   Reg   Used Unusable  available    PTs   available  Pwr
+---------------------------------------------------------------------------------
+Maximum     33      8      8     --     --         16       80       16       -
+---------------------------------------------------------------------------------
+Block  A    10      8      0      5      4          7       56        3       Hi 
+Block  B     8      4      0      5      0         11       39        6       Hi 
+Block  C    10      3      0      5      0         11       43        6       Hi 
+Block  D    11      5      0      5      1         10       53        4       Hi 
+---------------------------------------------------------------------------------
+
+<Note> Four rightmost columns above reflect last status of the placement process.
+<Note> Pwr (Power) : Hi = High
+                     Lo = Low.
+
+
+Optimizer_and_Fitter_Options
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Pin Assignment :                       Yes
+Group Assignment :                     No
+Pin Reservation :                      No (1)
+Block Reservation :                    No
+
+@Ignore_Project_Constraints :
+  Pin Assignments :                    No
+      Keep Block Assignment            --
+      Keep Segment Assignment          --
+  Group Assignments :                  No
+  Macrocell Assignment :               No
+      Keep Block Assignment            --
+      Keep Segment Assignment          --
+
+@Backannotate_Project_Constraints
+  Pin Assignments :                    No
+  Pin And Block Assignments :          No
+  Pin, Macrocell and Block :           No
+
+@Timing_Constraints :                  No
+
+@Global_Project_Optimization :
+  Balanced Partitioning :              Yes
+  Spread Placement :                   Yes
+
+  Note :
+    Pack Design :
+       Balanced Partitioning = No
+       Spread Placement      = No
+    Spread Design :
+       Balanced Partitioning = Yes
+       Spread Placement      = Yes
+
+@Logic_Synthesis :
+  Logic Reduction :                    Yes
+  Node Collapsing :                    Yes
+  D/T Synthesis :                      Yes
+  Clock Optimization :                 No
+  Input Register Optimization :        Yes
+  XOR Synthesis :                      Yes
+  Max. P-Term for Collapsing :         16
+  Max. P-Term for Splitting :          16
+  Max. Equation Fanin :                32
+  Keep Xor :                           Yes
+
+@Utilization_options
+  Max. % of macrocells used :          100
+  Max. % of block inputs used :        100
+  Max. % of segment lines used :       ---
+  Max. % of macrocells used :          ---
+
+
+@Import_Source_Constraint_Option       No
+
+@Zero_Hold_Time                        No
+
+@Pull_up                               No
+
+@User_Signature                        #H0
+
+@Output_Slew_Rate                      Default = Fast(2)
+
+@Power                                 Default = High(2)
+
+
+Device Options:
+<Note> 1 : Reserved unused I/Os can be independently driven to Low or High, and does not
+           follow the drive level set for the Global Configure Unused I/O Option.
+<Note> 2 : For user-specified constraints on individual signals, refer to the Output, 
+           Bidir and Burried Signal Lists.
+
+
+
+
+Pinout_Listing
+~~~~~~~~~~~~~~
+      | Pin  |Blk |Assigned|
+Pin No| Type |Pad |Pin     | Signal name
+---------------------------------------------------------------
+    1 |  GND |    |        |
+    2 |  I_O | A7 |   *    |binary_5_
+3     |  I_O | A6 |   *    |binary_4_
+4     |  I_O | A5 |   *    |binary_3_
+5     |  I_O | A4 |   *    |binary_2_
+6     |  I_O | A3 |   *    |binary_1_
+7     |  I_O | A2 |   *    |binary_0_
+8     |  I_O | A1 |   *    |seven_seg0_6_
+9     |  I_O | A0 |   *    |seven_seg0_1_
+10    | JTAG |    |        |
+11    | CkIn |    |        |
+12    |  GND |    |        |
+13    | JTAG |    |        |
+14    |  I_O | B0 |        |
+15    |  I_O | B1 |   *    |seven_seg1_2_
+16    |  I_O | B2 |        |
+17    |  I_O | B3 |   *    |seven_seg1_5_
+18    |  I_O | B4 |        |
+19    |  I_O | B5 |   *    |seven_seg1_1_
+20    |  I_O | B6 |        |
+21    |  I_O | B7 |   *    |seven_seg1_3_
+22    |  Vcc |    |        |
+23    |  GND |    |        |
+24    |  I_O | C7 |   *    |seven_seg0_2_
+25    |  I_O | C6 |        |
+26    |  I_O | C5 |   *    |seven_seg1_4_
+27    |  I_O | C4 |        |
+28    |  I_O | C3 |        |
+29    |  I_O | C2 |        |
+30    |  I_O | C1 |   *    |seven_seg1_6_
+31    |  I_O | C0 |        |
+32    | JTAG |    |        |
+33    | CkIn |    |        |
+34    |  GND |    |        |
+35    | JTAG |    |        |
+36    |  I_O | D0 |        |
+37    |  I_O | D1 |   *    |seven_seg0_5_
+38    |  I_O | D2 |        |
+39    |  I_O | D3 |   *    |seven_seg0_4_
+40    |  I_O | D4 |        |
+41    |  I_O | D5 |   *    |seven_seg0_0_
+42    |  I_O | D6 |   *    |seven_seg1_0_
+43    |  I_O | D7 |   *    |seven_seg0_3_
+44    |  Vcc |    |        |
+
+---------------------------------------------------------------------------
+
+<Note> Blk Pad : This notation refers to the Block I/O pad number in the device.
+<Note> Assigned Pin : user or dedicated input assignment (E.g. Clock pins).
+<Note> Pin Type : 
+           CkIn : Dedicated input or clock pin 
+           CLK  : Dedicated clock pin
+           INP  : Dedicated input pin
+           JTAG : JTAG Control and test pin
+           NC   : No connected
+
+
+
+Input_Signal_List
+~~~~~~~~~~~~~~~~~
+                 P R
+            Pin  r e O   Input 
+Pin Blk PTs Type e s E   Fanout Pwr Slew      Signal 
+----------------------------------------------------------------------
+  7  A   .  I/O          A-CD    Hi Fast      binary_0_   
+  6  A   .  I/O          ABCD    Hi Fast      binary_1_   
+  5  A   .  I/O          ABCD    Hi Fast      binary_2_   
+  4  A   .  I/O          ABCD    Hi Fast      binary_3_   
+  3  A   .  I/O          ABCD    Hi Fast      binary_4_   
+  2  A   .  I/O          ABCD    Hi Fast      binary_5_   
+----------------------------------------------------------------------
+
+<Note> Power : Hi = High
+               MH = Medium High
+               ML = Medium Low
+               Lo = Low
+
+
+
+Output_Signal_List
+~~~~~~~~~~~~~~~~~~
+                 P R
+            Pin  r e O   Output 
+Pin Blk PTs Type e s E   Fanout Pwr Slew      Signal 
+----------------------------------------------------------------------
+ 41  D  15  COM          ----    Hi Fast      seven_seg0_0_   
+  9  A  15  COM          ----    Hi Fast      seven_seg0_1_   
+ 24  C  13  COM          ----    Hi Fast      seven_seg0_2_   
+ 43  D   3  COM          ----    Hi Fast      seven_seg0_3_   
+ 39  D  12  COM          ----    Hi Fast      seven_seg0_4_   
+ 37  D  15  COM          ----    Hi Fast      seven_seg0_5_   
+  8  A  15  COM          ----    Hi Fast      seven_seg0_6_   
+ 42  D   8  COM          ----    Hi Fast      seven_seg1_0_   
+ 19  B   7  COM          ----    Hi Fast      seven_seg1_1_   
+ 15  B  11  COM          ----    Hi Fast      seven_seg1_2_   
+ 21  B   7  COM          ----    Hi Fast      seven_seg1_3_   
+ 26  C  13  COM          ----    Hi Fast      seven_seg1_4_   
+ 17  B   7  COM          ----    Hi Fast      seven_seg1_5_   
+ 30  C  10  COM          ----    Hi Fast      seven_seg1_6_   
+----------------------------------------------------------------------
+
+<Note> Power : Hi = High
+               MH = Medium High
+               ML = Medium Low
+               Lo = Low
+
+
+
+Bidir_Signal_List
+~~~~~~~~~~~~~~~~~
+                 P R
+            Pin  r e O   Bidir 
+Pin Blk PTs Type e s E   Fanout Pwr Slew      Signal 
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+<Note> Power : Hi = High
+               MH = Medium High
+               ML = Medium Low
+               Lo = Low
+
+
+
+Buried_Signal_List
+~~~~~~~~~~~~~~~~~~
+                 P R
+            Pin  r e O   Node 
+#Mc Blk PTs Type e s E   Fanout Pwr Slew      Signal 
+----------------------------------------------------------------------
+ A5  A   6  COM          -B--    Hi Fast      G_131   
+ C12  C   4  COM          ABCD    Hi Fast      output_15_1__n   
+ C1  C   3  COM          ABCD    Hi Fast      output_15_2__n   
+ A8  A   6  COM          A-CD    Hi Fast      output_1_   
+ B1  B   5  COM          A-CD    Hi Fast      output_2__n   
+ A12  A  12  COM          ---D    Hi Fast      output_i_3__n   
+----------------------------------------------------------------------
+
+<Note> Power : Hi = High
+               MH = Medium High
+               ML = Medium Low
+               Lo = Low
+
+
+
+
+Signals_Fanout_List
+~~~~~~~~~~~~~~~~~~~
+Signal Source  :    Fanout List
+-----------------------------------------------------------------------------
+  binary_5_{ B}:  seven_seg0_6_{ A}  seven_seg1_6_{ C}  seven_seg0_5_{ D}
+               :  seven_seg0_4_{ D}  seven_seg0_2_{ C}  seven_seg0_1_{ A}
+               :  seven_seg0_0_{ D}  seven_seg1_5_{ B}  seven_seg1_4_{ C}
+               :  seven_seg1_3_{ B}  seven_seg1_2_{ B}  seven_seg1_1_{ B}
+               :  seven_seg1_0_{ D} output_15_2__n{ C}      output_1_{ A}
+               : output_15_1__n{ C}          G_131{ A}    output_2__n{ B}
+               :  output_i_3__n{ A}
+  binary_4_{ B}:  seven_seg0_6_{ A}  seven_seg1_6_{ C}  seven_seg0_5_{ D}
+               :  seven_seg0_4_{ D}  seven_seg0_2_{ C}  seven_seg0_1_{ A}
+               :  seven_seg0_0_{ D}  seven_seg1_5_{ B}  seven_seg1_4_{ C}
+               :  seven_seg1_3_{ B}  seven_seg1_2_{ B}  seven_seg1_1_{ B}
+               :  seven_seg1_0_{ D} output_15_2__n{ C}      output_1_{ A}
+               : output_15_1__n{ C}          G_131{ A}    output_2__n{ B}
+               :  output_i_3__n{ A}
+  binary_3_{ B}:  seven_seg0_6_{ A}  seven_seg1_6_{ C}  seven_seg0_5_{ D}
+               :  seven_seg0_4_{ D}  seven_seg0_2_{ C}  seven_seg0_1_{ A}
+               :  seven_seg0_0_{ D}  seven_seg1_5_{ B}  seven_seg1_4_{ C}
+               :  seven_seg1_3_{ B}  seven_seg1_2_{ B}  seven_seg1_1_{ B}
+               :  seven_seg1_0_{ D} output_15_2__n{ C}      output_1_{ A}
+               : output_15_1__n{ C}          G_131{ A}    output_2__n{ B}
+               :  output_i_3__n{ A}
+  binary_2_{ B}:  seven_seg0_6_{ A}  seven_seg1_6_{ C}  seven_seg0_5_{ D}
+               :  seven_seg0_4_{ D}  seven_seg0_2_{ C}  seven_seg0_1_{ A}
+               :  seven_seg0_0_{ D}  seven_seg1_5_{ B}  seven_seg1_4_{ C}
+               :  seven_seg1_3_{ B}  seven_seg1_2_{ B}  seven_seg1_1_{ B}
+               :  seven_seg1_0_{ D} output_15_2__n{ C}      output_1_{ A}
+               : output_15_1__n{ C}          G_131{ A}    output_2__n{ B}
+               :  output_i_3__n{ A}
+  binary_1_{ B}:  seven_seg0_6_{ A}  seven_seg1_6_{ C}  seven_seg0_5_{ D}
+               :  seven_seg0_4_{ D}  seven_seg0_2_{ C}  seven_seg0_1_{ A}
+               :  seven_seg0_0_{ D}  seven_seg1_5_{ B}  seven_seg1_4_{ C}
+               :  seven_seg1_3_{ B}  seven_seg1_2_{ B}  seven_seg1_1_{ B}
+               :  seven_seg1_0_{ D}      output_1_{ A}          G_131{ A}
+               :    output_2__n{ B}  output_i_3__n{ A}
+  binary_0_{ B}:  seven_seg0_6_{ A}  seven_seg0_5_{ D}  seven_seg0_4_{ D}
+               :  seven_seg0_3_{ D}  seven_seg0_2_{ C}  seven_seg0_1_{ A}
+               :  seven_seg0_0_{ D}
+output_15_2__n{ D}:  seven_seg0_6_{ A}  seven_seg1_6_{ C}  seven_seg0_5_{ D}
+               :  seven_seg0_4_{ D}  seven_seg0_2_{ C}  seven_seg0_1_{ A}
+               :  seven_seg0_0_{ D}  seven_seg1_5_{ B}  seven_seg1_4_{ C}
+               :  seven_seg1_3_{ B}  seven_seg1_2_{ B}  seven_seg1_1_{ B}
+               :  seven_seg1_0_{ D}      output_1_{ A}          G_131{ A}
+               :  output_i_3__n{ A}
+  output_1_{ B}:  seven_seg0_6_{ A}  seven_seg0_5_{ D}  seven_seg0_3_{ D}
+               :  seven_seg0_2_{ C}  seven_seg0_1_{ A}  seven_seg0_0_{ D}
+output_15_1__n{ D}:  seven_seg0_6_{ A}  seven_seg1_6_{ C}  seven_seg0_5_{ D}
+               :  seven_seg0_4_{ D}  seven_seg0_2_{ C}  seven_seg0_1_{ A}
+               :  seven_seg0_0_{ D}  seven_seg1_5_{ B}  seven_seg1_4_{ C}
+               :  seven_seg1_3_{ B}  seven_seg1_2_{ B}  seven_seg1_1_{ B}
+               :  seven_seg1_0_{ D}      output_1_{ A}          G_131{ A}
+               :  output_i_3__n{ A}
+      G_131{ B}:    output_2__n{ B}
+output_2__n{ C}:  seven_seg0_6_{ A}  seven_seg0_5_{ D}  seven_seg0_4_{ D}
+               :  seven_seg0_3_{ D}  seven_seg0_2_{ C}  seven_seg0_1_{ A}
+               :  seven_seg0_0_{ D}
+output_i_3__n{ B}:  seven_seg0_3_{ D}
+-----------------------------------------------------------------------------
+
+<Note> {.} : Indicates block location of signal
+
+
+Set_Reset_Summary
+~~~~~~~~~~~~~~~~~
+
+Block  A
+block level set pt   : 
+block level reset pt : 
+Equations :
+|     |     |Block|Block| Signal
+| Reg |Mode |Set  |Reset| Name
++-----+-----+-----+-----+------------------------
+|     |     |     |     | seven_seg0_1_
+|     |     |     |     | seven_seg0_6_
+|     |     |     |     | output_1_
+|     |     |     |     | output_i_3__n
+|     |     |     |     | G_131
+|     |     |     |     | binary_1_
+|     |     |     |     | binary_2_
+|     |     |     |     | binary_3_
+|     |     |     |     | binary_4_
+|     |     |     |     | binary_5_
+|     |     |     |     | binary_0_
+
+
+Block  B
+block level set pt   : 
+block level reset pt : 
+Equations :
+|     |     |Block|Block| Signal
+| Reg |Mode |Set  |Reset| Name
++-----+-----+-----+-----+------------------------
+|     |     |     |     | seven_seg1_2_
+|     |     |     |     | seven_seg1_3_
+|     |     |     |     | seven_seg1_1_
+|     |     |     |     | seven_seg1_5_
+|     |     |     |     | output_2__n
+
+
+Block  C
+block level set pt   : 
+block level reset pt : 
+Equations :
+|     |     |Block|Block| Signal
+| Reg |Mode |Set  |Reset| Name
++-----+-----+-----+-----+------------------------
+|     |     |     |     | seven_seg1_4_
+|     |     |     |     | seven_seg0_2_
+|     |     |     |     | seven_seg1_6_
+|     |     |     |     | output_15_1__n
+|     |     |     |     | output_15_2__n
+
+
+Block  D
+block level set pt   : 
+block level reset pt : 
+Equations :
+|     |     |Block|Block| Signal
+| Reg |Mode |Set  |Reset| Name
++-----+-----+-----+-----+------------------------
+|     |     |     |     | seven_seg0_0_
+|     |     |     |     | seven_seg0_5_
+|     |     |     |     | seven_seg0_4_
+|     |     |     |     | seven_seg1_0_
+|     |     |     |     | seven_seg0_3_
+
+
+<Note> (S) means the macrocell is configured in synchronous mode
+       i.e. it uses the block-level set and reset pt.
+       (A) means the macrocell is configured in asynchronous mode
+       i.e. it can have its independant set or reset pt.
+       (BS) means the block-level set pt is selected.
+       (BR) means the block-level reset pt is selected.
+
+
+
+
+BLOCK_A_LOGIC_ARRAY_FANIN
+~~~~~~~~~~~~~~~~~~~~~~~~~
+CSM             Signal    Source        CSM             Signal    Source
+------------------------------------    ------------------------------------
+mx A0             ...           ...     mx A17             ...           ...
+mx A1       binary_4_         pin 3     mx A18             ...           ...
+mx A2             ...           ...     mx A19             ...           ...
+mx A3       binary_1_         pin 6     mx A20             ...           ...
+mx A4             ...           ...     mx A21             ...           ...
+mx A5             ...           ...     mx A22             ...           ...
+mx A6  output_15_2__n     mcell  C1     mx A23       output_1_     mcell  A8
+mx A7     output_2__n     mcell  B1     mx A24             ...           ...
+mx A8       binary_5_         pin 2     mx A25             ...           ...
+mx A9             ...           ...     mx A26       binary_0_         pin 7
+mx A10             ...           ...     mx A27  output_15_1__n    mcell  C12
+mx A11             ...           ...     mx A28             ...           ...
+mx A12       binary_3_         pin 4     mx A29             ...           ...
+mx A13             ...           ...     mx A30             ...           ...
+mx A14       binary_2_         pin 5     mx A31             ...           ...
+mx A15             ...           ...     mx A32             ...           ...
+mx A16             ...           ...
+----------------------------------------------------------------------------
+
+
+BLOCK_B_LOGIC_ARRAY_FANIN
+~~~~~~~~~~~~~~~~~~~~~~~~~
+CSM             Signal    Source        CSM             Signal    Source
+------------------------------------    ------------------------------------
+mx B0             ...           ...     mx B17             ...           ...
+mx B1       binary_4_         pin 3     mx B18             ...           ...
+mx B2             ...           ...     mx B19             ...           ...
+mx B3       binary_1_         pin 6     mx B20             ...           ...
+mx B4           G_131     mcell  A5     mx B21             ...           ...
+mx B5             ...           ...     mx B22             ...           ...
+mx B6  output_15_2__n     mcell  C1     mx B23             ...           ...
+mx B7             ...           ...     mx B24             ...           ...
+mx B8       binary_5_         pin 2     mx B25             ...           ...
+mx B9             ...           ...     mx B26             ...           ...
+mx B10             ...           ...     mx B27  output_15_1__n    mcell  C12
+mx B11             ...           ...     mx B28             ...           ...
+mx B12       binary_3_         pin 4     mx B29             ...           ...
+mx B13             ...           ...     mx B30             ...           ...
+mx B14       binary_2_         pin 5     mx B31             ...           ...
+mx B15             ...           ...     mx B32             ...           ...
+mx B16             ...           ...
+----------------------------------------------------------------------------
+
+
+BLOCK_C_LOGIC_ARRAY_FANIN
+~~~~~~~~~~~~~~~~~~~~~~~~~
+CSM             Signal    Source        CSM             Signal    Source
+------------------------------------    ------------------------------------
+mx C0             ...           ...     mx C17             ...           ...
+mx C1       binary_4_         pin 3     mx C18             ...           ...
+mx C2             ...           ...     mx C19             ...           ...
+mx C3       binary_1_         pin 6     mx C20             ...           ...
+mx C4             ...           ...     mx C21             ...           ...
+mx C5             ...           ...     mx C22             ...           ...
+mx C6  output_15_2__n     mcell  C1     mx C23       output_1_     mcell  A8
+mx C7     output_2__n     mcell  B1     mx C24             ...           ...
+mx C8       binary_5_         pin 2     mx C25             ...           ...
+mx C9             ...           ...     mx C26       binary_0_         pin 7
+mx C10             ...           ...     mx C27  output_15_1__n    mcell  C12
+mx C11             ...           ...     mx C28             ...           ...
+mx C12       binary_3_         pin 4     mx C29             ...           ...
+mx C13             ...           ...     mx C30             ...           ...
+mx C14       binary_2_         pin 5     mx C31             ...           ...
+mx C15             ...           ...     mx C32             ...           ...
+mx C16             ...           ...
+----------------------------------------------------------------------------
+
+
+BLOCK_D_LOGIC_ARRAY_FANIN
+~~~~~~~~~~~~~~~~~~~~~~~~~
+CSM             Signal    Source        CSM             Signal    Source
+------------------------------------    ------------------------------------
+mx D0             ...           ...     mx D17             ...           ...
+mx D1       binary_4_         pin 3     mx D18             ...           ...
+mx D2             ...           ...     mx D19             ...           ...
+mx D3       binary_1_         pin 6     mx D20             ...           ...
+mx D4             ...           ...     mx D21             ...           ...
+mx D5             ...           ...     mx D22             ...           ...
+mx D6  output_15_2__n     mcell  C1     mx D23       output_1_     mcell  A8
+mx D7     output_2__n     mcell  B1     mx D24             ...           ...
+mx D8       binary_5_         pin 2     mx D25             ...           ...
+mx D9             ...           ...     mx D26       binary_0_         pin 7
+mx D10             ...           ...     mx D27  output_15_1__n    mcell  C12
+mx D11             ...           ...     mx D28             ...           ...
+mx D12       binary_3_         pin 4     mx D29             ...           ...
+mx D13             ...           ...     mx D30             ...           ...
+mx D14       binary_2_         pin 5     mx D31             ...           ...
+mx D15   output_i_3__n    mcell  A12     mx D32             ...           ...
+mx D16             ...           ...
+----------------------------------------------------------------------------
+
+<Note> CSM indicates the mux inputs from the Central Switch Matrix.
+<Note> Source indicates where the signal comes from (pin or macrocell). 
+
+
+
+
+PostFit_Equations
+~~~~~~~~~~~~~~~~~
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+  15         10        1    Pin   seven_seg0_6_- 
+  10          7        1    Pin   seven_seg1_6_- 
+  15         10        1    Pin   seven_seg0_5_- 
+  12          9        1    Pin   seven_seg0_4_ 
+   3          4        1    Pin   seven_seg0_3_ 
+  13         10        1    Pin   seven_seg0_2_- 
+  15         10        1    Pin   seven_seg0_1_- 
+  15         10        1    Pin   seven_seg0_0_- 
+   7          7        1    Pin   seven_seg1_5_- 
+  13          7        1    Pin   seven_seg1_4_- 
+   7          7        1    Pin   seven_seg1_3_- 
+  11          7        1    PinX1  seven_seg1_2_.X1 
+   1          2        1    PinX2  seven_seg1_2_.X2 
+   7          7        1    Pin   seven_seg1_1_ 
+   8          7        1    Pin   seven_seg1_0_- 
+   3          4        1    Node  output_15_2__n 
+   6          6        1    NodeX1  output_1_.X1 
+   1          1        1    NodeX2  output_1_.X2 
+   4          4        1    Node  output_15_1__n 
+   6          6        1    NodeX1  G_131.X1 
+   1          1        1    NodeX2  G_131.X2 
+   5          4        1    NodeX1  output_2__n.X1 
+   1          2        1    NodeX2  output_2__n.X2 
+  12          7        1    Node  output_i_3__n 
+=========
+ 191                 P-Term Total: 191
+                       Total Pins: 20
+                      Total Nodes: 6
+            Average P-Term/Output: 7
+
+
+Equations:
+
+!seven_seg0_6_ = (output_1_
+     # binary_1_ & output_15_2__n
+     # binary_0_ & output_2__n
+     # !binary_0_ & !output_2__n
+     # !binary_5_ & !binary_4_ & binary_2_ & output_15_2__n
+     # !binary_4_ & binary_3_ & binary_2_ & output_15_2__n
+     # binary_5_ & binary_4_ & !binary_3_ & binary_2_ & output_15_2__n
+     # !binary_5_ & binary_4_ & binary_3_ & !binary_2_ & output_15_2__n
+     # binary_5_ & !binary_4_ & !binary_3_ & !binary_2_ & output_15_2__n
+     # !binary_5_ & binary_4_ & binary_2_ & !binary_1_ & output_15_1__n
+     # binary_4_ & binary_3_ & binary_2_ & !binary_1_ & output_15_1__n
+     # binary_5_ & binary_4_ & !binary_2_ & !binary_1_ & output_15_1__n
+     # !binary_4_ & binary_3_ & !binary_2_ & !binary_1_ & output_15_1__n
+     # !binary_5_ & !binary_3_ & !binary_2_ & !binary_1_ & output_15_1__n
+     # binary_5_ & !binary_4_ & !binary_3_ & binary_2_ & !binary_1_ & output_15_1__n);
+
+!seven_seg1_6_ = (!binary_5_ & binary_4_ & binary_3_
+     # binary_5_ & !binary_4_ & !binary_3_
+     # !binary_5_ & binary_4_ & binary_2_
+     # !binary_2_ & !binary_1_ & !output_15_2__n
+     # !binary_4_ & !output_15_2__n & !output_15_1__n
+     # !binary_3_ & !output_15_2__n & !output_15_1__n
+     # !binary_2_ & !output_15_2__n & !output_15_1__n
+     # !binary_4_ & binary_2_ & output_15_2__n & output_15_1__n
+     # !binary_3_ & binary_2_ & output_15_2__n & output_15_1__n
+     # !binary_2_ & binary_1_ & output_15_2__n & output_15_1__n);
+
+!seven_seg0_5_ = (!output_2__n
+     # binary_1_ & output_15_2__n
+     # binary_0_ & output_1_
+     # !binary_0_ & !output_1_
+     # !binary_5_ & !binary_4_ & binary_2_ & output_15_2__n
+     # !binary_4_ & binary_3_ & binary_2_ & output_15_2__n
+     # binary_5_ & binary_4_ & !binary_3_ & binary_2_ & output_15_2__n
+     # !binary_5_ & binary_4_ & binary_3_ & !binary_2_ & output_15_2__n
+     # binary_5_ & !binary_4_ & !binary_3_ & !binary_2_ & output_15_2__n
+     # !binary_5_ & binary_4_ & binary_2_ & !binary_1_ & output_15_1__n
+     # binary_4_ & binary_3_ & binary_2_ & !binary_1_ & output_15_1__n
+     # binary_5_ & binary_4_ & !binary_2_ & !binary_1_ & output_15_1__n
+     # !binary_4_ & binary_3_ & !binary_2_ & !binary_1_ & output_15_1__n
+     # !binary_5_ & !binary_3_ & !binary_2_ & !binary_1_ & output_15_1__n
+     # binary_5_ & !binary_4_ & !binary_3_ & binary_2_ & !binary_1_ & output_15_1__n);
+
+seven_seg0_4_ = (binary_1_ & !binary_0_ & !output_15_2__n & !output_15_1__n & !output_2__n
+     # !binary_5_ & !binary_4_ & binary_2_ & !binary_1_ & !binary_0_ & !output_15_2__n & output_15_1__n & !output_2__n
+     # !binary_4_ & binary_3_ & binary_2_ & !binary_1_ & !binary_0_ & !output_15_2__n & output_15_1__n & !output_2__n
+     # !binary_5_ & binary_4_ & !binary_3_ & !binary_1_ & !binary_0_ & output_15_2__n & !output_15_1__n & !output_2__n
+     # binary_4_ & binary_3_ & binary_2_ & !binary_1_ & !binary_0_ & output_15_2__n & !output_15_1__n & !output_2__n
+     # !binary_5_ & !binary_4_ & !binary_2_ & !binary_1_ & !binary_0_ & output_15_2__n & !output_15_1__n & !output_2__n
+     # binary_5_ & binary_3_ & !binary_2_ & !binary_1_ & !binary_0_ & output_15_2__n & !output_15_1__n & !output_2__n
+     # binary_4_ & !binary_3_ & !binary_2_ & !binary_1_ & !binary_0_ & output_15_2__n & !output_15_1__n & !output_2__n
+     # binary_5_ & binary_4_ & !binary_3_ & binary_2_ & !binary_1_ & !binary_0_ & !output_15_2__n & output_15_1__n & !output_2__n
+     # !binary_5_ & binary_4_ & binary_3_ & !binary_2_ & !binary_1_ & !binary_0_ & !output_15_2__n & output_15_1__n & !output_2__n
+     # binary_5_ & !binary_4_ & !binary_3_ & !binary_2_ & !binary_1_ & !binary_0_ & !output_15_2__n & output_15_1__n & !output_2__n
+     # binary_5_ & !binary_4_ & !binary_3_ & binary_2_ & !binary_1_ & !binary_0_ & output_15_2__n & !output_15_1__n & !output_2__n);
+
+seven_seg0_3_ = (binary_0_ & output_1_ & output_2__n & output_i_3__n
+     # !binary_0_ & !output_1_ & output_2__n & output_i_3__n
+     # binary_0_ & !output_1_ & !output_2__n & output_i_3__n);
+
+!seven_seg0_2_ = (!binary_0_ & !output_1_ & !output_2__n
+     # binary_1_ & !binary_0_ & !output_15_2__n & output_1_
+     # !binary_5_ & !binary_4_ & binary_2_ & !binary_0_ & !output_15_2__n & output_1_
+     # !binary_4_ & binary_3_ & binary_2_ & !binary_0_ & !output_15_2__n & output_1_
+     # binary_5_ & binary_4_ & !binary_3_ & binary_2_ & !binary_0_ & !output_15_2__n & output_1_
+     # !binary_5_ & binary_4_ & binary_3_ & !binary_2_ & !binary_0_ & !output_15_2__n & output_1_
+     # binary_5_ & !binary_4_ & !binary_3_ & !binary_2_ & !binary_0_ & !output_15_2__n & output_1_
+     # !binary_5_ & binary_4_ & binary_2_ & !binary_1_ & !binary_0_ & output_1_ & !output_15_1__n
+     # binary_4_ & binary_3_ & binary_2_ & !binary_1_ & !binary_0_ & output_1_ & !output_15_1__n
+     # binary_5_ & binary_4_ & !binary_2_ & !binary_1_ & !binary_0_ & output_1_ & !output_15_1__n
+     # !binary_4_ & binary_3_ & !binary_2_ & !binary_1_ & !binary_0_ & output_1_ & !output_15_1__n
+     # !binary_5_ & !binary_3_ & !binary_2_ & !binary_1_ & !binary_0_ & output_1_ & !output_15_1__n
+     # binary_5_ & !binary_4_ & !binary_3_ & binary_2_ & !binary_1_ & !binary_0_ & output_1_ & !output_15_1__n);
+
+!seven_seg0_1_ = (binary_1_ & output_15_2__n
+     # !binary_0_ & !output_1_
+     # !binary_0_ & output_2__n
+     # !output_1_ & output_2__n
+     # !binary_5_ & !binary_4_ & binary_2_ & output_15_2__n
+     # !binary_4_ & binary_3_ & binary_2_ & output_15_2__n
+     # binary_5_ & binary_4_ & !binary_3_ & binary_2_ & output_15_2__n
+     # !binary_5_ & binary_4_ & binary_3_ & !binary_2_ & output_15_2__n
+     # binary_5_ & !binary_4_ & !binary_3_ & !binary_2_ & output_15_2__n
+     # binary_5_ & binary_4_ & binary_3_ & !binary_1_ & output_15_1__n
+     # !binary_5_ & binary_4_ & binary_2_ & !binary_1_ & output_15_1__n
+     # !binary_5_ & !binary_4_ & !binary_2_ & !binary_1_ & output_15_1__n
+     # !binary_4_ & binary_3_ & !binary_2_ & !binary_1_ & output_15_1__n
+     # binary_4_ & !binary_3_ & !binary_2_ & !binary_1_ & output_15_1__n
+     # binary_5_ & !binary_4_ & !binary_3_ & binary_2_ & !binary_1_ & output_15_1__n);
+
+!seven_seg0_0_ = (binary_1_ & output_15_2__n
+     # !binary_0_ & output_1_
+     # !output_1_ & output_2__n
+     # output_1_ & !output_2__n
+     # !binary_5_ & !binary_4_ & binary_2_ & output_15_2__n
+     # !binary_4_ & binary_3_ & binary_2_ & output_15_2__n
+     # binary_5_ & binary_4_ & !binary_3_ & binary_2_ & output_15_2__n
+     # !binary_5_ & binary_4_ & binary_3_ & !binary_2_ & output_15_2__n
+     # binary_5_ & !binary_4_ & !binary_3_ & !binary_2_ & output_15_2__n
+     # binary_5_ & binary_4_ & binary_3_ & !binary_1_ & output_15_1__n
+     # !binary_5_ & binary_4_ & binary_2_ & !binary_1_ & output_15_1__n
+     # !binary_5_ & !binary_4_ & !binary_2_ & !binary_1_ & output_15_1__n
+     # !binary_4_ & binary_3_ & !binary_2_ & !binary_1_ & output_15_1__n
+     # binary_4_ & !binary_3_ & !binary_2_ & !binary_1_ & output_15_1__n
+     # binary_5_ & !binary_4_ & !binary_3_ & binary_2_ & !binary_1_ & output_15_1__n);
+
+!seven_seg1_5_ = (!binary_5_
+     # !binary_4_ & !binary_3_
+     # output_15_2__n & !output_15_1__n
+     # binary_4_ & binary_3_ & binary_2_
+     # !binary_2_ & !binary_1_ & output_15_2__n
+     # binary_2_ & !output_15_2__n & output_15_1__n
+     # binary_1_ & !output_15_2__n & output_15_1__n);
+
+!seven_seg1_4_ = (!binary_5_ & !binary_4_
+     # output_15_2__n & !output_15_1__n
+     # !binary_5_ & !binary_3_ & !binary_2_
+     # binary_1_ & !output_15_2__n & output_15_1__n
+     # binary_5_ & binary_4_ & binary_3_ & binary_2_
+     # !binary_5_ & binary_2_ & !binary_1_ & output_15_2__n
+     # !binary_5_ & !binary_2_ & !output_15_2__n & output_15_1__n
+     # !binary_4_ & !binary_3_ & binary_2_ & !binary_1_ & output_15_2__n
+     # binary_5_ & binary_4_ & !binary_2_ & !binary_1_ & output_15_2__n
+     # !binary_4_ & binary_3_ & !binary_2_ & !binary_1_ & output_15_2__n
+     # binary_5_ & binary_4_ & binary_2_ & !output_15_2__n & output_15_1__n
+     # !binary_4_ & binary_3_ & binary_2_ & !output_15_2__n & output_15_1__n
+     # !binary_4_ & !binary_3_ & !binary_2_ & !output_15_2__n & output_15_1__n);
+
+!seven_seg1_3_ = (!binary_5_ & binary_4_ & binary_3_
+     # binary_5_ & !binary_4_ & !binary_3_
+     # !binary_5_ & binary_4_ & binary_2_
+     # !binary_5_ & !output_15_2__n & !output_15_1__n
+     # !binary_5_ & !binary_2_ & !binary_1_ & !output_15_2__n
+     # !binary_5_ & binary_2_ & output_15_2__n & output_15_1__n
+     # !binary_5_ & binary_1_ & output_15_2__n & output_15_1__n);
+
+seven_seg1_2_.X1 = (!binary_2_ & binary_1_ & output_15_1__n
+     # binary_1_ & !output_15_2__n & output_15_1__n
+     # binary_2_ & output_15_2__n & !output_15_1__n
+     # binary_5_ & binary_4_ & binary_3_ & binary_2_
+     # !binary_5_ & binary_4_ & binary_2_ & !binary_1_ & output_15_2__n
+     # !binary_5_ & binary_4_ & binary_3_ & !binary_2_ & output_15_1__n
+     # binary_5_ & !binary_4_ & !binary_3_ & !binary_2_ & output_15_1__n
+     # binary_5_ & binary_4_ & binary_2_ & !output_15_2__n & output_15_1__n
+     # !binary_5_ & !binary_4_ & binary_2_ & !output_15_2__n & output_15_1__n
+     # !binary_4_ & binary_3_ & binary_2_ & !output_15_2__n & output_15_1__n
+     # binary_5_ & !binary_4_ & !binary_3_ & binary_2_ & !binary_1_ & output_15_2__n);
+
+seven_seg1_2_.X2 = (!binary_2_ & output_15_2__n);
+
+seven_seg1_1_ = (!binary_5_ & binary_4_ & binary_3_
+     # binary_5_ & !binary_4_ & !binary_3_
+     # !binary_5_ & binary_4_ & binary_2_
+     # !binary_5_ & output_15_2__n & !output_15_1__n
+     # !binary_5_ & !binary_2_ & !binary_1_ & output_15_2__n
+     # !binary_5_ & binary_2_ & !output_15_2__n & output_15_1__n
+     # !binary_5_ & binary_1_ & !output_15_2__n & output_15_1__n);
+
+!seven_seg1_0_ = (!binary_5_ & binary_4_ & binary_3_
+     # binary_5_ & !binary_4_ & !binary_3_
+     # !binary_5_ & binary_4_ & binary_2_
+     # binary_4_ & binary_3_ & binary_2_
+     # binary_5_ & output_15_2__n & !output_15_1__n
+     # binary_5_ & !binary_2_ & !binary_1_ & output_15_2__n
+     # binary_5_ & binary_2_ & !output_15_2__n & output_15_1__n
+     # binary_5_ & binary_1_ & !output_15_2__n & output_15_1__n);
+
+output_15_2__n = (binary_5_ & !binary_4_ & !binary_3_ & binary_2_
+     # binary_5_ & binary_4_ & binary_3_ & !binary_2_
+     # !binary_5_ & binary_4_ & !binary_3_ & !binary_2_);
+
+output_1_.X1 = (binary_1_ & !output_15_1__n
+     # !binary_5_ & !binary_4_ & binary_2_ & !binary_1_ & output_15_1__n
+     # !binary_4_ & binary_3_ & binary_2_ & !binary_1_ & output_15_1__n
+     # binary_5_ & binary_4_ & !binary_3_ & binary_2_ & !binary_1_ & output_15_1__n
+     # !binary_5_ & binary_4_ & binary_3_ & !binary_2_ & !binary_1_ & output_15_1__n
+     # binary_5_ & !binary_4_ & !binary_3_ & !binary_2_ & !binary_1_ & output_15_1__n);
+
+output_1_.X2 = (output_15_2__n);
+
+output_15_1__n = (!binary_5_ & !binary_4_ & binary_3_
+     # binary_5_ & binary_4_ & !binary_3_
+     # !binary_5_ & binary_3_ & binary_2_
+     # binary_5_ & !binary_3_ & !binary_2_);
+
+G_131.X1 = (binary_1_ & output_15_1__n
+     # !binary_5_ & !binary_4_ & binary_2_ & output_15_1__n
+     # !binary_4_ & binary_3_ & binary_2_ & output_15_1__n
+     # binary_5_ & binary_4_ & !binary_3_ & binary_2_ & output_15_1__n
+     # !binary_5_ & binary_4_ & binary_3_ & !binary_2_ & output_15_1__n
+     # binary_5_ & !binary_4_ & !binary_3_ & !binary_2_ & output_15_1__n);
+
+G_131.X2 = (output_15_2__n);
+
+output_2__n.X1 = (!binary_5_ & !binary_4_ & binary_2_
+     # !binary_4_ & binary_3_ & binary_2_
+     # binary_5_ & binary_4_ & !binary_3_ & binary_2_
+     # !binary_5_ & binary_4_ & binary_3_ & !binary_2_
+     # binary_5_ & !binary_4_ & !binary_3_ & !binary_2_);
+
+output_2__n.X2 = (!binary_1_ & G_131);
+
+output_i_3__n = (binary_1_ & !output_15_2__n
+     # !binary_5_ & !binary_4_ & binary_2_ & !output_15_2__n
+     # !binary_4_ & binary_3_ & binary_2_ & !output_15_2__n
+     # binary_5_ & binary_4_ & !binary_3_ & binary_2_ & !output_15_2__n
+     # !binary_5_ & binary_4_ & binary_3_ & !binary_2_ & !output_15_2__n
+     # binary_5_ & !binary_4_ & !binary_3_ & !binary_2_ & !output_15_2__n
+     # !binary_5_ & binary_4_ & !binary_3_ & !binary_1_ & !output_15_1__n
+     # binary_4_ & binary_3_ & binary_2_ & !binary_1_ & !output_15_1__n
+     # !binary_5_ & !binary_4_ & !binary_2_ & !binary_1_ & !output_15_1__n
+     # binary_5_ & binary_3_ & !binary_2_ & !binary_1_ & !output_15_1__n
+     # binary_4_ & !binary_3_ & !binary_2_ & !binary_1_ & !output_15_1__n
+     # binary_5_ & !binary_4_ & !binary_3_ & binary_2_ & !binary_1_ & !output_15_1__n);
+
+
+Reverse-Polarity Equations:
+

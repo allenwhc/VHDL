@@ -1,0 +1,40 @@
+[ START MERGED ]
+rst_bar_c_i rst_bar_c
+u4/seconds_clk_c_i seconds_clk_c
+[ END MERGED ]
+[ START CLIPPED ]
+u1/GND
+VCC
+u1/un1_count_sec_1_cry_2
+u1/un1_count_sec_1_cry_4_0_COUT1
+u1/un1_count_sec_1_cry_4
+u1/un1_count_sec_1_cry_0_0_S0
+u1/un1_count_sec_1_cry_0
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond_1.4_Production (87) -- WARNING: Map write only section -- Tue Apr 29 14:29:38 2014
+
+SYSCONFIG PERSISTENT=OFF CONFIG_MODE=JTAG DONE_OD=ON DONE_EX=OFF MCCLK_FREQ=2.5 CONFIG_SECURE=OFF WAKE_UP=21 INBUF=ON ;
+LOCATE COMP "alarm" SITE "69" ;
+LOCATE COMP "rst_bar" SITE "39" ;
+LOCATE COMP "minutes[3]" SITE "98" ;
+LOCATE COMP "minutes[2]" SITE "97" ;
+LOCATE COMP "minutes[1]" SITE "96" ;
+LOCATE COMP "minutes[0]" SITE "95" ;
+LOCATE COMP "seconds[5]" SITE "67" ;
+LOCATE COMP "seconds[4]" SITE "66" ;
+LOCATE COMP "seconds[3]" SITE "64" ;
+LOCATE COMP "seconds[2]" SITE "63" ;
+LOCATE COMP "seconds[1]" SITE "62" ;
+LOCATE COMP "seconds[0]" SITE "61" ;
+LOCATE COMP "seconds_clk" SITE "45" ;
+LOCATE COMP "set_arm" SITE "14" ;
+LOCATE COMP "s" SITE "57" ;
+LOCATE COMP "bo" SITE "53" ;
+LOCATE COMP "ao" SITE "54" ;
+LOCATE COMP "bi" SITE "55" ;
+LOCATE COMP "ai" SITE "56" ;
+LOCATE COMP "clk" SITE "93" ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

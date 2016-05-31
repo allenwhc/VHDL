@@ -1,0 +1,4 @@
+MESSAGE "File: H:\ese382\lab06s14\ha_simnet_hier\src\half_adder_struct_hier.vhd" 
+MESSAGE "Compile Entity "half_adder"" 
+MESSAGE "Compile Architecture "dataflow" of Entity "half_adder"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]" 

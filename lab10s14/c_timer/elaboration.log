@@ -1,0 +1,39 @@
+Active-HDL 9.1.2353.4205  2014-04-22 13:06:32
+
+Elaboration top modules:
+Architecture                  tb_architecture(count_down_timer_tb)
+
+
+---------------------------------------------------------------------------------------------------------------
+Entity                     | Architecture    | Library | Info | Compiler Version         | Compilation Options
+---------------------------------------------------------------------------------------------------------------
+count_down_timer_tb        | tb_architecture | c_timer |      | 9.1.2353.4205  (Windows) | -dbg
+count_down_timer           | dataflow        | c_timer |      | 9.1.2353.4205  (Windows) | -dbg
+settable_timer             | dataflow        | c_timer |      | 9.1.2353.4205  (Windows) | -dbg
+seconds_counter            | dataflow        | c_timer |      | 9.1.2353.4205  (Windows) | -dbg
+minutes_counter            | behavioral      | c_timer |      | 9.1.2353.4205  (Windows) | -dbg
+rotary_encoder_decoder_fsm | behavioral      | c_timer |      | 9.1.2353.4205  (Windows) | -dbg
+---------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------
+VHDL Package                                 | Library | Info | Compiler Version         | Compilation Options
+---------------------------------------------------------------------------------------------------------------
+standard                                     | std     |      |                          | <unavailable>
+TEXTIO                                       | std     |      | 9.1.2353.4205  (Windows) |  -2008
+std_logic_1164                               | ieee    |      | 9.1.2353.4205  (Windows) |  -2008
+NUMERIC_STD                                  | ieee    |      | 9.1.2353.4205  (Windows) |  -2008
+---------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------
+Library                                      | Comment
+---------------------------------------------------------------------------------------------------------------
+c_timer                                      | None
+ieee                                         | Standard IEEE packages library
+std                                          | Standard VHDL library
+---------------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+count_down_timer_tb count_down_timer_tb tb_architecture
+
+
+The performance of simulation is reduced. Version EDU Edition

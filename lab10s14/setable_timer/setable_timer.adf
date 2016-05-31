@@ -1,0 +1,69 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=setable_timer
+
+[Library]
+setable_timer=.\setable_timer\setable_timer.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+FLOWTOOLS=NONE
+REFRESH_FLOW=1
+FAMILY=
+IMPL_TOOL=
+SYNTH_TOOL=
+fileopenfolder=H:\ese382\lab09s14\counter\src
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+setable_timer=.
+Active_lib=
+
+[Files]
+/minutes_counter.vhd=-1
+/seconds_counter.vhd=-1
+/rotary_encoder_decoder_fsm.vhd=-1
+/settable_timer.vhd=-1
+/timer.vhd=-1
+/fsm.vhd=-1
+/pedgefsm.vhd=-1
+/count_down_timer.vhd=-1
+/rotary_encoder_decoder_fsm_TB.vhd=-1
+/count_down_timer_TB.vhd=-1
+
+[Files.Data]
+.\src\minutes_counter.vhd=VHDL Source Code
+.\src\seconds_counter.vhd=VHDL Source Code
+.\src\rotary_encoder_decoder_fsm.vhd=VHDL Source Code
+.\src\settable_timer.vhd=VHDL Source Code
+.\src\timer.vhd=VHDL Source Code
+.\src\fsm.vhd=VHDL Source Code
+.\src\pedgefsm.vhd=VHDL Source Code
+.\src\count_down_timer.vhd=VHDL Source Code
+.\src\rotary_encoder_decoder_fsm_TB.vhd=VHDL Source Code
+
+.\src\count_down_timer_TB.vhd=VHDL Source Code
+[HierarchyViewer]
+HierarchyInformation=count_down_timer_tb|tb_architecture|0 
+ShowHide=ShowTopLevel
+Selected=

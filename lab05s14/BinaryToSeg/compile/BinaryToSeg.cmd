@@ -1,0 +1,1 @@
+-w -s "h:\ese382\lab05s14\library.cfg"  -j "h:\ese382\lab05s14\BinaryToSeg\projlib.cfg"  -d "h:\ese382\lab05s14\BinaryToSeg\compile"   -work BinaryToSeg  -dbg -e 100 -2002 "h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg.vhd" "h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg_TB.vhd"

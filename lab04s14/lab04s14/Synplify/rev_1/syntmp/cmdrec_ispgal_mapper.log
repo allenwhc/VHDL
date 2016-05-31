@@ -1,0 +1,9 @@
+C:\Synopsys\fpga_E201103SP2\bin\m_cpld.exe  -prodtype synplify_pro -encrypt  -pro  -part ispGAL22V10C  -package LJ  -grade -10   -areadelay 0 -minc    -ovhdl "task1.vhm"  -oedif  H:\ese382\lab04s14\lab04s14\Synplify\rev_1\task1.edf  H:\ese382\lab04s14\lab04s14\Synplify\rev_1\task1.srs  -devicelib  C:\Synopsys\fpga_E201103SP2\lib\cpld\lattice.v  -ologparam  H:\ese382\lab04s14\lab04s14\Synplify\rev_1\syntmp\task1.plg  -osyn  H:\ese382\lab04s14\lab04s14\Synplify\rev_1\task1.srm  -prjdir H:\ese382\lab04s14\lab04s14\Synplify\  -log  H:\ese382\lab04s14\lab04s14\Synplify\rev_1\synlog\task1_ispGAL_Mapper.srr 
+rc:0 success:1
+H:\ese382\lab04s14\lab04s14\Synplify\rev_1\task1.edf|o|1394049469|7911
+H:\ese382\lab04s14\lab04s14\Synplify\rev_1\task1.srs|i|1393944790|3316
+C:\Synopsys\fpga_E201103SP2\lib\cpld\lattice.v|i|1304986162|210380
+H:\ese382\lab04s14\lab04s14\Synplify\rev_1\syntmp\task1.plg|o|1394049469|0
+H:\ese382\lab04s14\lab04s14\Synplify\rev_1\task1.srm|o|1394049469|3535
+H:\ese382\lab04s14\lab04s14\Synplify\rev_1\synlog\task1_ispGAL_Mapper.srr|o|1394049469|882
+C:\Synopsys\fpga_E201103SP2\bin\m_cpld.exe|i|1305645716|8888320

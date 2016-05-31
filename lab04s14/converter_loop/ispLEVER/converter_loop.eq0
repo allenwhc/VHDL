@@ -1,0 +1,125 @@
+EDIF2BLIF version IspLever 1.0  Linked Equations File
+Copyright(C), 1992-2007, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design converter_loop created Thu Mar 06 12:21:26 2014
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   1/1        1        1    Pin   a 
+   1/1        1        1    Pin   b 
+   1/1        1        1    Pin   c 
+   1/1        1        1    Pin   d 
+   2          2        1    Node  loopy_0_output_5_2__n 
+   1          2        1    Node  loopy_0_output_5_3__n 
+   2          2        1    Node  input_2_2__n 
+   1          2        1    Node  loopy_0_op_lt_output14_n 
+   1          2        1    Node  N_7 
+   1          2        1    Node  N_22 
+   1          1        1    Node  N_25 
+   2          2        1    Node  input_2_i_3__n 
+   2          2        1    Node  N_28 
+   1          1        1    Node  N_28_i 
+   1          1        1    Node  input_2_i_i_3__n 
+   1          1        1    Node  loopy_0_op_lt_output14_i_n 
+   1          1        1    Node  p_i 
+   1          1        1    Node  a_i 
+   1          1        1    Node  r_i 
+   1/1        1        1    Node  p_c 
+   1/1        1        1    Node  q_c 
+   1/1        1        1    Node  r_c 
+   1/1        1        1    Node  a_c 
+   1          1        1    Node  N_22_i 
+   1          2        1    Node  N_25_0 
+   1          1        1    Node  loopy_0_output_5_2__un3_n 
+   1          2        1    Node  loopy_0_output_5_2__un1_n 
+   1          2        1    Node  loopy_0_output_5_2__un0_n 
+=========
+  32/8          Best P-Term Total: 32
+                       Total Pins: 8
+                      Total Nodes: 24
+            Average P-Term/Output: 1
+
+
+Equations:
+
+a = (a_c);
+
+b = (N_28_i);
+
+c = (loopy_0_output_5_2__n);
+
+d = (loopy_0_output_5_3__n);
+
+loopy_0_output_5_2__n = (loopy_0_output_5_2__un1_n
+     # loopy_0_output_5_2__un0_n);
+
+loopy_0_output_5_3__n = (input_2_i_i_3__n & loopy_0_op_lt_output14_i_n);
+
+input_2_2__n = (!q_c & r_c
+     # q_c & !r_c);
+
+loopy_0_op_lt_output14_n = (N_25 & p_i);
+
+N_7 = (q_c & r_c);
+
+N_22 = (a_i & r_i);
+
+N_25 = (!N_25_0);
+
+input_2_i_3__n = (!N_7 & p_c
+     # N_7 & !p_c);
+
+N_28 = (!loopy_0_op_lt_output14_n & r_c
+     # loopy_0_op_lt_output14_n & !r_c);
+
+N_28_i = (!N_28);
+
+input_2_i_i_3__n = (!input_2_i_3__n);
+
+loopy_0_op_lt_output14_i_n = (!loopy_0_op_lt_output14_n);
+
+p_i = (!p_c);
+
+a_i = (!a_c);
+
+r_i = (!r_c);
+
+p_c = (p);
+
+q_c = (q);
+
+r_c = (r);
+
+a_c = (s);
+
+N_22_i = (!N_22);
+
+N_25_0 = (N_22_i & q_c);
+
+loopy_0_output_5_2__un3_n = (!loopy_0_op_lt_output14_n);
+
+loopy_0_output_5_2__un1_n = (q_c & loopy_0_op_lt_output14_n);
+
+loopy_0_output_5_2__un0_n = (input_2_2__n & loopy_0_output_5_2__un3_n);
+
+
+Reverse-Polarity Equations:
+
+!a = (!a_c);
+
+!b = (!N_28_i);
+
+!c = (!loopy_0_output_5_2__n);
+
+!d = (!loopy_0_output_5_3__n);
+
+!p_c = (!p);
+
+!q_c = (!q);
+
+!r_c = (!r);
+
+!a_c = (!s);
+

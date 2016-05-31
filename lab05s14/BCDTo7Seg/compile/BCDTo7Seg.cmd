@@ -1,0 +1,1 @@
+-w -s "h:\ese382\lab05s14\library.cfg"  -j "h:\ese382\lab05s14\BCDTo7Seg\projlib.cfg"  -d "h:\ese382\lab05s14\BCDTo7Seg\compile"   -work BCDTo7Seg  -dbg -e 100 -2002 "h:\ese382\lab05s14\BCDTo7Seg\src\BCDTo7Seg.vhd" "h:\ese382\lab05s14\BCDTo7Seg\src\BCDTo7Seg_TB.vhd"

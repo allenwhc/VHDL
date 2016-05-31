@@ -1,0 +1,8 @@
+MESSAGE "File: h:\ese382\lab08s14\shift_register\src\right_shift_reg.vhd" 
+MESSAGE "Compile Entity "right_shift_reg"" 
+MESSAGE "Compile Architecture "behavior" of Entity "right_shift_reg"" 
+MESSAGE "File: h:\ese382\lab08s14\shift_register\src\TestBench\right_shift_reg_TB.vhd" 
+MESSAGE "Compile Entity "right_shift_reg_tb"" 
+MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "right_shift_reg_tb"" 
+MESSAGE "Compile Configuration "TESTBENCH_FOR_right_shift_reg"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]" 

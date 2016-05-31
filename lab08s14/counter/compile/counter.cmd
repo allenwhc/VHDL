@@ -1,0 +1,1 @@
+-w -s "h:\ese382\lab08s14\library.cfg"  -j "h:\ese382\lab08s14\counter\projlib.cfg"  -d "h:\ese382\lab08s14\counter\compile"   -work counter  -dbg -e 100 -2002 "h:\ese382\lab08s14\counter\src\counter.vhd" "h:\ese382\lab08s14\counter\src\TestBench\counter_TB.vhd"

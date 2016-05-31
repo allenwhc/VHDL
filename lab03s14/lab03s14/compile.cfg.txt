@@ -1,0 +1,8 @@
+[View]
+Entity=converter_2421_bcd_tb
+Architecture=tb_architecture
+TopLevelType=1
+[file:.\src\converter_csop_TB(1).vhd]
+Enabled=1
+[file:.\src\selector.vhq]
+Enabled=1

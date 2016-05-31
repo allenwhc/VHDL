@@ -1,0 +1,4 @@
+$include = "$VSIMSALIBRARYCFG"
+task1 = "./task1/task1.LIB" 1396355609982
+task2 = "./task2/task2.LIB" 1396357229885
+task3 = "./task3/task3.LIB" 1396357379833

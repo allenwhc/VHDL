@@ -1,0 +1,7 @@
+MESSAGE "File: H:\ese382\lab04s14\converter_loop\src\converter_loop.vhd" 
+MESSAGE "Compile Entity "converter_loop"" 
+MESSAGE "Compile Architecture "converter_loop" of Entity "converter_loop"" 
+MESSAGE "File: H:\ese382\lab04s14\converter_loop\src\converter_loop_TB.vhd" 
+MESSAGE "Compile Entity "converter_2421_bcd_tb"" 
+MESSAGE "Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]" 

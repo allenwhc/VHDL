@@ -1,0 +1,16 @@
+[Version]
+Version=9.1
+[Designs]
+c_timer=.\c_timer\c_timer.adf
+set_time=.\set_time\set_time.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+c_timer=1
+set_time=1
+[Settings]
+Active=c_timer

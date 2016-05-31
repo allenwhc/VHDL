@@ -1,0 +1,135 @@
+timestamp=1399385380189
+
+[control_unit]
+A/fsm=21|./../src/fsm.vhd|15|1*595349
+BinI32/fsm=3*193630
+I=0*17773
+I/fsm=0*66996
+M=11|0|va7|1398786474065|./../src/fsm.vhd|0*17370*0x511d9122d6ec3ad09b987241ed4cd18c2b1605ec|0*17694*0xab32bc1a2daf049573e14469f634e0e6
+M/fsm=21|0|va7|1399385379617|./../src/fsm.vhd|0*65758*0xf08ce9f8a014a55e7679c12e60bce7687e40fc2b|0*66910*0xb33770ff1c10522f9491560174ac8e6c
+R=./../src/fsm.vhd|5
+Version=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
+Version/fsm=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
+
+[count_down_timer]
+A/count_down_timer=21|./../src/count_down_timer.vhd|62|1*598751
+A/dataflow=+21|./../src/timer.vhd|41|1*139302
+BinI32/count_down_timer=3*195463
+I=0*76339
+I/count_down_timer=0*78807
+M=11|0|va7|1398796119942|./../src/count_down_timer.vhd|0*75396*0x0c09ffb2259d176b034406ab90c469453b8dc795|0*76243*0xab32bc1a2daf049573e14469f634e0e6
+M/count_down_timer=21|0|va7|1399385379828|./../src/count_down_timer.vhd|0*76888*0x8518748afe637dab2a28cc726d36b92b212fbf4a|0*78691*0xb33770ff1c10522f9491560174ac8e6c
+M/dataflow=21|0|va7|1398789821031|./../src/timer.vhd|0*16508*0x8c8330c64d1d5416e3b119288ddab1c0ec2f09fc|0*16858*0xb33770ff1c10522f9491560174ac8e6c
+R=./../src/count_down_timer.vhd|28
+Version=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
+Version/count_down_timer=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
+Version/dataflow=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
+
+[count_down_timer_tb]
+A/tb_architecture=21|./../src/count_down_timer_TB.vhd|10|1*607367
+BinI32/tb_architecture=3*197845
+I=0*7712
+I/tb_architecture=0*71682
+M=11|0|va7|1398784876897|./../src/count_down_timer_TB.vhd|0*7382*0xeca8933c9fd335ed66f7c4b76b81eb34a11013ca|0*7610*0xab32bc1a2daf049573e14469f634e0e6
+M/tb_architecture=21|0|va7|1399385380051|./../src/count_down_timer_TB.vhd|0*69387*0x70f695031ee9ddf58d103cbf4126c38bb031e5e8|0*71561*0xb33770ff1c10522f9491560174ac8e6c
+R=./../src/count_down_timer_TB.vhd|7
+Version=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
+Version/tb_architecture=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
+
+[minutes_counter]
+A/behavioral=21|./../src/minutes_counter.vhd|44|1*585484
+BinI32/behavioral=3*190574
+I=0*842
+I/behavioral=0*73021
+M=11|0|va7|1398784690314|./../src/minutes_counter.vhd|0*322*0xbd774af88ad864037428a1e9c51154cdc389f9fc|0*748*0xab32bc1a2daf049573e14469f634e0e6
+M/behavioral=21|0|va7|1399385378988|./../src/minutes_counter.vhd|0*71936*0x125328f2dd9278f6de3d0cf11958d61a08b424a0|0*72913*0xb33770ff1c10522f9491560174ac8e6c
+R=./../src/minutes_counter.vhd|29
+Version=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
+Version/behavioral=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
+
+[pdegefsm]
+A/pdegefsm=21|./../src/pdegefsm.vhd|37|1*71562
+BinI32/pdegefsm=3*21655
+I=0*19870
+I/pdegefsm=0*20865
+M=11|0|va7|1398787188193|./../src/pdegefsm.vhd|0*19538*0x63a48557efbb234b3fb9d504046a4292a5543667|0*19790*0xab32bc1a2daf049573e14469f634e0e6
+M/pdegefsm=21|0|va7|1398788157785|./../src/pdegefsm.vhd|0*19972*0x4dc95c6fc58c03b384735abfa12bb570956088a5|0*20773*0xb33770ff1c10522f9491560174ac8e6c
+R=./../src/pdegefsm.vhd|28
+Version=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
+Version/pdegefsm=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
+
+[pedgefsm]
+A/pedgefsm=21|./../src/pedgefsm.vhd|37|1*597196
+BinI32/pedgefsm=3*194622
+I=0*22610
+I/pedgefsm=0*23605
+M=11|0|va7|1398788916849|./../src/pedgefsm.vhd|0*22278*0x9aefd64726b747788a09e076d1b9283da0f19dd0|0*22530*0xab32bc1a2daf049573e14469f634e0e6
+M/pedgefsm=21|0|va7|1399385379726|./../src/pedgefsm.vhd|0*22712*0x37b17892e5048897106f335bdb2bc9024759a875|0*23513*0xb33770ff1c10522f9491560174ac8e6c
+R=./../src/pedgefsm.vhd|28
+Version=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
+Version/pedgefsm=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
+
+[rotary_encoder_decoder_fsm]
+A/behavioral=21|./../src/rotary_encoder_decoder_fsm.vhd|42|1*589837
+BinI32/behavioral=3*192612
+I=0*55579
+I/behavioral=0*65627
+M=11|0|va7|1398792432689|./../src/rotary_encoder_decoder_fsm.vhd|0*55065*0x696178300b6b9e6d6132e49330ebf68246016ff4|0*55463*0xab32bc1a2daf049573e14469f634e0e6
+M/behavioral=21|0|va7|1399385379471|./../src/rotary_encoder_decoder_fsm.vhd|0*64143*0xb261fdcfe3febe4ff5cbfb32d22417dc4bf5e335|0*65497*0xb33770ff1c10522f9491560174ac8e6c
+R=./../src/rotary_encoder_decoder_fsm.vhd|28
+Version=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
+Version/behavioral=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
+
+[rotary_encoder_decoder_fsm_tb]
+A/tb_architecture=21|./../src/rotary_encoder_decoder_fsm_TB.vhd|10|1*605190
+BinI32/tb_architecture=3*196618
+I=0*62515
+I/tb_architecture=0*63930
+M=11|0|va7|1398793168279|./../src/rotary_encoder_decoder_fsm_TB.vhd|0*62151*0xf2c2578796bbf9fb346d1a7f0445c57611d32fd8|0*62393*0xab32bc1a2daf049573e14469f634e0e6
+M/tb_architecture=21|0|va7|1399385379941|./../src/rotary_encoder_decoder_fsm_TB.vhd|0*62638*0x45c26742f6d427117478918d218cbe5d455dd0cf|0*63789*0xb33770ff1c10522f9491560174ac8e6c
+R=./../src/rotary_encoder_decoder_fsm_TB.vhd|7
+Version=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
+Version/tb_architecture=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
+
+[seconds_counter]
+A/dataflow=21|./../src/seconds_counter.vhd|24|1*587541
+BinI32/dataflow=3*191451
+I=0*49905
+I/dataflow=0*61838
+M=11|0|va7|1398791476650|./../src/seconds_counter.vhd|0*49359*0x390102264d615070901ebf9a8b9b9975aa7a2228|0*49811*0xab32bc1a2daf049573e14469f634e0e6
+M/dataflow=21|0|va7|1399385379364|./../src/seconds_counter.vhd|0*60600*0x7f465a701a1eb775057c1e2f65a137b3c8254596|0*61732*0xb33770ff1c10522f9491560174ac8e6c
+R=./../src/seconds_counter.vhd|10
+Version=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
+Version/dataflow=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
+
+[settable_timer]
+A/dataflow=21|./../src/settable_timer.vhd|18|1*592205
+I=0*8698
+I/dataflow=0*60224
+M=11|0|va7|1398784876948|./../src/c_timer.vhd|0*8201*0x0afe6ac380336c8258f21b89785808645fb07afc|0*8613*0xab32bc1a2daf049573e14469f634e0e6
+M/dataflow=21|0|va7|1399385379572|./../src/settable_timer.vhd|0*59507*0xfde8e6552204122046143e9620ec349b12a584b8|0*60120*0xb33770ff1c10522f9491560174ac8e6c
+R=./../src/c_timer.vhd|5
+Version=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
+Version/dataflow=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
+
+[~A]
+ModifyID=1203
+Version=73
+
+[~MFT]
+0=305|0setable_timer.mgf|78807|54832
+1=412|1setable_timer.mgf|607367|581280
+3=352|3setable_timer.mgf|197845|189733
+
+[~U]
+control_unit=11|0*17136|
+count_down_timer=11|0*74983|
+count_down_timer_tb=11|0*7279|
+minutes_counter=11|0*0|
+pdegefsm=11|0*19352|
+pedgefsm=11|0*22092|
+rotary_encoder_decoder_fsm=11|0*54752|
+rotary_encoder_decoder_fsm_tb=11|0*62018|
+seconds_counter=11|0*49012|
+settable_timer=11|0*7887|
+

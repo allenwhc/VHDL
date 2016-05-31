@@ -1,0 +1,70 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=ha_simnet_hier
+
+[Library]
+ha_simnet_hier=.\ha_simnet_hier.LIB
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+FLOWTOOLS=NONE
+REFRESH_FLOW=1
+FAMILY=
+IMPL_TOOL=
+SYNTH_TOOL=
+fileopenfolder=H:\ese382\download
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=1
+
+[$LibMap$]
+ha_simnet_hier=.
+Active_lib=
+
+[Folders]
+Name3=Makefiles
+Directory3=H:\ese382\lab06s14\ha_simnet_hier\
+Extension3=mak
+Name4=Memory
+Directory4=H:\ese382\lab06s14\ha_simnet_hier\src
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=H:\ese382\lab06s14\ha_simnet_hier\
+Extension5=dll
+Name6=PDF
+Directory6=H:\ese382\lab06s14\ha_simnet_hier\
+Extension6=pdf
+Name7=HTML
+Directory7=H:\ese382\lab06s14\ha_simnet_hier\
+Extension7=
+
+[Files]
+/ha_primitive_gates.vhd=-1
+/xor_2_struct.vhd=-1
+/half_adder_struct_hier.vhd=-1
+/ha_test_tb.vhd=-1
+
+[Files.Data]
+.\src\ha_primitive_gates.vhd=VHDL Source Code
+.\src\xor_2_struct.vhd=VHDL Source Code
+.\src\half_adder_struct_hier.vhd=VHDL Source Code
+.\src\ha_test_tb.vhd=VHDL Source Code
+

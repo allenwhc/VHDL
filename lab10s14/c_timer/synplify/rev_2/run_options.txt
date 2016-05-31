@@ -1,0 +1,63 @@
+#-- Synopsys, Inc.
+#-- Version E-2011.03-SP2
+#-- Project file H:\ese382\lab10s14\c_timer\synplify\rev_2\run_options.txt
+
+#project files
+add_file -vhdl -lib work "../src/seconds_counter.vhd"
+add_file -vhdl -lib work "../src/timer.vhd"
+add_file -vhdl -lib work "../src/c_timer.vhd"
+add_file -vhdl -lib work "../src/minutes_counter.vhd"
+add_file -vhdl -lib work "../src/rotary_encoder_decoder_fsm.vhd"
+
+
+#implementation: "rev_2"
+impl -add rev_2 -type fpga
+
+#
+#implementation attributes
+
+set_option -vlog_std v2001
+set_option -project_relative_includes 1
+
+#device options
+set_option -technology LATTICE-XP
+set_option -part LFXP3C
+set_option -package T100C
+set_option -speed_grade -3
+set_option -part_companion ""
+
+#compilation/mapping options
+
+# mapper_options
+set_option -frequency 0
+set_option -write_verilog 0
+set_option -write_vhdl 1
+
+# Lattice XP
+set_option -maxfan 100
+set_option -disable_io_insertion 0
+set_option -retiming 0
+set_option -pipe 1
+set_option -forcegsr no
+set_option -fixgatedclocks 3
+set_option -fixgeneratedclocks 3
+set_option -update_models_cp 0
+
+# NFilter
+set_option -popfeed 0
+set_option -constprop 0
+set_option -createhierarchy 0
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "./rev_2/zhe shen.edn"
+impl -active "rev_2"

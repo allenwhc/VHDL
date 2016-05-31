@@ -1,0 +1,163 @@
+$WAVE4
+$RESOLUTION 1000
+$ENDTIME 1000000
+I 1 "c#9#STD_LOGICc9 UX01ZWLH-"
+$S 1 1 "/seq_sys_tb/load"
+$S 2 1 12 1 sen
+$S 3 1 12 0 clk
+$S 4 1 12 0 rst_bar
+I 2 "a#28#STD_LOGIC_VECTOR(7 downto 0)1 ricd7 0 c#9#STD_LOGICc9 UX01ZWLH-"
+$BUS S 5 2 8 12 0 d
+$SC 6-+7
+$S +1 1 12 0 serial_out
+$S +1 1 12 0 valid
+$S +1 1 12 0 sample_clk
+P 0 1-16 CS "0"
+$WAVES 1
+=0 T 0
+=1 D 0 1
+=2 T 80k
+=3 T 30k
+$VALUES
+V 4
+U
+0
+1
+0
+$END
+$WAVES 2
+*0
+*1
+=4 T 120k
+*3
+$VALUES
+V 4
+U
+0
+1
+0
+$END
+$WAVES 3
+*0
+R 1 100 =5 T 10k
+$VALUES
+R 2 50 0 1
+V 1
+0
+$END
+$WAVES 4
+*0
+*1
+=6 T 40k
+$VALUES
+V 3
+U
+0
+1
+$END
+$WAVES 6
+*0
+*1
+$VALUES
+V 2
+U
+0
+$END
+$WAVES 7
+*0
+*1
+$VALUES
+V 2
+U
+1
+$END
+$WAVES 8
+*0
+*1
+$VALUES
+V 2
+U
+0
+$END
+$WAVES 9
+*0
+*1
+$VALUES
+V 2
+U
+1
+$END
+$WAVES +1
+*0
+*1
+$VALUES
+V 2
+U
+0
+$END
+$WAVES +1
+*0
+*1
+$VALUES
+V 2
+U
+1
+$END
+$WAVES +1
+*0
+*1
+$VALUES
+V 2
+U
+0
+$END
+$WAVES +1
+*0
+*1
+$VALUES
+V 2
+U
+1
+$END
+$WAVES +1
+*0
+=7 D 10k 1
+=8 D 80k 1
+=9 D 40k 1
+R 1 6 =10 D 20k 1
+$VALUES
+V 1
+U
+R 2 4 0 1
+V 1
+0
+$END
+$WAVES +1
+*0
+=11 D 0 4
+=12 D 130k 3
+R 2 4 =13 D 160k 4 =14 D 20k 4
+$VALUES
+V 1
+U
+R 2 5 0 1
+$END
+$WAVES +1
+*0
+*11
+=15 D 140k 1
+R 1 15 *7
+=16 D 30k 1
+R 1 15 *7
+*16
+R 1 15 *7
+*16
+R 1 15 *7
+*16
+R 1 14 *7
+$VALUES
+V 1
+U
+R 2 40 0 1
+$END
+$ENDWAVE

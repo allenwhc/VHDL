@@ -1,0 +1,4 @@
+MESSAGE "File: h:\ese382\lab07s14\task1\src\converter_tb.vhd" 
+MESSAGE "Compile Entity "converter_tb"" 
+MESSAGE "Compile Architecture "behavior" of Entity "converter_tb"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]" 

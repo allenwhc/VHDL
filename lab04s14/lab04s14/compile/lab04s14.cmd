@@ -1,0 +1,1 @@
+-w -s "h:\ese382\lab04s14\library.cfg"  -j "h:\ese382\lab04s14\lab04s14\projlib.cfg"  -d "h:\ese382\lab04s14\lab04s14\compile"   -work lab04s14  -dbg -e 100 -2002 "h:\ese382\lab04s14\lab04s14\src\converter_case.vhd" "h:\ese382\lab04s14\lab04s14\src\converter_case_TB.vhd"

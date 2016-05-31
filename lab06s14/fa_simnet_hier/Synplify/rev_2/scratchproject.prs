@@ -1,0 +1,60 @@
+#-- Synopsys, Inc.
+#-- Version E-2011.03-SP2
+#-- Project file H:\ese382\lab06s14\fa_simnet_hier\Synplify\rev_2\scratchproject.prs
+
+#project files
+add_file -vhdl -lib work "H:/ese382/lab06s14/fa_simnet_hier/src/fa_test_tb.vhd"
+add_file -vhdl -lib work "H:/ese382/lab06s14/fa_simnet_hier/src/full_adder.vhd"
+add_file -vhdl -lib work "H:/ese382/lab06s14/fa_simnet_hier/src/ha_primitive_gates.vhd"
+add_file -vhdl -lib work "H:/ese382/lab06s14/fa_simnet_hier/src/half_adder_struct_hier.vhd"
+add_file -vhdl -lib work "H:/ese382/lab06s14/fa_simnet_hier/src/xor_2_struct.vhd"
+
+
+#implementation: "rev_2"
+impl -add H:\ese382\lab06s14\fa_simnet_hier\Synplify\rev_2 -type fpga
+
+#
+#implementation attributes
+
+set_option -vlog_std v2001
+set_option -project_relative_includes 1
+set_option -include_path {H:/ese382/lab06s14/fa_simnet_hier/Synplify/}
+
+#device options
+set_option -technology ispGAL
+set_option -part ispGAL22V10C
+set_option -package LJ
+set_option -speed_grade -10
+set_option -part_companion ""
+
+#compilation/mapping options
+
+# mapper_options
+set_option -frequency 0
+set_option -write_verilog 0
+set_option -write_vhdl 1
+
+# Lattice ispLSI1K/1KE
+set_option -disable_io_insertion 0
+
+# Lattice ispGAL
+set_option -areadelay 0
+
+# NFilter
+set_option -popfeed 0
+set_option -constprop 0
+set_option -createhierarchy 0
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "H:/ese382/lab06s14/fa_simnet_hier/Synplify/rev_2/fa.edf"
+impl -active "rev_2"

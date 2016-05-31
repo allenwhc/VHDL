@@ -1,0 +1,52 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=lab02bs14
+
+[Library]
+lab02bs14=.\lab02bs14.LIB
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+fileopenfolder=H:\ese382\lab02bs14\lab02bs14\ispLEVER
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=1
+
+[$LibMap$]
+lab02bs14=.
+Active_lib=
+
+[Files]
+/half_adder.vhq=-1
+/half_adder_tb.vhd=-1
+
+[Files.Data]
+.\src\half_adder.vhq=VHDL Source Code
+.\src\half_adder_tb.vhd=VHDL Source Code
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=testbench|behavior|0 
+ShowHide=ShowTopLevel
+Selected=

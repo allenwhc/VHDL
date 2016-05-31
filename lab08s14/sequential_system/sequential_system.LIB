@@ -1,0 +1,73 @@
+timestamp=1396980094563
+
+[counter]
+A/behavior=21|./src/counter.vhd|15|1*352143
+BinI32/behavior=3*128424
+I=0*17752
+I/behavior=0*30981
+M=11|0|v98|1396975271307|./src/counter.vhd|0*17365*0xa4dfdbe07f8bce317a50ff2ed7e8b7e8a5e212a0|0*17677*0xab32bc1a2daf049573e14469f634e0e6
+M/behavior=21|0|v98|1396980094349|./src/counter.vhd|0*30449*0xfc1b9f8e9dad5e64c99d69a747bd23205fcf57e3|0*30894*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/counter.vhd|5
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/behavior=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[dff_en]
+A/behavioral=21|./src/flipflop.vhd|14|1*351000
+BinI32/behavioral=3*127878
+I=0*4063
+I/behavioral=0*4522
+M=11|0|v98|1396973825704|./src/flipflop.vhd|0*3728*0xd09e07faf7282f0c0794e4931fe98c3f2bce9d10|0*3988*0xab32bc1a2daf049573e14469f634e0e6
+M/behavioral=21|0|v98|1396980094254|./src/flipflop.vhd|0*4163*0xbda7bba9ba38e03d48a17e4d5a769dee922fefa4|0*4433*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/flipflop.vhd|4
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/behavioral=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[right_shift_reg]
+A/behavior=21|./src/right_shift_reg.vhd|16|1*353911
+BinI32/behavior=3*129227
+I=0*6832
+I/behavior=0*7434
+M=11|0|v98|1396973825907|./src/right_shift_reg.vhd|0*6396*0x75f37c483396777a8a19584f34a6cd7e11aace7c|0*6741*0xab32bc1a2daf049573e14469f634e0e6
+M/behavior=21|0|v98|1396980094459|./src/right_shift_reg.vhd|0*6941*0xdb09155a7b6f241e2e24ff42e74ae7da13d71a12|0*7331*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/right_shift_reg.vhd|5
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/behavior=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[seq_sys]
+A/behavior=21|./src/seq_sys.vhd|28|1*345589
+BinI32/behavior=3*126413
+I=0*15196
+I/behavior=0*32627
+M=11|0|v98|1396974954980|./src/seq_sys.vhd|0*14477*0x721011ae249403ae8119d365992641679a799c8f|0*15121*0xab32bc1a2daf049573e14469f634e0e6
+M/behavior=21|0|v98|1396980094017|./src/seq_sys.vhd|0*32060*0x57cdb95aec00787cf50ca33db05211e86c8a8d7e|0*32540*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/seq_sys.vhd|5
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/behavior=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[seq_sys_tb]
+A/tb_architecture=21|./src/seq_sys_TB-2.vhd|11|1*348797
+BinI32/tb_architecture=3*127192
+I=0*1154
+I/tb_architecture=0*2044
+M=11|0|v98|1396962188732|./src/seq_sys_TB-2.vhd|0*906*0x07a38646deb78a996bedc1e495e08a0c387a29ec|0*1071*0xab32bc1a2daf049573e14469f634e0e6
+M/tb_architecture=21|0|v98|1396980094143|./src/seq_sys_TB-2.vhd|0*1258*0x27207e4775fe9fc1ab078185af3796ef39894761|0*1942*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/seq_sys_TB-2.vhd|8
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/tb_architecture=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[~A]
+ModifyID=1089
+Version=73
+
+[~MFT]
+0=168|0sequential_system.mgf|32627|25492
+1=356|1sequential_system.mgf|353911|345589
+3=344|3sequential_system.mgf|129227|126413
+
+[~U]
+counter=11|0*17144|
+dff_en=11|0*3532|
+right_shift_reg=11|0*6125|
+seq_sys=11|0*14183|
+seq_sys_tb=11|0*830|
+

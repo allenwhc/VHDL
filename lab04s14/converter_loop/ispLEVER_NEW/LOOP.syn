@@ -1,0 +1,10 @@
+JDF B
+// Created by Version 7.0 
+PROJECT LOOP
+DESIGN loop Normal
+DEVKIT ispGAL22V10C-10LJ
+ENTRY EDIF
+MODULE ..\rev_1\loop.edf
+MODSTYLE converter_loop Normal
+SYNTHESIS_TOOL Synplify
+TOPMODULE converter_loop

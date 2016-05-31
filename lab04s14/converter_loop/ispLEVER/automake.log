@@ -1,0 +1,24 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Updating: Hierarchy
+Start to record tcl script...
+Finished recording TCL script.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\edif2blf.exe -edf "..\rev_1\loop.edf" -jhd "loop.jhd" -err automake.err -log "loop.log" -prj loop -lib "C:\ispLEVER_Classic\ispcpld/dat/mach.edn" @"loop.esp" -nbx'
+
+Starting EDIF2BLIF....
+readEDIF ended normally.
+
+Inspect circuit converter_loop
+    Number of input ports   : 4
+    Number of output ports  : 4
+    Number of bidir ports   : 0
+    Number of instances     : 28
+    Number of nets          : 32
+
+No design errors found in circuit converter_loop
+
+WriteBLIF ended normally.
+
+Done: completed successfully.

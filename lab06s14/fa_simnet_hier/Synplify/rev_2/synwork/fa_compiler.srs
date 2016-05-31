@@ -1,0 +1,217 @@
+%%% protect protected_file
+@E
+@ 
+#
+#
+#
+# Created by Synplify VHDL Compiler version comp550rcp1, Build 072R from Synplicity, Inc.
+# Copyright (C) 1994-2011 Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+# Synthesis Netlist written on Tue Mar 25 09:49:57 2014
+#
+#
+#OPTIONS:"|-dfltencoding|sequential|-encrypt|-pro|-lite|-ll|2000|-ui|-fid2|-ram|-sharing|on|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\bin\\c_vhdl.exe":1306337548
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\location.map":1305913758
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\std.vhd":1304980548
+#CUR:"H:\\ese382\\lab06s14\\fa_simnet_hier\\src\\ha_primitive_gates.vhd":1395751833
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\std1164.vhd":1304980548
+#CUR:"H:\\ese382\\lab06s14\\fa_simnet_hier\\src\\xor_2_struct.vhd":1395752174
+#CUR:"H:\\ese382\\lab06s14\\fa_simnet_hier\\src\\half_adder_struct_hier.vhd":1395752565
+#CUR:"H:\\ese382\\lab06s14\\fa_simnet_hier\\src\\full_adder.vhd":1395753921
+#CUR:"H:\\ese382\\lab06s14\\fa_simnet_hier\\src\\fa_test_tb.vhd":1395753605
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\numeric.vhd":1304980548
+f "C:\Synopsys\fpga_E201103SP2\lib\vhd\std.vhd"; # file 0
+af .is_vhdl 1;
+f "H:\ese382\lab06s14\fa_simnet_hier\src\ha_primitive_gates.vhd"; # file 1
+af .is_vhdl 1;
+f "C:\Synopsys\fpga_E201103SP2\lib\vhd\std1164.vhd"; # file 2
+af .is_vhdl 1;
+f "H:\ese382\lab06s14\fa_simnet_hier\src\xor_2_struct.vhd"; # file 3
+af .is_vhdl 1;
+f "H:\ese382\lab06s14\fa_simnet_hier\src\half_adder_struct_hier.vhd"; # file 4
+af .is_vhdl 1;
+f "H:\ese382\lab06s14\fa_simnet_hier\src\full_adder.vhd"; # file 5
+af .is_vhdl 1;
+f "H:\ese382\lab06s14\fa_simnet_hier\src\fa_test_tb.vhd"; # file 6
+af .is_vhdl 1;
+f "C:\Synopsys\fpga_E201103SP2\lib\vhd\numeric.vhd"; # file 7
+af .is_vhdl 1;
+@E
+@ 
+ftell;
+@E@MR@.4:U::(.gU:RsIF	MRHPNR80DNVF
+I;N3PRHE#P84DR;P
+NR#3H_8PED;R4
+RNP3HFsolhNCHR"M;P"
+@HR@d4:j::ddcj:RRH4H
+4;N3HRs_0DFosHMCNlR4"H"
+;
+
+@FR@d4:4::ddc4:RRF4F
+4;N3HRs_0DFosHMCNlR4"F"b;
+R4@@::d(n(:d:R44HRMPFF4R44RH;R
+b@:@j4::44R:.0CskRk0sCsR0k
+C;b@R@j::44::4.NRVDR#CV#NDCNRVD;#C
+-y---------------------------------
+
+@ 
+ftell;
+@E@MR@c4:d::(c4d:4FRIsN	RM.8_R08NNFVDIN;
+PHR3#8PED;R4
+RNP3_H#PDE8R
+4;N3PRFosHhCNlRM"N8"_.;
+
+
+
+@HR@c4:6::dcc6:RRH4H
+4;N3HRs_0DFosHMCNlR4"H"
+;
+
+@HR@c4:n::dccn:RRH.H
+.;N3HRs_0DFosHMCNlR."H"
+;
+
+@FR@c4:(::dcc(:RRF4F
+4;N3HRs_0DFosHMCNlR4"F"b;
+Rj@@:44::.4:Rk0sCsR0k0CRs;kC
+@bR@4j::44::V.RNCD#RDVN#VCRNCD#;R
+b@:@466d:::6d4NdRMR8PFF4R44RHR;H.
+-y---------------------------------
+
+@ 
+ftell;
+@E@MR@64:g::(64g:jFRIsF	RsR_.8NN0VIDF;P
+NR#3HPDE8R
+4;N3PRHP#_ER8D4N;
+PFR3shHoNRlC"_Fs.
+";
+@HR@n4:4::dnc4:RRH4H
+4;N3HRs_0DFosHMCNlR4"H"
+;
+
+@HR@n4:.::dnc.:RRH.H
+.;N3HRs_0DFosHMCNlR."H"
+;
+
+@FR@n4:d::dncd:RRF4F
+4;N3HRs_0DFosHMCNlR4"F"b;
+Rj@@:44::.4:Rk0sCsR0k0CRs;kC
+@bR@4j::44::V.RNCD#RDVN#VCRNCD#;R
+b@:@4n(g:::ng4FcRsFPR44RFRRH4H
+.;y--------------------------------
+--@
+ 
+
+ftell;
+@E@MR@.d:U::(.4U:4FRIsG	RF.s_R08NNFVDIN;
+PHR3#8PED;R4
+RNP3_H#PDE8R
+4;N3PRFosHhCNlRF"Gs"_.;
+
+
+
+@HR@dd:j::ddcj:RRH4H
+4;N3HRs_0DFosHMCNlR4"H"
+;
+
+@HR@dd:4::ddc4:RRH.H
+.;N3HRs_0DFosHMCNlR."H"
+;
+
+@FR@dd:.::ddc.:RRF4F
+4;N3HRs_0DFosHMCNlR4"F"s;
+Rd@@::c44c.:4g:4RsIF	MRHPNR80DNVFkIRjSj
+HH4=4F
+S44=F_PHM;R
+s@:@dc4.:..:c:R4gI	FsRPHMR08NNFVDIjRk4H
+S4.=H
+4SF=_F.H;MP
+@sR@cd:d.:4::cd.I4RFRs	N_M8.NR80DNVFkIR4S4
+HH4=4H
+S..=F_PHM
+4SF=_F4N;M8
+@sR@cd:c.:4::cc.I4RFRs	N_M8.NR80DNVFkIR4S.
+HF4=4M_HPH
+S..=H
+4SF=_F.N;M8
+@sR@cd:64:4::c64IgRFRs	F.s_R08NNFVDI.Rk
+4SH=_F4N
+M8S=H.FN._MS8
+FF4=4b;
+Rj@@:44::.4:Rk0sCsR0k0CRs;kC
+@bR@4j::44::V.RNCD#RDVN#VCRNCD#;-
+y--------------------------------- 
+@
+ftell;
+@E@MR@.c:U::(.4U:nFRIsE	RN_DVNC88sNR80DNVF
+I;N3PRHE#P84DR;P
+NR#3H_8PED;R4
+RNP3HFsolhNCER"N_DVNC88s
+";
+@HR@dc:j::dddj:RNNR;H
+NR03sDs_FHNoMl"CRN
+";
+@HR@dc:4::ddd4:RLLR;H
+NR03sDs_FHNoMl"CRL
+";
+@FR@dc:.::dd6.:Rl#kRl#k;H
+NR03sDs_FHNoMl"CR#"kl;
+
+
+
+@FR@dc:d::dd4d:4NROs_s$FRk0OsNs$k_F0N;
+HsR30FD_sMHoNRlC"sONsF$_k;0"
+@sR@cc:4.:4::c4.I4RFRs	G_Fs.NR80DNVFkIRkS0
+HN4=
+.SH=SL
+F#4=k
+l;b@R@j::44::4.sR0k0CRsRkC0Csk;R
+b@:@j4::44R:.V#NDCNRVDR#CV#NDCb;
+Rc@@::c.4c.:.U:4R8NMPNROs_s$FRk0OsNs$k_F0RRNLy;
+---------------------------------@-
+ 
+
+
+
+ftell;
+@E@MR@.6:U::(.4U:nFRIsV	Rk_DDNC88skRVDND_8s8C;P
+NR#3HPDE8R
+4;N3PRHP#_ER8D4N;
+P#R3$VM_lRNb"sIF	"R\]\:\Cd#CU\.\DjNLnc#4\N\V_l#HM_C0EsHC\s\#OV\\NC_0#00_LE3P8
+\"I	FsR]\":C\\#UCd.D\\NnLj#\4c\_VN#MHlCE0_H\Cs\O#s\k\VDND_8s8C38PE\I"
+FRs	\:"]\#\CC.dU\N\DL#jn4\c\V#N_HClM0H_EC\s\#\sO\_ENblsHHP0HCN_o03C#P\E8"F
+Is\	R"\]:\CC#d\U.\LDNj4n#cV\\NH_#l0MC_CEHs#\\s\O\EVND_8N8C#s_0Osk0H_ECPs3E"8\
+sIF	"R\]\:\Cd#CU\.\DjNLnc#4\N\V_l#HM_C0EsHC\s\#OG\\F.s__s#0k3O0P\E8";
+"
+@HR@d6:j::dddj:RNNR;H
+NR03sDs_FHNoMl"CRN
+";
+@HR@d6:4::ddd4:RLLR;H
+NR03sDs_FHNoMl"CRL
+";
+@HR@d6:.::dd4.:jNROs_s$HOMRN$ss_;HM
+RNH3Ds0_HFsolMNCOR"N$ss_"HM;
+
+
+
+@FR@d6:d::dd6d:Rl#kRl#k;H
+NR03sDs_FHNoMl"CR#"kl;
+
+
+
+@FR@d6:c::dd4c:4NROs_s$FRk0OsNs$k_F0N;
+HsR30FD_sMHoNRlC"sONsF$_k;0"
+@sR@c6:(.:4::c(.InRFRs	EVND_8N8C8sRNV0NDRFIkS4
+N
+=NSOL=N$ss_
+HMSl#k=##_
+NSOs_s$F=k0O
+4;s@R@6U:c::4.c.U:nFRIsE	RN_DVNC88sNR80DNVFkIR.N
+S=##_
+=SLL#
+Sk#l=kSl
+OsNs$k_F0.=O;R
+b@:@j4::44R:.0CskRk0sCsR0k
+C;b@R@j::44::4.NRVDR#CV#NDCNRVD;#C
+@bR@c6:gd:4::cg.FjRsOPRN$ss_0FkRsONsF$_kO0R4.RO;;
+C

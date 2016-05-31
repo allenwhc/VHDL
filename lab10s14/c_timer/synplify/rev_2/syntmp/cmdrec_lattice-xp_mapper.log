@@ -1,0 +1,9 @@
+C:\Synopsys\fpga_E201103SP2\bin\m_gen_lattice.exe  -prodtype synplify_pro -encrypt  -pro  -part LFXP3C  -package T100C  -grade -3   -maxfan 100    -pipe -forcenogsr -fixgatedclocks 3 -fixgeneratedclocks 3    -ovhdl "zhe shen.vhm"  -flow mapping  -oedif  "H:\ese382\lab10s14\c_timer\synplify\rev_2\zhe shen.edn"  "H:\ese382\lab10s14\c_timer\synplify\rev_2\synwork\zhe shen_premapping.srd"  -devicelib  C:\Synopsys\fpga_E201103SP2\lib\lucent\xp.v  -ologparam  "H:\ese382\lab10s14\c_timer\synplify\rev_2\syntmp\zhe shen.plg"  -osyn  "H:\ese382\lab10s14\c_timer\synplify\rev_2\zhe shen.srm"  -prjdir H:\ese382\lab10s14\c_timer\synplify\  -log  "H:\ese382\lab10s14\c_timer\synplify\rev_2\synlog\zhe shen_LATTICE-XP_Mapper.srr" 
+rc:1 success:1
+H:\ese382\lab10s14\c_timer\synplify\rev_2\zhe shen.edn|o|1398186761|80690
+H:\ese382\lab10s14\c_timer\synplify\rev_2\synwork\zhe shen_premapping.srd|i|1398186758|12961
+C:\Synopsys\fpga_E201103SP2\lib\lucent\xp.v|i|1304989760|51463
+"H:\ese382\lab10s14\c_timer\synplify\rev_2\syntmp\zhe shen.plg"|o|0|0
+H:\ese382\lab10s14\c_timer\synplify\rev_2\zhe shen.srm|o|1398186761|78978
+H:\ese382\lab10s14\c_timer\synplify\rev_2\synlog\zhe shen_LATTICE-XP_Mapper.srr|o|1398186762|24522
+C:\Synopsys\fpga_E201103SP2\bin\m_gen_lattice.exe|i|1305649324|18587648

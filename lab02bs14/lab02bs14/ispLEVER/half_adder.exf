@@ -1,0 +1,12 @@
+Section Cross Reference File
+Design 'half_adder' created Tue Feb 18 08:56:52 2014
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     a
+        Input     b
+        Output     sum
+        Output     carry_out
+End

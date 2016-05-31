@@ -1,0 +1,79 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=casadedDownCounter
+
+[Library]
+casadedDownCounter=.\casadedDownCounter\casadedDownCounter.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+fileopenfolder=C:\Users\ALLEN\Desktop
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+casadedDownCounter=.
+Active_lib=
+
+[Files]
+/seconds_counter.vhd=-1
+/seconds_counter_TB.vhd=-1
+/minutes_counter.vhd=-1
+/minutes_counter_TB.vhd=-1
+/min_countup.asdb=-1
+/min_countup.awc=-1
+/cascaded_counters.vhd=-1
+/cascaded_counters_TB.vhd=-1
+/rotary_encoder_decoder_fsm.vhd=-1
+/rotary_encoder_decoder_fsm_TB.vhd=-1
+/cascaded_counter.asdb=-1
+/cascaded_counter.awc=-1
+/settable_counters.vhd=-1
+/settable_counters2_TB.vhd=-1
+/rotary.asdb=-1
+/rotary.awc=-1
+/settable counter.asdb=-1
+/settable counter.awc=-1
+
+[Files.Data]
+.\src\seconds_counter.vhd=VHDL Source Code
+.\src\seconds_counter_TB.vhd=VHDL Source Code
+.\src\minutes_counter.vhd=VHDL Source Code
+.\src\minutes_counter_TB.vhd=VHDL Source Code
+.\src\min_countup.asdb=Accelerated Waveform File
+.\src\min_countup.awc=Accelerated Waveform Configuration
+.\src\cascaded_counters.vhd=VHDL Source Code
+.\src\cascaded_counters_TB.vhd=VHDL Source Code
+.\src\rotary_encoder_decoder_fsm.vhd=VHDL Source Code
+.\src\rotary_encoder_decoder_fsm_TB.vhd=VHDL Source Code
+.\src\cascaded_counter.asdb=Accelerated Waveform File
+.\src\cascaded_counter.awc=Accelerated Waveform Configuration
+.\src\settable_counters.vhd=VHDL Source Code
+.\src\settable_counters2_TB.vhd=VHDL Source Code
+
+.\src\rotary.asdb=Accelerated Waveform File
+.\src\rotary.awc=Accelerated Waveform Configuration
+.\src\settable counter.asdb=Accelerated Waveform File
+.\src\settable counter.awc=Accelerated Waveform Configuration

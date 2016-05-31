@@ -1,0 +1,17 @@
+[General]
+CurrentVersion=103
+
+[COMPILESTATUS|.\src\BinaryToBCD.vhd]
+FileTimeLow=30358850
+Status=Compiled
+
+[CACHEDOC|Aldec.Project.Generic.7|.\BinaryToBCD\BinaryToBCD.adf|]
+Path=
+
+[COMPILESTATUS|.\src\converter_loop_TB.vhd]
+FileTimeLow=30357425
+
+[COMPILESTATUS|.\src\BinaryToBCD_TB.vhd]
+FileTimeLow=30358850
+Status=Compiled
+

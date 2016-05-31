@@ -1,0 +1,16 @@
+Section Cross Reference File
+Design 'selected' created Tue Feb 25 11:26:14 2014
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     p
+        Input     q
+        Input     r
+        Input     s
+        Output     a
+        Output     b
+        Output     c
+        Output     d
+End

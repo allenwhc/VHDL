@@ -1,0 +1,1 @@
+-src task3.tt4 -type PLA -devfile "C:/ispLEVER_Classic/ispcpld/dat/mach4a/mach463ace.dev" -postfit -lci task3.lco

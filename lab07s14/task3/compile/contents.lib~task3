@@ -1,0 +1,5 @@
+16
+~E 1 "./src/fuel_encoder.vhd" 28 fuel_encoder
+~A 1 "./src/fuel_encoder.vhd" 38 fuel_encoder
+~E 1 "./src/fuel_tb.vhd" 8 fuel_tb
+~A 1 "./src/fuel_tb.vhd" 11 tb_architecture

@@ -1,0 +1,63 @@
+
+Starting:    C:\Synopsys\fpga_E201103SP2\bin\mbin\synplify.exe
+Install:     C:\Synopsys\fpga_E201103SP2
+Date:        Tue Apr 01 09:50:06 2014
+Version:     E-2011.03-SP2
+
+Arguments:   -product synplify_pro h:/ese382/lab07s14/task3/synthesis/command.prj
+ProductType: synplify_pro
+
+License checkout: synplifypremierdp
+License: synplifypremierdp from server 192.168.82.9 (Using premium license)
+Licensed Vendor: All FPGA
+License Feature: ident
+
+
+
+
+log file: "H:\ese382\lab07s14\task3\synthesis\fuel_encoder\fuel_encoder.srr"
+
+
+Running command|fuel_encoder
+
+Running Premap Flow on command|fuel_encoder
+
+Running Compile Flow on command|fuel_encoder
+
+Running HDL Compile on command|fuel_encoder
+
+compiler Completed
+Return Code: 0
+
+Run Time:00:00:01
+
+Copied H:\ese382\lab07s14\task3\synthesis\fuel_encoder\synwork\fuel_encoder_compiler.srs to H:\ese382\lab07s14\task3\synthesis\fuel_encoder\fuel_encoder.srl
+
+Copied H:\ese382\lab07s14\task3\synthesis\fuel_encoder\synwork\fuel_encoder_compiler.srs to H:\ese382\lab07s14\task3\synthesis\fuel_encoder\fuel_encoder.srs
+
+Job flow Compile Flow completed on command|fuel_encoder
+
+
+Job flow Premap Flow completed on command|fuel_encoder
+
+
+Running Mapping Flow on command|fuel_encoder
+
+Running Mapping on command|fuel_encoder
+
+ISPGAL Mapper Completed
+Return Code: 0
+
+Run Time:00:00:01
+
+Job flow Mapping Flow completed on command|fuel_encoder
+
+
+Job flow Synthesis completed on command|fuel_encoder
+
+
+exit status=0
+
+
+License checkin: synplifypremierdp
+

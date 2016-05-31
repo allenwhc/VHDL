@@ -1,0 +1,185 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Updating: VHDL Post-Route Simulation Model
+Start to record tcl script...
+Finished recording TCL script.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\edif2blf.exe -edf "..\synplify\rev_1\ha_mixed.edf" -out "ha_mixed.bl0" -err automake.err -log "ha_mixed.log" -prj ha_mixed -lib "C:\ispLEVER_Classic\ispcpld/dat/mach.edn" @"ha_mixed.esp" -nbx -cvt YES'
+
+Starting EDIF2BLIF....
+readEDIF ended normally.
+
+Inspect circuit ha_mixed
+    Number of input ports   : 2
+    Number of output ports  : 2
+    Number of bidir ports   : 0
+    Number of instances     : 6
+    Number of nets          : 8
+
+No design errors found in circuit ha_mixed
+
+WriteBLIF ended normally.
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\blif2eqn.exe ha_mixed.bl0 -o ha_mixed.btp -template "C:\ispLEVER_Classic\ispcpld/pld/j2mod.tft" -testfix -bus rebuild -prj ha_mixed -err automake.err'
+
+BLIF2EQN  Open-ABEL Report Generator
+ispLEVER Classic 7.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\iblifopt.exe "ha_mixed.bl0" -red bypin choose -collapse -pterms 8 -family -err automake.err -gui'
+
+BLIFOPT  Open-ABEL Optimizer 
+ispLEVER Classic 7.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+U.C. Berkeley, SIS Ver. 1.0, supported by Lattice Semiconductor Corp.
+Reading Open-ABEL 2 file ha_mixed.bl0...
+Node a_c has been collapsed.
+Node b_c has been collapsed.
+Node sum_c has been collapsed.
+Node carry_out_c has been collapsed.
+Performing 'bypin choose' optimization...
+Writing Open-ABEL 2 (BLIF) file ha_mixed.bl1...
+
+BLIFOPT complete - 0 errors, 0 warnings. Time: 1 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\iblflink.exe "ha_mixed.bl1" -o "ha_mixed.bl2" -omod ha_mixed -family -err automake.err -gui'
+
+BLIFLINK  Top-Down Design Linker
+ispLEVER Classic 7.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+
+Top-level file: 'ha_mixed.bl1'
+
+Hierarchical BLIF: 'ha_mixed.bl2'
+
+BLIFLINK complete.  Time: 1 second 
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\iblifopt.exe ha_mixed.bl2 -red bypin choose -sweep -collapse all -pterms 8 -err automake.err -gui'
+
+BLIFOPT  Open-ABEL Optimizer 
+ispLEVER Classic 7.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+U.C. Berkeley, SIS Ver. 1.0, supported by Lattice Semiconductor Corp.
+Reading Open-ABEL 2 file ha_mixed.bl2...
+Performing 'bypin choose' optimization...
+Writing Open-ABEL 2 (BLIF) file ha_mixed.bl3...
+
+BLIFOPT complete - 0 errors, 0 warnings. Time: 1 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\idiofft.exe ha_mixed.bl3 -pla -o ha_mixed.tt2 -dev p22v10gc -define N -err automake.err -gui'
+
+DIOFFT  Flip-Flop Transformation program
+ispLEVER Classic 7.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+Input file: ha_mixed.bl3.
+Output file: ha_mixed.tt2.
+Cross reference file: ha_mixed.xrf.
+
+Shortening signal names...
+Writing signal name cross reference file ha_mixed.xrf... 
+
+DIOFFT complete. - Time 0 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\fit.exe ha_mixed.tt2 -dev p22v10gc -str -err automake.err -gui'
+
+FIT  Generic Device Fitter
+ispLEVER Classic 7.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+Input file: 'ha_mixed.tt2'
+Device 'p22v10gc'
+Design FITS
+Pin-assigned pla: 'ha_mixed.tt3'
+
+FIT complete.  Time: 1 second.
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\fuseasm.exe ha_mixed.tt3 -dev p22v10gc -o ha_mixed.jed -ivec NoInput.tmv -rep ha_mixed.rpt -doc brief -con ptblown -for brief -err automake.err -gui'
+
+FUSEASM  Fusemap Assembler
+ispLEVER Classic 7.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+Note 5144: Could not open vector file NoInput.tmv
+
+Input file: 'ha_mixed.tt3'
+Device: 'P22V10GC'
+Building model...
+Choosing best polarities...
+Mapping equations...
+.
+5 of 132 terms used; 0 vectors loaded
+Programmer load file: 'ha_mixed.jed'
+Generating report...
+Report file: 'ha_mixed.rpt'
+
+FUSEASM complete.  Time: 1 second 
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\timsel.exe @ha_mixed.psl'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\chipsim.exe "ha_mixed._sp" "ha_mixed.vtd" none'
+
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\j2svhdl.exe ha_mixed.jed -dly custom ha_mixed.tim max -pldbus default ha_mixed.btp -o ha_mixed.vhq -module ha_mixed -suppress -err automake.err -gui'
+
+JED2VHDL  JEDEC to IEEE1076 VHDL Model Builder
+ispLEVER Classic 7.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+
+JEDEC file: 'ha_mixed.jed'
+Device: 'P22V10GC'
+Module Name: ha_mixed
+Reading JEDEC Input File
+Extracting PLD Circuit Model
+BUS template file: 'ha_mixed.btp' 
+.
+Input file: ha_mixed.tim
+Local timing delay file: 'ha_mixed.tim' 
+Delay Model Selected :MAX
+Total FF type(s) used= 1
+VHDL pldmodel file    : 'ha_mixed.vhq'
+
+JED2VHDL complete. Time: 1 second 
+Done: completed successfully.

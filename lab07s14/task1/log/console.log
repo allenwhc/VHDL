@@ -1,0 +1,46 @@
+acom -dbg -work task1 -2002  $dsn/src/converter_tb.vhd
+# Compile...
+# File: h:\ese382\lab07s14\task1\src\converter_tb.vhd
+# Compile Entity "converter_tb"
+# Compile Architecture "behavior" of Entity "converter_tb"
+# Error: COMP96_0078: converter_tb.vhd : (49, 13): Unknown identifier "d".
+# Error: COMP96_0078: converter_tb.vhd : (49, 15): Unknown identifier "c".
+# Error: COMP96_0078: converter_tb.vhd : (49, 17): Unknown identifier "b".
+# Error: COMP96_0078: converter_tb.vhd : (49, 19): Unknown identifier "a".
+# Error: COMP96_0078: converter_tb.vhd : (49, 23): Unknown identifier "p".
+# Error: COMP96_0078: converter_tb.vhd : (49, 25): Unknown identifier "q".
+# Error: COMP96_0078: converter_tb.vhd : (49, 27): Unknown identifier "r".
+# Error: COMP96_0078: converter_tb.vhd : (49, 29): Unknown identifier "s".
+# Error: COMP96_0133: converter_tb.vhd : (49, 13): Cannot find object declaration.
+# Error: COMP96_0077: converter_tb.vhd : (49, 11): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: converter_tb.vhd : (52, 13): Unknown identifier "d".
+# Error: COMP96_0078: converter_tb.vhd : (52, 15): Unknown identifier "c".
+# Error: COMP96_0078: converter_tb.vhd : (52, 17): Unknown identifier "b".
+# Error: COMP96_0078: converter_tb.vhd : (52, 19): Unknown identifier "a".
+# Error: COMP96_0133: converter_tb.vhd : (52, 13): Cannot find object declaration.
+# Error: COMP96_0077: converter_tb.vhd : (52, 11): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: converter_tb.vhd : (55, 13): Unknown identifier "d".
+# Error: COMP96_0078: converter_tb.vhd : (55, 23): Unknown identifier "c".
+# Error: COMP96_0078: converter_tb.vhd : (55, 33): Unknown identifier "b".
+# Error: COMP96_0078: converter_tb.vhd : (55, 43): Unknown identifier "a".
+# Error: COMP96_0133: converter_tb.vhd : (55, 43): Cannot find object declaration.
+# Error: COMP96_0133: converter_tb.vhd : (55, 13): Cannot find object declaration.
+# Error: COMP96_0077: converter_tb.vhd : (55, 11): Undefined type of expression. Expected type 'BOOLEAN'.
+# Compile failure 23 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -dbg -work task1 -2002  $dsn/src/converter_tb.vhd
+# Compile...
+# File: h:\ese382\lab07s14\task1\src\converter_tb.vhd
+# Compile Entity "converter_tb"
+# Compile Architecture "behavior" of Entity "converter_tb"
+# Error: COMP96_0078: converter_tb.vhd : (37, 76): Unknown identifier "c".
+# Error: COMP96_0113: converter_tb.vhd : (37, 76): Positional associations must precede named associations.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -dbg -work task1 -2002  $dsn/src/converter_tb.vhd
+# Compile...
+# File: h:\ese382\lab07s14\task1\src\converter_tb.vhd
+# Compile Entity "converter_tb"
+# Compile Architecture "behavior" of Entity "converter_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# Design: Design "task2" has been set as active.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].

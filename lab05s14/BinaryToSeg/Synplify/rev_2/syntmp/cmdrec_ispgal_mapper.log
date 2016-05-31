@@ -1,0 +1,9 @@
+C:\Synopsys\fpga_E201103SP2\bin\m_cpld.exe  -prodtype synplify_pro -encrypt  -pro  -part ispGAL22V10C  -package LJ  -grade -10   -areadelay 0 -minc    -ovhdl "binary2seg.vhm"  -oedif  H:\ese382\lab05s14\BinaryToSeg\Synplify\rev_2\binary2seg.edf  H:\ese382\lab05s14\BinaryToSeg\Synplify\rev_2\binary2seg.srs  -devicelib  C:\Synopsys\fpga_E201103SP2\lib\cpld\lattice.v  -ologparam  H:\ese382\lab05s14\BinaryToSeg\Synplify\rev_2\syntmp\binary2seg.plg  -osyn  H:\ese382\lab05s14\BinaryToSeg\Synplify\rev_2\binary2seg.srm  -prjdir H:\ese382\lab05s14\BinaryToSeg\Synplify\  -log  H:\ese382\lab05s14\BinaryToSeg\Synplify\rev_2\synlog\binary2seg_ispGAL_Mapper.srr 
+rc:0 success:1
+H:\ese382\lab05s14\BinaryToSeg\Synplify\rev_2\binary2seg.edf|o|1394557057|50184
+H:\ese382\lab05s14\BinaryToSeg\Synplify\rev_2\binary2seg.srs|i|1394557054|8156
+C:\Synopsys\fpga_E201103SP2\lib\cpld\lattice.v|i|1304989762|210380
+H:\ese382\lab05s14\BinaryToSeg\Synplify\rev_2\syntmp\binary2seg.plg|o|1394557057|0
+H:\ese382\lab05s14\BinaryToSeg\Synplify\rev_2\binary2seg.srm|o|1394557057|15872
+H:\ese382\lab05s14\BinaryToSeg\Synplify\rev_2\synlog\binary2seg_ispGAL_Mapper.srr|o|1394557057|934
+C:\Synopsys\fpga_E201103SP2\bin\m_cpld.exe|i|1305649316|8888320

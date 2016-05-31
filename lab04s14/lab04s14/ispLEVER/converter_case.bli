@@ -1,0 +1,55 @@
+#$ DATE Wed Mar 05 14:59:21 2014
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE converter_case
+#$ PINS 8 p:3'ke'  q:4'ke'  r:5'ke'  s:6'ke'  a:24'ke'  b:25'ke'  c:26'ke'  d:27'ke' 
+#$ NODES 17 condition_3__n N_9 N_10 N_12 p_i q_i r_i p_c q_c r_c \
+#  a_c N_12_i condition_i_3__n N_7_i N_9_i N_10_i N_5_i 
+.model converter_case
+.inputs p.BLIF q.BLIF r.BLIF s.BLIF condition_3__n.BLIF N_9.BLIF N_10.BLIF N_12.BLIF p_i.BLIF \
+  q_i.BLIF r_i.BLIF p_c.BLIF q_c.BLIF r_c.BLIF a_c.BLIF N_12_i.BLIF condition_i_3__n.BLIF N_7_i.BLIF \
+  N_9_i.BLIF N_10_i.BLIF N_5_i.BLIF  
+.outputs a b c d condition_3__n N_9 N_10 N_12 p_i q_i r_i \
+  p_c q_c r_c a_c N_12_i condition_i_3__n N_7_i N_9_i N_10_i N_5_i
+.names  p.BLIF p_c
+1 1
+.names  q.BLIF q_c
+1 1
+.names  r.BLIF r_c
+1 1
+.names  s.BLIF a_c
+1 1
+.names  a_c.BLIF a
+1 1
+.names  N_5_i.BLIF b
+1 1
+.names  N_7_i.BLIF c
+1 1
+.names  condition_3__n.BLIF d
+1 1
+.names  N_12.BLIF N_12_i
+0 1
+.names  condition_3__n.BLIF condition_i_3__n
+0 1
+.names  N_9.BLIF N_9_i
+0 1
+.names  N_10.BLIF N_10_i
+0 1
+.names  p_c.BLIF r_c.BLIF N_9
+11 1
+.names  r_c.BLIF r_i
+0 1
+.names  p_i.BLIF r_i.BLIF N_10
+11 1
+.names  q_c.BLIF r_c.BLIF condition_3__n
+11 1
+.names  p_c.BLIF p_i
+0 1
+.names  q_c.BLIF q_i
+0 1
+.names  p_i.BLIF q_i.BLIF N_12
+11 1
+.names  N_9_i.BLIF N_10_i.BLIF N_5_i
+11 1
+.names  N_12_i.BLIF condition_i_3__n.BLIF N_7_i
+11 1
+.end

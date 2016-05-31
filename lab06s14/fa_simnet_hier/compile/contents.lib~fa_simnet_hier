@@ -1,0 +1,15 @@
+409
+~E 1 "./src/ha_primitive_gates.vhd" 43 and_2
+~A 1 "./src/ha_primitive_gates.vhd" 51 dataflow
+~E 1 "./src/untitled.vhq" 33 full_adder
+~A 1 "./src/untitled.vhq" 96 structure
+~E 1 "./src/fa_test_tb.vhd" 29 ha_mixed_tb
+~A 1 "./src/fa_test_tb.vhd" 34 behavior
+~E 1 "./src/half_adder_struct_hier.vhd" 28 half_adder
+~A 1 "./src/half_adder_struct_hier.vhd" 39 dataflow
+~E 1 "./src/ha_primitive_gates.vhd" 28 inv
+~A 1 "./src/ha_primitive_gates.vhd" 35 dataflow
+~E 1 "./src/ha_primitive_gates.vhd" 59 or_2
+~A 1 "./src/ha_primitive_gates.vhd" 67 dataflow
+~E 1 "./src/xor_2_struct.vhd" 28 xor_2
+~A 1 "./src/xor_2_struct.vhd" 38 dataflow

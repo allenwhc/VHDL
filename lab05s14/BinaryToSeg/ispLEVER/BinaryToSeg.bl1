@@ -1,0 +1,480 @@
+#$ TOOL ispLEVER Classic 7.0.00.10.16.07
+#$ DATE Tue Mar 11 13:41:55 2014
+#$ MODULE binarytoseg
+#$ PINS 20 binary_5_:2'ke'  seven_seg0_6_:8'ke'  seven_seg1_6_:30'ke'  binary_4_:3'ke'  \
+#  binary_3_:4'ke'  binary_2_:5'ke'  binary_1_:6'ke'  binary_0_:7'ke'  seven_seg0_5_:37'ke'  \
+#  seven_seg0_4_:39'ke'  seven_seg0_3_:43'ke'  seven_seg0_2_:24'ke'  seven_seg0_1_:9'ke'  \
+#  seven_seg0_0_:41'ke'  seven_seg1_5_:17'ke'  seven_seg1_4_:26'ke'  seven_seg1_3_:21'ke'  \
+#  seven_seg1_2_:15'ke'  seven_seg1_1_:19'ke'  seven_seg1_0_:42'ke' 
+#$ NODES 142 convert_seven_seg013_n convert_seven_seg17_n un4_temp1_3__n \
+#  output_10_2_ G_114 output_15_0_ output_15_2__n output_1_ seven_seg0_1_6__n \
+#  seven_seg0_1_5__n seven_seg0_1_0__n seven_seg1_1_0__n seven_seg1_1_3__n \
+#  seven_seg1_1_4__n N_128 N_145 G_111 G_128 N_105 N_122 output_10_0_ output_10_1__n N_139 \
+#  output_15_1__n N_155 G_131 convert_un30_n convert_un31_n N_172 N_183 G_112 G_129 G_94 \
+#  output_2__n output_3__n N_29 N_44 N_45 N_55 N_193 convert_un1_i_n N_81 N_95 \
+#  convert_un37_n convert_un40_n N_6 N_7 convert_un38_n N_20 N_19 N_21 N_25 \
+#  convert_un38_1_n N_24_1 binary_i_0_0__n N_81_i un4_temp1_i_3__n N_172_i \
+#  un12_temp1_i_0_3__n N_183_i un20_temp1_i_i_1__n un12_temp1_i_i_1__n \
+#  un4_temp1_i_i_1__n binary_c_0__n binary_c_1__n binary_c_2__n binary_c_3__n \
+#  binary_c_4__n binary_c_5__n N_18_i N_25_i N_24_1_i N_16_i convert_seven_seg013_i_n \
+#  N_21_i output_i_3__n convert_un38_i_n output_i_2__n output_i_1__n \
+#  convert_un38_1_i_n N_19_i N_20_i N_14_i seven_seg0_1_0_0__n N_7_i N_6_i \
+#  seven_seg0_1_0_6__n convert_un40_i_n convert_un37_i_n N_193_0 N_95_i \
+#  convert_un42_i_n N_55_i convert_un1_i_i_n convert_seven_seg17_i_n N_45_i \
+#  seven_seg1_1_0_4__n N_44_i seven_seg1_1_0_3__n N_39_i N_37_i seven_seg1_1_0_0__n \
+#  N_29_i N_28_i convert_un31_i_n convert_un30_i_n un20_temp1_i_3__n N_155_i \
+#  output_15_i_0__n binary_c_i_1__n N_139_0 output_10_i_0__n binary_c_i_2__n N_122_0 \
+#  binary_c_i_3__n binary_c_i_4__n N_105_0 N_45_1 N_81_1 N_21_1 N_16_i_1 N_16_i_2 \
+#  N_18_i_1 G_128_1 output_1_1_ G_111_1 output_15_1_0_ output_10_1__un3_n \
+#  output_10_1__un1_n output_10_1__un0_n output_15_1__un3_n output_15_1__un1_n \
+#  output_15_1__un0_n output_15_2__un3_n output_15_2__un1_n output_15_2__un0_n \
+#  output_2__un3_n output_2__un1_n output_2__un0_n output_3__un3_n output_3__un1_n \
+#  output_3__un0_n
+.model binarytoseg
+.inputs binary_5_.BLIF binary_4_.BLIF binary_3_.BLIF binary_2_.BLIF \
+binary_1_.BLIF binary_0_.BLIF convert_seven_seg013_n.BLIF \
+convert_seven_seg17_n.BLIF un4_temp1_3__n.BLIF output_10_2_.BLIF G_114.BLIF \
+output_15_0_.BLIF output_15_2__n.BLIF output_1_.BLIF seven_seg0_1_6__n.BLIF \
+seven_seg0_1_5__n.BLIF seven_seg0_1_0__n.BLIF seven_seg1_1_0__n.BLIF \
+seven_seg1_1_3__n.BLIF seven_seg1_1_4__n.BLIF N_128.BLIF N_145.BLIF G_111.BLIF \
+G_128.BLIF N_105.BLIF N_122.BLIF output_10_0_.BLIF output_10_1__n.BLIF \
+N_139.BLIF output_15_1__n.BLIF N_155.BLIF G_131.BLIF convert_un30_n.BLIF \
+convert_un31_n.BLIF N_172.BLIF N_183.BLIF G_112.BLIF G_129.BLIF G_94.BLIF \
+output_2__n.BLIF output_3__n.BLIF N_29.BLIF N_44.BLIF N_45.BLIF N_55.BLIF \
+N_193.BLIF convert_un1_i_n.BLIF N_81.BLIF N_95.BLIF convert_un37_n.BLIF \
+convert_un40_n.BLIF N_6.BLIF N_7.BLIF convert_un38_n.BLIF N_20.BLIF N_19.BLIF \
+N_21.BLIF N_25.BLIF convert_un38_1_n.BLIF N_24_1.BLIF binary_i_0_0__n.BLIF \
+N_81_i.BLIF un4_temp1_i_3__n.BLIF N_172_i.BLIF un12_temp1_i_0_3__n.BLIF \
+N_183_i.BLIF un20_temp1_i_i_1__n.BLIF un12_temp1_i_i_1__n.BLIF \
+un4_temp1_i_i_1__n.BLIF binary_c_0__n.BLIF binary_c_1__n.BLIF \
+binary_c_2__n.BLIF binary_c_3__n.BLIF binary_c_4__n.BLIF binary_c_5__n.BLIF \
+N_18_i.BLIF N_25_i.BLIF N_24_1_i.BLIF N_16_i.BLIF \
+convert_seven_seg013_i_n.BLIF N_21_i.BLIF output_i_3__n.BLIF \
+convert_un38_i_n.BLIF output_i_2__n.BLIF output_i_1__n.BLIF \
+convert_un38_1_i_n.BLIF N_19_i.BLIF N_20_i.BLIF N_14_i.BLIF \
+seven_seg0_1_0_0__n.BLIF N_7_i.BLIF N_6_i.BLIF seven_seg0_1_0_6__n.BLIF \
+convert_un40_i_n.BLIF convert_un37_i_n.BLIF N_193_0.BLIF N_95_i.BLIF \
+convert_un42_i_n.BLIF N_55_i.BLIF convert_un1_i_i_n.BLIF \
+convert_seven_seg17_i_n.BLIF N_45_i.BLIF seven_seg1_1_0_4__n.BLIF N_44_i.BLIF \
+seven_seg1_1_0_3__n.BLIF N_39_i.BLIF N_37_i.BLIF seven_seg1_1_0_0__n.BLIF \
+N_29_i.BLIF N_28_i.BLIF convert_un31_i_n.BLIF convert_un30_i_n.BLIF \
+un20_temp1_i_3__n.BLIF N_155_i.BLIF output_15_i_0__n.BLIF binary_c_i_1__n.BLIF \
+N_139_0.BLIF output_10_i_0__n.BLIF binary_c_i_2__n.BLIF N_122_0.BLIF \
+binary_c_i_3__n.BLIF binary_c_i_4__n.BLIF N_105_0.BLIF N_45_1.BLIF N_81_1.BLIF \
+N_21_1.BLIF N_16_i_1.BLIF N_16_i_2.BLIF N_18_i_1.BLIF G_128_1.BLIF \
+output_1_1_.BLIF G_111_1.BLIF output_15_1_0_.BLIF output_10_1__un3_n.BLIF \
+output_10_1__un1_n.BLIF output_10_1__un0_n.BLIF output_15_1__un3_n.BLIF \
+output_15_1__un1_n.BLIF output_15_1__un0_n.BLIF output_15_2__un3_n.BLIF \
+output_15_2__un1_n.BLIF output_15_2__un0_n.BLIF output_2__un3_n.BLIF \
+output_2__un1_n.BLIF output_2__un0_n.BLIF output_3__un3_n.BLIF \
+output_3__un1_n.BLIF output_3__un0_n.BLIF
+.outputs seven_seg0_6_ seven_seg1_6_ seven_seg0_5_ seven_seg0_4_ seven_seg0_3_ \
+seven_seg0_2_ seven_seg0_1_ seven_seg0_0_ seven_seg1_5_ seven_seg1_4_ \
+seven_seg1_3_ seven_seg1_2_ seven_seg1_1_ seven_seg1_0_ convert_seven_seg013_n \
+convert_seven_seg17_n un4_temp1_3__n output_15_2__n seven_seg0_1_6__n \
+seven_seg0_1_5__n seven_seg0_1_0__n seven_seg1_1_0__n seven_seg1_1_3__n \
+seven_seg1_1_4__n N_128 N_145 N_105 N_122 output_10_1__n N_139 output_15_1__n \
+N_155 convert_un30_n convert_un31_n N_172 N_183 output_2__n output_3__n N_29 \
+N_44 N_45 N_55 N_193 convert_un1_i_n N_81 N_95 convert_un37_n convert_un40_n \
+N_6 N_7 convert_un38_n N_20 N_19 N_21 N_25 convert_un38_1_n N_24_1 \
+binary_i_0_0__n N_81_i un4_temp1_i_3__n N_172_i un12_temp1_i_0_3__n N_183_i \
+un20_temp1_i_i_1__n un12_temp1_i_i_1__n un4_temp1_i_i_1__n binary_c_0__n \
+binary_c_1__n binary_c_2__n binary_c_3__n binary_c_4__n binary_c_5__n N_18_i \
+N_25_i N_24_1_i N_16_i convert_seven_seg013_i_n N_21_i output_i_3__n \
+convert_un38_i_n output_i_2__n output_i_1__n convert_un38_1_i_n N_19_i N_20_i \
+N_14_i seven_seg0_1_0_0__n N_7_i N_6_i seven_seg0_1_0_6__n convert_un40_i_n \
+convert_un37_i_n N_193_0 N_95_i convert_un42_i_n N_55_i convert_un1_i_i_n \
+convert_seven_seg17_i_n N_45_i seven_seg1_1_0_4__n N_44_i seven_seg1_1_0_3__n \
+N_39_i N_37_i seven_seg1_1_0_0__n N_29_i N_28_i convert_un31_i_n \
+convert_un30_i_n un20_temp1_i_3__n N_155_i output_15_i_0__n binary_c_i_1__n \
+N_139_0 output_10_i_0__n binary_c_i_2__n N_122_0 binary_c_i_3__n \
+binary_c_i_4__n N_105_0 N_45_1 N_81_1 N_21_1 N_16_i_1 N_16_i_2 N_18_i_1 \
+output_10_1__un3_n output_10_1__un1_n output_10_1__un0_n output_15_1__un3_n \
+output_15_1__un1_n output_15_1__un0_n output_15_2__un3_n output_15_2__un1_n \
+output_15_2__un0_n output_2__un3_n output_2__un1_n output_2__un0_n \
+output_3__un3_n output_3__un1_n output_3__un0_n output_10_2_ G_114 \
+output_15_0_ output_1_ G_111 G_128 output_10_0_ G_131 G_112 G_129 G_94 G_128_1 \
+output_1_1_ G_111_1 output_15_1_0_
+.names N_25.BLIF binary_i_0_0__n.BLIF convert_seven_seg013_n
+11 1
+.names N_155_i.BLIF un4_temp1_3__n.BLIF convert_seven_seg17_n
+11 1
+.names N_105.BLIF binary_c_5__n.BLIF un4_temp1_3__n
+11 1
+.names output_15_2__un1_n.BLIF output_15_2__un0_n.BLIF output_15_2__n
+1- 1
+-1 1
+.names seven_seg0_1_0_6__n.BLIF seven_seg0_1_6__n
+0 1
+.names N_55.BLIF convert_un42_i_n.BLIF seven_seg0_1_5__n
+11 1
+.names seven_seg0_1_0_0__n.BLIF seven_seg0_1_0__n
+0 1
+.names seven_seg1_1_0_0__n.BLIF seven_seg1_1_0__n
+0 1
+.names seven_seg1_1_0_3__n.BLIF seven_seg1_1_3__n
+0 1
+.names seven_seg1_1_0_4__n.BLIF seven_seg1_1_4__n
+0 1
+.names N_122.BLIF output_10_1__n.BLIF N_128
+11 1
+.names N_139.BLIF output_15_1__n.BLIF N_145
+11 1
+.names N_105_0.BLIF N_105
+0 1
+.names N_122_0.BLIF N_122
+0 1
+.names output_10_1__un1_n.BLIF output_10_1__un0_n.BLIF output_10_1__n
+1- 1
+-1 1
+.names N_139_0.BLIF N_139
+0 1
+.names output_15_1__un1_n.BLIF output_15_1__un0_n.BLIF output_15_1__n
+1- 1
+-1 1
+.names N_155_i.BLIF N_155
+0 1
+.names convert_un30_i_n.BLIF convert_un30_n
+0 1
+.names convert_un31_i_n.BLIF convert_un31_n
+0 1
+.names G_114.BLIF G_131.BLIF N_172
+11 1
+.names N_155.BLIF un4_temp1_3__n.BLIF N_183
+11 1
+.names output_2__un1_n.BLIF output_2__un0_n.BLIF output_2__n
+1- 1
+-1 1
+.names output_3__un1_n.BLIF output_3__un0_n.BLIF output_3__n
+1- 1
+-1 1
+.names N_183_i.BLIF convert_un31_n.BLIF N_29
+11 1
+.names N_155.BLIF un12_temp1_i_0_3__n.BLIF N_44
+11 1
+.names N_45_1.BLIF G_114.BLIF N_45
+11 1
+.names N_193.BLIF output_2__n.BLIF N_55
+11 1
+.names N_193_0.BLIF N_193
+0 1
+.names convert_un1_i_i_n.BLIF convert_un1_i_n
+0 1
+.names N_81_1.BLIF output_2__n.BLIF N_81
+11 1
+.names N_95_i.BLIF N_95
+0 1
+.names convert_un37_i_n.BLIF convert_un37_n
+0 1
+.names convert_un40_i_n.BLIF convert_un40_n
+0 1
+.names convert_un1_i_i_n.BLIF output_2__n.BLIF N_6
+11 1
+.names N_95.BLIF convert_un38_i_n.BLIF N_7
+11 1
+.names convert_un38_i_n.BLIF convert_un38_n
+0 1
+.names N_19.BLIF convert_un40_n.BLIF N_20
+11 1
+.names N_19_i.BLIF N_19
+0 1
+.names N_21_1.BLIF output_2__n.BLIF N_21
+11 1
+.names convert_un38_1_n.BLIF convert_un40_i_n.BLIF N_25
+11 1
+.names convert_un38_1_i_n.BLIF convert_un38_1_n
+0 1
+.names N_19.BLIF convert_un1_i_n.BLIF N_24_1
+11 1
+.names binary_c_0__n.BLIF binary_i_0_0__n
+0 1
+.names N_81.BLIF N_81_i
+0 1
+.names un4_temp1_3__n.BLIF un4_temp1_i_3__n
+0 1
+.names N_172.BLIF N_172_i
+0 1
+.names G_114.BLIF un12_temp1_i_0_3__n
+0 1
+.names N_183.BLIF N_183_i
+0 1
+.names G_128.BLIF un20_temp1_i_i_1__n
+0 1
+.names G_111.BLIF un12_temp1_i_i_1__n
+0 1
+.names G_94.BLIF un4_temp1_i_i_1__n
+0 1
+.names N_18_i_1.BLIF convert_un37_n.BLIF N_18_i
+11 1
+.names N_25.BLIF N_25_i
+0 1
+.names N_24_1.BLIF N_24_1_i
+0 1
+.names N_16_i_1.BLIF N_16_i_2.BLIF N_16_i
+11 1
+.names convert_seven_seg013_n.BLIF convert_seven_seg013_i_n
+0 1
+.names N_21.BLIF N_21_i
+0 1
+.names output_3__n.BLIF output_i_3__n
+0 1
+.names convert_un38_1_i_n.BLIF output_i_3__n.BLIF convert_un38_i_n
+11 1
+.names output_2__n.BLIF output_i_2__n
+0 1
+.names output_1_.BLIF output_i_1__n
+0 1
+.names output_i_1__n.BLIF output_i_2__n.BLIF convert_un38_1_i_n
+11 1
+.names N_81.BLIF output_i_3__n.BLIF N_19_i
+11 1
+.names N_20.BLIF N_20_i
+0 1
+.names N_20_i.BLIF convert_un37_n.BLIF N_14_i
+11 1
+.names N_19.BLIF convert_un38_n.BLIF seven_seg0_1_0_0__n
+11 1
+.names N_7.BLIF N_7_i
+0 1
+.names N_6.BLIF N_6_i
+0 1
+.names N_6_i.BLIF N_7_i.BLIF seven_seg0_1_0_6__n
+11 1
+.names output_i_2__n.BLIF output_i_3__n.BLIF convert_un40_i_n
+11 1
+.names N_95_i.BLIF output_i_3__n.BLIF convert_un37_i_n
+11 1
+.names binary_i_0_0__n.BLIF output_i_1__n.BLIF N_193_0
+11 1
+.names N_193_0.BLIF output_i_2__n.BLIF N_95_i
+11 1
+.names N_81_i.BLIF output_i_3__n.BLIF convert_un42_i_n
+11 1
+.names N_55.BLIF N_55_i
+0 1
+.names N_55_i.BLIF output_i_3__n.BLIF convert_un1_i_i_n
+11 1
+.names convert_seven_seg17_n.BLIF convert_seven_seg17_i_n
+0 1
+.names N_45.BLIF N_45_i
+0 1
+.names N_45_i.BLIF convert_seven_seg17_i_n.BLIF seven_seg1_1_0_4__n
+11 1
+.names N_44.BLIF N_44_i
+0 1
+.names N_44_i.BLIF un4_temp1_i_3__n.BLIF seven_seg1_1_0_3__n
+11 1
+.names N_155.BLIF seven_seg1_1_0_4__n.BLIF N_39_i
+11 1
+.names N_155.BLIF un4_temp1_i_3__n.BLIF N_37_i
+11 1
+.names N_155.BLIF convert_un31_n.BLIF seven_seg1_1_0_0__n
+11 1
+.names N_29.BLIF N_29_i
+0 1
+.names N_29_i.BLIF convert_un30_n.BLIF N_28_i
+11 1
+.names un4_temp1_i_3__n.BLIF un12_temp1_i_0_3__n.BLIF convert_un31_i_n
+11 1
+.names N_155_i.BLIF un4_temp1_i_3__n.BLIF convert_un30_i_n
+11 1
+.names G_131.BLIF un20_temp1_i_3__n
+0 1
+.names un12_temp1_i_0_3__n.BLIF un20_temp1_i_3__n.BLIF N_155_i
+11 1
+.names output_15_0_.BLIF output_15_i_0__n
+0 1
+.names binary_c_1__n.BLIF binary_c_i_1__n
+0 1
+.names binary_c_i_1__n.BLIF output_15_i_0__n.BLIF N_139_0
+11 1
+.names output_10_0_.BLIF output_10_i_0__n
+0 1
+.names binary_c_2__n.BLIF binary_c_i_2__n
+0 1
+.names binary_c_i_2__n.BLIF output_10_i_0__n.BLIF N_122_0
+11 1
+.names binary_c_3__n.BLIF binary_c_i_3__n
+0 1
+.names binary_c_4__n.BLIF binary_c_i_4__n
+0 1
+.names binary_c_i_3__n.BLIF binary_c_i_4__n.BLIF N_105_0
+11 1
+.names N_172_i.BLIF un4_temp1_i_3__n.BLIF N_45_1
+11 1
+.names binary_c_0__n.BLIF output_1_.BLIF N_81_1
+11 1
+.names convert_un42_i_n.BLIF output_1_.BLIF N_21_1
+11 1
+.names N_21_i.BLIF N_95.BLIF N_16_i_1
+11 1
+.names convert_seven_seg013_i_n.BLIF convert_un37_n.BLIF N_16_i_2
+11 1
+.names N_24_1_i.BLIF N_25_i.BLIF N_18_i_1
+11 1
+.names un4_temp1_3__n.BLIF output_10_1__un3_n
+0 1
+.names un4_temp1_i_i_1__n.BLIF un4_temp1_3__n.BLIF output_10_1__un1_n
+11 1
+.names binary_c_4__n.BLIF output_10_1__un3_n.BLIF output_10_1__un0_n
+11 1
+.names G_114.BLIF output_15_1__un3_n
+0 1
+.names un12_temp1_i_i_1__n.BLIF G_114.BLIF output_15_1__un1_n
+11 1
+.names output_10_0_.BLIF output_15_1__un3_n.BLIF output_15_1__un0_n
+11 1
+.names G_114.BLIF output_15_2__un3_n
+0 1
+.names G_112.BLIF G_114.BLIF output_15_2__un1_n
+11 1
+.names output_10_1__n.BLIF output_15_2__un3_n.BLIF output_15_2__un0_n
+11 1
+.names G_131.BLIF output_2__un3_n
+0 1
+.names un20_temp1_i_i_1__n.BLIF G_131.BLIF output_2__un1_n
+11 1
+.names output_15_0_.BLIF output_2__un3_n.BLIF output_2__un0_n
+11 1
+.names G_131.BLIF output_3__un3_n
+0 1
+.names G_129.BLIF G_131.BLIF output_3__un1_n
+11 1
+.names output_15_1__n.BLIF output_3__un3_n.BLIF output_3__un0_n
+11 1
+.names seven_seg0_1_6__n.BLIF seven_seg0_6_
+1 1
+0 0
+.names N_28_i.BLIF seven_seg1_6_
+1 1
+0 0
+.names seven_seg0_1_5__n.BLIF seven_seg0_5_
+1 1
+0 0
+.names convert_seven_seg013_n.BLIF seven_seg0_4_
+1 1
+0 0
+.names N_18_i.BLIF seven_seg0_3_
+1 1
+0 0
+.names N_16_i.BLIF seven_seg0_2_
+1 1
+0 0
+.names N_14_i.BLIF seven_seg0_1_
+1 1
+0 0
+.names seven_seg0_1_0__n.BLIF seven_seg0_0_
+1 1
+0 0
+.names convert_seven_seg17_n.BLIF seven_seg1_5_
+1 1
+0 0
+.names seven_seg1_1_4__n.BLIF seven_seg1_4_
+1 1
+0 0
+.names seven_seg1_1_3__n.BLIF seven_seg1_3_
+1 1
+0 0
+.names N_39_i.BLIF seven_seg1_2_
+1 1
+0 0
+.names N_37_i.BLIF seven_seg1_1_
+1 1
+0 0
+.names seven_seg1_1_0__n.BLIF seven_seg1_0_
+1 1
+0 0
+.names binary_0_.BLIF binary_c_0__n
+1 1
+0 0
+.names binary_1_.BLIF binary_c_1__n
+1 1
+0 0
+.names binary_2_.BLIF binary_c_2__n
+1 1
+0 0
+.names binary_3_.BLIF binary_c_3__n
+1 1
+0 0
+.names binary_4_.BLIF binary_c_4__n
+1 1
+0 0
+.names binary_5_.BLIF binary_c_5__n
+1 1
+0 0
+.names un4_temp1_3__n.BLIF binary_c_5__n.BLIF output_10_2_
+01 1
+10 1
+11 0
+00 0
+.names output_10_2_.BLIF N_128.BLIF G_114
+01 1
+10 1
+11 0
+00 0
+.names binary_c_2__n.BLIF output_15_1_0_.BLIF output_15_0_
+01 1
+10 1
+11 0
+00 0
+.names output_15_2__n.BLIF output_1_1_.BLIF output_1_
+01 1
+10 1
+11 0
+00 0
+.names binary_c_3__n.BLIF G_111_1.BLIF G_111
+01 1
+10 1
+11 0
+00 0
+.names binary_c_2__n.BLIF G_128_1.BLIF G_128
+01 1
+10 1
+11 0
+00 0
+.names un4_temp1_3__n.BLIF binary_c_3__n.BLIF output_10_0_
+01 1
+10 1
+11 0
+00 0
+.names output_15_2__n.BLIF N_145.BLIF G_131
+01 1
+10 1
+11 0
+00 0
+.names N_122.BLIF binary_c_4__n.BLIF G_112
+01 1
+10 1
+11 0
+00 0
+.names N_139.BLIF output_15_1__n.BLIF G_129
+01 1
+10 1
+11 0
+00 0
+.names binary_c_3__n.BLIF binary_c_4__n.BLIF G_94
+01 1
+10 1
+11 0
+00 0
+.names G_114.BLIF binary_c_1__n.BLIF G_128_1
+01 1
+10 1
+11 0
+00 0
+.names N_145.BLIF binary_c_1__n.BLIF output_1_1_
+01 1
+10 1
+11 0
+00 0
+.names un4_temp1_3__n.BLIF binary_c_2__n.BLIF G_111_1
+01 1
+10 1
+11 0
+00 0
+.names output_10_2_.BLIF N_128.BLIF output_15_1_0_
+01 1
+10 1
+11 0
+00 0
+.end

@@ -1,0 +1,11 @@
+[COMPILESTATUS|.\src\converter_if.vhd]
+FileTimeLow=30357424
+Status=Compiled
+
+[COMPILESTATUS|.\src\converter_case_TB.vhd]
+FileTimeLow=30357421
+
+[COMPILESTATUS|.\src\converter_if_TB.vhd]
+FileTimeLow=30357424
+Status=Compiled
+

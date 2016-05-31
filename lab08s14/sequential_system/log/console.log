@@ -1,0 +1,1703 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# Error: COMP96_0078: seq_sys.vhd : (34, 16): Unknown identifier "right_shift_reg".
+# Error: COMP96_0056: seq_sys.vhd : (34, 16): Cannot find referenced entity declaration "right_shift_reg".
+# Error: COMP96_0055: seq_sys.vhd : (34, 16): Cannot find referenced context element.
+# Error: COMP96_0078: seq_sys.vhd : (35, 16): Unknown identifier "counter".
+# Error: COMP96_0056: seq_sys.vhd : (35, 16): Cannot find referenced entity declaration "counter".
+# Error: COMP96_0055: seq_sys.vhd : (35, 16): Cannot find referenced context element.
+# Error: COMP96_0078: seq_sys.vhd : (36, 16): Unknown identifier "dff_en".
+# Error: COMP96_0056: seq_sys.vhd : (36, 16): Cannot find referenced entity declaration "dff_en".
+# Error: COMP96_0055: seq_sys.vhd : (36, 16): Cannot find referenced context element.
+# Error: COMP96_0078: seq_sys.vhd : (37, 16): Unknown identifier "dff_en".
+# Error: COMP96_0056: seq_sys.vhd : (37, 16): Cannot find referenced entity declaration "dff_en".
+# Error: COMP96_0055: seq_sys.vhd : (37, 16): Cannot find referenced context element.
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# Compile failure 12 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# Error: COMP96_0078: seq_sys.vhd : (34, 16): Unknown identifier "right_shift_reg".
+# Error: COMP96_0056: seq_sys.vhd : (34, 16): Cannot find referenced entity declaration "right_shift_reg".
+# Error: COMP96_0055: seq_sys.vhd : (34, 16): Cannot find referenced context element.
+# Error: COMP96_0078: seq_sys.vhd : (35, 16): Unknown identifier "counter".
+# Error: COMP96_0056: seq_sys.vhd : (35, 16): Cannot find referenced entity declaration "counter".
+# Error: COMP96_0055: seq_sys.vhd : (35, 16): Cannot find referenced context element.
+# Error: COMP96_0078: seq_sys.vhd : (36, 16): Unknown identifier "dff_en".
+# Error: COMP96_0056: seq_sys.vhd : (36, 16): Cannot find referenced entity declaration "dff_en".
+# Error: COMP96_0055: seq_sys.vhd : (36, 16): Cannot find referenced context element.
+# Error: COMP96_0078: seq_sys.vhd : (37, 16): Unknown identifier "dff_en".
+# Error: COMP96_0056: seq_sys.vhd : (37, 16): Cannot find referenced entity declaration "dff_en".
+# Error: COMP96_0055: seq_sys.vhd : (37, 16): Cannot find referenced context element.
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# Compile failure 12 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# Error: COMP96_0078: seq_sys.vhd : (34, 16): Unknown identifier "right_shift_reg".
+# Error: COMP96_0056: seq_sys.vhd : (34, 16): Cannot find referenced entity declaration "right_shift_reg".
+# Error: COMP96_0055: seq_sys.vhd : (34, 16): Cannot find referenced context element.
+# Error: COMP96_0078: seq_sys.vhd : (35, 16): Unknown identifier "counter".
+# Error: COMP96_0056: seq_sys.vhd : (35, 16): Cannot find referenced entity declaration "counter".
+# Error: COMP96_0055: seq_sys.vhd : (35, 16): Cannot find referenced context element.
+# Error: COMP96_0078: seq_sys.vhd : (36, 16): Unknown identifier "dff_en".
+# Error: COMP96_0056: seq_sys.vhd : (36, 16): Cannot find referenced entity declaration "dff_en".
+# Error: COMP96_0055: seq_sys.vhd : (36, 16): Cannot find referenced context element.
+# Error: COMP96_0078: seq_sys.vhd : (37, 16): Unknown identifier "dff_en".
+# Error: COMP96_0056: seq_sys.vhd : (37, 16): Cannot find referenced entity declaration "dff_en".
+# Error: COMP96_0055: seq_sys.vhd : (37, 16): Cannot find referenced context element.
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# Compile failure 12 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# Error: COMP96_0078: seq_sys.vhd : (34, 16): Unknown identifier "right_shift_reg".
+# Error: COMP96_0056: seq_sys.vhd : (34, 16): Cannot find referenced entity declaration "right_shift_reg".
+# Error: COMP96_0055: seq_sys.vhd : (34, 16): Cannot find referenced context element.
+# Error: COMP96_0078: seq_sys.vhd : (35, 16): Unknown identifier "counter".
+# Error: COMP96_0056: seq_sys.vhd : (35, 16): Cannot find referenced entity declaration "counter".
+# Error: COMP96_0055: seq_sys.vhd : (35, 16): Cannot find referenced context element.
+# Error: COMP96_0078: seq_sys.vhd : (36, 16): Unknown identifier "dff_en".
+# Error: COMP96_0056: seq_sys.vhd : (36, 16): Cannot find referenced entity declaration "dff_en".
+# Error: COMP96_0055: seq_sys.vhd : (36, 16): Cannot find referenced context element.
+# Error: COMP96_0078: seq_sys.vhd : (37, 16): Unknown identifier "dff_en".
+# Error: COMP96_0056: seq_sys.vhd : (37, 16): Cannot find referenced entity declaration "dff_en".
+# Error: COMP96_0055: seq_sys.vhd : (37, 16): Cannot find referenced context element.
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile failure 12 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# Error: COMP96_0367: seq_sys.vhd : (35, 112): Improper array length (4). Expected length is 10.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# Error: COMP96_0367: seq_sys.vhd : (35, 112): Improper array length (4). Expected length is 10.
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.6 [s]
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# Error: COMP96_0367: seq_sys.vhd : (35, 112): Improper array length (4). Expected length is 10.
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.6 [s]
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+asim -O5 +access +r +m+seq_sys_tb seq_sys_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6183 kB (elbread=1023 elab2=5063 kernel=95 sdf=0)
+#  12:20 PM, Tuesday, April 08, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: seq_sys_tb (tb_architecture)
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+endsim
+#  Simulation has been stopped
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.8 [s]
+asim -O5 +access +r +m+seq_sys_tb seq_sys_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6183 kB (elbread=1023 elab2=5063 kernel=95 sdf=0)
+#  12:22 PM, Tuesday, April 08, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: seq_sys_tb (tb_architecture)
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# Error: COMP96_0361: seq_sys.vhd : (53, 10): 'even is not an attribute of this prefix.
+# Error: COMP96_0077: seq_sys.vhd : (53, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.7 [s]
+endsim
+#  Simulation has been stopped
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+asim -O5 +access +r +m+seq_sys_tb seq_sys_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6183 kB (elbread=1023 elab2=5063 kernel=95 sdf=0)
+#  12:24 PM, Tuesday, April 08, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: seq_sys_tb (tb_architecture)
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+endsim
+#  Simulation has been stopped
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+asim -O5 +access +r +m+seq_sys_tb seq_sys_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6183 kB (elbread=1023 elab2=5063 kernel=95 sdf=0)
+#  12:25 PM, Tuesday, April 08, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: seq_sys_tb (tb_architecture)
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# Error: COMP96_0078: seq_sys.vhd : (57, 10): Unknown identifier "to_integer".
+# Error: COMP96_0133: seq_sys.vhd : (57, 10): Cannot find object declaration.
+# Error: COMP96_0289: seq_sys.vhd : (57, 10): Prefix of index must be an array.
+# Error: COMP96_0077: seq_sys.vhd : (57, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.6 [s]
+endsim
+#  Simulation has been stopped
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# Error: COMP96_0078: seq_sys.vhd : (57, 10): Unknown identifier "to_unsigned".
+# Error: COMP96_0133: seq_sys.vhd : (57, 10): Cannot find object declaration.
+# Error: COMP96_0289: seq_sys.vhd : (57, 10): Prefix of index must be an array.
+# Error: COMP96_0077: seq_sys.vhd : (57, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Error: COMP96_0078: seq_sys.vhd : (3, 5): Unknown identifier "numeric".
+# Compile Architecture "behavior" of Entity "seq_sys"
+# Error: COMP96_0078: seq_sys.vhd : (58, 10): Unknown identifier "to_unsigned".
+# Error: COMP96_0133: seq_sys.vhd : (58, 10): Cannot find object declaration.
+# Error: COMP96_0289: seq_sys.vhd : (58, 10): Prefix of index must be an array.
+# Error: COMP96_0077: seq_sys.vhd : (58, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile failure 5 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Error: COMP96_0078: seq_sys.vhd : (3, 5): Unknown identifier "numeric_std".
+# Compile Architecture "behavior" of Entity "seq_sys"
+# Error: COMP96_0078: seq_sys.vhd : (58, 10): Unknown identifier "to_unsigned".
+# Error: COMP96_0133: seq_sys.vhd : (58, 10): Cannot find object declaration.
+# Error: COMP96_0289: seq_sys.vhd : (58, 10): Prefix of index must be an array.
+# Error: COMP96_0077: seq_sys.vhd : (58, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile failure 5 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# Error: COMP96_0093: seq_sys.vhd : (58, 22): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# Error: COMP96_0093: seq_sys.vhd : (58, 21): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0071: seq_sys.vhd : (58, 30): Operator "<" is not defined for such operands.
+# Error: COMP96_0077: seq_sys.vhd : (58, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+asim -O5 +access +r +m+seq_sys_tb seq_sys_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6183 kB (elbread=1023 elab2=5063 kernel=95 sdf=0)
+#  12:38 PM, Tuesday, April 08, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: seq_sys_tb (tb_architecture)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+endsim
+#  Simulation has been stopped
+asim -O5 +access +r +m+seq_sys_tb seq_sys_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6183 kB (elbread=1023 elab2=5063 kernel=95 sdf=0)
+#  12:38 PM, Tuesday, April 08, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: seq_sys_tb (tb_architecture)
+run
+endsim
+# KERNEL: stopped at time: 3487460 ns
+#  Simulation has been stopped
+asim -O5 +access +r +m+seq_sys_tb seq_sys_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6183 kB (elbread=1023 elab2=5063 kernel=95 sdf=0)
+#  12:39 PM, Tuesday, April 08, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: seq_sys_tb (tb_architecture)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+acom -dbg -work sequential_system -2002  $dsn/src/counter.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+endsim
+#  Simulation has been stopped
+asim -O5 +access +r +m+seq_sys_tb seq_sys_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6055 kB (elbread=1023 elab2=4935 kernel=95 sdf=0)
+#  12:41 PM, Tuesday, April 08, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: seq_sys_tb (tb_architecture)
+run 100 ns
+# RUNTIME: Fatal Error: RUNTIME_0046 counter.vhd (36): Incompatible ranges; left: (3 downto 0), right: (9 downto 0).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /seq_sys_tb/UUT/u1,  Process: line__36.
+# Error: Fatal error occurred during simulation.
+# KERNEL: stopped at delta: 0 at time 0 ps.
+endsim
+#  Simulation has been stopped
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+asim -O5 +access +r +m+seq_sys_tb seq_sys_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6055 kB (elbread=1023 elab2=4935 kernel=95 sdf=0)
+#  12:41 PM, Tuesday, April 08, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: seq_sys_tb (tb_architecture)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+endsim
+#  Simulation has been stopped
+asim -O5 +access +r +m+seq_sys_tb seq_sys_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6055 kB (elbread=1023 elab2=4935 kernel=95 sdf=0)
+#  12:42 PM, Tuesday, April 08, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: seq_sys_tb (tb_architecture)
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# Error: COMP96_0019: seq_sys.vhd : (41, 5): Keyword 'begin' expected.
+# Error: COMP96_0019: seq_sys.vhd : (42, 2): Keyword 'end' expected.
+# Error: COMP96_0016: seq_sys.vhd : (43, 6): Design unit declaration expected.
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.6 [s]
+endsim
+#  Simulation has been stopped
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# Error: COMP96_0093: seq_sys.vhd : (40, 47): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: seq_sys.vhd : (40, 18): Assignment target incompatible with right side. Cannot convert 'STD_LOGIC_VECTOR' to 'INTEGER'.
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# Error: COMP96_0019: seq_sys.vhd : (39, 7): Keyword 'end' expected.
+# Error: COMP96_0016: seq_sys.vhd : (39, 16): Design unit declaration expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# Error: COMP96_0617: seq_sys.vhd : (72, 19): Assignment target incompatible with right side. Cannot convert 'STD_LOGIC_VECTOR' to 'STD_ULOGIC'.
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+asim -O5 +access +r +m+seq_sys_tb seq_sys_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6055 kB (elbread=1023 elab2=4936 kernel=95 sdf=0)
+#  12:57 PM, Tuesday, April 08, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: seq_sys_tb (tb_architecture)
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# Error: ELAB1_0008: seq_sys.vhd : (60, 19): Cannot read output : "sample_clk".
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+endsim
+#  Simulation has been stopped
+asim -O5 +access +r +m+seq_sys_tb seq_sys_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6055 kB (elbread=1023 elab2=4935 kernel=95 sdf=0)
+#  1:01 PM, Tuesday, April 08, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: seq_sys_tb (tb_architecture)
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+step
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6055 kB (elbread=1023 elab2=4936 kernel=95 sdf=0)
+#  1:01 PM, Tuesday, April 08, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: seq_sys_tb (tb_architecture)
+step
+endsim
+#  Simulation has been stopped
+asim -O5 +access +r +m+seq_sys_tb seq_sys_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6055 kB (elbread=1023 elab2=4936 kernel=95 sdf=0)
+#  1:01 PM, Tuesday, April 08, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: seq_sys_tb (tb_architecture)
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+endsim
+#  Simulation has been stopped
+acom -reorder -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile with File Reorder...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => seq_sys_tb
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Architecture "behavior" of Entity "seq_sys"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.8 [s]
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+asim -O5 +access +r +m+seq_sys_tb seq_sys_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6050 kB (elbread=1023 elab2=4932 kernel=94 sdf=0)
+#  1:19 PM, Tuesday, April 08, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: seq_sys_tb (tb_architecture)
+endsim
+#  Simulation has been stopped
+asim -O5 +access +r +m+seq_sys_tb seq_sys_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6050 kB (elbread=1023 elab2=4932 kernel=94 sdf=0)
+#  1:19 PM, Tuesday, April 08, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: seq_sys_tb (tb_architecture)
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+endsim
+#  Simulation has been stopped
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+asim -O5 +access +r +m+seq_sys_tb seq_sys_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6050 kB (elbread=1023 elab2=4932 kernel=94 sdf=0)
+#  1:24 PM, Tuesday, April 08, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: seq_sys_tb (tb_architecture)
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+endsim
+#  Simulation has been stopped
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+asim -O5 +access +r +m+seq_sys_tb seq_sys_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6050 kB (elbread=1023 elab2=4932 kernel=94 sdf=0)
+#  1:29 PM, Tuesday, April 08, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: seq_sys_tb (tb_architecture)
+endsim
+#  Simulation has been stopped
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+asim -O5 +access +r +m+seq_sys_tb seq_sys_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6050 kB (elbread=1023 elab2=4932 kernel=94 sdf=0)
+#  1:30 PM, Tuesday, April 08, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: seq_sys_tb (tb_architecture)
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+endsim
+#  Simulation has been stopped
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+asim -O5 +access +r +m+seq_sys_tb seq_sys_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6050 kB (elbread=1023 elab2=4932 kernel=94 sdf=0)
+#  1:31 PM, Tuesday, April 08, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: seq_sys_tb (tb_architecture)
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+endsim
+#  Simulation has been stopped
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+asim -O5 +access +r +m+seq_sys_tb seq_sys_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6050 kB (elbread=1023 elab2=4932 kernel=94 sdf=0)
+#  1:32 PM, Tuesday, April 08, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: seq_sys_tb (tb_architecture)
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+acom -dbg -work sequential_system -2002  $dsn/src/counter.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+endsim
+#  Simulation has been stopped
+asim -O5 +access +r +m+seq_sys_tb seq_sys_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6050 kB (elbread=1023 elab2=4932 kernel=94 sdf=0)
+#  1:44 PM, Tuesday, April 08, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: seq_sys_tb (tb_architecture)
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+endsim
+#  Simulation has been stopped
+asim -O5 +access +r +m+seq_sys_tb seq_sys_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6051 kB (elbread=1023 elab2=4932 kernel=94 sdf=0)
+#  1:51 PM, Tuesday, April 08, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: seq_sys_tb (tb_architecture)
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+endsim
+#  Simulation has been stopped
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+asim -O5 +access +r +m+seq_sys_tb seq_sys_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6051 kB (elbread=1023 elab2=4932 kernel=94 sdf=0)
+#  1:52 PM, Tuesday, April 08, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: seq_sys_tb (tb_architecture)
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+endsim
+#  Simulation has been stopped
+acom -dbg -work sequential_system -2002  $dsn/src/seq_sys.vhd $dsn/src/seq_sys_TB-2.vhd $dsn/src/flipflop.vhd $dsn/src/counter.vhd $dsn/src/right_shift_reg.vhd
+# Compile...
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys.vhd
+# Compile Entity "seq_sys"
+# Compile Architecture "behavior" of Entity "seq_sys"
+# File: H:\ese382\lab08s14\sequential_system\src\seq_sys_TB-2.vhd
+# Compile Entity "seq_sys_tb"
+# Compile Architecture "tb_architecture" of Entity "seq_sys_tb"
+# File: H:\ese382\lab08s14\sequential_system\src\flipflop.vhd
+# Compile Entity "dff_en"
+# Compile Architecture "behavioral" of Entity "dff_en"
+# File: H:\ese382\lab08s14\sequential_system\src\counter.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavior" of Entity "counter"
+# File: H:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd
+# Compile Entity "right_shift_reg"
+# Compile Architecture "behavior" of Entity "right_shift_reg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+counter counter behavior
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5785 kB (elbread=1023 elab2=4669 kernel=92 sdf=0)
+#  2:01 PM, Tuesday, April 08, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: counter (behavior)
+# Signal /seq_sys_tb/load not found in design.
+# Signal /seq_sys_tb/send not found in design.
+# Signal /seq_sys_tb/clk not found in design.
+# Signal /seq_sys_tb/rst_bar not found in design.
+# Signal /seq_sys_tb/d not found in design.
+# Signal /seq_sys_tb/serial_out not found in design.
+# Signal /seq_sys_tb/valid not found in design.
+# Signal /seq_sys_tb/sample_clk not found in design.
+# Signal /dff_en/clk not found in design.
+# Signal /dff_en/d not found in design.
+# Signal /dff_en/en not found in design.
+# Signal /dff_en/q not found in design.
+# Signal /dff_en/rst_bar not found in design.
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# Synthesis has been started.
+# Synthesis has been completed.
+# Setting simulation top level to seq_sys
+# Error: Synthesis failed : 0 errors, 0 warnings.
+# Library Manager: Library "sequential_system_post_synthesis" contents cleared.
+# Checking if synthesis needs to be updated...

@@ -1,0 +1,1 @@
+-w -s "h:\ese382\lab08s14\library.cfg"  -j "h:\ese382\lab08s14\D flip_flop\projlib.cfg"  -d "h:\ese382\lab08s14\D flip_flop\compile"   -work D_flip_flop  -dbg -e 100 -2002 "h:\ese382\lab08s14\D flip_flop\src\flipflop.vhd" "h:\ese382\lab08s14\D flip_flop\src\TestBench\dff_en_TB.vhd"

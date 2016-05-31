@@ -1,0 +1,108 @@
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: Flow Manager: Not Defined
+acom -reorder -dbg -work if_statement -2002  $dsn/src/converter_if.vhd
+# Compile with File Reorder...
+# File: h:\ese382\lab04s14\if_statement\src\converter_if.vhd
+# Compile Entity "converter_if"
+# Compile Architecture "converter_if" of Entity "converter_if"
+# Top-level unit(s) detected:
+# Entity => converter_if
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -dbg -work if_statement -2002  $dsn/src/converter_if.vhd $dsn/src/converter_if_TB.vhd
+# Compile...
+# File: h:\ese382\lab04s14\if_statement\src\converter_if.vhd
+# Compile Entity "converter_if"
+# Compile Architecture "converter_if" of Entity "converter_if"
+# Error: COMP96_0019: converter_if.vhd : (59, 5): Keyword 'then' expected.
+# Error: COMP96_0019: converter_if.vhd : (60, 3): Keyword 'end' expected.
+# Error: COMP96_0019: converter_if.vhd : (62, 3): Keyword 'end' expected.
+# Error: COMP96_0016: converter_if.vhd : (62, 8): Design unit declaration expected.
+# File: h:\ese382\lab04s14\if_statement\src\converter_if_TB.vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.2 [s]
+# ULM: Warning: ULM_0021 Architecture `converter_if' of entity `if_statement.converter_if' is not up-to-date. Please recompile file `h:\ese382\lab04s14\if_statement/src/converter_if.vhd'.
+acom -dbg -work if_statement -2002  $dsn/src/converter_if.vhd $dsn/src/converter_if_TB.vhd
+# Compile...
+# File: h:\ese382\lab04s14\if_statement\src\converter_if.vhd
+# Compile Entity "converter_if"
+# Compile Architecture "converter_if" of Entity "converter_if"
+# Error: COMP96_0098: converter_if.vhd : (58, 5): 'BOOLEAN' type expected.
+# Error: COMP96_0098: converter_if.vhd : (60, 8): 'BOOLEAN' type expected.
+# Error: COMP96_0098: converter_if.vhd : (62, 8): 'BOOLEAN' type expected.
+# Error: COMP96_0098: converter_if.vhd : (64, 8): 'BOOLEAN' type expected.
+# Error: COMP96_0098: converter_if.vhd : (66, 8): 'BOOLEAN' type expected.
+# Error: COMP96_0098: converter_if.vhd : (68, 8): 'BOOLEAN' type expected.
+# Error: COMP96_0098: converter_if.vhd : (70, 8): 'BOOLEAN' type expected.
+# Error: COMP96_0098: converter_if.vhd : (72, 8): 'BOOLEAN' type expected.
+# Error: COMP96_0098: converter_if.vhd : (74, 8): 'BOOLEAN' type expected.
+# Error: COMP96_0098: converter_if.vhd : (76, 8): 'BOOLEAN' type expected.
+# File: h:\ese382\lab04s14\if_statement\src\converter_if_TB.vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Compile failure 10 Errors 0 Warnings  Analysis time :  0.2 [s]
+# ULM: Warning: ULM_0021 Architecture `converter_if' of entity `if_statement.converter_if' is not up-to-date. Please recompile file `h:\ese382\lab04s14\if_statement/src/converter_if.vhd'.
+acom -dbg -work if_statement -2002  $dsn/src/converter_if.vhd $dsn/src/converter_if_TB.vhd
+# Compile...
+# File: h:\ese382\lab04s14\if_statement\src\converter_if.vhd
+# Compile Entity "converter_if"
+# Compile Architecture "converter_if" of Entity "converter_if"
+# Error: COMP96_0098: converter_if.vhd : (60, 5): 'BOOLEAN' type expected.
+# Error: COMP96_0098: converter_if.vhd : (62, 8): 'BOOLEAN' type expected.
+# Error: COMP96_0098: converter_if.vhd : (64, 8): 'BOOLEAN' type expected.
+# Error: COMP96_0098: converter_if.vhd : (66, 8): 'BOOLEAN' type expected.
+# Error: COMP96_0098: converter_if.vhd : (68, 8): 'BOOLEAN' type expected.
+# Error: COMP96_0098: converter_if.vhd : (70, 8): 'BOOLEAN' type expected.
+# Error: COMP96_0098: converter_if.vhd : (72, 8): 'BOOLEAN' type expected.
+# Error: COMP96_0098: converter_if.vhd : (74, 8): 'BOOLEAN' type expected.
+# Error: COMP96_0098: converter_if.vhd : (76, 8): 'BOOLEAN' type expected.
+# Error: COMP96_0098: converter_if.vhd : (78, 8): 'BOOLEAN' type expected.
+# File: h:\ese382\lab04s14\if_statement\src\converter_if_TB.vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Compile failure 10 Errors 0 Warnings  Analysis time :  0.2 [s]
+# ULM: Warning: ULM_0021 Architecture `converter_if' of entity `if_statement.converter_if' is not up-to-date. Please recompile file `h:\ese382\lab04s14\if_statement/src/converter_if.vhd'.
+acom -dbg -work if_statement -2002  $dsn/src/converter_if.vhd $dsn/src/converter_if_TB.vhd
+# Compile...
+# File: h:\ese382\lab04s14\if_statement\src\converter_if.vhd
+# Compile Entity "converter_if"
+# Compile Architecture "converter_if" of Entity "converter_if"
+# File: h:\ese382\lab04s14\if_statement\src\converter_if_TB.vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+converter_2421_bcd_tb converter_2421_bcd_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5790 kB (elbread=1023 elab2=4673 kernel=93 sdf=0)
+#  8:49 AM, Tuesday, March 04, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: converter_2421_bcd_tb (tb_architecture)
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+#  Simulation has been stopped
+# Design: Design "lab04s14" has been set as active.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].

@@ -1,0 +1,34 @@
+Section Cross Reference File
+Design 'converter_loop' created Thu Mar 06 12:21:55 2014
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst   loopy_0_output_5_2__r                     loopy.0.output_5_2_.r
+   Inst   loopy_0_output_5_2__m                     loopy.0.output_5_2_.m
+   Inst   loopy_0_output_5_2__n                     loopy.0.output_5_2_.n
+   Inst   loopy_0_output_5_2__p                     loopy.0.output_5_2_.p
+   Inst         input_2_i_i_3_                            input_2_i_i[3]
+   Inst   loopy_0_op_lt_output14_i                  loopy.0.op_lt.output14_i
+   Inst    loopy_0_output_5_3_                       loopy.0.output_5[3]
+   Inst    loopy_0_output_5_1_                       loopy.0.output_5[1]
+   Net    loopy_0_output_5_2__n                       loopy.0.output_5[2]
+   Net    loopy_0_output_5_3__n                       loopy.0.output_5[3]
+   Net            input_2_2__n                                input_2[2]
+   Net    loopy_0_op_lt_output14_n                    loopy.0.op_lt.output14
+   Net          input_2_i_3__n                              input_2_i[3]
+   Net        input_2_i_i_3__n                            input_2_i_i[3]
+   Net    loopy_0_op_lt_output14_i_n                  loopy.0.op_lt.output14_i
+   Net    loopy_0_output_5_2__un3_n                   loopy.0.output_5_2_.un3
+   Net    loopy_0_output_5_2__un1_n                   loopy.0.output_5_2_.un1
+   Net    loopy_0_output_5_2__un0_n                   loopy.0.output_5_2_.un0
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     p
+        Input     q
+        Input     r
+        Input     s
+        Output     a
+        Output     b
+        Output     c
+        Output     d
+End

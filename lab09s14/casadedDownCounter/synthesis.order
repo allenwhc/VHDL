@@ -1,0 +1,10 @@
+i<>.\src\seconds_counter.vhd
+i<>.\src\seconds_counter_TB.vhd
+i<>.\src\minutes_counter.vhd
+i<>.\src\minutes_counter_TB.vhd
+i<>.\src\cascaded_counters.vhd
+i<>.\src\cascaded_counters_TB.vhd
+i<>.\src\rotary_encoder_decoder_fsm.vhd
+i<>.\src\rotary_encoder_decoder_fsm_TB.vhd
+i<>.\src\settable_counters.vhd
+i<>.\src\settable_counters2_TB.vhd

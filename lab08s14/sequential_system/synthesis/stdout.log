@@ -1,0 +1,31 @@
+
+Starting:    C:\Synopsys\fpga_E201103SP2\bin\mbin\synbatch.exe
+Install:     C:\Synopsys\fpga_E201103SP2
+Date:        Tue Apr 08 14:05:56 2014
+Version:     E-2011.03-SP2
+
+Arguments:   -product synplify_pro -batch H:/ese382/lab08s14/sequential_system/synthesis/command.prj
+ProductType: synplify_pro
+
+License checkout unsuccessful: synplifypro
+License server system does not support this feature.
+Feature:       synplifypro
+License path:  C:\lscc\diamond\1.4\license\license.dat
+FLEXnet Licensing error:-18,234
+For further information, refer to the FLEXnet Licensing End User Guide,
+available at "www.macrovision.com".
+
+synplifypro - License server system does not support this feature.
+Feature:       synplifypro
+License path:  C:\lscc\diamond\1.4\license\license.dat
+FLEXnet Licensing error:-18,234
+For further information, refer to the FLEXnet Licensing End User Guide,
+available at "www.macrovision.com".
+
+Node-locked Host ID:  001E4FC92ED2
+Please contact support at https://solvnet.synopsys.com/ManageCase?ccf=1
+
+
+
+
+

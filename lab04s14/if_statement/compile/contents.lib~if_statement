@@ -1,0 +1,5 @@
+34
+~E 1 "./src/converter_if_TB.vhd" 8 converter_2421_bcd_tb
+~A 1 "./src/converter_if_TB.vhd" 11 tb_architecture
+~E 1 "./src/converter_if.vhd" 28 converter_if
+~A 1 "./src/converter_if.vhd" 52 converter_if

@@ -1,0 +1,135 @@
+
+Timing Report for STAMP
+
+//  Project = task3
+//  Family  = mach4a
+//  Device  = M4A5-64/32
+//  Speed   = -10
+//  Voltage = 5.0
+//  Operating Condition = COM
+//  Data sheet version  = RevD-8/2000
+
+//  Pass Bidirection = OFF
+//  Pass S/R = OFF
+//  Pass Latch = OFF
+//  T_SU Endpoints D/T inputs = ON
+//  T_SU Endpoints CE inputs = OFF
+//  T_SU Endpoints S/R inputs = OFF
+//  T_SU Endpoints RAM gated = ON
+//  Fmax of CE = ON
+//  Fmax of RAM = ON
+
+//  Location(From => To)
+//    Pin number: numeric number preceded by "p", BGA number as is
+//    Macrocell number: Segment#,GLB#,Macrocell#
+//                      Segment#: starts from 0 (if applicable)
+//                      GLB#: starts from A..Z, AA..ZZ
+//                      Macrocell#: starts from 0 to 31
+
+
+Section IO
+  //DESTINATION NODES;
+  seven_seg0[0] [out]
+  seven_seg0[1] [out]
+  seven_seg0[2] [out]
+  seven_seg0[3] [out]
+  seven_seg0[4] [out]
+  seven_seg0[5] [out]
+  seven_seg0[6] [out]
+  seven_seg1[0] [out]
+  seven_seg1[1] [out]
+  seven_seg1[2] [out]
+  seven_seg1[3] [out]
+  seven_seg1[4] [out]
+  seven_seg1[5] [out]
+  seven_seg1[6] [out]
+
+  //SOURCE NODES;
+  binary[0] [in]
+  binary[1] [in]
+  binary[2] [in]
+  binary[3] [in]
+  binary[4] [in]
+  binary[5] [in]
+
+
+Section tPD
+
+   Delay         Level   Location(From => To)    Source                        Destination
+  =====         =====   ====================    ======                        ===========
+   31.0           4     p5        => p41        binary[2]                     seven_seg0[0]
+   31.0           4     p5        => p9         binary[2]                     seven_seg0[1]
+   31.0           4     p5        => p24        binary[2]                     seven_seg0[2]
+   31.0           4     p5        => p43        binary[2]                     seven_seg0[3]
+   31.0           4     p5        => p39        binary[2]                     seven_seg0[4]
+   31.0           4     p5        => p37        binary[2]                     seven_seg0[5]
+   31.0           4     p5        => p8         binary[2]                     seven_seg0[6]
+   31.0           4     p4        => p41        binary[3]                     seven_seg0[0]
+   31.0           4     p4        => p9         binary[3]                     seven_seg0[1]
+   31.0           4     p4        => p24        binary[3]                     seven_seg0[2]
+   31.0           4     p4        => p43        binary[3]                     seven_seg0[3]
+   31.0           4     p4        => p39        binary[3]                     seven_seg0[4]
+   31.0           4     p4        => p37        binary[3]                     seven_seg0[5]
+   31.0           4     p4        => p8         binary[3]                     seven_seg0[6]
+   31.0           4     p3        => p41        binary[4]                     seven_seg0[0]
+   31.0           4     p3        => p9         binary[4]                     seven_seg0[1]
+   31.0           4     p3        => p24        binary[4]                     seven_seg0[2]
+   31.0           4     p3        => p43        binary[4]                     seven_seg0[3]
+   31.0           4     p3        => p39        binary[4]                     seven_seg0[4]
+   31.0           4     p3        => p37        binary[4]                     seven_seg0[5]
+   31.0           4     p3        => p8         binary[4]                     seven_seg0[6]
+   31.0           4     p2        => p41        binary[5]                     seven_seg0[0]
+   31.0           4     p2        => p9         binary[5]                     seven_seg0[1]
+   31.0           4     p2        => p24        binary[5]                     seven_seg0[2]
+   31.0           4     p2        => p43        binary[5]                     seven_seg0[3]
+   31.0           4     p2        => p39        binary[5]                     seven_seg0[4]
+   31.0           4     p2        => p37        binary[5]                     seven_seg0[5]
+   31.0           4     p2        => p8         binary[5]                     seven_seg0[6]
+   24.0           3     p6        => p41        binary[1]                     seven_seg0[0]
+   24.0           3     p6        => p9         binary[1]                     seven_seg0[1]
+   24.0           3     p6        => p24        binary[1]                     seven_seg0[2]
+   24.0           3     p6        => p43        binary[1]                     seven_seg0[3]
+   24.0           3     p6        => p39        binary[1]                     seven_seg0[4]
+   24.0           3     p6        => p37        binary[1]                     seven_seg0[5]
+   24.0           3     p6        => p8         binary[1]                     seven_seg0[6]
+   17.0           2     p5        => p42        binary[2]                     seven_seg1[0]
+   17.0           2     p5        => p19        binary[2]                     seven_seg1[1]
+   17.0           2     p5        => p15        binary[2]                     seven_seg1[2]
+   17.0           2     p5        => p21        binary[2]                     seven_seg1[3]
+   17.0           2     p5        => p26        binary[2]                     seven_seg1[4]
+   17.0           2     p5        => p17        binary[2]                     seven_seg1[5]
+   17.0           2     p4        => p42        binary[3]                     seven_seg1[0]
+   17.0           2     p4        => p19        binary[3]                     seven_seg1[1]
+   17.0           2     p4        => p15        binary[3]                     seven_seg1[2]
+   17.0           2     p4        => p21        binary[3]                     seven_seg1[3]
+   17.0           2     p4        => p26        binary[3]                     seven_seg1[4]
+   17.0           2     p4        => p17        binary[3]                     seven_seg1[5]
+   17.0           2     p3        => p42        binary[4]                     seven_seg1[0]
+   17.0           2     p3        => p19        binary[4]                     seven_seg1[1]
+   17.0           2     p3        => p15        binary[4]                     seven_seg1[2]
+   17.0           2     p3        => p21        binary[4]                     seven_seg1[3]
+   17.0           2     p3        => p26        binary[4]                     seven_seg1[4]
+   17.0           2     p3        => p17        binary[4]                     seven_seg1[5]
+   17.0           2     p2        => p42        binary[5]                     seven_seg1[0]
+   17.0           2     p2        => p19        binary[5]                     seven_seg1[1]
+   17.0           2     p2        => p15        binary[5]                     seven_seg1[2]
+   17.0           2     p2        => p21        binary[5]                     seven_seg1[3]
+   17.0           2     p2        => p26        binary[5]                     seven_seg1[4]
+   17.0           2     p2        => p17        binary[5]                     seven_seg1[5]
+   10.0           1     p7        => p41        binary[0]                     seven_seg0[0]
+   10.0           1     p7        => p9         binary[0]                     seven_seg0[1]
+   10.0           1     p7        => p24        binary[0]                     seven_seg0[2]
+   10.0           1     p7        => p43        binary[0]                     seven_seg0[3]
+   10.0           1     p7        => p39        binary[0]                     seven_seg0[4]
+   10.0           1     p7        => p37        binary[0]                     seven_seg0[5]
+   10.0           1     p7        => p8         binary[0]                     seven_seg0[6]
+   10.0           1     p6        => p42        binary[1]                     seven_seg1[0]
+   10.0           1     p6        => p19        binary[1]                     seven_seg1[1]
+   10.0           1     p6        => p15        binary[1]                     seven_seg1[2]
+   10.0           1     p6        => p21        binary[1]                     seven_seg1[3]
+   10.0           1     p6        => p26        binary[1]                     seven_seg1[4]
+   10.0           1     p6        => p17        binary[1]                     seven_seg1[5]
+   10.0           1     p5        => p30        binary[2]                     seven_seg1[6]
+   10.0           1     p4        => p30        binary[3]                     seven_seg1[6]
+   10.0           1     p3        => p30        binary[4]                     seven_seg1[6]
+   10.0           1     p2        => p30        binary[5]                     seven_seg1[6]

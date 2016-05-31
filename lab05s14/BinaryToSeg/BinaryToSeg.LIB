@@ -1,0 +1,37 @@
+timestamp=1394559647245
+
+[binarytoseg]
+A/binarytoseg=A/BinaryToSeg 21|./src/BinaryToSeg.vhd|45|1*24511
+BinI32/binarytoseg=3*7729
+I=0*7333
+I/binarytoseg=I/BinaryToSeg 0*11079
+M=11|0|v98|1394558461184|./src/BinaryToSeg.vhd|0*6754*0xf7dae67a25873c015e5a83ba3fa809e8db949eaf|0*7250*0xab32bc1a2daf049573e14469f634e0e6
+M/binarytoseg=M/BinaryToSeg 21|0|v98|1394559646948|./src/BinaryToSeg.vhd|0*9379*0xbb8a1a450ffedc6f5038f61e8e11c15887686b85|0*10981*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/BinaryToSeg.vhd|29
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/binarytoseg=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[converter_2421_bcd_tb]
+A/tb_architecture=21|./src/BinaryToSeg_TB.vhd|9|1*27698
+BinI32/tb_architecture=3*9654
+I=0*1832
+I/tb_architecture=0*6277
+M=11|0|v98|1394556447106|./src/BinaryToSeg_TB.vhd|0*1510*0x4ee169e5785b0a9d6372dd1eb2bc69153ca182a1|0*1736*0xab32bc1a2daf049573e14469f634e0e6
+M/tb_architecture=21|0|v98|1394559647123|./src/BinaryToSeg_TB.vhd|0*5607*0xabbe841497866209e61302fe5291504c8df272fd|0*6162*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/BinaryToSeg_TB.vhd|6
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/tb_architecture=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[~A]
+ModifyID=74
+Version=73
+
+[~MFT]
+0=55|0BinaryToSeg.mgf|11079|6878
+1=19|1BinaryToSeg.mgf|27698|24511
+3=15|3BinaryToSeg.mgf|9654|7729
+
+[~U]
+binarytoseg=BinaryToSeg 11|0*6528|
+converter_2421_bcd_tb=11|0*1401|
+

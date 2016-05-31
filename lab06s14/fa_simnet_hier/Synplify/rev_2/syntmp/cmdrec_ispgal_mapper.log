@@ -1,0 +1,9 @@
+C:\Synopsys\fpga_E201103SP2\bin\m_cpld.exe  -prodtype synplify_pro -encrypt  -pro  -part ispGAL22V10C  -package LJ  -grade -10   -areadelay 0 -minc    -ovhdl "fa.vhm"  -oedif  H:\ese382\lab06s14\fa_simnet_hier\Synplify\rev_2\fa.edf  H:\ese382\lab06s14\fa_simnet_hier\Synplify\rev_2\fa.srs  -devicelib  C:\Synopsys\fpga_E201103SP2\lib\cpld\lattice.v  -ologparam  H:\ese382\lab06s14\fa_simnet_hier\Synplify\rev_2\syntmp\fa.plg  -osyn  H:\ese382\lab06s14\fa_simnet_hier\Synplify\rev_2\fa.srm  -prjdir H:\ese382\lab06s14\fa_simnet_hier\Synplify\  -log  H:\ese382\lab06s14\fa_simnet_hier\Synplify\rev_2\synlog\fa_ispGAL_Mapper.srr 
+rc:0 success:1
+H:\ese382\lab06s14\fa_simnet_hier\Synplify\rev_2\fa.edf|o|1395755399|9574
+H:\ese382\lab06s14\fa_simnet_hier\Synplify\rev_2\fa.srs|i|1395755397|5589
+C:\Synopsys\fpga_E201103SP2\lib\cpld\lattice.v|i|1304989762|210380
+H:\ese382\lab06s14\fa_simnet_hier\Synplify\rev_2\syntmp\fa.plg|o|1395755399|0
+H:\ese382\lab06s14\fa_simnet_hier\Synplify\rev_2\fa.srm|o|1395755399|4627
+H:\ese382\lab06s14\fa_simnet_hier\Synplify\rev_2\synlog\fa_ispGAL_Mapper.srr|o|1395755399|883
+C:\Synopsys\fpga_E201103SP2\bin\m_cpld.exe|i|1305649316|8888320

@@ -1,0 +1,1 @@
+-w -s "H:\ese382\lab06s14\library.cfg"  -j "H:\ese382\lab06s14\ha_simnet_hier\projlib.cfg"  -d "H:\ese382\lab06s14\ha_simnet_hier\compile"   -work ha_simnet_hier  -dbg -e 100 -2002 "H:\ese382\lab06s14\ha_simnet_hier\src\half_adder_struct_hier.vhd"

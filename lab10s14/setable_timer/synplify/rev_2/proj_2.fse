@@ -1,0 +1,36 @@
+
+fsm_encoding {10492491} sequential
+
+fsm_state_encoding {10492491} state_a {00}
+
+fsm_state_encoding {10492491} state_b {01}
+
+fsm_state_encoding {10492491} state_c {10}
+
+fsm_state_encoding {10492491} state_d {11}
+
+fsm_registers {10492491} {present_state[1]}  {present_state[0]} 
+
+fsm_encoding {9432432} sequential
+
+fsm_state_encoding {9432432} state_a {00}
+
+fsm_state_encoding {9432432} state_b {01}
+
+fsm_state_encoding {9432432} state_c {10}
+
+fsm_registers {9432432} {present_state[1]}  {present_state[0]} 
+
+fsm_encoding {7212213} onehot
+
+fsm_state_encoding {7212213} idle {00001}
+
+fsm_state_encoding {7212213} set {00010}
+
+fsm_state_encoding {7212213} arm {00100}
+
+fsm_state_encoding {7212213} run {01000}
+
+fsm_state_encoding {7212213} run2 {10000}
+
+fsm_registers {7212213} {present_state[0]}  {present_state[1]}  {present_state[2]}  {present_state[3]}  {present_state[4]} 

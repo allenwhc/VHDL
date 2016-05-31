@@ -1,0 +1,2 @@
+$include = "$VSIMSALIBRARYCFG"
+lab1_14 = "./lab1_14/lab1_14.LIB" 1391523647600

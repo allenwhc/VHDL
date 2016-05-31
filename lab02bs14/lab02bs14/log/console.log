@@ -1,0 +1,375 @@
+# Design: Design lab02bs14 already active.
+# 
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: Flow Manager: Not Defined
+acom -reorder -dbg -work lab02bs14 -2002  $dsn/src/half_adder.vhd
+# Compile with File Reorder...
+# File: h:\ese382\lab02bs14\lab02bs14\src\half_adder.vhd
+# Compile Entity "half_adder"
+# Compile Architecture "half_adder" of Entity "half_adder"
+# Error: COMP96_0019: half_adder.vhd : (45, 2): Keyword 'end' expected.
+# Error: COMP96_0016: half_adder.vhd : (45, 12): Design unit declaration expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -dbg -work lab02bs14 -2002  $dsn/src/half_adder.vhd
+# Compile...
+# File: h:\ese382\lab02bs14\lab02bs14\src\half_adder.vhd
+# Compile Entity "half_adder"
+# Compile Architecture "half_adder" of Entity "half_adder"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -dbg -work lab02bs14 -2002  $dsn/src/half_adder.vhd $dsn/src/half_adder_tb.vhd
+# Compile...
+# File: h:\ese382\lab02bs14\lab02bs14\src\half_adder.vhd
+# Compile Entity "half_adder"
+# Compile Architecture "half_adder" of Entity "half_adder"
+# File: h:\ese382\lab02bs14\lab02bs14\src\half_adder_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+testbench testbench behavior
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6007 kB (elbread=1023 elab2=4892 kernel=91 sdf=0)
+#  8:48 AM, Tuesday, February 18, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+run 80 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -dbg -work lab02bs14 -2002  $dsn/src/half_adder.vhd $dsn/src/half_adder_tb.vhd
+# Compile...
+# File: h:\ese382\lab02bs14\lab02bs14\src\half_adder.vhd
+# Compile Entity "half_adder"
+# Compile Architecture "half_adder" of Entity "half_adder"
+# File: h:\ese382\lab02bs14\lab02bs14\src\half_adder_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -dbg -work lab02bs14 -2002  $dsn/src/half_adder_tb.vhd $dsn/src/half_adder.vhq
+# Compile...
+# File: h:\ese382\lab02bs14\lab02bs14\src\half_adder_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# File: h:\ese382\lab02bs14\lab02bs14\src\half_adder.vhq
+# Compile Entity "half_adder"
+# Compile Architecture "structure" of Entity "half_adder"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of entity 'lab02bs14.half_adder' instantiated in architecture 'behavior:testbench' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of entity 'lab02bs14.half_adder' instantiated in architecture 'behavior:testbench' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# Design: Design lab02bs14 already active.
+# 
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of entity 'lab02bs14.half_adder' instantiated in architecture 'behavior:testbench' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# Library Manager: Library "lab02bs14" contents cleared.
+acom -reorder -dbg -work lab02bs14 -2002  $dsn/src/half_adder.vhq $dsn/src/half_adder_tb.vhd
+# Compile with File Reorder...
+# File: h:\ese382\lab02bs14\lab02bs14\src\half_adder.vhq
+# Compile Entity "half_adder"
+# Compile Architecture "structure" of Entity "half_adder"
+# File: h:\ese382\lab02bs14\lab02bs14\src\half_adder_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Top-level unit(s) detected:
+# Entity => testbench
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+testbench testbench behavior
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6121 kB (elbread=1023 elab2=4997 kernel=100 sdf=0)
+#  9:13 AM, Tuesday, February 18, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+run 80 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 400 ns
+# KERNEL: stopped at time: 480 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -dbg -work lab02bs14 -2002  $dsn/src/half_adder.vhq $dsn/src/half_adder_tb.vhd
+# Compile...
+# File: h:\ese382\lab02bs14\lab02bs14\src\half_adder.vhq
+# Compile Entity "half_adder"
+# Compile Architecture "structure" of Entity "half_adder"
+# File: h:\ese382\lab02bs14\lab02bs14\src\half_adder_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+# Library Manager: Library "lab02bs14" contents cleared.
+acom -reorder -dbg -work lab02bs14 -2002  $dsn/src/half_adder.vhq $dsn/src/half_adder_tb.vhd
+# Compile with File Reorder...
+# File: h:\ese382\lab02bs14\lab02bs14\src\half_adder.vhq
+# Compile Entity "half_adder"
+# Compile Architecture "structure" of Entity "half_adder"
+# File: h:\ese382\lab02bs14\lab02bs14\src\half_adder_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Top-level unit(s) detected:
+# Entity => testbench
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+testbench testbench behavior
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6121 kB (elbread=1023 elab2=4997 kernel=100 sdf=0)
+#  9:19 AM, Tuesday, February 18, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+run 400 ns
+# KERNEL: stopped at time: 400 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 200 ns
+# KERNEL: stopped at time: 600 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+#  Simulation has been stopped
+asim -O5 +access +r +m+testbench testbench behavior
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6121 kB (elbread=1023 elab2=4997 kernel=100 sdf=0)
+#  9:20 AM, Tuesday, February 18, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+# Library Manager: Library "lab02bs14" contents cleared.
+acom -reorder -dbg -work lab02bs14 -2002  $dsn/src/half_adder.vhq $dsn/src/half_adder_tb.vhd
+# Compile with File Reorder...
+# File: h:\ese382\lab02bs14\lab02bs14\src\half_adder.vhq
+# Compile Entity "half_adder"
+# Compile Architecture "structure" of Entity "half_adder"
+# File: h:\ese382\lab02bs14\lab02bs14\src\half_adder_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Top-level unit(s) detected:
+# Entity => testbench
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+testbench testbench behavior
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6121 kB (elbread=1023 elab2=4997 kernel=100 sdf=0)
+#  9:24 AM, Tuesday, February 18, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+run 200 ns
+# KERNEL: stopped at time: 200 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# Library Manager: Library "lab02bs14" contents cleared.
+acom -reorder -dbg -work lab02bs14 -2002  $dsn/src/half_adder.vhq $dsn/src/half_adder_tb.vhd
+# Compile with File Reorder...
+# File: h:\ese382\lab02bs14\lab02bs14\src\half_adder.vhq
+# Compile Entity "half_adder"
+# Compile Architecture "structure" of Entity "half_adder"
+# File: h:\ese382\lab02bs14\lab02bs14\src\half_adder_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Top-level unit(s) detected:
+# Entity => testbench
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+testbench testbench behavior
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6121 kB (elbread=1023 elab2=4997 kernel=100 sdf=0)
+#  9:26 AM, Tuesday, February 18, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+run 200 ns
+# KERNEL: stopped at time: 200 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 200 ns
+# KERNEL: stopped at time: 400 ns
+run 200 ns
+# KERNEL: stopped at time: 600 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# Library Manager: Library "lab02bs14" contents cleared.
+run 200 ns
+acom -reorder -dbg -work lab02bs14 -2002  $dsn/src/half_adder_tb.vhd
+# Compile with File Reorder...
+# File: h:\ese382\lab02bs14\lab02bs14\src\half_adder_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => testbench
+# File: h:\ese382\lab02bs14\lab02bs14\src\half_adder_tb.vhd
+# Compile Architecture "behavior" of Entity "testbench"
+# Error: COMP96_0078: half_adder_tb.vhd : (16, 14): Unknown identifier "half_adder".
+# Error: COMP96_0056: half_adder_tb.vhd : (16, 14): Cannot find referenced entity declaration "half_adder".
+# Error: COMP96_0055: half_adder_tb.vhd : (16, 14): Cannot find referenced context element.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.2 [s]
+# 
+# Error: Cannot initialize simulation - no top level  entity/architecture or configuration is selected
+acom -dbg -work lab02bs14 -2002  $dsn/src/half_adder.vhq $dsn/src/half_adder_tb.vhd
+# Compile...
+# File: h:\ese382\lab02bs14\lab02bs14\src\half_adder.vhq
+# Compile Entity "half_adder"
+# Compile Architecture "structure" of Entity "half_adder"
+# File: h:\ese382\lab02bs14\lab02bs14\src\half_adder_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom -dbg -work lab02bs14 -2002  $dsn/src/half_adder.vhq $dsn/src/half_adder_tb.vhd
+# Compile...
+# File: h:\ese382\lab02bs14\lab02bs14\src\half_adder.vhq
+# Compile Entity "half_adder"
+# Compile Architecture "structure" of Entity "half_adder"
+# File: h:\ese382\lab02bs14\lab02bs14\src\half_adder_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+testbench testbench behavior
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6121 kB (elbread=1023 elab2=4997 kernel=100 sdf=0)
+#  9:30 AM, Tuesday, February 18, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+#  Simulation has been stopped

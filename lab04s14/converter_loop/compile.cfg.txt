@@ -1,0 +1,16 @@
+[View]
+Entity=converter_2421_bcd_tb
+Architecture=tb_architecture
+TopLevelType=1
+[file:.\src\converter_loop.vhd]
+Enabled=1
+[file:.\src\converter_loop_TB.vhd]
+Enabled=1
+[file:.\src\converter_if.vhd]
+Enabled=1
+[file:.\src\converter_if_TB.vhd]
+Enabled=1
+[file:.\src\converter_case.vhd]
+Enabled=1
+[file:.\src\converter_case_TB.vhd]
+Enabled=1

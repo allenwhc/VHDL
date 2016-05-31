@@ -1,0 +1,59 @@
+#Build: Synplify Pro E-2011.03-SP2, Build 053R, May 19 2011
+#install: C:\Synopsys\fpga_E201103SP2
+#OS: Windows XP 5.1
+#Hostname: WKS-085
+
+#Implementation: rev_2
+
+#Tue Mar 25 09:49:57 2014
+
+$ Start of Compile
+#Tue Mar 25 09:49:57 2014
+
+Synopsys VHDL Compiler, version comp550rcp1, Build 072R, built May 25 2011
+@N|Running in 32-bit mode
+Copyright (C) 1994-2011 Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+
+@N: CD720 :"C:\Synopsys\fpga_E201103SP2\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"H:\ese382\lab06s14\fa_simnet_hier\src\full_adder.vhd":28:7:28:16|Top entity is set to full_adder.
+VHDL syntax check successful!
+@N: CD630 :"H:\ese382\lab06s14\fa_simnet_hier\src\full_adder.vhd":28:7:28:16|Synthesizing work.full_adder.full_adder 
+@N: CD630 :"H:\ese382\lab06s14\fa_simnet_hier\src\half_adder_struct_hier.vhd":28:7:28:16|Synthesizing work.half_adder.dataflow 
+@N: CD630 :"H:\ese382\lab06s14\fa_simnet_hier\src\xor_2_struct.vhd":28:7:28:11|Synthesizing work.xor_2.dataflow 
+@W: CD638 :"H:\ese382\lab06s14\fa_simnet_hier\src\xor_2_struct.vhd":39:7:39:11|Signal i_inv is undriven 
+@N: CD630 :"H:\ese382\lab06s14\fa_simnet_hier\src\ha_primitive_gates.vhd":59:7:59:10|Synthesizing work.or_2.dataflow 
+Post processing for work.or_2.dataflow
+@N: CD630 :"H:\ese382\lab06s14\fa_simnet_hier\src\ha_primitive_gates.vhd":43:7:43:11|Synthesizing work.and_2.dataflow 
+Post processing for work.and_2.dataflow
+@N: CD630 :"H:\ese382\lab06s14\fa_simnet_hier\src\ha_primitive_gates.vhd":28:7:28:9|Synthesizing work.inv.dataflow 
+Post processing for work.inv.dataflow
+Post processing for work.xor_2.dataflow
+Post processing for work.half_adder.dataflow
+Post processing for work.full_adder.full_adder
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Mar 25 09:49:57 2014
+
+###########################################################]
+Mapping Report (contents appended below)
+@N:"H:\ese382\lab06s14\fa_simnet_hier\Synplify\rev_2\synlog\fa_ispGAL_Mapper.srr"
+Synopsys CPLD Technology Mapper, Version maprc, Build 507R, Built May 17 2011
+Copyright (C) 1994-2011, Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version E-201103-SP2
+---------------------------------------
+Resource Usage Report
+
+Simple gate primitives:
+IBUF            3 uses
+OBUF            2 uses
+INV             12 uses
+AND2            9 uses
+
+
+@N: FC100 |Timing Report not generated for this device, please use place and route tools for timing analysis.
+E-201103-SP2
+Mapper successful!
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Mar 25 09:49:59 2014
+
+###########################################################]

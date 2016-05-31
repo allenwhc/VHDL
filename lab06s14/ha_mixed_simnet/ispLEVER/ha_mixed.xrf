@@ -1,0 +1,16 @@
+ispLEVER Classic 7.0.00.10.16.07 Signal Name Cross Reference File
+Copyright(C), 1992-2007, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design 'ha_mixed' created Tue Mar 25 09:42:00 2014
+
+
+ LEGEND:  '>'  Functional Block Port Separator
+          '/'  Hierarchy Path Separator
+          '@'  Automatically Generated Node
+
+
+Short Name                              Hierarchical Name
+----------                              -----------------
+
+ *** Shortened names not required for this design. ***

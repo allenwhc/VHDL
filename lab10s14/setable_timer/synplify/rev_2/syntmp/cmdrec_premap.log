@@ -1,0 +1,13 @@
+C:\Synopsys\fpga_G201209SP1\bin64\m_gen_lattice.exe  -prodtype synplify_pro -encrypt  -pro  -rundir  H:\ese382\lab10s14\setable_timer\synplify\rev_2  -part LFXP3C  -package T100C  -grade -3   -maxfan 100    -pipe -forcenogsr -fixgatedclocks 1 -fixgeneratedclocks 1 -RWCheckOnRam 1  -use_rename_in_edif 1   -ovhdl "proj_2.vhm"  -summaryfile H:\ese382\lab10s14\setable_timer\synplify\rev_2\synlog\report\proj_2_premap.xml -oedif  H:\ese382\lab10s14\setable_timer\synplify\rev_2\proj_2.edn  -conchk_prepass  H:\ese382\lab10s14\setable_timer\synplify\rev_2\proj_2_cck_prepass.rpt  -autoconstraint  -freq 1.000  H:\ese382\lab10s14\setable_timer\synplify\rev_2\synwork\proj_2_compiler.srs  -flow prepass  -gcc_prepass  -osrd  H:\ese382\lab10s14\setable_timer\synplify\rev_2\synwork\proj_2_premap.srd  -devicelib  C:\Synopsys\fpga_G201209SP1\lib\lucent\xp.v  -devicelib  C:\Synopsys\fpga_G201209SP1\lib\lucent\pmi_def.v  -ologparam  H:\ese382\lab10s14\setable_timer\synplify\rev_2\syntmp\proj_2.plg  -osyn  H:\ese382\lab10s14\setable_timer\synplify\rev_2\synwork\proj_2_premap.srd  -prjdir  H:\ese382\lab10s14\setable_timer\synplify\  -prjname  GZ  -log  H:\ese382\lab10s14\setable_timer\synplify\rev_2\synlog\proj_2_premap.srr 
+rc:1 success:1
+H:\ese382\lab10s14\setable_timer\synplify\rev_2\proj_2.edn|o|1398795936|101631
+H:\ese382\lab10s14\setable_timer\synplify\rev_2\proj_2_cck_prepass.rpt|o|0|0
+H:\ese382\lab10s14\setable_timer\synplify\rev_2\synwork\proj_2_compiler.srs|i|1398796128|9571
+H:\ese382\lab10s14\setable_timer\synplify\rev_2\synwork\proj_2_premap.srd|o|1398796132|11146
+C:\Synopsys\fpga_G201209SP1\lib\lucent\xp.v|i|1353987166|50916
+C:\Synopsys\fpga_G201209SP1\lib\lucent\pmi_def.v|i|1353987166|40586
+H:\ese382\lab10s14\setable_timer\synplify\rev_2\syntmp\proj_2.plg|o|1398796132|0
+H:\ese382\lab10s14\setable_timer\synplify\rev_2\synwork\proj_2_premap.srd|o|1398796132|11146
+H:\ese382\lab10s14\setable_timer\synplify\rev_2\synlog\proj_2_premap.srr|o|1398796132|2562
+C:\Synopsys\fpga_G201209SP1\bin64\m_gen_lattice.exe|i|1354027764|23706112
+C:\Synopsys\fpga_G201209SP1\bin\m_gen_lattice.exe|i|1354025954|20315648

@@ -1,0 +1,51 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Updating: VHDL Post-Route Simulation Model
+Start to record tcl script...
+Finished recording TCL script.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\blif2eqn.exe converter_loop.bl0 -o converter_loop.btp -template "C:\ispLEVER_Classic\ispcpld/pld/j2mod.tft" -testfix -bus rebuild -prj loop -err automake.err'
+
+BLIF2EQN  Open-ABEL Report Generator
+ispLEVER Classic 7.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\timsel.exe @loop.psl'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\chipsim.exe "loop._sp" "loop.vtd" none'
+
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\j2svhdl.exe loop.jed -dly custom loop.tim max -pldbus default converter_loop.btp -o loop.vhq -module converter_loop -suppress -err automake.err -gui'
+
+JED2VHDL  JEDEC to IEEE1076 VHDL Model Builder
+ispLEVER Classic 7.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+
+JEDEC file: 'loop.jed'
+Device: 'P22V10GC'
+Module Name: converter_loop
+Reading JEDEC Input File
+Extracting PLD Circuit Model
+BUS template file: 'converter_loop.btp' 
+.
+Input file: loop.tim
+Local timing delay file: 'loop.tim' 
+Delay Model Selected :MAX
+Total FF type(s) used= 1
+VHDL pldmodel file    : 'loop.vhq'
+
+JED2VHDL complete. Time: 1 second 
+Done: completed successfully.

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1398186879"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1398186869">
+            <Task name="Map" build_result="2" update_result="0" update_time="1398186869"/>
+            <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
+            <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
+            <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1398186875">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1398186875"/>
+            <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
+            <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Translate" build_result="2" build_time="1398186867">
+            <Task name="Translate" build_result="2" update_result="0" update_time="1398186867"/>
+        </Milestone>
+        <Report name="zheshen_zheshen.bgn" last_build_time="1398186878" last_build_size="3289"/>
+        <Report name="zheshen_zheshen.jed" last_build_time="1398186879" last_build_size="962118"/>
+        <Report name="zheshen_zheshen.ncd" last_build_time="1398186875" last_build_size="76445"/>
+        <Report name="zheshen_zheshen.ngd" last_build_time="1398186867" last_build_size="68695"/>
+        <Report name="zheshen_zheshen_map.ncd" last_build_time="1398186869" last_build_size="51311"/>
+    </Strategy>
+</BuildStatus>

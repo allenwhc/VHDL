@@ -1,0 +1,149 @@
+Warning 4034: Unable to preserve preassignments - performing second pass without preassignments.
+Warning 4036: Signal seven_seg0_6_ is preassigned to nonexistent pin - signal ignored.
+Warning 4036: Signal seven_seg1_6_ is preassigned to nonexistent pin - signal ignored.
+Warning 4036: Signal seven_seg0_5_ is preassigned to nonexistent pin - signal ignored.
+Warning 4036: Signal seven_seg0_4_ is preassigned to nonexistent pin - signal ignored.
+Warning 4036: Signal seven_seg0_3_ is preassigned to nonexistent pin - signal ignored.
+Warning 4040: Signal seven_seg0_1_ is preassigned to pin 9;
+however, the signal is incompatible in direction - 
+preassignment ignored.
+Warning 4036: Signal seven_seg0_0_ is preassigned to nonexistent pin - signal ignored.
+Warning 4036: Signal seven_seg1_2_ is preassigned to nonexistent pin - signal ignored.
+Warning 4036: Signal seven_seg1_0_ is preassigned to nonexistent pin - signal ignored.
+Note 4042: Unable to assign seven_seg1_1_, need more pins 
+like pin 27.
+Note 4042: Unable to assign seven_seg1_2_, need more pins 
+like pin 27.
+Note 4042: Unable to assign seven_seg1_3_, need more pins 
+like pin 27.
+Note 4042: Unable to assign seven_seg1_4_, need more pins 
+like pin 27.
+Note 4042: Unable to assign seven_seg1_5_, need more pins 
+like pin 27.
+Note 4042: Unable to assign seven_seg0_0_, need more pins 
+like pin 27.
+Note 4042: Unable to assign seven_seg0_1_, need more pins 
+like pin 27.
+Note 4042: Unable to assign seven_seg0_2_, need more pins 
+like pin 27.
+Note 4042: Unable to assign seven_seg0_3_, need more pins 
+like pin 27.
+Note 4042: Unable to assign seven_seg0_4_, need more pins 
+like pin 27.
+Note 4042: Unable to assign seven_seg0_5_, need more pins 
+like pin 27.
+Note 4042: Unable to assign seven_seg1_6_, need more pins 
+like pin 27.
+Note 4042: Unable to assign seven_seg0_6_, need more pins 
+like pin 27.
+Note 4042: Unable to assign seven_seg1_1_, need more pins 
+like pin 26.
+Note 4042: Unable to assign seven_seg1_2_, need more pins 
+like pin 26.
+Note 4042: Unable to assign seven_seg1_3_, need more pins 
+like pin 26.
+Note 4042: Unable to assign seven_seg1_4_, need more pins 
+like pin 26.
+Note 4042: Unable to assign seven_seg1_5_, need more pins 
+like pin 26.
+Note 4042: Unable to assign seven_seg0_0_, need more pins 
+like pin 26.
+Note 4042: Unable to assign seven_seg0_1_, need more pins 
+like pin 26.
+Note 4042: Unable to assign seven_seg0_2_, need more pins 
+like pin 26.
+Note 4042: Unable to assign seven_seg0_3_, need more pins 
+like pin 26.
+Note 4042: Unable to assign seven_seg0_4_, need more pins 
+like pin 26.
+Note 4042: Unable to assign seven_seg0_5_, need more pins 
+like pin 26.
+Note 4042: Unable to assign seven_seg1_6_, need more pins 
+like pin 26.
+Note 4042: Unable to assign seven_seg0_6_, need more pins 
+like pin 26.
+Note 4042: Unable to assign seven_seg1_1_, need more pins 
+like pin 25.
+Note 4042: Unable to assign seven_seg1_2_, need more pins 
+like pin 25.
+Note 4042: Unable to assign seven_seg1_3_, need more pins 
+like pin 25.
+Note 4042: Unable to assign seven_seg1_4_, need more pins 
+like pin 25.
+Note 4042: Unable to assign seven_seg1_5_, need more pins 
+like pin 25.
+Note 4042: Unable to assign seven_seg0_0_, need more pins 
+like pin 25.
+Note 4042: Unable to assign seven_seg0_1_, need more pins 
+like pin 25.
+Note 4042: Unable to assign seven_seg0_2_, need more pins 
+like pin 25.
+Note 4042: Unable to assign seven_seg0_3_, need more pins 
+like pin 25.
+Note 4042: Unable to assign seven_seg0_4_, need more pins 
+like pin 25.
+Note 4042: Unable to assign seven_seg0_5_, need more pins 
+like pin 25.
+Note 4042: Unable to assign seven_seg1_6_, need more pins 
+like pin 25.
+Note 4042: Unable to assign seven_seg0_6_, need more pins 
+like pin 25.
+Note 4042: Unable to assign seven_seg1_1_, need more pins 
+like pin 24.
+Note 4042: Unable to assign seven_seg1_2_, need more pins 
+like pin 24.
+Note 4042: Unable to assign seven_seg1_3_, need more pins 
+like pin 24.
+Note 4042: Unable to assign seven_seg1_4_, need more pins 
+like pin 24.
+Note 4042: Unable to assign seven_seg1_5_, need more pins 
+like pin 24.
+Note 4042: Unable to assign seven_seg0_0_, need more pins 
+like pin 24.
+Note 4042: Unable to assign seven_seg0_1_, need more pins 
+like pin 24.
+Note 4042: Unable to assign seven_seg0_2_, need more pins 
+like pin 24.
+Note 4042: Unable to assign seven_seg0_3_, need more pins 
+like pin 24.
+Note 4042: Unable to assign seven_seg0_4_, need more pins 
+like pin 24.
+Note 4042: Unable to assign seven_seg0_5_, need more pins 
+like pin 24.
+Note 4042: Unable to assign seven_seg1_6_, need more pins 
+like pin 24.
+Note 4042: Unable to assign seven_seg0_6_, need more pins 
+like pin 24.
+Note 4042: Unable to assign seven_seg1_1_, need more pins 
+like pin 23.
+Note 4042: Unable to assign seven_seg1_2_, need more pins 
+like pin 23.
+Note 4042: Unable to assign seven_seg1_3_, need more pins 
+like pin 23.
+Note 4042: Unable to assign seven_seg1_4_, need more pins 
+like pin 23.
+Note 4042: Unable to assign seven_seg1_5_, need more pins 
+like pin 23.
+Note 4042: Unable to assign seven_seg0_0_, need more pins 
+like pin 23.
+Note 4042: Unable to assign seven_seg0_1_, need more pins 
+like pin 23.
+Note 4042: Unable to assign seven_seg0_2_, need more pins 
+like pin 23.
+Note 4042: Unable to assign seven_seg0_3_, need more pins 
+like pin 23.
+Note 4042: Unable to assign seven_seg0_4_, need more pins 
+like pin 23.
+Note 4042: Unable to assign seven_seg0_5_, need more pins 
+like pin 23.
+Note 4042: Unable to assign seven_seg1_6_, need more pins 
+like pin 23.
+Note 4042: Unable to assign seven_seg0_6_, need more pins 
+like pin 23.
+$DEVICE        p22v10gc  nofit 
+$PINS   16  output_15_2__un1_n:27   output_2__n:17   output_15_1__n:26   un20_temp1_3__n:18   output_10_1__n:25   N_153:19   output_1__n:24   
+output_15_0__n:20   un12_temp1_3__n:23   seven_seg1_0_:21   binary_0_:7   binary_1_:6   binary_2_:5   binary_3_:4   
+binary_4_:3   binary_5_:2   
+$UNASSIGNED   13  seven_seg1_1_   seven_seg1_2_   seven_seg1_3_   seven_seg1_4_   seven_seg1_5_   seven_seg0_0_   seven_seg0_1_   seven_seg0_2_   seven_seg0_3_   seven_seg0_4_   seven_seg0_5_   seven_seg1_6_   seven_seg0_6_   
+--------------------------------------------------------------
+

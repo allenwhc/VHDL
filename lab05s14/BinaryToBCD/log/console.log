@@ -1,0 +1,10 @@
+acom -dbg -work BinaryToBCD -2002  $dsn/src/BinaryToBCD.vhd $dsn/src/BinaryToBCD_TB.vhd
+# Compile...
+# File: h:\ese382\lab05s14\BinaryToBCD\src\BinaryToBCD.vhd
+# Compile Entity "BinaryToBCD"
+# Compile Architecture "BinaryToBCD" of Entity "BinaryToBCD"
+# File: h:\ese382\lab05s14\BinaryToBCD\src\BinaryToBCD_TB.vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+# Design: Design "BCDTo7Seg" has been set as active.

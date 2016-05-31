@@ -1,0 +1,5 @@
+.\src\seq_sys.vhd
+.\src\seq_sys_TB-2.vhd
+.\src\flipflop.vhd
+.\src\counter.vhd
+.\src\right_shift_reg.vhd

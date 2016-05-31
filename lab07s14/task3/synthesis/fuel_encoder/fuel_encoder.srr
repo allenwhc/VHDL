@@ -1,0 +1,50 @@
+#Build: Synplify Pro E-2011.03-SP2, Build 053R, May 19 2011
+#install: C:\Synopsys\fpga_E201103SP2
+#OS: Windows XP 5.1
+#Hostname: WKS-085
+
+#Implementation: fuel_encoder
+
+#Tue Apr 01 09:50:38 2014
+
+$ Start of Compile
+#Tue Apr 01 09:50:38 2014
+
+Synopsys VHDL Compiler, version comp550rcp1, Build 072R, built May 25 2011
+@N|Running in 32-bit mode
+Copyright (C) 1994-2011 Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+
+@N: CD720 :"C:\Synopsys\fpga_E201103SP2\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"H:\ese382\lab07s14\task3\src\fuel_encoder.vhd":28:7:28:18|Top entity is set to fuel_encoder.
+VHDL syntax check successful!
+@N: CD630 :"H:\ese382\lab07s14\task3\src\fuel_encoder.vhd":28:7:28:18|Synthesizing task3.fuel_encoder.fuel_encoder 
+@W: CD604 :"H:\ese382\lab07s14\task3\src\fuel_encoder.vhd":48:3:48:16|OTHERS clause is not synthesized 
+Post processing for task3.fuel_encoder.fuel_encoder
+@W: CL247 :"H:\ese382\lab07s14\task3\src\fuel_encoder.vhd":30:3:30:6|Input port bit 0 of fuel(3 downto 0) is unused 
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Apr 01 09:50:39 2014
+
+###########################################################]
+Mapping Report (contents appended below)
+@N:"H:\ese382\lab07s14\task3\synthesis\fuel_encoder\synlog\fuel_encoder_ISPGAL_Mapper.srr"
+Synopsys CPLD Technology Mapper, Version maprc, Build 507R, Built May 17 2011
+Copyright (C) 1994-2011, Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version E-201103-SP2
+---------------------------------------
+Resource Usage Report
+
+Simple gate primitives:
+IBUF            3 uses
+OBUF            5 uses
+INV             5 uses
+AND2            3 uses
+
+
+@N: FC100 |Timing Report not generated for this device, please use place and route tools for timing analysis.
+E-201103-SP2
+Mapper successful!
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Apr 01 09:50:41 2014
+
+###########################################################]

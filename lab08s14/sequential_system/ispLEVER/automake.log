@@ -1,0 +1,21 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Updating: Stamp Model Data File
+Start to record tcl script...
+Finished recording TCL script.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\timer.exe -inp "seq.tte" -lci "seq.lct" -stamp "seq.trp" -exf "seq_sys.exf" -lco "seq.lco"'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\stamppar.exe -i seq.trp -gui'
+
+Lattice Stamp Model Generator
+Copyright (c) 2000-2001 by Lattice Semiconductor Corporation.
+All Rights Reserved.
+
+
+stamppar completed successfully.
+
+Done: completed successfully.

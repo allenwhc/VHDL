@@ -1,0 +1,59 @@
+$WAVE4
+$RESOLUTION 1000
+$ENDTIME 13307990000
+I 1 "c#9#STD_LOGICc9 UX01ZWLH-"
+$IN 2 1 "/dff_en/clk"
+$IN 1 1 8 0 d
+$IN 3 1 8 0 en
+$OUT 5 1 8 0 q
+$IN 4 1 8 0 rst_bar
+P 0 1-5 CS "0"
+$WAVES 1
+=0 D 0 1
+R 1 20 =1 T 50k
+*0
+$VALUES
+R 2 10 0 1
+V 2
+0
+U
+$END
+$WAVES 2
+*0
+R 1 2661598 =2 T 5k
+$VALUES
+R 2 1330799 0 1
+V 1
+0
+$END
+$WAVES 3
+*0
+=3 T 120k
+=4 T 30k
+=5 D 1618590k 1
+$VALUES
+V 4
+0
+1
+0
+U
+$END
+$WAVES 4
+*0
+=6 D 1618740k 1
+$VALUES
+V 2
+1
+U
+$END
+$WAVES 5
+*0
+=7 D 125k 1
+=8 D 875k 1
+$VALUES
+V 3
+U
+0
+U
+$END
+$ENDWAVE

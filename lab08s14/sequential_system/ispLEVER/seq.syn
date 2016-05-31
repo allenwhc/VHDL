@@ -1,0 +1,10 @@
+JDF B
+// Created by Version 7.0 
+PROJECT seq
+DESIGN seq Normal
+DEVKIT M4A5-64/32-10JC
+ENTRY EDIF
+MODULE ..\synplify\rev_1\seq.edf
+MODSTYLE seq_sys Normal
+SYNTHESIS_TOOL Synplify
+TOPMODULE seq_sys

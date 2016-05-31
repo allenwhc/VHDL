@@ -1,0 +1,26 @@
+ispLEVER Classic 7.0.00.10.16.07 SDFGEN
+Copyright(C),1992-2007, Lattice Semiconductor Corporation. All Rights Reserved.
+Output Files:
+  Netlist File: task3.vho
+  Delay   File: task3.sdf
+
+Parsing C:/ispLEVER_Classic/ispcpld/dat/sdf.mdl
+Input file: h:/ese382/lab05s14/binarytoseg/isplever\task3.tte
+Note 18862: NODE name output_15_2__n being renamed to output_15_2_Xn.
+Note 18862: NODE name output_15_1__n being renamed to output_15_1_Xn.
+Note 18862: NODE name output_2__n being renamed to output_2_Xn.
+Note 18862: NODE name output_3__n being renamed to output_3_Xn.
+Reading library information ...
+Mapping to combinational gates 
+Mapping to netlist view.
+Note 18862: NODE name seven_seg1_4_.X1 being renamed to GATE_seven_seg1_4X_X1.
+Note 18862: NODE name seven_seg1_4_.X2 being renamed to GATE_seven_seg1_4X_X2.
+Note 18862: NODE name output_1_bus.X1 being renamed to GATE_output_1_bus_X1.
+Note 18862: NODE name G_142.X1 being renamed to GATE_G_142_X1.
+Note 18862: NODE name output_2_Xn.X1 being renamed to GATE_output_2_Xn_X1.
+Note 18862: NODE name output_2_Xn.X2 being renamed to GATE_output_2_Xn_X2.
+Utilization Estimate
+    Combinational Macros:        482
+    Flip-Flop and Latch Macros:    0
+    I/O Pads:                     20
+Elapsed time: 2 seconds

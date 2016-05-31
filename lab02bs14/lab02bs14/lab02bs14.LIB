@@ -1,0 +1,37 @@
+timestamp=1392733794696
+
+[half_adder]
+A/structure=21|./src/half_adder.vhq|96|1*29550
+BinI32/structure=3*7588
+I=0*3270
+I/structure=0*13316
+M=11|0|v98|1392733787025|./src/half_adder.vhq|0*1723*0x60d66195001eca124644aac4b4a03631da909da6|0*3189*0xab32bc1a2daf049573e14469f634e0e6
+M/structure=21|0|v98|1392733794465|./src/half_adder.vhq|0*3490*0xa07ce095838ebecea108dac25d8ecda1d67b09f2|0*13222*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/half_adder.vhq|33
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/structure=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[testbench]
+A/behavior=21|./src/half_adder_tb.vhd|9|1*57357
+BinI32/behavior=3*14471
+I=0*318
+I/behavior=0*15640
+M=11|0|v98|1392733755136|./src/half_adder_tb.vhd|0*73*0x24398c09f467c3b09ab1c912621ce7bf5542321e|0*235*0xab32bc1a2daf049573e14469f634e0e6
+M/behavior=21|0|v98|1392733794602|./src/half_adder_tb.vhd|0*14708*0x37c570ab09b0ce5f83411fe63d536e386935f51b|0*15545*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/half_adder_tb.vhd|6
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/behavior=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[~A]
+ModifyID=126
+Version=73
+
+[~MFT]
+0=19|0lab02bs14.mgf|15640|1102
+1=5|1lab02bs14.mgf|57357|29550
+3=5|3lab02bs14.mgf|14471|7588
+
+[~U]
+half_adder=11|0*421|
+testbench=11|0*0|
+

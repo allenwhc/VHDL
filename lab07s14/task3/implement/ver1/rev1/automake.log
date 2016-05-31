@@ -1,0 +1,218 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Updating: VHDL Post-Route Simulation Model
+Start to record tcl script...
+Finished recording TCL script.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\edif2blf.exe -edf "fuel_encoder.edf" -out "fuel_encoder.bl0" -err automake.err -log "fuel_encoder.log" -prj isp_task3 -lib "C:\ispLEVER_Classic\ispcpld/dat/mach.edn" @"fuel_encoder.esp" -nbx -cvt YES'
+
+Starting EDIF2BLIF....
+
+EDIF2BLIF: Warning: There is 1 net with no drivers.
+
+EDIF2BLIF: Warning: 	Net with no driver: GND
+
+EDIF2BLIF: Warning: Logic 0 assumed.
+
+readEDIF ended normally.
+
+Inspect circuit fuel_encoder
+    Number of input ports   : 1
+    Number of output ports  : 2
+    Number of bidir ports   : 0
+    Number of instances     : 19
+    Number of nets          : 23
+
+No design errors found in circuit fuel_encoder
+
+WriteBLIF ended normally.
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\blif2eqn.exe fuel_encoder.bl0 -o fuel_encoder.btp -template "C:\ispLEVER_Classic\ispcpld/pld/j2mod.tft" -testfix -bus rebuild -prj isp_task3 -err automake.err'
+
+BLIF2EQN  Open-ABEL Report Generator
+ispLEVER Classic 7.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\iblifopt.exe "fuel_encoder.bl0" -red bypin choose -collapse -pterms 8 -family -err automake.err -gui'
+
+BLIFOPT  Open-ABEL Optimizer 
+ispLEVER Classic 7.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+U.C. Berkeley, SIS Ver. 1.0, supported by Lattice Semiconductor Corp.
+Reading Open-ABEL 2 file fuel_encoder.bl0...
+Node fuel_0__n does not fanout anywhere. But it is preserved.
+Node fuel_i_2__n has been collapsed.
+Node fuel_i_1__n has been collapsed.
+Node fuel_c_1__n has been collapsed.
+Node fuel_c_3__n has been collapsed.
+Node fuel_c_2__n has been collapsed.
+Node un3_empty has been collapsed.
+Node N_4_0 has been collapsed.
+Node gnd_n_n has been collapsed.
+Node leds6 has been collapsed.
+Node N_4 has been collapsed.
+Node fuel_i_3__n has been collapsed.
+Node un3_empty_i has been collapsed.
+Node fuel_0__n does not fanout anywhere. But it is preserved.
+Performing 'bypin choose' optimization...
+Writing Open-ABEL 2 (BLIF) file fuel_encoder.bl1...
+
+BLIFOPT complete - 0 errors, 0 warnings. Time: 1 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\iblflink.exe "fuel_encoder.bl1" -o "isp_task3.bl2" -omod fuel_encoder -family -err automake.err -gui'
+
+BLIFLINK  Top-Down Design Linker
+ispLEVER Classic 7.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+
+Top-level file: 'fuel_encoder.bl1'
+
+Hierarchical BLIF: 'isp_task3.bl2'
+
+BLIFLINK complete.  Time: 1 second 
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\iblifopt.exe isp_task3.bl2 -red bypin choose -sweep -collapse all -pterms 8 -err automake.err -gui'
+
+BLIFOPT  Open-ABEL Optimizer 
+ispLEVER Classic 7.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+U.C. Berkeley, SIS Ver. 1.0, supported by Lattice Semiconductor Corp.
+Reading Open-ABEL 2 file isp_task3.bl2...
+Node fuel_0__n does not fanout anywhere. But it is preserved.
+Warning 13707:Unused node 'fuel_0__n' removed.
+Warning 13707:Unused pin 'fuel_0_' removed.
+Performing 'bypin choose' optimization...
+Writing Open-ABEL 2 (BLIF) file isp_task3.bl3...
+
+BLIFOPT complete - 0 errors, 2 warnings. Time: 1 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\idiofft.exe isp_task3.bl3 -pla -o isp_task3.tt2 -dev p22v10gc -define N -err automake.err -gui'
+
+DIOFFT  Flip-Flop Transformation program
+ispLEVER Classic 7.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+Input file: isp_task3.bl3.
+Output file: isp_task3.tt2.
+Cross reference file: isp_task3.xrf.
+
+Shortening signal names...
+Writing signal name cross reference file isp_task3.xrf... 
+
+DIOFFT complete. - Time 0 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\fit.exe isp_task3.tt2 -dev p22v10gc -str -err automake.err -gui'
+
+FIT  Generic Device Fitter
+ispLEVER Classic 7.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+Input file: 'isp_task3.tt2'
+Device 'p22v10gc'
+Design FITS
+Pin-assigned pla: 'isp_task3.tt3'
+
+FIT complete.  Time: 1 second.
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\fuseasm.exe isp_task3.tt3 -dev p22v10gc -o isp_task3.jed -ivec NoInput.tmv -rep isp_task3.rpt -doc brief -con ptblown -for brief -err automake.err -gui'
+
+FUSEASM  Fusemap Assembler
+ispLEVER Classic 7.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+Note 5144: Could not open vector file NoInput.tmv
+
+Input file: 'isp_task3.tt3'
+Device: 'P22V10GC'
+Building model...
+Choosing best polarities...
+Mapping equations...
+.
+9 of 132 terms used; 0 vectors loaded
+Programmer load file: 'isp_task3.jed'
+Generating report...
+Report file: 'isp_task3.rpt'
+
+FUSEASM complete.  Time: 1 second 
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\timsel.exe @isp_task3.psl'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\chipsim.exe "isp_task3._sp" "isp_task3.vtd" none'
+
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\j2svhdl.exe isp_task3.jed -dly custom isp_task3.tim max -pldbus default fuel_encoder.btp -o isp_task3.vhq -module fuel_encoder -suppress -err automake.err -gui'
+
+JED2VHDL  JEDEC to IEEE1076 VHDL Model Builder
+ispLEVER Classic 7.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+
+JEDEC file: 'isp_task3.jed'
+Device: 'P22V10GC'
+Module Name: fuel_encoder
+Reading JEDEC Input File
+Extracting PLD Circuit Model
+BUS template file: 'fuel_encoder.btp' 
+
+-- Reconstructing bus signal name as read from bus template file. 
+It may take a moment... 
+
+
+*** Signal Name Conversion ***
+PIN 1 -- signal: 'fuel_3_' is converted to: 'fuel(3)'. 
+PIN 2 -- signal: 'fuel_2_' is converted to: 'fuel(2)'. 
+PIN 3 -- signal: 'fuel_1_' is converted to: 'fuel(1)'. 
+PIN 16 -- signal: 'leds_1_' is converted to: 'leds(1)'. 
+PIN 24 -- signal: 'leds_3_' is converted to: 'leds(3)'. 
+PIN 25 -- signal: 'leds_2_' is converted to: 'leds(2)'. 
+PIN 26 -- signal: 'leds_0_' is converted to: 'leds(0)'. 
+.
+Input file: isp_task3.tim
+Local timing delay file: 'isp_task3.tim' 
+Delay Model Selected :MAX
+Total FF type(s) used= 1
+VHDL pldmodel file    : 'isp_task3.vhq'
+
+JED2VHDL complete. Time: 1 second 
+Done: completed successfully.

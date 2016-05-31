@@ -1,0 +1,291 @@
+MODELDATA
+MODELDATA_VERSION "1.0";
+DESIGN "seq";
+DATE "Tue Apr 08 14:16:21 2014";
+VENDOR "Lattice Semiconductor Corporation";
+PROGRAM "STAMP Model Generator";
+
+/* port drive, max transition and max capacitance */
+PORTDATA
+clk: MAXTRANS(0.0);
+d_0: MAXTRANS(0.0);
+d_1: MAXTRANS(0.0);
+d_2: MAXTRANS(0.0);
+d_3: MAXTRANS(0.0);
+d_4: MAXTRANS(0.0);
+d_5: MAXTRANS(0.0);
+d_6: MAXTRANS(0.0);
+d_7: MAXTRANS(0.0);
+load: MAXTRANS(0.0);
+rst_bar: MAXTRANS(0.0);
+send: MAXTRANS(0.0);
+sample_clk: MAXTRANS(0.0);
+serial_out: MAXTRANS(0.0);
+valid: MAXTRANS(0.0);
+ENDPORTDATA
+
+/* timing arc data */
+TIMINGDATA
+
+ARCDATA
+clk_sample_clk_delay:
+CELL_RISE(scalar) {
+VALUES(10.0);
+}
+CELL_FALL(scalar) {
+VALUES(10.0);
+}
+ENDARCDATA
+
+ARCDATA
+clk_sample_clk_delay:
+CELL_RISE(scalar) {
+VALUES(13.0);
+}
+CELL_FALL(scalar) {
+VALUES(13.0);
+}
+ENDARCDATA
+
+ARCDATA
+clk_sample_clk_delay:
+CELL_RISE(scalar) {
+VALUES(13.0);
+}
+CELL_FALL(scalar) {
+VALUES(13.0);
+}
+ENDARCDATA
+
+ARCDATA
+clk_valid_delay:
+CELL_RISE(scalar) {
+VALUES(13.0);
+}
+CELL_FALL(scalar) {
+VALUES(13.0);
+}
+ENDARCDATA
+
+ARCDATA
+clk_valid_delay:
+CELL_RISE(scalar) {
+VALUES(13.0);
+}
+CELL_FALL(scalar) {
+VALUES(13.0);
+}
+ENDARCDATA
+
+ARCDATA
+clk_serial_out_delay:
+CELL_RISE(scalar) {
+VALUES(6.0);
+}
+CELL_FALL(scalar) {
+VALUES(6.0);
+}
+ENDARCDATA
+
+ARCDATA
+load_clk_setup:
+RISE_CONSTRAINT(scalar) {
+VALUES(6.5);
+}
+FALL_CONSTRAINT(scalar) {
+VALUES(6.5);
+}
+ENDARCDATA
+
+ARCDATA
+load_clk_hold:
+RISE_CONSTRAINT(scalar) {
+VALUES(0.0);
+}
+FALL_CONSTRAINT(scalar) {
+VALUES(0.0);
+}
+ENDARCDATA
+
+ARCDATA
+d_0_clk_setup:
+RISE_CONSTRAINT(scalar) {
+VALUES(5.5);
+}
+FALL_CONSTRAINT(scalar) {
+VALUES(5.5);
+}
+ENDARCDATA
+
+ARCDATA
+d_0_clk_hold:
+RISE_CONSTRAINT(scalar) {
+VALUES(0.0);
+}
+FALL_CONSTRAINT(scalar) {
+VALUES(0.0);
+}
+ENDARCDATA
+
+ARCDATA
+d_1_clk_setup:
+RISE_CONSTRAINT(scalar) {
+VALUES(5.5);
+}
+FALL_CONSTRAINT(scalar) {
+VALUES(5.5);
+}
+ENDARCDATA
+
+ARCDATA
+d_1_clk_hold:
+RISE_CONSTRAINT(scalar) {
+VALUES(0.0);
+}
+FALL_CONSTRAINT(scalar) {
+VALUES(0.0);
+}
+ENDARCDATA
+
+ARCDATA
+d_2_clk_setup:
+RISE_CONSTRAINT(scalar) {
+VALUES(5.5);
+}
+FALL_CONSTRAINT(scalar) {
+VALUES(5.5);
+}
+ENDARCDATA
+
+ARCDATA
+d_2_clk_hold:
+RISE_CONSTRAINT(scalar) {
+VALUES(0.0);
+}
+FALL_CONSTRAINT(scalar) {
+VALUES(0.0);
+}
+ENDARCDATA
+
+ARCDATA
+d_3_clk_setup:
+RISE_CONSTRAINT(scalar) {
+VALUES(5.5);
+}
+FALL_CONSTRAINT(scalar) {
+VALUES(5.5);
+}
+ENDARCDATA
+
+ARCDATA
+d_3_clk_hold:
+RISE_CONSTRAINT(scalar) {
+VALUES(0.0);
+}
+FALL_CONSTRAINT(scalar) {
+VALUES(0.0);
+}
+ENDARCDATA
+
+ARCDATA
+d_4_clk_setup:
+RISE_CONSTRAINT(scalar) {
+VALUES(5.5);
+}
+FALL_CONSTRAINT(scalar) {
+VALUES(5.5);
+}
+ENDARCDATA
+
+ARCDATA
+d_4_clk_hold:
+RISE_CONSTRAINT(scalar) {
+VALUES(0.0);
+}
+FALL_CONSTRAINT(scalar) {
+VALUES(0.0);
+}
+ENDARCDATA
+
+ARCDATA
+d_5_clk_setup:
+RISE_CONSTRAINT(scalar) {
+VALUES(5.5);
+}
+FALL_CONSTRAINT(scalar) {
+VALUES(5.5);
+}
+ENDARCDATA
+
+ARCDATA
+d_5_clk_hold:
+RISE_CONSTRAINT(scalar) {
+VALUES(0.0);
+}
+FALL_CONSTRAINT(scalar) {
+VALUES(0.0);
+}
+ENDARCDATA
+
+ARCDATA
+d_6_clk_setup:
+RISE_CONSTRAINT(scalar) {
+VALUES(5.5);
+}
+FALL_CONSTRAINT(scalar) {
+VALUES(5.5);
+}
+ENDARCDATA
+
+ARCDATA
+d_6_clk_hold:
+RISE_CONSTRAINT(scalar) {
+VALUES(0.0);
+}
+FALL_CONSTRAINT(scalar) {
+VALUES(0.0);
+}
+ENDARCDATA
+
+ARCDATA
+d_7_clk_setup:
+RISE_CONSTRAINT(scalar) {
+VALUES(5.5);
+}
+FALL_CONSTRAINT(scalar) {
+VALUES(5.5);
+}
+ENDARCDATA
+
+ARCDATA
+d_7_clk_hold:
+RISE_CONSTRAINT(scalar) {
+VALUES(0.0);
+}
+FALL_CONSTRAINT(scalar) {
+VALUES(0.0);
+}
+ENDARCDATA
+
+ARCDATA
+send_clk_setup:
+RISE_CONSTRAINT(scalar) {
+VALUES(5.5);
+}
+FALL_CONSTRAINT(scalar) {
+VALUES(5.5);
+}
+ENDARCDATA
+
+ARCDATA
+send_clk_hold:
+RISE_CONSTRAINT(scalar) {
+VALUES(0.0);
+}
+FALL_CONSTRAINT(scalar) {
+VALUES(0.0);
+}
+ENDARCDATA
+
+ENDTIMINGDATA
+ENDMODELDATA

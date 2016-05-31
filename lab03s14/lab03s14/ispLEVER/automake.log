@@ -1,0 +1,48 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Updating: Verilog Post-Route Simulation Model
+Start to record tcl script...
+Finished recording TCL script.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\blif2eqn.exe "selected.bl0" -o "selected.tfi" -template "C:\ispLEVER_Classic\ispcpld\generic\verilog\tfi.tft" -testfix -bus rebuild -prj selector -err automake.err'
+
+BLIF2EQN  Open-ABEL Report Generator
+ispLEVER Classic 7.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\chipsim.exe "selector._sp" "selector.vtl" none'
+
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\j2vlog.exe selector.jed -dly custom selector.tim -pldbus default selected.btp -o selector.vt -module selected -suppress -err automake.err -gui'
+
+JED2VLOG  JEDEC to Verilog PLD Model Builder
+ispLEVER Classic 7.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+
+JEDEC file: 'selector.jed'
+Device: 'P22V10GC'
+
+J2VLOG Library file: 'C:\ispLEVER_Classic\ispcpld\lib5\j2vlib.dev'
+Module Name: selected
+Reading JEDEC Input File
+Extracting PLD Circuit Model
+BUS template file: 'selected.btp' 
+Input file: selector.tim
+Local timing delay file: 'selector.tim' 
+Delay Model Selected :TYP
+Total FF type(s) used= 1
+Verilog pldmodel file    : 'selector.vt'
+
+JED2VLOG complete. Time: 1 second 
+Done: completed successfully.

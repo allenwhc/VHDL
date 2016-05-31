@@ -1,0 +1,104 @@
+#PLAFILE task3.tt4
+#DATE    03/11/2014
+#DESIGN  <no design name>
+#DEVICE  mach463a
+
+DATA LOCATION G_131:A_5	// NOD
+DATA LOCATION binary_0_:A_*_7	// INP
+DATA LOCATION binary_1_:A_*_6	// INP
+DATA LOCATION binary_2_:A_*_5	// INP
+DATA LOCATION binary_3_:A_*_4	// INP
+DATA LOCATION binary_4_:A_*_3	// INP
+DATA LOCATION binary_5_:A_*_2	// INP
+DATA LOCATION output_15_1__n:C_12	// NOD
+DATA LOCATION output_15_2__n:C_1	// NOD
+DATA LOCATION output_1_:A_8	// NOD
+DATA LOCATION output_2__n:B_1	// NOD
+DATA LOCATION output_i_3__n:A_12	// NOD
+DATA LOCATION seven_seg0_0_:D_0_41	// OUT
+DATA LOCATION seven_seg0_1_:A_0_9	// OUT
+DATA LOCATION seven_seg0_2_:C_4_24	// OUT
+DATA LOCATION seven_seg0_3_:D_1_43	// OUT
+DATA LOCATION seven_seg0_4_:D_8_39	// OUT
+DATA LOCATION seven_seg0_5_:D_4_37	// OUT
+DATA LOCATION seven_seg0_6_:A_4_8	// OUT
+DATA LOCATION seven_seg1_0_:D_12_42	// OUT
+DATA LOCATION seven_seg1_1_:B_12_19	// OUT
+DATA LOCATION seven_seg1_2_:B_4_15	// OUT
+DATA LOCATION seven_seg1_3_:B_0_21	// OUT
+DATA LOCATION seven_seg1_4_:C_0_26	// OUT
+DATA LOCATION seven_seg1_5_:B_8_17	// OUT
+DATA LOCATION seven_seg1_6_:C_8_30	// OUT
+DATA IO_DIR   binary_0_:IN
+DATA IO_DIR   binary_1_:IN
+DATA IO_DIR   binary_2_:IN
+DATA IO_DIR   binary_3_:IN
+DATA IO_DIR   binary_4_:IN
+DATA IO_DIR   binary_5_:IN
+DATA IO_DIR   seven_seg0_0_:OUT
+DATA IO_DIR   seven_seg0_1_:OUT
+DATA IO_DIR   seven_seg0_2_:OUT
+DATA IO_DIR   seven_seg0_3_:OUT
+DATA IO_DIR   seven_seg0_4_:OUT
+DATA IO_DIR   seven_seg0_5_:OUT
+DATA IO_DIR   seven_seg0_6_:OUT
+DATA IO_DIR   seven_seg1_0_:OUT
+DATA IO_DIR   seven_seg1_1_:OUT
+DATA IO_DIR   seven_seg1_2_:OUT
+DATA IO_DIR   seven_seg1_3_:OUT
+DATA IO_DIR   seven_seg1_4_:OUT
+DATA IO_DIR   seven_seg1_5_:OUT
+DATA IO_DIR   seven_seg1_6_:OUT
+DATA PW_LEVEL  binary_5_:0
+DATA SLEW      binary_5_:0
+DATA PW_LEVEL  seven_seg0_6_:0
+DATA SLEW      seven_seg0_6_:0
+DATA PW_LEVEL  seven_seg1_6_:0
+DATA SLEW      seven_seg1_6_:0
+DATA PW_LEVEL  binary_4_:0
+DATA SLEW      binary_4_:0
+DATA PW_LEVEL  binary_3_:0
+DATA SLEW      binary_3_:0
+DATA PW_LEVEL  binary_2_:0
+DATA SLEW      binary_2_:0
+DATA PW_LEVEL  binary_1_:0
+DATA SLEW      binary_1_:0
+DATA PW_LEVEL  binary_0_:0
+DATA SLEW      binary_0_:0
+DATA PW_LEVEL  seven_seg0_5_:0
+DATA SLEW      seven_seg0_5_:0
+DATA PW_LEVEL  seven_seg0_4_:0
+DATA SLEW      seven_seg0_4_:0
+DATA PW_LEVEL  seven_seg0_3_:0
+DATA SLEW      seven_seg0_3_:0
+DATA PW_LEVEL  seven_seg0_2_:0
+DATA SLEW      seven_seg0_2_:0
+DATA PW_LEVEL  seven_seg0_1_:0
+DATA SLEW      seven_seg0_1_:0
+DATA PW_LEVEL  seven_seg0_0_:0
+DATA SLEW      seven_seg0_0_:0
+DATA PW_LEVEL  seven_seg1_5_:0
+DATA SLEW      seven_seg1_5_:0
+DATA PW_LEVEL  seven_seg1_4_:0
+DATA SLEW      seven_seg1_4_:0
+DATA PW_LEVEL  seven_seg1_3_:0
+DATA SLEW      seven_seg1_3_:0
+DATA PW_LEVEL  seven_seg1_2_:0
+DATA SLEW      seven_seg1_2_:0
+DATA PW_LEVEL  seven_seg1_1_:0
+DATA SLEW      seven_seg1_1_:0
+DATA PW_LEVEL  seven_seg1_0_:0
+DATA SLEW      seven_seg1_0_:0
+DATA PW_LEVEL  output_15_2__n:0
+DATA SLEW      output_15_2__n:0
+DATA PW_LEVEL  output_1_:0
+DATA SLEW      output_1_:0
+DATA PW_LEVEL  output_15_1__n:0
+DATA SLEW      output_15_1__n:0
+DATA PW_LEVEL  G_131:0
+DATA SLEW      G_131:0
+DATA PW_LEVEL  output_2__n:0
+DATA SLEW      output_2__n:0
+DATA PW_LEVEL  output_i_3__n:0
+DATA SLEW      output_i_3__n:0
+END

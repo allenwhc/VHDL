@@ -1,0 +1,9 @@
+.\src\minutes_counter.vhd
+.\src\seconds_counter.vhd
+.\src\rotary_encoder_decoder_fsm.vhd
+.\src\settable_timer.vhd
+.\src\fsm.vhd
+.\src\pedgefsm.vhd
+.\src\count_down_timer.vhd
+.\src\rotary_encoder_decoder_fsm_TB.vhd
+.\src\count_down_timer_TB.vhd

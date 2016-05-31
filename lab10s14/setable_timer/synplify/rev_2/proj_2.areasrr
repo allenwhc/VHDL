@@ -1,0 +1,105 @@
+----------------------------------------------------------------------
+Report for cell count_down_timer.count_down_timer
+
+Register bits: 28 of 3072 (1%)
+PIC Latch:       0
+I/O cells:       20
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                               CCU2        3       100.0
+                            FD1P3DX        1       100.0
+                            FD1S3AX        2       100.0
+                            FD1S3AY        2       100.0
+                            FD1S3DX       13       100.0
+                            FD1S3IX       10       100.0
+                                GSR        1       100.0
+                                 IB        9       100.0
+                                INV        2       100.0
+                                 OB       11       100.0
+                           ORCALUT4       97       100.0
+                              PFUMX        2       100.0
+                                PUR        1       100.0
+                                VHI        7       100.0
+                                VLO        6       100.0
+SUB MODULES 
+                       control_unit        1       100.0
+                    minutes_counter        1       100.0
+                           pedgefsm        1       100.0
+          rotary_encoder_decoder_fsm        1       100.0
+          rotary_encoder_decoder_fsm_1        1       100.0
+                    seconds_counter        1       100.0
+                            
+                         TOTAL           173           
+----------------------------------------------------------------------
+Report for cell control_unit.netlist
+     Instance path:  u5
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S3AX        2       100.0
+                            FD1S3AY        2       100.0
+                            FD1S3IX        4        40.0
+                           ORCALUT4        9         9.3
+                                VHI        1        14.3
+                                VLO        1        16.7
+                            
+                         TOTAL            19           
+----------------------------------------------------------------------
+Report for cell pedgefsm.netlist
+     Instance path:  u4
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S3DX        2        15.4
+                                INV        1        50.0
+                           ORCALUT4        1         1.0
+                                VHI        1        14.3
+                                VLO        1        16.7
+                            
+                         TOTAL             6           
+----------------------------------------------------------------------
+Report for cell minutes_counter.netlist
+     Instance path:  u3
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S3DX        4        30.8
+                           ORCALUT4       19        19.6
+                                VHI        1        14.3
+                                VLO        1        16.7
+                            
+                         TOTAL            25           
+----------------------------------------------------------------------
+Report for cell rotary_encoder_decoder_fsm_1.netlist
+  Original Cell name rotary_encoder_decoder_fsm
+     Instance path:  u2
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S3IX        2        20.0
+                           ORCALUT4        2         2.1
+                                VHI        1        14.3
+                            
+                         TOTAL             5           
+----------------------------------------------------------------------
+Report for cell seconds_counter.netlist
+     Instance path:  u1
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                               CCU2        3       100.0
+                            FD1P3DX        1       100.0
+                            FD1S3DX        7        53.8
+                           ORCALUT4       44        45.4
+                              PFUMX        2       100.0
+                                VHI        1        14.3
+                                VLO        1        16.7
+                            
+                         TOTAL            59           
+----------------------------------------------------------------------
+Report for cell rotary_encoder_decoder_fsm.netlist
+  Original Cell name rotary_encoder_decoder_fsm
+     Instance path:  u0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S3IX        4        40.0
+                           ORCALUT4       22        22.7
+                                VHI        1        14.3
+                                VLO        1        16.7
+                            
+                         TOTAL            28           

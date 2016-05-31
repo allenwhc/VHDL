@@ -1,0 +1,26 @@
+#Build: Synplify Pro E-2011.03-SP2, Build 053R, May 19 2011
+#install: C:\Synopsys\fpga_E201103SP2
+#OS: Windows XP 5.1
+#Hostname: WKS-087
+
+#Implementation: rev_2
+
+#Tue Apr 22 13:10:36 2014
+
+$ Start of Compile
+#Tue Apr 22 13:10:36 2014
+
+Synopsys VHDL Compiler, version comp550rcp1, Build 072R, built May 25 2011
+@N|Running in 32-bit mode
+Copyright (C) 1994-2011 Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+
+@N: CD720 :"C:\Synopsys\fpga_E201103SP2\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"H:\ese382\lab10s14\c_timer\src\timer.vhd":5:7:5:22|Top entity is set to count_down_timer.
+@E: CD614 :"H:\ese382\lab10s14\c_timer\src\timer.vhd":79:19:79:19|separator required between number and identifier
+1 error parsing file H:\ese382\lab10s14\c_timer\src\timer.vhd
+@END
+@E|Parse errors encountered - exiting
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Apr 22 13:10:37 2014
+
+###########################################################]

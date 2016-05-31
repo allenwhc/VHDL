@@ -1,0 +1,12 @@
+[COMPILESTATUS|.\src\right_shift_reg.vhd]
+FileTimeLow=30364381
+Status=Compiled
+
+[COMPILESTATUS|.\src\TestBench\right_shift_reg_TB.vhd]
+FileTimeLow=30364466
+Status=Compiled
+
+[COMPILESTATUS|.\src\TestBench\right_shift_reg_TB_runtest.do]
+FileTimeLow=30364466
+Status=Modified
+

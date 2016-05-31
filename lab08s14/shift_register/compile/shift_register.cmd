@@ -1,0 +1,1 @@
+-w -s "h:\ese382\lab08s14\library.cfg"  -j "h:\ese382\lab08s14\shift_register\projlib.cfg"  -d "h:\ese382\lab08s14\shift_register\compile"   -work shift_register  -dbg -e 100 -2002 "h:\ese382\lab08s14\shift_register\src\right_shift_reg.vhd" "h:\ese382\lab08s14\shift_register\src\TestBench\right_shift_reg_TB.vhd"

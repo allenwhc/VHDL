@@ -1,0 +1,8 @@
+C:\Synopsys\fpga_E201103SP2\bin\m_cpld.exe  -prodtype synplify_pro -encrypt  -pro  -part M4A5-64   -areadelay 0 -minc    -overilog "seq.vm"   -oedif  H:\ese382\lab08s14\sequential_system\synplify\rev_1\seq.edf  -freq 1.000  H:\ese382\lab08s14\sequential_system\synplify\rev_1\seq.srs  -ologparam  H:\ese382\lab08s14\sequential_system\synplify\rev_1\syntmp\seq.plg  -osyn  H:\ese382\lab08s14\sequential_system\synplify\rev_1\seq.srm  -prjdir H:\ese382\lab08s14\sequential_system\synplify\  -log  H:\ese382\lab08s14\sequential_system\synplify\rev_1\synlog\seq_mach_Mapper.srr 
+rc:0 success:1
+H:\ese382\lab08s14\sequential_system\synplify\rev_1\seq.edf|o|1396980559|147246
+H:\ese382\lab08s14\sequential_system\synplify\rev_1\seq.srs|i|1396980554|8538
+H:\ese382\lab08s14\sequential_system\synplify\rev_1\syntmp\seq.plg|o|1396980557|0
+H:\ese382\lab08s14\sequential_system\synplify\rev_1\seq.srm|o|1396980559|61302
+H:\ese382\lab08s14\sequential_system\synplify\rev_1\synlog\seq_mach_Mapper.srr|o|1396980559|986
+C:\Synopsys\fpga_E201103SP2\bin\m_cpld.exe|i|1305649316|8888320

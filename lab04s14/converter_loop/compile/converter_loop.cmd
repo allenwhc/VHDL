@@ -1,0 +1,1 @@
+-w -s "H:\ese382\lab04s14\library.cfg"  -j "H:\ese382\lab04s14\converter_loop\projlib.cfg"  -d "H:\ese382\lab04s14\converter_loop\compile"   -work converter_loop  -dbg -e 100 -2002 "H:\ese382\lab04s14\converter_loop\src\converter_loop.vhd" "H:\ese382\lab04s14\converter_loop\src\converter_loop_TB.vhd"

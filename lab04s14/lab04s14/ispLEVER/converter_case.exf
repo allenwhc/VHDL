@@ -1,0 +1,25 @@
+Section Cross Reference File
+Design 'converter_case' created Wed Mar 05 14:59:26 2014
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst         condition_i_3_                            condition_i[3]
+   Inst      condition_i_a2_1_                         condition_i_a2[1]
+   Inst    condition_i_a2_0_1_                       condition_i_a2_0[1]
+   Inst      condition_i_a2_2_                         condition_i_a2[2]
+   Inst    condition_i_a2_0_2_                       condition_i_a2_0[2]
+   Inst         condition_i_1_                            condition_i[1]
+   Inst         condition_i_2_                            condition_i[2]
+   Net          condition_3__n                              condition[3]
+   Net        condition_i_3__n                            condition_i[3]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     p
+        Input     q
+        Input     r
+        Input     s
+        Output     a
+        Output     b
+        Output     c
+        Output     d
+End

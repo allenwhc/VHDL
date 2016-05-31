@@ -1,0 +1,5 @@
+64
+~E 1 "./src/BCDTo7Seg.vhd" 28 BCDTo7Seg
+~A 1 "./src/BCDTo7Seg.vhd" 37 BCDTo7Seg
+~E 1 "./src/BCDTo7Seg_TB.vhd" 6 converter_2421_bcd_tb
+~A 1 "./src/BCDTo7Seg_TB.vhd" 9 tb_architecture

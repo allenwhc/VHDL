@@ -1,0 +1,25 @@
+#$ TOOL ispLEVER Classic 7.0.00.10.16.07
+#$ DATE Tue Mar 25 09:51:17 2014
+#$ MODULE full_adder
+#$ PINS 5 a b carry_in sum carry_out
+.type fr
+.i 3
+.o 2
+.ilb a b carry_in
+.ob sum carry_out
+.p 14
+11- ~1
+1-1 ~1
+-11 ~1
+111 1~
+001 1~
+010 1~
+100 1~
+00- ~0
+011 0~
+101 0~
+0-0 ~0
+110 0~
+-00 ~0
+000 0~
+.end

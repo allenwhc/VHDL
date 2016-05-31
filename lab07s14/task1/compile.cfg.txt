@@ -1,0 +1,14 @@
+[View]
+Entity=selected
+Architecture=dataflow
+TopLevelType=1
+[file:.\src\selected.vhd]
+Enabled=1
+[file:.\src\conditional.vhd]
+Enabled=1
+[file:.\src\converter_tb.vhd]
+Enabled=1
+[file:.\src\cpos.vhd]
+Enabled=1
+[file:.\src\csop.vhd]
+Enabled=1

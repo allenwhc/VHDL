@@ -1,0 +1,9 @@
+
+GROUP MACH_SEG_A seven_seg0_6_ seven_seg0_1_ output_i_3__n output_1_ G_131 
+      
+GROUP MACH_SEG_B seven_seg1_2_ seven_seg1_5_ seven_seg1_1_ seven_seg1_3_ 
+      output_2__n 
+GROUP MACH_SEG_C seven_seg0_2_ seven_seg1_4_ seven_seg1_6_ output_15_2__n 
+      output_15_1__n 
+GROUP MACH_SEG_D seven_seg0_5_ seven_seg0_0_ seven_seg0_4_ seven_seg1_0_ 
+      seven_seg0_3_ 

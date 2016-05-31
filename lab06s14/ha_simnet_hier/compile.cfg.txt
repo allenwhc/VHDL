@@ -1,0 +1,12 @@
+[View]
+Entity=ha_mixed_tb
+Architecture=behavior
+TopLevelType=1
+[file:.\src\half_adder_struct_hier.vhd]
+Enabled=1
+[file:.\src\xor_2_struct.vhd]
+Enabled=1
+[file:.\src\ha_primitive_gates.vhd]
+Enabled=1
+[file:.\src\ha_test_tb.vhd]
+Enabled=1

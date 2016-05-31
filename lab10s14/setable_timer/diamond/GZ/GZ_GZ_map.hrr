@@ -1,0 +1,67 @@
+---------------------------------------------------
+Report for cell count_down_timer
+   Instance path: count_down_timer
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      54.00        100.0
+                                  LUT4	      97.00        100.0
+                                 IOBUF	         20        100.0
+                                PFUREG	         28        100.0
+                                RIPPLE	          3        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                       seconds_counter	          1        47.2
+          rotary_encoder_decoder_fsm_1	          1         1.9
+            rotary_encoder_decoder_fsm	          1        20.4
+                              pedgefsm	          1         3.7
+                       minutes_counter	          1        17.6
+                          control_unit	          1         9.3
+---------------------------------------------------
+Report for cell control_unit
+   Instance path: count_down_timer/u5
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       5.00         9.3
+                                  LUT4	       9.00         9.3
+                                PFUREG	          8        28.6
+---------------------------------------------------
+Report for cell pedgefsm
+   Instance path: count_down_timer/u4
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.00         3.7
+                                  LUT4	       1.00         1.0
+                                PFUREG	          2         7.1
+---------------------------------------------------
+Report for cell minutes_counter
+   Instance path: count_down_timer/u3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       9.50        17.6
+                                  LUT4	      19.00        19.6
+                                PFUREG	          4        14.3
+---------------------------------------------------
+Report for cell rotary_encoder_decoder_fsm_1
+   Instance path: count_down_timer/u2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         1.9
+                                  LUT4	       2.00         2.1
+                                PFUREG	          2         7.1
+---------------------------------------------------
+Report for cell seconds_counter
+   Instance path: count_down_timer/u1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      25.50        47.2
+                                  LUT4	      44.00        45.4
+                                PFUREG	          8        28.6
+                                RIPPLE	          3        100.0
+---------------------------------------------------
+Report for cell rotary_encoder_decoder_fsm
+   Instance path: count_down_timer/u0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      11.00        20.4
+                                  LUT4	      22.00        22.7
+                                PFUREG	          4        14.3

@@ -1,0 +1,32 @@
+#$ TOOL ispLEVER Classic 7.0.00.10.16.07
+#$ DATE Tue Feb 25 11:26:14 2014
+#$ MODULE selected
+#$ PINS 8 p:3'ke'  q:4'ke'  r:5'ke'  s:6'ke'  a:24'ke'  b:25'ke'  c:26'ke'  d:27'ke' 
+
+.model selected
+.inputs p.BLIF q.BLIF r.BLIF s.BLIF
+.outputs a b c d
+.names p.BLIF q.BLIF r.BLIF s.BLIF b
+-010 1
+01-1 1
+1-0- 1
+0-1- 1
+111- 0
+000- 0
+0-00 0
+1-11 0
+.names p.BLIF q.BLIF r.BLIF c
+-10 1
+01- 1
+10- 1
+111 0
+00- 0
+.names p.BLIF q.BLIF r.BLIF d
+111 1
+-0- 0
+0-- 0
+--0 0
+.names s.BLIF a
+1 1
+0 0
+.end

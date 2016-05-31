@@ -1,0 +1,861 @@
+acom -dbg -work lab03s14 -2002  $dsn/src/C2421BCD.vhd $dsn/src/converter_csop_TB(1).vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD.vhd
+# Compile Entity "converter_2421_bcd"
+# Compile Architecture "csop" of Entity "csop"
+# Error: COMP96_0015: C2421BCD.vhd : (22, 4): ';' expected.
+# Error: COMP96_0019: C2421BCD.vhd : (22, 4): Keyword 'end' expected.
+# Error: COMP96_0016: C2421BCD.vhd : (22, 7): Design unit declaration expected.
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -dbg -work lab03s14 -2002  $dsn/src/C2421BCD.vhd $dsn/src/converter_csop_TB(1).vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD.vhd
+# Compile Entity "converter_2421_bcd"
+# Compile Architecture "csop" of Entity "csop"
+# Error: COMP96_0056: C2421BCD.vhd : (20, 1): Cannot find referenced entity declaration "csop".
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -dbg -work lab03s14 -2002  $dsn/src/C2421BCD.vhd $dsn/src/converter_csop_TB(1).vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD.vhd
+# Compile Entity "converter_2421_bcd"
+# Compile Architecture "converter_2421_bcd" of Entity "csop"
+# Error: COMP96_0056: C2421BCD.vhd : (20, 1): Cannot find referenced entity declaration "csop".
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom -dbg -work lab03s14 -2002  $dsn/src/C2421BCD.vhd $dsn/src/converter_csop_TB(1).vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD.vhd
+# Compile Entity "converter_2421_bcd"
+# Compile Architecture "csop" of Entity "converter_2421_bcd"
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+converter_2421_bcd_tb converter_2421_bcd_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6043 kB (elbread=1023 elab2=4926 kernel=92 sdf=0)
+#  9:41 AM, Tuesday, February 25, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: converter_2421_bcd_tb (tb_architecture)
+run 80ns
+# KERNEL: stopped at time: 80 ns
+run 160ns
+# KERNEL: stopped at time: 240 ns
+# Library Manager: Library "lab03s14" contents cleared.
+acom -reorder -dbg -work lab03s14 -2002  $dsn/src/C2421BCD.vhd $dsn/src/converter_csop_TB(1).vhd
+# Compile with File Reorder...
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD.vhd
+# Compile Entity "converter_2421_bcd"
+# Compile Architecture "csop" of Entity "converter_2421_bcd"
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Top-level unit(s) detected:
+# Entity => converter_2421_bcd_tb
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+converter_2421_bcd_tb converter_2421_bcd_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6043 kB (elbread=1023 elab2=4926 kernel=92 sdf=0)
+#  9:46 AM, Tuesday, February 25, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: converter_2421_bcd_tb (tb_architecture)
+run 160ns
+# KERNEL: stopped at time: 160 ns
+run 160ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -dbg -work lab03s14 -2002  $dsn/src/C2421BCD.vhd $dsn/src/converter_csop_TB(1).vhd $dsn/src/C2421BCD_CPOS.vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD.vhd
+# Compile Entity "converter_2421_bcd"
+# Compile Architecture "csop" of Entity "converter_2421_bcd"
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD_CPOS.vhd
+# Compile Entity "C2421BCD_CPOS"
+# Compile Architecture "C2421BCD_CPOS" of Entity "C2421BCD_CPOS"
+# Error: COMP96_0015: C2421BCD_CPOS.vhd : (55, 83): ')' expected.
+# Error: COMP96_0015: C2421BCD_CPOS.vhd : (55, 87): ')' expected.
+# Error: COMP96_0019: C2421BCD_CPOS.vhd : (55, 88): Keyword 'when' expected.
+# Error: COMP96_0015: C2421BCD_CPOS.vhd : (55, 88): ';' expected.
+# Error: COMP96_0019: C2421BCD_CPOS.vhd : (55, 88): Keyword 'end' expected.
+# Error: COMP96_0016: C2421BCD_CPOS.vhd : (55, 90): Design unit declaration expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom -dbg -work lab03s14 -2002  $dsn/src/C2421BCD.vhd $dsn/src/converter_csop_TB(1).vhd $dsn/src/C2421BCD_CPOS.vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD.vhd
+# Compile Entity "converter_2421_bcd"
+# Compile Architecture "csop" of Entity "converter_2421_bcd"
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD_CPOS.vhd
+# Compile Entity "C2421BCD_CPOS"
+# Compile Architecture "C2421BCD_CPOS" of Entity "C2421BCD_CPOS"
+# Error: COMP96_0015: C2421BCD_CPOS.vhd : (58, 16): ')' expected.
+# Error: COMP96_0015: C2421BCD_CPOS.vhd : (58, 20): ')' expected.
+# Error: COMP96_0019: C2421BCD_CPOS.vhd : (58, 21): Keyword 'when' expected.
+# Error: COMP96_0015: C2421BCD_CPOS.vhd : (58, 21): ';' expected.
+# Error: COMP96_0019: C2421BCD_CPOS.vhd : (58, 21): Keyword 'end' expected.
+# Error: COMP96_0016: C2421BCD_CPOS.vhd : (58, 23): Design unit declaration expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -dbg -work lab03s14 -2002  $dsn/src/C2421BCD.vhd $dsn/src/converter_csop_TB(1).vhd $dsn/src/C2421BCD_CPOS.vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD.vhd
+# Compile Entity "converter_2421_bcd"
+# Compile Architecture "csop" of Entity "converter_2421_bcd"
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD_CPOS.vhd
+# Compile Entity "C2421BCD_CPOS"
+# Compile Architecture "C2421BCD_CPOS" of Entity "C2421BCD_CPOS"
+# Error: COMP96_0015: C2421BCD_CPOS.vhd : (58, 16): ')' expected.
+# Error: COMP96_0015: C2421BCD_CPOS.vhd : (58, 20): ')' expected.
+# Error: COMP96_0019: C2421BCD_CPOS.vhd : (58, 21): Keyword 'when' expected.
+# Error: COMP96_0015: C2421BCD_CPOS.vhd : (58, 21): ';' expected.
+# Error: COMP96_0019: C2421BCD_CPOS.vhd : (58, 21): Keyword 'end' expected.
+# Error: COMP96_0016: C2421BCD_CPOS.vhd : (58, 23): Design unit declaration expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  0.3 [s]
+# Design: Error: Failed to copy file \\esdl-2k3\Users\usr53\ese382\lab03s14\lab03s14\src\converter_cpos_TB(1).vhd
+acom -dbg -work lab03s14 -2002  $dsn/src/C2421BCD.vhd $dsn/src/converter_csop_TB(1).vhd $dsn/src/C2421BCD_CPOS.vhd $dsn/src/converter_cpos_TB(1).vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD.vhd
+# Compile Entity "converter_2421_bcd"
+# Compile Architecture "csop" of Entity "converter_2421_bcd"
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD_CPOS.vhd
+# Compile Entity "C2421BCD_CPOS"
+# Compile Architecture "C2421BCD_CPOS" of Entity "C2421BCD_CPOS"
+# Error: COMP96_0015: C2421BCD_CPOS.vhd : (58, 16): ')' expected.
+# Error: COMP96_0015: C2421BCD_CPOS.vhd : (58, 20): ')' expected.
+# Error: COMP96_0019: C2421BCD_CPOS.vhd : (58, 21): Keyword 'when' expected.
+# Error: COMP96_0015: C2421BCD_CPOS.vhd : (58, 21): ';' expected.
+# Error: COMP96_0019: C2421BCD_CPOS.vhd : (58, 21): Keyword 'end' expected.
+# Error: COMP96_0016: C2421BCD_CPOS.vhd : (58, 23): Design unit declaration expected.
+# File: h:\ese382\lab03s14\lab03s14\src\converter_cpos_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Compile failure 6 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -dbg -work lab03s14 -2002  $dsn/src/C2421BCD.vhd $dsn/src/converter_csop_TB(1).vhd $dsn/src/C2421BCD_CPOS.vhd $dsn/src/converter_cpos_TB(1).vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD.vhd
+# Compile Entity "converter_2421_bcd"
+# Compile Architecture "csop" of Entity "converter_2421_bcd"
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD_CPOS.vhd
+# Compile Entity "C2421BCD_CPOS"
+# Compile Architecture "cpos" of Entity "C2421BCD_CPOS"
+# Error: COMP96_0015: C2421BCD_CPOS.vhd : (58, 16): ')' expected.
+# Error: COMP96_0015: C2421BCD_CPOS.vhd : (58, 20): ')' expected.
+# Error: COMP96_0019: C2421BCD_CPOS.vhd : (58, 21): Keyword 'when' expected.
+# Error: COMP96_0015: C2421BCD_CPOS.vhd : (58, 21): ';' expected.
+# Error: COMP96_0019: C2421BCD_CPOS.vhd : (58, 21): Keyword 'end' expected.
+# Error: COMP96_0016: C2421BCD_CPOS.vhd : (58, 23): Design unit declaration expected.
+# File: h:\ese382\lab03s14\lab03s14\src\converter_cpos_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Compile failure 6 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -dbg -work lab03s14 -2002  $dsn/src/C2421BCD.vhd $dsn/src/converter_csop_TB(1).vhd $dsn/src/C2421BCD_CPOS.vhd $dsn/src/converter_cpos_TB(1).vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD.vhd
+# Compile Entity "converter_2421_bcd"
+# Compile Architecture "csop" of Entity "converter_2421_bcd"
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD_CPOS.vhd
+# Compile Entity "C2421BCD_CPOS"
+# Compile Architecture "cpos" of Entity "C2421BCD_CPOS"
+# Error: COMP96_0015: C2421BCD_CPOS.vhd : (56, 83): ')' expected.
+# Error: COMP96_0015: C2421BCD_CPOS.vhd : (56, 87): ')' expected.
+# Error: COMP96_0019: C2421BCD_CPOS.vhd : (56, 88): Keyword 'when' expected.
+# Error: COMP96_0015: C2421BCD_CPOS.vhd : (56, 88): ';' expected.
+# Error: COMP96_0019: C2421BCD_CPOS.vhd : (56, 88): Keyword 'end' expected.
+# Error: COMP96_0016: C2421BCD_CPOS.vhd : (56, 90): Design unit declaration expected.
+# File: h:\ese382\lab03s14\lab03s14\src\converter_cpos_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Compile failure 6 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -dbg -work lab03s14 -2002  $dsn/src/C2421BCD.vhd $dsn/src/converter_csop_TB(1).vhd $dsn/src/C2421BCD_CPOS.vhd $dsn/src/converter_cpos_TB(1).vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD.vhd
+# Compile Entity "converter_2421_bcd"
+# Compile Architecture "csop" of Entity "converter_2421_bcd"
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD_CPOS.vhd
+# Compile Entity "C2421BCD_CPOS"
+# Compile Architecture "cpos" of Entity "C2421BCD_CPOS"
+# File: h:\ese382\lab03s14\lab03s14\src\converter_cpos_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -dbg -work lab03s14 -2002  $dsn/src/C2421BCD.vhd $dsn/src/converter_csop_TB(1).vhd $dsn/src/C2421BCD_CPOS.vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD.vhd
+# Compile Entity "converter_2421_bcd"
+# Compile Architecture "csop" of Entity "converter_2421_bcd"
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD_CPOS.vhd
+# Compile Entity "C2421BCD_CPOS"
+# Compile Architecture "cpos" of Entity "C2421BCD_CPOS"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+converter_2421_bcd_tb converter_2421_bcd_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6043 kB (elbread=1023 elab2=4926 kernel=92 sdf=0)
+#  10:18 AM, Tuesday, February 25, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: converter_2421_bcd_tb (tb_architecture)
+run 160ns
+# KERNEL: stopped at time: 160 ns
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -dbg -work lab03s14 -2002  $dsn/src/C2421BCD.vhd $dsn/src/converter_csop_TB(1).vhd $dsn/src/C2421BCD_CPOS.vhd $dsn/src/selected.vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD.vhd
+# Compile Entity "converter_2421_bcd"
+# Compile Architecture "csop" of Entity "converter_2421_bcd"
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD_CPOS.vhd
+# Compile Entity "C2421BCD_CPOS"
+# Compile Architecture "cpos" of Entity "C2421BCD_CPOS"
+# File: h:\ese382\lab03s14\lab03s14\src\selected.vhd
+# Compile Entity "selected"
+# Compile Architecture "selected" of Entity "selected"
+# Error: COMP96_0015: selected.vhd : (55, 24): ';' expected.
+# Error: COMP96_0019: selected.vhd : (55, 24): Keyword 'end' expected.
+# Error: COMP96_0016: selected.vhd : (55, 25): Design unit declaration expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -dbg -work lab03s14 -2002  $dsn/src/C2421BCD.vhd $dsn/src/converter_csop_TB(1).vhd $dsn/src/C2421BCD_CPOS.vhd $dsn/src/selected.vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD.vhd
+# Compile Entity "converter_2421_bcd"
+# Compile Architecture "csop" of Entity "converter_2421_bcd"
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD_CPOS.vhd
+# Compile Entity "C2421BCD_CPOS"
+# Compile Architecture "cpos" of Entity "C2421BCD_CPOS"
+# File: h:\ese382\lab03s14\lab03s14\src\selected.vhd
+# Compile Entity "selected"
+# Compile Architecture "selected" of Entity "selected"
+# Error: COMP96_0015: selected.vhd : (60, 23): ';' expected.
+# Error: COMP96_0019: selected.vhd : (60, 23): Keyword 'end' expected.
+# Error: COMP96_0016: selected.vhd : (60, 24): Design unit declaration expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -dbg -work lab03s14 -2002  $dsn/src/C2421BCD.vhd $dsn/src/converter_csop_TB(1).vhd $dsn/src/C2421BCD_CPOS.vhd $dsn/src/selected.vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD.vhd
+# Compile Entity "converter_2421_bcd"
+# Compile Architecture "csop" of Entity "converter_2421_bcd"
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD_CPOS.vhd
+# Compile Entity "C2421BCD_CPOS"
+# Compile Architecture "cpos" of Entity "C2421BCD_CPOS"
+# File: h:\ese382\lab03s14\lab03s14\src\selected.vhd
+# Compile Entity "selected"
+# Compile Architecture "selected" of Entity "selected"
+# Error: COMP96_0019: selected.vhd : (67, 3): Keyword 'end' expected.
+# Error: COMP96_0016: selected.vhd : (67, 7): Design unit declaration expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -dbg -work lab03s14 -2002  $dsn/src/C2421BCD.vhd $dsn/src/converter_csop_TB(1).vhd $dsn/src/C2421BCD_CPOS.vhd $dsn/src/selected.vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD.vhd
+# Compile Entity "converter_2421_bcd"
+# Compile Architecture "csop" of Entity "converter_2421_bcd"
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD_CPOS.vhd
+# Compile Entity "C2421BCD_CPOS"
+# Compile Architecture "cpos" of Entity "C2421BCD_CPOS"
+# File: h:\ese382\lab03s14\lab03s14\src\selected.vhd
+# Compile Entity "selected"
+# Compile Architecture "selected" of Entity "selected"
+# Error: ELAB1_0008: selected.vhd : (55, 29): Cannot read output : "s".
+# Error: ELAB1_0008: selected.vhd : (59, 30): Cannot read output : "s".
+# Error: ELAB1_0008: selected.vhd : (62, 30): Cannot read output : "s".
+# Error: ELAB1_0008: selected.vhd : (65, 30): Cannot read output : "s".
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -dbg -work lab03s14 -2002  $dsn/src/C2421BCD.vhd $dsn/src/converter_csop_TB(1).vhd $dsn/src/C2421BCD_CPOS.vhd $dsn/src/selected.vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD.vhd
+# Compile Entity "converter_2421_bcd"
+# Compile Architecture "csop" of Entity "converter_2421_bcd"
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD_CPOS.vhd
+# Compile Entity "C2421BCD_CPOS"
+# Compile Architecture "cpos" of Entity "C2421BCD_CPOS"
+# File: h:\ese382\lab03s14\lab03s14\src\selected.vhd
+# Compile Entity "selected"
+# Compile Architecture "selected" of Entity "selected"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+converter_2421_bcd_tb converter_2421_bcd_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6043 kB (elbread=1023 elab2=4926 kernel=92 sdf=0)
+#  10:44 AM, Tuesday, February 25, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: converter_2421_bcd_tb (tb_architecture)
+run 160ns
+# KERNEL: stopped at time: 160 ns
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -dbg -work lab03s14 -2002  $dsn/src/C2421BCD.vhd $dsn/src/converter_csop_TB(1).vhd $dsn/src/C2421BCD_CPOS.vhd $dsn/src/selected.vhd $dsn/src/decoder_conditional.vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD.vhd
+# Compile Entity "converter_2421_bcd"
+# Compile Architecture "csop" of Entity "converter_2421_bcd"
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD_CPOS.vhd
+# Compile Entity "C2421BCD_CPOS"
+# Compile Architecture "cpos" of Entity "C2421BCD_CPOS"
+# File: h:\ese382\lab03s14\lab03s14\src\selected.vhd
+# Compile Entity "selected"
+# Compile Architecture "selected" of Entity "selected"
+# Error: ELAB1_0008: selected.vhd : (55, 29): Cannot read output : "s".
+# Error: ELAB1_0008: selected.vhd : (59, 30): Cannot read output : "s".
+# Error: ELAB1_0008: selected.vhd : (62, 30): Cannot read output : "s".
+# Error: ELAB1_0008: selected.vhd : (65, 30): Cannot read output : "s".
+# File: h:\ese382\lab03s14\lab03s14\src\decoder_conditional.vhd
+# Compile Entity "decoder_conditional"
+# Compile Architecture "decoder_conditional" of Entity "decoder_conditional"
+# Error: COMP96_0019: decoder_conditional.vhd : (57, 16): Keyword 'when' expected.
+# Error: COMP96_0019: decoder_conditional.vhd : (58, 16): Keyword 'when' expected.
+# Error: COMP96_0019: decoder_conditional.vhd : (59, 16): Keyword 'when' expected.
+# Error: COMP96_0019: decoder_conditional.vhd : (60, 16): Keyword 'when' expected.
+# Error: COMP96_0015: decoder_conditional.vhd : (60, 20): ';' expected.
+# Error: COMP96_0019: decoder_conditional.vhd : (60, 20): Keyword 'end' expected.
+# Error: COMP96_0016: decoder_conditional.vhd : (61, 3): Design unit declaration expected.
+# Compile failure 11 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -dbg -work lab03s14 -2002  $dsn/src/C2421BCD.vhd $dsn/src/converter_csop_TB(1).vhd $dsn/src/C2421BCD_CPOS.vhd $dsn/src/selected.vhd $dsn/src/decoder_conditional.vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD.vhd
+# Compile Entity "converter_2421_bcd"
+# Compile Architecture "csop" of Entity "converter_2421_bcd"
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD_CPOS.vhd
+# Compile Entity "C2421BCD_CPOS"
+# Compile Architecture "cpos" of Entity "C2421BCD_CPOS"
+# File: h:\ese382\lab03s14\lab03s14\src\selected.vhd
+# Compile Entity "selected"
+# Compile Architecture "selected" of Entity "selected"
+# Error: ELAB1_0008: selected.vhd : (55, 29): Cannot read output : "s".
+# Error: ELAB1_0008: selected.vhd : (59, 30): Cannot read output : "s".
+# Error: ELAB1_0008: selected.vhd : (62, 30): Cannot read output : "s".
+# Error: ELAB1_0008: selected.vhd : (65, 30): Cannot read output : "s".
+# File: h:\ese382\lab03s14\lab03s14\src\decoder_conditional.vhd
+# Compile Entity "decoder_conditional"
+# Compile Architecture "decoder_conditional" of Entity "decoder_conditional"
+# Error: COMP96_0019: decoder_conditional.vhd : (57, 16): Keyword 'when' expected.
+# Error: COMP96_0019: decoder_conditional.vhd : (58, 16): Keyword 'when' expected.
+# Error: COMP96_0019: decoder_conditional.vhd : (59, 16): Keyword 'when' expected.
+# Error: COMP96_0019: decoder_conditional.vhd : (60, 16): Keyword 'when' expected.
+# Error: COMP96_0029: decoder_conditional.vhd : (61, 12): Expression expected.
+# Error: COMP96_0015: decoder_conditional.vhd : (61, 12): ';' expected.
+# Error: COMP96_0019: decoder_conditional.vhd : (61, 12): Keyword 'end' expected.
+# Error: COMP96_0016: decoder_conditional.vhd : (61, 18): Design unit declaration expected.
+# Compile failure 12 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -dbg -work lab03s14 -2002  $dsn/src/C2421BCD.vhd $dsn/src/converter_csop_TB(1).vhd $dsn/src/C2421BCD_CPOS.vhd $dsn/src/selected.vhd $dsn/src/decoder_conditional.vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD.vhd
+# Compile Entity "converter_2421_bcd"
+# Compile Architecture "csop" of Entity "converter_2421_bcd"
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD_CPOS.vhd
+# Compile Entity "C2421BCD_CPOS"
+# Compile Architecture "cpos" of Entity "C2421BCD_CPOS"
+# File: h:\ese382\lab03s14\lab03s14\src\selected.vhd
+# Compile Entity "selected"
+# Compile Architecture "selected" of Entity "selected"
+# Error: ELAB1_0008: selected.vhd : (55, 29): Cannot read output : "s".
+# Error: ELAB1_0008: selected.vhd : (59, 30): Cannot read output : "s".
+# Error: ELAB1_0008: selected.vhd : (62, 30): Cannot read output : "s".
+# Error: ELAB1_0008: selected.vhd : (65, 30): Cannot read output : "s".
+# File: h:\ese382\lab03s14\lab03s14\src\decoder_conditional.vhd
+# Compile Entity "decoder_conditional"
+# Compile Architecture "decoder_conditional" of Entity "decoder_conditional"
+# Error: COMP96_0019: decoder_conditional.vhd : (57, 16): Keyword 'when' expected.
+# Error: COMP96_0019: decoder_conditional.vhd : (58, 16): Keyword 'when' expected.
+# Error: COMP96_0019: decoder_conditional.vhd : (59, 16): Keyword 'when' expected.
+# Error: COMP96_0019: decoder_conditional.vhd : (60, 16): Keyword 'when' expected.
+# Error: COMP96_0029: decoder_conditional.vhd : (61, 12): Expression expected.
+# Error: COMP96_0015: decoder_conditional.vhd : (61, 12): ';' expected.
+# Error: COMP96_0019: decoder_conditional.vhd : (61, 12): Keyword 'end' expected.
+# Error: COMP96_0016: decoder_conditional.vhd : (61, 18): Design unit declaration expected.
+# Compile failure 12 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -dbg -work lab03s14 -2002  $dsn/src/decoder_conditional.vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\decoder_conditional.vhd
+# Compile Entity "decoder_conditional"
+# Compile Architecture "decoder_conditional" of Entity "decoder_conditional"
+# Error: COMP96_0019: decoder_conditional.vhd : (57, 16): Keyword 'when' expected.
+# Error: COMP96_0019: decoder_conditional.vhd : (58, 16): Keyword 'when' expected.
+# Error: COMP96_0019: decoder_conditional.vhd : (59, 16): Keyword 'when' expected.
+# Error: COMP96_0019: decoder_conditional.vhd : (60, 16): Keyword 'when' expected.
+# Error: COMP96_0029: decoder_conditional.vhd : (61, 12): Expression expected.
+# Error: COMP96_0015: decoder_conditional.vhd : (61, 12): ';' expected.
+# Error: COMP96_0019: decoder_conditional.vhd : (61, 12): Keyword 'end' expected.
+# Error: COMP96_0016: decoder_conditional.vhd : (61, 18): Design unit declaration expected.
+# Compile failure 8 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -dbg -work lab03s14 -2002  $dsn/src/decoder_conditional.vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\decoder_conditional.vhd
+# Compile Entity "decoder_conditional"
+# Compile Architecture "decoder_conditional" of Entity "decoder_conditional"
+# Error: COMP96_0029: decoder_conditional.vhd : (61, 12): Expression expected.
+# Error: COMP96_0015: decoder_conditional.vhd : (61, 12): ';' expected.
+# Error: COMP96_0019: decoder_conditional.vhd : (61, 12): Keyword 'end' expected.
+# Error: COMP96_0016: decoder_conditional.vhd : (61, 18): Design unit declaration expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -dbg -work lab03s14 -2002  $dsn/src/decoder_conditional.vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\decoder_conditional.vhd
+# Compile Entity "decoder_conditional"
+# Compile Architecture "decoder_conditional" of Entity "decoder_conditional"
+# Error: COMP96_0049: decoder_conditional.vhd : (61, 18): Syntax error in expression.
+# Error: COMP96_0049: decoder_conditional.vhd : (68, 18): Syntax error in expression.
+# Error: COMP96_0019: decoder_conditional.vhd : (83, 0): Keyword 'end' expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -dbg -work lab03s14 -2002  $dsn/src/decoder_conditional.vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\decoder_conditional.vhd
+# Compile Entity "decoder_conditional"
+# Compile Architecture "decoder_conditional" of Entity "decoder_conditional"
+# Error: COMP96_0019: decoder_conditional.vhd : (62, 2): Keyword 'when' expected.
+# Error: COMP96_0015: decoder_conditional.vhd : (62, 2): ';' expected.
+# Error: COMP96_0019: decoder_conditional.vhd : (69, 2): Keyword 'when' expected.
+# Error: COMP96_0015: decoder_conditional.vhd : (69, 2): ';' expected.
+# Error: COMP96_0019: decoder_conditional.vhd : (76, 2): Keyword 'when' expected.
+# Error: COMP96_0015: decoder_conditional.vhd : (76, 2): ';' expected.
+# Error: COMP96_0019: decoder_conditional.vhd : (82, 2): Keyword 'when' expected.
+# Error: COMP96_0015: decoder_conditional.vhd : (82, 2): ';' expected.
+# Compile failure 8 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -dbg -work lab03s14 -2002  $dsn/src/decoder_conditional.vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\decoder_conditional.vhd
+# Compile Entity "decoder_conditional"
+# Compile Architecture "decoder_conditional" of Entity "decoder_conditional"
+# Error: COMP96_0127: decoder_conditional.vhd : (55, 9): Improper aggregate length. Expected length is 2.
+# Error: COMP96_0079: decoder_conditional.vhd : (55, 9): Invalid aggregate.
+# Error: COMP96_0077: decoder_conditional.vhd : (55, 9): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Warning: COMP96_0421: decoder_conditional.vhd : (56, 14): Array comparison is always FALSE.
+# Warning: COMP96_0421: decoder_conditional.vhd : (57, 12): Array comparison is always FALSE.
+# Warning: COMP96_0421: decoder_conditional.vhd : (58, 12): Array comparison is always FALSE.
+# Warning: COMP96_0421: decoder_conditional.vhd : (59, 12): Array comparison is always FALSE.
+# Warning: COMP96_0421: decoder_conditional.vhd : (60, 12): Array comparison is always FALSE.
+# Warning: COMP96_0421: decoder_conditional.vhd : (62, 16): Array comparison is always FALSE.
+# Warning: COMP96_0421: decoder_conditional.vhd : (63, 12): Array comparison is always FALSE.
+# Warning: COMP96_0421: decoder_conditional.vhd : (64, 12): Array comparison is always FALSE.
+# Warning: COMP96_0421: decoder_conditional.vhd : (65, 12): Array comparison is always FALSE.
+# Warning: COMP96_0421: decoder_conditional.vhd : (66, 12): Array comparison is always FALSE.
+# Warning: COMP96_0421: decoder_conditional.vhd : (67, 12): Array comparison is always FALSE.
+# Warning: COMP96_0421: decoder_conditional.vhd : (69, 16): Array comparison is always FALSE.
+# Warning: COMP96_0421: decoder_conditional.vhd : (70, 12): Array comparison is always FALSE.
+# Warning: COMP96_0421: decoder_conditional.vhd : (71, 12): Array comparison is always FALSE.
+# Warning: COMP96_0421: decoder_conditional.vhd : (72, 12): Array comparison is always FALSE.
+# Warning: COMP96_0421: decoder_conditional.vhd : (73, 12): Array comparison is always FALSE.
+# Warning: COMP96_0421: decoder_conditional.vhd : (74, 12): Array comparison is always FALSE.
+# Warning: COMP96_0421: decoder_conditional.vhd : (76, 16): Array comparison is always FALSE.
+# Warning: COMP96_0421: decoder_conditional.vhd : (77, 12): Array comparison is always FALSE.
+# Compile failure 3 Errors 19 Warnings  Analysis time :  0.1 [s]
+acom -dbg -work lab03s14 -2002  $dsn/src/decoder_conditional.vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\decoder_conditional.vhd
+# Compile Entity "decoder_conditional"
+# Compile Architecture "decoder_conditional" of Entity "decoder_conditional"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -dbg -work lab03s14 -2002  $dsn/src/C2421BCD.vhd $dsn/src/converter_csop_TB(1).vhd $dsn/src/C2421BCD_CPOS.vhd $dsn/src/selected.vhd $dsn/src/decoder_conditional.vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD.vhd
+# Compile Entity "converter_2421_bcd"
+# Compile Architecture "csop" of Entity "converter_2421_bcd"
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD_CPOS.vhd
+# Compile Entity "C2421BCD_CPOS"
+# Compile Architecture "cpos" of Entity "C2421BCD_CPOS"
+# File: h:\ese382\lab03s14\lab03s14\src\selected.vhd
+# Compile Entity "selected"
+# Compile Architecture "selected" of Entity "selected"
+# Error: ELAB1_0008: selected.vhd : (55, 29): Cannot read output : "s".
+# Error: ELAB1_0008: selected.vhd : (59, 30): Cannot read output : "s".
+# Error: ELAB1_0008: selected.vhd : (62, 30): Cannot read output : "s".
+# Error: ELAB1_0008: selected.vhd : (65, 30): Cannot read output : "s".
+# File: h:\ese382\lab03s14\lab03s14\src\decoder_conditional.vhd
+# Compile Entity "decoder_conditional"
+# Compile Architecture "decoder_conditional" of Entity "decoder_conditional"
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -dbg -work lab03s14 -2002  $dsn/src/C2421BCD.vhd $dsn/src/converter_csop_TB(1).vhd $dsn/src/C2421BCD_CPOS.vhd $dsn/src/selected.vhd $dsn/src/decoder_conditional.vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD.vhd
+# Compile Entity "converter_2421_bcd"
+# Compile Architecture "csop" of Entity "converter_2421_bcd"
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD_CPOS.vhd
+# Compile Entity "C2421BCD_CPOS"
+# Compile Architecture "cpos" of Entity "C2421BCD_CPOS"
+# File: h:\ese382\lab03s14\lab03s14\src\selected.vhd
+# Compile Entity "selected"
+# Compile Architecture "selected" of Entity "selected"
+# File: h:\ese382\lab03s14\lab03s14\src\decoder_conditional.vhd
+# Compile Entity "decoder_conditional"
+# Compile Architecture "decoder_conditional" of Entity "decoder_conditional"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+# Library Manager: Library "lab03s14" contents cleared.
+acom -reorder -dbg -work lab03s14 -2002  $dsn/src/C2421BCD.vhd $dsn/src/converter_csop_TB(1).vhd $dsn/src/C2421BCD_CPOS.vhd $dsn/src/selected.vhd $dsn/src/decoder_conditional.vhd
+# Compile with File Reorder...
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD.vhd
+# Compile Entity "converter_2421_bcd"
+# Compile Architecture "csop" of Entity "converter_2421_bcd"
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD_CPOS.vhd
+# Compile Entity "C2421BCD_CPOS"
+# Compile Architecture "cpos" of Entity "C2421BCD_CPOS"
+# File: h:\ese382\lab03s14\lab03s14\src\selected.vhd
+# Compile Entity "selected"
+# Compile Architecture "selected" of Entity "selected"
+# File: h:\ese382\lab03s14\lab03s14\src\decoder_conditional.vhd
+# Compile Entity "decoder_conditional"
+# Compile Architecture "decoder_conditional" of Entity "decoder_conditional"
+# Top-level unit(s) detected:
+# Entity => C2421BCD_CPOS
+# Entity => decoder_conditional
+# Entity => selected
+# Entity => converter_2421_bcd_tb
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -dbg -work lab03s14 -2002  $dsn/src/C2421BCD.vhd $dsn/src/converter_csop_TB(1).vhd $dsn/src/C2421BCD_CPOS.vhd $dsn/src/selected.vhd $dsn/src/decoder_conditional.vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD.vhd
+# Compile Entity "converter_2421_bcd"
+# Compile Architecture "csop" of Entity "converter_2421_bcd"
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD_CPOS.vhd
+# Compile Entity "C2421BCD_CPOS"
+# Compile Architecture "cpos" of Entity "C2421BCD_CPOS"
+# File: h:\ese382\lab03s14\lab03s14\src\selected.vhd
+# Compile Entity "selected"
+# Compile Architecture "selected" of Entity "selected"
+# File: h:\ese382\lab03s14\lab03s14\src\decoder_conditional.vhd
+# Compile Entity "decoder_conditional"
+# Compile Architecture "decoder_conditional" of Entity "decoder_conditional"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+asim -O5 +access +r +m+converter_2421_bcd_tb converter_2421_bcd_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6043 kB (elbread=1023 elab2=4926 kernel=92 sdf=0)
+#  11:08 AM, Tuesday, February 25, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: converter_2421_bcd_tb (tb_architecture)
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -dbg -work lab03s14 -2002  $dsn/src/C2421BCD.vhd $dsn/src/converter_csop_TB(1).vhd $dsn/src/C2421BCD_CPOS.vhd $dsn/src/selector.vhq
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD.vhd
+# Compile Entity "converter_2421_bcd"
+# Compile Architecture "csop" of Entity "converter_2421_bcd"
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# File: h:\ese382\lab03s14\lab03s14\src\C2421BCD_CPOS.vhd
+# Compile Entity "C2421BCD_CPOS"
+# Compile Architecture "cpos" of Entity "C2421BCD_CPOS"
+# File: h:\ese382\lab03s14\lab03s14\src\selector.vhq
+# Compile Entity "selected"
+# Compile Architecture "structure" of Entity "selected"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+converter_2421_bcd_tb converter_2421_bcd_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6043 kB (elbread=1023 elab2=4926 kernel=92 sdf=0)
+#  11:33 AM, Tuesday, February 25, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: converter_2421_bcd_tb (tb_architecture)
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -dbg -work lab03s14 -2002  $dsn/src/converter_csop_TB(1).vhd $dsn/src/selector.vhq
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# File: h:\ese382\lab03s14\lab03s14\src\selector.vhq
+# Compile Entity "selected"
+# Compile Architecture "structure" of Entity "selected"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+# Library Manager: Library "lab03s14" contents cleared.
+acom -reorder -dbg -work lab03s14 -2002  $dsn/src/converter_csop_TB(1).vhd $dsn/src/selector.vhq
+# Compile with File Reorder...
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# File: h:\ese382\lab03s14\lab03s14\src\selector.vhq
+# Compile Entity "selected"
+# Compile Architecture "structure" of Entity "selected"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => converter_2421_bcd_tb
+# Entity => selected
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Error: COMP96_0078: converter_csop_TB(1).vhd : (29, 15): Unknown identifier "converter_2421_bcd".
+# Error: COMP96_0056: converter_csop_TB(1).vhd : (29, 15): Cannot find referenced entity declaration "converter_2421_bcd".
+# Error: COMP96_0055: converter_csop_TB(1).vhd : (29, 15): Cannot find referenced context element.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -dbg -work lab03s14 -2002  $dsn/src/converter_csop_TB(1).vhd $dsn/src/selector.vhq
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "selected"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Error: COMP96_0078: converter_csop_TB(1).vhd : (29, 15): Unknown identifier "converter_2421_bcd".
+# Error: COMP96_0056: converter_csop_TB(1).vhd : (29, 15): Cannot find referenced entity declaration "converter_2421_bcd".
+# Error: COMP96_0055: converter_csop_TB(1).vhd : (29, 15): Cannot find referenced context element.
+# File: h:\ese382\lab03s14\lab03s14\src\selector.vhq
+# Compile Entity "selected"
+# Compile Architecture "structure" of Entity "selected"
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -dbg -work lab03s14 -2002  $dsn/src/converter_csop_TB(1).vhd $dsn/src/selector.vhq
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "selected"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Error: COMP96_0078: converter_csop_TB(1).vhd : (31, 4): Unknown identifier "p".
+# Error: COMP96_0078: converter_csop_TB(1).vhd : (32, 4): Unknown identifier "q".
+# Error: COMP96_0078: converter_csop_TB(1).vhd : (33, 4): Unknown identifier "r".
+# Error: COMP96_0078: converter_csop_TB(1).vhd : (34, 4): Unknown identifier "s".
+# Error: COMP96_0078: converter_csop_TB(1).vhd : (35, 4): Unknown identifier "d".
+# Error: COMP96_0078: converter_csop_TB(1).vhd : (36, 4): Unknown identifier "c".
+# Error: COMP96_0078: converter_csop_TB(1).vhd : (37, 4): Unknown identifier "b".
+# Error: COMP96_0078: converter_csop_TB(1).vhd : (38, 4): Unknown identifier "a".
+# Error: COMP96_0133: converter_csop_TB(1).vhd : (31, 4): Cannot find object declaration.
+# Error: COMP96_0112: converter_csop_TB(1).vhd : (31, 4): "p" does not match the formal name.
+# File: h:\ese382\lab03s14\lab03s14\src\selector.vhq
+# Compile Entity "selected"
+# Compile Architecture "structure" of Entity "selected"
+# Compile failure 10 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom -dbg -work lab03s14 -2002  $dsn/src/selector.vhq $dsn/src/converter_csop_TB(1).vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\selector.vhq
+# Compile Entity "selected"
+# Compile Architecture "structure" of Entity "selected"
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Error: COMP96_0078: converter_csop_TB(1).vhd : (29, 15): Unknown identifier "converter_2421_bcd".
+# Error: COMP96_0056: converter_csop_TB(1).vhd : (29, 15): Cannot find referenced entity declaration "converter_2421_bcd".
+# Error: COMP96_0055: converter_csop_TB(1).vhd : (29, 15): Cannot find referenced context element.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -dbg -work lab03s14 -2002  $dsn/src/selector.vhq $dsn/src/converter_csop_TB(1).vhd
+# Compile...
+# File: h:\ese382\lab03s14\lab03s14\src\selector.vhq
+# Compile Entity "selected"
+# Compile Architecture "structure" of Entity "selected"
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+# Library Manager: Library "lab03s14" contents cleared.
+acom -reorder -dbg -work lab03s14 -2002  $dsn/src/selector.vhq $dsn/src/converter_csop_TB(1).vhd
+# Compile with File Reorder...
+# File: h:\ese382\lab03s14\lab03s14\src\selector.vhq
+# Compile Entity "selected"
+# Compile Architecture "structure" of Entity "selected"
+# File: h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Top-level unit(s) detected:
+# Entity => converter_2421_bcd_tb
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+converter_2421_bcd_tb converter_2421_bcd_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6155 kB (elbread=1023 elab2=5030 kernel=101 sdf=0)
+#  11:37 AM, Tuesday, February 25, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: converter_2421_bcd_tb (tb_architecture)
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.

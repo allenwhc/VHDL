@@ -1,0 +1,8 @@
+MESSAGE "File: h:\ese382\lab08s14\D flip_flop\src\flipflop.vhd" 
+MESSAGE "Compile Entity "dff_en"" 
+MESSAGE "Compile Architecture "behavioral" of Entity "dff_en"" 
+MESSAGE "File: h:\ese382\lab08s14\D flip_flop\src\TestBench\dff_en_TB.vhd" 
+MESSAGE "Compile Entity "dff_en_tb"" 
+MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "dff_en_tb"" 
+MESSAGE "Compile Configuration "TESTBENCH_FOR_dff_en"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]" 

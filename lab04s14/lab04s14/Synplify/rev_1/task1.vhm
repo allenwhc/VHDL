@@ -1,0 +1,235 @@
+--
+-- Written by Synplicity
+-- Product Version "E-201103-SP2"
+-- Program "Synplify Pro", Mapper "maprc, Build 507R"
+-- Wed Mar 05 14:57:49 2014
+--
+
+--
+-- Written by Synplify Pro version Build 507R
+-- Wed Mar 05 14:57:49 2014
+--
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity AND2 is
+port(
+  O :  out std_logic;
+  I0 :  in std_logic;
+  I1 :  in std_logic);
+end AND2;
+
+architecture beh of AND2 is
+  signal VCC : std_logic ;
+  signal GND : std_logic ;
+begin
+VCC <= '1';
+GND <= '0';
+O <= I0 and I1  after 100 ps;
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity IBUF is
+port(
+O :  out std_logic;
+I0 :  in std_logic);
+end IBUF;
+
+architecture beh of IBUF is
+signal VCC : std_logic ;
+signal GND : std_logic ;
+begin
+O <= I0;
+VCC <= '1';
+GND <= '0';
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity INV is
+port(
+O :  out std_logic;
+I0 :  in std_logic);
+end INV;
+
+architecture beh of INV is
+signal VCC : std_logic ;
+signal GND : std_logic ;
+begin
+O <= not I0;
+VCC <= '1';
+GND <= '0';
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity OBUF is
+port(
+O :  out std_logic;
+I0 :  in std_logic);
+end OBUF;
+
+architecture beh of OBUF is
+signal VCC : std_logic ;
+signal GND : std_logic ;
+begin
+O <= I0;
+VCC <= '1';
+GND <= '0';
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity converter_case is
+port(
+p :  in std_logic;
+q :  in std_logic;
+r :  in std_logic;
+s :  in std_logic;
+a :  out std_logic;
+b :  out std_logic;
+c :  out std_logic;
+d :  out std_logic);
+end converter_case;
+
+architecture beh of converter_case is
+signal CONDITION : std_logic_vector(3 to 3);
+signal CONDITION_I : std_logic_vector(3 to 3);
+signal N_9 : std_logic ;
+signal N_10 : std_logic ;
+signal N_12 : std_logic ;
+signal P_I : std_logic ;
+signal Q_I : std_logic ;
+signal R_I : std_logic ;
+signal P_C : std_logic ;
+signal Q_C : std_logic ;
+signal R_C : std_logic ;
+signal A_C : std_logic ;
+signal N_12_I : std_logic ;
+signal N_7_I : std_logic ;
+signal N_9_I : std_logic ;
+signal N_10_I : std_logic ;
+signal N_5_I : std_logic ;
+signal GND : std_logic ;
+signal VCC : std_logic ;
+component IBUF
+port(
+O :  out std_logic;
+I0 :  in std_logic  );
+end component;
+component OBUF
+port(
+O :  out std_logic;
+I0 :  in std_logic  );
+end component;
+component INV
+port(
+O :  out std_logic;
+I0 :  in std_logic  );
+end component;
+component AND2
+port(
+O :  out std_logic;
+I0 :  in std_logic;
+I1 :  in std_logic  );
+end component;
+begin
+P_Z29: IBUF port map (
+O => P_C,
+I0 => p);
+Q_Z30: IBUF port map (
+O => Q_C,
+I0 => q);
+R_Z31: IBUF port map (
+O => R_C,
+I0 => r);
+S_Z32: IBUF port map (
+O => A_C,
+I0 => s);
+A_Z33: OBUF port map (
+O => a,
+I0 => A_C);
+B_Z34: OBUF port map (
+O => b,
+I0 => N_5_I);
+C_Z35: OBUF port map (
+O => c,
+I0 => N_7_I);
+D_Z36: OBUF port map (
+O => d,
+I0 => CONDITION(3));
+N_12_I_Z37: INV port map (
+O => N_12_I,
+I0 => N_12);
+\CONDITION_I[3]_Z38\: INV port map (
+O => CONDITION_I(3),
+I0 => CONDITION(3));
+N_9_I_Z39: INV port map (
+O => N_9_I,
+I0 => N_9);
+N_10_I_Z40: INV port map (
+O => N_10_I,
+I0 => N_10);
+\CONDITION_I_A2[1]\: AND2 port map (
+O => N_9,
+I0 => P_C,
+I1 => R_C);
+R_I_Z42: INV port map (
+O => R_I,
+I0 => R_C);
+\CONDITION_I_A2_0[1]\: AND2 port map (
+O => N_10,
+I0 => P_I,
+I1 => R_I);
+\CONDITION_I_A2[2]\: AND2 port map (
+O => CONDITION(3),
+I0 => Q_C,
+I1 => R_C);
+P_I_Z45: INV port map (
+O => P_I,
+I0 => P_C);
+Q_I_Z46: INV port map (
+O => Q_I,
+I0 => Q_C);
+\CONDITION_I_A2_0[2]\: AND2 port map (
+O => N_12,
+I0 => P_I,
+I1 => Q_I);
+\CONDITION_I[1]\: AND2 port map (
+O => N_5_I,
+I0 => N_9_I,
+I1 => N_10_I);
+\CONDITION_I[2]\: AND2 port map (
+O => N_7_I,
+I0 => N_12_I,
+I1 => CONDITION_I(3));
+GND <= '0';
+VCC <= '1';
+end beh;
+

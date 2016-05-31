@@ -1,0 +1,53 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=lab03s14
+
+[Library]
+lab03s14=.\lab03s14.LIB
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+fileopenfolder=H:\ese382\lab03s14\lab03s14\ispLEVER
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=1
+
+[$LibMap$]
+lab03s14=.
+Active_lib=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[Files.Data]
+.\src\converter_csop_TB(1).vhd=VHDL Source Code
+.\src\selector.vhq=VHDL Source Code
+
+[Files]
+/selector.vhq=-1
+/converter_csop_TB(1).vhd=-1
+

@@ -1,0 +1,39 @@
+Active-HDL 9.3.2745.4995  2014-04-15 12:27:02 AM
+
+Elaboration top modules:
+Architecture                  tb_architecture(settable_counters_tb)
+
+
+----------------------------------------------------------------------------------------------------------------------------
+Entity                     | Architecture      | Library            | Info | Compiler Version         | Compilation Options
+----------------------------------------------------------------------------------------------------------------------------
+settable_counters_tb       | tb_architecture   | casadedDownCounter |      | 9.3.2745.4995  (Windows) | -O3
+settable_counters          | settable_counters | casadeddowncounter |      | 9.3.2745.4995  (Windows) | -O3
+rotary_encoder_decoder_fsm | behavioral        | casadeddowncounter |      | 9.3.2745.4995  (Windows) | -O3
+cascaded_counters          | cascaded_counters | casadeddowncounter |      | 9.3.2745.4995  (Windows) | -O3
+seconds_counter            | behavioral        | casadeddowncounter |      | 9.3.2745.4995  (Windows) | -O3
+minutes_counter            | behavioral        | casadeddowncounter |      | 9.3.2745.4995  (Windows) | -O3
+----------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------
+VHDL Package                                   | Library            | Info | Compiler Version         | Compilation Options
+----------------------------------------------------------------------------------------------------------------------------
+standard                                       | std                |      |                          | 
+TEXTIO                                         | std                |      | 9.3.2745.4995  (Windows) |  -2008
+std_logic_1164                                 | ieee               |      | 9.3.2745.4995  (Windows) |  -2008
+NUMERIC_STD                                    | ieee               |      | 9.3.2745.4995  (Windows) |  -2008
+----------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------
+Library                                        | Comment
+----------------------------------------------------------------------------------------------------------------------------
+casadedDownCounter                             | None
+ieee                                           | Standard IEEE packages library
+std                                            | Standard VHDL library
+----------------------------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+settable_counters_tb settable_counters_tb tb_architecture
+
+
+The performance of simulation is reduced. Version Student Edition

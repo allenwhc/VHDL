@@ -1,0 +1,1 @@
+-w -s "H:\ese382\lab06s14\library.cfg"  -j "H:\ese382\lab06s14\ha_mixed_simnet\projlib.cfg"  -d "H:\ese382\lab06s14\ha_mixed_simnet\compile"   -work ha_mixed_simnet  -dbg -e 100 -2002 "H:\ese382\lab06s14\ha_mixed_simnet\src\ha_mixed.vhq" "H:\ese382\lab06s14\ha_mixed_simnet\src\ha_test_tb.vhd"

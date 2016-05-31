@@ -1,0 +1,7 @@
+MESSAGE "File: H:\ese382\lab06s14\ha_mixed_simnet\src\ha_mixed.vhq" 
+MESSAGE "Compile Entity "ha_mixed"" 
+MESSAGE "Compile Architecture "structure" of Entity "ha_mixed"" 
+MESSAGE "File: H:\ese382\lab06s14\ha_mixed_simnet\src\ha_test_tb.vhd" 
+MESSAGE "Compile Entity "ha_mixed_tb"" 
+MESSAGE "Compile Architecture "behavior" of Entity "ha_mixed_tb"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]" 

@@ -1,0 +1,26 @@
+#$ TOOL ispLEVER Classic 7.0.00.10.16.07
+#$ DATE Tue Apr 01 09:51:34 2014
+#$ MODULE fuel_encoder
+#$ PINS 8 fuel_3_ leds_3_ empty fuel_2_ fuel_1_ leds_2_ leds_1_ leds_0_
+
+.model fuel_encoder
+.inputs fuel_3_.BLIF fuel_2_.BLIF fuel_1_.BLIF
+.outputs leds_3_ empty leds_2_ leds_1_ leds_0_
+.names fuel_3_.BLIF fuel_2_.BLIF leds_3_
+0- 1
+-0 1
+11 0
+.names fuel_3_.BLIF fuel_2_.BLIF fuel_1_.BLIF empty
+-1- 1
+1-- 1
+--1 1
+000 0
+.names fuel_3_.BLIF leds_2_
+0 1
+1 0
+.names fuel_3_.BLIF fuel_2_.BLIF leds_1_
+00 1
+1- 0
+-1 0
+.names leds_0_
+.end

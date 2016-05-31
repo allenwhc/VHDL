@@ -1,0 +1,12 @@
+[COMPILESTATUS|.\src\counter.vhd]
+FileTimeLow=30364382
+Status=Compiled
+
+[COMPILESTATUS|.\src\TestBench\counter_TB.vhd]
+FileTimeLow=30364466
+Status=Compiled
+
+[COMPILESTATUS|.\src\TestBench\counter_TB_runtest.do]
+FileTimeLow=30364466
+Status=Modified
+

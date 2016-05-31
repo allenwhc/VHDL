@@ -1,0 +1,14 @@
+[View]
+Entity=set_initial_value_tb
+Architecture=tb_architecture
+TopLevelType=1
+[file:.\src\seconds_counter.vhd]
+Enabled=1
+[file:.\src\set_initial_value_TB.vhd]
+Enabled=1
+[file:.\src\minutes_counter.vhd]
+Enabled=1
+[file:.\src\rotary_encoder_decoder_fsm.vhd]
+Enabled=1
+[file:.\src\s_timer.vhd]
+Enabled=1

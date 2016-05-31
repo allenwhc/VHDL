@@ -1,0 +1,75 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=task1
+
+[Library]
+task1=.\task1.LIB
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=Lattice GAL
+fileopenfolder=H:\ese382\download
+IMPL_TOOL=
+SYNTH_TOOL=
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=1
+
+[$LibMap$]
+task1=.
+Active_lib=
+xilinxun=
+UnlinkedDesignLibrary=
+DESIGNS=
+
+[Folders]
+Name3=Makefiles
+Directory3=h:\ese382\lab07s14\task1\
+Extension3=mak
+Name4=Memory
+Directory4=h:\ese382\lab07s14\task1\src
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=h:\ese382\lab07s14\task1\
+Extension5=dll
+Name6=PDF
+Directory6=h:\ese382\lab07s14\task1\
+Extension6=pdf
+Name7=HTML
+Directory7=h:\ese382\lab07s14\task1\
+Extension7=
+
+[Files]
+/selected.vhd=-1
+/conditional.vhd=-1
+/converter_tb.vhd=-1
+/cpos.vhd=-1
+/csop.vhd=-1
+
+[Files.Data]
+.\src\selected.vhd=VHDL Source Code
+.\src\conditional.vhd=VHDL Source Code
+.\src\converter_tb.vhd=VHDL Source Code
+.\src\cpos.vhd=VHDL Source Code
+.\src\csop.vhd=VHDL Source Code
+

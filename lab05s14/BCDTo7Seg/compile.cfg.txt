@@ -1,0 +1,8 @@
+[View]
+Entity=converter_2421_bcd_tb
+Architecture=tb_architecture
+TopLevelType=1
+[file:.\src\BCDTo7Seg.vhd]
+Enabled=1
+[file:.\src\BCDTo7Seg_TB.vhd]
+Enabled=1

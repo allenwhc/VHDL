@@ -1,0 +1,1 @@
+-w -s "h:\ese382\lab10s14\library.cfg"  -j "h:\ese382\lab10s14\c_timer\projlib.cfg"  -d "h:\ese382\lab10s14\c_timer\compile"   -work c_timer  -dbg -e 100 -2002 "h:\ese382\lab10s14\c_timer\src\timer.vhd"

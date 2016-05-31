@@ -1,0 +1,2446 @@
+//
+// Written by Synplify
+// Product Version "E-201103-SP2"
+// Program "Synplify Pro", Mapper "maprc, Build 507R"
+// Tue Apr 08 14:09:18 2014
+//
+// Source file index table:
+// Object locations will have the form <file>:<line>
+// file 0 "noname"
+// file 1 "\c:\synopsys\fpga_e201103sp2\lib\vhd\std.vhd "
+// file 2 "\h:\ese382\lab08s14\sequential_system\src\counter.vhd "
+// file 3 "\c:\synopsys\fpga_e201103sp2\lib\vhd\std1164.vhd "
+// file 4 "\c:\synopsys\fpga_e201103sp2\lib\vhd\numeric.vhd "
+// file 5 "\h:\ese382\lab08s14\sequential_system\src\flipflop.vhd "
+// file 6 "\h:\ese382\lab08s14\sequential_system\src\right_shift_reg.vhd "
+// file 7 "\h:\ese382\lab08s14\sequential_system\src\seq_sys.vhd "
+// file 8 "\h:\ese382\lab08s14\sequential_system\src\seq_sys_tb-2.vhd "
+
+`timescale 100 ps/100 ps
+module MACH_DFF (
+  Q,
+  D,
+  CLK,
+  R,
+  S,
+  NOTIFIER
+)
+;
+output Q ;
+input D ;
+input CLK ;
+input R ;
+input S ;
+input NOTIFIER ;
+wire Q ;
+wire D ;
+wire CLK ;
+wire R ;
+wire S ;
+wire NOTIFIER ;
+wire un0 ;
+wire un1 ;
+wire VCC ;
+wire GND ;
+  assign #(0)  un0 = ~ S;
+  assign #(0)  un1 = ~ R;
+  assign VCC = 1'b1;
+  assign GND = 1'b0;
+  reg Q_r_e_g; // dffrs
+  always @(posedge CLK or posedge un1 or posedge un0 )
+    Q_r_e_g <= #0 un1 ? 1'b0 : (un0 ? 1'b1 : D );
+  assign Q = Q_r_e_g;
+endmodule /* MACH_DFF */
+
+module DFFRH (
+  Q,
+  D,
+  CLK,
+  R
+)
+;
+output Q ;
+input D ;
+input CLK ;
+input R ;
+wire Q ;
+wire D ;
+wire CLK ;
+wire R ;
+wire un1 ;
+wire VCC ;
+wire GND ;
+  MACH_DFF INS1 (
+	.Q(Q),
+	.D(D),
+	.CLK(CLK),
+	.R(un1),
+	.S(VCC),
+	.NOTIFIER(GND)
+);
+  assign #(0)  un1 = ~ R;
+  assign VCC = 1'b1;
+  assign GND = 1'b0;
+endmodule /* DFFRH */
+
+module DFF (
+  Q,
+  D,
+  CLK
+)
+;
+output Q ;
+input D ;
+input CLK ;
+wire Q ;
+wire D ;
+wire CLK ;
+wire VCC ;
+wire GND ;
+  MACH_DFF INS4 (
+	.Q(Q),
+	.D(D),
+	.CLK(CLK),
+	.R(VCC),
+	.S(VCC),
+	.NOTIFIER(GND)
+);
+  assign VCC = 1'b1;
+  assign GND = 1'b0;
+endmodule /* DFF */
+
+module IBUF (
+  O,
+  I0
+)
+;
+output O ;
+input I0 ;
+wire O ;
+wire I0 ;
+wire VCC ;
+wire GND ;
+  assign #(0)  O = I0;
+  assign VCC = 1'b1;
+  assign GND = 1'b0;
+endmodule /* IBUF */
+
+module OBUF (
+  O,
+  I0
+)
+;
+output O ;
+input I0 ;
+wire O ;
+wire I0 ;
+wire VCC ;
+wire GND ;
+  assign #(0)  O = I0;
+  assign VCC = 1'b1;
+  assign GND = 1'b0;
+endmodule /* OBUF */
+
+module AND2 (
+  O,
+  I0,
+  I1
+)
+;
+output O ;
+input I0 ;
+input I1 ;
+wire O ;
+wire I0 ;
+wire I1 ;
+wire VCC ;
+wire GND ;
+  assign VCC = 1'b1;
+  assign GND = 1'b0;
+  assign #(0)  O = I0  & I1 ;
+endmodule /* AND2 */
+
+module INV (
+  O,
+  I0
+)
+;
+output O ;
+input I0 ;
+wire O ;
+wire I0 ;
+wire VCC ;
+wire GND ;
+  assign #(0)  O = ~ I0;
+  assign VCC = 1'b1;
+  assign GND = 1'b0;
+endmodule /* INV */
+
+module OR2 (
+  O,
+  I0,
+  I1
+)
+;
+output O ;
+input I0 ;
+input I1 ;
+wire O ;
+wire I0 ;
+wire I1 ;
+wire VCC ;
+wire GND ;
+  assign VCC = 1'b1;
+  assign GND = 1'b0;
+  assign #(0)  O = I0  | I1 ;
+endmodule /* OR2 */
+
+module XOR2 (
+  O,
+  I0,
+  I1
+)
+;
+output O ;
+input I0 ;
+input I1 ;
+wire O ;
+wire I0 ;
+wire I1 ;
+wire VCC ;
+wire GND ;
+  assign VCC = 1'b1;
+  assign GND = 1'b0;
+  assign #(0)  O = I0  ^ I1 ;
+endmodule /* XOR2 */
+
+module seq_sys (
+  load,
+  send,
+  clk,
+  rst_bar,
+  d,
+  serial_out,
+  valid,
+  sample_clk
+)
+;
+input load ;
+input send ;
+input clk ;
+input rst_bar ;
+input [7:0] d ;
+output serial_out ;
+output valid ;
+output sample_clk ;
+wire load ;
+wire send ;
+wire clk ;
+wire rst_bar ;
+wire serial_out ;
+wire valid ;
+wire sample_clk ;
+wire [3:3] temp;
+wire [31:0] \u1.cnt_int.count ;
+wire [31:1] \u1.un1_count ;
+wire [7:1] \u0.q1 ;
+wire [3:0] \u1.un2_count ;
+wire [3:3] \u1.q_m ;
+wire [29:29] \u1.un1_count_m ;
+wire [7:0] \u0.q1_4 ;
+wire [3:3] temp_i;
+wire [2:0] \u1.cnt_int.count_i ;
+wire [1:1] \u1.cnt_int.count_i_0 ;
+wire [28:1] \u1.un1_count_i ;
+wire [7:0] d_c;
+wire [29:29] \u1.un1_count_m_i ;
+wire [3:3] \u1.q_m_i ;
+wire [29:29] \u1.un1_count_m_1 ;
+wire a ;
+wire q ;
+wire GND ;
+wire \u1.un1_en_count_inv  ;
+wire \u1.un1_clear_3  ;
+wire \u1.N_1  ;
+wire \u1.N_2  ;
+wire \u1.N_3  ;
+wire \u1.N_4  ;
+wire \u1.N_5  ;
+wire \u1.N_6  ;
+wire \u1.N_7  ;
+wire \u1.N_8  ;
+wire \u1.N_9  ;
+wire \u1.N_10  ;
+wire \u1.N_11  ;
+wire \u1.N_12  ;
+wire \u1.N_13  ;
+wire \u1.N_14  ;
+wire \u1.N_15  ;
+wire \u1.N_16  ;
+wire \u1.N_17  ;
+wire \u1.N_18  ;
+wire \u1.N_19  ;
+wire \u1.N_20  ;
+wire \u1.N_21  ;
+wire \u1.N_22  ;
+wire \u1.N_23  ;
+wire \u1.N_24  ;
+wire \u1.N_25  ;
+wire \u1.N_26  ;
+wire \u1.N_27  ;
+wire \u1.N_28  ;
+wire \u1.N_29  ;
+wire \u1.N_30  ;
+wire \u1.N_31  ;
+wire \u1.N_32  ;
+wire \u1.N_46  ;
+wire \u1.N_49  ;
+wire \u1.N_52  ;
+wire \u1.N_55  ;
+wire \u1.N_58  ;
+wire \u1.N_61  ;
+wire \u1.N_64  ;
+wire \u1.N_67  ;
+wire \u1.N_70  ;
+wire \u1.N_73  ;
+wire \u1.N_76  ;
+wire \u1.N_79  ;
+wire \u1.N_82  ;
+wire \u1.N_85  ;
+wire \u1.N_88  ;
+wire \u1.N_91  ;
+wire \u1.N_94  ;
+wire \u1.N_97  ;
+wire \u1.N_100  ;
+wire \u1.N_103  ;
+wire \u1.N_106  ;
+wire \u1.N_109  ;
+wire \u1.N_112  ;
+wire \u1.N_115  ;
+wire \u1.N_118  ;
+wire \u1.N_121  ;
+wire \u1.N_124  ;
+wire \u1.N_127  ;
+wire \u0.N_1  ;
+wire \u0.N_2  ;
+wire \u0.N_3  ;
+wire \u0.N_4  ;
+wire \u0.N_5  ;
+wire \u0.N_6  ;
+wire \u0.N_7  ;
+wire \u0.N_8  ;
+wire \u1.N_40  ;
+wire \u1.N_43  ;
+wire \u1.cnt_int.un5_count  ;
+wire \u1.un1_q_2  ;
+wire \u0.un1_en_shift  ;
+wire \u1.cnt_int.un5_count_i  ;
+wire load_i ;
+wire q_i ;
+wire clk_i ;
+wire rst_bar_i ;
+wire load_c ;
+wire send_c ;
+wire clk_c ;
+wire rst_bar_c ;
+wire serial_out_c ;
+wire valid_c ;
+wire sample_clk_c ;
+wire \u0.un1_en_shift_0  ;
+wire \u1.un1_en_count_inv_0  ;
+wire \u1.un1_q_2_0  ;
+wire send_c_i ;
+wire a_i ;
+wire \u1.cnt_int.un5_count_1  ;
+wire \u1.cnt_int.un5_count_2  ;
+wire \u1.cnt_int.un5_count_3  ;
+wire \u1.cnt_int.un5_count_4  ;
+wire \u1.cnt_int.un5_count_5  ;
+wire \u1.cnt_int.un5_count_6  ;
+wire \u1.cnt_int.un5_count_7  ;
+wire \u1.cnt_int.un5_count_8  ;
+wire \u1.cnt_int.un5_count_9  ;
+wire \u1.cnt_int.un5_count_10  ;
+wire \u1.cnt_int.un5_count_11  ;
+wire \u1.cnt_int.un5_count_12  ;
+wire \u1.cnt_int.un5_count_13  ;
+wire \u1.cnt_int.un5_count_14  ;
+wire \u1.cnt_int.un5_count_15  ;
+wire \u1.cnt_int.un5_count_16  ;
+wire \u1.cnt_int.un5_count_17  ;
+wire \u1.cnt_int.un5_count_18  ;
+wire \u1.cnt_int.un5_count_19  ;
+wire \u1.cnt_int.un5_count_20  ;
+wire \u1.cnt_int.un5_count_21  ;
+wire \u1.cnt_int.un5_count_22  ;
+wire \u1.cnt_int.un5_count_23  ;
+wire \u1.cnt_int.un5_count_24  ;
+wire \u1.cnt_int.un5_count_25  ;
+wire \u1.cnt_int.un5_count_26  ;
+wire \u1.cnt_int.un5_count_27  ;
+wire \u1.cnt_int.un5_count_28  ;
+wire \u1.cnt_int.un5_count_29  ;
+wire \u1.cnt_int.un5_count_30  ;
+wire VCC ;
+wire \u0.q1_0_3_.un3  ;
+wire \u0.q1_0_3_.un1  ;
+wire \u0.q1_0_3_.un0  ;
+wire \u0.q1_0_2_.un3  ;
+wire \u0.q1_0_2_.un1  ;
+wire \u0.q1_0_2_.un0  ;
+wire \u0.q1_0_1_.un3  ;
+wire \u0.q1_0_1_.un1  ;
+wire \u0.q1_0_1_.un0  ;
+wire \u0.q1_0_0_.un3  ;
+wire \u0.q1_0_0_.un1  ;
+wire \u0.q1_0_0_.un0  ;
+wire \u0.q1_4_6_.un3  ;
+wire \u0.q1_4_6_.un1  ;
+wire \u0.q1_4_6_.un0  ;
+wire \u0.q1_4_5_.un3  ;
+wire \u0.q1_4_5_.un1  ;
+wire \u0.q1_4_5_.un0  ;
+wire \u0.q1_4_4_.un3  ;
+wire \u0.q1_4_4_.un1  ;
+wire \u0.q1_4_4_.un0  ;
+wire \u0.q1_4_3_.un3  ;
+wire \u0.q1_4_3_.un1  ;
+wire \u0.q1_4_3_.un0  ;
+wire \u0.q1_4_2_.un3  ;
+wire \u0.q1_4_2_.un1  ;
+wire \u0.q1_4_2_.un0  ;
+wire \u0.q1_4_1_.un3  ;
+wire \u0.q1_4_1_.un1  ;
+wire \u0.q1_4_1_.un0  ;
+wire \u0.q1_4_0_.un3  ;
+wire \u0.q1_4_0_.un1  ;
+wire \u0.q1_4_0_.un0  ;
+wire \u0.q1_0_7_.un3  ;
+wire \u0.q1_0_7_.un1  ;
+wire \u0.q1_0_7_.un0  ;
+wire \u0.q1_0_6_.un3  ;
+wire \u0.q1_0_6_.un1  ;
+wire \u0.q1_0_6_.un0  ;
+wire \u0.q1_0_5_.un3  ;
+wire \u0.q1_0_5_.un1  ;
+wire \u0.q1_0_5_.un0  ;
+wire \u0.q1_0_4_.un3  ;
+wire \u0.q1_0_4_.un1  ;
+wire \u0.q1_0_4_.un0  ;
+wire \u1.cnt_int.count_0_0_.un3  ;
+wire \u1.cnt_int.count_0_0_.un1  ;
+wire \u1.cnt_int.count_0_0_.un0  ;
+wire \u1.cnt_int.count_0_1_.un3  ;
+wire \u1.cnt_int.count_0_1_.un1  ;
+wire \u1.cnt_int.count_0_1_.un0  ;
+wire \u1.cnt_int.count_0_2_.un3  ;
+wire \u1.cnt_int.count_0_2_.un1  ;
+wire \u1.cnt_int.count_0_2_.un0  ;
+wire \u1.cnt_int.count_0_3_.un3  ;
+wire \u1.cnt_int.count_0_3_.un1  ;
+wire \u1.cnt_int.count_0_3_.un0  ;
+wire \u1.cnt_int.count_0_26_.un3  ;
+wire \u1.cnt_int.count_0_26_.un1  ;
+wire \u1.cnt_int.count_0_26_.un0  ;
+wire \u1.cnt_int.count_0_27_.un3  ;
+wire \u1.cnt_int.count_0_27_.un1  ;
+wire \u1.cnt_int.count_0_27_.un0  ;
+wire \u1.cnt_int.count_0_28_.un3  ;
+wire \u1.cnt_int.count_0_28_.un1  ;
+wire \u1.cnt_int.count_0_28_.un0  ;
+wire \u1.cnt_int.count_0_29_.un3  ;
+wire \u1.cnt_int.count_0_29_.un1  ;
+wire \u1.cnt_int.count_0_29_.un0  ;
+wire \u1.cnt_int.count_0_30_.un3  ;
+wire \u1.cnt_int.count_0_30_.un1  ;
+wire \u1.cnt_int.count_0_30_.un0  ;
+wire \u1.cnt_int.count_0_31_.un3  ;
+wire \u1.cnt_int.count_0_31_.un1  ;
+wire \u1.cnt_int.count_0_31_.un0  ;
+wire \u1.cnt_int.count_0_11_.un3  ;
+wire \u1.cnt_int.count_0_11_.un1  ;
+wire \u1.cnt_int.count_0_11_.un0  ;
+wire \u1.cnt_int.count_0_12_.un3  ;
+wire \u1.cnt_int.count_0_12_.un1  ;
+wire \u1.cnt_int.count_0_12_.un0  ;
+wire \u1.cnt_int.count_0_13_.un3  ;
+wire \u1.cnt_int.count_0_13_.un1  ;
+wire \u1.cnt_int.count_0_13_.un0  ;
+wire \u1.cnt_int.count_0_14_.un3  ;
+wire \u1.cnt_int.count_0_14_.un1  ;
+wire \u1.cnt_int.count_0_14_.un0  ;
+wire \u1.cnt_int.count_0_15_.un3  ;
+wire \u1.cnt_int.count_0_15_.un1  ;
+wire \u1.cnt_int.count_0_15_.un0  ;
+wire \u1.cnt_int.count_0_16_.un3  ;
+wire \u1.cnt_int.count_0_16_.un1  ;
+wire \u1.cnt_int.count_0_16_.un0  ;
+wire \u1.cnt_int.count_0_17_.un3  ;
+wire \u1.cnt_int.count_0_17_.un1  ;
+wire \u1.cnt_int.count_0_17_.un0  ;
+wire \u1.cnt_int.count_0_18_.un3  ;
+wire \u1.cnt_int.count_0_18_.un1  ;
+wire \u1.cnt_int.count_0_18_.un0  ;
+wire \u1.cnt_int.count_0_19_.un3  ;
+wire \u1.cnt_int.count_0_19_.un1  ;
+wire \u1.cnt_int.count_0_19_.un0  ;
+wire \u1.cnt_int.count_0_20_.un3  ;
+wire \u1.cnt_int.count_0_20_.un1  ;
+wire \u1.cnt_int.count_0_20_.un0  ;
+wire \u1.cnt_int.count_0_21_.un3  ;
+wire \u1.cnt_int.count_0_21_.un1  ;
+wire \u1.cnt_int.count_0_21_.un0  ;
+wire \u1.cnt_int.count_0_22_.un3  ;
+wire \u1.cnt_int.count_0_22_.un1  ;
+wire \u1.cnt_int.count_0_22_.un0  ;
+wire \u1.cnt_int.count_0_23_.un3  ;
+wire \u1.cnt_int.count_0_23_.un1  ;
+wire \u1.cnt_int.count_0_23_.un0  ;
+wire \u1.cnt_int.count_0_24_.un3  ;
+wire \u1.cnt_int.count_0_24_.un1  ;
+wire \u1.cnt_int.count_0_24_.un0  ;
+wire \u1.cnt_int.count_0_25_.un3  ;
+wire \u1.cnt_int.count_0_25_.un1  ;
+wire \u1.cnt_int.count_0_25_.un0  ;
+wire \u1.cnt_int.count_0_4_.un3  ;
+wire \u1.cnt_int.count_0_4_.un1  ;
+wire \u1.cnt_int.count_0_4_.un0  ;
+wire \u1.cnt_int.count_0_5_.un3  ;
+wire \u1.cnt_int.count_0_5_.un1  ;
+wire \u1.cnt_int.count_0_5_.un0  ;
+wire \u1.cnt_int.count_0_6_.un3  ;
+wire \u1.cnt_int.count_0_6_.un1  ;
+wire \u1.cnt_int.count_0_6_.un0  ;
+wire \u1.cnt_int.count_0_7_.un3  ;
+wire \u1.cnt_int.count_0_7_.un1  ;
+wire \u1.cnt_int.count_0_7_.un0  ;
+wire \u1.cnt_int.count_0_8_.un3  ;
+wire \u1.cnt_int.count_0_8_.un1  ;
+wire \u1.cnt_int.count_0_8_.un0  ;
+wire \u1.cnt_int.count_0_9_.un3  ;
+wire \u1.cnt_int.count_0_9_.un1  ;
+wire \u1.cnt_int.count_0_9_.un0  ;
+wire \u1.cnt_int.count_0_10_.un3  ;
+wire \u1.cnt_int.count_0_10_.un1  ;
+wire \u1.cnt_int.count_0_10_.un0  ;
+// @6:21
+  DFFRH \u0.q1_cZ[3]  (
+	.Q(\u0.q1 [3]),
+	.D(\u0.N_4 ),
+	.CLK(clk_c),
+	.R(rst_bar_i)
+);
+// @6:21
+  DFFRH \u0.q1_cZ[4]  (
+	.Q(\u0.q1 [4]),
+	.D(\u0.N_5 ),
+	.CLK(clk_c),
+	.R(rst_bar_i)
+);
+// @6:21
+  DFFRH \u0.q1_cZ[5]  (
+	.Q(\u0.q1 [5]),
+	.D(\u0.N_6 ),
+	.CLK(clk_c),
+	.R(rst_bar_i)
+);
+// @6:21
+  DFFRH \u0.q1_cZ[6]  (
+	.Q(\u0.q1 [6]),
+	.D(\u0.N_7 ),
+	.CLK(clk_c),
+	.R(rst_bar_i)
+);
+// @6:21
+  DFFRH \u0.q1_cZ[7]  (
+	.Q(\u0.q1 [7]),
+	.D(\u0.N_8 ),
+	.CLK(clk_c),
+	.R(rst_bar_i)
+);
+// @6:21
+  DFFRH \u0.q1[0]  (
+	.Q(serial_out_c),
+	.D(\u0.N_1 ),
+	.CLK(clk_c),
+	.R(rst_bar_i)
+);
+// @6:21
+  DFFRH \u0.q1_cZ[1]  (
+	.Q(\u0.q1 [1]),
+	.D(\u0.N_2 ),
+	.CLK(clk_c),
+	.R(rst_bar_i)
+);
+// @6:21
+  DFFRH \u0.q1_cZ[2]  (
+	.Q(\u0.q1 [2]),
+	.D(\u0.N_3 ),
+	.CLK(clk_c),
+	.R(rst_bar_i)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[19]  (
+	.Q(\u1.cnt_int.count [19]),
+	.D(\u1.N_20 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[20]  (
+	.Q(\u1.cnt_int.count [20]),
+	.D(\u1.N_21 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[21]  (
+	.Q(\u1.cnt_int.count [21]),
+	.D(\u1.N_22 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[22]  (
+	.Q(\u1.cnt_int.count [22]),
+	.D(\u1.N_23 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[23]  (
+	.Q(\u1.cnt_int.count [23]),
+	.D(\u1.N_24 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[24]  (
+	.Q(\u1.cnt_int.count [24]),
+	.D(\u1.N_25 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[25]  (
+	.Q(\u1.cnt_int.count [25]),
+	.D(\u1.N_26 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[26]  (
+	.Q(\u1.cnt_int.count [26]),
+	.D(\u1.N_27 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[27]  (
+	.Q(\u1.cnt_int.count [27]),
+	.D(\u1.N_28 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[28]  (
+	.Q(\u1.cnt_int.count [28]),
+	.D(\u1.N_29 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[29]  (
+	.Q(\u1.cnt_int.count [29]),
+	.D(\u1.N_30 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[30]  (
+	.Q(\u1.cnt_int.count [30]),
+	.D(\u1.N_31 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[31]  (
+	.Q(\u1.cnt_int.count [31]),
+	.D(\u1.N_32 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[4]  (
+	.Q(\u1.cnt_int.count [4]),
+	.D(\u1.N_5 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[5]  (
+	.Q(\u1.cnt_int.count [5]),
+	.D(\u1.N_6 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[6]  (
+	.Q(\u1.cnt_int.count [6]),
+	.D(\u1.N_7 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[7]  (
+	.Q(\u1.cnt_int.count [7]),
+	.D(\u1.N_8 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[8]  (
+	.Q(\u1.cnt_int.count [8]),
+	.D(\u1.N_9 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[9]  (
+	.Q(\u1.cnt_int.count [9]),
+	.D(\u1.N_10 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[10]  (
+	.Q(\u1.cnt_int.count [10]),
+	.D(\u1.N_11 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[11]  (
+	.Q(\u1.cnt_int.count [11]),
+	.D(\u1.N_12 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[12]  (
+	.Q(\u1.cnt_int.count [12]),
+	.D(\u1.N_13 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[13]  (
+	.Q(\u1.cnt_int.count [13]),
+	.D(\u1.N_14 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[14]  (
+	.Q(\u1.cnt_int.count [14]),
+	.D(\u1.N_15 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[15]  (
+	.Q(\u1.cnt_int.count [15]),
+	.D(\u1.N_16 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[16]  (
+	.Q(\u1.cnt_int.count [16]),
+	.D(\u1.N_17 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[17]  (
+	.Q(\u1.cnt_int.count [17]),
+	.D(\u1.N_18 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[18]  (
+	.Q(\u1.cnt_int.count [18]),
+	.D(\u1.N_19 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFFRH \u1.q[3]  (
+	.Q(temp[3]),
+	.D(\u1.un1_clear_3 ),
+	.CLK(clk_c),
+	.R(GND)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[0]  (
+	.Q(\u1.cnt_int.count [0]),
+	.D(\u1.N_1 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[1]  (
+	.Q(\u1.cnt_int.count [1]),
+	.D(\u1.N_2 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[2]  (
+	.Q(\u1.cnt_int.count [2]),
+	.D(\u1.N_3 ),
+	.CLK(clk_c)
+);
+// @2:20
+  DFF \u1.cnt_int.count_cZ[3]  (
+	.Q(\u1.cnt_int.count [3]),
+	.D(\u1.N_4 ),
+	.CLK(clk_c)
+);
+//@1:1
+  assign GND = 1'b0;
+// @5:18
+  DFFRH \u2.q  (
+	.Q(q),
+	.D(a),
+	.CLK(clk_c),
+	.R(rst_bar_i)
+);
+  IBUF load_cZ (
+	.O(load_c),
+	.I0(load)
+);
+  IBUF send_cZ (
+	.O(send_c),
+	.I0(send)
+);
+  IBUF clk_cZ (
+	.O(clk_c),
+	.I0(clk)
+);
+  IBUF rst_bar_cZ (
+	.O(rst_bar_c),
+	.I0(rst_bar)
+);
+  IBUF \d_cZ[0]  (
+	.O(d_c[0]),
+	.I0(d[0])
+);
+  IBUF \d_cZ[1]  (
+	.O(d_c[1]),
+	.I0(d[1])
+);
+  IBUF \d_cZ[2]  (
+	.O(d_c[2]),
+	.I0(d[2])
+);
+  IBUF \d_cZ[3]  (
+	.O(d_c[3]),
+	.I0(d[3])
+);
+  IBUF \d_cZ[4]  (
+	.O(d_c[4]),
+	.I0(d[4])
+);
+  IBUF \d_cZ[5]  (
+	.O(d_c[5]),
+	.I0(d[5])
+);
+  IBUF \d_cZ[6]  (
+	.O(d_c[6]),
+	.I0(d[6])
+);
+  IBUF \d_cZ[7]  (
+	.O(d_c[7]),
+	.I0(d[7])
+);
+  OBUF serial_out_cZ (
+	.O(serial_out),
+	.I0(serial_out_c)
+);
+  OBUF valid_cZ (
+	.O(valid),
+	.I0(valid_c)
+);
+  OBUF sample_clk_cZ (
+	.O(sample_clk),
+	.I0(sample_clk_c)
+);
+  AND2 \u1.cnt_int.un5_count_20_cZ  (
+	.O(\u1.cnt_int.un5_count_20 ),
+	.I0(\u1.cnt_int.un5_count_7 ),
+	.I1(\u1.cnt_int.un5_count_8 )
+);
+  AND2 \u1.cnt_int.un5_count_21_cZ  (
+	.O(\u1.cnt_int.un5_count_21 ),
+	.I0(\u1.cnt_int.un5_count_9 ),
+	.I1(\u1.cnt_int.un5_count_10 )
+);
+  AND2 \u1.cnt_int.un5_count_22_cZ  (
+	.O(\u1.cnt_int.un5_count_22 ),
+	.I0(\u1.cnt_int.un5_count_11 ),
+	.I1(\u1.cnt_int.un5_count_12 )
+);
+  AND2 \u1.cnt_int.un5_count_23_cZ  (
+	.O(\u1.cnt_int.un5_count_23 ),
+	.I0(\u1.cnt_int.un5_count_13 ),
+	.I1(\u1.cnt_int.un5_count_14 )
+);
+  AND2 \u1.cnt_int.un5_count_24_cZ  (
+	.O(\u1.cnt_int.un5_count_24 ),
+	.I0(\u1.cnt_int.un5_count_15 ),
+	.I1(\u1.cnt_int.un5_count_16 )
+);
+  AND2 \u1.cnt_int.un5_count_25_cZ  (
+	.O(\u1.cnt_int.un5_count_25 ),
+	.I0(\u1.cnt_int.un5_count_17 ),
+	.I1(\u1.cnt_int.un5_count_18 )
+);
+  AND2 \u1.cnt_int.un5_count_26_cZ  (
+	.O(\u1.cnt_int.un5_count_26 ),
+	.I0(\u1.cnt_int.un5_count_19 ),
+	.I1(\u1.cnt_int.un5_count_20 )
+);
+  AND2 \u1.cnt_int.un5_count_27_cZ  (
+	.O(\u1.cnt_int.un5_count_27 ),
+	.I0(\u1.cnt_int.un5_count_21 ),
+	.I1(\u1.cnt_int.un5_count_22 )
+);
+  AND2 \u1.cnt_int.un5_count_28_cZ  (
+	.O(\u1.cnt_int.un5_count_28 ),
+	.I0(\u1.cnt_int.un5_count_23 ),
+	.I1(\u1.cnt_int.un5_count_24 )
+);
+  AND2 \u1.cnt_int.un5_count_29_cZ  (
+	.O(\u1.cnt_int.un5_count_29 ),
+	.I0(\u1.cnt_int.un5_count_25 ),
+	.I1(\u1.cnt_int.un5_count_26 )
+);
+  AND2 \u1.cnt_int.un5_count_30_cZ  (
+	.O(\u1.cnt_int.un5_count_30 ),
+	.I0(\u1.cnt_int.un5_count_27 ),
+	.I1(\u1.cnt_int.un5_count_28 )
+);
+  AND2 \u1.cnt_int.un5_count_cZ  (
+	.O(\u1.cnt_int.un5_count ),
+	.I0(\u1.cnt_int.un5_count_29 ),
+	.I1(\u1.cnt_int.un5_count_30 )
+);
+  AND2 \u1.un1_count_m_1_cZ[29]  (
+	.O(\u1.un1_count_m_1 [29]),
+	.I0(\u1.un1_count [29]),
+	.I1(q)
+);
+  AND2 \u1.un1_count_m_cZ[29]  (
+	.O(\u1.un1_count_m [29]),
+	.I0(\u1.un1_count_m_1 [29]),
+	.I1(\u1.cnt_int.un5_count_i )
+);
+  AND2 \u1.cnt_int.un5_count_5_cZ  (
+	.O(\u1.cnt_int.un5_count_5 ),
+	.I0(\u1.un1_count_i [5]),
+	.I1(\u1.un1_count_i [6])
+);
+  AND2 \u1.cnt_int.un5_count_6_cZ  (
+	.O(\u1.cnt_int.un5_count_6 ),
+	.I0(\u1.un1_count_i [7]),
+	.I1(\u1.un1_count_i [8])
+);
+  AND2 \u1.cnt_int.un5_count_7_cZ  (
+	.O(\u1.cnt_int.un5_count_7 ),
+	.I0(\u1.un1_count_i [9]),
+	.I1(\u1.un1_count_i [10])
+);
+  AND2 \u1.cnt_int.un5_count_8_cZ  (
+	.O(\u1.cnt_int.un5_count_8 ),
+	.I0(\u1.un1_count_i [11]),
+	.I1(\u1.un1_count_i [12])
+);
+  AND2 \u1.cnt_int.un5_count_9_cZ  (
+	.O(\u1.cnt_int.un5_count_9 ),
+	.I0(\u1.un1_count_i [13]),
+	.I1(\u1.un1_count_i [14])
+);
+  AND2 \u1.cnt_int.un5_count_10_cZ  (
+	.O(\u1.cnt_int.un5_count_10 ),
+	.I0(\u1.un1_count_i [15]),
+	.I1(\u1.un1_count_i [16])
+);
+  AND2 \u1.cnt_int.un5_count_11_cZ  (
+	.O(\u1.cnt_int.un5_count_11 ),
+	.I0(\u1.un1_count_i [17]),
+	.I1(\u1.un1_count_i [18])
+);
+  AND2 \u1.cnt_int.un5_count_12_cZ  (
+	.O(\u1.cnt_int.un5_count_12 ),
+	.I0(\u1.un1_count_i [19]),
+	.I1(\u1.un1_count_i [20])
+);
+  AND2 \u1.cnt_int.un5_count_13_cZ  (
+	.O(\u1.cnt_int.un5_count_13 ),
+	.I0(\u1.un1_count_i [21]),
+	.I1(\u1.un1_count_i [22])
+);
+  AND2 \u1.cnt_int.un5_count_14_cZ  (
+	.O(\u1.cnt_int.un5_count_14 ),
+	.I0(\u1.un1_count_i [23]),
+	.I1(\u1.un1_count_i [24])
+);
+  AND2 \u1.cnt_int.un5_count_15_cZ  (
+	.O(\u1.cnt_int.un5_count_15 ),
+	.I0(\u1.un1_count_i [25]),
+	.I1(\u1.un1_count_i [26])
+);
+  AND2 \u1.cnt_int.un5_count_16_cZ  (
+	.O(\u1.cnt_int.un5_count_16 ),
+	.I0(\u1.un1_count_i [27]),
+	.I1(\u1.un1_count_i [28])
+);
+  AND2 \u1.cnt_int.un5_count_17_cZ  (
+	.O(\u1.cnt_int.un5_count_17 ),
+	.I0(\u1.cnt_int.un5_count_1 ),
+	.I1(\u1.cnt_int.un5_count_2 )
+);
+  AND2 \u1.cnt_int.un5_count_18_cZ  (
+	.O(\u1.cnt_int.un5_count_18 ),
+	.I0(\u1.cnt_int.un5_count_3 ),
+	.I1(\u1.cnt_int.un5_count_4 )
+);
+  AND2 \u1.cnt_int.un5_count_19_cZ  (
+	.O(\u1.cnt_int.un5_count_19 ),
+	.I0(\u1.cnt_int.un5_count_5 ),
+	.I1(\u1.cnt_int.un5_count_6 )
+);
+  INV \u0.un1_en_shift_i  (
+	.O(\u0.un1_en_shift ),
+	.I0(\u0.un1_en_shift_0 )
+);
+  INV \u1.un1_en_count_inv_i  (
+	.O(\u1.un1_en_count_inv ),
+	.I0(\u1.un1_en_count_inv_0 )
+);
+  INV \u1.un1_count_m_i_cZ[29]  (
+	.O(\u1.un1_count_m_i [29]),
+	.I0(\u1.un1_count_m [29])
+);
+  INV \u1.q_m_i_cZ[3]  (
+	.O(\u1.q_m_i [3]),
+	.I0(\u1.q_m [3])
+);
+  INV \u1.un1_q_2_iv_i  (
+	.O(\u1.un1_q_2 ),
+	.I0(\u1.un1_q_2_0 )
+);
+  INV send_c_i_cZ (
+	.O(send_c_i),
+	.I0(send_c)
+);
+  INV a_i_0 (
+	.O(a),
+	.I0(a_i)
+);
+  AND2 \u1.cnt_int.un5_count_1_cZ  (
+	.O(\u1.cnt_int.un5_count_1 ),
+	.I0(\u1.cnt_int.count [3]),
+	.I1(\u1.cnt_int.count_i [0])
+);
+  AND2 \u1.cnt_int.un5_count_2_cZ  (
+	.O(\u1.cnt_int.un5_count_2 ),
+	.I0(\u1.cnt_int.count_i [2]),
+	.I1(\u1.cnt_int.count_i_0 [1])
+);
+  AND2 \u1.cnt_int.un5_count_3_cZ  (
+	.O(\u1.cnt_int.un5_count_3 ),
+	.I0(\u1.un1_count_i [1]),
+	.I1(\u1.un1_count_i [2])
+);
+  AND2 \u1.cnt_int.un5_count_4_cZ  (
+	.O(\u1.cnt_int.un5_count_4 ),
+	.I0(\u1.un1_count_i [3]),
+	.I1(\u1.un1_count_i [4])
+);
+  INV \u0.q1_0_3_.r  (
+	.O(\u0.q1_0_3_.un3 ),
+	.I0(\u0.un1_en_shift )
+);
+  AND2 \u0.q1_0_3_.m  (
+	.O(\u0.q1_0_3_.un1 ),
+	.I0(\u0.q1_4 [3]),
+	.I1(\u0.un1_en_shift )
+);
+  AND2 \u0.q1_0_3_.n  (
+	.O(\u0.q1_0_3_.un0 ),
+	.I0(\u0.q1 [3]),
+	.I1(\u0.q1_0_3_.un3 )
+);
+  OR2 \u0.q1_0_3_.p  (
+	.O(\u0.N_4 ),
+	.I0(\u0.q1_0_3_.un1 ),
+	.I1(\u0.q1_0_3_.un0 )
+);
+  assign VCC = 1'b1;
+  INV \u0.q1_0_2_.r  (
+	.O(\u0.q1_0_2_.un3 ),
+	.I0(\u0.un1_en_shift )
+);
+  AND2 \u0.q1_0_2_.m  (
+	.O(\u0.q1_0_2_.un1 ),
+	.I0(\u0.q1_4 [2]),
+	.I1(\u0.un1_en_shift )
+);
+  AND2 \u0.q1_0_2_.n  (
+	.O(\u0.q1_0_2_.un0 ),
+	.I0(\u0.q1 [2]),
+	.I1(\u0.q1_0_2_.un3 )
+);
+  OR2 \u0.q1_0_2_.p  (
+	.O(\u0.N_3 ),
+	.I0(\u0.q1_0_2_.un1 ),
+	.I1(\u0.q1_0_2_.un0 )
+);
+  INV \u0.q1_0_1_.r  (
+	.O(\u0.q1_0_1_.un3 ),
+	.I0(\u0.un1_en_shift )
+);
+  AND2 \u0.q1_0_1_.m  (
+	.O(\u0.q1_0_1_.un1 ),
+	.I0(\u0.q1_4 [1]),
+	.I1(\u0.un1_en_shift )
+);
+  AND2 \u0.q1_0_1_.n  (
+	.O(\u0.q1_0_1_.un0 ),
+	.I0(\u0.q1 [1]),
+	.I1(\u0.q1_0_1_.un3 )
+);
+  OR2 \u0.q1_0_1_.p  (
+	.O(\u0.N_2 ),
+	.I0(\u0.q1_0_1_.un1 ),
+	.I1(\u0.q1_0_1_.un0 )
+);
+  INV \u0.q1_0_0_.r  (
+	.O(\u0.q1_0_0_.un3 ),
+	.I0(\u0.un1_en_shift )
+);
+  AND2 \u0.q1_0_0_.m  (
+	.O(\u0.q1_0_0_.un1 ),
+	.I0(\u0.q1_4 [0]),
+	.I1(\u0.un1_en_shift )
+);
+  AND2 \u0.q1_0_0_.n  (
+	.O(\u0.q1_0_0_.un0 ),
+	.I0(serial_out_c),
+	.I1(\u0.q1_0_0_.un3 )
+);
+  OR2 \u0.q1_0_0_.p  (
+	.O(\u0.N_1 ),
+	.I0(\u0.q1_0_0_.un1 ),
+	.I1(\u0.q1_0_0_.un0 )
+);
+  AND2 \u1.un1_clear_3_cZ  (
+	.O(\u1.un1_clear_3 ),
+	.I0(load_i),
+	.I1(\u1.un1_q_2 )
+);
+  INV \u1.cnt_int.un5_count_i_cZ  (
+	.O(\u1.cnt_int.un5_count_i ),
+	.I0(\u1.cnt_int.un5_count )
+);
+  AND2 \u0.q1_4_cZ[7]  (
+	.O(\u0.q1_4 [7]),
+	.I0(d_c[7]),
+	.I1(load_c)
+);
+  INV \u0.q1_4_6_.r  (
+	.O(\u0.q1_4_6_.un3 ),
+	.I0(load_c)
+);
+  AND2 \u0.q1_4_6_.m  (
+	.O(\u0.q1_4_6_.un1 ),
+	.I0(d_c[6]),
+	.I1(load_c)
+);
+  AND2 \u0.q1_4_6_.n  (
+	.O(\u0.q1_4_6_.un0 ),
+	.I0(\u0.q1 [7]),
+	.I1(\u0.q1_4_6_.un3 )
+);
+  OR2 \u0.q1_4_6_.p  (
+	.O(\u0.q1_4 [6]),
+	.I0(\u0.q1_4_6_.un1 ),
+	.I1(\u0.q1_4_6_.un0 )
+);
+  INV \u0.q1_4_5_.r  (
+	.O(\u0.q1_4_5_.un3 ),
+	.I0(load_c)
+);
+  AND2 \u0.q1_4_5_.m  (
+	.O(\u0.q1_4_5_.un1 ),
+	.I0(d_c[5]),
+	.I1(load_c)
+);
+  AND2 \u0.q1_4_5_.n  (
+	.O(\u0.q1_4_5_.un0 ),
+	.I0(\u0.q1 [6]),
+	.I1(\u0.q1_4_5_.un3 )
+);
+  OR2 \u0.q1_4_5_.p  (
+	.O(\u0.q1_4 [5]),
+	.I0(\u0.q1_4_5_.un1 ),
+	.I1(\u0.q1_4_5_.un0 )
+);
+  INV \u0.q1_4_4_.r  (
+	.O(\u0.q1_4_4_.un3 ),
+	.I0(load_c)
+);
+  AND2 \u0.q1_4_4_.m  (
+	.O(\u0.q1_4_4_.un1 ),
+	.I0(d_c[4]),
+	.I1(load_c)
+);
+  AND2 \u0.q1_4_4_.n  (
+	.O(\u0.q1_4_4_.un0 ),
+	.I0(\u0.q1 [5]),
+	.I1(\u0.q1_4_4_.un3 )
+);
+  OR2 \u0.q1_4_4_.p  (
+	.O(\u0.q1_4 [4]),
+	.I0(\u0.q1_4_4_.un1 ),
+	.I1(\u0.q1_4_4_.un0 )
+);
+  INV \u0.q1_4_3_.r  (
+	.O(\u0.q1_4_3_.un3 ),
+	.I0(load_c)
+);
+  AND2 \u0.q1_4_3_.m  (
+	.O(\u0.q1_4_3_.un1 ),
+	.I0(d_c[3]),
+	.I1(load_c)
+);
+  AND2 \u0.q1_4_3_.n  (
+	.O(\u0.q1_4_3_.un0 ),
+	.I0(\u0.q1 [4]),
+	.I1(\u0.q1_4_3_.un3 )
+);
+  OR2 \u0.q1_4_3_.p  (
+	.O(\u0.q1_4 [3]),
+	.I0(\u0.q1_4_3_.un1 ),
+	.I1(\u0.q1_4_3_.un0 )
+);
+  INV \u0.q1_4_2_.r  (
+	.O(\u0.q1_4_2_.un3 ),
+	.I0(load_c)
+);
+  AND2 \u0.q1_4_2_.m  (
+	.O(\u0.q1_4_2_.un1 ),
+	.I0(d_c[2]),
+	.I1(load_c)
+);
+  AND2 \u0.q1_4_2_.n  (
+	.O(\u0.q1_4_2_.un0 ),
+	.I0(\u0.q1 [3]),
+	.I1(\u0.q1_4_2_.un3 )
+);
+  OR2 \u0.q1_4_2_.p  (
+	.O(\u0.q1_4 [2]),
+	.I0(\u0.q1_4_2_.un1 ),
+	.I1(\u0.q1_4_2_.un0 )
+);
+  INV \u0.q1_4_1_.r  (
+	.O(\u0.q1_4_1_.un3 ),
+	.I0(load_c)
+);
+  AND2 \u0.q1_4_1_.m  (
+	.O(\u0.q1_4_1_.un1 ),
+	.I0(d_c[1]),
+	.I1(load_c)
+);
+  AND2 \u0.q1_4_1_.n  (
+	.O(\u0.q1_4_1_.un0 ),
+	.I0(\u0.q1 [2]),
+	.I1(\u0.q1_4_1_.un3 )
+);
+  OR2 \u0.q1_4_1_.p  (
+	.O(\u0.q1_4 [1]),
+	.I0(\u0.q1_4_1_.un1 ),
+	.I1(\u0.q1_4_1_.un0 )
+);
+  INV \u0.q1_4_0_.r  (
+	.O(\u0.q1_4_0_.un3 ),
+	.I0(load_c)
+);
+  AND2 \u0.q1_4_0_.m  (
+	.O(\u0.q1_4_0_.un1 ),
+	.I0(d_c[0]),
+	.I1(load_c)
+);
+  AND2 \u0.q1_4_0_.n  (
+	.O(\u0.q1_4_0_.un0 ),
+	.I0(\u0.q1 [1]),
+	.I1(\u0.q1_4_0_.un3 )
+);
+  OR2 \u0.q1_4_0_.p  (
+	.O(\u0.q1_4 [0]),
+	.I0(\u0.q1_4_0_.un1 ),
+	.I1(\u0.q1_4_0_.un0 )
+);
+  AND2 \u0.un1_en_shift_cZ  (
+	.O(\u0.un1_en_shift_0 ),
+	.I0(a_i),
+	.I1(load_i)
+);
+  INV \u0.q1_0_7_.r  (
+	.O(\u0.q1_0_7_.un3 ),
+	.I0(\u0.un1_en_shift )
+);
+  AND2 \u0.q1_0_7_.m  (
+	.O(\u0.q1_0_7_.un1 ),
+	.I0(\u0.q1_4 [7]),
+	.I1(\u0.un1_en_shift )
+);
+  AND2 \u0.q1_0_7_.n  (
+	.O(\u0.q1_0_7_.un0 ),
+	.I0(\u0.q1 [7]),
+	.I1(\u0.q1_0_7_.un3 )
+);
+  OR2 \u0.q1_0_7_.p  (
+	.O(\u0.N_8 ),
+	.I0(\u0.q1_0_7_.un1 ),
+	.I1(\u0.q1_0_7_.un0 )
+);
+  INV \u0.q1_0_6_.r  (
+	.O(\u0.q1_0_6_.un3 ),
+	.I0(\u0.un1_en_shift )
+);
+  AND2 \u0.q1_0_6_.m  (
+	.O(\u0.q1_0_6_.un1 ),
+	.I0(\u0.q1_4 [6]),
+	.I1(\u0.un1_en_shift )
+);
+  AND2 \u0.q1_0_6_.n  (
+	.O(\u0.q1_0_6_.un0 ),
+	.I0(\u0.q1 [6]),
+	.I1(\u0.q1_0_6_.un3 )
+);
+  OR2 \u0.q1_0_6_.p  (
+	.O(\u0.N_7 ),
+	.I0(\u0.q1_0_6_.un1 ),
+	.I1(\u0.q1_0_6_.un0 )
+);
+  INV \u0.q1_0_5_.r  (
+	.O(\u0.q1_0_5_.un3 ),
+	.I0(\u0.un1_en_shift )
+);
+  AND2 \u0.q1_0_5_.m  (
+	.O(\u0.q1_0_5_.un1 ),
+	.I0(\u0.q1_4 [5]),
+	.I1(\u0.un1_en_shift )
+);
+  AND2 \u0.q1_0_5_.n  (
+	.O(\u0.q1_0_5_.un0 ),
+	.I0(\u0.q1 [5]),
+	.I1(\u0.q1_0_5_.un3 )
+);
+  OR2 \u0.q1_0_5_.p  (
+	.O(\u0.N_6 ),
+	.I0(\u0.q1_0_5_.un1 ),
+	.I1(\u0.q1_0_5_.un0 )
+);
+  INV \u0.q1_0_4_.r  (
+	.O(\u0.q1_0_4_.un3 ),
+	.I0(\u0.un1_en_shift )
+);
+  AND2 \u0.q1_0_4_.m  (
+	.O(\u0.q1_0_4_.un1 ),
+	.I0(\u0.q1_4 [4]),
+	.I1(\u0.un1_en_shift )
+);
+  AND2 \u0.q1_0_4_.n  (
+	.O(\u0.q1_0_4_.un0 ),
+	.I0(\u0.q1 [4]),
+	.I1(\u0.q1_0_4_.un3 )
+);
+  OR2 \u0.q1_0_4_.p  (
+	.O(\u0.N_5 ),
+	.I0(\u0.q1_0_4_.un1 ),
+	.I1(\u0.q1_0_4_.un0 )
+);
+  AND2 \u1.un2_count_cZ[3]  (
+	.O(\u1.un2_count [3]),
+	.I0(\u1.cnt_int.un5_count_i ),
+	.I1(\u1.un1_count [29])
+);
+  AND2 \u1.un2_count_cZ[0]  (
+	.O(\u1.un2_count [0]),
+	.I0(\u1.cnt_int.count_i [0]),
+	.I1(\u1.cnt_int.un5_count_i )
+);
+  INV \u1.cnt_int.count_i_cZ[0]  (
+	.O(\u1.cnt_int.count_i [0]),
+	.I0(\u1.cnt_int.count [0])
+);
+  INV \u1.cnt_int.count_i_cZ[2]  (
+	.O(\u1.cnt_int.count_i [2]),
+	.I0(\u1.cnt_int.count [2])
+);
+  INV \u1.cnt_int.count_i[1]  (
+	.O(\u1.cnt_int.count_i_0 [1]),
+	.I0(\u1.cnt_int.count [1])
+);
+  INV clk_i_cZ (
+	.O(clk_i),
+	.I0(clk_c)
+);
+  AND2 sample_clkand (
+	.O(sample_clk_c),
+	.I0(clk_i),
+	.I1(valid_c)
+);
+  INV \u1.temp_i[3]  (
+	.O(temp_i[3]),
+	.I0(temp[3])
+);
+  AND2 validand (
+	.O(valid_c),
+	.I0(q),
+	.I1(temp_i[3])
+);
+  AND2 a_cZ (
+	.O(a_i),
+	.I0(q_i),
+	.I1(send_c_i)
+);
+  AND2 \u1.un1_q_2_iv  (
+	.O(\u1.un1_q_2_0 ),
+	.I0(\u1.q_m_i [3]),
+	.I1(\u1.un1_count_m_i [29])
+);
+  AND2 \u1.q_m_cZ[3]  (
+	.O(\u1.q_m [3]),
+	.I0(q_i),
+	.I1(temp[3])
+);
+  INV \u2.q_i  (
+	.O(q_i),
+	.I0(q)
+);
+  AND2 \u1.un1_en_count_inv_cZ  (
+	.O(\u1.un1_en_count_inv_0 ),
+	.I0(load_i),
+	.I1(q)
+);
+  INV \u1.load_i  (
+	.O(load_i),
+	.I0(load_c)
+);
+  INV \u1.un1_count_i_cZ[1]  (
+	.O(\u1.un1_count_i [1]),
+	.I0(\u1.un1_count [1])
+);
+  INV \u1.cnt_int.count_0_0_.r  (
+	.O(\u1.cnt_int.count_0_0_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_0_.m  (
+	.O(\u1.cnt_int.count_0_0_.un1 ),
+	.I0(\u1.cnt_int.count [0]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_0_.n  (
+	.O(\u1.cnt_int.count_0_0_.un0 ),
+	.I0(\u1.un2_count [0]),
+	.I1(\u1.cnt_int.count_0_0_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_0_.p  (
+	.O(\u1.N_1 ),
+	.I0(\u1.cnt_int.count_0_0_.un1 ),
+	.I1(\u1.cnt_int.count_0_0_.un0 )
+);
+  INV \u1.cnt_int.count_0_1_.r  (
+	.O(\u1.cnt_int.count_0_1_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_1_.m  (
+	.O(\u1.cnt_int.count_0_1_.un1 ),
+	.I0(\u1.cnt_int.count [1]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_1_.n  (
+	.O(\u1.cnt_int.count_0_1_.un0 ),
+	.I0(\u1.un1_count [31]),
+	.I1(\u1.cnt_int.count_0_1_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_1_.p  (
+	.O(\u1.N_2 ),
+	.I0(\u1.cnt_int.count_0_1_.un1 ),
+	.I1(\u1.cnt_int.count_0_1_.un0 )
+);
+  INV \u1.cnt_int.count_0_2_.r  (
+	.O(\u1.cnt_int.count_0_2_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_2_.m  (
+	.O(\u1.cnt_int.count_0_2_.un1 ),
+	.I0(\u1.cnt_int.count [2]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_2_.n  (
+	.O(\u1.cnt_int.count_0_2_.un0 ),
+	.I0(\u1.un1_count [30]),
+	.I1(\u1.cnt_int.count_0_2_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_2_.p  (
+	.O(\u1.N_3 ),
+	.I0(\u1.cnt_int.count_0_2_.un1 ),
+	.I1(\u1.cnt_int.count_0_2_.un0 )
+);
+  INV \u1.cnt_int.count_0_3_.r  (
+	.O(\u1.cnt_int.count_0_3_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_3_.m  (
+	.O(\u1.cnt_int.count_0_3_.un1 ),
+	.I0(\u1.cnt_int.count [3]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_3_.n  (
+	.O(\u1.cnt_int.count_0_3_.un0 ),
+	.I0(\u1.un2_count [3]),
+	.I1(\u1.cnt_int.count_0_3_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_3_.p  (
+	.O(\u1.N_4 ),
+	.I0(\u1.cnt_int.count_0_3_.un1 ),
+	.I1(\u1.cnt_int.count_0_3_.un0 )
+);
+  AND2 \u1.G_4  (
+	.O(\u1.N_40 ),
+	.I0(\u1.cnt_int.count [0]),
+	.I1(\u1.cnt_int.count [1])
+);
+  AND2 \u1.G_6  (
+	.O(\u1.N_43 ),
+	.I0(\u1.N_40 ),
+	.I1(\u1.cnt_int.count [2])
+);
+  AND2 \u1.G_8  (
+	.O(\u1.N_46 ),
+	.I0(\u1.N_43 ),
+	.I1(\u1.cnt_int.count [3])
+);
+  INV \u1.un1_count_i_cZ[25]  (
+	.O(\u1.un1_count_i [25]),
+	.I0(\u1.un1_count [25])
+);
+  INV \u1.un1_count_i_cZ[26]  (
+	.O(\u1.un1_count_i [26]),
+	.I0(\u1.un1_count [26])
+);
+  INV \u1.un1_count_i_cZ[27]  (
+	.O(\u1.un1_count_i [27]),
+	.I0(\u1.un1_count [27])
+);
+  INV \u1.un1_count_i_cZ[28]  (
+	.O(\u1.un1_count_i [28]),
+	.I0(\u1.un1_count [28])
+);
+  XOR2 \u1.G_3  (
+	.O(\u1.un1_count [31]),
+	.I0(\u1.cnt_int.count [0]),
+	.I1(\u1.cnt_int.count [1])
+);
+  XOR2 \u1.G_5  (
+	.O(\u1.un1_count [30]),
+	.I0(\u1.N_40 ),
+	.I1(\u1.cnt_int.count [2])
+);
+  XOR2 \u1.G_7  (
+	.O(\u1.un1_count [29]),
+	.I0(\u1.N_43 ),
+	.I1(\u1.cnt_int.count [3])
+);
+  INV \u1.un1_count_i_cZ[16]  (
+	.O(\u1.un1_count_i [16]),
+	.I0(\u1.un1_count [16])
+);
+  INV \u1.un1_count_i_cZ[15]  (
+	.O(\u1.un1_count_i [15]),
+	.I0(\u1.un1_count [15])
+);
+  INV \u1.un1_count_i_cZ[14]  (
+	.O(\u1.un1_count_i [14]),
+	.I0(\u1.un1_count [14])
+);
+  INV \u1.un1_count_i_cZ[13]  (
+	.O(\u1.un1_count_i [13]),
+	.I0(\u1.un1_count [13])
+);
+  INV \u1.un1_count_i_cZ[12]  (
+	.O(\u1.un1_count_i [12]),
+	.I0(\u1.un1_count [12])
+);
+  INV \u1.un1_count_i_cZ[11]  (
+	.O(\u1.un1_count_i [11]),
+	.I0(\u1.un1_count [11])
+);
+  INV \u1.un1_count_i_cZ[10]  (
+	.O(\u1.un1_count_i [10]),
+	.I0(\u1.un1_count [10])
+);
+  INV \u1.un1_count_i_cZ[9]  (
+	.O(\u1.un1_count_i [9]),
+	.I0(\u1.un1_count [9])
+);
+  INV \u1.un1_count_i_cZ[8]  (
+	.O(\u1.un1_count_i [8]),
+	.I0(\u1.un1_count [8])
+);
+  INV \u1.un1_count_i_cZ[7]  (
+	.O(\u1.un1_count_i [7]),
+	.I0(\u1.un1_count [7])
+);
+  INV \u1.un1_count_i_cZ[6]  (
+	.O(\u1.un1_count_i [6]),
+	.I0(\u1.un1_count [6])
+);
+  INV \u1.un1_count_i_cZ[5]  (
+	.O(\u1.un1_count_i [5]),
+	.I0(\u1.un1_count [5])
+);
+  INV \u1.un1_count_i_cZ[4]  (
+	.O(\u1.un1_count_i [4]),
+	.I0(\u1.un1_count [4])
+);
+  INV \u1.un1_count_i_cZ[3]  (
+	.O(\u1.un1_count_i [3]),
+	.I0(\u1.un1_count [3])
+);
+  INV \u1.un1_count_i_cZ[2]  (
+	.O(\u1.un1_count_i [2]),
+	.I0(\u1.un1_count [2])
+);
+  XOR2 \u1.G_53  (
+	.O(\u1.un1_count [6]),
+	.I0(\u1.N_112 ),
+	.I1(\u1.cnt_int.count [26])
+);
+  XOR2 \u1.G_55  (
+	.O(\u1.un1_count [5]),
+	.I0(\u1.N_115 ),
+	.I1(\u1.cnt_int.count [27])
+);
+  XOR2 \u1.G_57  (
+	.O(\u1.un1_count [4]),
+	.I0(\u1.N_118 ),
+	.I1(\u1.cnt_int.count [28])
+);
+  XOR2 \u1.G_59  (
+	.O(\u1.un1_count [3]),
+	.I0(\u1.N_121 ),
+	.I1(\u1.cnt_int.count [29])
+);
+  XOR2 \u1.G_61  (
+	.O(\u1.un1_count [2]),
+	.I0(\u1.N_124 ),
+	.I1(\u1.cnt_int.count [30])
+);
+  XOR2 \u1.G_63  (
+	.O(\u1.un1_count [1]),
+	.I0(\u1.N_127 ),
+	.I1(\u1.cnt_int.count [31])
+);
+  INV \u2.rst_bar_i  (
+	.O(rst_bar_i),
+	.I0(rst_bar_c)
+);
+  INV \u1.un1_count_i_cZ[22]  (
+	.O(\u1.un1_count_i [22]),
+	.I0(\u1.un1_count [22])
+);
+  INV \u1.un1_count_i_cZ[21]  (
+	.O(\u1.un1_count_i [21]),
+	.I0(\u1.un1_count [21])
+);
+  INV \u1.un1_count_i_cZ[20]  (
+	.O(\u1.un1_count_i [20]),
+	.I0(\u1.un1_count [20])
+);
+  INV \u1.un1_count_i_cZ[19]  (
+	.O(\u1.un1_count_i [19]),
+	.I0(\u1.un1_count [19])
+);
+  INV \u1.un1_count_i_cZ[18]  (
+	.O(\u1.un1_count_i [18]),
+	.I0(\u1.un1_count [18])
+);
+  INV \u1.un1_count_i_cZ[17]  (
+	.O(\u1.un1_count_i [17]),
+	.I0(\u1.un1_count [17])
+);
+  XOR2 \u1.G_23  (
+	.O(\u1.un1_count [21]),
+	.I0(\u1.N_67 ),
+	.I1(\u1.cnt_int.count [11])
+);
+  XOR2 \u1.G_25  (
+	.O(\u1.un1_count [20]),
+	.I0(\u1.N_70 ),
+	.I1(\u1.cnt_int.count [12])
+);
+  XOR2 \u1.G_27  (
+	.O(\u1.un1_count [19]),
+	.I0(\u1.N_73 ),
+	.I1(\u1.cnt_int.count [13])
+);
+  XOR2 \u1.G_29  (
+	.O(\u1.un1_count [18]),
+	.I0(\u1.N_76 ),
+	.I1(\u1.cnt_int.count [14])
+);
+  XOR2 \u1.G_31  (
+	.O(\u1.un1_count [17]),
+	.I0(\u1.N_79 ),
+	.I1(\u1.cnt_int.count [15])
+);
+  XOR2 \u1.G_33  (
+	.O(\u1.un1_count [16]),
+	.I0(\u1.N_82 ),
+	.I1(\u1.cnt_int.count [16])
+);
+  XOR2 \u1.G_35  (
+	.O(\u1.un1_count [15]),
+	.I0(\u1.N_85 ),
+	.I1(\u1.cnt_int.count [17])
+);
+  XOR2 \u1.G_37  (
+	.O(\u1.un1_count [14]),
+	.I0(\u1.N_88 ),
+	.I1(\u1.cnt_int.count [18])
+);
+  XOR2 \u1.G_39  (
+	.O(\u1.un1_count [13]),
+	.I0(\u1.N_91 ),
+	.I1(\u1.cnt_int.count [19])
+);
+  XOR2 \u1.G_41  (
+	.O(\u1.un1_count [12]),
+	.I0(\u1.N_94 ),
+	.I1(\u1.cnt_int.count [20])
+);
+  XOR2 \u1.G_43  (
+	.O(\u1.un1_count [11]),
+	.I0(\u1.N_97 ),
+	.I1(\u1.cnt_int.count [21])
+);
+  XOR2 \u1.G_45  (
+	.O(\u1.un1_count [10]),
+	.I0(\u1.N_100 ),
+	.I1(\u1.cnt_int.count [22])
+);
+  XOR2 \u1.G_47  (
+	.O(\u1.un1_count [9]),
+	.I0(\u1.N_103 ),
+	.I1(\u1.cnt_int.count [23])
+);
+  XOR2 \u1.G_49  (
+	.O(\u1.un1_count [8]),
+	.I0(\u1.N_106 ),
+	.I1(\u1.cnt_int.count [24])
+);
+  XOR2 \u1.G_51  (
+	.O(\u1.un1_count [7]),
+	.I0(\u1.N_109 ),
+	.I1(\u1.cnt_int.count [25])
+);
+  AND2 \u1.G_52  (
+	.O(\u1.N_112 ),
+	.I0(\u1.N_109 ),
+	.I1(\u1.cnt_int.count [25])
+);
+  AND2 \u1.G_54  (
+	.O(\u1.N_115 ),
+	.I0(\u1.N_112 ),
+	.I1(\u1.cnt_int.count [26])
+);
+  AND2 \u1.G_56  (
+	.O(\u1.N_118 ),
+	.I0(\u1.N_115 ),
+	.I1(\u1.cnt_int.count [27])
+);
+  AND2 \u1.G_58  (
+	.O(\u1.N_121 ),
+	.I0(\u1.N_118 ),
+	.I1(\u1.cnt_int.count [28])
+);
+  AND2 \u1.G_60  (
+	.O(\u1.N_124 ),
+	.I0(\u1.N_121 ),
+	.I1(\u1.cnt_int.count [29])
+);
+  AND2 \u1.G_62  (
+	.O(\u1.N_127 ),
+	.I0(\u1.N_124 ),
+	.I1(\u1.cnt_int.count [30])
+);
+  INV \u1.un1_count_i_cZ[23]  (
+	.O(\u1.un1_count_i [23]),
+	.I0(\u1.un1_count [23])
+);
+  INV \u1.un1_count_i_cZ[24]  (
+	.O(\u1.un1_count_i [24]),
+	.I0(\u1.un1_count [24])
+);
+  XOR2 \u1.G_9  (
+	.O(\u1.un1_count [28]),
+	.I0(\u1.N_46 ),
+	.I1(\u1.cnt_int.count [4])
+);
+  XOR2 \u1.G_11  (
+	.O(\u1.un1_count [27]),
+	.I0(\u1.N_49 ),
+	.I1(\u1.cnt_int.count [5])
+);
+  XOR2 \u1.G_13  (
+	.O(\u1.un1_count [26]),
+	.I0(\u1.N_52 ),
+	.I1(\u1.cnt_int.count [6])
+);
+  XOR2 \u1.G_15  (
+	.O(\u1.un1_count [25]),
+	.I0(\u1.N_55 ),
+	.I1(\u1.cnt_int.count [7])
+);
+  XOR2 \u1.G_17  (
+	.O(\u1.un1_count [24]),
+	.I0(\u1.N_58 ),
+	.I1(\u1.cnt_int.count [8])
+);
+  XOR2 \u1.G_19  (
+	.O(\u1.un1_count [23]),
+	.I0(\u1.N_61 ),
+	.I1(\u1.cnt_int.count [9])
+);
+  XOR2 \u1.G_21  (
+	.O(\u1.un1_count [22]),
+	.I0(\u1.N_64 ),
+	.I1(\u1.cnt_int.count [10])
+);
+  AND2 \u1.G_22  (
+	.O(\u1.N_67 ),
+	.I0(\u1.N_64 ),
+	.I1(\u1.cnt_int.count [10])
+);
+  AND2 \u1.G_24  (
+	.O(\u1.N_70 ),
+	.I0(\u1.N_67 ),
+	.I1(\u1.cnt_int.count [11])
+);
+  AND2 \u1.G_26  (
+	.O(\u1.N_73 ),
+	.I0(\u1.N_70 ),
+	.I1(\u1.cnt_int.count [12])
+);
+  AND2 \u1.G_28  (
+	.O(\u1.N_76 ),
+	.I0(\u1.N_73 ),
+	.I1(\u1.cnt_int.count [13])
+);
+  AND2 \u1.G_30  (
+	.O(\u1.N_79 ),
+	.I0(\u1.N_76 ),
+	.I1(\u1.cnt_int.count [14])
+);
+  AND2 \u1.G_32  (
+	.O(\u1.N_82 ),
+	.I0(\u1.N_79 ),
+	.I1(\u1.cnt_int.count [15])
+);
+  AND2 \u1.G_34  (
+	.O(\u1.N_85 ),
+	.I0(\u1.N_82 ),
+	.I1(\u1.cnt_int.count [16])
+);
+  AND2 \u1.G_36  (
+	.O(\u1.N_88 ),
+	.I0(\u1.N_85 ),
+	.I1(\u1.cnt_int.count [17])
+);
+  AND2 \u1.G_38  (
+	.O(\u1.N_91 ),
+	.I0(\u1.N_88 ),
+	.I1(\u1.cnt_int.count [18])
+);
+  AND2 \u1.G_40  (
+	.O(\u1.N_94 ),
+	.I0(\u1.N_91 ),
+	.I1(\u1.cnt_int.count [19])
+);
+  AND2 \u1.G_42  (
+	.O(\u1.N_97 ),
+	.I0(\u1.N_94 ),
+	.I1(\u1.cnt_int.count [20])
+);
+  AND2 \u1.G_44  (
+	.O(\u1.N_100 ),
+	.I0(\u1.N_97 ),
+	.I1(\u1.cnt_int.count [21])
+);
+  AND2 \u1.G_46  (
+	.O(\u1.N_103 ),
+	.I0(\u1.N_100 ),
+	.I1(\u1.cnt_int.count [22])
+);
+  AND2 \u1.G_48  (
+	.O(\u1.N_106 ),
+	.I0(\u1.N_103 ),
+	.I1(\u1.cnt_int.count [23])
+);
+  AND2 \u1.G_50  (
+	.O(\u1.N_109 ),
+	.I0(\u1.N_106 ),
+	.I1(\u1.cnt_int.count [24])
+);
+  AND2 \u1.G_10  (
+	.O(\u1.N_49 ),
+	.I0(\u1.N_46 ),
+	.I1(\u1.cnt_int.count [4])
+);
+  AND2 \u1.G_12  (
+	.O(\u1.N_52 ),
+	.I0(\u1.N_49 ),
+	.I1(\u1.cnt_int.count [5])
+);
+  AND2 \u1.G_14  (
+	.O(\u1.N_55 ),
+	.I0(\u1.N_52 ),
+	.I1(\u1.cnt_int.count [6])
+);
+  AND2 \u1.G_16  (
+	.O(\u1.N_58 ),
+	.I0(\u1.N_55 ),
+	.I1(\u1.cnt_int.count [7])
+);
+  AND2 \u1.G_18  (
+	.O(\u1.N_61 ),
+	.I0(\u1.N_58 ),
+	.I1(\u1.cnt_int.count [8])
+);
+  AND2 \u1.G_20  (
+	.O(\u1.N_64 ),
+	.I0(\u1.N_61 ),
+	.I1(\u1.cnt_int.count [9])
+);
+  INV \u1.cnt_int.count_0_26_.r  (
+	.O(\u1.cnt_int.count_0_26_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_26_.m  (
+	.O(\u1.cnt_int.count_0_26_.un1 ),
+	.I0(\u1.cnt_int.count [26]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_26_.n  (
+	.O(\u1.cnt_int.count_0_26_.un0 ),
+	.I0(\u1.un1_count [6]),
+	.I1(\u1.cnt_int.count_0_26_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_26_.p  (
+	.O(\u1.N_27 ),
+	.I0(\u1.cnt_int.count_0_26_.un1 ),
+	.I1(\u1.cnt_int.count_0_26_.un0 )
+);
+  INV \u1.cnt_int.count_0_27_.r  (
+	.O(\u1.cnt_int.count_0_27_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_27_.m  (
+	.O(\u1.cnt_int.count_0_27_.un1 ),
+	.I0(\u1.cnt_int.count [27]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_27_.n  (
+	.O(\u1.cnt_int.count_0_27_.un0 ),
+	.I0(\u1.un1_count [5]),
+	.I1(\u1.cnt_int.count_0_27_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_27_.p  (
+	.O(\u1.N_28 ),
+	.I0(\u1.cnt_int.count_0_27_.un1 ),
+	.I1(\u1.cnt_int.count_0_27_.un0 )
+);
+  INV \u1.cnt_int.count_0_28_.r  (
+	.O(\u1.cnt_int.count_0_28_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_28_.m  (
+	.O(\u1.cnt_int.count_0_28_.un1 ),
+	.I0(\u1.cnt_int.count [28]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_28_.n  (
+	.O(\u1.cnt_int.count_0_28_.un0 ),
+	.I0(\u1.un1_count [4]),
+	.I1(\u1.cnt_int.count_0_28_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_28_.p  (
+	.O(\u1.N_29 ),
+	.I0(\u1.cnt_int.count_0_28_.un1 ),
+	.I1(\u1.cnt_int.count_0_28_.un0 )
+);
+  INV \u1.cnt_int.count_0_29_.r  (
+	.O(\u1.cnt_int.count_0_29_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_29_.m  (
+	.O(\u1.cnt_int.count_0_29_.un1 ),
+	.I0(\u1.cnt_int.count [29]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_29_.n  (
+	.O(\u1.cnt_int.count_0_29_.un0 ),
+	.I0(\u1.un1_count [3]),
+	.I1(\u1.cnt_int.count_0_29_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_29_.p  (
+	.O(\u1.N_30 ),
+	.I0(\u1.cnt_int.count_0_29_.un1 ),
+	.I1(\u1.cnt_int.count_0_29_.un0 )
+);
+  INV \u1.cnt_int.count_0_30_.r  (
+	.O(\u1.cnt_int.count_0_30_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_30_.m  (
+	.O(\u1.cnt_int.count_0_30_.un1 ),
+	.I0(\u1.cnt_int.count [30]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_30_.n  (
+	.O(\u1.cnt_int.count_0_30_.un0 ),
+	.I0(\u1.un1_count [2]),
+	.I1(\u1.cnt_int.count_0_30_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_30_.p  (
+	.O(\u1.N_31 ),
+	.I0(\u1.cnt_int.count_0_30_.un1 ),
+	.I1(\u1.cnt_int.count_0_30_.un0 )
+);
+  INV \u1.cnt_int.count_0_31_.r  (
+	.O(\u1.cnt_int.count_0_31_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_31_.m  (
+	.O(\u1.cnt_int.count_0_31_.un1 ),
+	.I0(\u1.cnt_int.count [31]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_31_.n  (
+	.O(\u1.cnt_int.count_0_31_.un0 ),
+	.I0(\u1.un1_count [1]),
+	.I1(\u1.cnt_int.count_0_31_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_31_.p  (
+	.O(\u1.N_32 ),
+	.I0(\u1.cnt_int.count_0_31_.un1 ),
+	.I1(\u1.cnt_int.count_0_31_.un0 )
+);
+  INV \u1.cnt_int.count_0_11_.r  (
+	.O(\u1.cnt_int.count_0_11_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_11_.m  (
+	.O(\u1.cnt_int.count_0_11_.un1 ),
+	.I0(\u1.cnt_int.count [11]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_11_.n  (
+	.O(\u1.cnt_int.count_0_11_.un0 ),
+	.I0(\u1.un1_count [21]),
+	.I1(\u1.cnt_int.count_0_11_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_11_.p  (
+	.O(\u1.N_12 ),
+	.I0(\u1.cnt_int.count_0_11_.un1 ),
+	.I1(\u1.cnt_int.count_0_11_.un0 )
+);
+  INV \u1.cnt_int.count_0_12_.r  (
+	.O(\u1.cnt_int.count_0_12_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_12_.m  (
+	.O(\u1.cnt_int.count_0_12_.un1 ),
+	.I0(\u1.cnt_int.count [12]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_12_.n  (
+	.O(\u1.cnt_int.count_0_12_.un0 ),
+	.I0(\u1.un1_count [20]),
+	.I1(\u1.cnt_int.count_0_12_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_12_.p  (
+	.O(\u1.N_13 ),
+	.I0(\u1.cnt_int.count_0_12_.un1 ),
+	.I1(\u1.cnt_int.count_0_12_.un0 )
+);
+  INV \u1.cnt_int.count_0_13_.r  (
+	.O(\u1.cnt_int.count_0_13_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_13_.m  (
+	.O(\u1.cnt_int.count_0_13_.un1 ),
+	.I0(\u1.cnt_int.count [13]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_13_.n  (
+	.O(\u1.cnt_int.count_0_13_.un0 ),
+	.I0(\u1.un1_count [19]),
+	.I1(\u1.cnt_int.count_0_13_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_13_.p  (
+	.O(\u1.N_14 ),
+	.I0(\u1.cnt_int.count_0_13_.un1 ),
+	.I1(\u1.cnt_int.count_0_13_.un0 )
+);
+  INV \u1.cnt_int.count_0_14_.r  (
+	.O(\u1.cnt_int.count_0_14_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_14_.m  (
+	.O(\u1.cnt_int.count_0_14_.un1 ),
+	.I0(\u1.cnt_int.count [14]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_14_.n  (
+	.O(\u1.cnt_int.count_0_14_.un0 ),
+	.I0(\u1.un1_count [18]),
+	.I1(\u1.cnt_int.count_0_14_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_14_.p  (
+	.O(\u1.N_15 ),
+	.I0(\u1.cnt_int.count_0_14_.un1 ),
+	.I1(\u1.cnt_int.count_0_14_.un0 )
+);
+  INV \u1.cnt_int.count_0_15_.r  (
+	.O(\u1.cnt_int.count_0_15_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_15_.m  (
+	.O(\u1.cnt_int.count_0_15_.un1 ),
+	.I0(\u1.cnt_int.count [15]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_15_.n  (
+	.O(\u1.cnt_int.count_0_15_.un0 ),
+	.I0(\u1.un1_count [17]),
+	.I1(\u1.cnt_int.count_0_15_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_15_.p  (
+	.O(\u1.N_16 ),
+	.I0(\u1.cnt_int.count_0_15_.un1 ),
+	.I1(\u1.cnt_int.count_0_15_.un0 )
+);
+  INV \u1.cnt_int.count_0_16_.r  (
+	.O(\u1.cnt_int.count_0_16_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_16_.m  (
+	.O(\u1.cnt_int.count_0_16_.un1 ),
+	.I0(\u1.cnt_int.count [16]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_16_.n  (
+	.O(\u1.cnt_int.count_0_16_.un0 ),
+	.I0(\u1.un1_count [16]),
+	.I1(\u1.cnt_int.count_0_16_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_16_.p  (
+	.O(\u1.N_17 ),
+	.I0(\u1.cnt_int.count_0_16_.un1 ),
+	.I1(\u1.cnt_int.count_0_16_.un0 )
+);
+  INV \u1.cnt_int.count_0_17_.r  (
+	.O(\u1.cnt_int.count_0_17_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_17_.m  (
+	.O(\u1.cnt_int.count_0_17_.un1 ),
+	.I0(\u1.cnt_int.count [17]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_17_.n  (
+	.O(\u1.cnt_int.count_0_17_.un0 ),
+	.I0(\u1.un1_count [15]),
+	.I1(\u1.cnt_int.count_0_17_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_17_.p  (
+	.O(\u1.N_18 ),
+	.I0(\u1.cnt_int.count_0_17_.un1 ),
+	.I1(\u1.cnt_int.count_0_17_.un0 )
+);
+  INV \u1.cnt_int.count_0_18_.r  (
+	.O(\u1.cnt_int.count_0_18_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_18_.m  (
+	.O(\u1.cnt_int.count_0_18_.un1 ),
+	.I0(\u1.cnt_int.count [18]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_18_.n  (
+	.O(\u1.cnt_int.count_0_18_.un0 ),
+	.I0(\u1.un1_count [14]),
+	.I1(\u1.cnt_int.count_0_18_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_18_.p  (
+	.O(\u1.N_19 ),
+	.I0(\u1.cnt_int.count_0_18_.un1 ),
+	.I1(\u1.cnt_int.count_0_18_.un0 )
+);
+  INV \u1.cnt_int.count_0_19_.r  (
+	.O(\u1.cnt_int.count_0_19_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_19_.m  (
+	.O(\u1.cnt_int.count_0_19_.un1 ),
+	.I0(\u1.cnt_int.count [19]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_19_.n  (
+	.O(\u1.cnt_int.count_0_19_.un0 ),
+	.I0(\u1.un1_count [13]),
+	.I1(\u1.cnt_int.count_0_19_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_19_.p  (
+	.O(\u1.N_20 ),
+	.I0(\u1.cnt_int.count_0_19_.un1 ),
+	.I1(\u1.cnt_int.count_0_19_.un0 )
+);
+  INV \u1.cnt_int.count_0_20_.r  (
+	.O(\u1.cnt_int.count_0_20_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_20_.m  (
+	.O(\u1.cnt_int.count_0_20_.un1 ),
+	.I0(\u1.cnt_int.count [20]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_20_.n  (
+	.O(\u1.cnt_int.count_0_20_.un0 ),
+	.I0(\u1.un1_count [12]),
+	.I1(\u1.cnt_int.count_0_20_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_20_.p  (
+	.O(\u1.N_21 ),
+	.I0(\u1.cnt_int.count_0_20_.un1 ),
+	.I1(\u1.cnt_int.count_0_20_.un0 )
+);
+  INV \u1.cnt_int.count_0_21_.r  (
+	.O(\u1.cnt_int.count_0_21_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_21_.m  (
+	.O(\u1.cnt_int.count_0_21_.un1 ),
+	.I0(\u1.cnt_int.count [21]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_21_.n  (
+	.O(\u1.cnt_int.count_0_21_.un0 ),
+	.I0(\u1.un1_count [11]),
+	.I1(\u1.cnt_int.count_0_21_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_21_.p  (
+	.O(\u1.N_22 ),
+	.I0(\u1.cnt_int.count_0_21_.un1 ),
+	.I1(\u1.cnt_int.count_0_21_.un0 )
+);
+  INV \u1.cnt_int.count_0_22_.r  (
+	.O(\u1.cnt_int.count_0_22_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_22_.m  (
+	.O(\u1.cnt_int.count_0_22_.un1 ),
+	.I0(\u1.cnt_int.count [22]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_22_.n  (
+	.O(\u1.cnt_int.count_0_22_.un0 ),
+	.I0(\u1.un1_count [10]),
+	.I1(\u1.cnt_int.count_0_22_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_22_.p  (
+	.O(\u1.N_23 ),
+	.I0(\u1.cnt_int.count_0_22_.un1 ),
+	.I1(\u1.cnt_int.count_0_22_.un0 )
+);
+  INV \u1.cnt_int.count_0_23_.r  (
+	.O(\u1.cnt_int.count_0_23_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_23_.m  (
+	.O(\u1.cnt_int.count_0_23_.un1 ),
+	.I0(\u1.cnt_int.count [23]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_23_.n  (
+	.O(\u1.cnt_int.count_0_23_.un0 ),
+	.I0(\u1.un1_count [9]),
+	.I1(\u1.cnt_int.count_0_23_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_23_.p  (
+	.O(\u1.N_24 ),
+	.I0(\u1.cnt_int.count_0_23_.un1 ),
+	.I1(\u1.cnt_int.count_0_23_.un0 )
+);
+  INV \u1.cnt_int.count_0_24_.r  (
+	.O(\u1.cnt_int.count_0_24_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_24_.m  (
+	.O(\u1.cnt_int.count_0_24_.un1 ),
+	.I0(\u1.cnt_int.count [24]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_24_.n  (
+	.O(\u1.cnt_int.count_0_24_.un0 ),
+	.I0(\u1.un1_count [8]),
+	.I1(\u1.cnt_int.count_0_24_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_24_.p  (
+	.O(\u1.N_25 ),
+	.I0(\u1.cnt_int.count_0_24_.un1 ),
+	.I1(\u1.cnt_int.count_0_24_.un0 )
+);
+  INV \u1.cnt_int.count_0_25_.r  (
+	.O(\u1.cnt_int.count_0_25_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_25_.m  (
+	.O(\u1.cnt_int.count_0_25_.un1 ),
+	.I0(\u1.cnt_int.count [25]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_25_.n  (
+	.O(\u1.cnt_int.count_0_25_.un0 ),
+	.I0(\u1.un1_count [7]),
+	.I1(\u1.cnt_int.count_0_25_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_25_.p  (
+	.O(\u1.N_26 ),
+	.I0(\u1.cnt_int.count_0_25_.un1 ),
+	.I1(\u1.cnt_int.count_0_25_.un0 )
+);
+  INV \u1.cnt_int.count_0_4_.r  (
+	.O(\u1.cnt_int.count_0_4_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_4_.m  (
+	.O(\u1.cnt_int.count_0_4_.un1 ),
+	.I0(\u1.cnt_int.count [4]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_4_.n  (
+	.O(\u1.cnt_int.count_0_4_.un0 ),
+	.I0(\u1.un1_count [28]),
+	.I1(\u1.cnt_int.count_0_4_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_4_.p  (
+	.O(\u1.N_5 ),
+	.I0(\u1.cnt_int.count_0_4_.un1 ),
+	.I1(\u1.cnt_int.count_0_4_.un0 )
+);
+  INV \u1.cnt_int.count_0_5_.r  (
+	.O(\u1.cnt_int.count_0_5_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_5_.m  (
+	.O(\u1.cnt_int.count_0_5_.un1 ),
+	.I0(\u1.cnt_int.count [5]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_5_.n  (
+	.O(\u1.cnt_int.count_0_5_.un0 ),
+	.I0(\u1.un1_count [27]),
+	.I1(\u1.cnt_int.count_0_5_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_5_.p  (
+	.O(\u1.N_6 ),
+	.I0(\u1.cnt_int.count_0_5_.un1 ),
+	.I1(\u1.cnt_int.count_0_5_.un0 )
+);
+  INV \u1.cnt_int.count_0_6_.r  (
+	.O(\u1.cnt_int.count_0_6_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_6_.m  (
+	.O(\u1.cnt_int.count_0_6_.un1 ),
+	.I0(\u1.cnt_int.count [6]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_6_.n  (
+	.O(\u1.cnt_int.count_0_6_.un0 ),
+	.I0(\u1.un1_count [26]),
+	.I1(\u1.cnt_int.count_0_6_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_6_.p  (
+	.O(\u1.N_7 ),
+	.I0(\u1.cnt_int.count_0_6_.un1 ),
+	.I1(\u1.cnt_int.count_0_6_.un0 )
+);
+  INV \u1.cnt_int.count_0_7_.r  (
+	.O(\u1.cnt_int.count_0_7_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_7_.m  (
+	.O(\u1.cnt_int.count_0_7_.un1 ),
+	.I0(\u1.cnt_int.count [7]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_7_.n  (
+	.O(\u1.cnt_int.count_0_7_.un0 ),
+	.I0(\u1.un1_count [25]),
+	.I1(\u1.cnt_int.count_0_7_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_7_.p  (
+	.O(\u1.N_8 ),
+	.I0(\u1.cnt_int.count_0_7_.un1 ),
+	.I1(\u1.cnt_int.count_0_7_.un0 )
+);
+  INV \u1.cnt_int.count_0_8_.r  (
+	.O(\u1.cnt_int.count_0_8_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_8_.m  (
+	.O(\u1.cnt_int.count_0_8_.un1 ),
+	.I0(\u1.cnt_int.count [8]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_8_.n  (
+	.O(\u1.cnt_int.count_0_8_.un0 ),
+	.I0(\u1.un1_count [24]),
+	.I1(\u1.cnt_int.count_0_8_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_8_.p  (
+	.O(\u1.N_9 ),
+	.I0(\u1.cnt_int.count_0_8_.un1 ),
+	.I1(\u1.cnt_int.count_0_8_.un0 )
+);
+  INV \u1.cnt_int.count_0_9_.r  (
+	.O(\u1.cnt_int.count_0_9_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_9_.m  (
+	.O(\u1.cnt_int.count_0_9_.un1 ),
+	.I0(\u1.cnt_int.count [9]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_9_.n  (
+	.O(\u1.cnt_int.count_0_9_.un0 ),
+	.I0(\u1.un1_count [23]),
+	.I1(\u1.cnt_int.count_0_9_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_9_.p  (
+	.O(\u1.N_10 ),
+	.I0(\u1.cnt_int.count_0_9_.un1 ),
+	.I1(\u1.cnt_int.count_0_9_.un0 )
+);
+  INV \u1.cnt_int.count_0_10_.r  (
+	.O(\u1.cnt_int.count_0_10_.un3 ),
+	.I0(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_10_.m  (
+	.O(\u1.cnt_int.count_0_10_.un1 ),
+	.I0(\u1.cnt_int.count [10]),
+	.I1(\u1.un1_en_count_inv )
+);
+  AND2 \u1.cnt_int.count_0_10_.n  (
+	.O(\u1.cnt_int.count_0_10_.un0 ),
+	.I0(\u1.un1_count [22]),
+	.I1(\u1.cnt_int.count_0_10_.un3 )
+);
+  OR2 \u1.cnt_int.count_0_10_.p  (
+	.O(\u1.N_11 ),
+	.I0(\u1.cnt_int.count_0_10_.un1 ),
+	.I1(\u1.cnt_int.count_0_10_.un0 )
+);
+endmodule /* seq_sys */
+

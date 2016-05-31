@@ -1,0 +1,5 @@
+.\src\ha_primitive_gates.vhd
+.\src\xor_2_struct.vhd
+.\src\half_adder_struct_hier.vhd
+.\src\fa_test_tb.vhd
+.\src\untitled.vhq

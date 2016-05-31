@@ -1,0 +1,18 @@
+#$ TOOL ispLEVER Classic 7.0.00.10.16.07
+#$ DATE Tue Feb 18 08:56:52 2014
+#$ MODULE half_adder
+#$ PINS 4 a:3 b:4 sum:27 carry_out:26
+.type fr
+.i 2
+.o 2
+.ilb a b
+.ob sum carry_out
+.p 7
+11 ~1
+01 1~
+10 1~
+0- ~0
+11 0~
+-0 ~0
+00 0~
+.end

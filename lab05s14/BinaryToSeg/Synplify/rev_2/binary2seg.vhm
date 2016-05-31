@@ -1,0 +1,866 @@
+--
+-- Written by Synplicity
+-- Product Version "E-201103-SP2"
+-- Program "Synplify Pro", Mapper "maprc, Build 507R"
+-- Tue Mar 11 13:41:41 2014
+--
+
+--
+-- Written by Synplify Pro version Build 507R
+-- Tue Mar 11 13:41:41 2014
+--
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity AND2 is
+port(
+  O :  out std_logic;
+  I0 :  in std_logic;
+  I1 :  in std_logic);
+end AND2;
+
+architecture beh of AND2 is
+  signal VCC : std_logic ;
+  signal GND : std_logic ;
+begin
+VCC <= '1';
+GND <= '0';
+O <= I0 and I1  after 100 ps;
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity IBUF is
+port(
+O :  out std_logic;
+I0 :  in std_logic);
+end IBUF;
+
+architecture beh of IBUF is
+signal VCC : std_logic ;
+signal GND : std_logic ;
+begin
+O <= I0;
+VCC <= '1';
+GND <= '0';
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity INV is
+port(
+O :  out std_logic;
+I0 :  in std_logic);
+end INV;
+
+architecture beh of INV is
+signal VCC : std_logic ;
+signal GND : std_logic ;
+begin
+O <= not I0;
+VCC <= '1';
+GND <= '0';
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity OBUF is
+port(
+O :  out std_logic;
+I0 :  in std_logic);
+end OBUF;
+
+architecture beh of OBUF is
+signal VCC : std_logic ;
+signal GND : std_logic ;
+begin
+O <= I0;
+VCC <= '1';
+GND <= '0';
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity OR2 is
+port(
+O :  out std_logic;
+I0 :  in std_logic;
+I1 :  in std_logic);
+end OR2;
+
+architecture beh of OR2 is
+signal VCC : std_logic ;
+signal GND : std_logic ;
+begin
+VCC <= '1';
+GND <= '0';
+O <= I0 or I1  after 100 ps;
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity XOR2 is
+port(
+O :  out std_logic;
+I0 :  in std_logic;
+I1 :  in std_logic);
+end XOR2;
+
+architecture beh of XOR2 is
+signal VCC : std_logic ;
+signal GND : std_logic ;
+begin
+VCC <= '1';
+GND <= '0';
+O <= I0 xor I1  after 100 ps;
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity BinaryToSeg is
+port(
+binary : in std_logic_vector(5 downto 0);
+seven_seg0 : out std_logic_vector(6 downto 0);
+seven_seg1 : out std_logic_vector(6 downto 0));
+end BinaryToSeg;
+
+architecture beh of BinaryToSeg is
+signal UN4_TEMP1 : std_logic_vector(3 to 3);
+signal OUTPUT_10 : std_logic_vector(2 downto 0);
+signal UN12_TEMP1 : std_logic_vector(3 downto 2);
+signal OUTPUT_15 : std_logic_vector(2 downto 0);
+signal OUTPUT : std_logic_vector(3 downto 1);
+signal SEVEN_SEG0_1 : std_logic_vector(6 downto 0);
+signal SEVEN_SEG1_1 : std_logic_vector(4 downto 0);
+signal UN12_TEMP1_I : std_logic_vector(1 to 1);
+signal UN20_TEMP1_I : std_logic_vector(3 downto 1);
+signal UN20_TEMP1 : std_logic_vector(3 downto 2);
+signal UN4_TEMP1_I : std_logic_vector(3 downto 1);
+signal BINARY_I_0 : std_logic_vector(0 to 0);
+signal UN12_TEMP1_I_0 : std_logic_vector(3 to 3);
+signal UN20_TEMP1_I_I : std_logic_vector(1 to 1);
+signal UN12_TEMP1_I_I : std_logic_vector(1 to 1);
+signal UN4_TEMP1_I_I : std_logic_vector(1 to 1);
+signal BINARY_C : std_logic_vector(5 downto 0);
+signal OUTPUT_I : std_logic_vector(3 downto 1);
+signal SEVEN_SEG0_1_0 : std_logic_vector(6 downto 0);
+signal SEVEN_SEG1_1_0 : std_logic_vector(4 downto 0);
+signal OUTPUT_15_I : std_logic_vector(0 to 0);
+signal BINARY_C_I : std_logic_vector(4 downto 1);
+signal OUTPUT_10_I : std_logic_vector(0 to 0);
+signal UN20_TEMP1_I_1 : std_logic_vector(1 to 1);
+signal OUTPUT_1 : std_logic_vector(1 to 1);
+signal UN12_TEMP1_I_1 : std_logic_vector(1 to 1);
+signal OUTPUT_15_1 : std_logic_vector(0 to 0);
+signal \CONVERT.SEVEN_SEG013\ : std_logic ;
+signal \CONVERT.SEVEN_SEG17\ : std_logic ;
+signal N_128 : std_logic ;
+signal N_145 : std_logic ;
+signal N_105 : std_logic ;
+signal N_122 : std_logic ;
+signal N_139 : std_logic ;
+signal N_155 : std_logic ;
+signal \CONVERT.UN30\ : std_logic ;
+signal \CONVERT.UN31\ : std_logic ;
+signal N_172 : std_logic ;
+signal N_183 : std_logic ;
+signal N_29 : std_logic ;
+signal N_44 : std_logic ;
+signal N_45 : std_logic ;
+signal N_55 : std_logic ;
+signal N_193 : std_logic ;
+signal \CONVERT.UN1_I\ : std_logic ;
+signal N_81 : std_logic ;
+signal N_95 : std_logic ;
+signal \CONVERT.UN37\ : std_logic ;
+signal \CONVERT.UN40\ : std_logic ;
+signal N_6 : std_logic ;
+signal N_7 : std_logic ;
+signal \CONVERT.UN38\ : std_logic ;
+signal N_20 : std_logic ;
+signal N_19 : std_logic ;
+signal N_21 : std_logic ;
+signal N_25 : std_logic ;
+signal \CONVERT.UN38_1\ : std_logic ;
+signal N_24_1 : std_logic ;
+signal N_81_I : std_logic ;
+signal N_172_I : std_logic ;
+signal N_183_I : std_logic ;
+signal N_18_I : std_logic ;
+signal N_25_I : std_logic ;
+signal N_24_1_I : std_logic ;
+signal N_16_I : std_logic ;
+signal \CONVERT.SEVEN_SEG013_I\ : std_logic ;
+signal N_21_I : std_logic ;
+signal \CONVERT.UN38_I\ : std_logic ;
+signal \CONVERT.UN38_1_I\ : std_logic ;
+signal N_19_I : std_logic ;
+signal N_20_I : std_logic ;
+signal N_14_I : std_logic ;
+signal N_7_I : std_logic ;
+signal N_6_I : std_logic ;
+signal \CONVERT.UN40_I\ : std_logic ;
+signal \CONVERT.UN37_I\ : std_logic ;
+signal N_193_0 : std_logic ;
+signal N_95_I : std_logic ;
+signal \CONVERT.UN42_I\ : std_logic ;
+signal N_55_I : std_logic ;
+signal \CONVERT.UN1_I_I\ : std_logic ;
+signal \CONVERT.SEVEN_SEG17_I\ : std_logic ;
+signal N_45_I : std_logic ;
+signal N_44_I : std_logic ;
+signal N_39_I : std_logic ;
+signal N_37_I : std_logic ;
+signal N_29_I : std_logic ;
+signal N_28_I : std_logic ;
+signal \CONVERT.UN31_I\ : std_logic ;
+signal \CONVERT.UN30_I\ : std_logic ;
+signal N_155_I : std_logic ;
+signal N_139_0 : std_logic ;
+signal N_122_0 : std_logic ;
+signal N_105_0 : std_logic ;
+signal N_45_1 : std_logic ;
+signal N_81_1 : std_logic ;
+signal N_21_1 : std_logic ;
+signal N_16_I_1 : std_logic ;
+signal N_16_I_2 : std_logic ;
+signal N_18_I_1 : std_logic ;
+signal GND : std_logic ;
+signal VCC : std_logic ;
+signal \OUTPUT_10_1_.UN3\ : std_logic ;
+signal \OUTPUT_10_1_.UN1\ : std_logic ;
+signal \OUTPUT_10_1_.UN0\ : std_logic ;
+signal \OUTPUT_15_1_.UN3\ : std_logic ;
+signal \OUTPUT_15_1_.UN1\ : std_logic ;
+signal \OUTPUT_15_1_.UN0\ : std_logic ;
+signal \OUTPUT_15_2_.UN3\ : std_logic ;
+signal \OUTPUT_15_2_.UN1\ : std_logic ;
+signal \OUTPUT_15_2_.UN0\ : std_logic ;
+signal \OUTPUT_2_.UN3\ : std_logic ;
+signal \OUTPUT_2_.UN1\ : std_logic ;
+signal \OUTPUT_2_.UN0\ : std_logic ;
+signal \OUTPUT_3_.UN3\ : std_logic ;
+signal \OUTPUT_3_.UN1\ : std_logic ;
+signal \OUTPUT_3_.UN0\ : std_logic ;
+component IBUF
+port(
+O :  out std_logic;
+I0 :  in std_logic  );
+end component;
+component OBUF
+port(
+O :  out std_logic;
+I0 :  in std_logic  );
+end component;
+component XOR2
+port(
+O :  out std_logic;
+I0 :  in std_logic;
+I1 :  in std_logic  );
+end component;
+component INV
+port(
+O :  out std_logic;
+I0 :  in std_logic  );
+end component;
+component AND2
+port(
+O :  out std_logic;
+I0 :  in std_logic;
+I1 :  in std_logic  );
+end component;
+component OR2
+port(
+O :  out std_logic;
+I0 :  in std_logic;
+I1 :  in std_logic  );
+end component;
+begin
+\BINARY[0]_Z194\: IBUF port map (
+O => BINARY_C(0),
+I0 => binary(0));
+\BINARY[1]_Z195\: IBUF port map (
+O => BINARY_C(1),
+I0 => binary(1));
+\BINARY[2]_Z196\: IBUF port map (
+O => BINARY_C(2),
+I0 => binary(2));
+\BINARY[3]_Z197\: IBUF port map (
+O => BINARY_C(3),
+I0 => binary(3));
+\BINARY[4]_Z198\: IBUF port map (
+O => BINARY_C(4),
+I0 => binary(4));
+\BINARY[5]_Z199\: IBUF port map (
+O => BINARY_C(5),
+I0 => binary(5));
+\SEVEN_SEG0[0]_Z200\: OBUF port map (
+O => seven_seg0(0),
+I0 => SEVEN_SEG0_1(0));
+\SEVEN_SEG0[1]_Z201\: OBUF port map (
+O => seven_seg0(1),
+I0 => N_14_I);
+\SEVEN_SEG0[2]_Z202\: OBUF port map (
+O => seven_seg0(2),
+I0 => N_16_I);
+\SEVEN_SEG0[3]_Z203\: OBUF port map (
+O => seven_seg0(3),
+I0 => N_18_I);
+\SEVEN_SEG0[4]_Z204\: OBUF port map (
+O => seven_seg0(4),
+I0 => \CONVERT.SEVEN_SEG013\);
+\SEVEN_SEG0[5]_Z205\: OBUF port map (
+O => seven_seg0(5),
+I0 => SEVEN_SEG0_1(5));
+\SEVEN_SEG0[6]_Z206\: OBUF port map (
+O => seven_seg0(6),
+I0 => SEVEN_SEG0_1(6));
+\SEVEN_SEG1[0]_Z207\: OBUF port map (
+O => seven_seg1(0),
+I0 => SEVEN_SEG1_1(0));
+\SEVEN_SEG1[1]_Z208\: OBUF port map (
+O => seven_seg1(1),
+I0 => N_37_I);
+\SEVEN_SEG1[2]_Z209\: OBUF port map (
+O => seven_seg1(2),
+I0 => N_39_I);
+\SEVEN_SEG1[3]_Z210\: OBUF port map (
+O => seven_seg1(3),
+I0 => SEVEN_SEG1_1(3));
+\SEVEN_SEG1[4]_Z211\: OBUF port map (
+O => seven_seg1(4),
+I0 => SEVEN_SEG1_1(4));
+\SEVEN_SEG1[5]_Z212\: OBUF port map (
+O => seven_seg1(5),
+I0 => \CONVERT.SEVEN_SEG17\);
+\SEVEN_SEG1[6]_Z213\: OBUF port map (
+O => seven_seg1(6),
+I0 => N_28_I);
+\OUTPUT_1[1]_Z214\: XOR2 port map (
+O => OUTPUT_1(1),
+I0 => N_145,
+I1 => BINARY_C(1));
+\OUTPUT[1]_Z215\: XOR2 port map (
+O => OUTPUT(1),
+I0 => OUTPUT_1(1),
+I1 => OUTPUT_15(2));
+G_111_1: XOR2 port map (
+O => UN12_TEMP1_I_1(1),
+I0 => UN4_TEMP1(3),
+I1 => BINARY_C(2));
+G_111: XOR2 port map (
+O => UN12_TEMP1_I(1),
+I0 => UN12_TEMP1_I_1(1),
+I1 => BINARY_C(3));
+\OUTPUT_15_1[0]_Z218\: XOR2 port map (
+O => OUTPUT_15_1(0),
+I0 => OUTPUT_10(2),
+I1 => N_128);
+\OUTPUT_15[0]_Z219\: XOR2 port map (
+O => OUTPUT_15(0),
+I0 => OUTPUT_15_1(0),
+I1 => BINARY_C(2));
+\BINARY_C_I[4]_Z220\: INV port map (
+O => BINARY_C_I(4),
+I0 => BINARY_C(4));
+G_91_I: INV port map (
+O => N_105,
+I0 => N_105_0);
+\SEVEN_SEG1_1_I_A3_1[2]\: AND2 port map (
+O => N_45_1,
+I0 => N_172_I,
+I1 => UN4_TEMP1_I(3));
+\SEVEN_SEG1_1_I_A3[2]\: AND2 port map (
+O => N_45,
+I0 => N_45_1,
+I1 => UN12_TEMP1(3));
+G_69_1: AND2 port map (
+O => N_81_1,
+I0 => BINARY_C(0),
+I1 => OUTPUT(1));
+G_69: AND2 port map (
+O => N_81,
+I0 => N_81_1,
+I1 => OUTPUT(2));
+\SEVEN_SEG0_1_I_A4_1[2]\: AND2 port map (
+O => N_21_1,
+I0 => \CONVERT.UN42_I\,
+I1 => OUTPUT(1));
+\SEVEN_SEG0_1_I_A4[2]\: AND2 port map (
+O => N_21,
+I0 => N_21_1,
+I1 => OUTPUT(2));
+\SEVEN_SEG0_1_I_1[2]\: AND2 port map (
+O => N_16_I_1,
+I0 => N_21_I,
+I1 => N_95);
+\SEVEN_SEG0_1_I_2[2]\: AND2 port map (
+O => N_16_I_2,
+I0 => \CONVERT.SEVEN_SEG013_I\,
+I1 => \CONVERT.UN37\);
+\SEVEN_SEG0_1_I[2]\: AND2 port map (
+O => N_16_I,
+I0 => N_16_I_1,
+I1 => N_16_I_2);
+\SEVEN_SEG0_1_I_1[3]\: AND2 port map (
+O => N_18_I_1,
+I0 => N_24_1_I,
+I1 => N_25_I);
+\SEVEN_SEG0_1_I[3]\: AND2 port map (
+O => N_18_I,
+I0 => N_18_I_1,
+I1 => \CONVERT.UN37\);
+G_128_1: XOR2 port map (
+O => UN20_TEMP1_I_1(1),
+I0 => UN12_TEMP1(3),
+I1 => BINARY_C(1));
+G_128: XOR2 port map (
+O => UN20_TEMP1_I(1),
+I0 => UN20_TEMP1_I_1(1),
+I1 => BINARY_C(2));
+N_44_I_Z235: INV port map (
+O => N_44_I,
+I0 => N_44);
+\SEVEN_SEG1_1_0_I[3]\: INV port map (
+O => SEVEN_SEG1_1(3),
+I0 => SEVEN_SEG1_1_0(3));
+\SEVEN_SEG1_1_0_I[0]\: INV port map (
+O => SEVEN_SEG1_1(0),
+I0 => SEVEN_SEG1_1_0(0));
+N_29_I_Z238: INV port map (
+O => N_29_I,
+I0 => N_29);
+G_154_I: INV port map (
+O => \CONVERT.UN31\,
+I0 => \CONVERT.UN31_I\);
+G_145_I: INV port map (
+O => \CONVERT.UN30\,
+I0 => \CONVERT.UN30_I\);
+\UN20_TEMP1_I[3]_Z241\: INV port map (
+O => UN20_TEMP1_I(3),
+I0 => UN20_TEMP1(3));
+G_143_I: INV port map (
+O => N_155,
+I0 => N_155_I);
+\OUTPUT_15_I[0]_Z243\: INV port map (
+O => OUTPUT_15_I(0),
+I0 => OUTPUT_15(0));
+\BINARY_C_I[1]_Z244\: INV port map (
+O => BINARY_C_I(1),
+I0 => BINARY_C(1));
+G_125_I: INV port map (
+O => N_139,
+I0 => N_139_0);
+\OUTPUT_10_I[0]_Z246\: INV port map (
+O => OUTPUT_10_I(0),
+I0 => OUTPUT_10(0));
+\BINARY_C_I[2]_Z247\: INV port map (
+O => BINARY_C_I(2),
+I0 => BINARY_C(2));
+G_108_I: INV port map (
+O => N_122,
+I0 => N_122_0);
+\BINARY_C_I[3]_Z249\: INV port map (
+O => BINARY_C_I(3),
+I0 => BINARY_C(3));
+\SEVEN_SEG0_1_0_O4_I[0]\: INV port map (
+O => N_19,
+I0 => N_19_I);
+N_20_I_Z251: INV port map (
+O => N_20_I,
+I0 => N_20);
+\SEVEN_SEG0_1_0_I[0]\: INV port map (
+O => SEVEN_SEG0_1(0),
+I0 => SEVEN_SEG0_1_0(0));
+N_7_I_Z253: INV port map (
+O => N_7_I,
+I0 => N_7);
+N_6_I_Z254: INV port map (
+O => N_6_I,
+I0 => N_6);
+\SEVEN_SEG0_1_0_I[6]\: INV port map (
+O => SEVEN_SEG0_1(6),
+I0 => SEVEN_SEG0_1_0(6));
+G_224_I: INV port map (
+O => \CONVERT.UN40\,
+I0 => \CONVERT.UN40_I\);
+G_185_I: INV port map (
+O => \CONVERT.UN37\,
+I0 => \CONVERT.UN37_I\);
+G_181_I: INV port map (
+O => N_193,
+I0 => N_193_0);
+G_83_I: INV port map (
+O => N_95,
+I0 => N_95_I);
+N_55_I_Z260: INV port map (
+O => N_55_I,
+I0 => N_55);
+G_46_I: INV port map (
+O => \CONVERT.UN1_I\,
+I0 => \CONVERT.UN1_I_I\);
+\CONVERT.SEVEN_SEG17_I_Z262\: INV port map (
+O => \CONVERT.SEVEN_SEG17_I\,
+I0 => \CONVERT.SEVEN_SEG17\);
+N_45_I_Z263: INV port map (
+O => N_45_I,
+I0 => N_45);
+\SEVEN_SEG1_1_I_O2_I[2]\: INV port map (
+O => SEVEN_SEG1_1(4),
+I0 => SEVEN_SEG1_1_0(4));
+N_25_I_Z265: INV port map (
+O => N_25_I,
+I0 => N_25);
+N_24_1_I_Z266: INV port map (
+O => N_24_1_I,
+I0 => N_24_1);
+\CONVERT.SEVEN_SEG013_I_Z267\: INV port map (
+O => \CONVERT.SEVEN_SEG013_I\,
+I0 => \CONVERT.SEVEN_SEG013\);
+N_21_I_Z268: INV port map (
+O => N_21_I,
+I0 => N_21);
+\OUTPUT_I[3]_Z269\: INV port map (
+O => OUTPUT_I(3),
+I0 => OUTPUT(3));
+G_198_I: INV port map (
+O => \CONVERT.UN38\,
+I0 => \CONVERT.UN38_I\);
+\OUTPUT_I[2]_Z271\: INV port map (
+O => OUTPUT_I(2),
+I0 => OUTPUT(2));
+\OUTPUT_I[1]_Z272\: INV port map (
+O => OUTPUT_I(1),
+I0 => OUTPUT(1));
+G_198_1_I: INV port map (
+O => \CONVERT.UN38_1\,
+I0 => \CONVERT.UN38_1_I\);
+\SEVEN_SEG0_1_I_A4_1[3]\: AND2 port map (
+O => N_24_1,
+I0 => N_19,
+I1 => \CONVERT.UN1_I\);
+G_224: AND2 port map (
+O => \CONVERT.UN40_I\,
+I0 => OUTPUT_I(2),
+I1 => OUTPUT_I(3));
+\SEVEN_SEG0_1_0_A3[5]\: AND2 port map (
+O => SEVEN_SEG0_1(5),
+I0 => N_55,
+I1 => \CONVERT.UN42_I\);
+\SEVEN_SEG0_1_0_A3[6]\: AND2 port map (
+O => N_6,
+I0 => \CONVERT.UN1_I_I\,
+I1 => OUTPUT(2));
+\SEVEN_SEG0_1_0_A3_0[6]\: AND2 port map (
+O => N_7,
+I0 => N_95,
+I1 => \CONVERT.UN38_I\);
+\SEVEN_SEG0_1_0[6]_Z279\: AND2 port map (
+O => SEVEN_SEG0_1_0(6),
+I0 => N_6_I,
+I1 => N_7_I);
+\SEVEN_SEG0_1_I_A4[1]\: AND2 port map (
+O => N_20,
+I0 => N_19,
+I1 => \CONVERT.UN40\);
+\SEVEN_SEG0_1_I_A4_0[3]\: AND2 port map (
+O => N_25,
+I0 => \CONVERT.UN38_1\,
+I1 => \CONVERT.UN40_I\);
+\SEVEN_SEG0_1_0[0]_Z282\: AND2 port map (
+O => SEVEN_SEG0_1_0(0),
+I0 => N_19,
+I1 => \CONVERT.UN38\);
+\SEVEN_SEG0_1_I[1]\: AND2 port map (
+O => N_14_I,
+I0 => N_20_I,
+I1 => \CONVERT.UN37\);
+N_81_I_Z284: INV port map (
+O => N_81_I,
+I0 => N_81);
+\SEVEN_SEG0_1_0_O4[0]\: AND2 port map (
+O => N_19_I,
+I0 => N_81,
+I1 => OUTPUT_I(3));
+\BINARY_I[0]\: INV port map (
+O => BINARY_I_0(0),
+I0 => BINARY_C(0));
+\CONVERT.SEVEN_SEG013_1\: AND2 port map (
+O => \CONVERT.SEVEN_SEG013\,
+I0 => N_25,
+I1 => BINARY_I_0(0));
+G_198_1: AND2 port map (
+O => \CONVERT.UN38_1_I\,
+I0 => OUTPUT_I(1),
+I1 => OUTPUT_I(2));
+G_198: AND2 port map (
+O => \CONVERT.UN38_I\,
+I0 => \CONVERT.UN38_1_I\,
+I1 => OUTPUT_I(3));
+\SEVEN_SEG1_1_0[0]_Z290\: AND2 port map (
+O => SEVEN_SEG1_1_0(0),
+I0 => N_155,
+I1 => \CONVERT.UN31\);
+\SEVEN_SEG1_1_I[1]\: AND2 port map (
+O => N_37_I,
+I0 => N_155,
+I1 => UN4_TEMP1_I(3));
+\SEVEN_SEG1_1_I[2]\: AND2 port map (
+O => N_39_I,
+I0 => N_155,
+I1 => SEVEN_SEG1_1_0(4));
+\SEVEN_SEG1_1_0[3]_Z293\: AND2 port map (
+O => SEVEN_SEG1_1_0(3),
+I0 => N_44_I,
+I1 => UN4_TEMP1_I(3));
+\SEVEN_SEG1_1_I_O2[2]\: AND2 port map (
+O => SEVEN_SEG1_1_0(4),
+I0 => N_45_I,
+I1 => \CONVERT.SEVEN_SEG17_I\);
+N_172_I_Z295: INV port map (
+O => N_172_I,
+I0 => N_172);
+\UN4_TEMP1_I[3]_Z296\: INV port map (
+O => UN4_TEMP1_I(3),
+I0 => UN4_TEMP1(3));
+\OUTPUT_10[0]_Z297\: XOR2 port map (
+O => OUTPUT_10(0),
+I0 => BINARY_C(3),
+I1 => UN4_TEMP1(3));
+G_94: XOR2 port map (
+O => UN4_TEMP1_I(1),
+I0 => BINARY_C(3),
+I1 => BINARY_C(4));
+G_43: AND2 port map (
+O => N_55,
+I0 => N_193,
+I1 => OUTPUT(2));
+G_46: AND2 port map (
+O => \CONVERT.UN1_I_I\,
+I0 => N_55_I,
+I1 => OUTPUT_I(3));
+G_72: AND2 port map (
+O => \CONVERT.UN42_I\,
+I0 => N_81_I,
+I1 => OUTPUT_I(3));
+G_83: AND2 port map (
+O => N_95_I,
+I0 => N_193_0,
+I1 => OUTPUT_I(2));
+G_181: AND2 port map (
+O => N_193_0,
+I0 => BINARY_I_0(0),
+I1 => OUTPUT_I(1));
+G_185: AND2 port map (
+O => \CONVERT.UN37_I\,
+I0 => N_95_I,
+I1 => OUTPUT_I(3));
+\CONVERT.SEVEN_SEG17_Z305\: AND2 port map (
+O => \CONVERT.SEVEN_SEG17\,
+I0 => N_155_I,
+I1 => UN4_TEMP1(3));
+\UN4_TEMP1_I_I[1]_Z306\: INV port map (
+O => UN4_TEMP1_I_I(1),
+I0 => UN4_TEMP1_I(1));
+\OUTPUT_10_1_.R\: INV port map (
+O => \OUTPUT_10_1_.UN3\,
+I0 => UN4_TEMP1(3));
+\OUTPUT_10_1_.M\: AND2 port map (
+O => \OUTPUT_10_1_.UN1\,
+I0 => UN4_TEMP1_I_I(1),
+I1 => UN4_TEMP1(3));
+\OUTPUT_10_1_.N\: AND2 port map (
+O => \OUTPUT_10_1_.UN0\,
+I0 => BINARY_C(4),
+I1 => \OUTPUT_10_1_.UN3\);
+\OUTPUT_10_1_.P\: OR2 port map (
+O => OUTPUT_10(1),
+I0 => \OUTPUT_10_1_.UN1\,
+I1 => \OUTPUT_10_1_.UN0\);
+GND <= '0';
+VCC <= '1';
+\OUTPUT_10[2]_Z313\: XOR2 port map (
+O => OUTPUT_10(2),
+I0 => BINARY_C(5),
+I1 => UN4_TEMP1(3));
+\UN12_TEMP1_I_I[1]_Z314\: INV port map (
+O => UN12_TEMP1_I_I(1),
+I0 => UN12_TEMP1_I(1));
+\OUTPUT_15_1_.R\: INV port map (
+O => \OUTPUT_15_1_.UN3\,
+I0 => UN12_TEMP1(3));
+\OUTPUT_15_1_.M\: AND2 port map (
+O => \OUTPUT_15_1_.UN1\,
+I0 => UN12_TEMP1_I_I(1),
+I1 => UN12_TEMP1(3));
+\OUTPUT_15_1_.N\: AND2 port map (
+O => \OUTPUT_15_1_.UN0\,
+I0 => OUTPUT_10(0),
+I1 => \OUTPUT_15_1_.UN3\);
+\OUTPUT_15_1_.P\: OR2 port map (
+O => OUTPUT_15(1),
+I0 => \OUTPUT_15_1_.UN1\,
+I1 => \OUTPUT_15_1_.UN0\);
+\OUTPUT_15_2_.R\: INV port map (
+O => \OUTPUT_15_2_.UN3\,
+I0 => UN12_TEMP1(3));
+\OUTPUT_15_2_.M\: AND2 port map (
+O => \OUTPUT_15_2_.UN1\,
+I0 => UN12_TEMP1(2),
+I1 => UN12_TEMP1(3));
+\OUTPUT_15_2_.N\: AND2 port map (
+O => \OUTPUT_15_2_.UN0\,
+I0 => OUTPUT_10(1),
+I1 => \OUTPUT_15_2_.UN3\);
+\OUTPUT_15_2_.P\: OR2 port map (
+O => OUTPUT_15(2),
+I0 => \OUTPUT_15_2_.UN1\,
+I1 => \OUTPUT_15_2_.UN0\);
+\UN20_TEMP1_I_I[1]_Z323\: INV port map (
+O => UN20_TEMP1_I_I(1),
+I0 => UN20_TEMP1_I(1));
+\OUTPUT_2_.R\: INV port map (
+O => \OUTPUT_2_.UN3\,
+I0 => UN20_TEMP1(3));
+\OUTPUT_2_.M\: AND2 port map (
+O => \OUTPUT_2_.UN1\,
+I0 => UN20_TEMP1_I_I(1),
+I1 => UN20_TEMP1(3));
+\OUTPUT_2_.N\: AND2 port map (
+O => \OUTPUT_2_.UN0\,
+I0 => OUTPUT_15(0),
+I1 => \OUTPUT_2_.UN3\);
+\OUTPUT_2_.P\: OR2 port map (
+O => OUTPUT(2),
+I0 => \OUTPUT_2_.UN1\,
+I1 => \OUTPUT_2_.UN0\);
+\OUTPUT_3_.R\: INV port map (
+O => \OUTPUT_3_.UN3\,
+I0 => UN20_TEMP1(3));
+\OUTPUT_3_.M\: AND2 port map (
+O => \OUTPUT_3_.UN1\,
+I0 => UN20_TEMP1(2),
+I1 => UN20_TEMP1(3));
+\OUTPUT_3_.N\: AND2 port map (
+O => \OUTPUT_3_.UN0\,
+I0 => OUTPUT_15(1),
+I1 => \OUTPUT_3_.UN3\);
+\OUTPUT_3_.P\: OR2 port map (
+O => OUTPUT(3),
+I0 => \OUTPUT_3_.UN1\,
+I1 => \OUTPUT_3_.UN0\);
+N_183_I_Z332: INV port map (
+O => N_183_I,
+I0 => N_183);
+\SEVEN_SEG1_1_I_A3[6]\: AND2 port map (
+O => N_29,
+I0 => N_183_I,
+I1 => \CONVERT.UN31\);
+\SEVEN_SEG1_1_I[6]\: AND2 port map (
+O => N_28_I,
+I0 => N_29_I,
+I1 => \CONVERT.UN30\);
+\UN12_TEMP1_I[3]\: INV port map (
+O => UN12_TEMP1_I_0(3),
+I0 => UN12_TEMP1(3));
+\SEVEN_SEG1_1_0_A2[3]\: AND2 port map (
+O => N_44,
+I0 => N_155,
+I1 => UN12_TEMP1_I_0(3));
+G_91: AND2 port map (
+O => N_105_0,
+I0 => BINARY_C_I(3),
+I1 => BINARY_C_I(4));
+G_96: AND2 port map (
+O => UN4_TEMP1(3),
+I0 => N_105,
+I1 => BINARY_C(5));
+G_108: AND2 port map (
+O => N_122_0,
+I0 => BINARY_C_I(2),
+I1 => OUTPUT_10_I(0));
+G_113: AND2 port map (
+O => N_128,
+I0 => N_122,
+I1 => OUTPUT_10(1));
+G_125: AND2 port map (
+O => N_139_0,
+I0 => BINARY_C_I(1),
+I1 => OUTPUT_15_I(0));
+G_130: AND2 port map (
+O => N_145,
+I0 => N_139,
+I1 => OUTPUT_15(1));
+G_143: AND2 port map (
+O => N_155_I,
+I0 => UN12_TEMP1_I_0(3),
+I1 => UN20_TEMP1_I(3));
+G_145: AND2 port map (
+O => \CONVERT.UN30_I\,
+I0 => N_155_I,
+I1 => UN4_TEMP1_I(3));
+G_154: AND2 port map (
+O => \CONVERT.UN31_I\,
+I0 => UN4_TEMP1_I(3),
+I1 => UN12_TEMP1_I_0(3));
+G_160: AND2 port map (
+O => N_172,
+I0 => UN12_TEMP1(3),
+I1 => UN20_TEMP1(3));
+G_171: AND2 port map (
+O => N_183,
+I0 => N_155,
+I1 => UN4_TEMP1(3));
+G_131: XOR2 port map (
+O => UN20_TEMP1(3),
+I0 => N_145,
+I1 => OUTPUT_15(2));
+G_114: XOR2 port map (
+O => UN12_TEMP1(3),
+I0 => N_128,
+I1 => OUTPUT_10(2));
+G_112: XOR2 port map (
+O => UN12_TEMP1(2),
+I0 => N_122,
+I1 => BINARY_C(4));
+G_129: XOR2 port map (
+O => UN20_TEMP1(2),
+I0 => N_139,
+I1 => OUTPUT_15(1));
+end beh;
+

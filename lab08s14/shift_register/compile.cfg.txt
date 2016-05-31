@@ -1,0 +1,11 @@
+[View]
+Entity=right_shift_reg
+Architecture=behavior
+TopLevelType=1
+[file:.\src\right_shift_reg.vhd]
+Enabled=1
+[file:.\src\TestBench\right_shift_reg_TB.vhd]
+Enabled=1
+LIB=
+[file:.\src\TestBench\right_shift_reg_TB_runtest.do]
+Enabled=1

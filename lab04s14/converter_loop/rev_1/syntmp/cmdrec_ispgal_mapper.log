@@ -1,0 +1,9 @@
+C:\Synopsys\fpga_E201103SP2\bin\m_cpld.exe  -prodtype synplify_pro -encrypt  -pro  -part ispGAL22V10C  -package LJ  -grade -10   -areadelay 0 -minc    -ovhdl "loop.vhm"  -oedif  H:\ese382\lab04s14\converter_loop\rev_1\loop.edf  H:\ese382\lab04s14\converter_loop\rev_1\loop.srs  -devicelib  C:\Synopsys\fpga_E201103SP2\lib\cpld\lattice.v  -ologparam  H:\ese382\lab04s14\converter_loop\rev_1\syntmp\loop.plg  -osyn  H:\ese382\lab04s14\converter_loop\rev_1\loop.srm  -prjdir H:\ese382\lab04s14\converter_loop\  -log  H:\ese382\lab04s14\converter_loop\rev_1\synlog\loop_ispGAL_Mapper.srr 
+rc:0 success:1
+H:\ese382\lab04s14\converter_loop\rev_1\loop.edf|o|1394126425|10706
+H:\ese382\lab04s14\converter_loop\rev_1\loop.srs|i|1394126423|2780
+C:\Synopsys\fpga_E201103SP2\lib\cpld\lattice.v|i|1304986162|210380
+H:\ese382\lab04s14\converter_loop\rev_1\syntmp\loop.plg|o|1394126425|0
+H:\ese382\lab04s14\converter_loop\rev_1\loop.srm|o|1394126425|5225
+H:\ese382\lab04s14\converter_loop\rev_1\synlog\loop_ispGAL_Mapper.srr|o|1394126425|929
+C:\Synopsys\fpga_E201103SP2\bin\m_cpld.exe|i|1305645716|8888320

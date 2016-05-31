@@ -1,0 +1,234 @@
+<HTML>
+<HEAD><TITLE>Place & Route Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Par"></A>PAR: Place And Route Diamond_1.4_Production (87).
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2011 Lattice Semiconductor Corporation,  All rights reserved.
+Tue Apr 29 14:29:39 2014
+
+C:/lscc/diamond/1.4/ispfpga\bin\nt\par -f GZ_GZ.p2t GZ_GZ_map.ncd GZ_GZ.dir
+GZ_GZ.prf
+
+Preference file: GZ_GZ.prf.
+
+<A name="par_cts"></A><B><U><big>Cost Table Summary</big></U></B>
+Level/      Number      Timing      Run         NCD
+Cost [ncd]  Unrouted    Score       Time        Status
+----------  --------    --------    -----       ------------
+5_1   *     0           0           03          Complete        
+
+
+* : Design saved.
+
+par done!
+
+Lattice Place and Route Report for Design "GZ_GZ_map.ncd"
+Tue Apr 29 14:29:40 2014
+
+
+<A name="par_best"></A><B><U><big>Best Par Run</big></U></B>
+PAR: Place And Route Diamond_1.4_Production (87).
+Command Line: C:/lscc/diamond/1.4/ispfpga\bin\nt\par -f GZ_GZ.p2t GZ_GZ_map.ncd GZ_GZ.dir
+GZ_GZ.prf
+Preference file: GZ_GZ.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file GZ_GZ_map.ncd.
+Design name: count_down_timer
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LFXP3C
+Package:     TQFP100
+Performance: 4
+Loading device for application par from file 'mg5g19x26.nph' in environment C:/lscc/diamond/1.4/ispfpga.
+Package Status:                     Final          Version 1.40
+Performance Hardware Data Status: Version 1.225
+License checked out.
+
+
+Ignore Preference Error(s):  True
+
+<A name="par_dus"></A><B><U><big>Device utilization summary:</big></U></B>
+
+   GSR                1/1           100% used
+   PIO (prelim)      20/140          14% used
+                     20/62           32% bonded
+   SLICE             54/1536          3% used
+
+
+
+Number of Signals: 139
+Number of Connections: 431
+
+Pin Constraint Summary:
+   20 out of 20 pins locked (100% locked).
+
+The following 1 signal is selected to use the primary clock routing resources:
+    clk_c (driver: clk, clk load #: 17)
+
+No signal is selected as DCS clock.
+
+No signal is selected as secondary clock.
+
+Signal rst_bar_c is selected as Global Set/Reset.
+Starting Placer Phase 0.
+
+Finished Placer Phase 0.  REAL time: 0 secs 
+
+Starting Placer Phase 1.
+...................
+Placer score = 22085.
+Finished Placer Phase 1.  REAL time: 2 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  22031
+Finished Placer Phase 2.  REAL time: 2 secs 
+
+
+
+<A name="par_clk"></A><B><U><big>Clock Report</big></U></B>
+
+Global Clock Resources:
+  CLK_PIN    : 1 out of 4 (25%)
+  PLL        : 0 out of 2 (0%)
+  DCS        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "clk_c" from comp "clk" on CLK_PIN site "93 (PT12A)", clk load = 17
+
+  PRIMARY  : 1 out of 4 (25%)
+     DCS   : 0 out of 2 (0%)
+  SECONDARY: 0 out of 4 (0%)
+
+
+
+
+I/O Usage Summary (final):
+   20 out of 140 (14.3%) PIO sites used.
+   20 out of 62 (32.3%) bonded PIO sites used.
+   Number of PIO comps: 20; differential: 0
+   Number of Vref pins used: 0
+
+I/O Bank Usage Summary:
++----------+---------------+------------+------------+------------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref1 | Bank Vref2 |
++----------+---------------+------------+------------+------------+
+| 0        | 5 / 8 ( 62%)  | 2.5V       | -          | -          |
+| 1        | 0 / 9 (  0%)  | -          | -          | -          |
+| 2        | 7 / 8 ( 87%)  | 2.5V       | -          | -          |
+| 3        | 5 / 6 ( 83%)  | -          | -          | -          |
+| 4        | 1 / 5 ( 20%)  | -          | -          | -          |
+| 5        | 1 / 12 (  8%) | -          | -          | -          |
+| 6        | 0 / 4 (  0%)  | -          | -          | -          |
+| 7        | 1 / 10 ( 10%) | -          | -          | -          |
++----------+---------------+------------+------------+------------+
+
+Total placer CPU time: 2 secs 
+
+Dumping design to file GZ_GZ.dir/5_1.ncd.
+
+0 connections routed; 431 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 2 secs 
+Starting iterative routing.
+
+For each routing iteration the number inside the parenthesis is the
+total time (in picoseconds) the design is failing the timing constraints.
+For each routing iteration the router will attempt to reduce this number
+until the number of routing iterations is completed or the value is 0
+meaning the design has fully met the timing constraints.
+
+End of iteration 1
+431 successful; 0 unrouted; (0) real time: 3 secs 
+Dumping design to file GZ_GZ.dir/5_1.ncd.
+Total CPU time 2 secs 
+Total REAL time: 3 secs 
+Completely routed.
+End of route.  431 routed (100.00%); 0 unrouted.
+Checking DRC ... 
+No errors found.
+
+Timing score: 0 
+
+Total REAL time to completion: 3 secs 
+
+Dumping design to file GZ_GZ.dir/5_1.ncd.
+
+
+All signals are completely routed.
+
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2011 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

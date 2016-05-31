@@ -1,0 +1,5 @@
+$include = "$VSIMSALIBRARYCFG"
+d_flip_flop = "./D flip_flop/D_flip_flop.LIB" 1396961427302
+shift_register = "./shift_register/shift_register.LIB" 1396961498729
+counter = "./counter/counter.LIB" 1396961561340
+sequential_system = "./sequential_system/sequential_system.LIB" 1396961601566

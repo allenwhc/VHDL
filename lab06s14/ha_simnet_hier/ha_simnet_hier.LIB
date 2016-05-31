@@ -1,0 +1,84 @@
+timestamp=1395752703061
+
+[and_2]
+A/dataflow=21|./src/ha_primitive_gates.vhd|51|1*40843
+BinI32/dataflow=3*12006
+I=0*2555
+I/dataflow=0*8289
+M=11|0|v98|1395751461599|./src/ha_primitive_gates.vhd|0*2248*0xc269ffe20d6fc34cab667846a3c9e697c3aab352|0*2471*0xab32bc1a2daf049573e14469f634e0e6
+M/dataflow=21|0|v98|1395752464438|./src/ha_primitive_gates.vhd|0*8031*0x7a8257514a1de061339232d85f161f4616f7c239|0*8193*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/ha_primitive_gates.vhd|44
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/dataflow=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[ha_mixed_tb]
+A/behavior=21|./src/ha_test_tb.vhd|34|1*45804
+BinI32/behavior=3*13131
+I=0*5422
+I/behavior=0*6201
+M=11|0|v98|1395751546730|./src/ha_test_tb.vhd|0*5148*0x864483fe1fd8b76e717809dad1dca93a8544265e|0*5340*0xab32bc1a2daf049573e14469f634e0e6
+M/behavior=21|0|v98|1395752465266|./src/ha_test_tb.vhd|0*5589*0xa5a11b5fe4cc6c7c4221175010e8468f1f1611aa|0*6107*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/ha_test_tb.vhd|29
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/behavior=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[half_adder]
+A/dataflow=21|./src/half_adder_struct_hier.vhd|39|1*47544
+BinI32/dataflow=3*13911
+I=0*553
+I/dataflow=0*9582
+M=11|0|v98|1395751461427|./src/half_adder_struct_hier.vhd|0*192*0x3241f202268e81b09c1218c0f183ca64c795312d|0*460*0xab32bc1a2daf049573e14469f634e0e6
+M/dataflow=21|0|v98|1395752702924|./src/half_adder_struct_hier.vhd|0*9246*0x3050df19c7cbce22e8c453cac33231918220fd24|0*9477*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/half_adder_struct_hier.vhd|28
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/dataflow=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[inv]
+A/dataflow=21|./src/ha_primitive_gates.vhd|35|1*39919
+BinI32/dataflow=3*11655
+I=0*7580
+I/dataflow=0*7925
+M=11|0|v98|1395752192369|./src/ha_primitive_gates.vhd|0*7301*0x1438d7f0c752b52378c028971d9f79a2538e6ed6|0*7498*0xab32bc1a2daf049573e14469f634e0e6
+M/dataflow=21|0|v98|1395752464407|./src/ha_primitive_gates.vhd|0*7677*0x9325e9c54fe1f740cce78634e8c4235c1575dd73|0*7831*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/ha_primitive_gates.vhd|28
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/dataflow=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[or_2]
+A/dataflow=21|./src/ha_primitive_gates.vhd|67|1*41815
+BinI32/dataflow=3*12381
+I=0*3471
+I/dataflow=0*8652
+M=11|0|v98|1395751461693|./src/ha_primitive_gates.vhd|0*3168*0x73a4952a28c8715872746020894a6f2df607d4f7|0*3388*0xab32bc1a2daf049573e14469f634e0e6
+M/dataflow=21|0|v98|1395752464468|./src/ha_primitive_gates.vhd|0*8397*0x251a57015e62721ac1ebd7e7d1661c369e4dda0e|0*8557*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/ha_primitive_gates.vhd|60
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/dataflow=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[xor_2]
+A/dataflow=21|./src/xor_2_struct.vhd|38|1*42786
+I=0*1103
+I/dataflow=0*6914
+M=11|0|v98|1395751461490|./src/xor_2_struct.vhd|0*808*0xb975593e6210752d819e1bcee80a97c0d8c6177c|0*1025*0xab32bc1a2daf049573e14469f634e0e6
+M/dataflow=21|0|v98|1395752464612|./src/xor_2_struct.vhd|0*6434*0x3b694b8e6e44d23939b84efb8d01971c67d90cd7|0*6824*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/xor_2_struct.vhd|28
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/dataflow=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[~A]
+ModifyID=211
+Version=73
+
+[~MFT]
+0=85|0ha_simnet_hier.mgf|9582|3248
+1=71|1ha_simnet_hier.mgf|47544|41097
+3=58|3ha_simnet_hier.mgf|13911|12030
+
+[~U]
+and_2=11|0*2097|
+ha_mixed_tb=11|0*5069|
+half_adder=11|0*0|
+inv=11|0*7176|
+or_2=11|0*3020|
+xor_2=11|0*657|
+

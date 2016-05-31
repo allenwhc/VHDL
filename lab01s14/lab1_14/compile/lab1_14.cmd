@@ -1,0 +1,1 @@
+-w -s "h:\ese382\lab1\library.cfg"  -j "h:\ese382\lab1\lab1_14\projlib.cfg"  -d "h:\ese382\lab1\lab1_14\compile"   -work lab1_14  -dbg -e 100 -o -2002 "h:\ese382\lab1\lab1_14\src\half_sub.vhd" "h:\ese382\lab1\lab1_14\src\half_sub_tb.vhd"

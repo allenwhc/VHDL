@@ -1,0 +1,16 @@
+[COMPILESTATUS|.\src\half_adder_struct_hier.vhd]
+FileTimeLow=30361642
+Status=Compiled
+
+[COMPILESTATUS|.\src\xor_2_struct.vhd]
+FileTimeLow=30361641
+Status=Compiled
+
+[COMPILESTATUS|.\src\ha_primitive_gates.vhd]
+FileTimeLow=30361640
+Status=Compiled
+
+[COMPILESTATUS|.\src\ha_test_tb.vhd]
+FileTimeLow=30361640
+Status=Compiled
+

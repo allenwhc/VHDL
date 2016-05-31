@@ -1,0 +1,22 @@
+
+================= Gated clock report =================
+
+
+The following instances have NOT been converted
+Seq Inst                        Instance Port     Clock                       Reason for not converting                                                         
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+alarm                           CK                un1_present_state_2_0_i     Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+inhib_output\.min_counts[3]     CK                N_36                        Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+inhib_output\.min_counts[2]     CK                N_36                        Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+inhib_output\.min_counts[1]     CK                N_36                        Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+inhib_output\.min_counts[0]     CK                N_36                        Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+inhib_output\.sec_counts[5]     CK                N_34_i                      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+inhib_output\.sec_counts[4]     CK                N_34_i                      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+inhib_output\.sec_counts[3]     CK                N_34_i                      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+inhib_output\.sec_counts[2]     CK                N_34_i                      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+inhib_output\.sec_counts[1]     CK                N_34_i                      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+inhib_output\.sec_counts[0]     CK                N_34_i                      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+================================================================================================================================================================
+
+================= End gated clock report =================
+

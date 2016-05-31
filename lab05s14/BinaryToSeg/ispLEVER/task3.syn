@@ -1,0 +1,10 @@
+JDF B
+// Created by Version 7.0 
+PROJECT task3
+DESIGN task3 Normal
+DEVKIT M4A5-64/32-10JC
+ENTRY EDIF
+MODULE ..\synplify\rev_2\binary2seg.edf
+MODSTYLE BinaryToSeg Normal
+SYNTHESIS_TOOL Synplify
+TOPMODULE BinaryToSeg

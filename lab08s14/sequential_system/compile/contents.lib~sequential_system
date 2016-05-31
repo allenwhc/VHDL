@@ -1,0 +1,11 @@
+1089
+~E 1 "./src/counter.vhd" 5 counter
+~A 1 "./src/counter.vhd" 15 behavior
+~E 1 "./src/flipflop.vhd" 4 dff_en
+~A 1 "./src/flipflop.vhd" 14 behavioral
+~E 1 "./src/right_shift_reg.vhd" 5 right_shift_reg
+~A 1 "./src/right_shift_reg.vhd" 16 behavior
+~E 1 "./src/seq_sys.vhd" 5 seq_sys
+~A 1 "./src/seq_sys.vhd" 28 behavior
+~E 1 "./src/seq_sys_TB-2.vhd" 8 seq_sys_tb
+~A 1 "./src/seq_sys_TB-2.vhd" 11 tb_architecture

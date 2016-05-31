@@ -1,0 +1,22 @@
+1186
+~E 1 "./../src/cascaded_counters.vhd" 28 cascaded_counters
+~A 1 "./../src/cascaded_counters.vhd" 42 cascaded_counters
+~E 1 "./../src/cascaded_counters_TB.vhd" 14 cascaded_counters_tb
+~A 1 "./../src/cascaded_counters_TB.vhd" 17 tb_architecture
+~E 1 "./../src/minutes_counter.vhd" 29 minutes_counter
+~A 1 "./../src/minutes_counter.vhd" 44 behavioral
+~E 1 "./../src/minutes_counter_TB.vhd" 7 minutes_counter_tb
+~A 1 "./../src/minutes_counter_TB.vhd" 10 tb_architecture
+~E 1 "./../src/rotary_encoder_decoder_fsm.vhd" 28 rotary_encoder_decoder_fsm
+~A 1 "./../src/rotary_encoder_decoder_fsm.vhd" 41 behavioral
+~A 1 "./../src/rotary_encoder_decoder_fsm.vhd" 41 rotary_encoder_decoder_fsm
+~E 1 "./../src/rotary_encoder_decoder_fsm_TB.vhd" 7 rotary_encoder_decoder_fsm_tb
+~A 1 "./../src/rotary_encoder_decoder_fsm_TB.vhd" 10 tb_architecture
+~E 1 "./../src/seconds_counter.vhd" 29 seconds_counter
+~A 1 "./../src/seconds_counter.vhd" 44 behavioral
+~E 1 "./../src/seconds_counter_TB.vhd" 7 seconds_counter_tb
+~A 1 "./../src/seconds_counter_TB.vhd" 10 tb_architecture
+~E 1 "./../src/settable_counters.vhd" 28 settable_counters
+~A 1 "./../src/settable_counters.vhd" 41 settable_counters
+~E 1 "./../src/settable_counters2_TB.vhd" 9 settable_counters_tb
+~A 1 "./../src/settable_counters2_TB.vhd" 12 tb_architecture

@@ -1,0 +1,12 @@
+C:\Synopsys\fpga_G201209SP1\bin64\c_vhdl.exe  -osyn  H:\ese382\lab10s14\setable_timer\synplify\rev_2\synwork\proj_2_compiler.srs  -prodtype  synplify_pro  -fixsmult -infer_seqShift -nram -divnmod -encrypt  -pro  -dmgen  H:\ese382\lab10s14\setable_timer\synplify\rev_2\dm  -lite -ll 2000   -ui -fid2 -ram -sharing on  -autosm -ignore_undefined_lib  -lib work H:\ese382\lab10s14\setable_timer\src\fsm.vhd -lib work H:\ese382\lab10s14\setable_timer\src\minutes_counter.vhd -lib work H:\ese382\lab10s14\setable_timer\src\pedgefsm.vhd -lib work H:\ese382\lab10s14\setable_timer\src\rotary_encoder_decoder_fsm.vhd -lib work H:\ese382\lab10s14\setable_timer\src\seconds_counter.vhd -lib work H:\ese382\lab10s14\setable_timer\src\count_down_timer.vhd -loga  H:\ese382\lab10s14\setable_timer\synplify\rev_2\proj_2.srr 
+rc:0 success:1
+H:\ese382\lab10s14\setable_timer\synplify\rev_2\synwork\proj_2_compiler.srs|o|1398796128|9571
+H:\ese382\lab10s14\setable_timer\src\fsm.vhd|i|1398794905|1743
+H:\ese382\lab10s14\setable_timer\src\minutes_counter.vhd|i|1398795928|2448
+H:\ese382\lab10s14\setable_timer\src\pedgefsm.vhd|i|1398788914|1950
+H:\ese382\lab10s14\setable_timer\src\rotary_encoder_decoder_fsm.vhd|i|1398793300|2883
+H:\ese382\lab10s14\setable_timer\src\seconds_counter.vhd|i|1398792912|2078
+H:\ese382\lab10s14\setable_timer\src\count_down_timer.vhd|i|1398796118|3666
+H:\ese382\lab10s14\setable_timer\synplify\rev_2\proj_2.srr|o|1398796128|3856
+C:\Synopsys\fpga_G201209SP1\bin64\c_vhdl.exe|i|1354070830|5352960
+C:\Synopsys\fpga_G201209SP1\bin\c_vhdl.exe|i|1354070654|1896960

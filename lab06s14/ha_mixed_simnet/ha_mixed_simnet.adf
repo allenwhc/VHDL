@@ -1,0 +1,107 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=ha_mixed_simnet
+
+[Library]
+ha_mixed_simnet=.\ha_mixed_simnet.LIB
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=IMPL_WITH_SYNTH
+FAMILY=Quartus CycloneIVGX
+fileopenfolder=H:\ese382\lab06s14\ha_mixed_simnet\ispLEVER
+IMPL_TOOL=<none>
+SYNTH_TOOL=MV_QUARTUS_SYNTHESIS101
+CSYNTH_TOOL=<none>
+CSYNTH_STATUS=NONE
+PHYSSYNTH_TOOL=<none>
+PHYSSYNTH_STATUS=NONE
+RUN_MODE_SYNTH=0
+SYNTH_STATUS=NONE
+IMPL_STATUS=NONE
+PCBINTERFACE_STATUS=NONE
+ON_SERVERFARM_SIM=0
+FUNCTIONAL_SIMULATION_STATUS=
+POSTSYNTHESIS_SIMULATION_STATUS=
+TIMING_SIMULATION_STATUS=
+ON_SERVERFARM_SYNTH=0
+ON_SERVERFARM_IMPL=0
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=1
+
+[$LibMap$]
+ha_mixed_simnet=.
+Active_lib=
+
+[Folders]
+Name3=Makefiles
+Directory3=h:\ese382\lab06s14\ha_mixed_simnet\
+Extension3=mak
+Name4=Memory
+Directory4=h:\ese382\lab06s14\ha_mixed_simnet\src
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=h:\ese382\lab06s14\ha_mixed_simnet\
+Extension5=dll
+Name6=PDF
+Directory6=h:\ese382\lab06s14\ha_mixed_simnet\
+Extension6=pdf
+Name7=HTML
+Directory7=h:\ese382\lab06s14\ha_mixed_simnet\
+Extension7=
+
+[SYNTHESIS]
+TOPLEVEL=
+FAMILY=Quartus CycloneIVGX
+DEVICE=
+SPEED=
+
+[PHYS_SYNTHESIS]
+FAMILY=Quartus CycloneIVGX
+DEVICE=
+SPEED=
+SCRIPTS_COPIED=0
+
+[IMPLEMENTATION]
+FLOW_STEPS_RESET=1
+FAMILY=Quartus CycloneIVGX
+DEVICE=
+SPEED=
+
+[PCB_INTERFACE]
+FAMILY=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=ha_mixed_tb|behavior|0
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/ha_mixed.vhq=-1
+/ha_test_tb.vhd=-1
+
+[Files.Data]
+.\src\ha_mixed.vhq=VHDL Source Code
+.\src\ha_test_tb.vhd=VHDL Source Code
+

@@ -1,0 +1,219 @@
+
+
+                                                                      Page 1
+ispLEVER Classic 7.0.00.10.16.07  -  Device Utilization Chart         Tue Mar 25 09:51:19 2014
+
+
+
+--------------------------------------------------------------------------------
+
+Module                   : 'full_adder'
+
+--------------------------------------------------------------------------------
+
+Input files:
+
+    ABEL PLA file        : untitled.tt3
+    Device library       : P22V10GC.dev
+
+Output files:
+
+    Report file          : untitled.rpt
+    Programmer load file : untitled.jed
+
+--------------------------------------------------------------------------------
+
+
+                                                                      Page 2
+ispLEVER Classic 7.0.00.10.16.07  -  Device Utilization Chart         Tue Mar 25 09:51:19 2014
+
+P22V10GC Programmed Logic:
+--------------------------------------------------------------------------------
+
+
+
+sum     = (  a & b & carry_in 
+           #   !a & !b & carry_in 
+           #   !a & b & !carry_in 
+           #   a & !b & !carry_in );
+
+carry_out     = (  a & b 
+                 #   a & carry_in 
+                 #   b & carry_in );
+
+
+
+                                                                      Page 3
+ispLEVER Classic 7.0.00.10.16.07  -  Device Utilization Chart         Tue Mar 25 09:51:19 2014
+
+P22V10GC Chip Diagram: (PLCC package)
+--------------------------------------------------------------------------------
+
+
+
+
+                                    P22V10GC
+
+                                               c   
+                                c              a   
+                                a              r   
+                                r              r   
+                                r              y   
+                                y              _   
+                                _              o   
+                                i              u   
+                                n  b  a        t   
+                              /----------------------
+                             /  4  3  2  1 28 27 26 |
+                             |                      |
+                             |  5                25 |                             
+                             |                      |
+                             |  6                24 |                             
+                             |                      |
+                             |  7                23 |                             
+                             |                      |
+                             |  8                22 |                             
+                             |                      |
+                             |  9                21 |                             
+                             |                      |
+                             | 10                20 |                             
+                             |                      |
+                             | 11                19 |                             
+                             |                      |
+                             | 12 13 14 15 16 17 18 |
+                             ------------------------
+                                               s   
+                                               u   
+                                               m   
+
+                        SIGNATURE: N/A
+
+
+                                                                      Page 4
+ispLEVER Classic 7.0.00.10.16.07  -  Device Utilization Chart         Tue Mar 25 09:51:19 2014
+
+P22V10GC Chip Diagram: (SSOP package)
+--------------------------------------------------------------------------------
+
+
+
+
+                                  P22V10GC
+
+                          ___________________________
+                         | ***                       |
+                         |                           |
+                         |  1                    28  | Vcc                     
+                         |                           |
+                       a |  2                    27  | carry_out               
+                         |                           |
+                       b |  3                    26  |                         
+                         |                           |
+                carry_in |  4                    25  |                         
+                         |                           |
+                         |  5                    24  |                         
+                         |                           |
+                         |  6                    23  |                         
+                         |                           |
+                         |  7                    22  |                         
+                         |                           |
+                         |  8                    21  |                         
+                         |                           |
+                         |  9                    20  |                         
+                         |                           |
+                         | 10                    19  |                         
+                         |                           |
+                         | 11                    18  |                         
+                         |                           |
+                         | 12                    17  | sum                     
+                         |                           |
+                         | 13                    16  |                         
+                         |                           |
+                     GND | 14                    15  |                         
+                         |                           |
+                         |                           |
+                         `---------------------------'
+
+                        SIGNATURE: N/A
+
+
+                                                                      Page 5
+ispLEVER Classic 7.0.00.10.16.07  -  Device Utilization Chart         Tue Mar 25 09:51:19 2014
+
+P22V10GC Resource Allocations:
+--------------------------------------------------------------------------------
+
+
+
+        Device        | Resource  |   Design    |
+       Resources      | Available | Requirement | Unused
+======================|===========|=============|==============
+                      |           |             |
+Input Pins:           |           |             |
+                      |           |             |
+          Input:      |     12    |      3      |    9 ( 75 %)
+                      |           |             |
+Output Pins:          |           |             |
+                      |           |             |
+          In/Out:     |     10    |      2      |    8 ( 80 %)
+          Output:     |      -    |      -      |    -
+                      |           |             |
+Buried Nodes:         |           |             |
+                      |           |             |
+          Input Reg:  |      -    |      -      |    -
+          Pin Reg:    |     10    |      0      |   10 (100 %)
+          Buried Reg: |      -    |      -      |    -
+
+
+                                                                      Page 6
+ispLEVER Classic 7.0.00.10.16.07  -  Device Utilization Chart         Tue Mar 25 09:51:19 2014
+
+P22V10GC Product Terms Distribution:
+--------------------------------------------------------------------------------
+
+
+
+            Signal                       |    Pin   | Terms | Terms | Terms
+             Name                        | Assigned | Used  |  Max  | Unused
+=========================================|==========|=======|=======|=======
+sum                                      |   17     |   4   |   8   |   4
+carry_out                                |   27     |   3   |   8   |   5
+
+
+     ==== List of Inputs/Feedbacks ====
+
+Signal Name                              | Pin      | Pin Type
+=========================================|==========|=========
+a                                        |    2     | CLK/IN
+b                                        |    3     | INPUT
+carry_in                                 |    4     | INPUT
+
+
+                                                                      Page 7
+ispLEVER Classic 7.0.00.10.16.07  -  Device Utilization Chart         Tue Mar 25 09:51:19 2014
+
+P22V10GC Unused Resources:
+--------------------------------------------------------------------------------
+
+
+
+ Pin   |  Pin   |   Product   | Flip-flop
+Number |  Type  |   Terms     |   Type
+=======|========|=============|==========
+    5  |  INPUT |      -      |    -   
+    6  |  INPUT |      -      |    -   
+    7  |  INPUT |      -      |    -   
+    9  |  INPUT |      -      |    -   
+   10  |  INPUT |      -      |    -   
+   11  |  INPUT |      -      |    -   
+   12  |  INPUT |      -      |    -   
+   13  |  INPUT |      -      |    -   
+   16  |  INPUT |      -      |    -   
+   18  |  BIDIR | NORMAL 10   |    D
+   19  |  BIDIR | NORMAL 12   |    D
+   20  |  BIDIR | NORMAL 14   |    D
+   21  |  BIDIR | NORMAL 16   |    D
+   23  |  BIDIR | NORMAL 16   |    D
+   24  |  BIDIR | NORMAL 14   |    D
+   25  |  BIDIR | NORMAL 12   |    D
+   26  |  BIDIR | NORMAL 10   |    D

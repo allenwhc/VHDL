@@ -1,0 +1,8 @@
+C:\Synopsys\fpga_E201103SP2\bin\m_cpld.exe  -prodtype synplify_pro -encrypt  -pro  -part M4A5-64   -areadelay 0 -minc     -ovhdl "binary2seg.vhm"  -oedif  H:\ese382\lab05s14\BinaryToSeg\Synplify\rev_2\binary2seg.edf  H:\ese382\lab05s14\BinaryToSeg\Synplify\rev_2\binary2seg.srs  -ologparam  H:\ese382\lab05s14\BinaryToSeg\Synplify\rev_2\syntmp\binary2seg.plg  -osyn  H:\ese382\lab05s14\BinaryToSeg\Synplify\rev_2\binary2seg.srm  -prjdir H:\ese382\lab05s14\BinaryToSeg\Synplify\  -log  H:\ese382\lab05s14\BinaryToSeg\Synplify\rev_2\synlog\binary2seg_mach_Mapper.srr 
+rc:0 success:1
+H:\ese382\lab05s14\BinaryToSeg\Synplify\rev_2\binary2seg.edf|o|1394559701|51204
+H:\ese382\lab05s14\BinaryToSeg\Synplify\rev_2\binary2seg.srs|i|1394559699|8102
+H:\ese382\lab05s14\BinaryToSeg\Synplify\rev_2\syntmp\binary2seg.plg|o|1394559700|0
+H:\ese382\lab05s14\BinaryToSeg\Synplify\rev_2\binary2seg.srm|o|1394559701|15938
+H:\ese382\lab05s14\BinaryToSeg\Synplify\rev_2\synlog\binary2seg_mach_Mapper.srr|o|1394559701|934
+C:\Synopsys\fpga_E201103SP2\bin\m_cpld.exe|i|1305649316|8888320

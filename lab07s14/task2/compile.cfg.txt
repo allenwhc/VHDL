@@ -1,0 +1,8 @@
+[View]
+Entity=john2bin
+Architecture=dataflow
+TopLevelType=1
+[file:.\src\john2bin.vhd]
+Enabled=1
+[file:.\src\j_tb.vhd]
+Enabled=1

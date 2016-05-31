@@ -1,0 +1,1 @@
+-w -s "h:\ese382\lab05s14\library.cfg"  -j "h:\ese382\lab05s14\BinaryToBCD\projlib.cfg"  -d "h:\ese382\lab05s14\BinaryToBCD\compile"   -work BinaryToBCD  -dbg -e 100 -2002 "h:\ese382\lab05s14\BinaryToBCD\src\BinaryToBCD.vhd" "h:\ese382\lab05s14\BinaryToBCD\src\BinaryToBCD_TB.vhd"

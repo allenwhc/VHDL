@@ -1,0 +1,4 @@
+@N: CD630 :"H:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg.vhd":29:7:29:17|Synthesizing work.binarytoseg.binarytoseg 
+Post processing for work.binarytoseg.binarytoseg
+@W: CL117 :"H:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg.vhd":72:1:72:2|Latch generated from process for signal seven_seg0(6 downto 0), probably caused by a missing assignment in an if or case stmt
+@W: CL239 :"H:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg.vhd":72:1:72:2|Latch seven_seg0(6 downto 0) enable evaluates to constant 1, optimized

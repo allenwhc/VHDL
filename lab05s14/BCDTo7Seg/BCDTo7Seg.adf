@@ -1,0 +1,66 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=BCDTo7Seg
+
+[Library]
+BCDTo7Seg=.\BCDTo7Seg.LIB
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+FLOWTOOLS=NONE
+REFRESH_FLOW=1
+FAMILY=
+IMPL_TOOL=
+SYNTH_TOOL=
+fileopenfolder=H:\ese382\lab05s14\BinaryToBCD\src
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=1
+
+[$LibMap$]
+BCDTo7Seg=.
+Active_lib=
+
+[Folders]
+Name3=Makefiles
+Directory3=h:\ese382\lab05s14\BCDTo7Seg\
+Extension3=mak
+Name4=Memory
+Directory4=h:\ese382\lab05s14\BCDTo7Seg\src
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=h:\ese382\lab05s14\BCDTo7Seg\
+Extension5=dll
+Name6=PDF
+Directory6=h:\ese382\lab05s14\BCDTo7Seg\
+Extension6=pdf
+Name7=HTML
+Directory7=h:\ese382\lab05s14\BCDTo7Seg\
+Extension7=
+
+[Files]
+/BCDTo7Seg.vhd=-1
+/BCDTo7Seg_TB.vhd=-1
+
+[Files.Data]
+.\src\BCDTo7Seg.vhd=VHDL Source Code
+.\src\BCDTo7Seg_TB.vhd=VHDL Source Code
+

@@ -1,0 +1,15 @@
+
+GROUP MACH_SEG_A u1_q_3_ u1_cnt_int_count_0_ u1_cnt_int_count_29_ u1_cnt_int_count_28_ 
+      u1_cnt_int_count_27_ u1_cnt_int_count_26_ u1_cnt_int_count_24_ u1_cnt_int_count_6_ 
+      u1_cnt_int_count_21_ u1_cnt_int_count_5_ u1_cnt_int_count_4_ u1_cnt_int_count_18_ 
+      u1_cnt_int_count_2_ u1_cnt_int_count_19_ u1_cnt_int_count_17_ u1_cnt_int_un5_count_26_n 
+      
+GROUP MACH_SEG_B serial_out RN_serial_out u0_q1_1_ u0_q1_2_ u0_q1_3_ u0_q1_4_ 
+      u0_q1_5_ u0_q1_6_ u0_q1_7_ u2_q u1_n_58_n 
+GROUP MACH_SEG_C u1_cnt_int_count_3_ u1_cnt_int_count_13_ u1_cnt_int_count_11_ 
+      u1_cnt_int_count_10_ u1_cnt_int_count_9_ u1_cnt_int_count_8_ u1_cnt_int_count_31_ 
+      u1_cnt_int_count_14_ u1_cnt_int_count_7_ u1_cnt_int_count_30_ u1_cnt_int_count_1_ 
+      sample_clk valid u1_cnt_int_un5_count_28_n 
+GROUP MACH_SEG_D u1_cnt_int_count_12_ u1_cnt_int_count_16_ u1_cnt_int_count_25_ 
+      u1_cnt_int_count_15_ u1_cnt_int_count_23_ u1_cnt_int_count_22_ u1_cnt_int_count_20_ 
+      u1_n_109_n u1_cnt_int_un5_count_27_n u1_n_85_n 

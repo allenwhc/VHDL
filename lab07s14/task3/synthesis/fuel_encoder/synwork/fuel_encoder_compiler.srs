@@ -1,0 +1,64 @@
+%%% protect protected_file
+@E
+@ 
+#
+#
+#
+# Created by Synplify VHDL Compiler version comp550rcp1, Build 072R from Synplicity, Inc.
+# Copyright (C) 1994-2011 Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+# Synthesis Netlist written on Tue Apr 01 09:50:38 2014
+#
+#
+#OPTIONS:"|-top|task3.fuel_encoder|-dfltencoding|sequential|-encrypt|-pro|-lite|-ll|2000|-ui|-fid2|-ram|-sharing|on|-autosm|-ignore_undefined_lib|-lib|task3|-lib|task3"
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\bin\\c_vhdl.exe":1306337548
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\location.map":1305913758
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\std.vhd":1304980548
+#CUR:"H:\\ese382\\lab07s14\\task3\\src\\fuel_encoder.vhd":1396357586
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\std1164.vhd":1304980548
+#CUR:"H:\\ese382\\lab07s14\\task3\\src\\fuel_tb.vhd":1396303260
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\numeric.vhd":1304980548
+f "C:\Synopsys\fpga_E201103SP2\lib\vhd\std.vhd"; # file 0
+af .is_vhdl 1;
+f "H:\ese382\lab07s14\task3\src\fuel_encoder.vhd"; # file 1
+af .is_vhdl 1;
+f "C:\Synopsys\fpga_E201103SP2\lib\vhd\std1164.vhd"; # file 2
+af .is_vhdl 1;
+f "H:\ese382\lab07s14\task3\src\fuel_tb.vhd"; # file 3
+af .is_vhdl 1;
+f "C:\Synopsys\fpga_E201103SP2\lib\vhd\numeric.vhd"; # file 4
+af .is_vhdl 1;
+@E
+@ 
+ftell;
+@E@MR@.4:U::(.4U:UNR0#R	dVDkC_OCMFs8CRCVkDM_COCF8sN;
+PHR3#8PED;R4
+RNP3_H#PDE8R
+4;N3PR#_$MVblNRN"0#R	d\:"]\#\CC.dU\N\DL#j(4\c\0	N#d#\\s\O\VDkC_OCMFs8C38PE\0"
+Nd#	R]\":C\\#UCd.D\\N(Lj#\4c\#0N	\d\#\sO\CVkDL_038PE\""
+;
+
+
+
+@HR@d4:j::ddnj:RCVkD:rdjV9RkrCDd9:j;H
+NR03sDs_FHNoMl"CRVDkC"
+;
+
+@FR@d4:4::dd(4:RbCl0C$Rl$b0_
+4;N3HRs_0DFosHMCNlRl"Cb"0$;
+
+
+
+@FR@d4:.::ddn.:R8DC#:rdjD9RC_8#.C,D84#_r,d9D#C8nN,VD;#C
+RNH3Ds0_HFsolMNCDR"C"8#;R
+b@:@4ddj:::djnMRHPCRD84#_rRd9D#C8_d4r9kRVCdDr9b;
+R4@@::djdj:d:HnRMkPRMV4_krCDc9:.R4kM_CVkD:rc.V9RkrCDd9:4;R
+b@:@4c44:::c4(MRHPMRk4k_VC4D_rdc:9MRk4k_VC4D_rdc:9kRVCdDr:;.9
+@bR@4j::44::0.RsRkC0CskRk0sCb;
+Rj@@:44::.4:RDVN#VCRNCD#RDVN#
+C;b@R@4(:c:cd:(c:4R8NMPCRD8R#gD#C8gkRVC.Dr9kRVCdDr9b;
+R4@@::ccdc:c:R4cNPM8R8DC#DnRCn8#R4kM_CVkDr_4dk9RMV4_k_CD49rc;R
+b@:@4cd(:::c(4HcRMDPRC_8#.CRD8.#_R8DC#
+g;b@R@44:6::4g6c4:dMRN8kPRMCd_l$b0RdkM_bCl0k$RMV4_krCD.k9RMV4_krCDdk9RMV4_krCDc
+9;b@R@44:6::4g6c4:dMRHPlRCb_0$4lRCb_0$4MRkdl_Cb;0$
+
+C;

@@ -1,0 +1,59 @@
+#-- Synopsys, Inc.
+#-- Version E-2011.03-SP2
+#-- Project file H:\ese382\lab07s14\task3\synthesis\fuel_encoder\run_options.txt
+#-- Written on Tue Apr 01 09:50:38 2014
+
+
+#project files
+add_file -vhdl -lib task3 "../src/fuel_encoder.vhd"
+add_file -vhdl -lib task3 "../src/fuel_tb.vhd"
+
+
+#implementation: "fuel_encoder"
+impl -add fuel_encoder -type fpga
+
+#
+#implementation attributes
+
+set_option -vlog_std v2001
+set_option -project_relative_includes 1
+
+#device options
+set_option -technology ISPGAL
+set_option -part ispGAL22LV10
+set_option -package LJ
+set_option -speed_grade -10
+set_option -part_companion ""
+
+#compilation/mapping options
+set_option -top_module "task3.fuel_encoder"
+
+# mapper_options
+set_option -frequency 1
+set_option -write_verilog 0
+set_option -write_vhdl 1
+
+# Lattice ispLSI1K/1KE
+set_option -disable_io_insertion 0
+
+# Lattice ispGAL
+set_option -areadelay 0
+
+# NFilter
+set_option -popfeed 0
+set_option -constprop 0
+set_option -createhierarchy 0
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "./fuel_encoder/fuel_encoder.edf"
+impl -active "fuel_encoder"

@@ -1,0 +1,28 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Tue Apr 29 14:29:45 2014 *
+NOTE DESIGN NAME: count_down_timer *
+NOTE DEVICE NAME: LFXP3C-4TQFP100 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS alarm : 69 : out *
+NOTE PINS rst_bar : 39 : in *
+NOTE PINS minutes[3] : 98 : out *
+NOTE PINS minutes[2] : 97 : out *
+NOTE PINS minutes[1] : 96 : out *
+NOTE PINS minutes[0] : 95 : out *
+NOTE PINS seconds[5] : 67 : out *
+NOTE PINS seconds[4] : 66 : out *
+NOTE PINS seconds[3] : 64 : out *
+NOTE PINS seconds[2] : 63 : out *
+NOTE PINS seconds[1] : 62 : out *
+NOTE PINS seconds[0] : 61 : out *
+NOTE PINS seconds_clk : 45 : in *
+NOTE PINS set_arm : 14 : in *
+NOTE PINS s : 57 : in *
+NOTE PINS bo : 53 : in *
+NOTE PINS ao : 54 : in *
+NOTE PINS bi : 55 : in *
+NOTE PINS ai : 56 : in *
+NOTE PINS clk : 93 : in *
+NOTE CONFIGURATION MODE: JTAG *
+NOTE COMPRESSION: off *

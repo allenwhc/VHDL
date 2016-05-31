@@ -1,0 +1,169 @@
+(edif fuel_encoder
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timeStamp 2014 4 1 9 50 41)
+      (author "Synopsys, Inc.")
+      (program "Synplify Pro" (version "E-201103-SP2, mapper maprc, Build 507R"))
+     )
+   )
+  (external mach
+    (edifLevel 0)
+    (technology (numberDefinition ))
+    (cell AND2 (cellType GENERIC)
+       (view prim (viewType NETLIST)
+         (interface
+           (port O (direction OUTPUT))
+           (port I0 (direction INPUT))
+           (port I1 (direction INPUT))
+         )
+       )
+    )
+    (cell IBUF (cellType GENERIC)
+       (view prim (viewType NETLIST)
+         (interface
+           (port O (direction OUTPUT))
+           (port I0 (direction INPUT))
+         )
+       )
+    )
+    (cell INV (cellType GENERIC)
+       (view prim (viewType NETLIST)
+         (interface
+           (port O (direction OUTPUT))
+           (port I0 (direction INPUT))
+         )
+       )
+    )
+    (cell OBUF (cellType GENERIC)
+       (view prim (viewType NETLIST)
+         (interface
+           (port O (direction OUTPUT))
+           (port I0 (direction INPUT))
+         )
+       )
+    )
+  )
+  (library task3
+    (edifLevel 0)
+    (technology (numberDefinition ))
+    (cell fuel_encoder (cellType GENERIC)
+       (view fuel_encoder (viewType NETLIST)
+         (interface
+           (port (array (rename fuel "fuel(3:0)") 4) (direction INPUT))
+           (port (array (rename leds "leds(3:0)") 4) (direction OUTPUT))
+           (port empty (direction OUTPUT))
+         )
+         (contents
+          (instance (rename fuel_1 "fuel[1]") (viewRef prim (cellRef IBUF (libraryRef mach)))          )
+          (instance (rename fuel_2 "fuel[2]") (viewRef prim (cellRef IBUF (libraryRef mach)))          )
+          (instance (rename fuel_3 "fuel[3]") (viewRef prim (cellRef IBUF (libraryRef mach)))          )
+          (instance empty (viewRef prim (cellRef OBUF (libraryRef mach)))          )
+          (instance (rename leds_0 "leds[0]") (viewRef prim (cellRef OBUF (libraryRef mach)))          )
+          (instance (rename leds_1 "leds[1]") (viewRef prim (cellRef OBUF (libraryRef mach)))          )
+          (instance (rename leds_2 "leds[2]") (viewRef prim (cellRef OBUF (libraryRef mach)))          )
+          (instance (rename leds_3 "leds[3]") (viewRef prim (cellRef OBUF (libraryRef mach)))          )
+          (instance leds9_i_s_i (viewRef prim (cellRef INV (libraryRef mach)))          )
+          (instance (rename fuel_i_1 "fuel_i[1]") (viewRef prim (cellRef INV (libraryRef mach)))          )
+          (instance un3_empty_0_a2 (viewRef prim (cellRef AND2 (libraryRef mach)))          )
+          (instance leds6_0_a2 (viewRef prim (cellRef AND2 (libraryRef mach)))          )
+          (instance (rename fuel_i_2 "fuel_i[2]") (viewRef prim (cellRef INV (libraryRef mach)))          )
+          (instance leds9_i_s (viewRef prim (cellRef AND2 (libraryRef mach)))          )
+          (instance (rename fuel_i_3 "fuel_i[3]") (viewRef prim (cellRef INV (libraryRef mach)))          )
+          (instance un3_empty_i (viewRef prim (cellRef INV (libraryRef mach)))          )
+          (net GND (joined
+           (portRef I0 (instanceRef leds_0))
+          ))
+          (net leds6 (joined
+           (portRef O (instanceRef leds6_0_a2))
+           (portRef I1 (instanceRef un3_empty_0_a2))
+           (portRef I0 (instanceRef leds_1))
+          ))
+          (net un3_empty (joined
+           (portRef O (instanceRef un3_empty_0_a2))
+           (portRef I0 (instanceRef un3_empty_i))
+          ))
+          (net N_4 (joined
+           (portRef O (instanceRef leds9_i_s_i))
+           (portRef I0 (instanceRef leds_3))
+          ))
+          (net (rename fuel_i_3 "fuel_i[3]") (joined
+           (portRef O (instanceRef fuel_i_3))
+           (portRef I1 (instanceRef leds6_0_a2))
+           (portRef I0 (instanceRef leds_2))
+          ))
+          (net un3_empty_i (joined
+           (portRef O (instanceRef un3_empty_i))
+           (portRef I0 (instanceRef empty))
+          ))
+          (net (rename fuel_i_2 "fuel_i[2]") (joined
+           (portRef O (instanceRef fuel_i_2))
+           (portRef I0 (instanceRef leds6_0_a2))
+          ))
+          (net (rename fuel_i_1 "fuel_i[1]") (joined
+           (portRef O (instanceRef fuel_i_1))
+           (portRef I0 (instanceRef un3_empty_0_a2))
+          ))
+          (net (rename fuel_0 "fuel[0]") (joined
+           (portRef (member fuel 3))
+          ))
+          (net (rename fuel_c_1 "fuel_c[1]") (joined
+           (portRef O (instanceRef fuel_1))
+           (portRef I0 (instanceRef fuel_i_1))
+          ))
+          (net (rename fuel_1 "fuel[1]") (joined
+           (portRef (member fuel 2))
+           (portRef I0 (instanceRef fuel_1))
+          ))
+          (net (rename fuel_c_2 "fuel_c[2]") (joined
+           (portRef O (instanceRef fuel_2))
+           (portRef I0 (instanceRef leds9_i_s))
+           (portRef I0 (instanceRef fuel_i_2))
+          ))
+          (net (rename fuel_2 "fuel[2]") (joined
+           (portRef (member fuel 1))
+           (portRef I0 (instanceRef fuel_2))
+          ))
+          (net (rename fuel_c_3 "fuel_c[3]") (joined
+           (portRef O (instanceRef fuel_3))
+           (portRef I0 (instanceRef fuel_i_3))
+           (portRef I1 (instanceRef leds9_i_s))
+          ))
+          (net (rename fuel_3 "fuel[3]") (joined
+           (portRef (member fuel 0))
+           (portRef I0 (instanceRef fuel_3))
+          ))
+          (net empty (joined
+           (portRef O (instanceRef empty))
+           (portRef empty)
+          ))
+          (net (rename leds_0 "leds[0]") (joined
+           (portRef O (instanceRef leds_0))
+           (portRef (member leds 3))
+          ))
+          (net (rename leds_1 "leds[1]") (joined
+           (portRef O (instanceRef leds_1))
+           (portRef (member leds 2))
+          ))
+          (net (rename leds_2 "leds[2]") (joined
+           (portRef O (instanceRef leds_2))
+           (portRef (member leds 1))
+          ))
+          (net (rename leds_3 "leds[3]") (joined
+           (portRef O (instanceRef leds_3))
+           (portRef (member leds 0))
+          ))
+          (net N_4_0 (joined
+           (portRef O (instanceRef leds9_i_s))
+           (portRef I0 (instanceRef leds9_i_s_i))
+          ))
+          (net VCC (joined
+          ))
+         )
+       )
+    )
+  )
+  (design fuel_encoder (cellRef fuel_encoder (libraryRef task3)))
+)

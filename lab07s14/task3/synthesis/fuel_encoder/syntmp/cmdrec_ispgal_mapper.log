@@ -1,0 +1,9 @@
+C:\Synopsys\fpga_E201103SP2\bin\m_cpld.exe  -prodtype synplify_pro -encrypt  -pro  -part ispGAL22LV10  -package LJ  -grade -10   -areadelay 0 -minc    -ovhdl "fuel_encoder.vhm"  -top_level_module  task3.fuel_encoder  -oedif  H:\ese382\lab07s14\task3\synthesis\fuel_encoder\fuel_encoder.edf  -freq 1.000  H:\ese382\lab07s14\task3\synthesis\fuel_encoder\fuel_encoder.srs  -devicelib  C:\Synopsys\fpga_E201103SP2\lib\cpld\lattice.v  -ologparam  H:\ese382\lab07s14\task3\synthesis\fuel_encoder\syntmp\fuel_encoder.plg  -osyn  H:\ese382\lab07s14\task3\synthesis\fuel_encoder\fuel_encoder.srm  -prjdir h:\ese382\lab07s14\task3\synthesis\  -log  H:\ese382\lab07s14\task3\synthesis\fuel_encoder\synlog\fuel_encoder_ISPGAL_Mapper.srr 
+rc:0 success:1
+H:\ese382\lab07s14\task3\synthesis\fuel_encoder\fuel_encoder.edf|o|1396360241|6617
+H:\ese382\lab07s14\task3\synthesis\fuel_encoder\fuel_encoder.srs|i|1396360238|2523
+C:\Synopsys\fpga_E201103SP2\lib\cpld\lattice.v|i|1304989762|210380
+H:\ese382\lab07s14\task3\synthesis\fuel_encoder\syntmp\fuel_encoder.plg|o|1396360241|0
+H:\ese382\lab07s14\task3\synthesis\fuel_encoder\fuel_encoder.srm|o|1396360241|3390
+H:\ese382\lab07s14\task3\synthesis\fuel_encoder\synlog\fuel_encoder_ISPGAL_Mapper.srr|o|1396360241|882
+C:\Synopsys\fpga_E201103SP2\bin\m_cpld.exe|i|1305649316|8888320

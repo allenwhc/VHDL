@@ -1,0 +1,77 @@
+%%% protect protected_file
+@E
+@ 
+#
+#
+#
+# Created by Synplify VHDL Compiler version comp550rcp1, Build 072R from Synplicity, Inc.
+# Copyright (C) 1994-2011 Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+# Synthesis Netlist written on Tue Feb 25 11:20:41 2014
+#
+#
+#OPTIONS:"|-dfltencoding|sequential|-encrypt|-pro|-lite|-ll|2000|-ui|-fid2|-ram|-sharing|on|-autosm|-ignore_undefined_lib|-lib|work"
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\bin\\c_vhdl.exe":1306333948
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\location.map":1305910158
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\std.vhd":1304976948
+#CUR:"H:\\ese382\\lab03s14\\lab03s14\\src\\selected.vhd":1393344481
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\std1164.vhd":1304976948
+f "C:\Synopsys\fpga_E201103SP2\lib\vhd\std.vhd"; # file 0
+af .is_vhdl 1;
+f "H:\ese382\lab03s14\lab03s14\src\selected.vhd"; # file 1
+af .is_vhdl 1;
+f "C:\Synopsys\fpga_E201103SP2\lib\vhd\std1164.vhd"; # file 2
+af .is_vhdl 1;
+@E
+@ 
+ftell;
+@E@MR@.4:U::(.4U:cFRIs#	RCODC0RC8#CCDO80C;P
+NR#3HPDE8R
+4;N3PRHP#_ER8D4N;
+P#R3$VM_lRNb"sIF	"R\]\:\Cd#CU\.\DjNLdc#4\N\DL#jd4\c\#\sO\D#CCCO08E3P8
+\""
+;
+
+@HR@d4:j::dddj:RbbR;H
+NR03sDs_FHNoMl"CRb
+";NDHRF"ORu;d"
+@HR@d4:4::ddd4:RJJR;H
+NR03sDs_FHNoMl"CRJ
+";NDHRF"ORu;c"
+@HR@d4:.::ddd.:RssR;H
+NR03sDs_FHNoMl"CRs
+";NDHRF"ORu;6"
+@HR@d4:d::dddd:R##R;H
+NR03sDs_FHNoMl"CR#
+";NDHRF"ORu;n"
+@FR@d4:c::dddc:RNNR;H
+NR03sDs_FHNoMl"CRN
+";NDHRF"ORu".c;
+
+
+
+@FR@d4:6::ddd6:RLLR_
+4;N3HRs_0DFosHMCNlR""L;H
+NRODFR."u6
+";
+@FR@d4:n::dddn:ROOR_
+4;N3HRs_0DFosHMCNlR""O;H
+NRODFR."un
+";
+@FR@d4:(::ddd(:R88R_
+4;N3HRs_0DFosHMCNlR""8;H
+NRODFR."u(
+";b@R@4d:d:dd:dR:dLRkVNRRN#b;
+Rj@@:44::.4:Rk0sCsR0k0CRs;kC
+@bR@4j::44::V.RNCD#RDVN#VCRNCD#;R
+b@:@4nd6:c6:n:RdgHRMPk_M4#:rc(k9RM#4_r(c:9,RbJ,,s#b;
+R4@@::njdn(:j.:cR8NMPMRk4__#4MRk4__#4RR#s;Rb
+@bR@n4:nn:4::nn.N4RMR8P8R_48R_4sRRJbb;
+R4@@::njdnj:j6:dR8NMPMRk4__#.MRk4__#.MRk4r_#(k9RM#4_rRn9k_M4#9rc;R
+b@:@4ndd:(d:n:Rc.NPM8R4kM_d#_R4kM_d#_R4kM_6#r9MRk4r_#c
+9;b@R@4d:n::.dn.d:UMRN8kPRM#4__kcRM#4__kcRM#4_rRn9k_M4#9r6R4kM_c#r9b;
+R4@@::n...:n:F6RskPRM84_R4kM_88R_k4RM#4__
+d;b@R@4.:n:n.:.R:6HRMPOR_4OR_4k_M48b;
+R4@@::6g.g:6:F6RskPRM#4__k6RM#4__k6RM#4__8.R_k4RM#4__k4RM#4__
+c;b@R@4g:6:6.:gR:6HRMPLR_4LR_4k_M4#;_6
+
+C;

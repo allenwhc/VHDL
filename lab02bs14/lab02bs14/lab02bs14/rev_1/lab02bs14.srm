@@ -1,0 +1,119 @@
+%%% protect protected_file
+f "noname"; #file 0
+f "c:\synopsys\fpga_e201103sp2\lib\vhd\std.vhd"; #file 1
+af  .is_vhdl 1;
+f "h:\ese382\lab02bs14\lab02bs14\src\half_adder.vhd"; #file 2
+af  .is_vhdl 1;
+f "c:\synopsys\fpga_e201103sp2\lib\vhd\std1164.vhd"; #file 3
+af  .is_vhdl 1;
+VNAME 'mach.IBUF.prim'; # view id 0
+VNAME 'mach.OBUF.prim'; # view id 1
+VNAME 'mach.AND2.prim'; # view id 2
+VNAME 'mach.INV.prim'; # view id 3
+VNAME 'mach.XOR2.prim'; # view id 4
+@ERMRlENORzQAwsRbH
+l;N3PRHs#bH4lR;R
+FmH;
+R;Qj
+RNH3bH#N48R;R
+bfjj:RVLkRmmRR;Qj
+fbRjR:j0CskRk0sCBReBb;
+R:fjjNRVDR#CV#NDChRt7M;
+RNRlOmERARzwblsH;P
+NR#3HblsHR
+4;F;Rm
+RNH3bH#N48R;R
+HQ
+j;bjRf:LjRkmVRRQmRjb;
+R:fjjsR0k0CRsRkCe;BB
+fbRjR:jV#NDCNRVDR#Ct;h7
+RMRlENOR7qh.sRbH
+l;N3PRHs#bH4lR;R
+FmH;
+R;Qj
+QHR4b;
+R:fjjsR0k0CRsRkCe;BB
+fbRjR:jV#NDCNRVDR#Ct;h7
+fbRjR:jNPM8RmmRRRQjQ
+4;MlRRNROEQRheblsH;P
+NR#3HblsHR
+4;F;Rm
+QHRjb;
+R:fjjMRHPRRmmjRQ;R
+bfjj:Rk0sCsR0keCRB
+B;bjRf:VjRNCD#RDVN#tCRh
+7;MlRRNROEX.m)RHbslN;
+PHR3#Hbsl;R4
+mFR;R
+HQ
+j;H4RQ;R
+bfjj:Rk0sCsR0keCRB
+B;bjRf:VjRNCD#RDVN#tCRh
+7;bjRf:GjRFRsPmRRmQQjR4@;
+ 
+
+
+
+ftell;
+@E@MR@..:U::(.4U:nIRRFRs	EVND_8N8CEsRN_DVNC88sN;
+PDR3HMMCF.R.;P
+NR#3HPDE8R
+4;N3PRHP#_ER8D4N;
+P#R3$VM_lRNb"sIF	"R\]\:\Cd#CU\.\DjNL.4L#cD\\N.LjLc#4\s\#OE\\N_DVNC88sE3P8\\"M
+";N3PRVIDF_N#00{CR
+RNP3FVDIN_bs0CM_#Hb_#N#HCoM8;R4
+RNP3FVDIs_bF_b#NDbbHRC84N;
+PVR3D_FIDbFF#s_LFM	CR
+j;N3PRVIDF_HkMJVkHHRC84};
+;P
+NR83OLN_#P{CR
+RNP#_$MsCCVsOCMCD_OFRO	{P
+NR#1$0RCl{P
+NR$3#MC_sVFODO0	_$RbCg};
+;;
+}
+
+};N3PRFFL#bF08M4CR;R
+H@:@.ddj:::djdR:NNN;
+HsR30FD_sMHoNRlC";N"
+RNHDRFO""ud;R
+H@:@.dd4:::d4dR:LLN;
+HsR30FD_sMHoNRlC";L"
+RNHDRFO""uc;R
+F@:@.dd.:::d.6k:#lkR#lN;
+HsR30FD_sMHoNRlC"l#k"N;
+HFRDOuR".;("
+@FR@d.:d::dd4d:4N:Os_s$FRk0OsNs$k_F0N;
+HsR30FD_sMHoNRlC"sONsF$_k;0"
+RNHDRFO"nu."s;
+R:fjjNRlOQERARzwblsHRSN
+m_=NOQ
+Sj;=N
+fsRjR:jlENORzQAwsRbHLlR
+=SmL
+_OS=QjLs;
+R:fjjNRlOmERARzwblsHRl#k
+=Sm#
+klS=Qjh__dj;_H
+fsRjR:jlENORzmAwsRbHOlRN$ss_0Fk
+=SmOsNs$k_F0Q
+Sj_=h.s;
+R:fjjNRlOqERhR7.blsHR
+l4Shm=_S.
+QNj=_SO
+QL4=_
+O;sjRf:ljRNROEQRheblsHRHN_
+=SmN
+_HS=QjN;_O
+fsRjR:jlENOR)Xm.sRbHllR.m
+S=dh__Sj
+QNj=_SH
+QL4=_
+O;sjRf:ljRNROEQRheblsHRdh__Hj_
+=Smh__dj
+_HS=Qjh__djb;
+R:fjjNRVDR#CtRh7t;h7
+fbRjR:j0CskRBeBRBeB;
+
+
+

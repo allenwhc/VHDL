@@ -1,0 +1,35 @@
+Active-HDL 9.1.2353.4205  2014-03-04 08:49:42
+
+Elaboration top modules:
+Architecture                  tb_architecture(converter_2421_bcd_tb)
+
+
+---------------------------------------------------------------------------------------------------------------
+Entity                | Architecture    | Library      | Info | Compiler Version         | Compilation Options
+---------------------------------------------------------------------------------------------------------------
+converter_2421_bcd_tb | tb_architecture | if_statement |      | 9.1.2353.4205  (Windows) | -dbg
+converter_if          | converter_if    | if_statement |      | 9.1.2353.4205  (Windows) | -dbg
+---------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------
+VHDL Package                            | Library      | Info | Compiler Version         | Compilation Options
+---------------------------------------------------------------------------------------------------------------
+standard                                | std          |      |                          | <unavailable>
+TEXTIO                                  | std          |      | 9.1.2353.4205  (Windows) |  -2008
+std_logic_1164                          | ieee         |      | 9.1.2353.4205  (Windows) |  -2008
+NUMERIC_STD                             | ieee         |      | 9.1.2353.4205  (Windows) |  -2008
+---------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------
+Library                                 | Comment
+---------------------------------------------------------------------------------------------------------------
+ieee                                    | Standard IEEE packages library
+if_statement                            | None
+std                                     | Standard VHDL library
+---------------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+converter_2421_bcd_tb converter_2421_bcd_tb tb_architecture
+
+
+The performance of simulation is reduced. Version EDU Edition

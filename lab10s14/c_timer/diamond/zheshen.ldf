@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="1.3" title="zheshen" device="LFXP3C-4T100C" default_implementation="zheshen">
+    <Options/>
+    <Implementation title="zheshen" dir="zheshen" description="zheshen" default_strategy="Strategy1">
+        <Options/>
+        <Source name="../synplify/rev_2/zhe shen.edn" type="EDIF" type_short="EDIF">
+            <Options/>
+        </Source>
+        <Source name="zheshen.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="Strategy1.sty"/>
+</BaliProject>

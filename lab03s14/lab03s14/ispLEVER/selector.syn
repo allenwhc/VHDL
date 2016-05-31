@@ -1,0 +1,10 @@
+JDF B
+// Created by Version 7.0 
+PROJECT selector
+DESIGN selector Normal
+DEVKIT ispGAL22V10C-10LJ
+ENTRY EDIF
+MODULE ..\synplify\rev_2\proj_1.edf
+MODSTYLE selected Normal
+SYNTHESIS_TOOL Synplify
+TOPMODULE selected

@@ -1,0 +1,39 @@
+Active-HDL 9.1.2353.4205  2014-03-25 09:02:08
+
+Elaboration top modules:
+Architecture                  behavior(ha_mixed_tb)
+
+
+----------------------------------------------------------------------------------------------------
+Entity      | Architecture | Library        | Info | Compiler Version         | Compilation Options
+----------------------------------------------------------------------------------------------------
+ha_mixed_tb | behavior     | ha_simnet_hier |      | 9.1.2353.4205  (Windows) | -dbg
+half_adder  | dataflow     | ha_simnet_hier |      | 9.1.2353.4205  (Windows) | -dbg
+xor_2       | dataflow     | ha_simnet_hier |      | 9.1.2353.4205  (Windows) | -dbg
+inv         | dataflow     | ha_simnet_hier |      | 9.1.2353.4205  (Windows) | -dbg
+and_2       | dataflow     | ha_simnet_hier |      | 9.1.2353.4205  (Windows) | -dbg
+or_2        | dataflow     | ha_simnet_hier |      | 9.1.2353.4205  (Windows) | -dbg
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+VHDL Package               | Library        | Info | Compiler Version         | Compilation Options
+----------------------------------------------------------------------------------------------------
+standard                   | std            |      |                          | <unavailable>
+TEXTIO                     | std            |      | 9.1.2353.4205  (Windows) |  -2008
+std_logic_1164             | ieee           |      | 9.1.2353.4205  (Windows) |  -2008
+NUMERIC_STD                | ieee           |      | 9.1.2353.4205  (Windows) |  -2008
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Library                    | Comment
+----------------------------------------------------------------------------------------------------
+ha_simnet_hier             | None
+ieee                       | Standard IEEE packages library
+std                        | Standard VHDL library
+----------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+ha_mixed_tb ha_mixed_tb behavior
+
+
+The performance of simulation is reduced. Version EDU Edition

@@ -1,0 +1,4 @@
+MESSAGE "File: h:\ese382\lab10s14\c_timer\src\timer.vhd" 
+MESSAGE "Compile Entity "count_down_timer"" 
+MESSAGE "Compile Architecture "dataflow" of Entity "count_down_timer"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

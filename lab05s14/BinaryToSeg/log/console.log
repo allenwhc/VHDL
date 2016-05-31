@@ -1,0 +1,503 @@
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: Flow Manager: Not Defined
+acom -reorder -dbg -work BinaryToSeg -2002  $dsn/src/BinaryToSeg.vhd
+# Compile with File Reorder...
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg.vhd
+# Compile Entity "BinaryToSeg"
+# Compile Architecture "BinaryToSeg" of Entity "BinaryToSeg"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => BinaryToSeg
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg.vhd
+# Compile Architecture "BinaryToSeg" of Entity "BinaryToSeg"
+# Error: COMP96_0078: BinaryToSeg.vhd : (44, 17): Unknown identifier "unsigned".
+# Error: COMP96_0064: BinaryToSeg.vhd : (44, 17): Unknown type.
+# Error: COMP96_0078: BinaryToSeg.vhd : (47, 8): Unknown identifier "bin".
+# Error: COMP96_0133: BinaryToSeg.vhd : (47, 8): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (47, 8): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (55, 3): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (55, 3): Cannot find object declaration.
+# Error: COMP96_0078: BinaryToSeg.vhd : (56, 3): Unknown identifier "bcd1".
+# Error: COMP96_0133: BinaryToSeg.vhd : (56, 3): Cannot find object declaration.
+# Error: COMP96_0078: BinaryToSeg.vhd : (58, 11): Unknown identifier "unsigned".
+# Error: COMP96_0149: BinaryToSeg.vhd : (59, 41): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: BinaryToSeg.vhd : (62, 6): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (62, 6): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (62, 5): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (64, 10): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (64, 10): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (64, 9): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (66, 10): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (66, 10): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (66, 9): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (68, 10): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (68, 10): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (68, 9): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (70, 11): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (70, 11): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (70, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (72, 10): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (72, 10): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (72, 9): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (74, 9): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (74, 9): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (74, 8): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (76, 10): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (76, 10): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (76, 9): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (78, 10): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (78, 10): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (78, 9): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (80, 10): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (80, 10): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (80, 9): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (84, 6): Unknown identifier "bcd1".
+# Error: COMP96_0133: BinaryToSeg.vhd : (84, 6): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (84, 5): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (86, 10): Unknown identifier "bcd1".
+# Error: COMP96_0133: BinaryToSeg.vhd : (86, 10): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (86, 9): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (88, 10): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (88, 10): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (88, 9): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (90, 10): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (90, 10): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (90, 9): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (92, 11): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (92, 11): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (92, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (94, 10): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (94, 10): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (94, 9): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (96, 9): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (96, 9): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (96, 8): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (98, 10): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (98, 10): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (98, 9): Undefined type of expression. Expected type 'BOOLEAN'.
+# Compile failure 65 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -dbg -work BinaryToSeg -2002  $dsn/src/BinaryToSeg.vhd
+# Compile...
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg.vhd
+# Compile Entity "BinaryToSeg"
+# Compile Architecture "BinaryToSeg" of Entity "BinaryToSeg"
+# Error: COMP96_0078: BinaryToSeg.vhd : (44, 17): Unknown identifier "unsigned".
+# Error: COMP96_0064: BinaryToSeg.vhd : (44, 17): Unknown type.
+# Error: COMP96_0078: BinaryToSeg.vhd : (55, 3): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (55, 3): Cannot find object declaration.
+# Error: COMP96_0078: BinaryToSeg.vhd : (56, 3): Unknown identifier "bcd1".
+# Error: COMP96_0133: BinaryToSeg.vhd : (56, 3): Cannot find object declaration.
+# Error: COMP96_0078: BinaryToSeg.vhd : (58, 11): Unknown identifier "unsigned".
+# Error: COMP96_0149: BinaryToSeg.vhd : (59, 41): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: BinaryToSeg.vhd : (62, 6): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (62, 6): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (62, 5): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (64, 10): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (64, 10): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (64, 9): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (66, 10): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (66, 10): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (66, 9): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (68, 10): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (68, 10): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (68, 9): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (70, 11): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (70, 11): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (70, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (72, 10): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (72, 10): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (72, 9): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (74, 9): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (74, 9): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (74, 8): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (76, 10): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (76, 10): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (76, 9): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (78, 10): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (78, 10): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (78, 9): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (80, 10): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (80, 10): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (80, 9): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (84, 6): Unknown identifier "bcd1".
+# Error: COMP96_0133: BinaryToSeg.vhd : (84, 6): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (84, 5): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (86, 10): Unknown identifier "bcd1".
+# Error: COMP96_0133: BinaryToSeg.vhd : (86, 10): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (86, 9): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (88, 10): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (88, 10): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (88, 9): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (90, 10): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (90, 10): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (90, 9): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (92, 11): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (92, 11): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (92, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (94, 10): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (94, 10): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (94, 9): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (96, 9): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (96, 9): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (96, 8): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: BinaryToSeg.vhd : (98, 10): Unknown identifier "bcd0".
+# Error: COMP96_0133: BinaryToSeg.vhd : (98, 10): Cannot find object declaration.
+# Error: COMP96_0077: BinaryToSeg.vhd : (98, 9): Undefined type of expression. Expected type 'BOOLEAN'.
+# Compile failure 62 Errors 0 Warnings  Analysis time :  93.0 [ms]
+acom -dbg -work BinaryToSeg -2002  $dsn/src/BinaryToSeg.vhd
+# Compile...
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg.vhd
+# Compile Entity "BinaryToSeg"
+# Compile Architecture "BinaryToSeg" of Entity "BinaryToSeg"
+# Error: COMP96_0078: BinaryToSeg.vhd : (44, 17): Unknown identifier "unsigned".
+# Error: COMP96_0064: BinaryToSeg.vhd : (44, 17): Unknown type.
+# Error: COMP96_0123: BinaryToSeg.vhd : (59, 3): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: BinaryToSeg.vhd : (59, 3): Object "bcd0" may not be written
+# Error: COMP96_0123: BinaryToSeg.vhd : (60, 3): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: BinaryToSeg.vhd : (60, 3): Object "bcd1" may not be written
+# Error: COMP96_0078: BinaryToSeg.vhd : (62, 11): Unknown identifier "unsigned".
+# Error: COMP96_0149: BinaryToSeg.vhd : (63, 41): Explicit type conversions are allowed between closely related types only.
+# Compile failure 8 Errors 0 Warnings  Analysis time :  94.0 [ms]
+acom -dbg -work BinaryToSeg -2002  $dsn/src/BinaryToSeg.vhd
+# Compile...
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg.vhd
+# Compile Entity "BinaryToSeg"
+# Compile Architecture "BinaryToSeg" of Entity "BinaryToSeg"
+# Error: COMP96_0015: BinaryToSeg.vhd : (67, 10): ')' expected.
+# Error: COMP96_0019: BinaryToSeg.vhd : (67, 12): Keyword 'then' expected.
+# Error: COMP96_0019: BinaryToSeg.vhd : (69, 3): Keyword 'end' expected.
+# Error: COMP96_0019: BinaryToSeg.vhd : (71, 3): Keyword 'end' expected.
+# Error: COMP96_0016: BinaryToSeg.vhd : (71, 9): Design unit declaration expected.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  94.0 [ms]
+acom -dbg -work BinaryToSeg -2002  $dsn/src/BinaryToSeg.vhd
+# Compile...
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg.vhd
+# Compile Entity "BinaryToSeg"
+# Compile Architecture "BinaryToSeg" of Entity "BinaryToSeg"
+# Error: COMP96_0078: BinaryToSeg.vhd : (48, 17): Unknown identifier "unsigned".
+# Error: COMP96_0064: BinaryToSeg.vhd : (48, 17): Unknown type.
+# Error: COMP96_0078: BinaryToSeg.vhd : (62, 11): Unknown identifier "unsigned".
+# Error: COMP96_0149: BinaryToSeg.vhd : (63, 41): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0110: BinaryToSeg.vhd : (89, 4): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: BinaryToSeg.vhd : (91, 4): Signal cannot be the target of a variable assignment.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -dbg -work BinaryToSeg -2002  $dsn/src/BinaryToSeg.vhd
+# Compile...
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg.vhd
+# Compile Entity "BinaryToSeg"
+# Compile Architecture "BinaryToSeg" of Entity "BinaryToSeg"
+# Error: COMP96_0078: BinaryToSeg.vhd : (49, 17): Unknown identifier "unsigned".
+# Error: COMP96_0064: BinaryToSeg.vhd : (49, 17): Unknown type.
+# Error: COMP96_0078: BinaryToSeg.vhd : (63, 11): Unknown identifier "unsigned".
+# Error: COMP96_0149: BinaryToSeg.vhd : (64, 41): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0110: BinaryToSeg.vhd : (90, 4): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: BinaryToSeg.vhd : (92, 4): Signal cannot be the target of a variable assignment.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -dbg -work BinaryToSeg -2002  $dsn/src/BinaryToSeg.vhd
+# Compile...
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg.vhd
+# Compile Entity "BinaryToSeg"
+# Compile Architecture "BinaryToSeg" of Entity "BinaryToSeg"
+# Error: COMP96_0078: BinaryToSeg.vhd : (47, 17): Unknown identifier "unsigned".
+# Error: COMP96_0064: BinaryToSeg.vhd : (47, 17): Unknown type.
+# Error: COMP96_0078: BinaryToSeg.vhd : (61, 11): Unknown identifier "unsigned".
+# Error: COMP96_0149: BinaryToSeg.vhd : (62, 41): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0110: BinaryToSeg.vhd : (88, 4): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: BinaryToSeg.vhd : (90, 4): Signal cannot be the target of a variable assignment.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  93.0 [ms]
+acom -dbg -work BinaryToSeg -2002  $dsn/src/BinaryToSeg.vhd
+# Compile...
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg.vhd
+# Compile Entity "BinaryToSeg"
+# Compile Architecture "BinaryToSeg" of Entity "BinaryToSeg"
+# Error: COMP96_0078: BinaryToSeg.vhd : (46, 17): Unknown identifier "unsigned".
+# Error: COMP96_0064: BinaryToSeg.vhd : (46, 17): Unknown type.
+# Error: COMP96_0078: BinaryToSeg.vhd : (62, 11): Unknown identifier "unsigned".
+# Error: COMP96_0149: BinaryToSeg.vhd : (63, 41): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0110: BinaryToSeg.vhd : (89, 4): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: BinaryToSeg.vhd : (91, 4): Signal cannot be the target of a variable assignment.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -dbg -work BinaryToSeg -2002  $dsn/src/BinaryToSeg.vhd
+# Compile...
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg.vhd
+# Compile Entity "BinaryToSeg"
+# Compile Architecture "BinaryToSeg" of Entity "BinaryToSeg"
+# Error: COMP96_0078: BinaryToSeg.vhd : (46, 17): Unknown identifier "unsigned".
+# Error: COMP96_0064: BinaryToSeg.vhd : (46, 17): Unknown type.
+# Error: COMP96_0078: BinaryToSeg.vhd : (62, 11): Unknown identifier "unsigned".
+# Error: COMP96_0149: BinaryToSeg.vhd : (63, 41): Explicit type conversions are allowed between closely related types only.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -dbg -work BinaryToSeg -2002  $dsn/src/BinaryToSeg.vhd
+# Compile...
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg.vhd
+# Compile Entity "BinaryToSeg"
+# Compile Architecture "BinaryToSeg" of Entity "BinaryToSeg"
+# Error: COMP96_0078: BinaryToSeg.vhd : (46, 19): Unknown identifier "unsigned".
+# Error: COMP96_0064: BinaryToSeg.vhd : (46, 19): Unknown type.
+# Error: COMP96_0078: BinaryToSeg.vhd : (62, 11): Unknown identifier "unsigned".
+# Error: COMP96_0149: BinaryToSeg.vhd : (63, 41): Explicit type conversions are allowed between closely related types only.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -dbg -work BinaryToSeg -2002  $dsn/src/BinaryToSeg.vhd $dsn/src/BinaryToSeg_TB.vhd
+# Compile...
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg.vhd
+# Compile Entity "BinaryToSeg"
+# Compile Architecture "BinaryToSeg" of Entity "BinaryToSeg"
+# Error: COMP96_0078: BinaryToSeg.vhd : (46, 19): Unknown identifier "unsigned".
+# Error: COMP96_0064: BinaryToSeg.vhd : (46, 19): Unknown type.
+# Error: COMP96_0078: BinaryToSeg.vhd : (62, 11): Unknown identifier "unsigned".
+# Error: COMP96_0149: BinaryToSeg.vhd : (63, 41): Explicit type conversions are allowed between closely related types only.
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg_TB.vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Error: COMP96_0078: BinaryToSeg_TB.vhd : (21, 15): Unknown identifier "BCDTo7Seg".
+# Error: COMP96_0056: BinaryToSeg_TB.vhd : (21, 15): Cannot find referenced entity declaration "BCDTo7Seg".
+# Error: COMP96_0055: BinaryToSeg_TB.vhd : (21, 15): Cannot find referenced context element.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -dbg -work BinaryToSeg -2002  $dsn/src/BinaryToSeg.vhd $dsn/src/BinaryToSeg_TB.vhd
+# Compile...
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg.vhd
+# Compile Entity "BinaryToSeg"
+# Compile Architecture "BinaryToSeg" of Entity "BinaryToSeg"
+# Error: COMP96_0078: BinaryToSeg.vhd : (46, 19): Unknown identifier "unsigned".
+# Error: COMP96_0064: BinaryToSeg.vhd : (46, 19): Unknown type.
+# Error: COMP96_0078: BinaryToSeg.vhd : (62, 11): Unknown identifier "unsigned".
+# Error: COMP96_0149: BinaryToSeg.vhd : (63, 41): Explicit type conversions are allowed between closely related types only.
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg_TB.vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Error: COMP96_0078: BinaryToSeg_TB.vhd : (24, 3): Unknown identifier "bcd".
+# Error: COMP96_0133: BinaryToSeg_TB.vhd : (24, 3): Cannot find object declaration.
+# Error: COMP96_0112: BinaryToSeg_TB.vhd : (24, 3): "bcd" does not match the formal name.
+# Error: COMP96_0207: BinaryToSeg_TB.vhd : (22, 0): No actual specified for local port "binary".
+# Compile failure 8 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -dbg -work BinaryToSeg -2002  $dsn/src/BinaryToSeg.vhd $dsn/src/BinaryToSeg_TB.vhd
+# Compile...
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg.vhd
+# Compile Entity "BinaryToSeg"
+# Compile Architecture "BinaryToSeg" of Entity "BinaryToSeg"
+# Error: COMP96_0078: BinaryToSeg.vhd : (46, 19): Unknown identifier "unsigned".
+# Error: COMP96_0064: BinaryToSeg.vhd : (46, 19): Unknown type.
+# Error: COMP96_0078: BinaryToSeg.vhd : (62, 11): Unknown identifier "unsigned".
+# Error: COMP96_0149: BinaryToSeg.vhd : (63, 41): Explicit type conversions are allowed between closely related types only.
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg_TB.vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Error: COMP96_0367: BinaryToSeg_TB.vhd : (24, 11): Improper array length (4). Expected length is 6.
+# Error: COMP96_0078: BinaryToSeg_TB.vhd : (33, 4): Unknown identifier "bcd".
+# Error: COMP96_0133: BinaryToSeg_TB.vhd : (33, 4): Cannot find object declaration.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -dbg -work BinaryToSeg -2002  $dsn/src/BinaryToSeg.vhd $dsn/src/BinaryToSeg_TB.vhd
+# Compile...
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg.vhd
+# Compile Entity "BinaryToSeg"
+# Compile Architecture "BinaryToSeg" of Entity "BinaryToSeg"
+# Error: COMP96_0078: BinaryToSeg.vhd : (46, 19): Unknown identifier "unsigned".
+# Error: COMP96_0064: BinaryToSeg.vhd : (46, 19): Unknown type.
+# Error: COMP96_0078: BinaryToSeg.vhd : (62, 11): Unknown identifier "unsigned".
+# Error: COMP96_0149: BinaryToSeg.vhd : (63, 41): Explicit type conversions are allowed between closely related types only.
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg_TB.vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Error: COMP96_0367: BinaryToSeg_TB.vhd : (24, 11): Improper array length (4). Expected length is 6.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -dbg -work BinaryToSeg -2002  $dsn/src/BinaryToSeg_TB.vhd
+# Compile...
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg_TB.vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Error: COMP96_0367: BinaryToSeg_TB.vhd : (24, 11): Improper array length (4). Expected length is 6.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -dbg -work BinaryToSeg -2002  $dsn/src/BinaryToSeg.vhd
+# Compile...
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg.vhd
+# Compile Entity "BinaryToSeg"
+# Compile Architecture "BinaryToSeg" of Entity "BinaryToSeg"
+# Error: COMP96_0078: BinaryToSeg.vhd : (46, 19): Unknown identifier "unsigned".
+# Error: COMP96_0064: BinaryToSeg.vhd : (46, 19): Unknown type.
+# Error: COMP96_0078: BinaryToSeg.vhd : (62, 11): Unknown identifier "unsigned".
+# Error: COMP96_0149: BinaryToSeg.vhd : (63, 41): Explicit type conversions are allowed between closely related types only.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -dbg -work BinaryToSeg -2002  $dsn/src/BinaryToSeg.vhd
+# Compile...
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg.vhd
+# Compile Entity "BinaryToSeg"
+# Compile Architecture "BinaryToSeg" of Entity "BinaryToSeg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -dbg -work BinaryToSeg -2002  $dsn/src/BinaryToSeg.vhd $dsn/src/BinaryToSeg_TB.vhd
+# Compile...
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg.vhd
+# Compile Entity "BinaryToSeg"
+# Compile Architecture "BinaryToSeg" of Entity "BinaryToSeg"
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg_TB.vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Error: COMP96_0367: BinaryToSeg_TB.vhd : (24, 11): Improper array length (4). Expected length is 6.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -dbg -work BinaryToSeg -2002  $dsn/src/BinaryToSeg.vhd $dsn/src/BinaryToSeg_TB.vhd
+# Compile...
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg.vhd
+# Compile Entity "BinaryToSeg"
+# Compile Architecture "BinaryToSeg" of Entity "BinaryToSeg"
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg_TB.vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+converter_2421_bcd_tb converter_2421_bcd_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5795 kB (elbread=1023 elab2=4676 kernel=95 sdf=0)
+#  12:52 PM, Tuesday, March 11, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: converter_2421_bcd_tb (tb_architecture)
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -dbg -work BinaryToSeg -2002  $dsn/src/BinaryToSeg.vhd $dsn/src/BinaryToSeg_TB.vhd
+# Compile...
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg.vhd
+# Compile Entity "BinaryToSeg"
+# Compile Architecture "BinaryToSeg" of Entity "BinaryToSeg"
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg_TB.vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+endsim
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+converter_2421_bcd_tb converter_2421_bcd_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5795 kB (elbread=1023 elab2=4676 kernel=95 sdf=0)
+#  12:53 PM, Tuesday, March 11, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: converter_2421_bcd_tb (tb_architecture)
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+#  Simulation has been stopped
+acom -dbg -work BinaryToSeg -2002  $dsn/src/BinaryToSeg.vhd $dsn/src/BinaryToSeg_TB.vhd
+# Compile...
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg.vhd
+# Compile Entity "BinaryToSeg"
+# Compile Architecture "BinaryToSeg" of Entity "BinaryToSeg"
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg_TB.vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Error: COMP96_0015: BinaryToSeg_TB.vhd : (33, 5): '<=' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -dbg -work BinaryToSeg -2002  $dsn/src/BinaryToSeg.vhd $dsn/src/BinaryToSeg_TB.vhd
+# Compile...
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg.vhd
+# Compile Entity "BinaryToSeg"
+# Compile Architecture "BinaryToSeg" of Entity "BinaryToSeg"
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg_TB.vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+converter_2421_bcd_tb converter_2421_bcd_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5795 kB (elbread=1023 elab2=4676 kernel=95 sdf=0)
+#  1:21 PM, Tuesday, March 11, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: converter_2421_bcd_tb (tb_architecture)
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+#  Simulation has been stopped
+acom -dbg -work BinaryToSeg -2002  $dsn/src/BinaryToSeg.vhd $dsn/src/BinaryToSeg_TB.vhd
+# Compile...
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg.vhd
+# Compile Entity "BinaryToSeg"
+# Compile Architecture "BinaryToSeg" of Entity "BinaryToSeg"
+# File: h:\ese382\lab05s14\BinaryToSeg\src\BinaryToSeg_TB.vhd
+# Compile Entity "converter_2421_bcd_tb"
+# Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+converter_2421_bcd_tb converter_2421_bcd_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5795 kB (elbread=1023 elab2=4676 kernel=95 sdf=0)
+#  1:40 PM, Tuesday, March 11, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: converter_2421_bcd_tb (tb_architecture)
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+#  Simulation has been stopped

@@ -1,0 +1,16 @@
+@N|Running in 64-bit mode
+@N: CD720 :"C:\Synopsys\fpga_G201209SP1\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"H:\ese382\lab10s14\setable_timer\src\count_down_timer.vhd":28:7:28:22|Top entity is set to count_down_timer.
+@N: CD630 :"H:\ese382\lab10s14\setable_timer\src\count_down_timer.vhd":28:7:28:22|Synthesizing work.count_down_timer.count_down_timer 
+@N: CD630 :"H:\ese382\lab10s14\setable_timer\src\fsm.vhd":5:7:5:18|Synthesizing work.control_unit.fsm 
+@N: CD231 :"H:\ese382\lab10s14\setable_timer\src\fsm.vhd":16:12:16:13|Using onehot encoding for type state (idle="10000")
+@N: CD630 :"H:\ese382\lab10s14\setable_timer\src\pedgefsm.vhd":28:7:28:14|Synthesizing work.pedgefsm.pedgefsm 
+@N: CD233 :"H:\ese382\lab10s14\setable_timer\src\pedgefsm.vhd":38:12:38:13|Using sequential encoding for type state
+@N: CD630 :"H:\ese382\lab10s14\setable_timer\src\minutes_counter.vhd":29:7:29:21|Synthesizing work.minutes_counter.behavioral 
+@N: CD630 :"H:\ese382\lab10s14\setable_timer\src\rotary_encoder_decoder_fsm.vhd":28:7:28:32|Synthesizing work.rotary_encoder_decoder_fsm.behavioral 
+@N: CD233 :"H:\ese382\lab10s14\setable_timer\src\rotary_encoder_decoder_fsm.vhd":43:11:43:12|Using sequential encoding for type state
+@N: CD630 :"H:\ese382\lab10s14\setable_timer\src\seconds_counter.vhd":10:7:10:21|Synthesizing work.seconds_counter.dataflow 
+@N: CL201 :"H:\ese382\lab10s14\setable_timer\src\rotary_encoder_decoder_fsm.vhd":49:2:49:3|Trying to extract state machine for register present_state
+@N: CL201 :"H:\ese382\lab10s14\setable_timer\src\pedgefsm.vhd":43:2:43:3|Trying to extract state machine for register present_state
+@N: CL201 :"H:\ese382\lab10s14\setable_timer\src\fsm.vhd":21:2:21:3|Trying to extract state machine for register present_state
+

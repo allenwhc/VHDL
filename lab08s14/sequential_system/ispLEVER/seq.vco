@@ -1,0 +1,198 @@
+[DEVICE]
+
+Family = M4A5;
+PartType = M4A5-64/32;
+Package = 44PLCC;
+PartNumber = M4A5-64/32-10JC;
+Speed = -10;
+Operating_condition = COM;
+EN_Segment = NO;
+Pin_MC_1to1 = NO;
+Voltage = 5.0;
+
+[REVISION]
+
+RCS = "$Revision: 1.2 $";
+Parent = m4a5.lci;
+SDS_file = m4a5.sds;
+Design = seq.tt4;
+Rev = 0.01;
+DATE = 4/8/14;
+TIME = 14:11:10;
+Type = TT2;
+Pre_Fit_Time = 1;
+Source_Format = EDIF;
+
+[IGNORE ASSIGNMENTS]
+
+Pin_Assignments = NO;
+Pin_Keep_Block = NO;
+Pin_Keep_Segment = NO;
+Group_Assignments = NO;
+Macrocell_Assignments = NO;
+Macrocell_Keep_Block = NO;
+Macrocell_Keep_Segment = NO;
+Pin_Reservation = NO;
+Timing_Constraints = NO;
+Block_Reservation = NO;
+Segment_Reservation = NO;
+Ignore_Source_Location = NO;
+Ignore_Source_Optimization = NO;
+Ignore_Source_Timing = NO;
+
+[CLEAR ASSIGNMENTS]
+
+Pin_Assignments = NO;
+Pin_Keep_Block = NO;
+Pin_Keep_Segment = NO;
+Group_Assignments = NO;
+Macrocell_Assignments = NO;
+Macrocell_Keep_Block = NO;
+Macrocell_Keep_Segment = NO;
+Pin_Reservation = NO;
+Timing_Constraints = NO;
+Block_Reservation = NO;
+Segment_Reservation = NO;
+Ignore_Source_Location = NO;
+Ignore_Source_Optimization = NO;
+Ignore_Source_Timing = NO;
+
+[BACKANNOTATE NETLIST]
+
+Netlist = VERILOG;
+Delay_File = SDF;
+Generic_VCC = ;
+Generic_GND = ;
+
+[BACKANNOTATE ASSIGNMENTS]
+
+Pin_Assignment = NO;
+Pin_Block = NO;
+Pin_Macrocell_Block = NO;
+Routing = NO;
+
+[GLOBAL PROJECT OPTIMIZATION]
+
+Balanced_Partitioning = YES;
+Spread_Placement = YES;
+Max_Pin_Percent = 100;
+Max_Macrocell_Percent = 100;
+Max_Inter_Seg_Percent = 100;
+Max_Seg_In_Percent = 100;
+Max_Blk_In_Percent = 100;
+
+[FITTER REPORT FORMAT]
+
+Fitter_Options = YES;
+Pinout_Diagram = NO;
+Pinout_Listing = YES;
+Detailed_Block_Segment_Summary = YES;
+Input_Signal_List = YES;
+Output_Signal_List = YES;
+Bidir_Signal_List = YES;
+Node_Signal_List = YES;
+Signal_Fanout_List = YES;
+Block_Segment_Fanin_List = YES;
+Prefit_Eqn = YES;
+Postfit_Eqn = YES;
+Page_Break = YES;
+
+[OPTIMIZATION OPTIONS]
+
+Logic_Reduction = YES;
+Max_PTerm_Split = 16;
+Max_PTerm_Collapse = 16;
+XOR_Synthesis = YES;
+Node_Collapse = Yes;
+DT_Synthesis = Yes;
+
+[FITTER GLOBAL OPTIONS]
+
+Run_Time = 0;
+Set_Reset_Dont_Care = NO;
+In_Reg_Optimize = YES;
+Clock_Optimize = NO;
+Conf_Unused_IOs = OUT_LOW;
+
+[POWER]
+Powerlevel = Low, High;
+Default = High;
+Type = GLB;
+
+[HARDWARE DEVICE OPTIONS]
+Zero_Hold_Time = No;
+Signature_Word = 0;
+Pull_up = No;
+Out_Slew_Rate = FAST, SLOW, 0;
+Device_max_fanin = 33;
+Device_max_pterms = 20;
+Usercode_Format = Hex;
+
+[PIN RESERVATIONS]
+layer = OFF;
+
+[LOCATION ASSIGNMENT]
+
+Layer = OFF;
+d_7_ = INPUT,3, A,-;
+load = INPUT,2, A,-;
+send = INPUT,14, B,-;
+clk = INPUT,11,-,-;
+rst_bar = INPUT,33,-,-;
+valid = OUTPUT,24, C,-;
+sample_clk = OUTPUT,26, C,-;
+d_6_ = INPUT,4, A,-;
+d_5_ = INPUT,5, A,-;
+d_4_ = INPUT,6, A,-;
+d_3_ = INPUT,7, A,-;
+d_2_ = INPUT,8, A,-;
+d_1_ = INPUT,9, A,-;
+d_0_ = INPUT,15, B,-;
+serial_out = OUTPUT,19, B,-;
+u2_q = NODE,4, B,-;
+u1_q_3_ = NODE,5, A,-;
+u1_cnt_int_count_0_ = NODE,0, A,-;
+u1_cnt_int_un5_count_26_n = NODE,15, A,-;
+u1_cnt_int_un5_count_27_n = NODE,0, D,-;
+u1_cnt_int_un5_count_28_n = NODE,3, C,-;
+u1_cnt_int_count_1_ = NODE,8, C,-;
+u1_cnt_int_count_2_ = NODE,12, A,-;
+u1_cnt_int_count_3_ = NODE,12, C,-;
+u1_cnt_int_count_4_ = NODE,8, A,-;
+u1_cnt_int_count_5_ = NODE,4, A,-;
+u1_cnt_int_count_6_ = NODE,1, A,-;
+u1_cnt_int_count_7_ = NODE,1, C,-;
+u1_cnt_int_count_8_ = NODE,14, C,-;
+u1_cnt_int_count_9_ = NODE,10, C,-;
+u1_cnt_int_count_10_ = NODE,6, C,-;
+u1_cnt_int_count_11_ = NODE,2, C,-;
+u1_cnt_int_count_12_ = NODE,13, D,-;
+u1_cnt_int_count_13_ = NODE,13, C,-;
+u1_cnt_int_count_14_ = NODE,7, C,-;
+u1_cnt_int_count_15_ = NODE,6, D,-;
+u1_cnt_int_count_16_ = NODE,2, D,-;
+u1_cnt_int_count_17_ = NODE,9, A,-;
+u1_cnt_int_count_18_ = NODE,11, A,-;
+u1_cnt_int_count_19_ = NODE,7, A,-;
+u1_cnt_int_count_20_ = NODE,9, D,-;
+u1_cnt_int_count_21_ = NODE,3, A,-;
+u1_cnt_int_count_22_ = NODE,5, D,-;
+u1_cnt_int_count_23_ = NODE,1, D,-;
+u1_cnt_int_count_24_ = NODE,14, A,-;
+u1_cnt_int_count_25_ = NODE,12, D,-;
+u1_cnt_int_count_26_ = NODE,10, A,-;
+u1_cnt_int_count_27_ = NODE,6, A,-;
+u1_cnt_int_count_28_ = NODE,2, A,-;
+u1_cnt_int_count_29_ = NODE,13, A,-;
+u1_cnt_int_count_30_ = NODE,9, C,-;
+u1_cnt_int_count_31_ = NODE,5, C,-;
+u1_n_58_n = NODE,8, B,-;
+u1_n_85_n = NODE,8, D,-;
+u1_n_109_n = NODE,4, D,-;
+u0_q1_1_ = NODE,2, B,-;
+u0_q1_2_ = NODE,13, B,-;
+u0_q1_3_ = NODE,9, B,-;
+u0_q1_4_ = NODE,5, B,-;
+u0_q1_5_ = NODE,1, B,-;
+u0_q1_6_ = NODE,12, B,-;
+u0_q1_7_ = NODE,6, B,-;

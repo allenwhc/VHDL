@@ -1,0 +1,39 @@
+@N: CD630 :"H:\ese382\lab10s14\setable_timer\src\count_down_timer.vhd":28:7:28:22|Synthesizing work.count_down_timer.count_down_timer 
+@N: CD630 :"H:\ese382\lab10s14\setable_timer\src\fsm.vhd":5:7:5:18|Synthesizing work.control_unit.fsm 
+@N: CD231 :"H:\ese382\lab10s14\setable_timer\src\fsm.vhd":16:12:16:13|Using onehot encoding for type state (idle="10000")
+@W: CD604 :"H:\ese382\lab10s14\setable_timer\src\fsm.vhd":38:3:38:15|OTHERS clause is not synthesized 
+Post processing for work.control_unit.fsm
+@N: CD630 :"H:\ese382\lab10s14\setable_timer\src\pedgefsm.vhd":28:7:28:14|Synthesizing work.pedgefsm.pedgefsm 
+@N: CD233 :"H:\ese382\lab10s14\setable_timer\src\pedgefsm.vhd":38:12:38:13|Using sequential encoding for type state
+Post processing for work.pedgefsm.pedgefsm
+@N: CD630 :"H:\ese382\lab10s14\setable_timer\src\minutes_counter.vhd":29:7:29:21|Synthesizing work.minutes_counter.behavioral 
+Post processing for work.minutes_counter.behavioral
+@W: CL169 :"H:\ese382\lab10s14\setable_timer\src\minutes_counter.vhd":53:2:53:3|Pruning register cnt_int.minutes_nonzero_8  
+@N: CD630 :"H:\ese382\lab10s14\setable_timer\src\rotary_encoder_decoder_fsm.vhd":28:7:28:32|Synthesizing work.rotary_encoder_decoder_fsm.behavioral 
+@N: CD233 :"H:\ese382\lab10s14\setable_timer\src\rotary_encoder_decoder_fsm.vhd":43:11:43:12|Using sequential encoding for type state
+@W: CD604 :"H:\ese382\lab10s14\setable_timer\src\rotary_encoder_decoder_fsm.vhd":66:4:66:16|OTHERS clause is not synthesized 
+Post processing for work.rotary_encoder_decoder_fsm.behavioral
+@N: CD630 :"H:\ese382\lab10s14\setable_timer\src\seconds_counter.vhd":10:7:10:21|Synthesizing work.seconds_counter.dataflow 
+Post processing for work.seconds_counter.dataflow
+Post processing for work.count_down_timer.count_down_timer
+@N: CL201 :"H:\ese382\lab10s14\setable_timer\src\rotary_encoder_decoder_fsm.vhd":49:2:49:3|Trying to extract state machine for register present_state
+Extracted state machine for register present_state
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+@N: CL201 :"H:\ese382\lab10s14\setable_timer\src\pedgefsm.vhd":43:2:43:3|Trying to extract state machine for register present_state
+Extracted state machine for register present_state
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+@N: CL201 :"H:\ese382\lab10s14\setable_timer\src\fsm.vhd":21:2:21:3|Trying to extract state machine for register present_state
+Extracted state machine for register present_state
+State machine has 5 reachable states with original encodings of:
+   00001
+   00010
+   00100
+   01000
+   10000

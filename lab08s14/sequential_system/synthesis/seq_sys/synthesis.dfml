@@ -1,0 +1,11 @@
+Synthesis in progress - please wait
+Synplicity Synthesis - Tuesday, April 08, 2014 2:05:48 PM
+======================================================
+
+
+Synthesis of top-level: seq_sys
+======================================================
+
+Synplify failed to start and create a project. Please check the Synplify license. Open the Resources tab of the Design Browser window in Active-HDL, review the stdout.log file and try to run the Synplify software by using the command line listed in the log file.
+
+

@@ -1,0 +1,22 @@
+#$ TOOL ispLEVER Classic 7.0.00.10.16.07
+#$ DATE Tue Apr 01 09:51:34 2014
+#$ MODULE fuel_encoder
+#$ DEVICE p22v10gc
+#$ PINS 8 fuel_3_:2 leds_3_-:25 empty-:18 fuel_2_:3 fuel_1_:4 leds_2_+:26 leds_1_+:17 leds_0_+:27
+.i 3 
+.o 5 
+.type fr
+.ilb fuel_3_ fuel_2_ fuel_1_
+.ob leds_3_ empty leds_2_ leds_1_ leds_0_
+.phase 11111
+.p 9
+1-- ~100~
+0-- 1~1~~
+-1- ~1~0~
+-0- 1~~~~
+00- ~~~1~
+--1 ~1~~~
+--- ~~~~0
+11- 0~~~~
+000 ~0~~~
+.e

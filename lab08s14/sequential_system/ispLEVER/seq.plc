@@ -1,0 +1,78 @@
+|--------------------------------------------|
+|- ispLEVER Fitter Report File              -|
+|- Version 7.0.00.10.16.07                       -|
+|- (c)Copyright, Lattice Semiconductor 2002 -|
+|--------------------------------------------|
+
+
+; Source file seq.tt4
+; FITTER-generated Placements.
+; DEVICE   mach463a
+; DATE     Tue Apr 08 14:11:10 2014
+
+
+Pin   3  d_7_
+Pin   2  load
+Pin   14  send
+Pin   11  clk
+Pin   33  rst_bar
+Pin   24  valid Comb ; S6=1  S9=1  Pair 99
+Pin   26  sample_clk Comb ; S6=1  S9=1  Pair 93
+Pin   4  d_6_
+Pin   5  d_5_
+Pin   6  d_4_
+Pin   7  d_3_
+Pin   8  d_2_
+Pin   9  d_1_
+Pin   15  d_0_
+Pin   19  serial_out Reg  ; S6=1  S9=1  Pair 69
+Node  69  RN_serial_out Reg  ; S6=1  S9=1 
+Node  75  u2_q Reg  ; S6=1  S9=1 
+Node  53  u1_q_3_ Reg  ; S6=1  S9=1 
+Node  45  u1_cnt_int_count_0_ Reg  ; S6=1  S9=1 
+Node  68  u1_cnt_int_un5_count_26_n Comb ; S6=1  S9=1 
+Node  117  u1_cnt_int_un5_count_27_n Comb ; S6=1  S9=1 
+Node  98  u1_cnt_int_un5_count_28_n Comb ; S6=1  S9=1 
+Node  105  u1_cnt_int_count_1_ Reg  ; S6=1  S9=1 
+Node  63  u1_cnt_int_count_2_ Reg  ; S6=1  S9=1 
+Node  111  u1_cnt_int_count_3_ Reg  ; S6=1  S9=1 
+Node  57  u1_cnt_int_count_4_ Reg  ; S6=1  S9=1 
+Node  51  u1_cnt_int_count_5_ Reg  ; S6=1  S9=1 
+Node  47  u1_cnt_int_count_6_ Reg  ; S6=1  S9=1 
+Node  95  u1_cnt_int_count_7_ Reg  ; S6=1  S9=1 
+Node  114  u1_cnt_int_count_8_ Reg  ; S6=1  S9=1 
+Node  108  u1_cnt_int_count_9_ Reg  ; S6=1  S9=1 
+Node  102  u1_cnt_int_count_10_ Reg  ; S6=1  S9=1 
+Node  96  u1_cnt_int_count_11_ Reg  ; S6=1  S9=1 
+Node  137  u1_cnt_int_count_12_ Reg  ; S6=1  S9=1 
+Node  113  u1_cnt_int_count_13_ Reg  ; S6=1  S9=1 
+Node  104  u1_cnt_int_count_14_ Reg  ; S6=1  S9=1 
+Node  126  u1_cnt_int_count_15_ Reg  ; S6=1  S9=1 
+Node  120  u1_cnt_int_count_16_ Reg  ; S6=1  S9=1 
+Node  59  u1_cnt_int_count_17_ Reg  ; S6=1  S9=1 
+Node  62  u1_cnt_int_count_18_ Reg  ; S6=1  S9=1 
+Node  56  u1_cnt_int_count_19_ Reg  ; S6=1  S9=1 
+Node  131  u1_cnt_int_count_20_ Reg  ; S6=1  S9=1 
+Node  50  u1_cnt_int_count_21_ Reg  ; S6=1  S9=1 
+Node  125  u1_cnt_int_count_22_ Reg  ; S6=1  S9=1 
+Node  119  u1_cnt_int_count_23_ Reg  ; S6=1  S9=1 
+Node  66  u1_cnt_int_count_24_ Reg  ; S6=1  S9=1 
+Node  135  u1_cnt_int_count_25_ Reg  ; S6=1  S9=1 
+Node  60  u1_cnt_int_count_26_ Reg  ; S6=1  S9=1 
+Node  54  u1_cnt_int_count_27_ Reg  ; S6=1  S9=1 
+Node  48  u1_cnt_int_count_28_ Reg  ; S6=1  S9=1 
+Node  65  u1_cnt_int_count_29_ Reg  ; S6=1  S9=1 
+Node  107  u1_cnt_int_count_30_ Reg  ; S6=1  S9=1 
+Node  101  u1_cnt_int_count_31_ Reg  ; S6=1  S9=1 
+Node  81  u1_n_58_n Comb ; S6=1  S9=1 
+Node  129  u1_n_85_n Comb ; S6=1  S9=1 
+Node  123  u1_n_109_n Comb ; S6=1  S9=1 
+Node  72  u0_q1_1_ Reg  ; S6=1  S9=1 
+Node  89  u0_q1_2_ Reg  ; S6=1  S9=1 
+Node  83  u0_q1_3_ Reg  ; S6=1  S9=1 
+Node  77  u0_q1_4_ Reg  ; S6=1  S9=1 
+Node  71  u0_q1_5_ Reg  ; S6=1  S9=1 
+Node  87  u0_q1_6_ Reg  ; S6=1  S9=1 
+Node  78  u0_q1_7_ Reg  ; S6=1  S9=1 
+; Unused Pins & Nodes
+; -> None Found.

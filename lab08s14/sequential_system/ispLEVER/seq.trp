@@ -1,0 +1,965 @@
+
+Timing Report for STAMP
+
+//  Project = seq
+//  Family  = mach4a
+//  Device  = M4A5-64/32
+//  Speed   = -10
+//  Voltage = 5.0
+//  Operating Condition = COM
+//  Data sheet version  = RevD-8/2000
+
+//  Pass Bidirection = OFF
+//  Pass S/R = OFF
+//  Pass Latch = OFF
+//  T_SU Endpoints D/T inputs = ON
+//  T_SU Endpoints CE inputs = OFF
+//  T_SU Endpoints S/R inputs = OFF
+//  T_SU Endpoints RAM gated = ON
+//  Fmax of CE = ON
+//  Fmax of RAM = ON
+
+//  Location(From => To)
+//    Pin number: numeric number preceded by "p", BGA number as is
+//    Macrocell number: Segment#,GLB#,Macrocell#
+//                      Segment#: starts from 0 (if applicable)
+//                      GLB#: starts from A..Z, AA..ZZ
+//                      Macrocell#: starts from 0 to 31
+
+
+Section IO
+  //DESTINATION NODES;
+  sample_clk [out]
+  serial_out [out]
+  valid [out]
+  serial_out.C [reg]
+  u0_q1_1_.C [reg]
+  u0_q1_2_.C [reg]
+  u0_q1_3_.C [reg]
+  u0_q1_4_.C [reg]
+  u0_q1_5_.C [reg]
+  u0_q1_6_.C [reg]
+  u0_q1_7_.C [reg]
+  u1_cnt_int_count_0_.C [reg]
+  u1_cnt_int_count_1_.C [reg]
+  u1_cnt_int_count_2_.C [reg]
+  u1_cnt_int_count_3_.C [reg]
+  u1_cnt_int_count_4_.C [reg]
+  u1_cnt_int_count_5_.C [reg]
+  u1_cnt_int_count_6_.C [reg]
+  u1_cnt_int_count_7_.C [reg]
+  u1_cnt_int_count_8_.C [reg]
+  u1_cnt_int_count_9_.C [reg]
+  u1_cnt_int_count_10_.C [reg]
+  u1_cnt_int_count_11_.C [reg]
+  u1_cnt_int_count_12_.C [reg]
+  u1_cnt_int_count_13_.C [reg]
+  u1_cnt_int_count_14_.C [reg]
+  u1_cnt_int_count_15_.C [reg]
+  u1_cnt_int_count_16_.C [reg]
+  u1_cnt_int_count_17_.C [reg]
+  u1_cnt_int_count_18_.C [reg]
+  u1_cnt_int_count_19_.C [reg]
+  u1_cnt_int_count_20_.C [reg]
+  u1_cnt_int_count_21_.C [reg]
+  u1_cnt_int_count_22_.C [reg]
+  u1_cnt_int_count_23_.C [reg]
+  u1_cnt_int_count_24_.C [reg]
+  u1_cnt_int_count_25_.C [reg]
+  u1_cnt_int_count_26_.C [reg]
+  u1_cnt_int_count_27_.C [reg]
+  u1_cnt_int_count_28_.C [reg]
+  u1_cnt_int_count_29_.C [reg]
+  u1_cnt_int_count_30_.C [reg]
+  u1_cnt_int_count_31_.C [reg]
+  u1_q_3_.C [reg]
+  u2_q.C [reg]
+  serial_out.D [reg]
+  u0_q1_1_.D [reg]
+  u0_q1_2_.D [reg]
+  u0_q1_3_.D [reg]
+  u0_q1_4_.D [reg]
+  u0_q1_5_.D [reg]
+  u0_q1_6_.D [reg]
+  u0_q1_7_.D [reg]
+  u1_cnt_int_count_0_.D [reg]
+  u1_cnt_int_count_1_.D [reg]
+  u1_cnt_int_count_2_.D.X1 [reg]
+  u1_cnt_int_count_2_.D.X2 [reg]
+  u1_cnt_int_count_3_.T.X1 [reg]
+  u1_cnt_int_count_3_.T.X2 [reg]
+  u1_cnt_int_count_4_.T [reg]
+  u1_cnt_int_count_5_.T [reg]
+  u1_cnt_int_count_6_.T [reg]
+  u1_cnt_int_count_7_.T [reg]
+  u1_cnt_int_count_8_.T [reg]
+  u1_cnt_int_count_9_.T [reg]
+  u1_cnt_int_count_10_.T [reg]
+  u1_cnt_int_count_11_.T [reg]
+  u1_cnt_int_count_12_.T [reg]
+  u1_cnt_int_count_13_.T [reg]
+  u1_cnt_int_count_14_.T [reg]
+  u1_cnt_int_count_15_.T [reg]
+  u1_cnt_int_count_16_.T [reg]
+  u1_cnt_int_count_17_.D [reg]
+  u1_cnt_int_count_18_.D.X1 [reg]
+  u1_cnt_int_count_18_.D.X2 [reg]
+  u1_cnt_int_count_19_.T [reg]
+  u1_cnt_int_count_20_.T [reg]
+  u1_cnt_int_count_21_.T [reg]
+  u1_cnt_int_count_22_.T [reg]
+  u1_cnt_int_count_23_.T [reg]
+  u1_cnt_int_count_24_.T [reg]
+  u1_cnt_int_count_25_.T [reg]
+  u1_cnt_int_count_26_.T [reg]
+  u1_cnt_int_count_27_.T [reg]
+  u1_cnt_int_count_28_.T [reg]
+  u1_cnt_int_count_29_.T [reg]
+  u1_cnt_int_count_30_.T [reg]
+  u1_cnt_int_count_31_.T [reg]
+  u1_q_3_.D [reg]
+  u2_q.D [reg]
+
+  //SOURCE NODES;
+  clk [in]
+  d[0] [in]
+  d[1] [in]
+  d[2] [in]
+  d[3] [in]
+  d[4] [in]
+  d[5] [in]
+  d[6] [in]
+  d[7] [in]
+  load [in]
+  rst_bar [in]
+  send [in]
+  serial_out.Q [reg]
+  u0_q1_1_.Q [reg]
+  u0_q1_2_.Q [reg]
+  u0_q1_3_.Q [reg]
+  u0_q1_4_.Q [reg]
+  u0_q1_5_.Q [reg]
+  u0_q1_6_.Q [reg]
+  u0_q1_7_.Q [reg]
+  u1_cnt_int_count_0_.Q [reg]
+  u1_cnt_int_count_1_.Q [reg]
+  u1_cnt_int_count_2_.Q [reg]
+  u1_cnt_int_count_3_.Q [reg]
+  u1_cnt_int_count_4_.Q [reg]
+  u1_cnt_int_count_5_.Q [reg]
+  u1_cnt_int_count_6_.Q [reg]
+  u1_cnt_int_count_7_.Q [reg]
+  u1_cnt_int_count_8_.Q [reg]
+  u1_cnt_int_count_9_.Q [reg]
+  u1_cnt_int_count_10_.Q [reg]
+  u1_cnt_int_count_11_.Q [reg]
+  u1_cnt_int_count_12_.Q [reg]
+  u1_cnt_int_count_13_.Q [reg]
+  u1_cnt_int_count_14_.Q [reg]
+  u1_cnt_int_count_15_.Q [reg]
+  u1_cnt_int_count_16_.Q [reg]
+  u1_cnt_int_count_17_.Q [reg]
+  u1_cnt_int_count_18_.Q [reg]
+  u1_cnt_int_count_19_.Q [reg]
+  u1_cnt_int_count_20_.Q [reg]
+  u1_cnt_int_count_21_.Q [reg]
+  u1_cnt_int_count_22_.Q [reg]
+  u1_cnt_int_count_23_.Q [reg]
+  u1_cnt_int_count_24_.Q [reg]
+  u1_cnt_int_count_25_.Q [reg]
+  u1_cnt_int_count_26_.Q [reg]
+  u1_cnt_int_count_27_.Q [reg]
+  u1_cnt_int_count_28_.Q [reg]
+  u1_cnt_int_count_29_.Q [reg]
+  u1_cnt_int_count_30_.Q [reg]
+  u1_cnt_int_count_31_.Q [reg]
+  u1_q_3_.Q [reg]
+  u2_q.Q [reg]
+
+
+Section fMAX
+
+  Maximum Operating Frequency: 42.55 MHz
+  Clock Source From:           clk
+  Logic Levels:                3
+  Path Delay:                  23.5 ns
+  Path Expansion                                Source                        Destination
+  ==============                                ======                        ===========
+    3.0  tCOSi                                  u1_cnt_int_count_0_.C         u1_cnt_int_count_0_.Q
+    0.0                                         u1_cnt_int_count_0_.Q         u1_n_85_n
+    7.0  tPDi                                   u1_n_85_n                     u1_n_85_n
+    0.0                                         u1_n_85_n                     u1_cnt_int_un5_count_26_n.X1
+    7.0  tPDi                                   u1_cnt_int_un5_count_26_n.X1  u1_cnt_int_un5_count_26_n
+    0.0                                         u1_cnt_int_un5_count_26_n     u1_cnt_int_count_3_.T.X1
+    6.5  tSST                                   u1_cnt_int_count_3_.T.X1      u1_cnt_int_count_3_.C
+ 
+  Clock Source From: clk
+  Delay         Level   Location(From => To)    Source                        Destination                   Destination_Clock
+  =====         =====   ====================    ======                        ===========                   =================
+   23.5           3      A0       =>  C12       u1_cnt_int_count_0_.C         u1_cnt_int_count_3_.T.X1      clk
+   23.5           3      A0       =>  C12       u1_cnt_int_count_0_.C         u1_cnt_int_count_3_.T.X2      clk
+   23.5           3      C8       =>  C12       u1_cnt_int_count_1_.C         u1_cnt_int_count_3_.T.X1      clk
+   23.5           3      C8       =>  C12       u1_cnt_int_count_1_.C         u1_cnt_int_count_3_.T.X2      clk
+   23.5           3      A12      =>  C12       u1_cnt_int_count_2_.C         u1_cnt_int_count_3_.T.X1      clk
+   23.5           3      A12      =>  C12       u1_cnt_int_count_2_.C         u1_cnt_int_count_3_.T.X2      clk
+   23.5           3      C12      =>  C12       u1_cnt_int_count_3_.C         u1_cnt_int_count_3_.T.X1      clk
+   23.5           3      C12      =>  C12       u1_cnt_int_count_3_.C         u1_cnt_int_count_3_.T.X2      clk
+   23.5           3      A8       =>  C12       u1_cnt_int_count_4_.C         u1_cnt_int_count_3_.T.X1      clk
+   23.5           3      A8       =>  C12       u1_cnt_int_count_4_.C         u1_cnt_int_count_3_.T.X2      clk
+   23.5           3      A4       =>  C12       u1_cnt_int_count_5_.C         u1_cnt_int_count_3_.T.X1      clk
+   23.5           3      A4       =>  C12       u1_cnt_int_count_5_.C         u1_cnt_int_count_3_.T.X2      clk
+   23.5           3      A1       =>  C12       u1_cnt_int_count_6_.C         u1_cnt_int_count_3_.T.X1      clk
+   23.5           3      A1       =>  C12       u1_cnt_int_count_6_.C         u1_cnt_int_count_3_.T.X2      clk
+   23.5           3      C1       =>  C12       u1_cnt_int_count_7_.C         u1_cnt_int_count_3_.T.X1      clk
+   23.5           3      C1       =>  C12       u1_cnt_int_count_7_.C         u1_cnt_int_count_3_.T.X2      clk
+   23.5           3      C14      =>  C12       u1_cnt_int_count_8_.C         u1_cnt_int_count_3_.T.X1      clk
+   23.5           3      C14      =>  C12       u1_cnt_int_count_8_.C         u1_cnt_int_count_3_.T.X2      clk
+   23.5           3      C10      =>  C12       u1_cnt_int_count_9_.C         u1_cnt_int_count_3_.T.X1      clk
+   23.5           3      C10      =>  C12       u1_cnt_int_count_9_.C         u1_cnt_int_count_3_.T.X2      clk
+   23.5           3      C6       =>  C12       u1_cnt_int_count_10_.C        u1_cnt_int_count_3_.T.X1      clk
+   23.5           3      C6       =>  C12       u1_cnt_int_count_10_.C        u1_cnt_int_count_3_.T.X2      clk
+   23.5           3      C2       =>  C12       u1_cnt_int_count_11_.C        u1_cnt_int_count_3_.T.X1      clk
+   23.5           3      C2       =>  C12       u1_cnt_int_count_11_.C        u1_cnt_int_count_3_.T.X2      clk
+   23.5           3      D13      =>  C12       u1_cnt_int_count_12_.C        u1_cnt_int_count_3_.T.X1      clk
+   23.5           3      D13      =>  C12       u1_cnt_int_count_12_.C        u1_cnt_int_count_3_.T.X2      clk
+   23.5           3      C13      =>  C12       u1_cnt_int_count_13_.C        u1_cnt_int_count_3_.T.X1      clk
+   23.5           3      C13      =>  C12       u1_cnt_int_count_13_.C        u1_cnt_int_count_3_.T.X2      clk
+   23.5           3      C7       =>  C12       u1_cnt_int_count_14_.C        u1_cnt_int_count_3_.T.X1      clk
+   23.5           3      C7       =>  C12       u1_cnt_int_count_14_.C        u1_cnt_int_count_3_.T.X2      clk
+   23.5           3      D6       =>  C12       u1_cnt_int_count_15_.C        u1_cnt_int_count_3_.T.X1      clk
+   23.5           3      D6       =>  C12       u1_cnt_int_count_15_.C        u1_cnt_int_count_3_.T.X2      clk
+   23.5           3      D2       =>  C12       u1_cnt_int_count_16_.C        u1_cnt_int_count_3_.T.X1      clk
+   23.5           3      D2       =>  C12       u1_cnt_int_count_16_.C        u1_cnt_int_count_3_.T.X2      clk
+   22.5           3      A0       =>  A0        u1_cnt_int_count_0_.C         u1_cnt_int_count_0_.D         clk
+   22.5           3      A0       =>  A5        u1_cnt_int_count_0_.C         u1_q_3_.D                     clk
+   22.5           3      C8       =>  A0        u1_cnt_int_count_1_.C         u1_cnt_int_count_0_.D         clk
+   22.5           3      C8       =>  A5        u1_cnt_int_count_1_.C         u1_q_3_.D                     clk
+   22.5           3      A12      =>  A0        u1_cnt_int_count_2_.C         u1_cnt_int_count_0_.D         clk
+   22.5           3      A12      =>  A5        u1_cnt_int_count_2_.C         u1_q_3_.D                     clk
+   22.5           3      C12      =>  A0        u1_cnt_int_count_3_.C         u1_cnt_int_count_0_.D         clk
+   22.5           3      C12      =>  A5        u1_cnt_int_count_3_.C         u1_q_3_.D                     clk
+   22.5           3      A8       =>  A0        u1_cnt_int_count_4_.C         u1_cnt_int_count_0_.D         clk
+   22.5           3      A8       =>  A5        u1_cnt_int_count_4_.C         u1_q_3_.D                     clk
+   22.5           3      A4       =>  A0        u1_cnt_int_count_5_.C         u1_cnt_int_count_0_.D         clk
+   22.5           3      A4       =>  A5        u1_cnt_int_count_5_.C         u1_q_3_.D                     clk
+   22.5           3      A1       =>  A0        u1_cnt_int_count_6_.C         u1_cnt_int_count_0_.D         clk
+   22.5           3      A1       =>  A5        u1_cnt_int_count_6_.C         u1_q_3_.D                     clk
+   22.5           3      C1       =>  A0        u1_cnt_int_count_7_.C         u1_cnt_int_count_0_.D         clk
+   22.5           3      C1       =>  A5        u1_cnt_int_count_7_.C         u1_q_3_.D                     clk
+   16.5           2      A0       =>  C7        u1_cnt_int_count_0_.C         u1_cnt_int_count_14_.T        clk
+   16.5           2      A0       =>  D6        u1_cnt_int_count_0_.C         u1_cnt_int_count_15_.T        clk
+   16.5           2      A0       =>  D2        u1_cnt_int_count_0_.C         u1_cnt_int_count_16_.T        clk
+   16.5           2      A0       =>  A7        u1_cnt_int_count_0_.C         u1_cnt_int_count_19_.T        clk
+   16.5           2      A0       =>  D9        u1_cnt_int_count_0_.C         u1_cnt_int_count_20_.T        clk
+   16.5           2      A0       =>  A3        u1_cnt_int_count_0_.C         u1_cnt_int_count_21_.T        clk
+   16.5           2      A0       =>  D5        u1_cnt_int_count_0_.C         u1_cnt_int_count_22_.T        clk
+   16.5           2      A0       =>  D1        u1_cnt_int_count_0_.C         u1_cnt_int_count_23_.T        clk
+   16.5           2      A0       =>  A14       u1_cnt_int_count_0_.C         u1_cnt_int_count_24_.T        clk
+   16.5           2      A0       =>  D12       u1_cnt_int_count_0_.C         u1_cnt_int_count_25_.T        clk
+   16.5           2      A0       =>  A10       u1_cnt_int_count_0_.C         u1_cnt_int_count_26_.T        clk
+   16.5           2      A0       =>  A6        u1_cnt_int_count_0_.C         u1_cnt_int_count_27_.T        clk
+   16.5           2      A0       =>  A2        u1_cnt_int_count_0_.C         u1_cnt_int_count_28_.T        clk
+   16.5           2      A0       =>  A13       u1_cnt_int_count_0_.C         u1_cnt_int_count_29_.T        clk
+   16.5           2      A0       =>  C9        u1_cnt_int_count_0_.C         u1_cnt_int_count_30_.T        clk
+   16.5           2      A0       =>  C5        u1_cnt_int_count_0_.C         u1_cnt_int_count_31_.T        clk
+   16.5           2      C8       =>  C7        u1_cnt_int_count_1_.C         u1_cnt_int_count_14_.T        clk
+   16.5           2      C8       =>  D6        u1_cnt_int_count_1_.C         u1_cnt_int_count_15_.T        clk
+   16.5           2      C8       =>  D2        u1_cnt_int_count_1_.C         u1_cnt_int_count_16_.T        clk
+   16.5           2      C8       =>  A7        u1_cnt_int_count_1_.C         u1_cnt_int_count_19_.T        clk
+   16.5           2      C8       =>  D9        u1_cnt_int_count_1_.C         u1_cnt_int_count_20_.T        clk
+   16.5           2      C8       =>  A3        u1_cnt_int_count_1_.C         u1_cnt_int_count_21_.T        clk
+   16.5           2      C8       =>  D5        u1_cnt_int_count_1_.C         u1_cnt_int_count_22_.T        clk
+   16.5           2      C8       =>  D1        u1_cnt_int_count_1_.C         u1_cnt_int_count_23_.T        clk
+   16.5           2      C8       =>  A14       u1_cnt_int_count_1_.C         u1_cnt_int_count_24_.T        clk
+   16.5           2      C8       =>  D12       u1_cnt_int_count_1_.C         u1_cnt_int_count_25_.T        clk
+   16.5           2      C8       =>  A10       u1_cnt_int_count_1_.C         u1_cnt_int_count_26_.T        clk
+   16.5           2      C8       =>  A6        u1_cnt_int_count_1_.C         u1_cnt_int_count_27_.T        clk
+   16.5           2      C8       =>  A2        u1_cnt_int_count_1_.C         u1_cnt_int_count_28_.T        clk
+   16.5           2      C8       =>  A13       u1_cnt_int_count_1_.C         u1_cnt_int_count_29_.T        clk
+   16.5           2      C8       =>  C9        u1_cnt_int_count_1_.C         u1_cnt_int_count_30_.T        clk
+   16.5           2      C8       =>  C5        u1_cnt_int_count_1_.C         u1_cnt_int_count_31_.T        clk
+   16.5           2      A12      =>  C7        u1_cnt_int_count_2_.C         u1_cnt_int_count_14_.T        clk
+   16.5           2      A12      =>  D6        u1_cnt_int_count_2_.C         u1_cnt_int_count_15_.T        clk
+   16.5           2      A12      =>  D2        u1_cnt_int_count_2_.C         u1_cnt_int_count_16_.T        clk
+   16.5           2      A12      =>  A7        u1_cnt_int_count_2_.C         u1_cnt_int_count_19_.T        clk
+   16.5           2      A12      =>  D9        u1_cnt_int_count_2_.C         u1_cnt_int_count_20_.T        clk
+   16.5           2      A12      =>  A3        u1_cnt_int_count_2_.C         u1_cnt_int_count_21_.T        clk
+   16.5           2      A12      =>  D5        u1_cnt_int_count_2_.C         u1_cnt_int_count_22_.T        clk
+   16.5           2      A12      =>  D1        u1_cnt_int_count_2_.C         u1_cnt_int_count_23_.T        clk
+   16.5           2      A12      =>  A14       u1_cnt_int_count_2_.C         u1_cnt_int_count_24_.T        clk
+   16.5           2      A12      =>  D12       u1_cnt_int_count_2_.C         u1_cnt_int_count_25_.T        clk
+   16.5           2      A12      =>  A10       u1_cnt_int_count_2_.C         u1_cnt_int_count_26_.T        clk
+   16.5           2      A12      =>  A6        u1_cnt_int_count_2_.C         u1_cnt_int_count_27_.T        clk
+   16.5           2      A12      =>  A2        u1_cnt_int_count_2_.C         u1_cnt_int_count_28_.T        clk
+   16.5           2      A12      =>  A13       u1_cnt_int_count_2_.C         u1_cnt_int_count_29_.T        clk
+   16.5           2      A12      =>  C9        u1_cnt_int_count_2_.C         u1_cnt_int_count_30_.T        clk
+   16.5           2      A12      =>  C5        u1_cnt_int_count_2_.C         u1_cnt_int_count_31_.T        clk
+   16.5           2      C12      =>  C7        u1_cnt_int_count_3_.C         u1_cnt_int_count_14_.T        clk
+   16.5           2      C12      =>  D6        u1_cnt_int_count_3_.C         u1_cnt_int_count_15_.T        clk
+   16.5           2      C12      =>  D2        u1_cnt_int_count_3_.C         u1_cnt_int_count_16_.T        clk
+   16.5           2      C12      =>  A7        u1_cnt_int_count_3_.C         u1_cnt_int_count_19_.T        clk
+   16.5           2      C12      =>  D9        u1_cnt_int_count_3_.C         u1_cnt_int_count_20_.T        clk
+   16.5           2      C12      =>  A3        u1_cnt_int_count_3_.C         u1_cnt_int_count_21_.T        clk
+   16.5           2      C12      =>  D5        u1_cnt_int_count_3_.C         u1_cnt_int_count_22_.T        clk
+   16.5           2      C12      =>  D1        u1_cnt_int_count_3_.C         u1_cnt_int_count_23_.T        clk
+   16.5           2      C12      =>  A14       u1_cnt_int_count_3_.C         u1_cnt_int_count_24_.T        clk
+   16.5           2      C12      =>  D12       u1_cnt_int_count_3_.C         u1_cnt_int_count_25_.T        clk
+   16.5           2      C12      =>  A10       u1_cnt_int_count_3_.C         u1_cnt_int_count_26_.T        clk
+   16.5           2      C12      =>  A6        u1_cnt_int_count_3_.C         u1_cnt_int_count_27_.T        clk
+   16.5           2      C12      =>  A2        u1_cnt_int_count_3_.C         u1_cnt_int_count_28_.T        clk
+   16.5           2      C12      =>  A13       u1_cnt_int_count_3_.C         u1_cnt_int_count_29_.T        clk
+   16.5           2      C12      =>  C9        u1_cnt_int_count_3_.C         u1_cnt_int_count_30_.T        clk
+   16.5           2      C12      =>  C5        u1_cnt_int_count_3_.C         u1_cnt_int_count_31_.T        clk
+   16.5           2      A8       =>  C7        u1_cnt_int_count_4_.C         u1_cnt_int_count_14_.T        clk
+   16.5           2      A8       =>  D6        u1_cnt_int_count_4_.C         u1_cnt_int_count_15_.T        clk
+   16.5           2      A8       =>  D2        u1_cnt_int_count_4_.C         u1_cnt_int_count_16_.T        clk
+   16.5           2      A8       =>  A7        u1_cnt_int_count_4_.C         u1_cnt_int_count_19_.T        clk
+   16.5           2      A8       =>  D9        u1_cnt_int_count_4_.C         u1_cnt_int_count_20_.T        clk
+   16.5           2      A8       =>  A3        u1_cnt_int_count_4_.C         u1_cnt_int_count_21_.T        clk
+   16.5           2      A8       =>  D5        u1_cnt_int_count_4_.C         u1_cnt_int_count_22_.T        clk
+   16.5           2      A8       =>  D1        u1_cnt_int_count_4_.C         u1_cnt_int_count_23_.T        clk
+   16.5           2      A8       =>  A14       u1_cnt_int_count_4_.C         u1_cnt_int_count_24_.T        clk
+   16.5           2      A8       =>  D12       u1_cnt_int_count_4_.C         u1_cnt_int_count_25_.T        clk
+   16.5           2      A8       =>  A10       u1_cnt_int_count_4_.C         u1_cnt_int_count_26_.T        clk
+   16.5           2      A8       =>  A6        u1_cnt_int_count_4_.C         u1_cnt_int_count_27_.T        clk
+   16.5           2      A8       =>  A2        u1_cnt_int_count_4_.C         u1_cnt_int_count_28_.T        clk
+   16.5           2      A8       =>  A13       u1_cnt_int_count_4_.C         u1_cnt_int_count_29_.T        clk
+   16.5           2      A8       =>  C9        u1_cnt_int_count_4_.C         u1_cnt_int_count_30_.T        clk
+   16.5           2      A8       =>  C5        u1_cnt_int_count_4_.C         u1_cnt_int_count_31_.T        clk
+   16.5           2      A4       =>  C7        u1_cnt_int_count_5_.C         u1_cnt_int_count_14_.T        clk
+   16.5           2      A4       =>  D6        u1_cnt_int_count_5_.C         u1_cnt_int_count_15_.T        clk
+   16.5           2      A4       =>  D2        u1_cnt_int_count_5_.C         u1_cnt_int_count_16_.T        clk
+   16.5           2      A4       =>  A7        u1_cnt_int_count_5_.C         u1_cnt_int_count_19_.T        clk
+   16.5           2      A4       =>  D9        u1_cnt_int_count_5_.C         u1_cnt_int_count_20_.T        clk
+   16.5           2      A4       =>  A3        u1_cnt_int_count_5_.C         u1_cnt_int_count_21_.T        clk
+   16.5           2      A4       =>  D5        u1_cnt_int_count_5_.C         u1_cnt_int_count_22_.T        clk
+   16.5           2      A4       =>  D1        u1_cnt_int_count_5_.C         u1_cnt_int_count_23_.T        clk
+   16.5           2      A4       =>  A14       u1_cnt_int_count_5_.C         u1_cnt_int_count_24_.T        clk
+   16.5           2      A4       =>  D12       u1_cnt_int_count_5_.C         u1_cnt_int_count_25_.T        clk
+   16.5           2      A4       =>  A10       u1_cnt_int_count_5_.C         u1_cnt_int_count_26_.T        clk
+   16.5           2      A4       =>  A6        u1_cnt_int_count_5_.C         u1_cnt_int_count_27_.T        clk
+   16.5           2      A4       =>  A2        u1_cnt_int_count_5_.C         u1_cnt_int_count_28_.T        clk
+   16.5           2      A4       =>  A13       u1_cnt_int_count_5_.C         u1_cnt_int_count_29_.T        clk
+   16.5           2      A4       =>  C9        u1_cnt_int_count_5_.C         u1_cnt_int_count_30_.T        clk
+   16.5           2      A4       =>  C5        u1_cnt_int_count_5_.C         u1_cnt_int_count_31_.T        clk
+   16.5           2      A1       =>  C7        u1_cnt_int_count_6_.C         u1_cnt_int_count_14_.T        clk
+   16.5           2      A1       =>  D6        u1_cnt_int_count_6_.C         u1_cnt_int_count_15_.T        clk
+   16.5           2      A1       =>  D2        u1_cnt_int_count_6_.C         u1_cnt_int_count_16_.T        clk
+   16.5           2      A1       =>  A7        u1_cnt_int_count_6_.C         u1_cnt_int_count_19_.T        clk
+   16.5           2      A1       =>  D9        u1_cnt_int_count_6_.C         u1_cnt_int_count_20_.T        clk
+   16.5           2      A1       =>  A3        u1_cnt_int_count_6_.C         u1_cnt_int_count_21_.T        clk
+   16.5           2      A1       =>  D5        u1_cnt_int_count_6_.C         u1_cnt_int_count_22_.T        clk
+   16.5           2      A1       =>  D1        u1_cnt_int_count_6_.C         u1_cnt_int_count_23_.T        clk
+   16.5           2      A1       =>  A14       u1_cnt_int_count_6_.C         u1_cnt_int_count_24_.T        clk
+   16.5           2      A1       =>  D12       u1_cnt_int_count_6_.C         u1_cnt_int_count_25_.T        clk
+   16.5           2      A1       =>  A10       u1_cnt_int_count_6_.C         u1_cnt_int_count_26_.T        clk
+   16.5           2      A1       =>  A6        u1_cnt_int_count_6_.C         u1_cnt_int_count_27_.T        clk
+   16.5           2      A1       =>  A2        u1_cnt_int_count_6_.C         u1_cnt_int_count_28_.T        clk
+   16.5           2      A1       =>  A13       u1_cnt_int_count_6_.C         u1_cnt_int_count_29_.T        clk
+   16.5           2      A1       =>  C9        u1_cnt_int_count_6_.C         u1_cnt_int_count_30_.T        clk
+   16.5           2      A1       =>  C5        u1_cnt_int_count_6_.C         u1_cnt_int_count_31_.T        clk
+   16.5           2      C1       =>  C7        u1_cnt_int_count_7_.C         u1_cnt_int_count_14_.T        clk
+   16.5           2      C1       =>  D6        u1_cnt_int_count_7_.C         u1_cnt_int_count_15_.T        clk
+   16.5           2      C1       =>  D2        u1_cnt_int_count_7_.C         u1_cnt_int_count_16_.T        clk
+   16.5           2      C1       =>  A7        u1_cnt_int_count_7_.C         u1_cnt_int_count_19_.T        clk
+   16.5           2      C1       =>  D9        u1_cnt_int_count_7_.C         u1_cnt_int_count_20_.T        clk
+   16.5           2      C1       =>  A3        u1_cnt_int_count_7_.C         u1_cnt_int_count_21_.T        clk
+   16.5           2      C1       =>  D5        u1_cnt_int_count_7_.C         u1_cnt_int_count_22_.T        clk
+   16.5           2      C1       =>  D1        u1_cnt_int_count_7_.C         u1_cnt_int_count_23_.T        clk
+   16.5           2      C1       =>  A14       u1_cnt_int_count_7_.C         u1_cnt_int_count_24_.T        clk
+   16.5           2      C1       =>  D12       u1_cnt_int_count_7_.C         u1_cnt_int_count_25_.T        clk
+   16.5           2      C1       =>  A10       u1_cnt_int_count_7_.C         u1_cnt_int_count_26_.T        clk
+   16.5           2      C1       =>  A6        u1_cnt_int_count_7_.C         u1_cnt_int_count_27_.T        clk
+   16.5           2      C1       =>  A2        u1_cnt_int_count_7_.C         u1_cnt_int_count_28_.T        clk
+   16.5           2      C1       =>  A13       u1_cnt_int_count_7_.C         u1_cnt_int_count_29_.T        clk
+   16.5           2      C1       =>  C9        u1_cnt_int_count_7_.C         u1_cnt_int_count_30_.T        clk
+   16.5           2      C1       =>  C5        u1_cnt_int_count_7_.C         u1_cnt_int_count_31_.T        clk
+   16.5           2      C14      =>  A7        u1_cnt_int_count_8_.C         u1_cnt_int_count_19_.T        clk
+   16.5           2      C14      =>  D9        u1_cnt_int_count_8_.C         u1_cnt_int_count_20_.T        clk
+   16.5           2      C14      =>  A3        u1_cnt_int_count_8_.C         u1_cnt_int_count_21_.T        clk
+   16.5           2      C14      =>  D5        u1_cnt_int_count_8_.C         u1_cnt_int_count_22_.T        clk
+   16.5           2      C14      =>  D1        u1_cnt_int_count_8_.C         u1_cnt_int_count_23_.T        clk
+   16.5           2      C14      =>  A14       u1_cnt_int_count_8_.C         u1_cnt_int_count_24_.T        clk
+   16.5           2      C14      =>  D12       u1_cnt_int_count_8_.C         u1_cnt_int_count_25_.T        clk
+   16.5           2      C14      =>  A10       u1_cnt_int_count_8_.C         u1_cnt_int_count_26_.T        clk
+   16.5           2      C14      =>  A6        u1_cnt_int_count_8_.C         u1_cnt_int_count_27_.T        clk
+   16.5           2      C14      =>  A2        u1_cnt_int_count_8_.C         u1_cnt_int_count_28_.T        clk
+   16.5           2      C14      =>  A13       u1_cnt_int_count_8_.C         u1_cnt_int_count_29_.T        clk
+   16.5           2      C14      =>  C9        u1_cnt_int_count_8_.C         u1_cnt_int_count_30_.T        clk
+   16.5           2      C14      =>  C5        u1_cnt_int_count_8_.C         u1_cnt_int_count_31_.T        clk
+   16.5           2      C10      =>  A7        u1_cnt_int_count_9_.C         u1_cnt_int_count_19_.T        clk
+   16.5           2      C10      =>  D9        u1_cnt_int_count_9_.C         u1_cnt_int_count_20_.T        clk
+   16.5           2      C10      =>  A3        u1_cnt_int_count_9_.C         u1_cnt_int_count_21_.T        clk
+   16.5           2      C10      =>  D5        u1_cnt_int_count_9_.C         u1_cnt_int_count_22_.T        clk
+   16.5           2      C10      =>  D1        u1_cnt_int_count_9_.C         u1_cnt_int_count_23_.T        clk
+   16.5           2      C10      =>  A14       u1_cnt_int_count_9_.C         u1_cnt_int_count_24_.T        clk
+   16.5           2      C10      =>  D12       u1_cnt_int_count_9_.C         u1_cnt_int_count_25_.T        clk
+   16.5           2      C10      =>  A10       u1_cnt_int_count_9_.C         u1_cnt_int_count_26_.T        clk
+   16.5           2      C10      =>  A6        u1_cnt_int_count_9_.C         u1_cnt_int_count_27_.T        clk
+   16.5           2      C10      =>  A2        u1_cnt_int_count_9_.C         u1_cnt_int_count_28_.T        clk
+   16.5           2      C10      =>  A13       u1_cnt_int_count_9_.C         u1_cnt_int_count_29_.T        clk
+   16.5           2      C10      =>  C9        u1_cnt_int_count_9_.C         u1_cnt_int_count_30_.T        clk
+   16.5           2      C10      =>  C5        u1_cnt_int_count_9_.C         u1_cnt_int_count_31_.T        clk
+   16.5           2      C6       =>  A7        u1_cnt_int_count_10_.C        u1_cnt_int_count_19_.T        clk
+   16.5           2      C6       =>  D9        u1_cnt_int_count_10_.C        u1_cnt_int_count_20_.T        clk
+   16.5           2      C6       =>  A3        u1_cnt_int_count_10_.C        u1_cnt_int_count_21_.T        clk
+   16.5           2      C6       =>  D5        u1_cnt_int_count_10_.C        u1_cnt_int_count_22_.T        clk
+   16.5           2      C6       =>  D1        u1_cnt_int_count_10_.C        u1_cnt_int_count_23_.T        clk
+   16.5           2      C6       =>  A14       u1_cnt_int_count_10_.C        u1_cnt_int_count_24_.T        clk
+   16.5           2      C6       =>  D12       u1_cnt_int_count_10_.C        u1_cnt_int_count_25_.T        clk
+   16.5           2      C6       =>  A10       u1_cnt_int_count_10_.C        u1_cnt_int_count_26_.T        clk
+   16.5           2      C6       =>  A6        u1_cnt_int_count_10_.C        u1_cnt_int_count_27_.T        clk
+   16.5           2      C6       =>  A2        u1_cnt_int_count_10_.C        u1_cnt_int_count_28_.T        clk
+   16.5           2      C6       =>  A13       u1_cnt_int_count_10_.C        u1_cnt_int_count_29_.T        clk
+   16.5           2      C6       =>  C9        u1_cnt_int_count_10_.C        u1_cnt_int_count_30_.T        clk
+   16.5           2      C6       =>  C5        u1_cnt_int_count_10_.C        u1_cnt_int_count_31_.T        clk
+   16.5           2      C2       =>  A7        u1_cnt_int_count_11_.C        u1_cnt_int_count_19_.T        clk
+   16.5           2      C2       =>  D9        u1_cnt_int_count_11_.C        u1_cnt_int_count_20_.T        clk
+   16.5           2      C2       =>  A3        u1_cnt_int_count_11_.C        u1_cnt_int_count_21_.T        clk
+   16.5           2      C2       =>  D5        u1_cnt_int_count_11_.C        u1_cnt_int_count_22_.T        clk
+   16.5           2      C2       =>  D1        u1_cnt_int_count_11_.C        u1_cnt_int_count_23_.T        clk
+   16.5           2      C2       =>  A14       u1_cnt_int_count_11_.C        u1_cnt_int_count_24_.T        clk
+   16.5           2      C2       =>  D12       u1_cnt_int_count_11_.C        u1_cnt_int_count_25_.T        clk
+   16.5           2      C2       =>  A10       u1_cnt_int_count_11_.C        u1_cnt_int_count_26_.T        clk
+   16.5           2      C2       =>  A6        u1_cnt_int_count_11_.C        u1_cnt_int_count_27_.T        clk
+   16.5           2      C2       =>  A2        u1_cnt_int_count_11_.C        u1_cnt_int_count_28_.T        clk
+   16.5           2      C2       =>  A13       u1_cnt_int_count_11_.C        u1_cnt_int_count_29_.T        clk
+   16.5           2      C2       =>  C9        u1_cnt_int_count_11_.C        u1_cnt_int_count_30_.T        clk
+   16.5           2      C2       =>  C5        u1_cnt_int_count_11_.C        u1_cnt_int_count_31_.T        clk
+   16.5           2      D13      =>  A7        u1_cnt_int_count_12_.C        u1_cnt_int_count_19_.T        clk
+   16.5           2      D13      =>  D9        u1_cnt_int_count_12_.C        u1_cnt_int_count_20_.T        clk
+   16.5           2      D13      =>  A3        u1_cnt_int_count_12_.C        u1_cnt_int_count_21_.T        clk
+   16.5           2      D13      =>  D5        u1_cnt_int_count_12_.C        u1_cnt_int_count_22_.T        clk
+   16.5           2      D13      =>  D1        u1_cnt_int_count_12_.C        u1_cnt_int_count_23_.T        clk
+   16.5           2      D13      =>  A14       u1_cnt_int_count_12_.C        u1_cnt_int_count_24_.T        clk
+   16.5           2      D13      =>  D12       u1_cnt_int_count_12_.C        u1_cnt_int_count_25_.T        clk
+   16.5           2      D13      =>  A10       u1_cnt_int_count_12_.C        u1_cnt_int_count_26_.T        clk
+   16.5           2      D13      =>  A6        u1_cnt_int_count_12_.C        u1_cnt_int_count_27_.T        clk
+   16.5           2      D13      =>  A2        u1_cnt_int_count_12_.C        u1_cnt_int_count_28_.T        clk
+   16.5           2      D13      =>  A13       u1_cnt_int_count_12_.C        u1_cnt_int_count_29_.T        clk
+   16.5           2      D13      =>  C9        u1_cnt_int_count_12_.C        u1_cnt_int_count_30_.T        clk
+   16.5           2      D13      =>  C5        u1_cnt_int_count_12_.C        u1_cnt_int_count_31_.T        clk
+   16.5           2      C13      =>  A7        u1_cnt_int_count_13_.C        u1_cnt_int_count_19_.T        clk
+   16.5           2      C13      =>  D9        u1_cnt_int_count_13_.C        u1_cnt_int_count_20_.T        clk
+   16.5           2      C13      =>  A3        u1_cnt_int_count_13_.C        u1_cnt_int_count_21_.T        clk
+   16.5           2      C13      =>  D5        u1_cnt_int_count_13_.C        u1_cnt_int_count_22_.T        clk
+   16.5           2      C13      =>  D1        u1_cnt_int_count_13_.C        u1_cnt_int_count_23_.T        clk
+   16.5           2      C13      =>  A14       u1_cnt_int_count_13_.C        u1_cnt_int_count_24_.T        clk
+   16.5           2      C13      =>  D12       u1_cnt_int_count_13_.C        u1_cnt_int_count_25_.T        clk
+   16.5           2      C13      =>  A10       u1_cnt_int_count_13_.C        u1_cnt_int_count_26_.T        clk
+   16.5           2      C13      =>  A6        u1_cnt_int_count_13_.C        u1_cnt_int_count_27_.T        clk
+   16.5           2      C13      =>  A2        u1_cnt_int_count_13_.C        u1_cnt_int_count_28_.T        clk
+   16.5           2      C13      =>  A13       u1_cnt_int_count_13_.C        u1_cnt_int_count_29_.T        clk
+   16.5           2      C13      =>  C9        u1_cnt_int_count_13_.C        u1_cnt_int_count_30_.T        clk
+   16.5           2      C13      =>  C5        u1_cnt_int_count_13_.C        u1_cnt_int_count_31_.T        clk
+   16.5           2      C7       =>  A7        u1_cnt_int_count_14_.C        u1_cnt_int_count_19_.T        clk
+   16.5           2      C7       =>  D9        u1_cnt_int_count_14_.C        u1_cnt_int_count_20_.T        clk
+   16.5           2      C7       =>  A3        u1_cnt_int_count_14_.C        u1_cnt_int_count_21_.T        clk
+   16.5           2      C7       =>  D5        u1_cnt_int_count_14_.C        u1_cnt_int_count_22_.T        clk
+   16.5           2      C7       =>  D1        u1_cnt_int_count_14_.C        u1_cnt_int_count_23_.T        clk
+   16.5           2      C7       =>  A14       u1_cnt_int_count_14_.C        u1_cnt_int_count_24_.T        clk
+   16.5           2      C7       =>  D12       u1_cnt_int_count_14_.C        u1_cnt_int_count_25_.T        clk
+   16.5           2      C7       =>  A10       u1_cnt_int_count_14_.C        u1_cnt_int_count_26_.T        clk
+   16.5           2      C7       =>  A6        u1_cnt_int_count_14_.C        u1_cnt_int_count_27_.T        clk
+   16.5           2      C7       =>  A2        u1_cnt_int_count_14_.C        u1_cnt_int_count_28_.T        clk
+   16.5           2      C7       =>  A13       u1_cnt_int_count_14_.C        u1_cnt_int_count_29_.T        clk
+   16.5           2      C7       =>  C9        u1_cnt_int_count_14_.C        u1_cnt_int_count_30_.T        clk
+   16.5           2      C7       =>  C5        u1_cnt_int_count_14_.C        u1_cnt_int_count_31_.T        clk
+   16.5           2      D6       =>  A7        u1_cnt_int_count_15_.C        u1_cnt_int_count_19_.T        clk
+   16.5           2      D6       =>  D9        u1_cnt_int_count_15_.C        u1_cnt_int_count_20_.T        clk
+   16.5           2      D6       =>  A3        u1_cnt_int_count_15_.C        u1_cnt_int_count_21_.T        clk
+   16.5           2      D6       =>  D5        u1_cnt_int_count_15_.C        u1_cnt_int_count_22_.T        clk
+   16.5           2      D6       =>  D1        u1_cnt_int_count_15_.C        u1_cnt_int_count_23_.T        clk
+   16.5           2      D6       =>  A14       u1_cnt_int_count_15_.C        u1_cnt_int_count_24_.T        clk
+   16.5           2      D6       =>  D12       u1_cnt_int_count_15_.C        u1_cnt_int_count_25_.T        clk
+   16.5           2      D6       =>  A10       u1_cnt_int_count_15_.C        u1_cnt_int_count_26_.T        clk
+   16.5           2      D6       =>  A6        u1_cnt_int_count_15_.C        u1_cnt_int_count_27_.T        clk
+   16.5           2      D6       =>  A2        u1_cnt_int_count_15_.C        u1_cnt_int_count_28_.T        clk
+   16.5           2      D6       =>  A13       u1_cnt_int_count_15_.C        u1_cnt_int_count_29_.T        clk
+   16.5           2      D6       =>  C9        u1_cnt_int_count_15_.C        u1_cnt_int_count_30_.T        clk
+   16.5           2      D6       =>  C5        u1_cnt_int_count_15_.C        u1_cnt_int_count_31_.T        clk
+   16.5           2      D2       =>  A7        u1_cnt_int_count_16_.C        u1_cnt_int_count_19_.T        clk
+   16.5           2      D2       =>  D9        u1_cnt_int_count_16_.C        u1_cnt_int_count_20_.T        clk
+   16.5           2      D2       =>  A3        u1_cnt_int_count_16_.C        u1_cnt_int_count_21_.T        clk
+   16.5           2      D2       =>  D5        u1_cnt_int_count_16_.C        u1_cnt_int_count_22_.T        clk
+   16.5           2      D2       =>  D1        u1_cnt_int_count_16_.C        u1_cnt_int_count_23_.T        clk
+   16.5           2      D2       =>  A14       u1_cnt_int_count_16_.C        u1_cnt_int_count_24_.T        clk
+   16.5           2      D2       =>  D12       u1_cnt_int_count_16_.C        u1_cnt_int_count_25_.T        clk
+   16.5           2      D2       =>  A10       u1_cnt_int_count_16_.C        u1_cnt_int_count_26_.T        clk
+   16.5           2      D2       =>  A6        u1_cnt_int_count_16_.C        u1_cnt_int_count_27_.T        clk
+   16.5           2      D2       =>  A2        u1_cnt_int_count_16_.C        u1_cnt_int_count_28_.T        clk
+   16.5           2      D2       =>  A13       u1_cnt_int_count_16_.C        u1_cnt_int_count_29_.T        clk
+   16.5           2      D2       =>  C9        u1_cnt_int_count_16_.C        u1_cnt_int_count_30_.T        clk
+   16.5           2      D2       =>  C5        u1_cnt_int_count_16_.C        u1_cnt_int_count_31_.T        clk
+   16.5           2      A9       =>  C12       u1_cnt_int_count_17_.C        u1_cnt_int_count_3_.T.X1      clk
+   16.5           2      A9       =>  C12       u1_cnt_int_count_17_.C        u1_cnt_int_count_3_.T.X2      clk
+   16.5           2      A9       =>  C9        u1_cnt_int_count_17_.C        u1_cnt_int_count_30_.T        clk
+   16.5           2      A9       =>  C5        u1_cnt_int_count_17_.C        u1_cnt_int_count_31_.T        clk
+   16.5           2      A11      =>  C12       u1_cnt_int_count_18_.C        u1_cnt_int_count_3_.T.X1      clk
+   16.5           2      A11      =>  C12       u1_cnt_int_count_18_.C        u1_cnt_int_count_3_.T.X2      clk
+   16.5           2      A11      =>  C9        u1_cnt_int_count_18_.C        u1_cnt_int_count_30_.T        clk
+   16.5           2      A11      =>  C5        u1_cnt_int_count_18_.C        u1_cnt_int_count_31_.T        clk
+   16.5           2      A7       =>  C12       u1_cnt_int_count_19_.C        u1_cnt_int_count_3_.T.X1      clk
+   16.5           2      A7       =>  C12       u1_cnt_int_count_19_.C        u1_cnt_int_count_3_.T.X2      clk
+   16.5           2      A7       =>  C9        u1_cnt_int_count_19_.C        u1_cnt_int_count_30_.T        clk
+   16.5           2      A7       =>  C5        u1_cnt_int_count_19_.C        u1_cnt_int_count_31_.T        clk
+   16.5           2      D9       =>  C12       u1_cnt_int_count_20_.C        u1_cnt_int_count_3_.T.X1      clk
+   16.5           2      D9       =>  C12       u1_cnt_int_count_20_.C        u1_cnt_int_count_3_.T.X2      clk
+   16.5           2      D9       =>  C9        u1_cnt_int_count_20_.C        u1_cnt_int_count_30_.T        clk
+   16.5           2      D9       =>  C5        u1_cnt_int_count_20_.C        u1_cnt_int_count_31_.T        clk
+   16.5           2      A3       =>  C12       u1_cnt_int_count_21_.C        u1_cnt_int_count_3_.T.X1      clk
+   16.5           2      A3       =>  C12       u1_cnt_int_count_21_.C        u1_cnt_int_count_3_.T.X2      clk
+   16.5           2      A3       =>  C9        u1_cnt_int_count_21_.C        u1_cnt_int_count_30_.T        clk
+   16.5           2      A3       =>  C5        u1_cnt_int_count_21_.C        u1_cnt_int_count_31_.T        clk
+   16.5           2      D5       =>  C12       u1_cnt_int_count_22_.C        u1_cnt_int_count_3_.T.X1      clk
+   16.5           2      D5       =>  C12       u1_cnt_int_count_22_.C        u1_cnt_int_count_3_.T.X2      clk
+   16.5           2      D5       =>  C9        u1_cnt_int_count_22_.C        u1_cnt_int_count_30_.T        clk
+   16.5           2      D5       =>  C5        u1_cnt_int_count_22_.C        u1_cnt_int_count_31_.T        clk
+   16.5           2      D1       =>  C12       u1_cnt_int_count_23_.C        u1_cnt_int_count_3_.T.X1      clk
+   16.5           2      D1       =>  C12       u1_cnt_int_count_23_.C        u1_cnt_int_count_3_.T.X2      clk
+   16.5           2      D1       =>  C9        u1_cnt_int_count_23_.C        u1_cnt_int_count_30_.T        clk
+   16.5           2      D1       =>  C5        u1_cnt_int_count_23_.C        u1_cnt_int_count_31_.T        clk
+   16.5           2      A14      =>  C12       u1_cnt_int_count_24_.C        u1_cnt_int_count_3_.T.X1      clk
+   16.5           2      A14      =>  C12       u1_cnt_int_count_24_.C        u1_cnt_int_count_3_.T.X2      clk
+   16.5           2      A14      =>  C9        u1_cnt_int_count_24_.C        u1_cnt_int_count_30_.T        clk
+   16.5           2      A14      =>  C5        u1_cnt_int_count_24_.C        u1_cnt_int_count_31_.T        clk
+   16.5           2      D12      =>  C12       u1_cnt_int_count_25_.C        u1_cnt_int_count_3_.T.X1      clk
+   16.5           2      D12      =>  C12       u1_cnt_int_count_25_.C        u1_cnt_int_count_3_.T.X2      clk
+   16.5           2      A10      =>  C12       u1_cnt_int_count_26_.C        u1_cnt_int_count_3_.T.X1      clk
+   16.5           2      A10      =>  C12       u1_cnt_int_count_26_.C        u1_cnt_int_count_3_.T.X2      clk
+   16.5           2      A6       =>  C12       u1_cnt_int_count_27_.C        u1_cnt_int_count_3_.T.X1      clk
+   16.5           2      A6       =>  C12       u1_cnt_int_count_27_.C        u1_cnt_int_count_3_.T.X2      clk
+   15.5           2      A0       =>  A9        u1_cnt_int_count_0_.C         u1_cnt_int_count_17_.D        clk
+   15.5           2      A0       =>  A11       u1_cnt_int_count_0_.C         u1_cnt_int_count_18_.D.X1     clk
+   15.5           2      C8       =>  A9        u1_cnt_int_count_1_.C         u1_cnt_int_count_17_.D        clk
+   15.5           2      C8       =>  A11       u1_cnt_int_count_1_.C         u1_cnt_int_count_18_.D.X1     clk
+   15.5           2      A12      =>  A9        u1_cnt_int_count_2_.C         u1_cnt_int_count_17_.D        clk
+   15.5           2      A12      =>  A11       u1_cnt_int_count_2_.C         u1_cnt_int_count_18_.D.X1     clk
+   15.5           2      C12      =>  A9        u1_cnt_int_count_3_.C         u1_cnt_int_count_17_.D        clk
+   15.5           2      C12      =>  A11       u1_cnt_int_count_3_.C         u1_cnt_int_count_18_.D.X1     clk
+   15.5           2      A8       =>  A9        u1_cnt_int_count_4_.C         u1_cnt_int_count_17_.D        clk
+   15.5           2      A8       =>  A11       u1_cnt_int_count_4_.C         u1_cnt_int_count_18_.D.X1     clk
+   15.5           2      A4       =>  A9        u1_cnt_int_count_5_.C         u1_cnt_int_count_17_.D        clk
+   15.5           2      A4       =>  A11       u1_cnt_int_count_5_.C         u1_cnt_int_count_18_.D.X1     clk
+   15.5           2      A1       =>  A9        u1_cnt_int_count_6_.C         u1_cnt_int_count_17_.D        clk
+   15.5           2      A1       =>  A11       u1_cnt_int_count_6_.C         u1_cnt_int_count_18_.D.X1     clk
+   15.5           2      C1       =>  A9        u1_cnt_int_count_7_.C         u1_cnt_int_count_17_.D        clk
+   15.5           2      C1       =>  A11       u1_cnt_int_count_7_.C         u1_cnt_int_count_18_.D.X1     clk
+   15.5           2      C14      =>  A0        u1_cnt_int_count_8_.C         u1_cnt_int_count_0_.D         clk
+   15.5           2      C14      =>  A9        u1_cnt_int_count_8_.C         u1_cnt_int_count_17_.D        clk
+   15.5           2      C14      =>  A11       u1_cnt_int_count_8_.C         u1_cnt_int_count_18_.D.X1     clk
+   15.5           2      C14      =>  A5        u1_cnt_int_count_8_.C         u1_q_3_.D                     clk
+   15.5           2      C10      =>  A0        u1_cnt_int_count_9_.C         u1_cnt_int_count_0_.D         clk
+   15.5           2      C10      =>  A9        u1_cnt_int_count_9_.C         u1_cnt_int_count_17_.D        clk
+   15.5           2      C10      =>  A11       u1_cnt_int_count_9_.C         u1_cnt_int_count_18_.D.X1     clk
+   15.5           2      C10      =>  A5        u1_cnt_int_count_9_.C         u1_q_3_.D                     clk
+   15.5           2      C6       =>  A0        u1_cnt_int_count_10_.C        u1_cnt_int_count_0_.D         clk
+   15.5           2      C6       =>  A9        u1_cnt_int_count_10_.C        u1_cnt_int_count_17_.D        clk
+   15.5           2      C6       =>  A11       u1_cnt_int_count_10_.C        u1_cnt_int_count_18_.D.X1     clk
+   15.5           2      C6       =>  A5        u1_cnt_int_count_10_.C        u1_q_3_.D                     clk
+   15.5           2      C2       =>  A0        u1_cnt_int_count_11_.C        u1_cnt_int_count_0_.D         clk
+   15.5           2      C2       =>  A9        u1_cnt_int_count_11_.C        u1_cnt_int_count_17_.D        clk
+   15.5           2      C2       =>  A11       u1_cnt_int_count_11_.C        u1_cnt_int_count_18_.D.X1     clk
+   15.5           2      C2       =>  A5        u1_cnt_int_count_11_.C        u1_q_3_.D                     clk
+   15.5           2      D13      =>  A0        u1_cnt_int_count_12_.C        u1_cnt_int_count_0_.D         clk
+   15.5           2      D13      =>  A9        u1_cnt_int_count_12_.C        u1_cnt_int_count_17_.D        clk
+   15.5           2      D13      =>  A11       u1_cnt_int_count_12_.C        u1_cnt_int_count_18_.D.X1     clk
+   15.5           2      D13      =>  A5        u1_cnt_int_count_12_.C        u1_q_3_.D                     clk
+   15.5           2      C13      =>  A0        u1_cnt_int_count_13_.C        u1_cnt_int_count_0_.D         clk
+   15.5           2      C13      =>  A9        u1_cnt_int_count_13_.C        u1_cnt_int_count_17_.D        clk
+   15.5           2      C13      =>  A11       u1_cnt_int_count_13_.C        u1_cnt_int_count_18_.D.X1     clk
+   15.5           2      C13      =>  A5        u1_cnt_int_count_13_.C        u1_q_3_.D                     clk
+   15.5           2      C7       =>  A0        u1_cnt_int_count_14_.C        u1_cnt_int_count_0_.D         clk
+   15.5           2      C7       =>  A9        u1_cnt_int_count_14_.C        u1_cnt_int_count_17_.D        clk
+   15.5           2      C7       =>  A11       u1_cnt_int_count_14_.C        u1_cnt_int_count_18_.D.X1     clk
+   15.5           2      C7       =>  A5        u1_cnt_int_count_14_.C        u1_q_3_.D                     clk
+   15.5           2      D6       =>  A0        u1_cnt_int_count_15_.C        u1_cnt_int_count_0_.D         clk
+   15.5           2      D6       =>  A9        u1_cnt_int_count_15_.C        u1_cnt_int_count_17_.D        clk
+   15.5           2      D6       =>  A11       u1_cnt_int_count_15_.C        u1_cnt_int_count_18_.D.X1     clk
+   15.5           2      D6       =>  A5        u1_cnt_int_count_15_.C        u1_q_3_.D                     clk
+   15.5           2      D2       =>  A0        u1_cnt_int_count_16_.C        u1_cnt_int_count_0_.D         clk
+   15.5           2      D2       =>  A9        u1_cnt_int_count_16_.C        u1_cnt_int_count_17_.D        clk
+   15.5           2      D2       =>  A11       u1_cnt_int_count_16_.C        u1_cnt_int_count_18_.D.X1     clk
+   15.5           2      D2       =>  A5        u1_cnt_int_count_16_.C        u1_q_3_.D                     clk
+   15.5           2      A9       =>  A0        u1_cnt_int_count_17_.C        u1_cnt_int_count_0_.D         clk
+   15.5           2      A9       =>  A5        u1_cnt_int_count_17_.C        u1_q_3_.D                     clk
+   15.5           2      A11      =>  A0        u1_cnt_int_count_18_.C        u1_cnt_int_count_0_.D         clk
+   15.5           2      A11      =>  A5        u1_cnt_int_count_18_.C        u1_q_3_.D                     clk
+   15.5           2      A7       =>  A0        u1_cnt_int_count_19_.C        u1_cnt_int_count_0_.D         clk
+   15.5           2      A7       =>  A5        u1_cnt_int_count_19_.C        u1_q_3_.D                     clk
+   15.5           2      D9       =>  A5        u1_cnt_int_count_20_.C        u1_q_3_.D                     clk
+   15.5           2      A3       =>  A5        u1_cnt_int_count_21_.C        u1_q_3_.D                     clk
+   15.5           2      D5       =>  A5        u1_cnt_int_count_22_.C        u1_q_3_.D                     clk
+   15.5           2      D1       =>  A5        u1_cnt_int_count_23_.C        u1_q_3_.D                     clk
+   15.5           2      A14      =>  A5        u1_cnt_int_count_24_.C        u1_q_3_.D                     clk
+    9.5           1      A0       =>  A8        u1_cnt_int_count_0_.C         u1_cnt_int_count_4_.T         clk
+    9.5           1      A0       =>  A4        u1_cnt_int_count_0_.C         u1_cnt_int_count_5_.T         clk
+    9.5           1      A0       =>  A1        u1_cnt_int_count_0_.C         u1_cnt_int_count_6_.T         clk
+    9.5           1      A0       =>  C1        u1_cnt_int_count_0_.C         u1_cnt_int_count_7_.T         clk
+    9.5           1      A0       =>  C14       u1_cnt_int_count_0_.C         u1_cnt_int_count_8_.T         clk
+    9.5           1      A0       =>  C10       u1_cnt_int_count_0_.C         u1_cnt_int_count_9_.T         clk
+    9.5           1      A0       =>  C6        u1_cnt_int_count_0_.C         u1_cnt_int_count_10_.T        clk
+    9.5           1      A0       =>  C2        u1_cnt_int_count_0_.C         u1_cnt_int_count_11_.T        clk
+    9.5           1      A0       =>  D13       u1_cnt_int_count_0_.C         u1_cnt_int_count_12_.T        clk
+    9.5           1      A0       =>  C13       u1_cnt_int_count_0_.C         u1_cnt_int_count_13_.T        clk
+    9.5           1      C8       =>  A8        u1_cnt_int_count_1_.C         u1_cnt_int_count_4_.T         clk
+    9.5           1      C8       =>  A4        u1_cnt_int_count_1_.C         u1_cnt_int_count_5_.T         clk
+    9.5           1      C8       =>  A1        u1_cnt_int_count_1_.C         u1_cnt_int_count_6_.T         clk
+    9.5           1      C8       =>  C1        u1_cnt_int_count_1_.C         u1_cnt_int_count_7_.T         clk
+    9.5           1      C8       =>  C14       u1_cnt_int_count_1_.C         u1_cnt_int_count_8_.T         clk
+    9.5           1      C8       =>  C10       u1_cnt_int_count_1_.C         u1_cnt_int_count_9_.T         clk
+    9.5           1      C8       =>  C6        u1_cnt_int_count_1_.C         u1_cnt_int_count_10_.T        clk
+    9.5           1      C8       =>  C2        u1_cnt_int_count_1_.C         u1_cnt_int_count_11_.T        clk
+    9.5           1      C8       =>  D13       u1_cnt_int_count_1_.C         u1_cnt_int_count_12_.T        clk
+    9.5           1      C8       =>  C13       u1_cnt_int_count_1_.C         u1_cnt_int_count_13_.T        clk
+    9.5           1      A12      =>  A8        u1_cnt_int_count_2_.C         u1_cnt_int_count_4_.T         clk
+    9.5           1      A12      =>  A4        u1_cnt_int_count_2_.C         u1_cnt_int_count_5_.T         clk
+    9.5           1      A12      =>  A1        u1_cnt_int_count_2_.C         u1_cnt_int_count_6_.T         clk
+    9.5           1      A12      =>  C1        u1_cnt_int_count_2_.C         u1_cnt_int_count_7_.T         clk
+    9.5           1      A12      =>  C14       u1_cnt_int_count_2_.C         u1_cnt_int_count_8_.T         clk
+    9.5           1      A12      =>  C10       u1_cnt_int_count_2_.C         u1_cnt_int_count_9_.T         clk
+    9.5           1      A12      =>  C6        u1_cnt_int_count_2_.C         u1_cnt_int_count_10_.T        clk
+    9.5           1      A12      =>  C2        u1_cnt_int_count_2_.C         u1_cnt_int_count_11_.T        clk
+    9.5           1      A12      =>  D13       u1_cnt_int_count_2_.C         u1_cnt_int_count_12_.T        clk
+    9.5           1      A12      =>  C13       u1_cnt_int_count_2_.C         u1_cnt_int_count_13_.T        clk
+    9.5           1      C12      =>  A8        u1_cnt_int_count_3_.C         u1_cnt_int_count_4_.T         clk
+    9.5           1      C12      =>  A4        u1_cnt_int_count_3_.C         u1_cnt_int_count_5_.T         clk
+    9.5           1      C12      =>  A1        u1_cnt_int_count_3_.C         u1_cnt_int_count_6_.T         clk
+    9.5           1      C12      =>  C1        u1_cnt_int_count_3_.C         u1_cnt_int_count_7_.T         clk
+    9.5           1      C12      =>  C14       u1_cnt_int_count_3_.C         u1_cnt_int_count_8_.T         clk
+    9.5           1      C12      =>  C10       u1_cnt_int_count_3_.C         u1_cnt_int_count_9_.T         clk
+    9.5           1      C12      =>  C6        u1_cnt_int_count_3_.C         u1_cnt_int_count_10_.T        clk
+    9.5           1      C12      =>  C2        u1_cnt_int_count_3_.C         u1_cnt_int_count_11_.T        clk
+    9.5           1      C12      =>  D13       u1_cnt_int_count_3_.C         u1_cnt_int_count_12_.T        clk
+    9.5           1      C12      =>  C13       u1_cnt_int_count_3_.C         u1_cnt_int_count_13_.T        clk
+    9.5           1      A8       =>  A4        u1_cnt_int_count_4_.C         u1_cnt_int_count_5_.T         clk
+    9.5           1      A8       =>  A1        u1_cnt_int_count_4_.C         u1_cnt_int_count_6_.T         clk
+    9.5           1      A8       =>  C1        u1_cnt_int_count_4_.C         u1_cnt_int_count_7_.T         clk
+    9.5           1      A8       =>  C14       u1_cnt_int_count_4_.C         u1_cnt_int_count_8_.T         clk
+    9.5           1      A8       =>  C10       u1_cnt_int_count_4_.C         u1_cnt_int_count_9_.T         clk
+    9.5           1      A8       =>  C6        u1_cnt_int_count_4_.C         u1_cnt_int_count_10_.T        clk
+    9.5           1      A8       =>  C2        u1_cnt_int_count_4_.C         u1_cnt_int_count_11_.T        clk
+    9.5           1      A8       =>  D13       u1_cnt_int_count_4_.C         u1_cnt_int_count_12_.T        clk
+    9.5           1      A8       =>  C13       u1_cnt_int_count_4_.C         u1_cnt_int_count_13_.T        clk
+    9.5           1      A4       =>  A1        u1_cnt_int_count_5_.C         u1_cnt_int_count_6_.T         clk
+    9.5           1      A4       =>  C1        u1_cnt_int_count_5_.C         u1_cnt_int_count_7_.T         clk
+    9.5           1      A4       =>  C14       u1_cnt_int_count_5_.C         u1_cnt_int_count_8_.T         clk
+    9.5           1      A4       =>  C10       u1_cnt_int_count_5_.C         u1_cnt_int_count_9_.T         clk
+    9.5           1      A4       =>  C6        u1_cnt_int_count_5_.C         u1_cnt_int_count_10_.T        clk
+    9.5           1      A4       =>  C2        u1_cnt_int_count_5_.C         u1_cnt_int_count_11_.T        clk
+    9.5           1      A4       =>  D13       u1_cnt_int_count_5_.C         u1_cnt_int_count_12_.T        clk
+    9.5           1      A4       =>  C13       u1_cnt_int_count_5_.C         u1_cnt_int_count_13_.T        clk
+    9.5           1      A1       =>  C1        u1_cnt_int_count_6_.C         u1_cnt_int_count_7_.T         clk
+    9.5           1      A1       =>  C14       u1_cnt_int_count_6_.C         u1_cnt_int_count_8_.T         clk
+    9.5           1      A1       =>  C10       u1_cnt_int_count_6_.C         u1_cnt_int_count_9_.T         clk
+    9.5           1      A1       =>  C6        u1_cnt_int_count_6_.C         u1_cnt_int_count_10_.T        clk
+    9.5           1      A1       =>  C2        u1_cnt_int_count_6_.C         u1_cnt_int_count_11_.T        clk
+    9.5           1      A1       =>  D13       u1_cnt_int_count_6_.C         u1_cnt_int_count_12_.T        clk
+    9.5           1      A1       =>  C13       u1_cnt_int_count_6_.C         u1_cnt_int_count_13_.T        clk
+    9.5           1      C1       =>  C14       u1_cnt_int_count_7_.C         u1_cnt_int_count_8_.T         clk
+    9.5           1      C1       =>  C10       u1_cnt_int_count_7_.C         u1_cnt_int_count_9_.T         clk
+    9.5           1      C1       =>  C6        u1_cnt_int_count_7_.C         u1_cnt_int_count_10_.T        clk
+    9.5           1      C1       =>  C2        u1_cnt_int_count_7_.C         u1_cnt_int_count_11_.T        clk
+    9.5           1      C1       =>  D13       u1_cnt_int_count_7_.C         u1_cnt_int_count_12_.T        clk
+    9.5           1      C1       =>  C13       u1_cnt_int_count_7_.C         u1_cnt_int_count_13_.T        clk
+    9.5           1      C14      =>  C10       u1_cnt_int_count_8_.C         u1_cnt_int_count_9_.T         clk
+    9.5           1      C14      =>  C6        u1_cnt_int_count_8_.C         u1_cnt_int_count_10_.T        clk
+    9.5           1      C14      =>  C2        u1_cnt_int_count_8_.C         u1_cnt_int_count_11_.T        clk
+    9.5           1      C14      =>  D13       u1_cnt_int_count_8_.C         u1_cnt_int_count_12_.T        clk
+    9.5           1      C14      =>  C13       u1_cnt_int_count_8_.C         u1_cnt_int_count_13_.T        clk
+    9.5           1      C14      =>  C7        u1_cnt_int_count_8_.C         u1_cnt_int_count_14_.T        clk
+    9.5           1      C14      =>  D6        u1_cnt_int_count_8_.C         u1_cnt_int_count_15_.T        clk
+    9.5           1      C14      =>  D2        u1_cnt_int_count_8_.C         u1_cnt_int_count_16_.T        clk
+    9.5           1      C10      =>  C6        u1_cnt_int_count_9_.C         u1_cnt_int_count_10_.T        clk
+    9.5           1      C10      =>  C2        u1_cnt_int_count_9_.C         u1_cnt_int_count_11_.T        clk
+    9.5           1      C10      =>  D13       u1_cnt_int_count_9_.C         u1_cnt_int_count_12_.T        clk
+    9.5           1      C10      =>  C13       u1_cnt_int_count_9_.C         u1_cnt_int_count_13_.T        clk
+    9.5           1      C10      =>  C7        u1_cnt_int_count_9_.C         u1_cnt_int_count_14_.T        clk
+    9.5           1      C10      =>  D6        u1_cnt_int_count_9_.C         u1_cnt_int_count_15_.T        clk
+    9.5           1      C10      =>  D2        u1_cnt_int_count_9_.C         u1_cnt_int_count_16_.T        clk
+    9.5           1      C6       =>  C2        u1_cnt_int_count_10_.C        u1_cnt_int_count_11_.T        clk
+    9.5           1      C6       =>  D13       u1_cnt_int_count_10_.C        u1_cnt_int_count_12_.T        clk
+    9.5           1      C6       =>  C13       u1_cnt_int_count_10_.C        u1_cnt_int_count_13_.T        clk
+    9.5           1      C6       =>  C7        u1_cnt_int_count_10_.C        u1_cnt_int_count_14_.T        clk
+    9.5           1      C6       =>  D6        u1_cnt_int_count_10_.C        u1_cnt_int_count_15_.T        clk
+    9.5           1      C6       =>  D2        u1_cnt_int_count_10_.C        u1_cnt_int_count_16_.T        clk
+    9.5           1      C2       =>  D13       u1_cnt_int_count_11_.C        u1_cnt_int_count_12_.T        clk
+    9.5           1      C2       =>  C13       u1_cnt_int_count_11_.C        u1_cnt_int_count_13_.T        clk
+    9.5           1      C2       =>  C7        u1_cnt_int_count_11_.C        u1_cnt_int_count_14_.T        clk
+    9.5           1      C2       =>  D6        u1_cnt_int_count_11_.C        u1_cnt_int_count_15_.T        clk
+    9.5           1      C2       =>  D2        u1_cnt_int_count_11_.C        u1_cnt_int_count_16_.T        clk
+    9.5           1      D13      =>  C13       u1_cnt_int_count_12_.C        u1_cnt_int_count_13_.T        clk
+    9.5           1      D13      =>  C7        u1_cnt_int_count_12_.C        u1_cnt_int_count_14_.T        clk
+    9.5           1      D13      =>  D6        u1_cnt_int_count_12_.C        u1_cnt_int_count_15_.T        clk
+    9.5           1      D13      =>  D2        u1_cnt_int_count_12_.C        u1_cnt_int_count_16_.T        clk
+    9.5           1      C13      =>  C7        u1_cnt_int_count_13_.C        u1_cnt_int_count_14_.T        clk
+    9.5           1      C13      =>  D6        u1_cnt_int_count_13_.C        u1_cnt_int_count_15_.T        clk
+    9.5           1      C13      =>  D2        u1_cnt_int_count_13_.C        u1_cnt_int_count_16_.T        clk
+    9.5           1      C7       =>  D6        u1_cnt_int_count_14_.C        u1_cnt_int_count_15_.T        clk
+    9.5           1      C7       =>  D2        u1_cnt_int_count_14_.C        u1_cnt_int_count_16_.T        clk
+    9.5           1      D6       =>  D2        u1_cnt_int_count_15_.C        u1_cnt_int_count_16_.T        clk
+    9.5           1      A9       =>  A7        u1_cnt_int_count_17_.C        u1_cnt_int_count_19_.T        clk
+    9.5           1      A9       =>  D9        u1_cnt_int_count_17_.C        u1_cnt_int_count_20_.T        clk
+    9.5           1      A9       =>  A3        u1_cnt_int_count_17_.C        u1_cnt_int_count_21_.T        clk
+    9.5           1      A9       =>  D5        u1_cnt_int_count_17_.C        u1_cnt_int_count_22_.T        clk
+    9.5           1      A9       =>  D1        u1_cnt_int_count_17_.C        u1_cnt_int_count_23_.T        clk
+    9.5           1      A9       =>  A14       u1_cnt_int_count_17_.C        u1_cnt_int_count_24_.T        clk
+    9.5           1      A9       =>  D12       u1_cnt_int_count_17_.C        u1_cnt_int_count_25_.T        clk
+    9.5           1      A9       =>  A10       u1_cnt_int_count_17_.C        u1_cnt_int_count_26_.T        clk
+    9.5           1      A9       =>  A6        u1_cnt_int_count_17_.C        u1_cnt_int_count_27_.T        clk
+    9.5           1      A9       =>  A2        u1_cnt_int_count_17_.C        u1_cnt_int_count_28_.T        clk
+    9.5           1      A9       =>  A13       u1_cnt_int_count_17_.C        u1_cnt_int_count_29_.T        clk
+    9.5           1      A11      =>  A7        u1_cnt_int_count_18_.C        u1_cnt_int_count_19_.T        clk
+    9.5           1      A11      =>  D9        u1_cnt_int_count_18_.C        u1_cnt_int_count_20_.T        clk
+    9.5           1      A11      =>  A3        u1_cnt_int_count_18_.C        u1_cnt_int_count_21_.T        clk
+    9.5           1      A11      =>  D5        u1_cnt_int_count_18_.C        u1_cnt_int_count_22_.T        clk
+    9.5           1      A11      =>  D1        u1_cnt_int_count_18_.C        u1_cnt_int_count_23_.T        clk
+    9.5           1      A11      =>  A14       u1_cnt_int_count_18_.C        u1_cnt_int_count_24_.T        clk
+    9.5           1      A11      =>  D12       u1_cnt_int_count_18_.C        u1_cnt_int_count_25_.T        clk
+    9.5           1      A11      =>  A10       u1_cnt_int_count_18_.C        u1_cnt_int_count_26_.T        clk
+    9.5           1      A11      =>  A6        u1_cnt_int_count_18_.C        u1_cnt_int_count_27_.T        clk
+    9.5           1      A11      =>  A2        u1_cnt_int_count_18_.C        u1_cnt_int_count_28_.T        clk
+    9.5           1      A11      =>  A13       u1_cnt_int_count_18_.C        u1_cnt_int_count_29_.T        clk
+    9.5           1      A7       =>  D9        u1_cnt_int_count_19_.C        u1_cnt_int_count_20_.T        clk
+    9.5           1      A7       =>  A3        u1_cnt_int_count_19_.C        u1_cnt_int_count_21_.T        clk
+    9.5           1      A7       =>  D5        u1_cnt_int_count_19_.C        u1_cnt_int_count_22_.T        clk
+    9.5           1      A7       =>  D1        u1_cnt_int_count_19_.C        u1_cnt_int_count_23_.T        clk
+    9.5           1      A7       =>  A14       u1_cnt_int_count_19_.C        u1_cnt_int_count_24_.T        clk
+    9.5           1      A7       =>  D12       u1_cnt_int_count_19_.C        u1_cnt_int_count_25_.T        clk
+    9.5           1      A7       =>  A10       u1_cnt_int_count_19_.C        u1_cnt_int_count_26_.T        clk
+    9.5           1      A7       =>  A6        u1_cnt_int_count_19_.C        u1_cnt_int_count_27_.T        clk
+    9.5           1      A7       =>  A2        u1_cnt_int_count_19_.C        u1_cnt_int_count_28_.T        clk
+    9.5           1      A7       =>  A13       u1_cnt_int_count_19_.C        u1_cnt_int_count_29_.T        clk
+    9.5           1      D9       =>  A3        u1_cnt_int_count_20_.C        u1_cnt_int_count_21_.T        clk
+    9.5           1      D9       =>  D5        u1_cnt_int_count_20_.C        u1_cnt_int_count_22_.T        clk
+    9.5           1      D9       =>  D1        u1_cnt_int_count_20_.C        u1_cnt_int_count_23_.T        clk
+    9.5           1      D9       =>  A14       u1_cnt_int_count_20_.C        u1_cnt_int_count_24_.T        clk
+    9.5           1      D9       =>  D12       u1_cnt_int_count_20_.C        u1_cnt_int_count_25_.T        clk
+    9.5           1      D9       =>  A10       u1_cnt_int_count_20_.C        u1_cnt_int_count_26_.T        clk
+    9.5           1      D9       =>  A6        u1_cnt_int_count_20_.C        u1_cnt_int_count_27_.T        clk
+    9.5           1      D9       =>  A2        u1_cnt_int_count_20_.C        u1_cnt_int_count_28_.T        clk
+    9.5           1      D9       =>  A13       u1_cnt_int_count_20_.C        u1_cnt_int_count_29_.T        clk
+    9.5           1      A3       =>  D5        u1_cnt_int_count_21_.C        u1_cnt_int_count_22_.T        clk
+    9.5           1      A3       =>  D1        u1_cnt_int_count_21_.C        u1_cnt_int_count_23_.T        clk
+    9.5           1      A3       =>  A14       u1_cnt_int_count_21_.C        u1_cnt_int_count_24_.T        clk
+    9.5           1      A3       =>  D12       u1_cnt_int_count_21_.C        u1_cnt_int_count_25_.T        clk
+    9.5           1      A3       =>  A10       u1_cnt_int_count_21_.C        u1_cnt_int_count_26_.T        clk
+    9.5           1      A3       =>  A6        u1_cnt_int_count_21_.C        u1_cnt_int_count_27_.T        clk
+    9.5           1      A3       =>  A2        u1_cnt_int_count_21_.C        u1_cnt_int_count_28_.T        clk
+    9.5           1      A3       =>  A13       u1_cnt_int_count_21_.C        u1_cnt_int_count_29_.T        clk
+    9.5           1      D5       =>  D1        u1_cnt_int_count_22_.C        u1_cnt_int_count_23_.T        clk
+    9.5           1      D5       =>  A14       u1_cnt_int_count_22_.C        u1_cnt_int_count_24_.T        clk
+    9.5           1      D5       =>  D12       u1_cnt_int_count_22_.C        u1_cnt_int_count_25_.T        clk
+    9.5           1      D5       =>  A10       u1_cnt_int_count_22_.C        u1_cnt_int_count_26_.T        clk
+    9.5           1      D5       =>  A6        u1_cnt_int_count_22_.C        u1_cnt_int_count_27_.T        clk
+    9.5           1      D5       =>  A2        u1_cnt_int_count_22_.C        u1_cnt_int_count_28_.T        clk
+    9.5           1      D5       =>  A13       u1_cnt_int_count_22_.C        u1_cnt_int_count_29_.T        clk
+    9.5           1      D1       =>  A14       u1_cnt_int_count_23_.C        u1_cnt_int_count_24_.T        clk
+    9.5           1      D1       =>  D12       u1_cnt_int_count_23_.C        u1_cnt_int_count_25_.T        clk
+    9.5           1      D1       =>  A10       u1_cnt_int_count_23_.C        u1_cnt_int_count_26_.T        clk
+    9.5           1      D1       =>  A6        u1_cnt_int_count_23_.C        u1_cnt_int_count_27_.T        clk
+    9.5           1      D1       =>  A2        u1_cnt_int_count_23_.C        u1_cnt_int_count_28_.T        clk
+    9.5           1      D1       =>  A13       u1_cnt_int_count_23_.C        u1_cnt_int_count_29_.T        clk
+    9.5           1      A14      =>  D12       u1_cnt_int_count_24_.C        u1_cnt_int_count_25_.T        clk
+    9.5           1      A14      =>  A10       u1_cnt_int_count_24_.C        u1_cnt_int_count_26_.T        clk
+    9.5           1      A14      =>  A6        u1_cnt_int_count_24_.C        u1_cnt_int_count_27_.T        clk
+    9.5           1      A14      =>  A2        u1_cnt_int_count_24_.C        u1_cnt_int_count_28_.T        clk
+    9.5           1      A14      =>  A13       u1_cnt_int_count_24_.C        u1_cnt_int_count_29_.T        clk
+    9.5           1      D12      =>  A10       u1_cnt_int_count_25_.C        u1_cnt_int_count_26_.T        clk
+    9.5           1      D12      =>  A6        u1_cnt_int_count_25_.C        u1_cnt_int_count_27_.T        clk
+    9.5           1      D12      =>  A2        u1_cnt_int_count_25_.C        u1_cnt_int_count_28_.T        clk
+    9.5           1      D12      =>  A13       u1_cnt_int_count_25_.C        u1_cnt_int_count_29_.T        clk
+    9.5           1      D12      =>  C9        u1_cnt_int_count_25_.C        u1_cnt_int_count_30_.T        clk
+    9.5           1      D12      =>  C5        u1_cnt_int_count_25_.C        u1_cnt_int_count_31_.T        clk
+    9.5           1      A10      =>  A6        u1_cnt_int_count_26_.C        u1_cnt_int_count_27_.T        clk
+    9.5           1      A10      =>  A2        u1_cnt_int_count_26_.C        u1_cnt_int_count_28_.T        clk
+    9.5           1      A10      =>  A13       u1_cnt_int_count_26_.C        u1_cnt_int_count_29_.T        clk
+    9.5           1      A10      =>  C9        u1_cnt_int_count_26_.C        u1_cnt_int_count_30_.T        clk
+    9.5           1      A10      =>  C5        u1_cnt_int_count_26_.C        u1_cnt_int_count_31_.T        clk
+    9.5           1      A6       =>  A2        u1_cnt_int_count_27_.C        u1_cnt_int_count_28_.T        clk
+    9.5           1      A6       =>  A13       u1_cnt_int_count_27_.C        u1_cnt_int_count_29_.T        clk
+    9.5           1      A6       =>  C9        u1_cnt_int_count_27_.C        u1_cnt_int_count_30_.T        clk
+    9.5           1      A6       =>  C5        u1_cnt_int_count_27_.C        u1_cnt_int_count_31_.T        clk
+    9.5           1      A2       =>  C12       u1_cnt_int_count_28_.C        u1_cnt_int_count_3_.T.X1      clk
+    9.5           1      A2       =>  C12       u1_cnt_int_count_28_.C        u1_cnt_int_count_3_.T.X2      clk
+    9.5           1      A2       =>  A13       u1_cnt_int_count_28_.C        u1_cnt_int_count_29_.T        clk
+    9.5           1      A2       =>  C9        u1_cnt_int_count_28_.C        u1_cnt_int_count_30_.T        clk
+    9.5           1      A2       =>  C5        u1_cnt_int_count_28_.C        u1_cnt_int_count_31_.T        clk
+    9.5           1      A13      =>  C12       u1_cnt_int_count_29_.C        u1_cnt_int_count_3_.T.X1      clk
+    9.5           1      A13      =>  C12       u1_cnt_int_count_29_.C        u1_cnt_int_count_3_.T.X2      clk
+    9.5           1      A13      =>  C9        u1_cnt_int_count_29_.C        u1_cnt_int_count_30_.T        clk
+    9.5           1      A13      =>  C5        u1_cnt_int_count_29_.C        u1_cnt_int_count_31_.T        clk
+    9.5           1      C9       =>  C12       u1_cnt_int_count_30_.C        u1_cnt_int_count_3_.T.X1      clk
+    9.5           1      C9       =>  C12       u1_cnt_int_count_30_.C        u1_cnt_int_count_3_.T.X2      clk
+    9.5           1      C9       =>  C5        u1_cnt_int_count_30_.C        u1_cnt_int_count_31_.T        clk
+    9.5           1      C5       =>  C12       u1_cnt_int_count_31_.C        u1_cnt_int_count_3_.T.X1      clk
+    9.5           1      C5       =>  C12       u1_cnt_int_count_31_.C        u1_cnt_int_count_3_.T.X2      clk
+    9.5           1      B4       =>  C12       u2_q.C                        u1_cnt_int_count_3_.T.X1      clk
+    9.5           1      B4       =>  C12       u2_q.C                        u1_cnt_int_count_3_.T.X2      clk
+    9.5           1      B4       =>  A8        u2_q.C                        u1_cnt_int_count_4_.T         clk
+    9.5           1      B4       =>  A4        u2_q.C                        u1_cnt_int_count_5_.T         clk
+    9.5           1      B4       =>  A1        u2_q.C                        u1_cnt_int_count_6_.T         clk
+    9.5           1      B4       =>  C1        u2_q.C                        u1_cnt_int_count_7_.T         clk
+    9.5           1      B4       =>  C14       u2_q.C                        u1_cnt_int_count_8_.T         clk
+    9.5           1      B4       =>  C10       u2_q.C                        u1_cnt_int_count_9_.T         clk
+    9.5           1      B4       =>  C6        u2_q.C                        u1_cnt_int_count_10_.T        clk
+    9.5           1      B4       =>  C2        u2_q.C                        u1_cnt_int_count_11_.T        clk
+    9.5           1      B4       =>  D13       u2_q.C                        u1_cnt_int_count_12_.T        clk
+    9.5           1      B4       =>  C13       u2_q.C                        u1_cnt_int_count_13_.T        clk
+    9.5           1      B4       =>  C7        u2_q.C                        u1_cnt_int_count_14_.T        clk
+    9.5           1      B4       =>  D6        u2_q.C                        u1_cnt_int_count_15_.T        clk
+    9.5           1      B4       =>  D2        u2_q.C                        u1_cnt_int_count_16_.T        clk
+    9.5           1      B4       =>  A7        u2_q.C                        u1_cnt_int_count_19_.T        clk
+    9.5           1      B4       =>  D9        u2_q.C                        u1_cnt_int_count_20_.T        clk
+    9.5           1      B4       =>  A3        u2_q.C                        u1_cnt_int_count_21_.T        clk
+    9.5           1      B4       =>  D5        u2_q.C                        u1_cnt_int_count_22_.T        clk
+    9.5           1      B4       =>  D1        u2_q.C                        u1_cnt_int_count_23_.T        clk
+    9.5           1      B4       =>  A14       u2_q.C                        u1_cnt_int_count_24_.T        clk
+    9.5           1      B4       =>  D12       u2_q.C                        u1_cnt_int_count_25_.T        clk
+    9.5           1      B4       =>  A10       u2_q.C                        u1_cnt_int_count_26_.T        clk
+    9.5           1      B4       =>  A6        u2_q.C                        u1_cnt_int_count_27_.T        clk
+    9.5           1      B4       =>  A2        u2_q.C                        u1_cnt_int_count_28_.T        clk
+    9.5           1      B4       =>  A13       u2_q.C                        u1_cnt_int_count_29_.T        clk
+    9.5           1      B4       =>  C9        u2_q.C                        u1_cnt_int_count_30_.T        clk
+    9.5           1      B4       =>  C5        u2_q.C                        u1_cnt_int_count_31_.T        clk
+    8.5           1      B0       =>  B0        serial_out.C                  serial_out.D                  clk
+    8.5           1      B2       =>  B0        u0_q1_1_.C                    serial_out.D                  clk
+    8.5           1      B2       =>  B2        u0_q1_1_.C                    u0_q1_1_.D                    clk
+    8.5           1      B13      =>  B2        u0_q1_2_.C                    u0_q1_1_.D                    clk
+    8.5           1      B13      =>  B13       u0_q1_2_.C                    u0_q1_2_.D                    clk
+    8.5           1      B9       =>  B13       u0_q1_3_.C                    u0_q1_2_.D                    clk
+    8.5           1      B9       =>  B9        u0_q1_3_.C                    u0_q1_3_.D                    clk
+    8.5           1      B5       =>  B9        u0_q1_4_.C                    u0_q1_3_.D                    clk
+    8.5           1      B5       =>  B5        u0_q1_4_.C                    u0_q1_4_.D                    clk
+    8.5           1      B1       =>  B5        u0_q1_5_.C                    u0_q1_4_.D                    clk
+    8.5           1      B1       =>  B1        u0_q1_5_.C                    u0_q1_5_.D                    clk
+    8.5           1      B12      =>  B1        u0_q1_6_.C                    u0_q1_5_.D                    clk
+    8.5           1      B12      =>  B12       u0_q1_6_.C                    u0_q1_6_.D                    clk
+    8.5           1      B6       =>  B12       u0_q1_7_.C                    u0_q1_6_.D                    clk
+    8.5           1      B6       =>  B6        u0_q1_7_.C                    u0_q1_7_.D                    clk
+    8.5           1      A0       =>  C8        u1_cnt_int_count_0_.C         u1_cnt_int_count_1_.D         clk
+    8.5           1      A0       =>  A12       u1_cnt_int_count_0_.C         u1_cnt_int_count_2_.D.X1      clk
+    8.5           1      C8       =>  C8        u1_cnt_int_count_1_.C         u1_cnt_int_count_1_.D         clk
+    8.5           1      C8       =>  A12       u1_cnt_int_count_1_.C         u1_cnt_int_count_2_.D.X1      clk
+    8.5           1      A12      =>  A12       u1_cnt_int_count_2_.C         u1_cnt_int_count_2_.D.X2      clk
+    8.5           1      A9       =>  A9        u1_cnt_int_count_17_.C        u1_cnt_int_count_17_.D        clk
+    8.5           1      A9       =>  A11       u1_cnt_int_count_17_.C        u1_cnt_int_count_18_.D.X1     clk
+    8.5           1      A11      =>  A11       u1_cnt_int_count_18_.C        u1_cnt_int_count_18_.D.X2     clk
+    8.5           1      D9       =>  A0        u1_cnt_int_count_20_.C        u1_cnt_int_count_0_.D         clk
+    8.5           1      A3       =>  A0        u1_cnt_int_count_21_.C        u1_cnt_int_count_0_.D         clk
+    8.5           1      D5       =>  A0        u1_cnt_int_count_22_.C        u1_cnt_int_count_0_.D         clk
+    8.5           1      D1       =>  A0        u1_cnt_int_count_23_.C        u1_cnt_int_count_0_.D         clk
+    8.5           1      A14      =>  A0        u1_cnt_int_count_24_.C        u1_cnt_int_count_0_.D         clk
+    8.5           1      D12      =>  A0        u1_cnt_int_count_25_.C        u1_cnt_int_count_0_.D         clk
+    8.5           1      D12      =>  A5        u1_cnt_int_count_25_.C        u1_q_3_.D                     clk
+    8.5           1      A10      =>  A0        u1_cnt_int_count_26_.C        u1_cnt_int_count_0_.D         clk
+    8.5           1      A10      =>  A5        u1_cnt_int_count_26_.C        u1_q_3_.D                     clk
+    8.5           1      A6       =>  A0        u1_cnt_int_count_27_.C        u1_cnt_int_count_0_.D         clk
+    8.5           1      A6       =>  A5        u1_cnt_int_count_27_.C        u1_q_3_.D                     clk
+    8.5           1      A2       =>  A0        u1_cnt_int_count_28_.C        u1_cnt_int_count_0_.D         clk
+    8.5           1      A2       =>  A5        u1_cnt_int_count_28_.C        u1_q_3_.D                     clk
+    8.5           1      A13      =>  A0        u1_cnt_int_count_29_.C        u1_cnt_int_count_0_.D         clk
+    8.5           1      A13      =>  A5        u1_cnt_int_count_29_.C        u1_q_3_.D                     clk
+    8.5           1      C9       =>  A0        u1_cnt_int_count_30_.C        u1_cnt_int_count_0_.D         clk
+    8.5           1      C9       =>  A5        u1_cnt_int_count_30_.C        u1_q_3_.D                     clk
+    8.5           1      C5       =>  A0        u1_cnt_int_count_31_.C        u1_cnt_int_count_0_.D         clk
+    8.5           1      C5       =>  A5        u1_cnt_int_count_31_.C        u1_q_3_.D                     clk
+    8.5           1      A5       =>  A5        u1_q_3_.C                     u1_q_3_.D                     clk
+    8.5           1      B4       =>  B0        u2_q.C                        serial_out.D                  clk
+    8.5           1      B4       =>  B2        u2_q.C                        u0_q1_1_.D                    clk
+    8.5           1      B4       =>  B13       u2_q.C                        u0_q1_2_.D                    clk
+    8.5           1      B4       =>  B9        u2_q.C                        u0_q1_3_.D                    clk
+    8.5           1      B4       =>  B5        u2_q.C                        u0_q1_4_.D                    clk
+    8.5           1      B4       =>  B1        u2_q.C                        u0_q1_5_.D                    clk
+    8.5           1      B4       =>  B12       u2_q.C                        u0_q1_6_.D                    clk
+    8.5           1      B4       =>  B6        u2_q.C                        u0_q1_7_.D                    clk
+    8.5           1      B4       =>  A0        u2_q.C                        u1_cnt_int_count_0_.D         clk
+    8.5           1      B4       =>  C8        u2_q.C                        u1_cnt_int_count_1_.D         clk
+    8.5           1      B4       =>  A12       u2_q.C                        u1_cnt_int_count_2_.D.X1      clk
+    8.5           1      B4       =>  A9        u2_q.C                        u1_cnt_int_count_17_.D        clk
+    8.5           1      B4       =>  A11       u2_q.C                        u1_cnt_int_count_18_.D.X1     clk
+    8.5           1      B4       =>  A5        u2_q.C                        u1_q_3_.D                     clk
+    8.5           1      B4       =>  B4        u2_q.C                        u2_q.D                        clk
+
+
+Section tSU
+
+   tSU,    tHD   Level   Location(From => To)    Source                        Destination                   Reference_Clock
+  ===========   =====   ====================    ======                        ===========                   ===============
+   6.5,   0.0     1     p2        =>  C12       load                          u1_cnt_int_count_3_.T.X1      clk
+   6.5,   0.0     1     p2        =>  C12       load                          u1_cnt_int_count_3_.T.X2      clk
+   6.5,   0.0     1     p2        =>  A8        load                          u1_cnt_int_count_4_.T         clk
+   6.5,   0.0     1     p2        =>  A4        load                          u1_cnt_int_count_5_.T         clk
+   6.5,   0.0     1     p2        =>  A1        load                          u1_cnt_int_count_6_.T         clk
+   6.5,   0.0     1     p2        =>  C1        load                          u1_cnt_int_count_7_.T         clk
+   6.5,   0.0     1     p2        =>  C14       load                          u1_cnt_int_count_8_.T         clk
+   6.5,   0.0     1     p2        =>  C10       load                          u1_cnt_int_count_9_.T         clk
+   6.5,   0.0     1     p2        =>  C6        load                          u1_cnt_int_count_10_.T        clk
+   6.5,   0.0     1     p2        =>  C2        load                          u1_cnt_int_count_11_.T        clk
+   6.5,   0.0     1     p2        =>  D13       load                          u1_cnt_int_count_12_.T        clk
+   6.5,   0.0     1     p2        =>  C13       load                          u1_cnt_int_count_13_.T        clk
+   6.5,   0.0     1     p2        =>  C7        load                          u1_cnt_int_count_14_.T        clk
+   6.5,   0.0     1     p2        =>  D6        load                          u1_cnt_int_count_15_.T        clk
+   6.5,   0.0     1     p2        =>  D2        load                          u1_cnt_int_count_16_.T        clk
+   6.5,   0.0     1     p2        =>  A7        load                          u1_cnt_int_count_19_.T        clk
+   6.5,   0.0     1     p2        =>  D9        load                          u1_cnt_int_count_20_.T        clk
+   6.5,   0.0     1     p2        =>  A3        load                          u1_cnt_int_count_21_.T        clk
+   6.5,   0.0     1     p2        =>  D5        load                          u1_cnt_int_count_22_.T        clk
+   6.5,   0.0     1     p2        =>  D1        load                          u1_cnt_int_count_23_.T        clk
+   6.5,   0.0     1     p2        =>  A14       load                          u1_cnt_int_count_24_.T        clk
+   6.5,   0.0     1     p2        =>  D12       load                          u1_cnt_int_count_25_.T        clk
+   6.5,   0.0     1     p2        =>  A10       load                          u1_cnt_int_count_26_.T        clk
+   6.5,   0.0     1     p2        =>  A6        load                          u1_cnt_int_count_27_.T        clk
+   6.5,   0.0     1     p2        =>  A2        load                          u1_cnt_int_count_28_.T        clk
+   6.5,   0.0     1     p2        =>  A13       load                          u1_cnt_int_count_29_.T        clk
+   6.5,   0.0     1     p2        =>  C9        load                          u1_cnt_int_count_30_.T        clk
+   6.5,   0.0     1     p2        =>  C5        load                          u1_cnt_int_count_31_.T        clk
+   5.5,   0.0     1     p15       =>  B0        d[0]                          serial_out.D                  clk
+   5.5,   0.0     1     p9        =>  B2        d[1]                          u0_q1_1_.D                    clk
+   5.5,   0.0     1     p8        =>  B13       d[2]                          u0_q1_2_.D                    clk
+   5.5,   0.0     1     p7        =>  B9        d[3]                          u0_q1_3_.D                    clk
+   5.5,   0.0     1     p6        =>  B5        d[4]                          u0_q1_4_.D                    clk
+   5.5,   0.0     1     p5        =>  B1        d[5]                          u0_q1_5_.D                    clk
+   5.5,   0.0     1     p4        =>  B12       d[6]                          u0_q1_6_.D                    clk
+   5.5,   0.0     1     p3        =>  B6        d[7]                          u0_q1_7_.D                    clk
+   5.5,   0.0     1     p2        =>  B0        load                          serial_out.D                  clk
+   5.5,   0.0     1     p2        =>  B2        load                          u0_q1_1_.D                    clk
+   5.5,   0.0     1     p2        =>  B13       load                          u0_q1_2_.D                    clk
+   5.5,   0.0     1     p2        =>  B9        load                          u0_q1_3_.D                    clk
+   5.5,   0.0     1     p2        =>  B5        load                          u0_q1_4_.D                    clk
+   5.5,   0.0     1     p2        =>  B1        load                          u0_q1_5_.D                    clk
+   5.5,   0.0     1     p2        =>  B12       load                          u0_q1_6_.D                    clk
+   5.5,   0.0     1     p2        =>  B6        load                          u0_q1_7_.D                    clk
+   5.5,   0.0     1     p2        =>  A0        load                          u1_cnt_int_count_0_.D         clk
+   5.5,   0.0     1     p2        =>  C8        load                          u1_cnt_int_count_1_.D         clk
+   5.5,   0.0     1     p2        =>  A12       load                          u1_cnt_int_count_2_.D.X1      clk
+   5.5,   0.0     1     p2        =>  A9        load                          u1_cnt_int_count_17_.D        clk
+   5.5,   0.0     1     p2        =>  A11       load                          u1_cnt_int_count_18_.D.X1     clk
+   5.5,   0.0     1     p2        =>  A5        load                          u1_q_3_.D                     clk
+   5.5,   0.0     1     p14       =>  B0        send                          serial_out.D                  clk
+   5.5,   0.0     1     p14       =>  B2        send                          u0_q1_1_.D                    clk
+   5.5,   0.0     1     p14       =>  B13       send                          u0_q1_2_.D                    clk
+   5.5,   0.0     1     p14       =>  B9        send                          u0_q1_3_.D                    clk
+   5.5,   0.0     1     p14       =>  B5        send                          u0_q1_4_.D                    clk
+   5.5,   0.0     1     p14       =>  B1        send                          u0_q1_5_.D                    clk
+   5.5,   0.0     1     p14       =>  B12       send                          u0_q1_6_.D                    clk
+   5.5,   0.0     1     p14       =>  B6        send                          u0_q1_7_.D                    clk
+   5.5,   0.0     1     p14       =>  B4        send                          u2_q.D                        clk
+
+
+Section tPD
+
+   Delay         Level   Location(From => To)    Source                        Destination
+  =====         =====   ====================    ======                        ===========
+   10.0           1     p11       => p26        clk                           sample_clk
+
+
+Section tCO
+
+     tCO         Level   Location(From => To)    Source                        Destination                   Register_Clock
+    ===         =====   ====================    ======                        ===========                   ==============
+   13.0           2     p11       => p26        clk                           sample_clk                    u1_q_3_.C
+   13.0           2     p11       => p26        clk                           sample_clk                    u2_q.C
+   13.0           2     p11       => p24        clk                           valid                         u2_q.C
+   13.0           2     p11       => p24        clk                           valid                         u1_q_3_.C
+    6.0           1     p11       => p19        clk                           serial_out                    serial_out.C

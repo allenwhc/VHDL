@@ -1,0 +1,13 @@
+@N: CD630 :"H:\ese382\lab06s14\fa_simnet_hier\src\full_adder.vhd":28:7:28:16|Synthesizing work.full_adder.full_adder 
+@N: CD630 :"H:\ese382\lab06s14\fa_simnet_hier\src\half_adder_struct_hier.vhd":28:7:28:16|Synthesizing work.half_adder.dataflow 
+@N: CD630 :"H:\ese382\lab06s14\fa_simnet_hier\src\xor_2_struct.vhd":28:7:28:11|Synthesizing work.xor_2.dataflow 
+@W: CD638 :"H:\ese382\lab06s14\fa_simnet_hier\src\xor_2_struct.vhd":39:7:39:11|Signal i_inv is undriven 
+@N: CD630 :"H:\ese382\lab06s14\fa_simnet_hier\src\ha_primitive_gates.vhd":59:7:59:10|Synthesizing work.or_2.dataflow 
+Post processing for work.or_2.dataflow
+@N: CD630 :"H:\ese382\lab06s14\fa_simnet_hier\src\ha_primitive_gates.vhd":43:7:43:11|Synthesizing work.and_2.dataflow 
+Post processing for work.and_2.dataflow
+@N: CD630 :"H:\ese382\lab06s14\fa_simnet_hier\src\ha_primitive_gates.vhd":28:7:28:9|Synthesizing work.inv.dataflow 
+Post processing for work.inv.dataflow
+Post processing for work.xor_2.dataflow
+Post processing for work.half_adder.dataflow
+Post processing for work.full_adder.full_adder

@@ -1,0 +1,55 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=converter_loop
+
+[Library]
+converter_loop=.\converter_loop.LIB
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+FLOWTOOLS=NONE
+REFRESH_FLOW=1
+FAMILY=
+IMPL_TOOL=
+SYNTH_TOOL=
+fileopenfolder=H:\ese382\lab04s14\if_statement\src
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=1
+
+[$LibMap$]
+converter_loop=.
+Active_lib=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=converter_2421_bcd_tb|tb_architecture|0 
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/converter_loop.vhd=-1
+/converter_loop_TB.vhd=-1
+
+[Files.Data]
+.\src\converter_loop.vhd=VHDL Source Code
+.\src\converter_loop_TB.vhd=VHDL Source Code
+

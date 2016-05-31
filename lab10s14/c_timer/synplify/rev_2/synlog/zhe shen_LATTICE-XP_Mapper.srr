@@ -1,0 +1,397 @@
+Synopsys Lattice Technology Mapper, Version maprc, Build 507R, Built May 17 2011 11:08:24
+Copyright (C) 1994-2011, Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version E-201103-SP2
+@N: MF249 |Running in 32-bit mode.
+@N: MF257 |Gated clock conversion enabled 
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Time elapsed 0h:00m:00s; Memory used current: 75MB peak: 77MB)
+
+@N: BN116 :"h:\ese382\lab10s14\c_timer\src\minutes_counter.vhd":88:1:88:2|Removing sequential instance u0.u1.minutes_nonzero of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"h:\ese382\lab10s14\c_timer\src\seconds_counter.vhd":28:2:28:3|Removing sequential instance u0.u0.en_out of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+
+Finished factoring (Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 77MB)
+
+
+
+#################### START OF GENERATED CLOCK OPTIMIZATION REPORT ####################[
+
+======================================================================================
+                                Instance:Pin        Generated Clock Optimization Status
+======================================================================================
+                           next_state[0]:C              Not Done
+
+
+##################### END OF GENERATED CLOCK OPTIMIZATION REPORT #####################]
+
+
+Finished gated-clock and generated-clock conversion (Time elapsed 0h:00m:00s; Memory used current: 75MB peak: 77MB)
+
+
+
+Finished generic timing optimizations - Pass 1 (Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 77MB)
+
+
+Starting Early Timing Optimization (Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 77MB)
+
+
+Finished Early Timing Optimization (Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 77MB)
+
+
+Finished generic timing optimizations - Pass 2 (Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 77MB)
+
+
+Finished preparing to map (Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 77MB)
+
+
+Finished technology mapping (Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 77MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+------------------------------------------------------------
+
+
+Finished technology timing optimizations and critical path resynthesis (Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 77MB)
+
+@N: FX164 |The option to pack flops in the IOB has not been specified 
+@W: FO107 :"h:\ese382\lab10s14\c_timer\src\timer.vhd":111:2:111:5|Set/reset flip-flops require model for Lucent Place-and-Route.
+---------------------------------------
+Resource Usage Report
+Part: lfxp3c-3
+
+Register bits: 22 of 3072 (1%)
+Latch bits:      11
+PIC Latch:       0
+I/O cells:       20
+
+
+Details:
+CCU2:           5
+FD1S1AY:        10
+FD1S1D:         1
+FD1S3AX:        1
+FD1S3BX:        1
+FD1S3DX:        11
+FD1S3IX:        4
+GSR:            1
+IB:             9
+IFS1P3DX:       4
+IFS1P3IX:       1
+INV:            1
+OB:             11
+ORCALUT4:       66
+PUR:            1
+VHI:            1
+VLO:            1
+
+Finished restoring hierarchy (Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 77MB)
+
+Writing Analyst data base H:\ese382\lab10s14\c_timer\synplify\rev_2\zhe shen.srm
+
+Finished Writing Netlist Databases (Time elapsed 0h:00m:01s; Memory used current: 75MB peak: 77MB)
+
+Writing EDIF Netlist and constraint files
+E-201103-SP2
+@N: BW106 |Synplicity Constraint File capacitance units will use default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Time elapsed 0h:00m:01s; Memory used current: 79MB peak: 80MB)
+
+Writing VHDL Simulation files
+
+Finished Writing VHDL Simulation files (Time elapsed 0h:00m:01s; Memory used current: 80MB peak: 80MB)
+
+
+Starting Writing Gated Clock Conversion Report (Time elapsed 0h:00m:01s; Memory used current: 79MB peak: 80MB)
+
+
+================= Gated clock report =================
+
+
+The following instances have NOT been converted
+Seq Inst                        Instance Port     Clock                       Reason for not converting                                                         
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+alarm                           CK                un1_present_state_2_0_i     Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+inhib_output\.min_counts[3]     CK                N_36                        Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+inhib_output\.min_counts[2]     CK                N_36                        Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+inhib_output\.min_counts[1]     CK                N_36                        Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+inhib_output\.min_counts[0]     CK                N_36                        Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+inhib_output\.sec_counts[5]     CK                N_34_i                      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+inhib_output\.sec_counts[4]     CK                N_34_i                      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+inhib_output\.sec_counts[3]     CK                N_34_i                      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+inhib_output\.sec_counts[2]     CK                N_34_i                      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+inhib_output\.sec_counts[1]     CK                N_34_i                      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+inhib_output\.sec_counts[0]     CK                N_34_i                      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+================================================================================================================================================================
+
+================= End gated clock report =================
+
+
+Finished Writing Gated Clock Conversion Report (Time elapsed 0h:00m:01s; Memory used current: 79MB peak: 80MB)
+
+
+Starting Writing Generated Clock Conversion Report (Time elapsed 0h:00m:01s; Memory used current: 79MB peak: 80MB)
+
+@N: MF333 |Generated clock conversion enabled, but no generated clocks found in design 
+
+Finished Writing Generated Clock Conversion Report (Time elapsed 0h:00m:01s; Memory used current: 79MB peak: 80MB)
+
+@W: MT420 |Found inferred clock count_down_timer|clk with period 1000.00ns. A user-defined clock should be declared on object "p:clk"
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Tue Apr 22 13:12:42 2014
+#
+
+
+Top view:               count_down_timer
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report estimates place and route data. Please look at the place and route timing report for final timing..
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock..
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 990.017
+
+                         Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock           Frequency     Frequency     Period        Period        Slack       Type         Group              
+-----------------------------------------------------------------------------------------------------------------------------
+count_down_timer|clk     1.0 MHz       100.2 MHz     1000.000      9.983         990.017     inferred     Inferred_clkgroup_0
+System                   1.0 MHz       122.9 MHz     1000.000      8.139         991.861     system       system_clkgroup    
+=============================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                      |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------
+Starting              Ending                |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------
+System                System                |  1000.000    991.861  |  No paths    -      |  No paths    -      |  No paths    -    
+count_down_timer|clk  System                |  1000.000    993.308  |  No paths    -      |  No paths    -      |  No paths    -    
+count_down_timer|clk  count_down_timer|clk  |  1000.000    990.017  |  No paths    -      |  No paths    -      |  No paths    -    
+====================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+		No IO constraint found 
+
+
+
+====================================
+Detailed Report for Clock: count_down_timer|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                 Starting                                                     Arrival            
+Instance                         Reference                Type        Pin     Net             Time        Slack  
+                                 Clock                                                                           
+-----------------------------------------------------------------------------------------------------------------
+u0.u0.count_sec[0]               count_down_timer|clk     FD1S3DX     Q       temp_sec[0]     1.660       990.017
+u0.u0.count_sec[3]               count_down_timer|clk     FD1S3DX     Q       temp_sec[3]     1.612       990.065
+u0.u0.count_sec[4]               count_down_timer|clk     FD1S3DX     Q       temp_sec[4]     1.612       990.065
+u0.u0.count_sec[5]               count_down_timer|clk     FD1S3DX     Q       temp_sec[5]     1.612       990.065
+u0.u1.cnt_int\.min_counts[1]     count_down_timer|clk     FD1S3DX     Q       temp_m[1]       1.612       990.301
+u0.u1.cnt_int\.min_counts[2]     count_down_timer|clk     FD1S3DX     Q       temp_m[2]       1.612       990.301
+u0.u0.count_sec[1]               count_down_timer|clk     FD1S3DX     Q       temp_sec[1]     1.660       991.314
+u0.u0.count_sec[2]               count_down_timer|clk     FD1S3DX     Q       temp_sec[2]     1.660       991.314
+u0.u2.up                         count_down_timer|clk     FD1S3IX     Q       up_sec          1.552       991.422
+u0.u1.cnt_int\.min_counts[0]     count_down_timer|clk     FD1S3DX     Q       temp_m[0]       1.660       991.442
+=================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                 Starting                                                                           Required            
+Instance                         Reference                Type        Pin     Net                                   Time         Slack  
+                                 Clock                                                                                                  
+----------------------------------------------------------------------------------------------------------------------------------------
+u0.u0.count_sec[4]               count_down_timer|clk     FD1S3DX     D       count_sec_7[4]                        998.997      990.017
+u0.u0.count_sec[5]               count_down_timer|clk     FD1S3DX     D       count_sec_7[5]                        998.997      990.017
+u0.u0.count_sec[2]               count_down_timer|clk     FD1S3DX     D       N_7_i                                 998.997      990.145
+u0.u0.count_sec[3]               count_down_timer|clk     FD1S3DX     D       count_sec_7[3]                        998.997      990.145
+u0.u1.cnt_int\.min_counts[2]     count_down_timer|clk     FD1S3DX     D       N_23_i                                998.997      990.301
+u0.u1.cnt_int\.min_counts[3]     count_down_timer|clk     FD1S3DX     D       N_25_i                                998.997      990.301
+u0.u0.count_sec[1]               count_down_timer|clk     FD1S3DX     D       count_sec_7[1]                        998.997      991.537
+u0.u1.cnt_int\.min_counts[1]     count_down_timer|clk     FD1S3DX     D       N_21_i                                998.997      991.693
+u0.u0.count_sec[0]               count_down_timer|clk     FD1S3DX     D       count_sec_7[0]                        998.997      992.581
+inhib_output\.sec_counts[0]      count_down_timer|clk     FD1S1AY     D       inhib_output\.sec_counts_1_0_i[0]     998.997      993.308
+========================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            1.003
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         998.997
+
+    - Propagation time:                      8.980
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     990.017
+
+    Number of logic level(s):                6
+    Starting point:                          u0.u0.count_sec[0] / Q
+    Ending point:                            u0.u0.count_sec[5] / D
+    The start point is clocked by            count_down_timer|clk [rising] on pin CK
+    The end   point is clocked by            count_down_timer|clk [rising] on pin CK
+
+Instance / Net                                     Pin       Pin               Arrival     No. of    
+Name                                  Type         Name      Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------
+u0.u0.count_sec[0]                    FD1S3DX      Q         Out     1.660     1.660       -         
+temp_sec[0]                           Net          -         -       -         -           5         
+u0.u0.scount\.un10_en_cnt1_3          ORCALUT4     A         In      0.000     1.660       -         
+u0.u0.scount\.un10_en_cnt1_3          ORCALUT4     Z         Out     1.297     2.957       -         
+un10_en_cnt1_3                        Net          -         -       -         -           2         
+u0.u0.un1_en_cnt1_3_i_a3[4]           ORCALUT4     B         In      0.000     2.957       -         
+u0.u0.un1_en_cnt1_3_i_a3[4]           ORCALUT4     Z         Out     1.501     4.458       -         
+un1_en_cnt1_3_i_a3[4]                 Net          -         -       -         -           5         
+u0.u0.un1_count_sec_1_cry_0_0         CCU2         B1        In      0.000     4.458       -         
+u0.u0.un1_count_sec_1_cry_0_0         CCU2         COUT1     Out     1.729     6.187       -         
+un1_count_sec_1_cry_1                 Net          -         -       -         -           1         
+u0.u0.un1_count_sec_1_cry_2_0         CCU2         CIN       In      0.000     6.187       -         
+u0.u0.un1_count_sec_1_cry_2_0         CCU2         COUT1     Out     0.128     6.315       -         
+un1_count_sec_1_cry_3                 Net          -         -       -         -           1         
+u0.u0.un1_count_sec_1_cry_4_0         CCU2         CIN       In      0.000     6.315       -         
+u0.u0.un1_count_sec_1_cry_4_0         CCU2         S1        Out     1.908     8.223       -         
+un1_count_sec_1_cry_4_0_S1            Net          -         -       -         -           1         
+u0.u0.scount\.count_sec_7_f0_0[5]     ORCALUT4     C         In      0.000     8.223       -         
+u0.u0.scount\.count_sec_7_f0_0[5]     ORCALUT4     Z         Out     0.757     8.980       -         
+count_sec_7[5]                        Net          -         -       -         -           1         
+u0.u0.count_sec[5]                    FD1S3DX      D         In      0.000     8.980       -         
+=====================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                Starting                                           Arrival            
+Instance                        Reference     Type        Pin     Net              Time        Slack  
+                                Clock                                                                 
+------------------------------------------------------------------------------------------------------
+inhib_output\.sec_counts[0]     System        FD1S1AY     Q       seconds_c[0]     1.696       991.861
+inhib_output\.sec_counts[3]     System        FD1S1AY     Q       seconds_c[3]     1.612       991.945
+inhib_output\.sec_counts[4]     System        FD1S1AY     Q       seconds_c[4]     1.612       991.945
+inhib_output\.sec_counts[5]     System        FD1S1AY     Q       seconds_c[5]     1.552       992.005
+inhib_output\.sec_counts[1]     System        FD1S1AY     Q       seconds_c[1]     1.696       993.158
+inhib_output\.sec_counts[2]     System        FD1S1AY     Q       seconds_c[2]     1.672       993.182
+inhib_output\.min_counts[0]     System        FD1S1AY     Q       minutes_c[0]     1.660       993.194
+inhib_output\.min_counts[1]     System        FD1S1AY     Q       minutes_c[1]     1.660       993.194
+inhib_output\.min_counts[2]     System        FD1S1AY     Q       minutes_c[2]     1.612       993.242
+inhib_output\.min_counts[3]     System        FD1S1AY     Q       minutes_c[3]     1.672       994.635
+======================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                Starting                                                                Required            
+Instance                        Reference     Type        Pin     Net                                   Time         Slack  
+                                Clock                                                                                       
+----------------------------------------------------------------------------------------------------------------------------
+inhib_output\.sec_counts[0]     System        FD1S1AY     D       inhib_output\.sec_counts_1_0_i[0]     998.997      991.861
+inhib_output\.sec_counts[1]     System        FD1S1AY     D       inhib_output\.sec_counts_1_0_i[1]     998.997      991.861
+inhib_output\.sec_counts[3]     System        FD1S1AY     D       inhib_output\.sec_counts_1_0_i[3]     998.997      991.861
+inhib_output\.sec_counts[4]     System        FD1S1AY     D       inhib_output\.sec_counts_1_0_i[4]     998.997      991.861
+inhib_output\.sec_counts[5]     System        FD1S1AY     D       inhib_output\.sec_counts_1_0_i[5]     998.997      991.861
+alarm                           System        FD1S1D      D       sec_counts_0_sqmuxa                   998.997      993.362
+inhib_output\.sec_counts[2]     System        FD1S1AY     D       N_40                                  998.997      993.362
+inhib_output\.min_counts[2]     System        FD1S1AY     D       inhib_output\.min_counts_1[2]         998.997      993.770
+inhib_output\.min_counts[3]     System        FD1S1AY     D       N_47_i                                998.997      994.695
+inhib_output\.min_counts[0]     System        FD1S1AY     D       N_42_i                                998.997      994.839
+============================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            1.003
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         998.997
+
+    - Propagation time:                      7.136
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 991.861
+
+    Number of logic level(s):                4
+    Starting point:                          inhib_output\.sec_counts[0] / Q
+    Ending point:                            inhib_output\.sec_counts[0] / D
+    The start point is clocked by            System [rising] on pin CK
+    The end   point is clocked by            System [rising] on pin CK
+
+Instance / Net                                          Pin      Pin               Arrival     No. of    
+Name                                       Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------
+inhib_output\.sec_counts[0]                FD1S1AY      Q        Out     1.696     1.696       -         
+seconds_c[0]                               Net          -        -       -         -           7         
+inhib_output\.op_eq\.un7_seconds_clk_3     ORCALUT4     D        In      0.000     1.696       -         
+inhib_output\.op_eq\.un7_seconds_clk_3     ORCALUT4     Z        Out     1.297     2.993       -         
+inhib_output\.op_eq\.un7_seconds_clk_3     Net          -        -       -         -           2         
+inhib_output\.op_eq\.un7_seconds_clk       ORCALUT4     A        In      0.000     2.993       -         
+inhib_output\.op_eq\.un7_seconds_clk       ORCALUT4     Z        Out     1.453     4.446       -         
+inhib_output\.op_eq\.un7_seconds_clk       Net          -        -       -         -           4         
+inhib_output\.sec_counts_1_iv_0_a2[3]      ORCALUT4     C        In      0.000     4.446       -         
+inhib_output\.sec_counts_1_iv_0_a2[3]      ORCALUT4     Z        Out     1.501     5.947       -         
+N_92                                       Net          -        -       -         -           5         
+inhib_output\.sec_counts_1_0_i[0]          ORCALUT4     A        In      0.000     5.947       -         
+inhib_output\.sec_counts_1_0_i[0]          ORCALUT4     Z        Out     1.189     7.136       -         
+inhib_output\.sec_counts_1_0_i[0]          Net          -        -       -         -           1         
+inhib_output\.sec_counts[0]                FD1S1AY      D        In      0.000     7.136       -         
+=========================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Mapper successful!
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Tue Apr 22 13:12:42 2014
+
+###########################################################]

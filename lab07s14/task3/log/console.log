@@ -1,0 +1,71 @@
+acom -dbg -work task3 -2002  $dsn/src/fuel_tb.vhd
+# Compile...
+# File: h:\ese382\lab07s14\task3\src\fuel_tb.vhd
+# Compile Entity "fuel_tb"
+# Compile Architecture "tb_architecture" of Entity "fuel_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# Design: Design "task3" has been set as active.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# Design: Design "task3" has been set as active.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# Synplify has been started.
+# Library Manager: Library "task3_post_synthesis" contents cleared.
+# Checking if synthesis needs to be updated...
+# Preparing files for implementation
+# Implementation completed succesfully.
+acom  -work task3_timing "$dsn\implement\ver1\rev1\isp_task3.vhq"
+# Compile...
+# File: h:\ese382\lab07s14\task3\implement\ver1\rev1\isp_task3.vhq
+# Compile Entity "fuel_encoder"
+# Compile Architecture "structure" of Entity "fuel_encoder"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom  -work task3_timing "$dsn\src\fuel_tb.vhd"
+# Compile...
+# File: h:\ese382\lab07s14\task3\src\fuel_tb.vhd
+# Compile Entity "fuel_tb"
+# Compile Architecture "tb_architecture" of Entity "fuel_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# Checking if synthesis needs to be updated...
+# Checking if implementation needs to be updated...
+acom  -work task3_timing "$dsn\implement\ver1\rev1\isp_task3.vhq"
+# Compile...
+# File: h:\ese382\lab07s14\task3\implement\ver1\rev1\isp_task3.vhq
+# Compile Entity "fuel_encoder"
+# Compile Architecture "structure" of Entity "fuel_encoder"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom  -work task3_timing "$dsn\src\fuel_tb.vhd"
+# Compile...
+# File: h:\ese382\lab07s14\task3\src\fuel_tb.vhd
+# Compile Entity "fuel_tb"
+# Compile Architecture "tb_architecture" of Entity "fuel_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+asim +access +r -advdataflow  fuel_tb
+# Warning: Verilog Optimization cannot be used when -advdataflow is in effect. Verilog Optimization disabled.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6155 kB (elbread=1023 elab2=5030 kernel=101 sdf=0)
+#  9:55 AM, Tuesday, April 01, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: fuel_tb (tb_architecture)
+wave
+wave  /fuel_tb/*
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+#  Simulation has been stopped

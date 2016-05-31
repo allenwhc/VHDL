@@ -1,0 +1,77 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=c_timer
+
+[Library]
+c_timer=.\c_timer.LIB
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=Lattice XP
+fileopenfolder=H:\ese382\lab10s14\c_timer\src
+IMPL_TOOL=
+SYNTH_TOOL=
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=1
+
+[$LibMap$]
+c_timer=.
+Active_lib=
+xilinxun=
+UnlinkedDesignLibrary=
+DESIGNS=
+
+[Files]
+/minutes_counter.vhd=-1
+/rotary_encoder_decoder_fsm.vhd=-1
+/seconds_counter.vhd=-1
+/count_down_timer_TB.vhd=-1
+/timer.vhd=-1
+/c_timer.vhd=-1
+
+[Files.Data]
+.\src\minutes_counter.vhd=VHDL Source Code
+.\src\rotary_encoder_decoder_fsm.vhd=VHDL Source Code
+.\src\seconds_counter.vhd=VHDL Source Code
+.\src\count_down_timer_TB.vhd=VHDL Source Code
+.\src\timer.vhd=VHDL Source Code
+.\src\c_timer.vhd=VHDL Source Code
+
+[Folders]
+Name3=Makefiles
+Directory3=h:\ese382\lab10s14\c_timer\
+Extension3=mak
+Name4=Memory
+Directory4=h:\ese382\lab10s14\c_timer\src
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=h:\ese382\lab10s14\c_timer\
+Extension5=dll
+Name6=PDF
+Directory6=h:\ese382\lab10s14\c_timer\
+Extension6=pdf
+Name7=HTML
+Directory7=h:\ese382\lab10s14\c_timer\
+Extension7=
+

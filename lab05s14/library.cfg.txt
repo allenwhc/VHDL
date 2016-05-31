@@ -1,0 +1,4 @@
+$include = "$VSIMSALIBRARYCFG"
+binarytobcd = "./BinaryToBCD/BinaryToBCD.LIB" 1394540614219
+bcdto7seg = "./BCDTo7Seg/BCDTo7Seg.LIB" 1394553197719
+BinaryToSeg = "./BinaryToSeg/BinaryToSeg.LIB" 1394555716735

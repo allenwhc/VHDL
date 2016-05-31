@@ -1,0 +1,7 @@
+MESSAGE "File: h:\ese382\lab05s14\BCDTo7Seg\src\BCDTo7Seg.vhd" 
+MESSAGE "Compile Entity "BCDTo7Seg"" 
+MESSAGE "Compile Architecture "BCDTo7Seg" of Entity "BCDTo7Seg"" 
+MESSAGE "File: h:\ese382\lab05s14\BCDTo7Seg\src\BCDTo7Seg_TB.vhd" 
+MESSAGE "Compile Entity "converter_2421_bcd_tb"" 
+MESSAGE "Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]" 

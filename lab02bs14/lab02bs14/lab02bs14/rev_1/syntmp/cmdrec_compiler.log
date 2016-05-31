@@ -1,0 +1,6 @@
+C:\Synopsys\fpga_E201103SP2\bin\c_vhdl.exe  -osyn "H:\ese382\project file\lab02bs14\rev_1\synwork\lab02bs14_compiler.srs"  -dfltencoding sequential -encrypt  -pro  -dmgen  "H:\ese382\project file\lab02bs14\rev_1\dm"  -lite -ll 2000   -ui -fid2 -ram -sharing on -autosm -ignore_undefined_lib  -lib work H:\ese382\lab02bs14\lab02bs14\src\half_adder.vhd -loga  "H:\ese382\project file\lab02bs14\rev_1\lab02bs14.srr" 
+rc:0 success:1
+H:\ese382\project file\lab02bs14\rev_1\dm|o|0|0
+H:\ese382\project file\lab02bs14\rev_1\lab02bs14.srr|o|1392731542|198
+C:\Synopsys\fpga_E201103SP2\bin\c_vhdl.exe|i|1306333948|1724416
+C:\Synopsys\fpga_E201103SP2\bin64\c_vhdl.exe|i|1306334016|5360128

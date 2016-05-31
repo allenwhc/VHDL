@@ -1,0 +1,81 @@
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: Flow Manager: Not Defined
+acom -reorder -dbg -work set_time -2002  $dsn/src/seconds_counter.vhd $dsn/src/set_initial_value_TB.vhd $dsn/src/minutes_counter.vhd $dsn/src/rotary_encoder_decoder_fsm.vhd $dsn/src/s_timer.vhd
+# Compile with File Reorder...
+# File: h:\ese382\lab10s14\set_time\src\seconds_counter.vhd
+# Compile Entity "seconds_counter"
+# Compile Architecture "dataflow" of Entity "seconds_counter"
+# File: h:\ese382\lab10s14\set_time\src\set_initial_value_TB.vhd
+# Compile Entity "set_initial_value_tb"
+# Compile Architecture "tb_architecture" of Entity "set_initial_value_tb"
+# File: h:\ese382\lab10s14\set_time\src\minutes_counter.vhd
+# Compile Entity "minutes_counter"
+# Compile Architecture "behavioral" of Entity "minutes_counter"
+# File: h:\ese382\lab10s14\set_time\src\rotary_encoder_decoder_fsm.vhd
+# Compile Entity "rotary_encoder_decoder_fsm"
+# Compile Architecture "behavioral" of Entity "rotary_encoder_decoder_fsm"
+# File: h:\ese382\lab10s14\set_time\src\s_timer.vhd
+# Compile Entity "settable_timer"
+# Compile Architecture "dataflow" of Entity "settable_timer"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => set_initial_value_tb
+# File: h:\ese382\lab10s14\set_time\src\set_initial_value_TB.vhd
+# Compile Architecture "tb_architecture" of Entity "set_initial_value_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+set_initial_value_tb set_initial_value_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6075 kB (elbread=1023 elab2=4951 kernel=100 sdf=0)
+#  8:58 AM, Tuesday, April 22, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: set_initial_value_tb (tb_architecture)
+run
+# KERNEL: WARNING: NUMERIC_STD."/=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /set_initial_value_tb/UUT/u1,  Process: cnt_int.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# Preparing list of files to print. Please wait...
+# Finished preparing list of files to print.
+# Preparing list of files to print. Please wait...
+# Finished preparing list of files to print.
+# Printing of  design files has been started...
+# Printing documents (5 of 5)
+# Printing h:\ese382\lab10s14\set_time\src\seconds_counter.vhd (1 of 5)
+# Printing HDE document [h:\ese382\lab10s14\set_time\src\seconds_counter.vhd] ...
+# Printing h:\ese382\lab10s14\set_time\src\set_initial_value_TB.vhd (2 of 5)
+# Printing HDE document [h:\ese382\lab10s14\set_time\src\set_initial_value_TB.vhd] ...
+# Printing h:\ese382\lab10s14\set_time\src\minutes_counter.vhd (3 of 5)
+# Printing HDE document [h:\ese382\lab10s14\set_time\src\minutes_counter.vhd] ...
+# Printing h:\ese382\lab10s14\set_time\src\rotary_encoder_decoder_fsm.vhd (4 of 5)
+# Printing HDE document [h:\ese382\lab10s14\set_time\src\rotary_encoder_decoder_fsm.vhd] ...
+# Printing h:\ese382\lab10s14\set_time\src\s_timer.vhd (5 of 5)
+# Printing HDE document [h:\ese382\lab10s14\set_time\src\s_timer.vhd] ...
+# Printing design files has been finished
+# Printing Design time: [5 s]
+#  Simulation has been stopped
+# Design: Design "c_timer" has been set as active.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].

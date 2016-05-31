@@ -1,0 +1,7 @@
+MESSAGE "File: h:\ese382\lab04s14\lab04s14\src\converter_case.vhd" 
+MESSAGE "Compile Entity "converter_case"" 
+MESSAGE "Compile Architecture "behavior" of Entity "converter_case"" 
+MESSAGE "File: h:\ese382\lab04s14\lab04s14\src\converter_case_TB.vhd" 
+MESSAGE "Compile Entity "converter_2421_bcd_tb"" 
+MESSAGE "Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]" 

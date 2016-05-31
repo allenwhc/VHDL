@@ -1,0 +1,1 @@
+-w -s "h:\ese382\lab04s14\library.cfg"  -j "h:\ese382\lab04s14\if_statement\projlib.cfg"  -d "h:\ese382\lab04s14\if_statement\compile"   -work if_statement  -dbg -e 100 -2002 "h:\ese382\lab04s14\if_statement\src\converter_if.vhd" "h:\ese382\lab04s14\if_statement\src\converter_if_TB.vhd"

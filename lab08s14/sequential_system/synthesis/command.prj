@@ -1,0 +1,63 @@
+#
+# command.prj
+#
+# This file performs synthesis.
+# Copyright(c) 2003 Aldec, Inc., Henderson, NV USA. All Rights Reserved.
+
+#
+# Define variables
+#
+set proj_name	{seq_sys}
+set proj_dir	{./}
+set proj_folder	[file join $proj_dir $proj_name]
+set report1	{seq_sys.srr}
+set report2	{Post_Synthesis.txt}
+
+set top_level	{"seq_sys"}
+set target	{ispGAL}
+set device	{ispGAL22LV10}
+set package	{LJ}
+set speed	{ex-10}
+
+
+#
+# Identify the design source files
+#
+add_file -vhdl -lib sequential_system "./../src/seq_sys.vhd"
+add_file -vhdl -lib sequential_system "./../src/seq_sys_TB-2.vhd"
+add_file -vhdl -lib sequential_system "./../src/flipflop.vhd"
+add_file -vhdl -lib sequential_system "./../src/counter.vhd"
+add_file -vhdl -lib sequential_system "./../src/right_shift_reg.vhd"
+
+set_option -project_relative_includes 1
+
+#device options
+set_option -technology ISPGAL
+set_option -part ispGAL22LV10
+set_option -package LJ
+set_option -speed_grade -10
+
+#compilation/mapping options
+set_option -default_enum_encoding sequential
+set_option -symbolic_fsm_compiler true
+set_option -resource_sharing true
+
+#map options
+set_option -top_module "sequential_system.seq_sys"
+set_option -disable_io_insertion false
+set_option -frequency 1
+set_option -area_delay_percent 0
+set_option -vlog_std v2001
+set_option -auto_constrain_io 0
+set_option -dup 0
+set_option -write_apr_constraint 1
+set_option -synthesis_onoff_pragma 0
+
+#simulation options
+set_option -write_vhdl true
+set_option -write_verilog false
+project -result_format "edif"
+project -result_file "./seq_sys/seq_sys.edf"
+
+project -run
+

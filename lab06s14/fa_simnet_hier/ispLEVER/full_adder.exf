@@ -1,0 +1,40 @@
+Section Cross Reference File
+Design 'full_adder' created Tue Mar 25 09:51:17 2014
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst                u1_c1_i                                   u1.c1_i
+   Inst                u2_c2_i                                   u2.c2_i
+   Inst    u2_uut_u11_o1_and_i                       u2.uut.u11.o1_and_i
+   Inst    u2_uut_u12_o2_and_i                       u2.uut.u12.o2_and_i
+   Inst         u2_uut_u2_o1_i                            u2.uut.u2.o1_i
+   Inst    u1_uut_u11_o1_and_i                       u1.uut.u11.o1_and_i
+   Inst    u1_uut_u12_o2_and_i                       u1.uut.u12.o2_and_i
+   Inst         u1_uut_u2_o1_i                            u1.uut.u2.o1_i
+   Inst   u1_uut_u11_carry_in_i                     u1.uut.u11.carry_in_i
+   Inst          u1_uut_u11_o1                             u1.uut.u11.o1
+   Inst         u1_uut_u12_a_i                            u1.uut.u12.a_i
+   Inst          u1_uut_u12_o1                             u1.uut.u12.o1
+   Inst           u1_uut_u2_o1                              u1.uut.u2.o1
+   Inst           u1_carry_out                              u1.carry_out
+   Inst         u2_uut_u11_b_i                            u2.uut.u11.b_i
+   Inst          u2_uut_u11_o1                             u2.uut.u11.o1
+   Inst          u2_uut_u12_o1                             u2.uut.u12.o1
+   Inst           u2_uut_u2_o1                              u2.uut.u2.o1
+   Inst           u2_carry_out                              u2.carry_out
+   Net         u1_uut_o1_and_n                             u1.uut.o1_and
+   Net         u1_uut_o2_and_n                             u1.uut.o2_and
+   Net         u2_uut_o1_and_n                             u2.uut.o1_and
+   Net         u2_uut_o2_and_n                             u2.uut.o2_and
+   Net       u2_uut_o1_and_i_n                           u2.uut.o1_and_i
+   Net       u2_uut_o2_and_i_n                           u2.uut.o2_and_i
+   Net       u1_uut_o1_and_i_n                           u1.uut.o1_and_i
+   Net       u1_uut_o2_and_i_n                           u1.uut.o2_and_i
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     a
+        Input     b
+        Input     carry_in
+        Output     sum
+        Output     carry_out
+End

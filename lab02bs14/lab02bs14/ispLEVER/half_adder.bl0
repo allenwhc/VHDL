@@ -1,0 +1,26 @@
+#$ DATE Tue Feb 18 08:56:52 2014
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE half_adder
+#$ PINS 4 a:3'ke'  b:4'ke'  sum:27'ke'  carry_out:26'ke' 
+#$ NODES 6 N_2 N_3_0 N_3_0_i a_i a_c b_c 
+.model half_adder
+.inputs a.BLIF b.BLIF N_2.BLIF N_3_0.BLIF N_3_0_i.BLIF a_i.BLIF a_c.BLIF b_c.BLIF  
+.outputs sum carry_out N_2 N_3_0 N_3_0_i a_i a_c b_c
+.names  a.BLIF a_c
+1 1
+.names  b.BLIF b_c
+1 1
+.names  N_3_0_i.BLIF sum
+1 1
+.names  N_2.BLIF carry_out
+1 1
+.names  a_c.BLIF b_c.BLIF N_2
+11 1
+.names  a_c.BLIF a_i
+0 1
+.names  a_i.BLIF b_c.BLIF N_3_0
+01 1
+10 1
+.names  N_3_0.BLIF N_3_0_i
+0 1
+.end

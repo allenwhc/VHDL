@@ -1,0 +1,20 @@
+[Version]
+Version=9.1
+[Designs]
+d flip_flop=.\D flip_flop\D flip_flop.adf
+shift_register=.\shift_register\shift_register.adf
+counter=.\counter\counter.adf
+sequential_system=.\sequential_system\sequential_system.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+d flip_flop=1
+shift_register=1
+counter=0
+sequential_system=1
+[Settings]
+Active=sequential_system

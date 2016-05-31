@@ -1,0 +1,5 @@
+$DEVICE        p22v10gc    fit   isp_task3.tt3
+$PINS    8  leds_0_:27   leds_1_:17   leds_2_:26   empty:18   leds_3_:25   fuel_1_:4   fuel_2_:3   
+fuel_3_:2   
+--------------------------------------------------------------
+

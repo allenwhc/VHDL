@@ -1,0 +1,33 @@
+#$ TOOL ispLEVER Classic 7.0.00.10.16.07
+#$ DATE Wed Mar 05 15:06:50 2014
+#$ MODULE converter_loop
+#$ PINS 8 p:3'ke'  q:4'ke'  r:5'ke'  s:6'ke'  a:24'ke'  b:25'ke'  c:26'ke'  d:27'ke' 
+
+.model converter_loop
+.inputs p.BLIF q.BLIF r.BLIF s.BLIF
+.outputs a b c d
+.names s.BLIF a
+1 1
+0 0
+.names p.BLIF q.BLIF r.BLIF s.BLIF b
+001- 1
+1-0- 1
+-101 1
+0-00 0
+000- 0
+-11- 0
+1-1- 0
+.names p.BLIF q.BLIF r.BLIF c
+101 1
+-10 1
+0-1 0
+-00 0
+-11 0
+.names p.BLIF q.BLIF r.BLIF s.BLIF d
+0101 1
+111- 1
+0--0 0
+0-1- 0
+1-0- 0
+-0-- 0
+.end

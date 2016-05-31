@@ -1,0 +1,359 @@
+
+edif2ngd  -l "LatticeXP" -d LFXP3C -path "H:/ese382/lab10s14/setable_timer/diamond/GZ" -path "H:/ese382/lab10s14/setable_timer/diamond"  "H:/ese382/lab10s14/setable_timer/synplify/rev_2/proj_2.edn" "proj_2.ngo"   
+edif2ngd:  version Diamond_1.4_Production (87)
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2011 Lattice Semiconductor Corporation,  All rights reserved.
+WARNING - edif2ngd: Unsupported property is_pwr found - ignoring...
+       On or above line 144 in file H:\ese382\lab10s14\setable_timer\synplify\rev_2\proj_2.edn
+WARNING - edif2ngd: Unsupported property is_pwr found - ignoring...
+       On or above line 152 in file H:\ese382\lab10s14\setable_timer\synplify\rev_2\proj_2.edn
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+       On or above line 344 in file H:\ese382\lab10s14\setable_timer\synplify\rev_2\proj_2.edn
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+       On or above line 398 in file H:\ese382\lab10s14\setable_timer\synplify\rev_2\proj_2.edn
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+       On or above line 673 in file H:\ese382\lab10s14\setable_timer\synplify\rev_2\proj_2.edn
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+       On or above line 738 in file H:\ese382\lab10s14\setable_timer\synplify\rev_2\proj_2.edn
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+       On or above line 1417 in file H:\ese382\lab10s14\setable_timer\synplify\rev_2\proj_2.edn
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+       On or above line 1764 in file H:\ese382\lab10s14\setable_timer\synplify\rev_2\proj_2.edn
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+       On or above line 2156 in file H:\ese382\lab10s14\setable_timer\synplify\rev_2\proj_2.edn
+Writing the design to proj_2.ngo...
+
+ngdbuild  -a "LatticeXP" -d LFXP3C  -p "C:/lscc/diamond/1.4/ispfpga/mg5g00/data"  -p "H:/ese382/lab10s14/setable_timer/diamond/GZ" -p "H:/ese382/lab10s14/setable_timer/diamond"  "proj_2.ngo" "GZ_GZ.ngd"  	
+ngdbuild:  version Diamond_1.4_Production (87)
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2011 Lattice Semiconductor Corporation,  All rights reserved.
+Reading 'proj_2.ngo' ...
+Loading NGL library 'C:/lscc/diamond/1.4/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/1.4/ispfpga/or5g00/data/orc5glib.ngl'...
+
+Running DRC...
+WARNING - ngdbuild: logical net 'u1/un1_count_sec_1_cry_4' has no load
+WARNING - ngdbuild: logical net 'u1/un1_count_sec_1_cry_4_0_COUT1' has no load
+WARNING - ngdbuild: logical net 'u1/un1_count_sec_1_cry_2' has no load
+WARNING - ngdbuild: logical net 'u1/un1_count_sec_1_cry_0' has no load
+WARNING - ngdbuild: logical net 'u1/un1_count_sec_1_cry_0_0_S0' has no load
+WARNING - ngdbuild: DRC complete with 5 warnings
+
+Design Results:
+    166 blocks expanded
+complete the first expansion
+Writing 'GZ_GZ.ngd' ...
+
+map -a "LatticeXP" -p LFXP3C -t TQFP100 -s 4 -oc Commercial  "GZ_GZ.ngd" -o "GZ_GZ_map.ncd" -pr "GZ_GZ.prf" -mp "GZ_GZ.mrp" "H:/ese382/lab10s14/setable_timer/diamond/GZ.lpf"             
+map:  version Diamond_1.4_Production (87)
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2011 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: GZ_GZ.ngd
+   Picdevice="LFXP3C"
+   Pictype="TQFP100"
+   Picspeed=4
+   Remove unused logic
+   Do not produce over sized NCDs.
+Part used: LFXP3CTQFP100, Performance used: 4.
+Loading device for application map from file 'mg5g19x26.nph' in environment C:/lscc/diamond/1.4/ispfpga.
+Package Status:                     Final          Version 1.40
+
+Running general design DRC...
+Removing unused logic...
+Optimizing...
+WARNING - map: Using local reset signal 'rst_bar_c' to infer global GSR net.
+
+
+
+Design Summary:
+   Number of registers:    28
+      PFU registers:    28
+      PIO registers:    0
+   Number of SLICEs:            54 out of  1536 (4%)
+      SLICEs(logic/ROM):        54 out of  1152 (5%)
+      SLICEs(logic/ROM/RAM):     0 out of   384 (0%)
+          As RAM:            0
+          As Logic/ROM:      0
+   Number of logic LUT4s:      97
+   Number of distributed RAM:   0 (0 LUT4s)
+   Number of ripple logic:      3 (6 LUT4s)
+   Number of shift registers:   0
+   Total number of LUT4s:     103
+   Number of PIO sites used: 20 out of 62 (32%)
+   Number of PIO FIXEDDELAY:    0
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of block RAMs:  0 out of 6 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  1
+     Net clk_c: 17 loads, 17 rising, 0 falling (Driver: PIO clk )
+   Number of Clock Enables:  1
+     Net u1.scount.un18_en_cnt1: 1 loads, 1 LSLICEs
+   Number of local set/reset loads for net rst_bar_c merged into GSR:  14
+   Number of LSRs:  1
+     Net rst_bar_c: 6 loads, 6 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net u5.present_state[4]: 14 loads
+     Net seconds_c[0]: 13 loads
+     Net u5.present_state[2]: 13 loads
+     Net u5.present_state[3]: 13 loads
+     Net seconds_c[2]: 12 loads
+     Net seconds_c[3]: 12 loads
+     Net seconds_c[4]: 12 loads
+     Net seconds_c[5]: 12 loads
+     Net minutes_c[0]: 11 loads
+     Net minutes_c[1]: 11 loads
+ 
+   Number of warnings:  1
+   Number of errors:    0
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 34 MB
+
+Dumping design to file GZ_GZ_map.ncd.
+
+mpartrce -p "GZ_GZ.p2t" -f "GZ_GZ.p3t" -tf "GZ_GZ.pt" "GZ_GZ_map.ncd" "GZ_GZ.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "GZ_GZ_map.ncd"
+Tue Apr 29 14:29:40 2014
+
+PAR: Place And Route Diamond_1.4_Production (87).
+Command Line: C:/lscc/diamond/1.4/ispfpga\bin\nt\par -f GZ_GZ.p2t GZ_GZ_map.ncd GZ_GZ.dir
+GZ_GZ.prf
+Preference file: GZ_GZ.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file GZ_GZ_map.ncd.
+Design name: count_down_timer
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LFXP3C
+Package:     TQFP100
+Performance: 4
+Loading device for application par from file 'mg5g19x26.nph' in environment C:/lscc/diamond/1.4/ispfpga.
+Package Status:                     Final          Version 1.40
+Performance Hardware Data Status: Version 1.225
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   GSR                1/1           100% used
+   PIO (prelim)      20/140          14% used
+                     20/62           32% bonded
+   SLICE             54/1536          3% used
+
+
+
+Number of Signals: 139
+Number of Connections: 431
+
+Pin Constraint Summary:
+   20 out of 20 pins locked (100% locked).
+
+The following 1 signal is selected to use the primary clock routing resources:
+    clk_c (driver: clk, clk load #: 17)
+
+No signal is selected as DCS clock.
+
+No signal is selected as secondary clock.
+
+Signal rst_bar_c is selected as Global Set/Reset.
+Starting Placer Phase 0.
+
+Finished Placer Phase 0.  REAL time: 0 secs 
+
+Starting Placer Phase 1.
+...................
+Placer score = 22085.
+Finished Placer Phase 1.  REAL time: 2 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  22031
+Finished Placer Phase 2.  REAL time: 2 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 1 out of 4 (25%)
+  PLL        : 0 out of 2 (0%)
+  DCS        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "clk_c" from comp "clk" on CLK_PIN site "93 (PT12A)", clk load = 17
+
+  PRIMARY  : 1 out of 4 (25%)
+     DCS   : 0 out of 2 (0%)
+  SECONDARY: 0 out of 4 (0%)
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   20 out of 140 (14.3%) PIO sites used.
+   20 out of 62 (32.3%) bonded PIO sites used.
+   Number of PIO comps: 20; differential: 0
+   Number of Vref pins used: 0
+
+I/O Bank Usage Summary:
++----------+---------------+------------+------------+------------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref1 | Bank Vref2 |
++----------+---------------+------------+------------+------------+
+| 0        | 5 / 8 ( 62%)  | 2.5V       | -          | -          |
+| 1        | 0 / 9 (  0%)  | -          | -          | -          |
+| 2        | 7 / 8 ( 87%)  | 2.5V       | -          | -          |
+| 3        | 5 / 6 ( 83%)  | -          | -          | -          |
+| 4        | 1 / 5 ( 20%)  | -          | -          | -          |
+| 5        | 1 / 12 (  8%) | -          | -          | -          |
+| 6        | 0 / 4 (  0%)  | -          | -          | -          |
+| 7        | 1 / 10 ( 10%) | -          | -          | -          |
++----------+---------------+------------+------------+------------+
+
+Total placer CPU time: 2 secs 
+
+Dumping design to file GZ_GZ.dir/5_1.ncd.
+
+0 connections routed; 431 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 2 secs 
+Starting iterative routing.
+
+For each routing iteration the number inside the parenthesis is the
+total time (in picoseconds) the design is failing the timing constraints.
+For each routing iteration the router will attempt to reduce this number
+until the number of routing iterations is completed or the value is 0
+meaning the design has fully met the timing constraints.
+
+End of iteration 1
+431 successful; 0 unrouted; (0) real time: 3 secs 
+Dumping design to file GZ_GZ.dir/5_1.ncd.
+Total CPU time 2 secs 
+Total REAL time: 3 secs 
+Completely routed.
+End of route.  431 routed (100.00%); 0 unrouted.
+Checking DRC ... 
+No errors found.
+
+Timing score: 0 
+
+Dumping design to file GZ_GZ.dir/5_1.ncd.
+
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2011 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+bitgen -w "GZ_GZ.ncd" -f "GZ_GZ.t2b" "GZ_GZ.prf"
+
+
+BITGEN: Bitstream Generator Diamond_1.4_Production (87)
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2011 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file GZ_GZ.ncd.
+Design name: count_down_timer
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LFXP3C
+Package:     TQFP100
+Performance: 4
+Loading device for application Bitgen from file 'mg5g19x26.nph' in environment C:/lscc/diamond/1.4/ispfpga.
+Package Status:                     Final          Version 1.40
+Performance Hardware Data Status: Version 1.225
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from GZ_GZ.prf...
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                       ReadBack  |                        FLASH**  |
++---------------------------------+---------------------------------+
+|                    ReadCapture  |                      Disable**  |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                        CfgMode  |                      Disable**  |
++---------------------------------+---------------------------------+
+|                        DONE_EX  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                        DONE_OD  |                           ON**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                          2.5**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                    CONFIG_MODE  |                         JTAG**  |
++---------------------------------+---------------------------------+
+|                        WAKE_UP  |                           21**  |
++---------------------------------+---------------------------------+
+|                     PERSISTENT  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                             ES  |                           No**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+Saving bit stream in "GZ_GZ.bit".
+
+ispdfw -dev LFXP3C-XXT100 -if "GZ_GZ.bit" -oft -jed -of "GZ_GZ.jed"  -comment "GZ_GZ.alt"
+
+Device Info:
+Full name: LFXP3C
+Row Width: 1680
+Column Width: 558
+Usercode bit #: 32
+Processing BIT2JED...
+
+Input: GZ_GZ.bit
+Output: GZ_GZ.jed
+Overwriteues: 0
+Comment file: GZ_GZ.alt
+Lever: 0
++-------------+
+|   Succeed!  |
++-------------+

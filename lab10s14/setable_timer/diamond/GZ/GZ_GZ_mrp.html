@@ -1,0 +1,319 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>       Lattice Mapping Report File for Design Module 'count_down_timer'
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a LatticeXP -p LFXP3C -t TQFP100 -s 4 -oc Commercial
+     GZ_GZ.ngd -o GZ_GZ_map.ncd -pr GZ_GZ.prf -mp GZ_GZ.mrp
+     H:/ese382/lab10s14/setable_timer/diamond/GZ.lpf
+Target Vendor:  LATTICE
+Target Device:  LFXP3CTQFP100
+Target Performance:   4
+Mapper:  mg5g00,  version:  Diamond_1.4_Production (87)
+Mapped on:  04/29/14  14:29:37
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:    28
+      PFU registers:    28
+      PIO registers:    0
+   Number of SLICEs:            54 out of  1536 (4%)
+      SLICEs(logic/ROM):        54 out of  1152 (5%)
+      SLICEs(logic/ROM/RAM):     0 out of   384 (0%)
+          As RAM:            0
+          As Logic/ROM:      0
+   Number of logic LUT4s:      97
+   Number of distributed RAM:   0 (0 LUT4s)
+   Number of ripple logic:      3 (6 LUT4s)
+   Number of shift registers:   0
+   Total number of LUT4s:     103
+   Number of PIO sites used: 20 out of 62 (32%)
+   Number of PIO FIXEDDELAY:    0
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of block RAMs:  0 out of 6 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  1
+     Net clk_c: 17 loads, 17 rising, 0 falling (Driver: PIO clk )
+   Number of Clock Enables:  1
+     Net u1.scount.un18_en_cnt1: 1 loads, 1 LSLICEs
+   Number of local set/reset loads for net rst_bar_c merged into GSR:  14
+   Number of LSRs:  1
+     Net rst_bar_c: 6 loads, 6 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net u5.present_state[4]: 14 loads
+     Net seconds_c[0]: 13 loads
+     Net u5.present_state[2]: 13 loads
+     Net u5.present_state[3]: 13 loads
+     Net seconds_c[2]: 12 loads
+     Net seconds_c[3]: 12 loads
+
+     Net seconds_c[4]: 12 loads
+     Net seconds_c[5]: 12 loads
+     Net minutes_c[0]: 11 loads
+     Net minutes_c[1]: 11 loads
+
+
+
+
+   Number of warnings:  1
+   Number of errors:    0
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+WARNING: Using local reset signal 'rst_bar_c' to infer global GSR net.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+------------+
+| IO Name             | Direction | Levelmode | IO         | FIXEDDELAY |
+|                     |           |  IO_TYPE  | Register   |            |
++---------------------+-----------+-----------+------------+------------+
+| alarm               | OUTPUT    | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| rst_bar             | INPUT     | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| minutes[3]          | OUTPUT    | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| minutes[2]          | OUTPUT    | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| minutes[1]          | OUTPUT    | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| minutes[0]          | OUTPUT    | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| seconds[5]          | OUTPUT    | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| seconds[4]          | OUTPUT    | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| seconds[3]          | OUTPUT    | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| seconds[2]          | OUTPUT    | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| seconds[1]          | OUTPUT    | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| seconds[0]          | OUTPUT    | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| seconds_clk         | INPUT     | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| set_arm             | INPUT     | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| s                   | INPUT     | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| bo                  | INPUT     | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| ao                  | INPUT     | LVCMOS25  |            |            |
+
++---------------------+-----------+-----------+------------+------------+
+| bi                  | INPUT     | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| ai                  | INPUT     | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| clk                 | INPUT     | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block VCC undriven or does not drive anything - clipped.
+Block GND undriven or does not drive anything - clipped.
+Block u0/GND undriven or does not drive anything - clipped.
+Block u0/VCC undriven or does not drive anything - clipped.
+Block u1/VCC undriven or does not drive anything - clipped.
+Block u2/VCC undriven or does not drive anything - clipped.
+Block u3/GND undriven or does not drive anything - clipped.
+Block u3/VCC undriven or does not drive anything - clipped.
+Block u4/GND undriven or does not drive anything - clipped.
+Block u4/VCC undriven or does not drive anything - clipped.
+Block u5/VCC undriven or does not drive anything - clipped.
+Block u5/GND undriven or does not drive anything - clipped.
+Signal rst_bar_c_i was merged into signal rst_bar_c
+Signal u4/seconds_clk_c_i was merged into signal seconds_clk_c
+Signal u1/GND undriven or does not drive anything - clipped.
+Signal VCC undriven or does not drive anything - clipped.
+Signal u1/un1_count_sec_1_cry_2 undriven or does not drive anything - clipped.
+Signal u1/un1_count_sec_1_cry_4_0_COUT1 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_count_sec_1_cry_4 undriven or does not drive anything - clipped.
+Signal u1/un1_count_sec_1_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_count_sec_1_cry_0 undriven or does not drive anything - clipped.
+Block rst_bar_pad_RNI1JBB was optimized away.
+Block u4/present_state_RNO[0] was optimized away.
+Block u1/GND was optimized away.
+
+
+
+<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
+---------
+
+GSR Component:
+   The local reset signal 'rst_bar_c' of the design has been inferred as Global
+        Set Reset (GSR). The reset signal used for GSR control is 'rst_bar_c'.
+
+GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+
+Components on inferred reset domain with GSR Property disabled
+--------------------------------------------------------------
+
+These components have the GSR property set to DISABLED and are on the inferred
+     reset domain. The components will respond to the reset signal 'rst_bar_c'
+     via the local reset on the component and not the GSR component.
+
+Type and number of components of the type:
+   Register = 10
+
+Type and instance name of component:
+
+   Register : u5/present_state[0]
+   Register : u5/present_state[1]
+   Register : u5/present_state[2]
+   Register : u5/present_state_fast[2]
+   Register : u2/present_state[0]
+   Register : u2/present_state[1]
+   Register : u0/present_state[1]
+   Register : u0/present_state_fast[0]
+   Register : u0/present_state[0]
+   Register : u0/present_state_fast[1]
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 0 secs
+   Total REAL Time: 0 secs
+   Peak Memory Usage: 34 MB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2011 Lattice Semiconductor
+     Corporation,  All rights reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

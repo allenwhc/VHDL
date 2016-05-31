@@ -1,0 +1,416 @@
+// SDF delay-file
+(DELAYFILE
+  (SDFVERSION "2.1")
+  (DESIGN "task3")
+  (DATE "3/11/2014 13:14:8")
+  (VENDOR "Lattice Semiconductor")
+  (PROGRAM "SDF Generator")
+  (VERSION "7.0.00.10.16.07 Data sheet version: RevD-8/2000")
+  (DIVIDER /)
+  (VOLTAGE :5.0:)
+  (PROCESS "worst")
+  (TEMPERATURE :90:)
+  (TIMESCALE 100ps)
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_seven_seg0_6_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (30:30:30) (30:30:30) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_seven_seg1_6_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (30:30:30) (30:30:30) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_seven_seg0_5_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (30:30:30) (30:30:30) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_seven_seg0_4_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (30:30:30) (30:30:30) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_seven_seg0_3_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (30:30:30) (30:30:30) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_seven_seg0_2_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (30:30:30) (30:30:30) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_seven_seg0_1_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (30:30:30) (30:30:30) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_seven_seg0_0_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (30:30:30) (30:30:30) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_seven_seg1_5_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (30:30:30) (30:30:30) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_seven_seg1_4_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (30:30:30) (30:30:30) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_seven_seg1_3_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (30:30:30) (30:30:30) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_seven_seg1_2_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (30:30:30) (30:30:30) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_seven_seg1_1_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (30:30:30) (30:30:30) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_seven_seg1_0_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (30:30:30) (30:30:30) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OR4")
+    (INSTANCE GATE_seven_seg0_6_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (0:0:0) (0:0:0) )
+        (PORT I1 (0:0:0) (0:0:0) )
+        (PORT I2 (0:0:0) (0:0:0) )
+        (PORT I3 (0:0:0) (0:0:0) )
+        (IOPATH I0 O (70:70:70) (70:70:70) )
+        (IOPATH I1 O (70:70:70) (70:70:70) )
+        (IOPATH I2 O (70:70:70) (70:70:70) )
+        (IOPATH I3 O (70:70:70) (70:70:70) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OR4")
+    (INSTANCE GATE_seven_seg0_5_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (0:0:0) (0:0:0) )
+        (PORT I1 (0:0:0) (0:0:0) )
+        (PORT I2 (0:0:0) (0:0:0) )
+        (PORT I3 (0:0:0) (0:0:0) )
+        (IOPATH I0 O (70:70:70) (70:70:70) )
+        (IOPATH I1 O (70:70:70) (70:70:70) )
+        (IOPATH I2 O (70:70:70) (70:70:70) )
+        (IOPATH I3 O (70:70:70) (70:70:70) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OR4")
+    (INSTANCE GATE_seven_seg0_4_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (0:0:0) (0:0:0) )
+        (PORT I1 (0:0:0) (0:0:0) )
+        (PORT I2 (0:0:0) (0:0:0) )
+        (PORT I3 (0:0:0) (0:0:0) )
+        (IOPATH I0 O (70:70:70) (70:70:70) )
+        (IOPATH I1 O (70:70:70) (70:70:70) )
+        (IOPATH I2 O (70:70:70) (70:70:70) )
+        (IOPATH I3 O (70:70:70) (70:70:70) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OR4")
+    (INSTANCE GATE_seven_seg0_1_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (0:0:0) (0:0:0) )
+        (PORT I1 (0:0:0) (0:0:0) )
+        (PORT I2 (0:0:0) (0:0:0) )
+        (PORT I3 (0:0:0) (0:0:0) )
+        (IOPATH I0 O (70:70:70) (70:70:70) )
+        (IOPATH I1 O (70:70:70) (70:70:70) )
+        (IOPATH I2 O (70:70:70) (70:70:70) )
+        (IOPATH I3 O (70:70:70) (70:70:70) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OR4")
+    (INSTANCE GATE_seven_seg0_0_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (0:0:0) (0:0:0) )
+        (PORT I1 (0:0:0) (0:0:0) )
+        (PORT I2 (0:0:0) (0:0:0) )
+        (PORT I3 (0:0:0) (0:0:0) )
+        (IOPATH I0 O (70:70:70) (70:70:70) )
+        (IOPATH I1 O (70:70:70) (70:70:70) )
+        (IOPATH I2 O (70:70:70) (70:70:70) )
+        (IOPATH I3 O (70:70:70) (70:70:70) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OR4")
+    (INSTANCE GATE_seven_seg1_3_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (0:0:0) (0:0:0) )
+        (PORT I1 (0:0:0) (0:0:0) )
+        (PORT I2 (0:0:0) (0:0:0) )
+        (PORT I3 (0:0:0) (0:0:0) )
+        (IOPATH I0 O (70:70:70) (70:70:70) )
+        (IOPATH I1 O (70:70:70) (70:70:70) )
+        (IOPATH I2 O (70:70:70) (70:70:70) )
+        (IOPATH I3 O (70:70:70) (70:70:70) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OR4")
+    (INSTANCE GATE_seven_seg1_2_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (0:0:0) (0:0:0) )
+        (PORT I1 (0:0:0) (0:0:0) )
+        (PORT I2 (0:0:0) (0:0:0) )
+        (PORT I3 (0:0:0) (0:0:0) )
+        (IOPATH I0 O (70:70:70) (70:70:70) )
+        (IOPATH I1 O (70:70:70) (70:70:70) )
+        (IOPATH I2 O (70:70:70) (70:70:70) )
+        (IOPATH I3 O (70:70:70) (70:70:70) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OR3")
+    (INSTANCE GATE_seven_seg1_1_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (0:0:0) (0:0:0) )
+        (PORT I1 (0:0:0) (0:0:0) )
+        (PORT I2 (0:0:0) (0:0:0) )
+        (IOPATH I0 O (70:70:70) (70:70:70) )
+        (IOPATH I1 O (70:70:70) (70:70:70) )
+        (IOPATH I2 O (70:70:70) (70:70:70) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OR4")
+    (INSTANCE GATE_seven_seg1_0_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (0:0:0) (0:0:0) )
+        (PORT I1 (0:0:0) (0:0:0) )
+        (PORT I2 (0:0:0) (0:0:0) )
+        (PORT I3 (0:0:0) (0:0:0) )
+        (IOPATH I0 O (70:70:70) (70:70:70) )
+        (IOPATH I1 O (70:70:70) (70:70:70) )
+        (IOPATH I2 O (70:70:70) (70:70:70) )
+        (IOPATH I3 O (70:70:70) (70:70:70) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OR3")
+    (INSTANCE GATE_output_15_2_Xn_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (0:0:0) (0:0:0) )
+        (PORT I1 (0:0:0) (0:0:0) )
+        (PORT I2 (0:0:0) (0:0:0) )
+        (IOPATH I0 O (70:70:70) (70:70:70) )
+        (IOPATH I1 O (70:70:70) (70:70:70) )
+        (IOPATH I2 O (70:70:70) (70:70:70) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OR4")
+    (INSTANCE GATE_output_15_1_Xn_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (0:0:0) (0:0:0) )
+        (PORT I1 (0:0:0) (0:0:0) )
+        (PORT I2 (0:0:0) (0:0:0) )
+        (PORT I3 (0:0:0) (0:0:0) )
+        (IOPATH I0 O (70:70:70) (70:70:70) )
+        (IOPATH I1 O (70:70:70) (70:70:70) )
+        (IOPATH I2 O (70:70:70) (70:70:70) )
+        (IOPATH I3 O (70:70:70) (70:70:70) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OR4")
+    (INSTANCE GATE_output_3_Xn_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (0:0:0) (0:0:0) )
+        (PORT I1 (0:0:0) (0:0:0) )
+        (PORT I2 (0:0:0) (0:0:0) )
+        (PORT I3 (0:0:0) (0:0:0) )
+        (IOPATH I0 O (70:70:70) (70:70:70) )
+        (IOPATH I1 O (70:70:70) (70:70:70) )
+        (IOPATH I2 O (70:70:70) (70:70:70) )
+        (IOPATH I3 O (70:70:70) (70:70:70) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "XOR2")
+    (INSTANCE GATE_seven_seg1_4_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (0:0:0) (0:0:0) )
+        (PORT I1 (0:0:0) (0:0:0) )
+        (IOPATH I0 O (70:70:70) (70:70:70) )
+        (IOPATH I1 O (70:70:70) (70:70:70) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "XOR2")
+    (INSTANCE GATE_output_1_bus_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (0:0:0) (0:0:0) )
+        (PORT I1 (0:0:0) (0:0:0) )
+        (IOPATH I0 O (70:70:70) (70:70:70) )
+        (IOPATH I1 O (70:70:70) (70:70:70) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "XOR2")
+    (INSTANCE GATE_G_142_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (0:0:0) (0:0:0) )
+        (PORT I1 (0:0:0) (0:0:0) )
+        (IOPATH I0 O (70:70:70) (70:70:70) )
+        (IOPATH I1 O (70:70:70) (70:70:70) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "XOR2")
+    (INSTANCE GATE_output_2_Xn_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (0:0:0) (0:0:0) )
+        (PORT I1 (0:0:0) (0:0:0) )
+        (IOPATH I0 O (70:70:70) (70:70:70) )
+        (IOPATH I1 O (70:70:70) (70:70:70) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_seven_seg1_6_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (0:0:0) (0:0:0) )
+        (IOPATH I0 O (70:70:70) (70:70:70) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_seven_seg0_3_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (0:0:0) (0:0:0) )
+        (IOPATH I0 O (70:70:70) (70:70:70) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_seven_seg0_2_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (0:0:0) (0:0:0) )
+        (IOPATH I0 O (70:70:70) (70:70:70) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_seven_seg1_5_XI_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (0:0:0) (0:0:0) )
+        (IOPATH I0 O (70:70:70) (70:70:70) )
+      )
+    )
+  )
+)

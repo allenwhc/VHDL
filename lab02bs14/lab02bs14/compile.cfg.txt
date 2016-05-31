@@ -1,0 +1,8 @@
+[View]
+Entity=testbench
+Architecture=behavior
+TopLevelType=1
+[file:.\src\half_adder_tb.vhd]
+Enabled=1
+[file:.\src\half_adder.vhq]
+Enabled=1

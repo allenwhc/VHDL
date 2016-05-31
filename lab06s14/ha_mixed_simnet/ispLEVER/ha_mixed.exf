@@ -1,0 +1,12 @@
+Section Cross Reference File
+Design 'ha_mixed' created Tue Mar 25 09:42:00 2014
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     a
+        Input     b
+        Output     sum
+        Output     carry_out
+End

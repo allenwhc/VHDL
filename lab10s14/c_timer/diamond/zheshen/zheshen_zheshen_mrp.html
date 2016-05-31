@@ -1,0 +1,319 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>       Lattice Mapping Report File for Design Module 'count_down_timer'
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a LatticeXP -p LFXP3C -t TQFP100 -s 4 -oc Commercial
+     zheshen_zheshen.ngd -o zheshen_zheshen_map.ncd -pr zheshen_zheshen.prf -mp
+     zheshen_zheshen.mrp H:/ese382/lab10s14/c_timer/diamond/zheshen.lpf
+Target Vendor:  LATTICE
+Target Device:  LFXP3CTQFP100
+Target Performance:   4
+Mapper:  mg5g00,  version:  Diamond_1.4_Production (87)
+Mapped on:  04/22/14  13:14:28
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:    33
+      PFU registers:    28
+      PIO registers:    5
+   Number of SLICEs:            50 out of  1536 (3%)
+      SLICEs(logic/ROM):        50 out of  1152 (4%)
+      SLICEs(logic/ROM/RAM):     0 out of   384 (0%)
+          As RAM:            0
+          As Logic/ROM:      0
+   Number of logic LUT4s:      66
+   Number of distributed RAM:   0 (0 LUT4s)
+   Number of ripple logic:      5 (10 LUT4s)
+   Number of shift registers:   0
+   Total number of LUT4s:      76
+   Number of PIO sites used: 20 out of 62 (32%)
+   Number of PIO FIXEDDELAY:    0
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of block RAMs:  0 out of 6 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  4
+     Net clk_c: 15 loads, 15 rising, 0 falling (Driver: PIO clk )
+     Net un1_present_state_2_0_i: 1 loads, 1 rising, 0 falling (Driver:
+     alarm_RNO )
+     Net N_36: 2 loads, 2 rising, 0 falling (Driver: un1_present_state_7_i )
+     Net N_34_i: 3 loads, 3 rising, 0 falling (Driver: seconds_clk_pad_RNIO2EO )
+   Number of Clock Enables:  4
+     Net state_reg_present_state_3_i_o4_1: 1 loads, 0 LSLICEs
+     Net N_14: 1 loads, 0 LSLICEs
+     Net state_reg_present_state_3_i_o4_0_0: 1 loads, 0 LSLICEs
+     Net state_reg_present_state_3_i_o4_0: 1 loads, 0 LSLICEs
+   Number of local set/reset loads for net rst_bar_c merged into GSR:  10
+   Number of LSRs:  8
+     Net un1_s_1_0_i: 1 loads, 1 LSLICEs
+     Net next_state_0__S1: 1 loads, 1 LSLICEs
+
+     Net next_state_0: 1 loads, 0 LSLICEs
+     Net bi_c: 1 loads, 1 LSLICEs
+     Net N_63_i: 1 loads, 1 LSLICEs
+     Net bo_c: 1 loads, 1 LSLICEs
+     Net u0/u3/up7_i: 1 loads, 1 LSLICEs
+     Net u0/u2/up7_i: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net present_state_0: 18 loads
+     Net u0/cten_sec: 9 loads
+     Net rst_bar_c: 7 loads
+     Net seconds_c_0: 7 loads
+     Net seconds_c_1: 7 loads
+     Net minutes_c_3: 6 loads
+     Net seconds_c_2: 6 loads
+     Net u0/cten_min: 6 loads
+     Net u0/u0/count_sec_RNICR6G1_1: 6 loads
+     Net u0/u0/un10_en_cnt1_RNII81O: 6 loads
+
+
+
+
+   Number of warnings:  1
+   Number of errors:    0
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+WARNING: Using local reset signal 'rst_bar_c' to infer global GSR net.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+------------+
+| IO Name             | Direction | Levelmode | IO         | FIXEDDELAY |
+|                     |           |  IO_TYPE  | Register   |            |
++---------------------+-----------+-----------+------------+------------+
+| alarm               | OUTPUT    | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| rst_bar             | INPUT     | LVCMOS25  | IN         |            |
++---------------------+-----------+-----------+------------+------------+
+| minutes_3           | OUTPUT    | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| minutes_2           | OUTPUT    | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| minutes_1           | OUTPUT    | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| minutes_0           | OUTPUT    | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| seconds_5           | OUTPUT    | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| seconds_4           | OUTPUT    | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| seconds_3           | OUTPUT    | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| seconds_2           | OUTPUT    | LVCMOS25  |            |            |
+
++---------------------+-----------+-----------+------------+------------+
+| seconds_1           | OUTPUT    | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| seconds_0           | OUTPUT    | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| seconds_clk         | INPUT     | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| set_arm             | INPUT     | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| s                   | INPUT     | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| bo                  | INPUT     | LVCMOS25  | IN         |            |
++---------------------+-----------+-----------+------------+------------+
+| ao                  | INPUT     | LVCMOS25  | IN         |            |
++---------------------+-----------+-----------+------------+------------+
+| bi                  | INPUT     | LVCMOS25  | IN         |            |
++---------------------+-----------+-----------+------------+------------+
+| ai                  | INPUT     | LVCMOS25  | IN         |            |
++---------------------+-----------+-----------+------------+------------+
+| clk                 | INPUT     | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block II_1_RNO\000/BUF0\000/BUF0/BUF0 undriven or does not drive anything -
+     clipped.
+Block VCC\000/BUF0\000/BUF0/BUF0 undriven or does not drive anything - clipped.
+Block II_1_RNO\000/BUF0/BUF0 undriven or does not drive anything - clipped.
+Block VCC\000/BUF0/BUF0 undriven or does not drive anything - clipped.
+Block next_state_0__II_1_RNO undriven or does not drive anything - clipped.
+Signal II_1_RNO\000/BUF0\000/BUF0 undriven or does not drive anything - clipped.
+Signal VCC\000/BUF0\000/BUF0 undriven or does not drive anything - clipped.
+Signal II_1_RNO\000/BUF0 undriven or does not drive anything - clipped.
+Signal VCC\000/BUF0 undriven or does not drive anything - clipped.
+Signal rst_bar_c_i was merged into signal rst_bar_c
+Signal II_1_RNO undriven or does not drive anything - clipped.
+Signal GND undriven or does not drive anything - clipped.
+Signal VCC undriven or does not drive anything - clipped.
+Signal u0/u0/un1_count_sec_1_cry_2 undriven or does not drive anything -
+     clipped.
+Signal u0/u0/un1_count_sec_1_cry_4_0_COUT1 undriven or does not drive anything -
+     clipped.
+Signal u0/u0/un1_count_sec_1_cry_4 undriven or does not drive anything -
+     clipped.
+Signal u0/u0/un1_count_sec_1_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u0/u0/un1_count_sec_1_cry_0 undriven or does not drive anything -
+     clipped.
+Signal u0/u1/un1_min_counts_1_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u0/u1/un1_min_counts_1_cry_0 undriven or does not drive anything -
+     clipped.
+Signal u0/u1/un1_min_counts_1_cry_2_0_COUT1 undriven or does not drive anything
+     - clipped.
+Signal u0/u1/un1_min_counts_1_cry_2 undriven or does not drive anything -
+
+     clipped.
+Block rst_bar_pad_RNI97F was optimized away.
+Block GND was optimized away.
+Block VCC was optimized away.
+
+
+
+<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
+---------
+
+GSR Component:
+   The local reset signal 'rst_bar_c' of the design has been inferred as Global
+        Set Reset (GSR). The reset signal used for GSR control is 'rst_bar_c'.
+
+GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+
+Components on inferred reset domain with GSR Property disabled
+--------------------------------------------------------------
+
+These components have the GSR property set to DISABLED and are on the inferred
+     reset domain. The components will respond to the reset signal 'rst_bar_c'
+     via the local reset on the component and not the GSR component.
+
+Type and number of components of the type:
+   Register = 2
+
+Type and instance name of component:
+   Register : present_state_0io_0
+   Register : present_state_1
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 0 secs
+   Total REAL Time: 0 secs
+   Peak Memory Usage: 31 MB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2011 Lattice Semiconductor
+     Corporation,  All rights reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

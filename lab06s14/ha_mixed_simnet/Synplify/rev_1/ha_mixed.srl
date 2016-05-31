@@ -1,0 +1,52 @@
+%%% protect protected_file
+@E
+@ 
+#
+#
+#
+# Created by Synplify VHDL Compiler version comp550rcp1, Build 072R from Synplicity, Inc.
+# Copyright (C) 1994-2011 Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+# Synthesis Netlist written on Tue Mar 25 09:32:44 2014
+#
+#
+#OPTIONS:"|-dfltencoding|sequential|-encrypt|-pro|-lite|-ll|2000|-ui|-fid2|-ram|-sharing|on|-autosm|-ignore_undefined_lib|-lib|work"
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\bin\\c_vhdl.exe":1306337548
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\location.map":1305913758
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\std.vhd":1304980548
+#CUR:"H:\\ese382\\lab06s14\\ha_mixed_simnet\\src\\ha_mixed.vhd":1395751170
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\std1164.vhd":1304980548
+f "C:\Synopsys\fpga_E201103SP2\lib\vhd\std.vhd"; # file 0
+af .is_vhdl 1;
+f "H:\ese382\lab06s14\ha_mixed_simnet\src\ha_mixed.vhd"; # file 1
+af .is_vhdl 1;
+f "C:\Synopsys\fpga_E201103SP2\lib\vhd\std1164.vhd"; # file 2
+af .is_vhdl 1;
+@E
+@ 
+ftell;
+@E@MR@.4:U::(.4U:cFRIsE	RNH_lGRC8ElN_H8GC;P
+NR#3HPDE8R
+4;N3PRHP#_ER8D4N;
+P#R3$VM_lRNb"sIF	"R\]\:\Cd#CU\.\DjNLnc#4\N\E_GlHC#8_HClM0#\\s\O\ElN_H8GC38PE\""
+;
+
+
+
+@HR@d4:j::dddj:RNNR;H
+NR03sDs_FHNoMl"CRN
+";
+@HR@d4:4::ddd4:RLLR;H
+NR03sDs_FHNoMl"CRL
+";
+@FR@d4:.::dd6.:Rl#kRl#k;H
+NR03sDs_FHNoMl"CR#"kl;
+
+
+
+@FR@d4:d::dd4d:4NROs_s$FRk0OsNs$k_F0N;
+HsR30FD_sMHoNRlC"sONsF$_k;0"
+@bR@4j::44::0.RsRkC0CskRk0sCb;
+Rj@@:44::.4:RDVN#VCRNCD#RDVN#
+C;b@R@44:c:cn:4.:4RsGFPkR#lkR#lRRNLb;
+R4@@::cc.c:c:ldRkOGRN$ss_0FkRsONsF$_kV0RNCD#RNLR;;
+C

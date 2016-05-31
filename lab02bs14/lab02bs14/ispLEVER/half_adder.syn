@@ -1,0 +1,10 @@
+JDF B
+// Created by Version 7.0 
+PROJECT half_adder
+DESIGN half_adder Normal
+DEVKIT ispGAL22V10C-10LJ
+ENTRY EDIF
+MODULE ..\..\..\project file\lab02bs14\rev_1\lab02bs14.edf
+MODSTYLE half_adder Normal
+SYNTHESIS_TOOL Synplify
+TOPMODULE half_adder

@@ -1,0 +1,8 @@
+JDF B
+// Created by Version 1.4
+PROJECT "task3"
+DESIGN "task3" Normal
+DEVKIT ispGAL22LV10-10LJ
+ENTRY EDIF
+MODULE fuel_encoder.edf
+MODSTYLE FUEL_ENCODER Normal

@@ -1,0 +1,9 @@
+C:\Synopsys\fpga_E201103SP2\bin\m_cpld.exe  -prodtype synplify_pro -encrypt  -pro  -part ispGAL22V10C  -package LJ  -grade -10   -areadelay 0 -minc    -ovhdl "ha_mixed.vhm"  -oedif  H:\ese382\lab06s14\ha_mixed_simnet\Synplify\rev_1\ha_mixed.edf  H:\ese382\lab06s14\ha_mixed_simnet\Synplify\rev_1\ha_mixed.srs  -devicelib  C:\Synopsys\fpga_E201103SP2\lib\cpld\lattice.v  -ologparam  H:\ese382\lab06s14\ha_mixed_simnet\Synplify\rev_1\syntmp\ha_mixed.plg  -osyn  H:\ese382\lab06s14\ha_mixed_simnet\Synplify\rev_1\ha_mixed.srm  -prjdir H:\ese382\lab06s14\ha_mixed_simnet\Synplify\  -log  H:\ese382\lab06s14\ha_mixed_simnet\Synplify\rev_1\synlog\ha_mixed_ispGAL_Mapper.srr 
+rc:0 success:1
+H:\ese382\lab06s14\ha_mixed_simnet\Synplify\rev_1\ha_mixed.edf|o|1395754366|3416
+H:\ese382\lab06s14\ha_mixed_simnet\Synplify\rev_1\ha_mixed.srs|i|1395754363|1777
+C:\Synopsys\fpga_E201103SP2\lib\cpld\lattice.v|i|1304989762|210380
+H:\ese382\lab06s14\ha_mixed_simnet\Synplify\rev_1\syntmp\ha_mixed.plg|o|1395754365|0
+H:\ese382\lab06s14\ha_mixed_simnet\Synplify\rev_1\ha_mixed.srm|o|1395754366|2414
+H:\ese382\lab06s14\ha_mixed_simnet\Synplify\rev_1\synlog\ha_mixed_ispGAL_Mapper.srr|o|1395754366|880
+C:\Synopsys\fpga_E201103SP2\bin\m_cpld.exe|i|1305649316|8888320

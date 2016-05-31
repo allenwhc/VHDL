@@ -1,0 +1,4 @@
+MESSAGE "File: h:\ese382\lab07s14\task2\src\j_tb.vhd" 
+MESSAGE "Compile Entity "j_tb"" 
+MESSAGE "Compile Architecture "tb_architecture" of Entity "j_tb"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]" 

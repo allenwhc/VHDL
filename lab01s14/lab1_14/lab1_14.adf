@@ -1,0 +1,47 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=lab1_14
+
+[Library]
+lab1_14=.\lab1_14.LIB
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+fileopenfolder=P:\ESE382
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=1
+
+[$LibMap$]
+lab1_14=.
+Active_lib=
+
+[Files]
+/half_sub.vhd=-1
+/half_sub_tb.vhd=-1
+
+[Files.Data]
+.\src\half_sub.vhd=VHDL Source Code
+.\src\half_sub_tb.vhd=VHDL Source Code
+

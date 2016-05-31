@@ -1,0 +1,1 @@
+-w -s "h:\ese382\lab03s14\library.cfg"  -j "h:\ese382\lab03s14\lab03s14\projlib.cfg"  -d "h:\ese382\lab03s14\lab03s14\compile"   -work lab03s14  -dbg -e 100 -o -2002 "h:\ese382\lab03s14\lab03s14\src\selector.vhq" "h:\ese382\lab03s14\lab03s14\src\converter_csop_TB(1).vhd"

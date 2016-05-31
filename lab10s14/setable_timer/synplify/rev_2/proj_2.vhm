@@ -1,0 +1,1093 @@
+--
+-- Written by Synplicity
+-- Product Version "G-2012.09-SP1 "
+-- Program "Synplify Pro", Mapper "maprc, Build 1352R"
+-- Tue Apr 29 14:29:01 2014
+--
+
+--
+-- Written by Synplify Pro version Build 1352R
+-- Tue Apr 29 14:29:01 2014
+--
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+library pmi;
+use pmi.pmi_components.all;
+library xp;
+use xp.components.all;
+
+entity control_unit is
+port(
+  present_state_fast : out std_logic_vector(4 downto 2);
+  present_state_4 :  out std_logic;
+  present_state_3 :  out std_logic;
+  present_state_2 :  out std_logic;
+  s_c :  in std_logic;
+  rst_bar_c_i :  in std_logic;
+  clk_c :  in std_logic;
+  set_arm_c :  in std_logic;
+  rst_bar_c :  in std_logic);
+end control_unit;
+
+architecture beh of control_unit is
+  signal PRESENT_STATE_SRSTS_0_0_A3_1 : std_logic_vector(4 to 4);
+  signal PRESENT_STATE : std_logic_vector(1 downto 0);
+  signal PRESENT_STATE_FAST_0 : std_logic_vector(3 to 3);
+  signal PRESENT_STATE_0 : std_logic_vector(3 to 3);
+  signal PRESENT_STATE_QN : std_logic_vector(4 downto 0);
+  signal PRESENT_STATE_FAST_QN : std_logic_vector(4 downto 2);
+  signal N_488_0 : std_logic ;
+  signal PRESENT_STATE_25 : std_logic ;
+  signal N_486_0 : std_logic ;
+  signal GND : std_logic ;
+  signal PRESENT_STATEC_1_I : std_logic ;
+  signal PRESENT_STATEC_0_I : std_logic ;
+  signal VCC : std_logic ;
+  signal PRESENT_STATEC_I : std_logic ;
+  signal PRESENT_STATEC_I_FAST : std_logic ;
+  signal \PRESENT_STATE_\ : std_logic ;
+  signal \PRESENT_STATE_FAST_\ : std_logic ;
+  signal N_6 : std_logic ;
+  signal N_5 : std_logic ;
+  signal N_4 : std_logic ;
+  signal N_3 : std_logic ;
+  signal N_2 : std_logic ;
+begin
+N_488_0 <= (not rst_bar_c) or 
+	(PRESENT_STATE_SRSTS_0_0_A3_1(4) and not PRESENT_STATE_25 and not PRESENT_STATE(1));
+N_486_0 <= (not rst_bar_c) or 
+	(PRESENT_STATE_SRSTS_0_0_A3_1(4) and not PRESENT_STATE_25 and not PRESENT_STATE(1));
+PRESENT_STATE_FAST_0(3) <= rst_bar_c and set_arm_c;
+PRESENT_STATE_0(3) <= rst_bar_c and set_arm_c;
+\PRESENT_STATE[0]_REG_Z52\: FD1S3IX port map (
+    D => PRESENT_STATEC_1_I,
+    CK => clk_c,
+    CD => rst_bar_c_i,
+    Q => PRESENT_STATE(0));
+\PRESENT_STATE[1]_REG_Z54\: FD1S3IX port map (
+    D => PRESENT_STATEC_0_I,
+    CK => clk_c,
+    CD => rst_bar_c_i,
+    Q => PRESENT_STATE(1));
+\PRESENT_STATE[2]_REG_Z56\: FD1S3IX port map (
+    D => PRESENT_STATEC_I,
+    CK => clk_c,
+    CD => rst_bar_c_i,
+    Q => PRESENT_STATE_25);
+\PRESENT_STATE_FAST[2]_REG_Z58\: FD1S3IX port map (
+    D => PRESENT_STATEC_I_FAST,
+    CK => clk_c,
+    CD => rst_bar_c_i,
+    Q => \PRESENT_STATE_FAST_\);
+\PRESENT_STATE[3]_REG_Z60\: FD1S3AY port map (
+    D => PRESENT_STATE_0(3),
+    CK => clk_c,
+    Q => \PRESENT_STATE_\);
+\PRESENT_STATE_FAST[3]_REG_Z62\: FD1S3AY port map (
+    D => PRESENT_STATE_FAST_0(3),
+    CK => clk_c,
+    Q => present_state_fast(3));
+\PRESENT_STATE_FAST[4]_REG_Z64\: FD1S3AX port map (
+    D => N_486_0,
+    CK => clk_c,
+    Q => present_state_fast(4));
+\PRESENT_STATE[4]_REG_Z66\: FD1S3AX port map (
+    D => N_488_0,
+    CK => clk_c,
+    Q => present_state_4);
+PRESENT_STATEC_I <= (not s_c and not set_arm_c and PRESENT_STATE_25) or 
+	(not set_arm_c and \PRESENT_STATE_\);
+PRESENT_STATEC_1_I <= (not s_c and not set_arm_c and PRESENT_STATE(0)) or 
+	(not s_c and not set_arm_c and PRESENT_STATE(1));
+PRESENT_STATEC_0_I <= (s_c and not set_arm_c and PRESENT_STATE(1)) or 
+	(s_c and not set_arm_c and PRESENT_STATE_25);
+PRESENT_STATE_SRSTS_0_0_A3_1(4) <= (not set_arm_c and not PRESENT_STATE(0) and not \PRESENT_STATE_\) or 
+	(s_c and not set_arm_c and not \PRESENT_STATE_\);
+PRESENT_STATEC_I_FAST <= (not set_arm_c and \PRESENT_STATE_\) or 
+	(not s_c and not set_arm_c and \PRESENT_STATE_FAST_\);
+II_GND: VLO port map (
+    Z => GND);
+II_VCC: VHI port map (
+    Z => VCC);
+present_state_fast(2) <= \PRESENT_STATE_FAST_\;
+present_state_3 <= \PRESENT_STATE_\;
+present_state_2 <= PRESENT_STATE_25;
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+library pmi;
+use pmi.pmi_components.all;
+library xp;
+use xp.components.all;
+
+entity pedgefsm is
+port(
+sec_clk_edge :  out std_logic;
+rst_bar_c_i :  in std_logic;
+clk_c :  in std_logic;
+seconds_clk_c :  in std_logic);
+end pedgefsm;
+
+architecture beh of pedgefsm is
+signal PRESENT_STATE : std_logic_vector(0 to 0);
+signal PRESENT_STATE_QN_0 : std_logic_vector(1 downto 0);
+signal SECONDS_CLK_C_I : std_logic ;
+signal N_21_I : std_logic ;
+signal VCC : std_logic ;
+signal GND : std_logic ;
+signal N_3 : std_logic ;
+signal N_2 : std_logic ;
+signal N_1 : std_logic ;
+begin
+\PRESENT_STATE_RNO[0]\: INV port map (
+  A => seconds_clk_c,
+  Z => SECONDS_CLK_C_I);
+\PRESENT_STATE[0]_REG_Z18\: FD1S3DX port map (
+  D => SECONDS_CLK_C_I,
+  CK => clk_c,
+  CD => rst_bar_c_i,
+  Q => PRESENT_STATE(0));
+\PRESENT_STATE[1]_REG_Z20\: FD1S3DX port map (
+  D => N_21_I,
+  CK => clk_c,
+  CD => rst_bar_c_i,
+  Q => sec_clk_edge);
+N_21_I <= seconds_clk_c and PRESENT_STATE(0);
+II_VCC: VHI port map (
+  Z => VCC);
+II_GND: VLO port map (
+  Z => GND);
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+library pmi;
+use pmi.pmi_components.all;
+library xp;
+use xp.components.all;
+
+entity minutes_counter is
+port(
+present_state : in std_logic_vector(4 downto 0);
+minutes_c : out std_logic_vector(3 downto 0);
+en_out_sec :  in std_logic;
+N_18_0 :  in std_logic;
+un1_en_cnt1_sec :  in std_logic;
+up_min :  in std_logic;
+un4_alarm_6 :  out std_logic;
+rst_bar_c_i :  in std_logic;
+clk_c :  in std_logic);
+end minutes_counter;
+
+architecture beh of minutes_counter is
+signal MIN_COUNTS_7 : std_logic_vector(3 downto 0);
+signal MIN_COUNTS_QN : std_logic_vector(3 downto 0);
+signal MIN_COUNTS_RNID4QB4 : std_logic_vector(3 to 3);
+signal MIN_COUNTS_0_0 : std_logic_vector(2 to 2);
+signal MIN_COUNTS_0_1_0 : std_logic_vector(2 to 2);
+signal MIN_COUNTS_7_A0_2 : std_logic_vector(2 to 2);
+signal VCC : std_logic ;
+signal MINUTES_C_17 : std_logic ;
+signal UN1_CLR_BAR_1 : std_logic ;
+signal UN1_MIN_COUNTS_2_C1 : std_logic ;
+signal \MINUTES_C_\ : std_logic ;
+signal MIN_COUNTS_1_SQMUXA : std_logic ;
+signal UN6_EN_CNT1 : std_logic ;
+signal UN11_EN_CNT1_1 : std_logic ;
+signal MINUTES_C_18 : std_logic ;
+signal MINUTES_C_19 : std_logic ;
+signal UN6_EN_CNT1_1 : std_logic ;
+signal GND : std_logic ;
+signal UN1_MIN_COUNTS_2_C3_1 : std_logic ;
+signal UN1_MIN_COUNTS_2_C3 : std_logic ;
+signal G0_1_1 : std_logic ;
+signal G2_0 : std_logic ;
+signal UN4_ALARM_20 : std_logic ;
+begin
+\CNT_INT.MIN_COUNTS[0]_REG_Z54\: FD1S3DX port map (
+D => MIN_COUNTS_7(0),
+CK => clk_c,
+CD => rst_bar_c_i,
+Q => \MINUTES_C_\);
+\CNT_INT.MIN_COUNTS[1]_REG_Z56\: FD1S3DX port map (
+D => MIN_COUNTS_7(1),
+CK => clk_c,
+CD => rst_bar_c_i,
+Q => MINUTES_C_17);
+\CNT_INT.MIN_COUNTS[2]_REG_Z58\: FD1S3DX port map (
+D => MIN_COUNTS_7(2),
+CK => clk_c,
+CD => rst_bar_c_i,
+Q => MINUTES_C_18);
+\CNT_INT.MIN_COUNTS[3]_REG_Z60\: FD1S3DX port map (
+D => MIN_COUNTS_7(3),
+CK => clk_c,
+CD => rst_bar_c_i,
+Q => MINUTES_C_19);
+MIN_COUNTS_7(1) <= (MINUTES_C_17 and not UN1_CLR_BAR_1 and not MIN_COUNTS_RNID4QB4(3) and not UN1_MIN_COUNTS_2_C1) or 
+	(not MINUTES_C_17 and not UN1_CLR_BAR_1 and MIN_COUNTS_RNID4QB4(3) and not UN1_MIN_COUNTS_2_C1) or 
+	(not MINUTES_C_17 and not UN1_CLR_BAR_1 and not MIN_COUNTS_RNID4QB4(3) and UN1_MIN_COUNTS_2_C1) or 
+	(MINUTES_C_17 and not UN1_CLR_BAR_1 and MIN_COUNTS_RNID4QB4(3) and UN1_MIN_COUNTS_2_C1);
+MIN_COUNTS_7(0) <= (\MINUTES_C_\ and not MIN_COUNTS_1_SQMUXA and not UN1_CLR_BAR_1 and not MIN_COUNTS_RNID4QB4(3)) or 
+	(not \MINUTES_C_\ and MIN_COUNTS_1_SQMUXA and not UN1_CLR_BAR_1) or 
+	(not \MINUTES_C_\ and not UN1_CLR_BAR_1 and MIN_COUNTS_RNID4QB4(3));
+UN1_MIN_COUNTS_2_C1 <= (\MINUTES_C_\ and MIN_COUNTS_1_SQMUXA) or 
+	(\MINUTES_C_\ and MIN_COUNTS_RNID4QB4(3));
+UN1_CLR_BAR_1 <= (UN11_EN_CNT1_1 and UN4_ALARM_20 and not up_min) or 
+	(UN6_EN_CNT1 and up_min);
+MIN_COUNTS_7(2) <= (MIN_COUNTS_0_0(2)) or 
+	(MIN_COUNTS_0_1_0(2)) or 
+	(MIN_COUNTS_7_A0_2(2) and UN11_EN_CNT1_1);
+MIN_COUNTS_0_1_0(2) <= (MINUTES_C_17 and MINUTES_C_18 and not up_min) or 
+	(not MINUTES_C_17 and MINUTES_C_18 and not UN11_EN_CNT1_1);
+MIN_COUNTS_0_0(2) <= (\MINUTES_C_\ and not MINUTES_C_17 and MINUTES_C_18) or 
+	(not \MINUTES_C_\ and MINUTES_C_17 and MINUTES_C_18) or 
+	(\MINUTES_C_\ and MINUTES_C_17 and not MINUTES_C_18 and up_min) or 
+	(not MINUTES_C_17 and MINUTES_C_18 and up_min);
+MIN_COUNTS_1_SQMUXA <= present_state(0) and not present_state(1) and not UN6_EN_CNT1 and un1_en_cnt1_sec;
+MIN_COUNTS_7_A0_2(2) <= not \MINUTES_C_\ and MINUTES_C_19 and UN6_EN_CNT1_1 and not up_min;
+UN6_EN_CNT1 <= \MINUTES_C_\ and not MINUTES_C_17 and not MINUTES_C_18 and MINUTES_C_19;
+UN6_EN_CNT1_1 <= not MINUTES_C_17 and not MINUTES_C_18;
+UN1_MIN_COUNTS_2_C3_1 <= (not UN11_EN_CNT1_1 and not up_min) or 
+	(not \MINUTES_C_\ and not MINUTES_C_17) or 
+	(not MINUTES_C_17 and up_min) or 
+	(not \MINUTES_C_\ and up_min);
+UN1_MIN_COUNTS_2_C3 <= (not MINUTES_C_18 and not UN1_MIN_COUNTS_2_C3_1 and not up_min) or 
+	(MIN_COUNTS_RNID4QB4(3) and not UN1_MIN_COUNTS_2_C3_1 and not up_min) or 
+	(MINUTES_C_18 and MIN_COUNTS_RNID4QB4(3)) or 
+	(MINUTES_C_18 and not UN1_MIN_COUNTS_2_C3_1 and up_min);
+MIN_COUNTS_7(3) <= (MINUTES_C_19 and not UN1_CLR_BAR_1 and not MIN_COUNTS_RNID4QB4(3) and not UN1_MIN_COUNTS_2_C3) or 
+	(not MINUTES_C_19 and not UN1_CLR_BAR_1 and MIN_COUNTS_RNID4QB4(3) and not UN1_MIN_COUNTS_2_C3) or 
+	(not MINUTES_C_19 and not UN1_CLR_BAR_1 and not MIN_COUNTS_RNID4QB4(3) and UN1_MIN_COUNTS_2_C3) or 
+	(MINUTES_C_19 and not UN1_CLR_BAR_1 and MIN_COUNTS_RNID4QB4(3) and UN1_MIN_COUNTS_2_C3);
+MIN_COUNTS_RNID4QB4(3) <= N_18_0 and G0_1_1 and G2_0 and not up_min;
+UN11_EN_CNT1_1 <= N_18_0 and G2_0 and not present_state(2) and not present_state(4);
+G2_0 <= (en_out_sec) or 
+	(present_state(3)) or 
+	(present_state(4));
+UN4_ALARM_20 <= not \MINUTES_C_\ and not MINUTES_C_17 and not MINUTES_C_18 and not MINUTES_C_19;
+G0_1_1 <= not present_state(2) and not present_state(4) and not UN4_ALARM_20;
+II_VCC: VHI port map (
+Z => VCC);
+II_GND: VLO port map (
+Z => GND);
+minutes_c(0) <= \MINUTES_C_\;
+minutes_c(1) <= MINUTES_C_17;
+minutes_c(2) <= MINUTES_C_18;
+minutes_c(3) <= MINUTES_C_19;
+un4_alarm_6 <= UN4_ALARM_20;
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+library pmi;
+use pmi.pmi_components.all;
+library xp;
+use xp.components.all;
+
+entity rotary_encoder_decoder_fsm_1 is
+port(
+present_state : out std_logic_vector(1 downto 0);
+bo_c :  in std_logic;
+ao_c :  in std_logic;
+rst_bar_c_i :  in std_logic;
+clk_c :  in std_logic);
+end rotary_encoder_decoder_fsm_1;
+
+architecture beh of rotary_encoder_decoder_fsm_1 is
+signal PRESENT_STATE_QN_1 : std_logic_vector(1 downto 0);
+signal PRESENT_STATEC : std_logic ;
+signal PRESENT_STATEC_0 : std_logic ;
+signal VCC : std_logic ;
+signal \PRESENT_STATE_\ : std_logic ;
+signal PRESENT_STATE_15 : std_logic ;
+signal N_5 : std_logic ;
+signal N_4 : std_logic ;
+signal N_3 : std_logic ;
+signal N_2 : std_logic ;
+signal GND : std_logic ;
+begin
+\PRESENT_STATE[0]_REG_Z21\: FD1S3IX port map (
+D => PRESENT_STATEC,
+CK => clk_c,
+CD => rst_bar_c_i,
+Q => \PRESENT_STATE_\);
+\PRESENT_STATE[1]_REG_Z23\: FD1S3IX port map (
+D => PRESENT_STATEC_0,
+CK => clk_c,
+CD => rst_bar_c_i,
+Q => PRESENT_STATE_15);
+PRESENT_STATEC <= (ao_c and not bo_c) or 
+	(ao_c and \PRESENT_STATE_\) or 
+	(ao_c and PRESENT_STATE_15);
+PRESENT_STATEC_0 <= (ao_c and bo_c) or 
+	(ao_c and \PRESENT_STATE_\) or 
+	(ao_c and PRESENT_STATE_15);
+II_VCC: VHI port map (
+Z => VCC);
+GND <= '0';
+present_state(0) <= \PRESENT_STATE_\;
+present_state(1) <= PRESENT_STATE_15;
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+library pmi;
+use pmi.pmi_components.all;
+library xp;
+use xp.components.all;
+
+entity seconds_counter is
+port(
+fsm_out : in std_logic_vector(0 downto 0);
+minutes_c : in std_logic_vector(3 downto 0);
+present_state : in std_logic_vector(4 downto 0);
+seconds_c : out std_logic_vector(5 downto 0);
+g1_0_0 :  in std_logic;
+un4_alarm_7 :  out std_logic;
+un4_alarm_5 :  in std_logic;
+un1_en_cnt1_sec :  in std_logic;
+up_sec_0 :  in std_logic;
+N_13 :  in std_logic;
+en_cnt2_sec_iv :  in std_logic;
+en_out_sec :  out std_logic;
+rst_bar_c_i :  in std_logic;
+clk_c :  in std_logic;
+un18_en_cnt1 :  in std_logic);
+end seconds_counter;
+
+architecture beh of seconds_counter is
+signal COUNT_SEC_FAST : std_logic_vector(1 to 1);
+signal COUNT_SEC_RNO_2 : std_logic_vector(5 downto 4);
+signal COUNT_SEC_RNO_3 : std_logic_vector(5 downto 4);
+signal COUNT_SEC_7 : std_logic_vector(5 downto 0);
+signal COUNT_SEC_QN : std_logic_vector(5 downto 0);
+signal COUNT_SEC_7_FAST : std_logic_vector(1 to 1);
+signal COUNT_SEC_FAST_QN : std_logic_vector(1 to 1);
+signal COUNT_SEC_7_F1 : std_logic_vector(0 to 0);
+signal UN1_EN_OUT_0_SQMUXA_0_9_A3_1 : std_logic ;
+signal UN1_EN_OUT_0_SQMUXA_0_9_A3_0_1 : std_logic ;
+signal SECONDS_C_12 : std_logic ;
+signal UN1_EN_OUT_0_SQMUXA_0_9_A3_0_2 : std_logic ;
+signal G0_I_0 : std_logic ;
+signal G0_I_A5_1_8 : std_logic ;
+signal \SECONDS_C_\ : std_logic ;
+signal N_13_0 : std_logic ;
+signal G0_I_A5_2_1 : std_logic ;
+signal G0_0_0 : std_logic ;
+signal G0_0_A3_8_0 : std_logic ;
+signal SECONDS_C_10 : std_logic ;
+signal N_12_1 : std_logic ;
+signal G1_1_0 : std_logic ;
+signal N_36 : std_logic ;
+signal EN_OUT_QN : std_logic ;
+signal VCC : std_logic ;
+signal SECONDS_C_9 : std_logic ;
+signal SECONDS_C_11 : std_logic ;
+signal COUNT_SEC_1_SQMUXA : std_logic ;
+signal COUNT_SEC_2_SQMUXA_1 : std_logic ;
+signal UN1_COUNT_SEC_1_CRY_0_0_S1 : std_logic ;
+signal UN1_COUNT_SEC_1_CRY_2_0_S1 : std_logic ;
+signal COUNT_SEC_0_SQMUXA_1 : std_logic ;
+signal UN1_N_6 : std_logic ;
+signal UN1_COUNT_SEC_1_CRY_2_0_S0 : std_logic ;
+signal UN1_EN_OUT_0_SQMUXA_0_9_A3_2 : std_logic ;
+signal UN10_EN_CNT1_1 : std_logic ;
+signal UN10_EN_CNT1_1_0 : std_logic ;
+signal GND : std_logic ;
+signal SECONDS_C_8 : std_logic ;
+signal UN4_ALARM_13 : std_logic ;
+signal G0_5_4 : std_logic ;
+signal G0_5_5 : std_logic ;
+signal G2_0 : std_logic ;
+signal G0_1_4 : std_logic ;
+signal G0_1_8 : std_logic ;
+signal G0_1_6 : std_logic ;
+signal G0_0_I_A5_0_1_0 : std_logic ;
+signal UN1_COUNT_SEC_1_CRY_4_0_S1 : std_logic ;
+signal G0_1_4_1 : std_logic ;
+signal G0_1_5_0 : std_logic ;
+signal G0_0_A3_6_0 : std_logic ;
+signal G0_I_A5_0_1 : std_logic ;
+signal UN1_COUNT_SEC_1_CRY_4_0_S0 : std_logic ;
+signal G0_I_O5_4 : std_logic ;
+signal G0_I_O5_5 : std_logic ;
+signal G0_I_A5_1_6 : std_logic ;
+signal UN1_COUNT_SEC_1_CRY_3 : std_logic ;
+signal UN1_COUNT_SEC_1_CRY_4 : std_logic ;
+signal UN1_COUNT_SEC_1_CRY_4_0_COUT1 : std_logic ;
+signal UN1_COUNT_SEC_1_CRY_1 : std_logic ;
+signal UN1_COUNT_SEC_1_CRY_2 : std_logic ;
+signal UN1_COUNT_SEC_1_CRY_0 : std_logic ;
+signal UN1_COUNT_SEC_1_CRY_0_0_S0 : std_logic ;
+begin
+UN1_EN_OUT_0_SQMUXA_0_9_A3_1 <= SECONDS_C_12 and not \SECONDS_C_\ and COUNT_SEC_FAST(1) and not SECONDS_C_9;
+UN1_EN_OUT_0_SQMUXA_0_9_A3_0_2 <= UN1_EN_OUT_0_SQMUXA_0_9_A3_0_1 and not SECONDS_C_12 and not SECONDS_C_11;
+\COUNT_SEC_RNO_0[4]\: PFUMX port map (
+ALUT => COUNT_SEC_RNO_2(4),
+BLUT => COUNT_SEC_RNO_3(4),
+C0 => present_state(3),
+Z => G0_I_0);
+COUNT_SEC_RNO_2(4) <= G0_I_A5_1_8 and not present_state(2) and SECONDS_C_10 and \SECONDS_C_\;
+COUNT_SEC_RNO_3(4) <= not N_13_0 and G0_I_A5_2_1 and not minutes_c(3) and not minutes_c(2);
+\COUNT_SEC_RNO_0[5]\: PFUMX port map (
+ALUT => COUNT_SEC_RNO_2(5),
+BLUT => COUNT_SEC_RNO_3(5),
+C0 => present_state(3),
+Z => G0_0_0);
+COUNT_SEC_RNO_2(5) <= (not \SECONDS_C_\) or 
+	(not SECONDS_C_10) or 
+	(not G0_0_A3_8_0) or 
+	(present_state(2));
+COUNT_SEC_RNO_3(5) <= (not G1_1_0) or 
+	(N_12_1) or 
+	(minutes_c(3)) or 
+	(minutes_c(2));
+EN_OUT_REG_Z123: FD1P3DX port map (
+D => N_36,
+SP => un18_en_cnt1,
+CK => clk_c,
+CD => rst_bar_c_i,
+Q => en_out_sec);
+\COUNT_SEC[0]_REG_Z125\: FD1S3DX port map (
+D => COUNT_SEC_7(0),
+CK => clk_c,
+CD => rst_bar_c_i,
+Q => \SECONDS_C_\);
+\COUNT_SEC_FAST[1]_REG_Z127\: FD1S3DX port map (
+D => COUNT_SEC_7_FAST(1),
+CK => clk_c,
+CD => rst_bar_c_i,
+Q => COUNT_SEC_FAST(1));
+\COUNT_SEC[1]_REG_Z129\: FD1S3DX port map (
+D => COUNT_SEC_7(1),
+CK => clk_c,
+CD => rst_bar_c_i,
+Q => SECONDS_C_8);
+\COUNT_SEC[2]_REG_Z131\: FD1S3DX port map (
+D => COUNT_SEC_7(2),
+CK => clk_c,
+CD => rst_bar_c_i,
+Q => SECONDS_C_9);
+\COUNT_SEC[3]_REG_Z133\: FD1S3DX port map (
+D => COUNT_SEC_7(3),
+CK => clk_c,
+CD => rst_bar_c_i,
+Q => SECONDS_C_10);
+\COUNT_SEC[4]_REG_Z135\: FD1S3DX port map (
+D => COUNT_SEC_7(4),
+CK => clk_c,
+CD => rst_bar_c_i,
+Q => SECONDS_C_11);
+\COUNT_SEC[5]_REG_Z137\: FD1S3DX port map (
+D => COUNT_SEC_7(5),
+CK => clk_c,
+CD => rst_bar_c_i,
+Q => SECONDS_C_12);
+COUNT_SEC_7(0) <= (not COUNT_SEC_1_SQMUXA and not COUNT_SEC_2_SQMUXA_1 and COUNT_SEC_7_F1(0)) or 
+	(not en_cnt2_sec_iv and not COUNT_SEC_1_SQMUXA and COUNT_SEC_7_F1(0));
+COUNT_SEC_7(1) <= (not en_cnt2_sec_iv and not COUNT_SEC_1_SQMUXA and COUNT_SEC_2_SQMUXA_1) or 
+	(not COUNT_SEC_1_SQMUXA and not COUNT_SEC_2_SQMUXA_1 and UN1_COUNT_SEC_1_CRY_0_0_S1);
+COUNT_SEC_7(3) <= (not en_cnt2_sec_iv and not COUNT_SEC_1_SQMUXA and COUNT_SEC_2_SQMUXA_1) or 
+	(not COUNT_SEC_1_SQMUXA and not COUNT_SEC_2_SQMUXA_1 and UN1_COUNT_SEC_1_CRY_2_0_S1);
+COUNT_SEC_7(2) <= (not un18_en_cnt1 and UN1_COUNT_SEC_1_CRY_2_0_S0) or 
+	(COUNT_SEC_0_SQMUXA_1 and UN1_COUNT_SEC_1_CRY_2_0_S0) or 
+	(UN1_N_6 and UN1_COUNT_SEC_1_CRY_2_0_S0);
+COUNT_SEC_7_F1(0) <= (N_13 and fsm_out(0) and not \SECONDS_C_\) or 
+	(not fsm_out(0) and \SECONDS_C_\) or 
+	(not N_13 and \SECONDS_C_\) or 
+	(COUNT_SEC_2_SQMUXA_1);
+N_36 <= (UN1_EN_OUT_0_SQMUXA_0_9_A3_0_2 and not un1_en_cnt1_sec) or 
+	(not up_sec_0 and UN1_EN_OUT_0_SQMUXA_0_9_A3_0_2) or 
+	(up_sec_0 and UN1_EN_OUT_0_SQMUXA_0_9_A3_2 and un1_en_cnt1_sec);
+COUNT_SEC_0_SQMUXA_1 <= (not un1_en_cnt1_sec and not UN4_ALARM_13) or 
+	(not up_sec_0 and not UN4_ALARM_13) or 
+	(not un1_en_cnt1_sec and not un4_alarm_5) or 
+	(not up_sec_0 and not un4_alarm_5);
+UN1_N_6 <= (up_sec_0 and not UN10_EN_CNT1_1_0 and un1_en_cnt1_sec) or 
+	(up_sec_0 and not UN10_EN_CNT1_1 and un1_en_cnt1_sec);
+UN1_EN_OUT_0_SQMUXA_0_9_A3_2 <= SECONDS_C_10 and SECONDS_C_11 and UN1_EN_OUT_0_SQMUXA_0_9_A3_1;
+UN1_EN_OUT_0_SQMUXA_0_9_A3_0_1 <= \SECONDS_C_\ and not SECONDS_C_8 and not SECONDS_C_9 and not SECONDS_C_10;
+UN10_EN_CNT1_1_0 <= \SECONDS_C_\ and SECONDS_C_10 and SECONDS_C_11 and SECONDS_C_12;
+UN4_ALARM_13 <= not \SECONDS_C_\ and not SECONDS_C_8 and not SECONDS_C_9 and not SECONDS_C_10;
+UN10_EN_CNT1_1 <= not SECONDS_C_9 and COUNT_SEC_FAST(1);
+COUNT_SEC_2_SQMUXA_1 <= g1_0_0 and G0_5_4 and G0_5_5 and G2_0;
+COUNT_SEC_1_SQMUXA <= \SECONDS_C_\ and SECONDS_C_10 and G0_1_4 and G0_1_8;
+G0_1_8 <= present_state(0) and not present_state(1) and G0_1_6 and not present_state(4);
+G2_0 <= (not un1_en_cnt1_sec) or 
+	(not present_state(0)) or 
+	(present_state(1));
+G0_1_6 <= SECONDS_C_8 and not SECONDS_C_9 and SECONDS_C_11 and SECONDS_C_12;
+G0_5_4 <= not SECONDS_C_8 and not SECONDS_C_9 and not SECONDS_C_11 and not SECONDS_C_12;
+G0_5_5 <= not \SECONDS_C_\ and not SECONDS_C_10 and not present_state(2) and not present_state(4);
+G0_1_4 <= not present_state(2) and present_state(3);
+COUNT_SEC_7(5) <= (not N_12_1 and G0_0_0 and not G0_0_I_A5_0_1_0) or 
+	(G0_0_0 and UN1_COUNT_SEC_1_CRY_4_0_S1);
+N_12_1 <= (not g1_0_0) or 
+	(G0_1_4_1) or 
+	(G0_1_5_0);
+G0_0_A3_8_0 <= present_state(0) and not present_state(1) and G0_0_A3_6_0 and not present_state(4);
+G0_0_I_A5_0_1_0 <= present_state(0) and not present_state(1) and present_state(3);
+G0_0_A3_6_0 <= SECONDS_C_8 and not SECONDS_C_9 and SECONDS_C_11 and SECONDS_C_12;
+G0_1_4_1 <= (SECONDS_C_8) or 
+	(SECONDS_C_9) or 
+	(SECONDS_C_11) or 
+	(SECONDS_C_12);
+G0_1_5_0 <= (\SECONDS_C_\) or 
+	(SECONDS_C_10) or 
+	(present_state(2)) or 
+	(present_state(4));
+G1_1_0 <= not minutes_c(0) and not minutes_c(1);
+COUNT_SEC_7(4) <= (not N_13_0 and not G0_I_0 and not G0_I_A5_0_1) or 
+	(not G0_I_0 and UN1_COUNT_SEC_1_CRY_4_0_S0);
+N_13_0 <= (not g1_0_0) or 
+	(G0_I_O5_4) or 
+	(G0_I_O5_5);
+G0_I_A5_1_8 <= SECONDS_C_8 and not SECONDS_C_9 and G0_I_A5_1_6 and not present_state(4);
+G0_I_A5_1_6 <= SECONDS_C_11 and SECONDS_C_12 and present_state(0) and not present_state(1);
+G0_I_O5_4 <= (SECONDS_C_8) or 
+	(SECONDS_C_9) or 
+	(SECONDS_C_11) or 
+	(SECONDS_C_12);
+G0_I_O5_5 <= (\SECONDS_C_\) or 
+	(SECONDS_C_10) or 
+	(present_state(2)) or 
+	(present_state(4));
+G0_I_A5_0_1 <= present_state(0) and not present_state(1) and present_state(3);
+G0_I_A5_2_1 <= not minutes_c(0) and not minutes_c(1);
+COUNT_SEC_7_FAST(1) <= (not en_cnt2_sec_iv and not COUNT_SEC_1_SQMUXA and COUNT_SEC_2_SQMUXA_1) or 
+	(not COUNT_SEC_1_SQMUXA and not COUNT_SEC_2_SQMUXA_1 and UN1_COUNT_SEC_1_CRY_0_0_S1);
+UN1_COUNT_SEC_1_CRY_4_0: CCU2 
+generic map(
+  INIT0 => "0x50a6",
+  INIT1 => "0x509a",
+  INJECT1_0 => "NO",
+  INJECT1_1 => "NO"
+)
+port map (
+A0 => SECONDS_C_11,
+B0 => un18_en_cnt1,
+C0 => UN1_N_6,
+D0 => GND,
+A1 => SECONDS_C_12,
+B1 => UN1_N_6,
+C1 => un18_en_cnt1,
+D1 => GND,
+CIN => UN1_COUNT_SEC_1_CRY_3,
+COUT0 => UN1_COUNT_SEC_1_CRY_4,
+COUT1 => UN1_COUNT_SEC_1_CRY_4_0_COUT1,
+S0 => UN1_COUNT_SEC_1_CRY_4_0_S0,
+S1 => UN1_COUNT_SEC_1_CRY_4_0_S1);
+UN1_COUNT_SEC_1_CRY_2_0: CCU2 
+generic map(
+  INIT0 => "0x50a6",
+  INIT1 => "0x50a6",
+  INJECT1_0 => "NO",
+  INJECT1_1 => "NO"
+)
+port map (
+A0 => SECONDS_C_9,
+B0 => un18_en_cnt1,
+C0 => UN1_N_6,
+D0 => GND,
+A1 => SECONDS_C_10,
+B1 => un18_en_cnt1,
+C1 => UN1_N_6,
+D1 => GND,
+CIN => UN1_COUNT_SEC_1_CRY_1,
+COUT0 => UN1_COUNT_SEC_1_CRY_2,
+COUT1 => UN1_COUNT_SEC_1_CRY_3,
+S0 => UN1_COUNT_SEC_1_CRY_2_0_S0,
+S1 => UN1_COUNT_SEC_1_CRY_2_0_S1);
+UN1_COUNT_SEC_1_CRY_0_0: CCU2 
+generic map(
+  INIT0 => "0x7078",
+  INIT1 => "0x50a6",
+  INJECT1_0 => "NO",
+  INJECT1_1 => "NO"
+)
+port map (
+A0 => N_13,
+B0 => fsm_out(0),
+C0 => \SECONDS_C_\,
+D0 => GND,
+A1 => SECONDS_C_8,
+B1 => un18_en_cnt1,
+C1 => UN1_N_6,
+D1 => GND,
+CIN => GND,
+COUT0 => UN1_COUNT_SEC_1_CRY_0,
+COUT1 => UN1_COUNT_SEC_1_CRY_1,
+S0 => UN1_COUNT_SEC_1_CRY_0_0_S0,
+S1 => UN1_COUNT_SEC_1_CRY_0_0_S1);
+II_GND: VLO port map (
+Z => GND);
+II_VCC: VHI port map (
+Z => VCC);
+seconds_c(0) <= \SECONDS_C_\;
+seconds_c(1) <= SECONDS_C_8;
+seconds_c(2) <= SECONDS_C_9;
+seconds_c(3) <= SECONDS_C_10;
+seconds_c(4) <= SECONDS_C_11;
+seconds_c(5) <= SECONDS_C_12;
+un4_alarm_7 <= UN4_ALARM_13;
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+library pmi;
+use pmi.pmi_components.all;
+library xp;
+use xp.components.all;
+
+entity rotary_encoder_decoder_fsm is
+port(
+minutes_c : in std_logic_vector(3 downto 0);
+fsm_out : out std_logic_vector(0 downto 0);
+present_state_0 : in std_logic_vector(1 downto 0);
+seconds_c : in std_logic_vector(5 downto 4);
+present_state_fast_3 :  in std_logic;
+present_state_fast_2 :  in std_logic;
+present_state_fast_4 :  in std_logic;
+present_state : inout std_logic_vector(4 downto 0) := (others => 'Z');
+g1_0_0 :  out std_logic;
+un18_en_cnt1 :  out std_logic;
+up_sec_0 :  out std_logic;
+en_cnt2_sec_iv :  out std_logic;
+N_18_0 :  out std_logic;
+up_min :  out std_logic;
+N_13 :  out std_logic;
+sec_clk_edge :  in std_logic;
+un1_en_cnt1_sec :  out std_logic;
+bi_c :  in std_logic;
+ai_c :  in std_logic;
+alarm_c :  out std_logic;
+un4_alarm_7 :  in std_logic;
+un4_alarm_6 :  in std_logic;
+un4_alarm_5 :  out std_logic;
+rst_bar_c_i :  in std_logic;
+clk_c :  in std_logic);
+end rotary_encoder_decoder_fsm;
+
+architecture beh of rotary_encoder_decoder_fsm is
+signal PRESENT_STATE_FAST : std_logic_vector(1 downto 0);
+signal PRESENT_STATE_FAST_QN : std_logic_vector(1 downto 0);
+signal PRESENT_STATE_QN_2 : std_logic_vector(1 downto 0);
+signal UN4_ALARM_2 : std_logic ;
+signal PRESENT_STATEC_FAST : std_logic ;
+signal PRESENT_STATEC : std_logic ;
+signal VCC : std_logic ;
+signal PRESENT_STATEC_0_FAST : std_logic ;
+signal PRESENT_STATEC_0 : std_logic ;
+signal \PRESENT_STATE_\ : std_logic ;
+signal PRESENT_STATE_3 : std_logic ;
+signal GND : std_logic ;
+signal UN4_ALARM_4 : std_logic ;
+signal G1 : std_logic ;
+signal G0_0_0 : std_logic ;
+signal G1_0 : std_logic ;
+signal G2_3_0 : std_logic ;
+signal \FSM_OUT_\ : std_logic ;
+signal N_5_0 : std_logic ;
+signal G0_0 : std_logic ;
+signal N_5 : std_logic ;
+signal N_4 : std_logic ;
+signal N_3 : std_logic ;
+signal N_2 : std_logic ;
+begin
+UN4_ALARM_2 <= not present_state(4) and not present_state(3) and not present_state_fast_4 and not present_state_fast_2;
+\PRESENT_STATE_FAST[0]_REG_Z71\: FD1S3IX port map (
+D => PRESENT_STATEC_FAST,
+CK => clk_c,
+CD => rst_bar_c_i,
+Q => PRESENT_STATE_FAST(0));
+\PRESENT_STATE[0]_REG_Z73\: FD1S3IX port map (
+D => PRESENT_STATEC,
+CK => clk_c,
+CD => rst_bar_c_i,
+Q => \PRESENT_STATE_\);
+\PRESENT_STATE_FAST[1]_REG_Z75\: FD1S3IX port map (
+D => PRESENT_STATEC_0_FAST,
+CK => clk_c,
+CD => rst_bar_c_i,
+Q => PRESENT_STATE_FAST(1));
+\PRESENT_STATE[1]_REG_Z77\: FD1S3IX port map (
+D => PRESENT_STATEC_0,
+CK => clk_c,
+CD => rst_bar_c_i,
+Q => PRESENT_STATE_3);
+alarm_c <= UN4_ALARM_2 and UN4_ALARM_4 and un4_alarm_6 and un4_alarm_7;
+PRESENT_STATEC <= (ai_c and not bi_c) or 
+	(ai_c and \PRESENT_STATE_\) or 
+	(ai_c and PRESENT_STATE_3);
+PRESENT_STATEC_0 <= (ai_c and bi_c) or 
+	(ai_c and \PRESENT_STATE_\) or 
+	(ai_c and PRESENT_STATE_3);
+un1_en_cnt1_sec <= not present_state_fast_2 and present_state_fast_3 and not present_state_fast_4;
+UN4_ALARM_4 <= not seconds_c(4) and not seconds_c(5);
+N_13 <= (sec_clk_edge and not present_state(4) and not present_state_fast_3) or 
+	(G1 and present_state(4)) or 
+	(G1 and present_state_fast_3);
+up_min <= G0_0_0 and not present_state(2) and present_state(3) and not present_state(4);
+N_18_0 <= (sec_clk_edge and not present_state(3) and not present_state(4)) or 
+	(G1_0 and present_state(3)) or 
+	(G1_0 and present_state(4));
+G1_0 <= (present_state_0(0) and not present_state_0(1)) or 
+	(not present_state_0(0) and present_state_0(1));
+G0_0_0 <= present_state_0(0) and not present_state_0(1);
+en_cnt2_sec_iv <= (not \FSM_OUT_\) or 
+	(G2_3_0 and not present_state(3) and not present_state(4));
+G2_3_0 <= not minutes_c(0) and not minutes_c(1) and not minutes_c(2) and not minutes_c(3);
+\FSM_OUT_\ <= not present_state_fast_2 and not present_state_fast_4;
+up_sec_0 <= PRESENT_STATE_FAST(0) and not PRESENT_STATE_FAST(1);
+un18_en_cnt1 <= (sec_clk_edge and not N_5_0 and G0_0) or 
+	(sec_clk_edge and G0_0 and G1) or 
+	(N_5_0 and G0_0 and G1);
+g1_0_0 <= (sec_clk_edge and not N_5_0) or 
+	(sec_clk_edge and \PRESENT_STATE_\ and not PRESENT_STATE_3) or 
+	(N_5_0 and \PRESENT_STATE_\ and not PRESENT_STATE_3) or 
+	(sec_clk_edge and not \PRESENT_STATE_\ and PRESENT_STATE_3) or 
+	(N_5_0 and not \PRESENT_STATE_\ and PRESENT_STATE_3);
+G1 <= (PRESENT_STATE_FAST(0) and not PRESENT_STATE_FAST(1)) or 
+	(not PRESENT_STATE_FAST(0) and PRESENT_STATE_FAST(1));
+N_5_0 <= (present_state_fast_3) or 
+	(present_state_fast_4);
+G0_0 <= not present_state_fast_2 and not present_state_fast_4;
+PRESENT_STATEC_FAST <= (ai_c and not bi_c) or 
+	(ai_c and PRESENT_STATE_3) or 
+	(ai_c and PRESENT_STATE_FAST(0));
+PRESENT_STATEC_0_FAST <= (ai_c and bi_c) or 
+	(ai_c and \PRESENT_STATE_\) or 
+	(ai_c and PRESENT_STATE_FAST(1));
+II_VCC: VHI port map (
+Z => VCC);
+II_GND: VLO port map (
+Z => GND);
+fsm_out(0) <= \FSM_OUT_\;
+present_state(0) <= \PRESENT_STATE_\;
+present_state(1) <= PRESENT_STATE_3;
+un4_alarm_5 <= UN4_ALARM_4;
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+library pmi;
+use pmi.pmi_components.all;
+library xp;
+use xp.components.all;
+
+entity count_down_timer is
+port(
+rst_bar :  in std_logic;
+clk :  in std_logic;
+ai :  in std_logic;
+bi :  in std_logic;
+ao :  in std_logic;
+bo :  in std_logic;
+s :  in std_logic;
+set_arm :  in std_logic;
+seconds_clk :  in std_logic;
+alarm :  out std_logic;
+seconds : out std_logic_vector(5 downto 0);
+minutes : out std_logic_vector(3 downto 0));
+end count_down_timer;
+
+architecture beh of count_down_timer is
+signal \U5.PRESENT_STATE\ : std_logic_vector(4 downto 2);
+signal \U2.PRESENT_STATE\ : std_logic_vector(1 downto 0);
+signal \U0.PRESENT_STATE\ : std_logic_vector(1 downto 0);
+signal FSM_OUT : std_logic_vector(0 to 0);
+signal \U5.PRESENT_STATE_FAST\ : std_logic_vector(4 downto 2);
+signal SECONDS_C : std_logic_vector(5 downto 0);
+signal MINUTES_C : std_logic_vector(3 downto 0);
+signal EN_OUT_SEC : std_logic ;
+signal SEC_CLK_EDGE : std_logic ;
+signal \U1.SCOUNT.UN18_EN_CNT1\ : std_logic ;
+signal EN_CNT2_SEC_IV : std_logic ;
+signal UN4_ALARM_7 : std_logic ;
+signal UN4_ALARM_6 : std_logic ;
+signal UN1_EN_CNT1_SEC : std_logic ;
+signal UN4_ALARM_5 : std_logic ;
+signal UP_MIN : std_logic ;
+signal N_13 : std_logic ;
+signal \U0.UP_SEC_0\ : std_logic ;
+signal N_18_0 : std_logic ;
+signal \U0.G1_0_0\ : std_logic ;
+signal VCC : std_logic ;
+signal GND : std_logic ;
+signal RST_BAR_C : std_logic ;
+signal CLK_C : std_logic ;
+signal AI_C : std_logic ;
+signal BI_C : std_logic ;
+signal AO_C : std_logic ;
+signal BO_C : std_logic ;
+signal S_C : std_logic ;
+signal SET_ARM_C : std_logic ;
+signal SECONDS_CLK_C : std_logic ;
+signal ALARM_C : std_logic ;
+signal RST_BAR_C_I : std_logic ;
+component rotary_encoder_decoder_fsm
+port(
+minutes_c : in std_logic_vector(3 downto 0);
+fsm_out : out std_logic_vector(0 downto 0);
+present_state_0 : in std_logic_vector(1 downto 0);
+seconds_c : in std_logic_vector(5 downto 4);
+present_state_fast_3 :  in std_logic;
+present_state_fast_2 :  in std_logic;
+present_state_fast_4 :  in std_logic;
+present_state : inout std_logic_vector(4 downto 0);
+g1_0_0 :  out std_logic;
+un18_en_cnt1 :  out std_logic;
+up_sec_0 :  out std_logic;
+en_cnt2_sec_iv :  out std_logic;
+N_18_0 :  out std_logic;
+up_min :  out std_logic;
+N_13 :  out std_logic;
+sec_clk_edge :  in std_logic;
+un1_en_cnt1_sec :  out std_logic;
+bi_c :  in std_logic;
+ai_c :  in std_logic;
+alarm_c :  out std_logic;
+un4_alarm_7 :  in std_logic;
+un4_alarm_6 :  in std_logic;
+un4_alarm_5 :  out std_logic;
+rst_bar_c_i :  in std_logic;
+clk_c :  in std_logic  );
+end component;
+component seconds_counter
+port(
+fsm_out : in std_logic_vector(0 downto 0);
+minutes_c : in std_logic_vector(3 downto 0);
+present_state : in std_logic_vector(4 downto 0);
+seconds_c : out std_logic_vector(5 downto 0);
+g1_0_0 :  in std_logic;
+un4_alarm_7 :  out std_logic;
+un4_alarm_5 :  in std_logic;
+un1_en_cnt1_sec :  in std_logic;
+up_sec_0 :  in std_logic;
+N_13 :  in std_logic;
+en_cnt2_sec_iv :  in std_logic;
+en_out_sec :  out std_logic;
+rst_bar_c_i :  in std_logic;
+clk_c :  in std_logic;
+un18_en_cnt1 :  in std_logic  );
+end component;
+component rotary_encoder_decoder_fsm_1
+port(
+present_state : out std_logic_vector(1 downto 0);
+bo_c :  in std_logic;
+ao_c :  in std_logic;
+rst_bar_c_i :  in std_logic;
+clk_c :  in std_logic  );
+end component;
+component minutes_counter
+port(
+present_state : in std_logic_vector(4 downto 0);
+minutes_c : out std_logic_vector(3 downto 0);
+en_out_sec :  in std_logic;
+N_18_0 :  in std_logic;
+un1_en_cnt1_sec :  in std_logic;
+up_min :  in std_logic;
+un4_alarm_6 :  out std_logic;
+rst_bar_c_i :  in std_logic;
+clk_c :  in std_logic  );
+end component;
+component pedgefsm
+port(
+sec_clk_edge :  out std_logic;
+rst_bar_c_i :  in std_logic;
+clk_c :  in std_logic;
+seconds_clk_c :  in std_logic  );
+end component;
+component control_unit
+port(
+present_state_fast : out std_logic_vector(4 downto 2);
+present_state_4 :  out std_logic;
+present_state_3 :  out std_logic;
+present_state_2 :  out std_logic;
+s_c :  in std_logic;
+rst_bar_c_i :  in std_logic;
+clk_c :  in std_logic;
+set_arm_c :  in std_logic;
+rst_bar_c :  in std_logic  );
+end component;
+begin
+II_VCC: VHI port map (
+Z => VCC);
+II_GND: VLO port map (
+Z => GND);
+PUR_INST: PUR port map (
+PUR => VCC);
+GSR_INST: GSR port map (
+GSR => VCC);
+RST_BAR_PAD_RNI1JBB: INV port map (
+A => RST_BAR_C,
+Z => RST_BAR_C_I);
+\MINUTES_PAD[3]\: OB port map (
+I => MINUTES_C(3),
+O => minutes(3));
+\MINUTES_PAD[2]\: OB port map (
+I => MINUTES_C(2),
+O => minutes(2));
+\MINUTES_PAD[1]\: OB port map (
+I => MINUTES_C(1),
+O => minutes(1));
+\MINUTES_PAD[0]\: OB port map (
+I => MINUTES_C(0),
+O => minutes(0));
+\SECONDS_PAD[5]\: OB port map (
+I => SECONDS_C(5),
+O => seconds(5));
+\SECONDS_PAD[4]\: OB port map (
+I => SECONDS_C(4),
+O => seconds(4));
+\SECONDS_PAD[3]\: OB port map (
+I => SECONDS_C(3),
+O => seconds(3));
+\SECONDS_PAD[2]\: OB port map (
+I => SECONDS_C(2),
+O => seconds(2));
+\SECONDS_PAD[1]\: OB port map (
+I => SECONDS_C(1),
+O => seconds(1));
+\SECONDS_PAD[0]\: OB port map (
+I => SECONDS_C(0),
+O => seconds(0));
+ALARM_PAD: OB port map (
+I => ALARM_C,
+O => alarm);
+SECONDS_CLK_PAD: IB port map (
+I => seconds_clk,
+O => SECONDS_CLK_C);
+SET_ARM_PAD: IB port map (
+I => set_arm,
+O => SET_ARM_C);
+S_PAD: IB port map (
+I => s,
+O => S_C);
+BO_PAD: IB port map (
+I => bo,
+O => BO_C);
+AO_PAD: IB port map (
+I => ao,
+O => AO_C);
+BI_PAD: IB port map (
+I => bi,
+O => BI_C);
+AI_PAD: IB port map (
+I => ai,
+O => AI_C);
+CLK_PAD: IB port map (
+I => clk,
+O => CLK_C);
+RST_BAR_PAD: IB port map (
+I => rst_bar,
+O => RST_BAR_C);
+U0: rotary_encoder_decoder_fsm port map (
+minutes_c(3 downto 0) => MINUTES_C(3 downto 0),
+fsm_out(0) => FSM_OUT(0),
+present_state_0(1 downto 0) => \U2.PRESENT_STATE\(1 downto 0),
+seconds_c(5 downto 4) => SECONDS_C(5 downto 4),
+present_state_fast_3 => \U5.PRESENT_STATE_FAST\(3),
+present_state_fast_2 => \U5.PRESENT_STATE_FAST\(2),
+present_state_fast_4 => \U5.PRESENT_STATE_FAST\(4),
+present_state(4 downto 2) => \U5.PRESENT_STATE\(4 downto 2),
+present_state(1 downto 0) => \U0.PRESENT_STATE\(1 downto 0),
+g1_0_0 => \U0.G1_0_0\,
+un18_en_cnt1 => \U1.SCOUNT.UN18_EN_CNT1\,
+up_sec_0 => \U0.UP_SEC_0\,
+en_cnt2_sec_iv => EN_CNT2_SEC_IV,
+N_18_0 => N_18_0,
+up_min => UP_MIN,
+N_13 => N_13,
+sec_clk_edge => SEC_CLK_EDGE,
+un1_en_cnt1_sec => UN1_EN_CNT1_SEC,
+bi_c => BI_C,
+ai_c => AI_C,
+alarm_c => ALARM_C,
+un4_alarm_7 => UN4_ALARM_7,
+un4_alarm_6 => UN4_ALARM_6,
+un4_alarm_5 => UN4_ALARM_5,
+rst_bar_c_i => RST_BAR_C_I,
+clk_c => CLK_C);
+U1: seconds_counter port map (
+fsm_out(0) => FSM_OUT(0),
+minutes_c(3 downto 0) => MINUTES_C(3 downto 0),
+present_state(4 downto 2) => \U5.PRESENT_STATE\(4 downto 2),
+present_state(1 downto 0) => \U0.PRESENT_STATE\(1 downto 0),
+seconds_c(5 downto 0) => SECONDS_C(5 downto 0),
+g1_0_0 => \U0.G1_0_0\,
+un4_alarm_7 => UN4_ALARM_7,
+un4_alarm_5 => UN4_ALARM_5,
+un1_en_cnt1_sec => UN1_EN_CNT1_SEC,
+up_sec_0 => \U0.UP_SEC_0\,
+N_13 => N_13,
+en_cnt2_sec_iv => EN_CNT2_SEC_IV,
+en_out_sec => EN_OUT_SEC,
+rst_bar_c_i => RST_BAR_C_I,
+clk_c => CLK_C,
+un18_en_cnt1 => \U1.SCOUNT.UN18_EN_CNT1\);
+U2: rotary_encoder_decoder_fsm_1 port map (
+present_state(1 downto 0) => \U2.PRESENT_STATE\(1 downto 0),
+bo_c => BO_C,
+ao_c => AO_C,
+rst_bar_c_i => RST_BAR_C_I,
+clk_c => CLK_C);
+U3: minutes_counter port map (
+present_state(4 downto 2) => \U5.PRESENT_STATE\(4 downto 2),
+present_state(1 downto 0) => \U2.PRESENT_STATE\(1 downto 0),
+minutes_c(3 downto 0) => MINUTES_C(3 downto 0),
+en_out_sec => EN_OUT_SEC,
+N_18_0 => N_18_0,
+un1_en_cnt1_sec => UN1_EN_CNT1_SEC,
+up_min => UP_MIN,
+un4_alarm_6 => UN4_ALARM_6,
+rst_bar_c_i => RST_BAR_C_I,
+clk_c => CLK_C);
+U4: pedgefsm port map (
+sec_clk_edge => SEC_CLK_EDGE,
+rst_bar_c_i => RST_BAR_C_I,
+clk_c => CLK_C,
+seconds_clk_c => SECONDS_CLK_C);
+U5: control_unit port map (
+present_state_fast(4 downto 2) => \U5.PRESENT_STATE_FAST\(4 downto 2),
+present_state_4 => \U5.PRESENT_STATE\(4),
+present_state_3 => \U5.PRESENT_STATE\(3),
+present_state_2 => \U5.PRESENT_STATE\(2),
+s_c => S_C,
+rst_bar_c_i => RST_BAR_C_I,
+clk_c => CLK_C,
+set_arm_c => SET_ARM_C,
+rst_bar_c => RST_BAR_C);
+end beh;
+

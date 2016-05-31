@@ -1,0 +1,1 @@
+-w -s "h:\ese382\lab07s14\library.cfg"  -j "h:\ese382\lab07s14\task3\projlib.cfg"  -d "h:\ese382\lab07s14\task3\compile"   -work task3_timing  -dbg -e 100 "h:\ese382\lab07s14\task3\src\fuel_tb.vhd"

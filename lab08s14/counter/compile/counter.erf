@@ -1,0 +1,8 @@
+MESSAGE "File: h:\ese382\lab08s14\counter\src\counter.vhd" 
+MESSAGE "Compile Entity "counter"" 
+MESSAGE "Compile Architecture "behavior" of Entity "counter"" 
+MESSAGE "File: h:\ese382\lab08s14\counter\src\TestBench\counter_TB.vhd" 
+MESSAGE "Compile Entity "counter_tb"" 
+MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "counter_tb"" 
+MESSAGE "Compile Configuration "TESTBENCH_FOR_counter"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]" 

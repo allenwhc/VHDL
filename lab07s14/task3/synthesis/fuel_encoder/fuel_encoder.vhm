@@ -1,0 +1,202 @@
+--
+-- Written by Synplicity
+-- Product Version "E-201103-SP2"
+-- Program "Synplify Pro", Mapper "maprc, Build 507R"
+-- Tue Apr 01 09:50:41 2014
+--
+
+--
+-- Written by Synplify Pro version Build 507R
+-- Tue Apr 01 09:50:41 2014
+--
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity AND2 is
+port(
+  O :  out std_logic;
+  I0 :  in std_logic;
+  I1 :  in std_logic);
+end AND2;
+
+architecture beh of AND2 is
+  signal VCC : std_logic ;
+  signal GND : std_logic ;
+begin
+VCC <= '1';
+GND <= '0';
+O <= I0 and I1  after 100 ps;
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity IBUF is
+port(
+O :  out std_logic;
+I0 :  in std_logic);
+end IBUF;
+
+architecture beh of IBUF is
+signal VCC : std_logic ;
+signal GND : std_logic ;
+begin
+O <= I0;
+VCC <= '1';
+GND <= '0';
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity INV is
+port(
+O :  out std_logic;
+I0 :  in std_logic);
+end INV;
+
+architecture beh of INV is
+signal VCC : std_logic ;
+signal GND : std_logic ;
+begin
+O <= not I0;
+VCC <= '1';
+GND <= '0';
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity OBUF is
+port(
+O :  out std_logic;
+I0 :  in std_logic);
+end OBUF;
+
+architecture beh of OBUF is
+signal VCC : std_logic ;
+signal GND : std_logic ;
+begin
+O <= I0;
+VCC <= '1';
+GND <= '0';
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity fuel_encoder is
+port(
+fuel : in std_logic_vector(3 downto 0);
+empty :  out std_logic;
+leds : out std_logic_vector(3 downto 0));
+end fuel_encoder;
+
+architecture beh of fuel_encoder is
+signal FUEL_I : std_logic_vector(3 downto 1);
+signal FUEL_C : std_logic_vector(3 downto 1);
+signal GND : std_logic ;
+signal LEDS6 : std_logic ;
+signal UN3_EMPTY : std_logic ;
+signal N_4 : std_logic ;
+signal UN3_EMPTY_I : std_logic ;
+signal N_4_0 : std_logic ;
+signal VCC : std_logic ;
+component IBUF
+port(
+O :  out std_logic;
+I0 :  in std_logic  );
+end component;
+component OBUF
+port(
+O :  out std_logic;
+I0 :  in std_logic  );
+end component;
+component INV
+port(
+O :  out std_logic;
+I0 :  in std_logic  );
+end component;
+component AND2
+port(
+O :  out std_logic;
+I0 :  in std_logic;
+I1 :  in std_logic  );
+end component;
+begin
+GND <= '0';
+\FUEL[1]_Z27\: IBUF port map (
+O => FUEL_C(1),
+I0 => fuel(1));
+\FUEL[2]_Z28\: IBUF port map (
+O => FUEL_C(2),
+I0 => fuel(2));
+\FUEL[3]_Z29\: IBUF port map (
+O => FUEL_C(3),
+I0 => fuel(3));
+EMPTY_Z30: OBUF port map (
+O => empty,
+I0 => UN3_EMPTY_I);
+\LEDS[0]_Z31\: OBUF port map (
+O => leds(0),
+I0 => GND);
+\LEDS[1]_Z32\: OBUF port map (
+O => leds(1),
+I0 => LEDS6);
+\LEDS[2]_Z33\: OBUF port map (
+O => leds(2),
+I0 => FUEL_I(3));
+\LEDS[3]_Z34\: OBUF port map (
+O => leds(3),
+I0 => N_4);
+LEDS9_I_S_I: INV port map (
+O => N_4,
+I0 => N_4_0);
+\FUEL_I[1]_Z36\: INV port map (
+O => FUEL_I(1),
+I0 => FUEL_C(1));
+UN3_EMPTY_0_A2: AND2 port map (
+O => UN3_EMPTY,
+I0 => FUEL_I(1),
+I1 => LEDS6);
+LEDS6_0_A2: AND2 port map (
+O => LEDS6,
+I0 => FUEL_I(2),
+I1 => FUEL_I(3));
+\FUEL_I[2]_Z39\: INV port map (
+O => FUEL_I(2),
+I0 => FUEL_C(2));
+LEDS9_I_S: AND2 port map (
+O => N_4_0,
+I0 => FUEL_C(2),
+I1 => FUEL_C(3));
+\FUEL_I[3]_Z41\: INV port map (
+O => FUEL_I(3),
+I0 => FUEL_C(3));
+UN3_EMPTY_I_Z42: INV port map (
+O => UN3_EMPTY_I,
+I0 => UN3_EMPTY);
+VCC <= '1';
+end beh;
+

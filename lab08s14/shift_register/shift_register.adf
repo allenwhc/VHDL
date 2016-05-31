@@ -1,0 +1,74 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=shift_register
+
+[Library]
+shift_register=.\shift_register.LIB
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+FLOWTOOLS=NONE
+REFRESH_FLOW=1
+FAMILY=Lattice GAL
+IMPL_TOOL=
+SYNTH_TOOL=
+fileopenfolder=H:\ese382\download
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=1
+
+[$LibMap$]
+shift_register=.
+Active_lib=
+xilinxun=
+UnlinkedDesignLibrary=
+DESIGNS=
+
+[Folders]
+Name3=Makefiles
+Directory3=\\esdl-2k3\Users\usr53\ese382\lab08s14\shift_register\
+Extension3=mak
+Name4=Memory
+Directory4=\\esdl-2k3\Users\usr53\ese382\lab08s14\shift_register\src
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=\\esdl-2k3\Users\usr53\ese382\lab08s14\shift_register\
+Extension5=dll
+Name6=PDF
+Directory6=\\esdl-2k3\Users\usr53\ese382\lab08s14\shift_register\
+Extension6=pdf
+Name7=HTML
+Directory7=\\esdl-2k3\Users\usr53\ese382\lab08s14\shift_register\
+Extension7=
+
+[Groups]
+TestBench=1
+
+[Files]
+/right_shift_reg.vhd=-1
+TestBench/right_shift_reg_TB.vhd=-1
+TestBench/right_shift_reg_TB_runtest.do=-1
+
+[Files.Data]
+.\src\right_shift_reg.vhd=VHDL Source Code
+.\src\TestBench\right_shift_reg_TB.vhd=VHDL Source Code
+.\src\TestBench\right_shift_reg_TB_runtest.do=Macro
+

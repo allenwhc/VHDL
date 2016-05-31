@@ -1,0 +1,9 @@
+[Files List]
+C:\Aldec\Active-HDL\Vlib\std/src/standard.vhd=S
+C:\Aldec\Active-HDL\Vlib\std/src/textio.vhd=S
+C:\Aldec\Active-HDL\VLIB\ieee/src/std_logic_1164.vhdl=S
+C:\Aldec\Active-HDL\VLIB\ieee/src/std_logic_1164-body.vhdl=S
+C:\Aldec\Active-HDL\VLIB\ieee/src/numeric_std.vhdl=S
+C:\Aldec\Active-HDL\VLIB\ieee/src/numeric_std-body.vhdl=S
+h:\ese382\lab05s14\BCDTo7Seg/src/BCDTo7Seg.vhd=S
+h:\ese382\lab05s14\BCDTo7Seg/src/BCDTo7Seg_TB.vhd=S

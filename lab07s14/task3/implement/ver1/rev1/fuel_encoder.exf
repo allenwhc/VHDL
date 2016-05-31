@@ -1,0 +1,56 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      fuel(3:0)                     fuel                  3          4            -1
+      Port          2      leds(3:0)                     leds                  3          4            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      fuel_3_                     fuel[3]                       1            0            
+        Port      fuel_2_                     fuel[2]                       1            1            
+        Port      fuel_1_                     fuel[1]                       1            2            
+        Port      fuel_0_                     fuel[0]                       1            3            
+        Port      leds_3_                     leds[3]                       2            0            
+        Port      leds_2_                     leds[2]                       2            1            
+        Port      leds_1_                     leds[1]                       2            2            
+        Port      leds_0_                     leds[0]                       2            3            
+End
+Section Cross Reference File
+Design 'fuel_encoder' created Tue Apr 01 09:51:34 2014
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst                fuel_1_                                   fuel[1]
+   Inst                fuel_2_                                   fuel[2]
+   Inst                fuel_3_                                   fuel[3]
+   Inst                leds_0_                                   leds[0]
+   Inst                leds_1_                                   leds[1]
+   Inst                leds_2_                                   leds[2]
+   Inst                leds_3_                                   leds[3]
+   Inst              fuel_i_1_                                 fuel_i[1]
+   Inst              fuel_i_2_                                 fuel_i[2]
+   Inst              fuel_i_3_                                 fuel_i[3]
+   Net                 gnd_n_n                                       GND
+   Net             fuel_i_3__n                                 fuel_i[3]
+   Net             fuel_i_2__n                                 fuel_i[2]
+   Net             fuel_i_1__n                                 fuel_i[1]
+   Net             fuel_c_1__n                                 fuel_c[1]
+   Net               fuel_1__n                                   fuel[1]
+   Net             fuel_c_2__n                                 fuel_c[2]
+   Net               fuel_2__n                                   fuel[2]
+   Net             fuel_c_3__n                                 fuel_c[3]
+   Net               leds_0__n                                   leds[0]
+   Net               leds_1__n                                   leds[1]
+   Net               leds_2__n                                   leds[2]
+   Net               fuel_0__n                                   fuel[0]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     fuel_3_
+        Input     fuel_2_
+        Input     fuel_1_
+        Input     fuel_0_
+        Output     leds_3_
+        Output     empty
+        Output     leds_2_
+        Output     leds_1_
+        Output     leds_0_
+End

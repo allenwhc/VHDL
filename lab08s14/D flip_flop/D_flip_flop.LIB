@@ -1,0 +1,45 @@
+timestamp=1396965352783
+
+[dff_en]
+A/behavioral=21|./src/flipflop.vhd|14|1*3429
+BinI32/behavioral=3*0
+I=0*531
+I/behavioral=0*990
+M=11|0|v98|1396961458789|./src/flipflop.vhd|0*196*0xd09e07faf7282f0c0794e4931fe98c3f2bce9d10|0*456*0xab32bc1a2daf049573e14469f634e0e6
+M/behavioral=21|0|v98|1396965352614|./src/flipflop.vhd|0*631*0xbda7bba9ba38e03d48a17e4d5a769dee922fefa4|0*901*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/flipflop.vhd|4
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/behavioral=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[dff_en_tb]
+A/tb_architecture=A/TB_ARCHITECTURE 21|./src/TestBench/dff_en_TB.vhd|9|1*4572
+I=0*1431
+I/tb_architecture=I/TB_ARCHITECTURE 0*2139
+M=11|0|v98|1396965352721|./src/TestBench/dff_en_TB.vhd|0*1174*0xd7fa268ababaed2949441916a31a56c2cbfe2f79|0*1342*0xab32bc1a2daf049573e14469f634e0e6
+M/tb_architecture=M/TB_ARCHITECTURE 21|0|v98|1396965352736|./src/TestBench/dff_en_TB.vhd|0*1534*0xd217a747233f1a8ca1d1c2d2ae057ad7367c3105|0*2031*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/TestBench/dff_en_TB.vhd|6
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/tb_architecture=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[testbench_for_dff_en]
+Configures=dff_en_tb.TB_ARCHITECTURE
+E=1*6384
+I=0*2692
+M=2|0|v98|1396965352752|./src/TestBench/dff_en_TB.vhd|0*2312*0x5baf0a6476e6ba5593828f723ec1dfe503a5ff6b|0*2580*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/TestBench/dff_en_TB.vhd|46
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[~A]
+ModifyID=27
+Version=73
+
+[~MFT]
+0=16|0D_flip_flop.mgf|2692|0
+1=8|1D_flip_flop.mgf|6384|3429
+3=0|3D_flip_flop.mgf|0|0
+
+[~U]
+dff_en=11|0*0|
+dff_en_tb=11|0*1101|
+testbench_for_dff_en=TESTBENCH_FOR_dff_en 2||
+

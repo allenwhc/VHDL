@@ -1,0 +1,7 @@
+MESSAGE "File: h:\ese382\lab05s14\BinaryToBCD\src\BinaryToBCD.vhd" 
+MESSAGE "Compile Entity "BinaryToBCD"" 
+MESSAGE "Compile Architecture "BinaryToBCD" of Entity "BinaryToBCD"" 
+MESSAGE "File: h:\ese382\lab05s14\BinaryToBCD\src\BinaryToBCD_TB.vhd" 
+MESSAGE "Compile Entity "converter_2421_bcd_tb"" 
+MESSAGE "Compile Architecture "tb_architecture" of Entity "converter_2421_bcd_tb"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]" 

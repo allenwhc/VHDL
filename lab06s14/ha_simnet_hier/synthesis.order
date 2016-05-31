@@ -1,0 +1,4 @@
+i<>.\src\half_adder_struct_hier.vhd
+i<>.\src\xor_2_struct.vhd
+i<>.\src\ha_primitive_gates.vhd
+i<>.\src\ha_test_tb.vhd

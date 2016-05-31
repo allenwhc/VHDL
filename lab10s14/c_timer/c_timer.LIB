@@ -1,0 +1,94 @@
+timestamp=1398186392508
+
+[count_down_timer]
+A/dataflow=21|./src/timer.vhd|41|1*758647
+BinI32/dataflow=3*344517
+I=0*15002
+I/dataflow=0*105743
+M=11|0|v98|1398176236604|./src/timer.vhd|0*14061*0xd5a0f6e22366f598f8d31d5b1c684681a4139e9f|0*14920*0xab32bc1a2daf049573e14469f634e0e6
+M/dataflow=21|0|v98|1398186392398|./src/timer.vhd|0*103997*0x76366ce01e3f680a388186df09eeccf37d583fe6|0*105649*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/timer.vhd|5
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/dataflow=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[count_down_timer_tb]
+A/tb_architecture=21|./src/count_down_timer_TB.vhd|10|1*717462
+BinI32/tb_architecture=3*341761
+I=0*7670
+I/tb_architecture=0*19296
+M=11|0|v98|1398171067220|./src/count_down_timer_TB.vhd|0*7346*0x939d8f6d1a6001efd7bb929557a3fa78e8e2f321|0*7571*0xab32bc1a2daf049573e14469f634e0e6
+M/tb_architecture=21|0|v98|1398185543500|./src/count_down_timer_TB.vhd|0*17007*0x03a1c776f4257f17d98f7509d604d7a8fb202319|0*19178*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/count_down_timer_TB.vhd|7
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/tb_architecture=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[minutes_counter]
+A/behavioral=21|./src/minutes_counter.vhd|44|1*709856
+BinI32/behavioral=3*337086
+I=0*836
+I/behavioral=0*2060
+M=11|0|v98|1398171049782|./src/minutes_counter.vhd|0*322*0x2d5a531a4f7f139b72e8e7cb6eaeb10ed8910ea2|0*745*0xab32bc1a2daf049573e14469f634e0e6
+M/behavioral=21|0|v98|1398185543156|./src/minutes_counter.vhd|0*1007*0xa6cda604182986a2bcbf3985ffbececf0e2f5aa9|0*1955*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/minutes_counter.vhd|29
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/behavioral=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[rotary_encoder_decoder_fsm]
+A/behavioral=21|./src/rotary_encoder_decoder_fsm.vhd|41|1*711930
+BinI32/behavioral=3*338409
+I=0*5288
+I/behavioral=0*7112
+M=11|0|v98|1398171064423|./src/rotary_encoder_decoder_fsm.vhd|0*4815*0x98e9f6a1687f4a12da968050d81c2d2c48b87307|0*5175*0xab32bc1a2daf049573e14469f634e0e6
+M/behavioral=21|0|v98|1398185543280|./src/rotary_encoder_decoder_fsm.vhd|0*5408*0x62d4fdcf1a31c7966116a4272aead662fdd6da33|0*6985*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/rotary_encoder_decoder_fsm.vhd|28
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/behavioral=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[seconds_counter]
+A/dataflow=21|./src/seconds_counter.vhd|23|1*715249
+BinI32/dataflow=3*340188
+I=0*3060
+I/dataflow=0*4357
+M=11|0|v98|1398171058407|./src/seconds_counter.vhd|0*2555*0x43a53131424dc7333141cd4bd4d4ed96b6ec307f|0*2969*0xab32bc1a2daf049573e14469f634e0e6
+M/dataflow=21|0|v98|1398185543391|./src/seconds_counter.vhd|0*3231*0x322cbac92206f4d191d6147f68d8807b27574df9|0*4254*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/seconds_counter.vhd|10
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/dataflow=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[set_initial_value_tb]
+BinI32/tb_architecture=3*4673
+I=0*11498
+I/tb_architecture=0*13395
+M=11|0|v98|1398171110221|./src/set_initial_value_TB.vhd|0*11168*0x5dc790055a6fc8778a7a4eb4997890ccca1702c0|0*11397*0xab32bc1a2daf049573e14469f634e0e6
+R=./src/set_initial_value_TB.vhd|7
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/tb_architecture=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[settable_timer]
+A/dataflow=21|./src/c_timer.vhd|18|1*724635
+I=0*9826
+I/dataflow=0*10686
+M=11|0|v98|1398171106299|./src/s_timer.vhd|0*9335*0x74705bc97f339837304dfe45ef6416a70978eb2f|0*9744*0xab32bc1a2daf049573e14469f634e0e6
+M/dataflow=21|0|v98|1398185543719|./src/s_timer.vhd|0*9996*0x79390e00f2584d853faf38c6ee44cbda79d910fd|0*10592*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/s_timer.vhd|5
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/dataflow=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[~A]
+ModifyID=1384
+Version=73
+
+[~MFT]
+0=322|0c_timer.mgf|105743|89177
+1=493|1c_timer.mgf|758647|744684
+3=417|3c_timer.mgf|344517|334942
+
+[~U]
+count_down_timer=11|0*13648|
+count_down_timer_tb=11|0*7243|
+minutes_counter=11|0*0|
+rotary_encoder_decoder_fsm=11|0*4537|
+seconds_counter=11|0*2242|
+set_initial_value_tb=11|0*11062|
+settable_timer=11|0*9021|
+

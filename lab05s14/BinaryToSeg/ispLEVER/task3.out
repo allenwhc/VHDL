@@ -1,0 +1,97 @@
+
+26 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  40 seven_seg0_0_  0        3   0              40   -1  15   0   21
+  36 seven_seg0_5_  0        3   0              36   -1  15   0   21
+   8 seven_seg0_1_  0        0   0               8   -1  15   0   21
+   7 seven_seg0_6_  0        0   0               7   -1  15   0   21
+  38 seven_seg0_4_  0        3   0              38   -1  13   0   21
+  16 seven_seg1_5_  0        1   0              16   -1  13   0   21
+  41 seven_seg1_0_  0        3   0              41   -1  12   0   21
+  23 seven_seg0_2_  0        2   0              23   -1  12   0   21
+  20 seven_seg1_3_  0        1   0              20   -1  12   0   21
+  18 seven_seg1_1_  0        1   0              18   -1   9   0   21
+  25 seven_seg1_4_  0        2   0              25   -1   8   1   21
+  14 seven_seg1_2_  0        1   0              14   -1   8   0   21
+  42 seven_seg0_3_  0        3   0              42   -1   3   0   21
+  29 seven_seg1_6_  0        2   0              29   -1   2   0   21
+ 144 output_15_1__n  3   -1   2   4  0  1  2  3  -1   -1   4   0   21
+ 141 output_15_2__n  3   -1   2   4  0  1  2  3  -1   -1   3   0   21
+ 145 output_2__n  3   -1   1   3  0     2  3  -1   -1   5   1   21
+ 142  output_1_  3   -1   0   2  0        3  -1   -1   6   1   21
+ 146 output_3__n  3   -1   0   1           3  -1   -1  12   0   21
+ 143      G_142  3   -1   0   1     1        -1   -1   6   1   21
+   5  binary_1_  1   -1  -1   4  0  1  2  3   5   -1
+   4  binary_2_  1   -1  -1   4  0  1  2  3   4   -1
+   3  binary_3_  1   -1  -1   4  0  1  2  3   3   -1
+   2  binary_4_  1   -1  -1   4  0  1  2  3   2   -1
+   1  binary_5_  1   -1  -1   4  0  1  2  3   1   -1
+   6  binary_0_  1   -1  -1   3  0     2  3   6   -1
+26 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  40 seven_seg0_0_  0        3   0              40   -1  15   0   21
+  36 seven_seg0_5_  0        3   0              36   -1  15   0   21
+   8 seven_seg0_1_  0        0   0               8   -1  15   0   21
+   7 seven_seg0_6_  0        0   0               7   -1  15   0   21
+  38 seven_seg0_4_  0        3   0              38   -1  13   0   21
+  16 seven_seg1_5_  0        1   0              16   -1  13   0   21
+  41 seven_seg1_0_  0        3   0              41   -1  12   0   21
+  23 seven_seg0_2_  0        2   0              23   -1  12   0   21
+  20 seven_seg1_3_  0        1   0              20   -1  12   0   21
+  25 seven_seg1_4_  0        2   0              25   -1  10   1   21
+  14 seven_seg1_2_  0        1   0              14   -1   8   0   21
+  18 seven_seg1_1_  0        1   0              18   -1   6   1   21
+  42 seven_seg0_3_  0        3   0              42   -1   3   0   21
+  29 seven_seg1_6_  0        2   0              29   -1   2   0   21
+ 144 output_15_1__n  3   -1   2   4  0  1  2  3  -1   -1   4   0   21
+ 141 output_15_2__n  3   -1   2   4  0  1  2  3  -1   -1   3   0   21
+ 145 output_2__n  3   -1   1   3  0     2  3  -1   -1   5   1   21
+ 142  output_1_  3   -1   0   2  0        3  -1   -1   6   1   21
+ 146 output_3__n  3   -1   0   1           3  -1   -1  12   0   21
+ 143      G_142  3   -1   0   1     1        -1   -1   6   1   21
+   5  binary_1_  1   -1  -1   4  0  1  2  3   5   -1
+   4  binary_2_  1   -1  -1   4  0  1  2  3   4   -1
+   3  binary_3_  1   -1  -1   4  0  1  2  3   3   -1
+   2  binary_4_  1   -1  -1   4  0  1  2  3   2   -1
+   1  binary_5_  1   -1  -1   4  0  1  2  3   1   -1
+   6  binary_0_  1   -1  -1   3  0     2  3   6   -1
+26 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  40 seven_seg0_0_  0        3   0              40   -1  15   0   21
+  36 seven_seg0_5_  0        3   0              36   -1  15   0   21
+   8 seven_seg0_1_  0        0   0               8   -1  15   0   21
+   7 seven_seg0_6_  0        0   0               7   -1  15   0   21
+  25 seven_seg1_4_  0        2   0              25   -1  13   0   21
+  23 seven_seg0_2_  0        2   0              23   -1  13   0   21
+  38 seven_seg0_4_  0        3   0              38   -1  12   0   21
+  14 seven_seg1_2_  0        1   0              14   -1  11   1   21
+  29 seven_seg1_6_  0        2   0              29   -1  10   0   21
+  41 seven_seg1_0_  0        3   0              41   -1   8   0   21
+  20 seven_seg1_3_  0        1   0              20   -1   7   0   21
+  18 seven_seg1_1_  0        1   0              18   -1   7   0   21
+  16 seven_seg1_5_  0        1   0              16   -1   7   0   21
+  42 seven_seg0_3_  0        3   0              42   -1   3   0   21
+ 143 output_15_1__n  3   -1   2   4  0  1  2  3  -1   -1   4   0   21
+ 141 output_15_2__n  3   -1   2   4  0  1  2  3  -1   -1   3   0   21
+ 142  output_1_  3   -1   0   3  0     2  3  -1   -1   6   1   21
+ 145 output_2__n  3   -1   1   3  0     2  3  -1   -1   5   1   21
+ 146 output_i_3__n  3   -1   0   1           3  -1   -1  12   0   21
+ 144      G_131  3   -1   0   1     1        -1   -1   6   1   21
+   5  binary_1_  1   -1  -1   4  0  1  2  3   5   -1
+   4  binary_2_  1   -1  -1   4  0  1  2  3   4   -1
+   3  binary_3_  1   -1  -1   4  0  1  2  3   3   -1
+   2  binary_4_  1   -1  -1   4  0  1  2  3   2   -1
+   1  binary_5_  1   -1  -1   4  0  1  2  3   1   -1
+   6  binary_0_  1   -1  -1   3  0     2  3   6   -1

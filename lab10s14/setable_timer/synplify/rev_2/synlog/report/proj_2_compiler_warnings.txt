@@ -1,0 +1,4 @@
+@W: CD604 :"H:\ese382\lab10s14\setable_timer\src\fsm.vhd":38:3:38:15|OTHERS clause is not synthesized 
+@W: CL169 :"H:\ese382\lab10s14\setable_timer\src\minutes_counter.vhd":53:2:53:3|Pruning register cnt_int.minutes_nonzero_8  
+@W: CD604 :"H:\ese382\lab10s14\setable_timer\src\rotary_encoder_decoder_fsm.vhd":66:4:66:16|OTHERS clause is not synthesized 
+

@@ -1,0 +1,72 @@
+timestamp=1398171485240
+
+[minutes_counter]
+A/behavioral=21|./src/minutes_counter.vhd|44|1*2213
+BinI32/behavioral=3*1571
+I=0*3743
+I/behavioral=0*4967
+M=11|0|v98|1398171484740|./src/minutes_counter.vhd|0*3229*0x2d5a531a4f7f139b72e8e7cb6eaeb10ed8910ea2|0*3652*0xab32bc1a2daf049573e14469f634e0e6
+M/behavioral=21|0|v98|1398171484756|./src/minutes_counter.vhd|0*3914*0xa6cda604182986a2bcbf3985ffbececf0e2f5aa9|0*4862*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/minutes_counter.vhd|29
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/behavioral=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[rotary_encoder_decoder_fsm]
+A/behavioral=21|./src/rotary_encoder_decoder_fsm.vhd|41|1*4287
+BinI32/behavioral=3*2898
+I=0*5900
+I/behavioral=0*7724
+M=11|0|v98|1398171484849|./src/rotary_encoder_decoder_fsm.vhd|0*5427*0x98e9f6a1687f4a12da968050d81c2d2c48b87307|0*5787*0xab32bc1a2daf049573e14469f634e0e6
+M/behavioral=21|0|v98|1398171484865|./src/rotary_encoder_decoder_fsm.vhd|0*6020*0x62d4fdcf1a31c7966116a4272aead662fdd6da33|0*7597*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/rotary_encoder_decoder_fsm.vhd|28
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/behavioral=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[seconds_counter]
+A/dataflow=21|./src/seconds_counter.vhd|23|1*0
+BinI32/dataflow=3*0
+I=0*818
+I/dataflow=0*2115
+M=11|0|v98|1398171484506|./src/seconds_counter.vhd|0*313*0x43a53131424dc7333141cd4bd4d4ed96b6ec307f|0*727*0xab32bc1a2daf049573e14469f634e0e6
+M/dataflow=21|0|v98|1398171484521|./src/seconds_counter.vhd|0*989*0x322cbac92206f4d191d6147f68d8807b27574df9|0*2012*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/seconds_counter.vhd|10
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/dataflow=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[set_initial_value_tb]
+A/tb_architecture=21|./src/set_initial_value_TB.vhd|10|1*10637
+BinI32/tb_architecture=3*4675
+I=0*2731
+I/tb_architecture=0*11617
+M=11|0|v98|1398171484678|./src/set_initial_value_TB.vhd|0*2401*0x5dc790055a6fc8778a7a4eb4997890ccca1702c0|0*2630*0xab32bc1a2daf049573e14469f634e0e6
+M/tb_architecture=21|0|v98|1398171485133|./src/set_initial_value_TB.vhd|0*9896*0x6776a5bd08d86483915fac95703882ed54acfd76|0*11497*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/set_initial_value_TB.vhd|7
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/tb_architecture=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[settable_timer]
+A/dataflow=21|./src/s_timer.vhd|18|1*7606
+I=0*8660
+I/dataflow=0*9520
+M=11|0|v98|1398171484974|./src/s_timer.vhd|0*8169*0x74705bc97f339837304dfe45ef6416a70978eb2f|0*8578*0xab32bc1a2daf049573e14469f634e0e6
+M/dataflow=21|0|v98|1398171484990|./src/s_timer.vhd|0*8830*0x79390e00f2584d853faf38c6ee44cbda79d910fd|0*9426*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/s_timer.vhd|5
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/dataflow=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[~A]
+ModifyID=22
+Version=73
+
+[~MFT]
+0=34|0set_time.mgf|11617|0
+1=4|1set_time.mgf|10637|0
+3=3|3set_time.mgf|4675|0
+
+[~U]
+minutes_counter=11|0*2907|
+rotary_encoder_decoder_fsm=11|0*5149|
+seconds_counter=11|0*0|
+set_initial_value_tb=11|0*2295|
+settable_timer=11|0*7855|
+

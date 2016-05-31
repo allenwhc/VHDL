@@ -1,0 +1,10 @@
+JDF B
+// Created by Version 7.0 
+PROJECT Untitled
+DESIGN untitled Normal
+DEVKIT ispGAL22V10C-10LJ
+ENTRY EDIF
+MODULE ..\synplify\rev_2\fa.edf
+MODSTYLE full_adder Normal
+SYNTHESIS_TOOL Synplify
+TOPMODULE full_adder

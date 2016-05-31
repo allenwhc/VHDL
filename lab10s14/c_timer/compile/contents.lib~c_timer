@@ -1,0 +1,14 @@
+1384
+~E 1 "./src/timer.vhd" 5 count_down_timer
+~A 1 "./src/timer.vhd" 41 dataflow
+~E 1 "./src/count_down_timer_TB.vhd" 7 count_down_timer_tb
+~A 1 "./src/count_down_timer_TB.vhd" 10 tb_architecture
+~E 1 "./src/minutes_counter.vhd" 29 minutes_counter
+~A 1 "./src/minutes_counter.vhd" 44 behavioral
+~E 1 "./src/rotary_encoder_decoder_fsm.vhd" 28 rotary_encoder_decoder_fsm
+~A 1 "./src/rotary_encoder_decoder_fsm.vhd" 41 behavioral
+~E 1 "./src/seconds_counter.vhd" 10 seconds_counter
+~A 1 "./src/seconds_counter.vhd" 23 dataflow
+~E 1 "./src/set_initial_value_TB.vhd" 7 set_initial_value_tb
+~E 1 "./src/s_timer.vhd" 5 settable_timer
+~A 1 "./src/c_timer.vhd" 18 dataflow

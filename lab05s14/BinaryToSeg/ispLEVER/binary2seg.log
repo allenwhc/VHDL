@@ -1,0 +1,13 @@
+Starting EDIF2BLIF....
+readEDIF ended normally.
+
+Inspect circuit BinaryToSeg
+    Number of input ports   : 1
+    Number of output ports  : 2
+    Number of bidir ports   : 0
+    Number of instances     : 159
+    Number of nets          : 165
+
+No design errors found in circuit BinaryToSeg
+
+WriteBLIF ended normally.

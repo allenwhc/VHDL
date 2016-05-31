@@ -1,0 +1,19 @@
+#$ TOOL ispLEVER Classic 7.0.00.10.16.07
+#$ DATE Tue Mar 25 09:42:00 2014
+#$ MODULE ha_mixed
+#$ DEVICE p22v10gc
+#$ PINS 4 a:2 b:3 sum+:17 carry_out+:27
+.i 2 
+.o 2 
+.type fr
+.ilb a b
+.ob sum carry_out
+.phase 11
+.p 6
+11 01
+01 1~
+10 1~
+0- ~0
+-0 ~0
+00 0~
+.e

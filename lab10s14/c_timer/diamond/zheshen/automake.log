@@ -1,0 +1,367 @@
+
+edif2ngd  -l "LatticeXP" -d LFXP3C -path "H:/ese382/lab10s14/c_timer/diamond/zheshen" -path "H:/ese382/lab10s14/c_timer/diamond"  "H:/ese382/lab10s14/c_timer/synplify/rev_2/zhe shen.edn" "zhe shen.ngo"   
+edif2ngd:  version Diamond_1.4_Production (87)
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2011 Lattice Semiconductor Corporation,  All rights reserved.
+Writing the design to zhe shen.ngo...
+
+ngdbuild  -a "LatticeXP" -d LFXP3C  -p "C:/lscc/diamond/1.4/ispfpga/mg5g00/data"  -p "H:/ese382/lab10s14/c_timer/diamond/zheshen" -p "H:/ese382/lab10s14/c_timer/diamond"  "zhe shen.ngo" "zheshen_zheshen.ngd"  	
+ngdbuild:  version Diamond_1.4_Production (87)
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2011 Lattice Semiconductor Corporation,  All rights reserved.
+Reading 'zhe shen.ngo' ...
+Loading NGL library 'C:/lscc/diamond/1.4/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/1.4/ispfpga/or5g00/data/orc5glib.ngl'...
+
+Running DRC...
+WARNING - ngdbuild: logical net 'u0/u1/un1_min_counts_1_cry_2' has no load
+WARNING - ngdbuild: logical net 'u0/u1/un1_min_counts_1_cry_2_0_COUT1' has no load
+WARNING - ngdbuild: logical net 'u0/u1/un1_min_counts_1_cry_0' has no load
+WARNING - ngdbuild: logical net 'u0/u1/un1_min_counts_1_cry_0_0_S0' has no load
+WARNING - ngdbuild: logical net 'u0/u0/un1_count_sec_1_cry_4' has no load
+WARNING - ngdbuild: logical net 'u0/u0/un1_count_sec_1_cry_4_0_COUT1' has no load
+WARNING - ngdbuild: logical net 'u0/u0/un1_count_sec_1_cry_2' has no load
+WARNING - ngdbuild: logical net 'u0/u0/un1_count_sec_1_cry_0' has no load
+WARNING - ngdbuild: logical net 'u0/u0/un1_count_sec_1_cry_0_0_S0' has no load
+WARNING - ngdbuild: DRC complete with 9 warnings
+
+Design Results:
+    128 blocks expanded
+complete the first expansion
+Writing 'zheshen_zheshen.ngd' ...
+
+map -a "LatticeXP" -p LFXP3C -t TQFP100 -s 4 -oc Commercial  "zheshen_zheshen.ngd" -o "zheshen_zheshen_map.ncd" -pr "zheshen_zheshen.prf" -mp "zheshen_zheshen.mrp" "H:/ese382/lab10s14/c_timer/diamond/zheshen.lpf"             
+map:  version Diamond_1.4_Production (87)
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2011 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: zheshen_zheshen.ngd
+   Picdevice="LFXP3C"
+   Pictype="TQFP100"
+   Picspeed=4
+   Remove unused logic
+   Do not produce over sized NCDs.
+Part used: LFXP3CTQFP100, Performance used: 4.
+Loading device for application map from file 'mg5g19x26.nph' in environment C:/lscc/diamond/1.4/ispfpga.
+Package Status:                     Final          Version 1.40
+
+Running general design DRC...
+Removing unused logic...
+Optimizing...
+WARNING - map: Using local reset signal 'rst_bar_c' to infer global GSR net.
+
+
+
+Design Summary:
+   Number of registers:    33
+      PFU registers:    28
+      PIO registers:    5
+   Number of SLICEs:            50 out of  1536 (3%)
+      SLICEs(logic/ROM):        50 out of  1152 (4%)
+      SLICEs(logic/ROM/RAM):     0 out of   384 (0%)
+          As RAM:            0
+          As Logic/ROM:      0
+   Number of logic LUT4s:      66
+   Number of distributed RAM:   0 (0 LUT4s)
+   Number of ripple logic:      5 (10 LUT4s)
+   Number of shift registers:   0
+   Total number of LUT4s:      76
+   Number of PIO sites used: 20 out of 62 (32%)
+   Number of PIO FIXEDDELAY:    0
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of block RAMs:  0 out of 6 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  4
+     Net clk_c: 15 loads, 15 rising, 0 falling (Driver: PIO clk )
+     Net un1_present_state_2_0_i: 1 loads, 1 rising, 0 falling (Driver: alarm_RNO )
+     Net N_36: 2 loads, 2 rising, 0 falling (Driver: un1_present_state_7_i )
+     Net N_34_i: 3 loads, 3 rising, 0 falling (Driver: seconds_clk_pad_RNIO2EO )
+   Number of Clock Enables:  4
+     Net state_reg_present_state_3_i_o4_1: 1 loads, 0 LSLICEs
+     Net N_14: 1 loads, 0 LSLICEs
+     Net state_reg_present_state_3_i_o4_0_0: 1 loads, 0 LSLICEs
+     Net state_reg_present_state_3_i_o4_0: 1 loads, 0 LSLICEs
+   Number of local set/reset loads for net rst_bar_c merged into GSR:  10
+   Number of LSRs:  8
+     Net un1_s_1_0_i: 1 loads, 1 LSLICEs
+     Net next_state_0__S1: 1 loads, 1 LSLICEs
+     Net next_state_0: 1 loads, 0 LSLICEs
+     Net bi_c: 1 loads, 1 LSLICEs
+     Net N_63_i: 1 loads, 1 LSLICEs
+     Net bo_c: 1 loads, 1 LSLICEs
+     Net u0/u3/up7_i: 1 loads, 1 LSLICEs
+     Net u0/u2/up7_i: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net present_state_0: 18 loads
+     Net u0/cten_sec: 9 loads
+     Net rst_bar_c: 7 loads
+     Net seconds_c_0: 7 loads
+     Net seconds_c_1: 7 loads
+     Net minutes_c_3: 6 loads
+     Net seconds_c_2: 6 loads
+     Net u0/cten_min: 6 loads
+     Net u0/u0/count_sec_RNICR6G1_1: 6 loads
+     Net u0/u0/un10_en_cnt1_RNII81O: 6 loads
+ 
+   Number of warnings:  1
+   Number of errors:    0
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 31 MB
+
+WARNING - map: Pref conflict: Multi-locate on site.   Ignoring LOCATE COMP "SLICE_5" SITE "69" ;
+        Keeping LOCATE COMP "alarm" SITE "69" ;
+Dumping design to file zheshen_zheshen_map.ncd.
+
+mpartrce -p "zheshen_zheshen.p2t" -f "zheshen_zheshen.p3t" -tf "zheshen_zheshen.pt" "zheshen_zheshen_map.ncd" "zheshen_zheshen.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "zheshen_zheshen_map.ncd"
+Tue Apr 22 13:14:30 2014
+
+PAR: Place And Route Diamond_1.4_Production (87).
+Command Line: C:/lscc/diamond/1.4/ispfpga\bin\nt\par -f zheshen_zheshen.p2t
+zheshen_zheshen_map.ncd zheshen_zheshen.dir zheshen_zheshen.prf
+Preference file: zheshen_zheshen.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file zheshen_zheshen_map.ncd.
+Design name: count_down_timer
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LFXP3C
+Package:     TQFP100
+Performance: 4
+Loading device for application par from file 'mg5g19x26.nph' in environment C:/lscc/diamond/1.4/ispfpga.
+Package Status:                     Final          Version 1.40
+Performance Hardware Data Status: Version 1.225
+License checked out.
+
+
+Ignore Preference Error(s):  True
+WARNING - par: Pref conflict: Multi-locate on site.   Ignoring LOCATE COMP "SLICE_5" SITE "69" ;    Keeping LOCATE COMP "alarm" SITE "69" ; 
+Device utilization summary:
+
+   GSR                1/1           100% used
+   IOLOGIC            5/160           3% used
+   PIO (prelim)      20/140          14% used
+                     20/62           32% bonded
+   SLICE             50/1536          3% used
+
+
+
+Number of Signals: 119
+Number of Connections: 311
+
+Pin Constraint Summary:
+   20 out of 20 pins locked (100% locked).
+
+The following 1 signal is selected to use the primary clock routing resources:
+    clk_c (driver: clk, clk load #: 15)
+
+No signal is selected as DCS clock.
+
+No signal is selected as secondary clock.
+
+Signal rst_bar_c is selected as Global Set/Reset.
+Starting Placer Phase 0.
+
+Finished Placer Phase 0.  REAL time: 0 secs 
+
+Starting Placer Phase 1.
+.....................
+Placer score = 21002.
+Finished Placer Phase 1.  REAL time: 3 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  20941
+Finished Placer Phase 2.  REAL time: 3 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 1 out of 4 (25%)
+  PLL        : 0 out of 2 (0%)
+  DCS        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "clk_c" from comp "clk" on CLK_PIN site "93 (PT12A)", clk load = 15
+
+  PRIMARY  : 1 out of 4 (25%)
+     DCS   : 0 out of 2 (0%)
+  SECONDARY: 0 out of 4 (0%)
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   20 out of 140 (14.3%) PIO sites used.
+   20 out of 62 (32.3%) bonded PIO sites used.
+   Number of PIO comps: 20; differential: 0
+   Number of Vref pins used: 0
+
+I/O Bank Usage Summary:
++----------+---------------+------------+------------+------------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref1 | Bank Vref2 |
++----------+---------------+------------+------------+------------+
+| 0        | 5 / 8 ( 62%)  | 2.5V       | -          | -          |
+| 1        | 0 / 9 (  0%)  | -          | -          | -          |
+| 2        | 7 / 8 ( 87%)  | 2.5V       | -          | -          |
+| 3        | 5 / 6 ( 83%)  | -          | -          | -          |
+| 4        | 1 / 5 ( 20%)  | -          | -          | -          |
+| 5        | 1 / 12 (  8%) | -          | -          | -          |
+| 6        | 0 / 4 (  0%)  | -          | -          | -          |
+| 7        | 1 / 10 ( 10%) | -          | -          | -          |
++----------+---------------+------------+------------+------------+
+
+Total placer CPU time: 2 secs 
+
+Dumping design to file zheshen_zheshen.dir/5_1.ncd.
+
+0 connections routed; 311 unrouted.
+Starting router resource preassignment
+
+WARNING - par: The following clock signals will be routed by using generic routing resource and may suffer from excessive delay and/or skew.
+   Signal=un1_present_state_2_0_i loads=1 clock_loads=1
+   Signal=N_36 loads=2 clock_loads=2
+   Signal=N_34_i loads=3 clock_loads=3
+
+Completed router resource preassignment. Real time: 4 secs 
+Starting iterative routing.
+
+For each routing iteration the number inside the parenthesis is the
+total time (in picoseconds) the design is failing the timing constraints.
+For each routing iteration the router will attempt to reduce this number
+until the number of routing iterations is completed or the value is 0
+meaning the design has fully met the timing constraints.
+
+End of iteration 1
+311 successful; 0 unrouted; (0) real time: 4 secs 
+Dumping design to file zheshen_zheshen.dir/5_1.ncd.
+Total CPU time 3 secs 
+Total REAL time: 4 secs 
+Completely routed.
+End of route.  311 routed (100.00%); 0 unrouted.
+Checking DRC ... 
+No errors found.
+
+Timing score: 0 
+
+Dumping design to file zheshen_zheshen.dir/5_1.ncd.
+
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2011 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+bitgen -w "zheshen_zheshen.ncd" -f "zheshen_zheshen.t2b" "zheshen_zheshen.prf"
+
+
+BITGEN: Bitstream Generator Diamond_1.4_Production (87)
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2011 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file zheshen_zheshen.ncd.
+Design name: count_down_timer
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LFXP3C
+Package:     TQFP100
+Performance: 4
+Loading device for application Bitgen from file 'mg5g19x26.nph' in environment C:/lscc/diamond/1.4/ispfpga.
+Package Status:                     Final          Version 1.40
+Performance Hardware Data Status: Version 1.225
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from zheshen_zheshen.prf...
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                       ReadBack  |                        FLASH**  |
++---------------------------------+---------------------------------+
+|                    ReadCapture  |                      Disable**  |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                        CfgMode  |                      Disable**  |
++---------------------------------+---------------------------------+
+|                        DONE_EX  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                        DONE_OD  |                           ON**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                          2.5**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                    CONFIG_MODE  |                         JTAG**  |
++---------------------------------+---------------------------------+
+|                        WAKE_UP  |                           21**  |
++---------------------------------+---------------------------------+
+|                     PERSISTENT  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                             ES  |                           No**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+Saving bit stream in "zheshen_zheshen.bit".
+
+ispdfw -dev LFXP3C-XXT100 -if "zheshen_zheshen.bit" -oft -jed -of "zheshen_zheshen.jed"  -comment "zheshen_zheshen.alt"
+
+Device Info:
+Full name: LFXP3C
+Row Width: 1680
+Column Width: 558
+Usercode bit #: 32
+Processing BIT2JED...
+
+Input: zheshen_zheshen.bit
+Output: zheshen_zheshen.jed
+Overwriteues: 0
+Comment file: zheshen_zheshen.alt
+Lever: 0
++-------------+
+|   Succeed!  |
++-------------+

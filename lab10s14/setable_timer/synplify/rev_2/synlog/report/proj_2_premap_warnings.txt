@@ -1,0 +1,1 @@
+@W: MT529 :"h:\ese382\lab10s14\setable_timer\src\rotary_encoder_decoder_fsm.vhd":49:2:49:3|Found inferred clock count_down_timer|clk which controls 27 sequential elements including u0.present_state[0:3]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

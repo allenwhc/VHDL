@@ -1,0 +1,6 @@
+C:\Synopsys\fpga_E201103SP2\bin\c_vhdl.exe  -osyn "H:\ese382\lab10s14\c_timer\synplify\rev_2\synwork\zhe shen_compiler.srs"  -fixsmult -infer_seqShift -nram -divnmod -encrypt  -pro  -dmgen  H:\ese382\lab10s14\c_timer\synplify\rev_2\dm  -lite -ll 2000   -ui -fid2 -ram -sharing on -autosm -ignore_undefined_lib  -lib work H:\ese382\lab10s14\c_timer\src\seconds_counter.vhd -lib work H:\ese382\lab10s14\c_timer\src\timer.vhd -lib work H:\ese382\lab10s14\c_timer\src\c_timer.vhd -lib work H:\ese382\lab10s14\c_timer\src\minutes_counter.vhd -lib work H:\ese382\lab10s14\c_timer\src\rotary_encoder_decoder_fsm.vhd -loga  "H:\ese382\lab10s14\c_timer\synplify\rev_2\zhe shen.srr" 
+rc:0 success:1
+H:\ese382\lab10s14\c_timer\synplify\rev_2\dm|o|1398186665|0
+H:\ese382\lab10s14\c_timer\synplify\rev_2\zhe shen.srr|o|1398186755|198
+C:\Synopsys\fpga_E201103SP2\bin\c_vhdl.exe|i|1306337548|1724416
+C:\Synopsys\fpga_E201103SP2\bin64\c_vhdl.exe|i|1306337616|5360128

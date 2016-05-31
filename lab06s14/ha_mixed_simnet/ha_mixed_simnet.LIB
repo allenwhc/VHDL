@@ -1,0 +1,37 @@
+timestamp=1395755172395
+
+[ha_mixed]
+A/structure=21|./src/ha_mixed.vhq|95|1*59084
+BinI32/structure=3*15334
+I=0*3351
+I/structure=0*13390
+M=11|0|v98|1395755070782|./src/ha_mixed.vhq|0*1816*0x1d5bbc6b5337d11b290b3cfbf467e9d99788d671|0*3274*0xab32bc1a2daf049573e14469f634e0e6
+M/structure=21|0|v98|1395755172147|./src/ha_mixed.vhq|0*3569*0x8b98b0be4e7ff0f8a9fd86f1dd2ac6043e90a5b1|0*13300*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/ha_mixed.vhq|33
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/structure=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[ha_mixed_tb]
+A/behavior=21|./src/ha_test_tb.vhd|34|1*86888
+BinI32/behavior=3*22221
+I=0*353
+I/behavior=0*15129
+M=11|0|v98|1395755070719|./src/ha_test_tb.vhd|0*79*0x864483fe1fd8b76e717809dad1dca93a8544265e|0*271*0xab32bc1a2daf049573e14469f634e0e6
+M/behavior=21|0|v98|1395755172288|./src/ha_test_tb.vhd|0*14519*0x262e91c02aab160c3b086217ffaa22f354bd14d2|0*15035*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/ha_test_tb.vhd|29
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/behavior=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[~A]
+ModifyID=73
+Version=73
+
+[~MFT]
+0=19|0ha_mixed_simnet.mgf|15129|841
+1=9|1ha_mixed_simnet.mgf|86888|59084
+3=9|3ha_mixed_simnet.mgf|22221|15334
+
+[~U]
+ha_mixed=11|0*520|
+ha_mixed_tb=11|0*0|
+

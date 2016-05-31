@@ -1,0 +1,5 @@
+InFile:isp_task3.psl
+DBaseFile: C:\ispLEVER_Classic\ispcpld\lib5\devices\Lattice.tim
+Outfile: -o isp_task3.tim
+Partname:$PARTNAME LAT ISPGAL22LV10-10LJ GAL P22V10
+Size:42

@@ -1,0 +1,8 @@
+[COMPILESTATUS|.\src\john2bin.vhd]
+FileTimeLow=30363050
+Status=Compiled
+
+[COMPILESTATUS|.\src\j_tb.vhd]
+FileTimeLow=30362931
+Status=Compiled
+

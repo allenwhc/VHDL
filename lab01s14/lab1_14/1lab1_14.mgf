@@ -1,0 +1,73 @@
+V 000049 55 1096          1391527706434 dataflow
+(_unit VHDL (half_sub 0 28 (dataflow 0 39 ))
+	(_version v98)
+	(_time 1391527706435 2014.02.04 10:28:26)
+	(_source (\./src/half_sub.vhd\))
+	(_use (std(standard))(ieee(std_logic_1164)))
+	(_parameters dbg)
+	(_code 77737b76712070617071312c2570727175717f7176)
+	(_entity
+		(_time 1391527706419)
+		(_use (std(standard))(ieee(std_logic_1164)))
+	)
+	(_object
+		(_port (_internal a ~extieee.std_logic_1164.STD_LOGIC 0 30 (_entity (_in ))))
+		(_port (_internal b ~extieee.std_logic_1164.STD_LOGIC 0 31 (_entity (_in ))))
+		(_port (_internal borrow ~extieee.std_logic_1164.STD_LOGIC 0 32 (_entity (_out ))))
+		(_port (_internal diff ~extieee.std_logic_1164.STD_LOGIC 0 33 (_entity (_out ))))
+		(_process
+			(line__43(_architecture 0 0 43 (_assignment (_simple)(_target(3))(_sensitivity(0)(1)))))
+			(line__44(_architecture 1 0 44 (_assignment (_simple)(_target(2))(_sensitivity(0)(1)))))
+		)
+		(_subprogram
+			(_external resolved (ieee std_logic_1164 15))
+		)
+		(_type (_external ~extieee.std_logic_1164.STD_LOGIC (ieee std_logic_1164 STD_LOGIC)))
+	)
+	(_model . dataflow 2 -1
+	)
+)
+V 000049 55 1786          1391527706577 behavior
+(_unit VHDL (testbench 0 6 (behavior 0 9 ))
+	(_version v98)
+	(_time 1391527706578 2014.02.04 10:28:26)
+	(_source (\./src/half_sub_tb.vhd\))
+	(_use (std(standard))(ieee(std_logic_1164)))
+	(_parameters dbg)
+	(_code 04010502055253130300165e5002510207020c0300)
+	(_entity
+		(_time 1391527706575)
+		(_use (std(standard))(ieee(std_logic_1164)))
+	)
+	(_instantiation uut 0 16 (_entity . half_sub)
+		(_port
+			((a)(a_tb))
+			((b)(b_tb))
+			((borrow)(borrow_tb))
+			((diff)(diff_tb))
+		)
+	)
+	(_object
+		(_signal (_internal a_tb ~extieee.std_logic_1164.STD_LOGIC 0 12 (_architecture (_uni ))))
+		(_signal (_internal b_tb ~extieee.std_logic_1164.STD_LOGIC 0 12 (_architecture (_uni ))))
+		(_signal (_internal diff_tb ~extieee.std_logic_1164.STD_LOGIC 0 12 (_architecture (_uni ))))
+		(_signal (_internal borrow_tb ~extieee.std_logic_1164.STD_LOGIC 0 12 (_architecture (_uni ))))
+		(_constant (_internal period ~extSTD.STANDARD.TIME 0 21 (_process 0 ((ns 4626322717216342016)))))
+		(_process
+			(tb(_architecture 0 0 20 (_process (_wait_for)(_target(0)(1))(_monitor)(_read(2)(3)))))
+		)
+		(_subprogram
+			(_external resolved (ieee std_logic_1164 15))
+		)
+		(_type (_external ~extieee.std_logic_1164.STD_LOGIC (ieee std_logic_1164 STD_LOGIC)))
+		(_type (_external ~extSTD.STANDARD.TIME (std STANDARD TIME)))
+	)
+	(_static
+		(1953719668 1767990816 543450476 544370534 1970302569 1868767348 1852400237 1869182049 808460398 )
+		(1953719668 1767990816 543450476 544370534 1970302569 1868767348 1852400237 1869182049 825237614 )
+		(1953719668 1767990816 543450476 544370534 1970302569 1868767348 1852400237 1869182049 808525934 )
+		(1953719668 1767990816 543450476 544370534 1970302569 1868767348 1852400237 1869182049 825303150 )
+	)
+	(_model . behavior 1 -1
+	)
+)

@@ -1,0 +1,18 @@
+[General]
+CurrentVersion=103
+
+[COMPILESTATUS|.\src\flipflop.vhd]
+FileTimeLow=30364368
+Status=Compiled
+
+[COMPILESTATUS|.\src\TestBench\dff_en_TB.vhd]
+FileTimeLow=30364466
+Status=Compiled
+
+[COMPILESTATUS|.\src\TestBench\dff_en_TB_runtest.do]
+FileTimeLow=30364466
+Status=Modified
+
+[CACHEDOC|Aldec.Project.Generic.7|.\D flip_flop\D flip_flop.adf|]
+Path=
+

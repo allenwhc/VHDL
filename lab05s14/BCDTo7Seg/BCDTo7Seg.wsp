@@ -1,0 +1,11 @@
+[COMPILESTATUS|.\src\BCDTo7Seg.vhd]
+FileTimeLow=30358855
+Status=Compiled
+
+[COMPILESTATUS|.\src\BinaryToBCD_TB.vhd]
+FileTimeLow=30358850
+
+[COMPILESTATUS|.\src\BCDTo7Seg_TB.vhd]
+FileTimeLow=30358855
+Status=Compiled
+

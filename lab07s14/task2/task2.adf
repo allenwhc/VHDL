@@ -1,0 +1,69 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=task2
+
+[Library]
+task2=.\task2.LIB
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+FLOWTOOLS=NONE
+REFRESH_FLOW=1
+FAMILY=Lattice GAL
+IMPL_TOOL=
+SYNTH_TOOL=
+fileopenfolder=H:\ese382\download
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=1
+
+[$LibMap$]
+task2=.
+Active_lib=
+xilinxun=
+UnlinkedDesignLibrary=
+DESIGNS=
+
+[Folders]
+Name3=Makefiles
+Directory3=h:\ese382\lab07s14\task2\
+Extension3=mak
+Name4=Memory
+Directory4=h:\ese382\lab07s14\task2\src
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=h:\ese382\lab07s14\task2\
+Extension5=dll
+Name6=PDF
+Directory6=h:\ese382\lab07s14\task2\
+Extension6=pdf
+Name7=HTML
+Directory7=h:\ese382\lab07s14\task2\
+Extension7=
+
+[Files]
+/john2bin.vhd=-1
+/j_tb.vhd=-1
+
+[Files.Data]
+.\src\john2bin.vhd=VHDL Source Code
+.\src\j_tb.vhd=VHDL Source Code
+

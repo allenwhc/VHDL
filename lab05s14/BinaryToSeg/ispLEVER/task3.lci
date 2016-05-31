@@ -1,0 +1,116 @@
+
+[Device]
+Family = M4A5;
+PartNumber = M4A5-64/32-10JC;
+Package = 44PLCC;
+PartType = M4A5-64/32;
+Speed = -10;
+Operating_condition = COM;
+Status = Production;
+
+[Revision]
+Parent = m4a5.lci;
+DATE = 03/11/2014;
+TIME = 13:05:33;
+Synthesis = Synplify;
+Source_Format = EDIF;
+
+[Ignore Assignments]
+
+[Clear Assignments]
+
+[Backannotate Assignments]
+
+[Global Constraints]
+
+[Location Assignments]
+layer = OFF;
+binary_5_ = pin,2,-,-,-;
+seven_seg0_6_ = pin,8,-,-,-;
+seven_seg1_6_ = pin,30,-,-,-;
+binary_4_ = pin,3,-,-,-;
+binary_3_ = pin,4,-,-,-;
+binary_2_ = pin,5,-,-,-;
+binary_1_ = pin,6,-,-,-;
+binary_0_ = pin,7,-,-,-;
+seven_seg0_5_ = pin,37,-,-,-;
+seven_seg0_4_ = pin,39,-,-,-;
+seven_seg0_3_ = pin,43,-,-,-;
+seven_seg0_2_ = pin,24,-,-,-;
+seven_seg0_1_ = pin,9,-,-,-;
+seven_seg0_0_ = pin,41,-,-,-;
+seven_seg1_5_ = pin,17,-,-,-;
+seven_seg1_4_ = pin,26,-,-,-;
+seven_seg1_3_ = pin,21,-,-,-;
+seven_seg1_2_ = pin,15,-,-,-;
+seven_seg1_1_ = pin,19,-,-,-;
+seven_seg1_0_ = pin,42,-,-,-;
+
+[Group Assignments]
+layer = OFF;
+
+[Resource Reservations]
+layer = OFF;
+
+[Fitter Report Format]
+
+[Power]
+
+[Source Constraint Option]
+
+[Fast Bypass]
+
+[OSM Bypass]
+
+[Input Registers]
+
+[Netlist/Delay Format]
+
+[IO Types]
+layer = OFF;
+
+[Pullup]
+
+[Slewrate]
+
+[Region]
+
+[Timing Constraints]
+
+[HSI Attributes]
+
+[Input Delay]
+
+[Pin attributes list]
+
+[LOCATION ASSIGNMENTS LIST]
+
+[RESOURCE RESERVATIONS LIST]
+
+[Timing Analyzer]
+
+[global constraints list]
+
+[opt global constraints list]
+
+[Global Constraints Process Update]
+
+[Explorer Results]
+
+[Explorer User Settings]
+
+[VHDL synplify constraints]
+
+[VHDL spectrum constraints]
+
+[verilog synplify constraints]
+
+[verilog spectrum constraints]
+
+[VHDL synplify constraints list]
+
+[VHDL spectrum constraints list]
+
+[verilog synplify constraints list]
+
+[verilog spectrum constraints list]

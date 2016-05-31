@@ -1,0 +1,260 @@
+ ispLEVER Classic 7.0.00.10.16.07 Linked Equations File
+Copyright(C), 1992-2007, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design binarytoseg created  Tue Mar 11 13:41:55 2014
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+  15         10        1    Pin   seven_seg0_6_- 
+  10          7        1    Pin   seven_seg1_6_- 
+  15         10        1    Pin   seven_seg0_5_- 
+  12          9        1    Pin   seven_seg0_4_ 
+   3          4        1    Pin   seven_seg0_3_ 
+  13         10        1    Pin   seven_seg0_2_- 
+  15         10        1    Pin   seven_seg0_1_- 
+  15         10        1    Pin   seven_seg0_0_- 
+   7          7        1    Pin   seven_seg1_5_- 
+  13          7        1    Pin   seven_seg1_4_- 
+   7          7        1    Pin   seven_seg1_3_- 
+  11          7        1    PinX1  seven_seg1_2_.X1 
+   1          2        1    PinX2  seven_seg1_2_.X2 
+   7          7        1    Pin   seven_seg1_1_ 
+   8          7        1    Pin   seven_seg1_0_- 
+   3          4        1    Node  output_15_2__n 
+   6          6        1    NodeX1  output_1_.X1 
+   1          1        1    NodeX2  output_1_.X2 
+   4          4        1    Node  output_15_1__n 
+   6          6        1    NodeX1  G_131.X1 
+   1          1        1    NodeX2  G_131.X2 
+   5          4        1    NodeX1  output_2__n.X1 
+   1          2        1    NodeX2  output_2__n.X2 
+  12          7        1    Node  output_i_3__n 
+=========
+ 191                 P-Term Total: 191
+                       Total Pins: 20
+                      Total Nodes: 6
+            Average P-Term/Output: 7
+
+
+Equations:
+
+!seven_seg0_6_ = (output_1_
+     # binary_1_ & output_15_2__n
+     # binary_0_ & output_2__n
+     # !binary_0_ & !output_2__n
+     # !binary_5_ & !binary_4_ & binary_2_ & output_15_2__n
+     # !binary_4_ & binary_3_ & binary_2_ & output_15_2__n
+     # binary_5_ & binary_4_ & !binary_3_ & binary_2_ & output_15_2__n
+     # !binary_5_ & binary_4_ & binary_3_ & !binary_2_ & output_15_2__n
+     # binary_5_ & !binary_4_ & !binary_3_ & !binary_2_ & output_15_2__n
+     # !binary_5_ & binary_4_ & binary_2_ & !binary_1_ & output_15_1__n
+     # binary_4_ & binary_3_ & binary_2_ & !binary_1_ & output_15_1__n
+     # binary_5_ & binary_4_ & !binary_2_ & !binary_1_ & output_15_1__n
+     # !binary_4_ & binary_3_ & !binary_2_ & !binary_1_ & output_15_1__n
+     # !binary_5_ & !binary_3_ & !binary_2_ & !binary_1_ & output_15_1__n
+     # binary_5_ & !binary_4_ & !binary_3_ & binary_2_ & !binary_1_ & output_15_1__n);
+
+!seven_seg1_6_ = (!binary_5_ & binary_4_ & binary_3_
+     # binary_5_ & !binary_4_ & !binary_3_
+     # !binary_5_ & binary_4_ & binary_2_
+     # !binary_2_ & !binary_1_ & !output_15_2__n
+     # !binary_4_ & !output_15_2__n & !output_15_1__n
+     # !binary_3_ & !output_15_2__n & !output_15_1__n
+     # !binary_2_ & !output_15_2__n & !output_15_1__n
+     # !binary_4_ & binary_2_ & output_15_2__n & output_15_1__n
+     # !binary_3_ & binary_2_ & output_15_2__n & output_15_1__n
+     # !binary_2_ & binary_1_ & output_15_2__n & output_15_1__n);
+
+!seven_seg0_5_ = (!output_2__n
+     # binary_1_ & output_15_2__n
+     # binary_0_ & output_1_
+     # !binary_0_ & !output_1_
+     # !binary_5_ & !binary_4_ & binary_2_ & output_15_2__n
+     # !binary_4_ & binary_3_ & binary_2_ & output_15_2__n
+     # binary_5_ & binary_4_ & !binary_3_ & binary_2_ & output_15_2__n
+     # !binary_5_ & binary_4_ & binary_3_ & !binary_2_ & output_15_2__n
+     # binary_5_ & !binary_4_ & !binary_3_ & !binary_2_ & output_15_2__n
+     # !binary_5_ & binary_4_ & binary_2_ & !binary_1_ & output_15_1__n
+     # binary_4_ & binary_3_ & binary_2_ & !binary_1_ & output_15_1__n
+     # binary_5_ & binary_4_ & !binary_2_ & !binary_1_ & output_15_1__n
+     # !binary_4_ & binary_3_ & !binary_2_ & !binary_1_ & output_15_1__n
+     # !binary_5_ & !binary_3_ & !binary_2_ & !binary_1_ & output_15_1__n
+     # binary_5_ & !binary_4_ & !binary_3_ & binary_2_ & !binary_1_ & output_15_1__n);
+
+seven_seg0_4_ = (binary_1_ & !binary_0_ & !output_15_2__n & !output_15_1__n & !output_2__n
+     # !binary_5_ & !binary_4_ & binary_2_ & !binary_1_ & !binary_0_ & !output_15_2__n & output_15_1__n & !output_2__n
+     # !binary_4_ & binary_3_ & binary_2_ & !binary_1_ & !binary_0_ & !output_15_2__n & output_15_1__n & !output_2__n
+     # !binary_5_ & binary_4_ & !binary_3_ & !binary_1_ & !binary_0_ & output_15_2__n & !output_15_1__n & !output_2__n
+     # binary_4_ & binary_3_ & binary_2_ & !binary_1_ & !binary_0_ & output_15_2__n & !output_15_1__n & !output_2__n
+     # !binary_5_ & !binary_4_ & !binary_2_ & !binary_1_ & !binary_0_ & output_15_2__n & !output_15_1__n & !output_2__n
+     # binary_5_ & binary_3_ & !binary_2_ & !binary_1_ & !binary_0_ & output_15_2__n & !output_15_1__n & !output_2__n
+     # binary_4_ & !binary_3_ & !binary_2_ & !binary_1_ & !binary_0_ & output_15_2__n & !output_15_1__n & !output_2__n
+     # binary_5_ & binary_4_ & !binary_3_ & binary_2_ & !binary_1_ & !binary_0_ & !output_15_2__n & output_15_1__n & !output_2__n
+     # !binary_5_ & binary_4_ & binary_3_ & !binary_2_ & !binary_1_ & !binary_0_ & !output_15_2__n & output_15_1__n & !output_2__n
+     # binary_5_ & !binary_4_ & !binary_3_ & !binary_2_ & !binary_1_ & !binary_0_ & !output_15_2__n & output_15_1__n & !output_2__n
+     # binary_5_ & !binary_4_ & !binary_3_ & binary_2_ & !binary_1_ & !binary_0_ & output_15_2__n & !output_15_1__n & !output_2__n);
+
+seven_seg0_3_ = (binary_0_ & output_1_ & output_2__n & output_i_3__n
+     # !binary_0_ & !output_1_ & output_2__n & output_i_3__n
+     # binary_0_ & !output_1_ & !output_2__n & output_i_3__n);
+
+!seven_seg0_2_ = (!binary_0_ & !output_1_ & !output_2__n
+     # binary_1_ & !binary_0_ & !output_15_2__n & output_1_
+     # !binary_5_ & !binary_4_ & binary_2_ & !binary_0_ & !output_15_2__n & output_1_
+     # !binary_4_ & binary_3_ & binary_2_ & !binary_0_ & !output_15_2__n & output_1_
+     # binary_5_ & binary_4_ & !binary_3_ & binary_2_ & !binary_0_ & !output_15_2__n & output_1_
+     # !binary_5_ & binary_4_ & binary_3_ & !binary_2_ & !binary_0_ & !output_15_2__n & output_1_
+     # binary_5_ & !binary_4_ & !binary_3_ & !binary_2_ & !binary_0_ & !output_15_2__n & output_1_
+     # !binary_5_ & binary_4_ & binary_2_ & !binary_1_ & !binary_0_ & output_1_ & !output_15_1__n
+     # binary_4_ & binary_3_ & binary_2_ & !binary_1_ & !binary_0_ & output_1_ & !output_15_1__n
+     # binary_5_ & binary_4_ & !binary_2_ & !binary_1_ & !binary_0_ & output_1_ & !output_15_1__n
+     # !binary_4_ & binary_3_ & !binary_2_ & !binary_1_ & !binary_0_ & output_1_ & !output_15_1__n
+     # !binary_5_ & !binary_3_ & !binary_2_ & !binary_1_ & !binary_0_ & output_1_ & !output_15_1__n
+     # binary_5_ & !binary_4_ & !binary_3_ & binary_2_ & !binary_1_ & !binary_0_ & output_1_ & !output_15_1__n);
+
+!seven_seg0_1_ = (binary_1_ & output_15_2__n
+     # !binary_0_ & !output_1_
+     # !binary_0_ & output_2__n
+     # !output_1_ & output_2__n
+     # !binary_5_ & !binary_4_ & binary_2_ & output_15_2__n
+     # !binary_4_ & binary_3_ & binary_2_ & output_15_2__n
+     # binary_5_ & binary_4_ & !binary_3_ & binary_2_ & output_15_2__n
+     # !binary_5_ & binary_4_ & binary_3_ & !binary_2_ & output_15_2__n
+     # binary_5_ & !binary_4_ & !binary_3_ & !binary_2_ & output_15_2__n
+     # binary_5_ & binary_4_ & binary_3_ & !binary_1_ & output_15_1__n
+     # !binary_5_ & binary_4_ & binary_2_ & !binary_1_ & output_15_1__n
+     # !binary_5_ & !binary_4_ & !binary_2_ & !binary_1_ & output_15_1__n
+     # !binary_4_ & binary_3_ & !binary_2_ & !binary_1_ & output_15_1__n
+     # binary_4_ & !binary_3_ & !binary_2_ & !binary_1_ & output_15_1__n
+     # binary_5_ & !binary_4_ & !binary_3_ & binary_2_ & !binary_1_ & output_15_1__n);
+
+!seven_seg0_0_ = (binary_1_ & output_15_2__n
+     # !binary_0_ & output_1_
+     # !output_1_ & output_2__n
+     # output_1_ & !output_2__n
+     # !binary_5_ & !binary_4_ & binary_2_ & output_15_2__n
+     # !binary_4_ & binary_3_ & binary_2_ & output_15_2__n
+     # binary_5_ & binary_4_ & !binary_3_ & binary_2_ & output_15_2__n
+     # !binary_5_ & binary_4_ & binary_3_ & !binary_2_ & output_15_2__n
+     # binary_5_ & !binary_4_ & !binary_3_ & !binary_2_ & output_15_2__n
+     # binary_5_ & binary_4_ & binary_3_ & !binary_1_ & output_15_1__n
+     # !binary_5_ & binary_4_ & binary_2_ & !binary_1_ & output_15_1__n
+     # !binary_5_ & !binary_4_ & !binary_2_ & !binary_1_ & output_15_1__n
+     # !binary_4_ & binary_3_ & !binary_2_ & !binary_1_ & output_15_1__n
+     # binary_4_ & !binary_3_ & !binary_2_ & !binary_1_ & output_15_1__n
+     # binary_5_ & !binary_4_ & !binary_3_ & binary_2_ & !binary_1_ & output_15_1__n);
+
+!seven_seg1_5_ = (!binary_5_
+     # !binary_4_ & !binary_3_
+     # output_15_2__n & !output_15_1__n
+     # binary_4_ & binary_3_ & binary_2_
+     # !binary_2_ & !binary_1_ & output_15_2__n
+     # binary_2_ & !output_15_2__n & output_15_1__n
+     # binary_1_ & !output_15_2__n & output_15_1__n);
+
+!seven_seg1_4_ = (!binary_5_ & !binary_4_
+     # output_15_2__n & !output_15_1__n
+     # !binary_5_ & !binary_3_ & !binary_2_
+     # binary_1_ & !output_15_2__n & output_15_1__n
+     # binary_5_ & binary_4_ & binary_3_ & binary_2_
+     # !binary_5_ & binary_2_ & !binary_1_ & output_15_2__n
+     # !binary_5_ & !binary_2_ & !output_15_2__n & output_15_1__n
+     # !binary_4_ & !binary_3_ & binary_2_ & !binary_1_ & output_15_2__n
+     # binary_5_ & binary_4_ & !binary_2_ & !binary_1_ & output_15_2__n
+     # !binary_4_ & binary_3_ & !binary_2_ & !binary_1_ & output_15_2__n
+     # binary_5_ & binary_4_ & binary_2_ & !output_15_2__n & output_15_1__n
+     # !binary_4_ & binary_3_ & binary_2_ & !output_15_2__n & output_15_1__n
+     # !binary_4_ & !binary_3_ & !binary_2_ & !output_15_2__n & output_15_1__n);
+
+!seven_seg1_3_ = (!binary_5_ & binary_4_ & binary_3_
+     # binary_5_ & !binary_4_ & !binary_3_
+     # !binary_5_ & binary_4_ & binary_2_
+     # !binary_5_ & !output_15_2__n & !output_15_1__n
+     # !binary_5_ & !binary_2_ & !binary_1_ & !output_15_2__n
+     # !binary_5_ & binary_2_ & output_15_2__n & output_15_1__n
+     # !binary_5_ & binary_1_ & output_15_2__n & output_15_1__n);
+
+seven_seg1_2_.X1 = (!binary_2_ & binary_1_ & output_15_1__n
+     # binary_1_ & !output_15_2__n & output_15_1__n
+     # binary_2_ & output_15_2__n & !output_15_1__n
+     # binary_5_ & binary_4_ & binary_3_ & binary_2_
+     # !binary_5_ & binary_4_ & binary_2_ & !binary_1_ & output_15_2__n
+     # !binary_5_ & binary_4_ & binary_3_ & !binary_2_ & output_15_1__n
+     # binary_5_ & !binary_4_ & !binary_3_ & !binary_2_ & output_15_1__n
+     # binary_5_ & binary_4_ & binary_2_ & !output_15_2__n & output_15_1__n
+     # !binary_5_ & !binary_4_ & binary_2_ & !output_15_2__n & output_15_1__n
+     # !binary_4_ & binary_3_ & binary_2_ & !output_15_2__n & output_15_1__n
+     # binary_5_ & !binary_4_ & !binary_3_ & binary_2_ & !binary_1_ & output_15_2__n);
+
+seven_seg1_2_.X2 = (!binary_2_ & output_15_2__n);
+
+seven_seg1_1_ = (!binary_5_ & binary_4_ & binary_3_
+     # binary_5_ & !binary_4_ & !binary_3_
+     # !binary_5_ & binary_4_ & binary_2_
+     # !binary_5_ & output_15_2__n & !output_15_1__n
+     # !binary_5_ & !binary_2_ & !binary_1_ & output_15_2__n
+     # !binary_5_ & binary_2_ & !output_15_2__n & output_15_1__n
+     # !binary_5_ & binary_1_ & !output_15_2__n & output_15_1__n);
+
+!seven_seg1_0_ = (!binary_5_ & binary_4_ & binary_3_
+     # binary_5_ & !binary_4_ & !binary_3_
+     # !binary_5_ & binary_4_ & binary_2_
+     # binary_4_ & binary_3_ & binary_2_
+     # binary_5_ & output_15_2__n & !output_15_1__n
+     # binary_5_ & !binary_2_ & !binary_1_ & output_15_2__n
+     # binary_5_ & binary_2_ & !output_15_2__n & output_15_1__n
+     # binary_5_ & binary_1_ & !output_15_2__n & output_15_1__n);
+
+output_15_2__n = (binary_5_ & !binary_4_ & !binary_3_ & binary_2_
+     # binary_5_ & binary_4_ & binary_3_ & !binary_2_
+     # !binary_5_ & binary_4_ & !binary_3_ & !binary_2_);
+
+output_1_.X1 = (binary_1_ & !output_15_1__n
+     # !binary_5_ & !binary_4_ & binary_2_ & !binary_1_ & output_15_1__n
+     # !binary_4_ & binary_3_ & binary_2_ & !binary_1_ & output_15_1__n
+     # binary_5_ & binary_4_ & !binary_3_ & binary_2_ & !binary_1_ & output_15_1__n
+     # !binary_5_ & binary_4_ & binary_3_ & !binary_2_ & !binary_1_ & output_15_1__n
+     # binary_5_ & !binary_4_ & !binary_3_ & !binary_2_ & !binary_1_ & output_15_1__n);
+
+output_1_.X2 = (output_15_2__n);
+
+output_15_1__n = (!binary_5_ & !binary_4_ & binary_3_
+     # binary_5_ & binary_4_ & !binary_3_
+     # !binary_5_ & binary_3_ & binary_2_
+     # binary_5_ & !binary_3_ & !binary_2_);
+
+G_131.X1 = (binary_1_ & output_15_1__n
+     # !binary_5_ & !binary_4_ & binary_2_ & output_15_1__n
+     # !binary_4_ & binary_3_ & binary_2_ & output_15_1__n
+     # binary_5_ & binary_4_ & !binary_3_ & binary_2_ & output_15_1__n
+     # !binary_5_ & binary_4_ & binary_3_ & !binary_2_ & output_15_1__n
+     # binary_5_ & !binary_4_ & !binary_3_ & !binary_2_ & output_15_1__n);
+
+G_131.X2 = (output_15_2__n);
+
+output_2__n.X1 = (!binary_5_ & !binary_4_ & binary_2_
+     # !binary_4_ & binary_3_ & binary_2_
+     # binary_5_ & binary_4_ & !binary_3_ & binary_2_
+     # !binary_5_ & binary_4_ & binary_3_ & !binary_2_
+     # binary_5_ & !binary_4_ & !binary_3_ & !binary_2_);
+
+output_2__n.X2 = (!binary_1_ & G_131);
+
+output_i_3__n = (binary_1_ & !output_15_2__n
+     # !binary_5_ & !binary_4_ & binary_2_ & !output_15_2__n
+     # !binary_4_ & binary_3_ & binary_2_ & !output_15_2__n
+     # binary_5_ & binary_4_ & !binary_3_ & binary_2_ & !output_15_2__n
+     # !binary_5_ & binary_4_ & binary_3_ & !binary_2_ & !output_15_2__n
+     # binary_5_ & !binary_4_ & !binary_3_ & !binary_2_ & !output_15_2__n
+     # !binary_5_ & binary_4_ & !binary_3_ & !binary_1_ & !output_15_1__n
+     # binary_4_ & binary_3_ & binary_2_ & !binary_1_ & !output_15_1__n
+     # !binary_5_ & !binary_4_ & !binary_2_ & !binary_1_ & !output_15_1__n
+     # binary_5_ & binary_3_ & !binary_2_ & !binary_1_ & !output_15_1__n
+     # binary_4_ & !binary_3_ & !binary_2_ & !binary_1_ & !output_15_1__n
+     # binary_5_ & !binary_4_ & !binary_3_ & binary_2_ & !binary_1_ & !output_15_1__n);
+
+
+Reverse-Polarity Equations:
+

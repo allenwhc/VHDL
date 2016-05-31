@@ -1,0 +1,40 @@
+
+// Batch Timer Log File (Release Version: 7.0.00.10.16.07)
+
+//  Project = task3
+//  Family  = mach4a
+//  Device  = M4A5-64/32
+//  Speed   = -10
+//  Voltage = 5.0
+//  Operating Condition = COM
+//  Data sheet version  = RevD-8/2000
+
+//  Pass Bidirection = OFF
+//  Pass S/R = OFF
+//  Pass Latch = OFF
+//  Pass Clock = OFF
+//  Maximum Paths = 20
+//  T_SU Endpoints D/T inputs = ON
+//  T_SU Endpoints CE inputs = OFF
+//  T_SU Endpoints S/R inputs = OFF
+//  T_SU Endpoints RAM gated = ON
+//  Fmax of CE = ON
+//  Fmax of RAM = ON
+
+//  Location(From => To)
+//    Pin number: numeric number preceded by "p", BGA number as is
+//    Macrocell number: Segment#,GLB#,Macrocell#
+//                      Segment#: starts from 0 (if applicable)
+//                      GLB#: starts from A..Z, AA..ZZ
+//                      Macrocell#: starts from 0 to 31
+
+//  tPD critical path delay: 31.0 ns
+//    -     0.0                                    binary[2]                ==>  output_15_2__n
+//    -     7.0  tPDi                              output_15_2__n           ==>  output_15_2__n
+//    -     0.0                                    output_15_2__n           ==>  G_142.X2
+//    -     7.0  tPDi                              G_142.X2                 ==>  G_142
+//    -     0.0                                    G_142                    ==>  output_2__n.X2
+//    -     7.0  tPDi                              output_2__n.X2           ==>  output_2__n
+//    -     0.0                                    output_2__n              ==>  seven_seg0[0]
+//    -     7.0  tPDi                              seven_seg0[0]            ==>  seven_seg0[0]
+//    -     3.0  tBUF                              seven_seg0[0]            ==>  seven_seg0[0]

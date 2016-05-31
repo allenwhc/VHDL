@@ -1,0 +1,23 @@
+Resource Usage Report
+Part: lfxp3c-3
+
+Register bits: 28 of 3072 (1%)
+PIC Latch:       0
+I/O cells:       20
+
+Details:
+CCU2:           3
+FD1P3DX:        1
+FD1S3AX:        2
+FD1S3AY:        2
+FD1S3DX:        13
+FD1S3IX:        10
+GSR:            1
+IB:             9
+INV:            2
+OB:             11
+ORCALUT4:       97
+PFUMX:          2
+PUR:            1
+VHI:            7
+VLO:            6

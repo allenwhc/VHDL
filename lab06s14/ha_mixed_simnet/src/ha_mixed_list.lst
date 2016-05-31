@@ -1,0 +1,9 @@
+      fs delta /ha_mixed_tb/a_tb /ha_mixed_tb/b_tb /ha_mixed_tb/sum_tb /ha_mixed_tb/carry_out_tb 
+       0     0                 U                 U                   U                         U 
+       0     1                 0                 0                   U                         0 
+       0     2                 0                 0                   0                         0 
+20000000     1                 0                 1                   0                         0 
+20000000     2                 0                 1                   1                         0 
+40000000     1                 1                 0                   1                         0 
+60000000     1                 1                 1                   1                         0 
+60000000     2                 1                 1                   0                         1 

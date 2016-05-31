@@ -1,0 +1,74 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=set_time
+
+[Library]
+set_time=.\set_time.LIB
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+FLOWTOOLS=NONE
+REFRESH_FLOW=1
+FAMILY=Lattice XP
+IMPL_TOOL=
+SYNTH_TOOL=
+fileopenfolder=H:\Downloads\lab10
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=1
+
+[$LibMap$]
+set_time=.
+Active_lib=
+xilinxun=
+UnlinkedDesignLibrary=
+DESIGNS=
+
+[Files]
+/seconds_counter.vhd=-1
+/set_initial_value_TB.vhd=-1
+/minutes_counter.vhd=-1
+/rotary_encoder_decoder_fsm.vhd=-1
+/s_timer.vhd=-1
+
+[Files.Data]
+.\src\seconds_counter.vhd=VHDL Source Code
+.\src\set_initial_value_TB.vhd=VHDL Source Code
+.\src\minutes_counter.vhd=VHDL Source Code
+.\src\rotary_encoder_decoder_fsm.vhd=VHDL Source Code
+.\src\s_timer.vhd=VHDL Source Code
+
+[Folders]
+Name3=Makefiles
+Directory3=h:\ese382\lab10s14\set_time\
+Extension3=mak
+Name4=Memory
+Directory4=h:\ese382\lab10s14\set_time\src
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=h:\ese382\lab10s14\set_time\
+Extension5=dll
+Name6=PDF
+Directory6=h:\ese382\lab10s14\set_time\
+Extension6=pdf
+Name7=HTML
+Directory7=h:\ese382\lab10s14\set_time\
+Extension7=

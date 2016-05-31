@@ -1,0 +1,5 @@
+10
+~E 1 "./src/j_tb.vhd" 8 j_tb
+~A 1 "./src/j_tb.vhd" 11 tb_architecture
+~E 1 "./src/john2bin.vhd" 28 john2bin
+~A 1 "./src/john2bin.vhd" 41 dataflow

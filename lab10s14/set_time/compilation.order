@@ -1,0 +1,5 @@
+.\src\seconds_counter.vhd
+.\src\set_initial_value_TB.vhd
+.\src\minutes_counter.vhd
+.\src\rotary_encoder_decoder_fsm.vhd
+.\src\s_timer.vhd

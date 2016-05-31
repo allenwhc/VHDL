@@ -1,0 +1,171 @@
+--
+-- Written by Synplicity
+-- Product Version "E-201103-SP2"
+-- Program "Synplify Pro", Mapper "maprc, Build 507R"
+-- Tue Mar 25 09:32:46 2014
+--
+
+--
+-- Written by Synplify Pro version Build 507R
+-- Tue Mar 25 09:32:46 2014
+--
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity AND2 is
+port(
+  O :  out std_logic;
+  I0 :  in std_logic;
+  I1 :  in std_logic);
+end AND2;
+
+architecture beh of AND2 is
+  signal VCC : std_logic ;
+  signal GND : std_logic ;
+begin
+VCC <= '1';
+GND <= '0';
+O <= I0 and I1  after 100 ps;
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity IBUF is
+port(
+O :  out std_logic;
+I0 :  in std_logic);
+end IBUF;
+
+architecture beh of IBUF is
+signal VCC : std_logic ;
+signal GND : std_logic ;
+begin
+O <= I0;
+VCC <= '1';
+GND <= '0';
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity OBUF is
+port(
+O :  out std_logic;
+I0 :  in std_logic);
+end OBUF;
+
+architecture beh of OBUF is
+signal VCC : std_logic ;
+signal GND : std_logic ;
+begin
+O <= I0;
+VCC <= '1';
+GND <= '0';
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity XOR2 is
+port(
+O :  out std_logic;
+I0 :  in std_logic;
+I1 :  in std_logic);
+end XOR2;
+
+architecture beh of XOR2 is
+signal VCC : std_logic ;
+signal GND : std_logic ;
+begin
+VCC <= '1';
+GND <= '0';
+O <= I0 xor I1  after 100 ps;
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity ha_mixed is
+port(
+a :  in std_logic;
+b :  in std_logic;
+sum :  out std_logic;
+carry_out :  out std_logic);
+end ha_mixed;
+
+architecture beh of ha_mixed is
+signal A_C : std_logic ;
+signal B_C : std_logic ;
+signal SUM_C : std_logic ;
+signal CARRY_OUT_C : std_logic ;
+signal GND : std_logic ;
+signal VCC : std_logic ;
+component IBUF
+port(
+O :  out std_logic;
+I0 :  in std_logic  );
+end component;
+component OBUF
+port(
+O :  out std_logic;
+I0 :  in std_logic  );
+end component;
+component AND2
+port(
+O :  out std_logic;
+I0 :  in std_logic;
+I1 :  in std_logic  );
+end component;
+component XOR2
+port(
+O :  out std_logic;
+I0 :  in std_logic;
+I1 :  in std_logic  );
+end component;
+begin
+A_Z10: IBUF port map (
+O => A_C,
+I0 => a);
+B_Z11: IBUF port map (
+O => B_C,
+I0 => b);
+SUM_Z12: OBUF port map (
+O => sum,
+I0 => SUM_C);
+CARRY_OUT_Z13: OBUF port map (
+O => carry_out,
+I0 => CARRY_OUT_C);
+CARRY_OUTAND: AND2 port map (
+O => CARRY_OUT_C,
+I0 => A_C,
+I1 => B_C);
+SUMXOR: XOR2 port map (
+O => SUM_C,
+I0 => A_C,
+I1 => B_C);
+GND <= '0';
+VCC <= '1';
+end beh;
+

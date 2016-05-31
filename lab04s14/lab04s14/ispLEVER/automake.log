@@ -1,0 +1,51 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Updating: VHDL Post-Route Simulation Model
+Start to record tcl script...
+Finished recording TCL script.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\blif2eqn.exe converter_case.bl0 -o converter_case.btp -template "C:\ispLEVER_Classic\ispcpld/pld/j2mod.tft" -testfix -bus rebuild -prj case -err automake.err'
+
+BLIF2EQN  Open-ABEL Report Generator
+ispLEVER Classic 7.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\timsel.exe @case.psl'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\chipsim.exe "case._sp" "case.vtd" none'
+
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic\ispcpld\bin\j2svhdl.exe case.jed -dly custom case.tim max -pldbus default converter_case.btp -o case.vhq -module converter_case -suppress -err automake.err -gui'
+
+JED2VHDL  JEDEC to IEEE1076 VHDL Model Builder
+ispLEVER Classic 7.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+
+JEDEC file: 'case.jed'
+Device: 'P22V10GC'
+Module Name: converter_case
+Reading JEDEC Input File
+Extracting PLD Circuit Model
+BUS template file: 'converter_case.btp' 
+.
+Input file: case.tim
+Local timing delay file: 'case.tim' 
+Delay Model Selected :MAX
+Total FF type(s) used= 1
+VHDL pldmodel file    : 'case.vhq'
+
+JED2VHDL complete. Time: 1 second 
+Done: completed successfully.

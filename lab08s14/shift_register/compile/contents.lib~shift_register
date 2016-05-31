@@ -1,0 +1,6 @@
+21
+~E 1 "./src/right_shift_reg.vhd" 5 right_shift_reg
+~A 1 "./src/right_shift_reg.vhd" 16 behavior
+~E 1 "./src/TestBench/right_shift_reg_TB.vhd" 6 right_shift_reg_tb
+~A 1 "./src/TestBench/right_shift_reg_TB.vhd" 9 TB_ARCHITECTURE
+~C 1 "./src/TestBench/right_shift_reg_TB.vhd" 49 testbench_for_right_shift_reg

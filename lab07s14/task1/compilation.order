@@ -1,0 +1,5 @@
+.\src\selected.vhd
+.\src\conditional.vhd
+.\src\converter_tb.vhd
+.\src\cpos.vhd
+.\src\csop.vhd

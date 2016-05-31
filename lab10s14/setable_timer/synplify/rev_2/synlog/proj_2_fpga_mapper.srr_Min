@@ -1,0 +1,133 @@
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Tue Apr 29 14:29:01 2014
+#
+
+
+Top view:               count_down_timer
+Requested Frequency:    116.6 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 0.771
+
+                         Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock           Frequency     Frequency     Period        Period        Slack      Type         Group                
+------------------------------------------------------------------------------------------------------------------------------
+count_down_timer|clk     116.6 MHz     101.2 MHz     8.575         9.884         -1.309     inferred     Autoconstr_clkgroup_0
+==============================================================================================================================
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                      |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------------------------------
+Starting              Ending                |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------------------------------
+count_down_timer|clk  count_down_timer|clk  |  0.000       0.771  |  No paths    -      |  No paths    -      |  No paths    -    
+==================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: count_down_timer|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                              Starting                                                               Arrival          
+Instance                      Reference                Type        Pin     Net                       Time        Slack
+                              Clock                                                                                   
+----------------------------------------------------------------------------------------------------------------------
+u4.present_state[0]           count_down_timer|clk     FD1S3DX     Q       present_state[0]          0.944       0.771
+u5.present_state[0]           count_down_timer|clk     FD1S3IX     Q       present_state[0]          1.019       0.847
+u0.present_state_fast[0]      count_down_timer|clk     FD1S3IX     Q       present_state_fast[0]     1.086       0.914
+u0.present_state_fast[1]      count_down_timer|clk     FD1S3IX     Q       present_state_fast[1]     1.086       0.914
+u5.present_state[1]           count_down_timer|clk     FD1S3IX     Q       present_state[1]          1.128       0.956
+u2.present_state[0]           count_down_timer|clk     FD1S3IX     Q       present_state[0]          1.162       0.990
+u2.present_state[1]           count_down_timer|clk     FD1S3IX     Q       present_state[1]          1.162       0.990
+u5.present_state_fast[2]      count_down_timer|clk     FD1S3IX     Q       present_state_fast[2]     1.162       0.990
+u3.cnt_int\.min_counts[3]     count_down_timer|clk     FD1S3DX     Q       minutes_c[3]              1.204       1.032
+u0.present_state[0]           count_down_timer|clk     FD1S3IX     Q       present_state[0]          1.217       1.044
+======================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                             Starting                                                               Required          
+Instance                     Reference                Type        Pin     Net                       Time         Slack
+                             Clock                                                                                    
+----------------------------------------------------------------------------------------------------------------------
+u4.present_state[1]          count_down_timer|clk     FD1S3DX     D       N_21_i                    0.702        0.771
+u5.present_state[0]          count_down_timer|clk     FD1S3IX     D       present_statec_1_i        0.702        0.847
+u0.present_state_fast[0]     count_down_timer|clk     FD1S3IX     D       present_statec_fast       0.702        0.914
+u0.present_state_fast[1]     count_down_timer|clk     FD1S3IX     D       present_statec_0_fast     0.702        0.914
+u5.present_state[1]          count_down_timer|clk     FD1S3IX     D       present_statec_0_i        0.702        0.956
+u5.present_state[4]          count_down_timer|clk     FD1S3AX     D       N_488_0                   0.702        0.956
+u5.present_state_fast[4]     count_down_timer|clk     FD1S3AX     D       N_486_0                   0.702        0.956
+u2.present_state[0]          count_down_timer|clk     FD1S3IX     D       present_statec            0.702        0.990
+u2.present_state[1]          count_down_timer|clk     FD1S3IX     D       present_statec_0          0.702        0.990
+u5.present_state_fast[2]     count_down_timer|clk     FD1S3IX     D       present_statec_i_fast     0.702        0.990
+======================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        1.474
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             0.702
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     0.771
+
+    Number of logic level(s):                1
+    Starting point:                          u4.present_state[0] / Q
+    Ending point:                            u4.present_state[1] / D
+    The start point is clocked by            count_down_timer|clk [rising] on pin CK
+    The end   point is clocked by            count_down_timer|clk [rising] on pin CK
+
+Instance / Net                           Pin      Pin               Arrival     No. of    
+Name                        Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------
+u4.present_state[0]         FD1S3DX      Q        Out     0.944     0.944       -         
+present_state[0]            Net          -        -       -         -           1         
+u4.present_state_RNO[1]     ORCALUT4     B        In      0.000     0.944       -         
+u4.present_state_RNO[1]     ORCALUT4     Z        Out     0.530     1.474       -         
+N_21_i                      Net          -        -       -         -           1         
+u4.present_state[1]         FD1S3DX      D        In      0.000     1.474       -         
+==========================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+

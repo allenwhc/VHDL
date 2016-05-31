@@ -1,0 +1,5 @@
+22
+~E 1 "./../implement/ver1/rev1/isp_task3.vhq" 33 fuel_encoder
+~A 1 "./../implement/ver1/rev1/isp_task3.vhq" 95 structure
+~E 1 "./../src/fuel_tb.vhd" 8 fuel_tb
+~A 1 "./../src/fuel_tb.vhd" 11 tb_architecture

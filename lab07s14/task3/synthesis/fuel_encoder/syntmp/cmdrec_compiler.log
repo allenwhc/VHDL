@@ -1,0 +1,6 @@
+C:\Synopsys\fpga_E201103SP2\bin\c_vhdl.exe  -osyn H:\ese382\lab07s14\task3\synthesis\fuel_encoder\synwork\fuel_encoder_compiler.srs  -top task3.fuel_encoder  -dfltencoding sequential -encrypt  -pro  -dmgen  H:\ese382\lab07s14\task3\synthesis\fuel_encoder\dm  -lite -ll 2000   -ui -fid2 -ram -sharing on -autosm -ignore_undefined_lib  -lib task3 H:\ese382\lab07s14\task3\src\fuel_encoder.vhd -lib task3 H:\ese382\lab07s14\task3\src\fuel_tb.vhd -loga  H:\ese382\lab07s14\task3\synthesis\fuel_encoder\fuel_encoder.srr 
+rc:0 success:1
+H:\ese382\lab07s14\task3\synthesis\fuel_encoder\dm|o|0|0
+H:\ese382\lab07s14\task3\synthesis\fuel_encoder\fuel_encoder.srr|o|1396360238|205
+C:\Synopsys\fpga_E201103SP2\bin\c_vhdl.exe|i|1306337548|1724416
+C:\Synopsys\fpga_E201103SP2\bin64\c_vhdl.exe|i|1306337616|5360128

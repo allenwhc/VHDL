@@ -1,0 +1,222 @@
+
+
+                                                                      Page 1
+ispLEVER Classic 7.0.00.10.16.07  -  Device Utilization Chart         Tue Apr 01 09:51:36 2014
+
+
+
+--------------------------------------------------------------------------------
+
+Module                   : 'fuel_encoder'
+
+--------------------------------------------------------------------------------
+
+Input files:
+
+    ABEL PLA file        : isp_task3.tt3
+    Device library       : P22V10GC.dev
+
+Output files:
+
+    Report file          : isp_task3.rpt
+    Programmer load file : isp_task3.jed
+
+--------------------------------------------------------------------------------
+
+
+                                                                      Page 2
+ispLEVER Classic 7.0.00.10.16.07  -  Device Utilization Chart         Tue Apr 01 09:51:36 2014
+
+P22V10GC Programmed Logic:
+--------------------------------------------------------------------------------
+
+
+
+leds_3_     = !(  fuel_3_ & fuel_2_ );
+
+empty     = !(  !fuel_3_ & !fuel_2_ & !fuel_1_ );
+
+leds_2_     = (  !fuel_3_ );
+
+leds_1_     = (  !fuel_3_ & !fuel_2_ );
+
+leds_0_     = (0);
+
+
+
+                                                                      Page 3
+ispLEVER Classic 7.0.00.10.16.07  -  Device Utilization Chart         Tue Apr 01 09:51:36 2014
+
+P22V10GC Chip Diagram: (PLCC package)
+--------------------------------------------------------------------------------
+
+
+
+
+                                    P22V10GC
+
+                                f  f  f        l  l
+                                u  u  u        e  e
+                                e  e  e        d  d
+                                l  l  l        s  s
+                                _  _  _        _  _
+                                1  2  3        0  2
+                                _  _  _        _  _
+                              /----------------------
+                             /  4  3  2  1 28 27 26 |
+                             |                      |
+                             |  5                25 | !leds_3_                    
+                             |                      |
+                             |  6                24 |                             
+                             |                      |
+                             |  7                23 |                             
+                             |                      |
+                             |  8                22 |                             
+                             |                      |
+                             |  9                21 |                             
+                             |                      |
+                             | 10                20 |                             
+                             |                      |
+                             | 11                19 |                             
+                             |                      |
+                             | 12 13 14 15 16 17 18 |
+                             ------------------------
+                                               l  !
+                                               e  e
+                                               d  m
+                                               s  p
+                                               _  t
+                                               1  y
+                                               _   
+
+                        SIGNATURE: N/A
+
+
+                                                                      Page 4
+ispLEVER Classic 7.0.00.10.16.07  -  Device Utilization Chart         Tue Apr 01 09:51:36 2014
+
+P22V10GC Chip Diagram: (SSOP package)
+--------------------------------------------------------------------------------
+
+
+
+
+                                  P22V10GC
+
+                          ___________________________
+                         | ***                       |
+                         |                           |
+                         |  1                    28  | Vcc                     
+                         |                           |
+                 fuel_3_ |  2                    27  | leds_0_                 
+                         |                           |
+                 fuel_2_ |  3                    26  | leds_2_                 
+                         |                           |
+                 fuel_1_ |  4                    25  | !leds_3_                
+                         |                           |
+                         |  5                    24  |                         
+                         |                           |
+                         |  6                    23  |                         
+                         |                           |
+                         |  7                    22  |                         
+                         |                           |
+                         |  8                    21  |                         
+                         |                           |
+                         |  9                    20  |                         
+                         |                           |
+                         | 10                    19  |                         
+                         |                           |
+                         | 11                    18  | !empty                  
+                         |                           |
+                         | 12                    17  | leds_1_                 
+                         |                           |
+                         | 13                    16  |                         
+                         |                           |
+                     GND | 14                    15  |                         
+                         |                           |
+                         |                           |
+                         `---------------------------'
+
+                        SIGNATURE: N/A
+
+
+                                                                      Page 5
+ispLEVER Classic 7.0.00.10.16.07  -  Device Utilization Chart         Tue Apr 01 09:51:36 2014
+
+P22V10GC Resource Allocations:
+--------------------------------------------------------------------------------
+
+
+
+        Device        | Resource  |   Design    |
+       Resources      | Available | Requirement | Unused
+======================|===========|=============|==============
+                      |           |             |
+Input Pins:           |           |             |
+                      |           |             |
+          Input:      |     12    |      3      |    9 ( 75 %)
+                      |           |             |
+Output Pins:          |           |             |
+                      |           |             |
+          In/Out:     |     10    |      5      |    5 ( 50 %)
+          Output:     |      -    |      -      |    -
+                      |           |             |
+Buried Nodes:         |           |             |
+                      |           |             |
+          Input Reg:  |      -    |      -      |    -
+          Pin Reg:    |     10    |      0      |   10 (100 %)
+          Buried Reg: |      -    |      -      |    -
+
+
+                                                                      Page 6
+ispLEVER Classic 7.0.00.10.16.07  -  Device Utilization Chart         Tue Apr 01 09:51:36 2014
+
+P22V10GC Product Terms Distribution:
+--------------------------------------------------------------------------------
+
+
+
+            Signal                       |    Pin   | Terms | Terms | Terms
+             Name                        | Assigned | Used  |  Max  | Unused
+=========================================|==========|=======|=======|=======
+leds_3_                                  |   25     |   1   |  12   |  11
+empty                                    |   18     |   1   |  10   |   9
+leds_2_                                  |   26     |   1   |  10   |   9
+leds_1_                                  |   17     |   1   |   8   |   7
+leds_0_                                  |   27     |   0   |   8   |   8
+
+
+     ==== List of Inputs/Feedbacks ====
+
+Signal Name                              | Pin      | Pin Type
+=========================================|==========|=========
+fuel_3_                                  |    2     | CLK/IN
+fuel_2_                                  |    3     | INPUT
+fuel_1_                                  |    4     | INPUT
+
+
+                                                                      Page 7
+ispLEVER Classic 7.0.00.10.16.07  -  Device Utilization Chart         Tue Apr 01 09:51:36 2014
+
+P22V10GC Unused Resources:
+--------------------------------------------------------------------------------
+
+
+
+ Pin   |  Pin   |   Product   | Flip-flop
+Number |  Type  |   Terms     |   Type
+=======|========|=============|==========
+    5  |  INPUT |      -      |    -   
+    6  |  INPUT |      -      |    -   
+    7  |  INPUT |      -      |    -   
+    9  |  INPUT |      -      |    -   
+   10  |  INPUT |      -      |    -   
+   11  |  INPUT |      -      |    -   
+   12  |  INPUT |      -      |    -   
+   13  |  INPUT |      -      |    -   
+   16  |  INPUT |      -      |    -   
+   19  |  BIDIR | NORMAL 12   |    D
+   20  |  BIDIR | NORMAL 14   |    D
+   21  |  BIDIR | NORMAL 16   |    D
+   23  |  BIDIR | NORMAL 16   |    D
+   24  |  BIDIR | NORMAL 14   |    D

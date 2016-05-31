@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "GZ_GZ.log"
+-o "GZ_GZ.csv"
+-pr "GZ_GZ.prf"

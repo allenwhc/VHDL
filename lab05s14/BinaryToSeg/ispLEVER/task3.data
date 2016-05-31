@@ -1,0 +1,796 @@
+MODELDATA
+MODELDATA_VERSION "1.0";
+DESIGN "task3";
+DATE "Tue Mar 11 13:14:05 2014";
+VENDOR "Lattice Semiconductor Corporation";
+PROGRAM "STAMP Model Generator";
+
+/* port drive, max transition and max capacitance */
+PORTDATA
+binary_0: MAXTRANS(0.0);
+binary_1: MAXTRANS(0.0);
+binary_2: MAXTRANS(0.0);
+binary_3: MAXTRANS(0.0);
+binary_4: MAXTRANS(0.0);
+binary_5: MAXTRANS(0.0);
+seven_seg0_0: MAXTRANS(0.0);
+seven_seg0_1: MAXTRANS(0.0);
+seven_seg0_2: MAXTRANS(0.0);
+seven_seg0_3: MAXTRANS(0.0);
+seven_seg0_4: MAXTRANS(0.0);
+seven_seg0_5: MAXTRANS(0.0);
+seven_seg0_6: MAXTRANS(0.0);
+seven_seg1_0: MAXTRANS(0.0);
+seven_seg1_1: MAXTRANS(0.0);
+seven_seg1_2: MAXTRANS(0.0);
+seven_seg1_3: MAXTRANS(0.0);
+seven_seg1_4: MAXTRANS(0.0);
+seven_seg1_5: MAXTRANS(0.0);
+seven_seg1_6: MAXTRANS(0.0);
+ENDPORTDATA
+
+/* timing arc data */
+TIMINGDATA
+
+ARCDATA
+binary_2_seven_seg0_0_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_2_seven_seg0_1_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_2_seven_seg0_2_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_2_seven_seg0_3_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_2_seven_seg0_4_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_2_seven_seg0_5_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_2_seven_seg0_6_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_3_seven_seg0_0_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_3_seven_seg0_1_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_3_seven_seg0_2_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_3_seven_seg0_3_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_3_seven_seg0_4_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_3_seven_seg0_5_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_3_seven_seg0_6_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_4_seven_seg0_0_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_4_seven_seg0_1_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_4_seven_seg0_2_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_4_seven_seg0_3_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_4_seven_seg0_4_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_4_seven_seg0_5_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_4_seven_seg0_6_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_5_seven_seg0_0_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_5_seven_seg0_1_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_5_seven_seg0_2_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_5_seven_seg0_3_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_5_seven_seg0_4_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_5_seven_seg0_5_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_5_seven_seg0_6_delay:
+CELL_RISE(scalar) {
+VALUES(31.0);
+}
+CELL_FALL(scalar) {
+VALUES(31.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_1_seven_seg0_0_delay:
+CELL_RISE(scalar) {
+VALUES(24.0);
+}
+CELL_FALL(scalar) {
+VALUES(24.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_1_seven_seg0_1_delay:
+CELL_RISE(scalar) {
+VALUES(24.0);
+}
+CELL_FALL(scalar) {
+VALUES(24.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_1_seven_seg0_2_delay:
+CELL_RISE(scalar) {
+VALUES(24.0);
+}
+CELL_FALL(scalar) {
+VALUES(24.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_1_seven_seg0_3_delay:
+CELL_RISE(scalar) {
+VALUES(24.0);
+}
+CELL_FALL(scalar) {
+VALUES(24.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_1_seven_seg0_4_delay:
+CELL_RISE(scalar) {
+VALUES(24.0);
+}
+CELL_FALL(scalar) {
+VALUES(24.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_1_seven_seg0_5_delay:
+CELL_RISE(scalar) {
+VALUES(24.0);
+}
+CELL_FALL(scalar) {
+VALUES(24.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_1_seven_seg0_6_delay:
+CELL_RISE(scalar) {
+VALUES(24.0);
+}
+CELL_FALL(scalar) {
+VALUES(24.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_2_seven_seg1_0_delay:
+CELL_RISE(scalar) {
+VALUES(17.0);
+}
+CELL_FALL(scalar) {
+VALUES(17.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_2_seven_seg1_1_delay:
+CELL_RISE(scalar) {
+VALUES(17.0);
+}
+CELL_FALL(scalar) {
+VALUES(17.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_2_seven_seg1_2_delay:
+CELL_RISE(scalar) {
+VALUES(17.0);
+}
+CELL_FALL(scalar) {
+VALUES(17.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_2_seven_seg1_3_delay:
+CELL_RISE(scalar) {
+VALUES(17.0);
+}
+CELL_FALL(scalar) {
+VALUES(17.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_2_seven_seg1_4_delay:
+CELL_RISE(scalar) {
+VALUES(17.0);
+}
+CELL_FALL(scalar) {
+VALUES(17.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_2_seven_seg1_5_delay:
+CELL_RISE(scalar) {
+VALUES(17.0);
+}
+CELL_FALL(scalar) {
+VALUES(17.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_3_seven_seg1_0_delay:
+CELL_RISE(scalar) {
+VALUES(17.0);
+}
+CELL_FALL(scalar) {
+VALUES(17.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_3_seven_seg1_1_delay:
+CELL_RISE(scalar) {
+VALUES(17.0);
+}
+CELL_FALL(scalar) {
+VALUES(17.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_3_seven_seg1_2_delay:
+CELL_RISE(scalar) {
+VALUES(17.0);
+}
+CELL_FALL(scalar) {
+VALUES(17.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_3_seven_seg1_3_delay:
+CELL_RISE(scalar) {
+VALUES(17.0);
+}
+CELL_FALL(scalar) {
+VALUES(17.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_3_seven_seg1_4_delay:
+CELL_RISE(scalar) {
+VALUES(17.0);
+}
+CELL_FALL(scalar) {
+VALUES(17.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_3_seven_seg1_5_delay:
+CELL_RISE(scalar) {
+VALUES(17.0);
+}
+CELL_FALL(scalar) {
+VALUES(17.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_4_seven_seg1_0_delay:
+CELL_RISE(scalar) {
+VALUES(17.0);
+}
+CELL_FALL(scalar) {
+VALUES(17.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_4_seven_seg1_1_delay:
+CELL_RISE(scalar) {
+VALUES(17.0);
+}
+CELL_FALL(scalar) {
+VALUES(17.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_4_seven_seg1_2_delay:
+CELL_RISE(scalar) {
+VALUES(17.0);
+}
+CELL_FALL(scalar) {
+VALUES(17.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_4_seven_seg1_3_delay:
+CELL_RISE(scalar) {
+VALUES(17.0);
+}
+CELL_FALL(scalar) {
+VALUES(17.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_4_seven_seg1_4_delay:
+CELL_RISE(scalar) {
+VALUES(17.0);
+}
+CELL_FALL(scalar) {
+VALUES(17.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_4_seven_seg1_5_delay:
+CELL_RISE(scalar) {
+VALUES(17.0);
+}
+CELL_FALL(scalar) {
+VALUES(17.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_5_seven_seg1_0_delay:
+CELL_RISE(scalar) {
+VALUES(17.0);
+}
+CELL_FALL(scalar) {
+VALUES(17.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_5_seven_seg1_1_delay:
+CELL_RISE(scalar) {
+VALUES(17.0);
+}
+CELL_FALL(scalar) {
+VALUES(17.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_5_seven_seg1_2_delay:
+CELL_RISE(scalar) {
+VALUES(17.0);
+}
+CELL_FALL(scalar) {
+VALUES(17.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_5_seven_seg1_3_delay:
+CELL_RISE(scalar) {
+VALUES(17.0);
+}
+CELL_FALL(scalar) {
+VALUES(17.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_5_seven_seg1_4_delay:
+CELL_RISE(scalar) {
+VALUES(17.0);
+}
+CELL_FALL(scalar) {
+VALUES(17.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_5_seven_seg1_5_delay:
+CELL_RISE(scalar) {
+VALUES(17.0);
+}
+CELL_FALL(scalar) {
+VALUES(17.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_0_seven_seg0_0_delay:
+CELL_RISE(scalar) {
+VALUES(10.0);
+}
+CELL_FALL(scalar) {
+VALUES(10.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_0_seven_seg0_1_delay:
+CELL_RISE(scalar) {
+VALUES(10.0);
+}
+CELL_FALL(scalar) {
+VALUES(10.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_0_seven_seg0_2_delay:
+CELL_RISE(scalar) {
+VALUES(10.0);
+}
+CELL_FALL(scalar) {
+VALUES(10.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_0_seven_seg0_3_delay:
+CELL_RISE(scalar) {
+VALUES(10.0);
+}
+CELL_FALL(scalar) {
+VALUES(10.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_0_seven_seg0_4_delay:
+CELL_RISE(scalar) {
+VALUES(10.0);
+}
+CELL_FALL(scalar) {
+VALUES(10.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_0_seven_seg0_5_delay:
+CELL_RISE(scalar) {
+VALUES(10.0);
+}
+CELL_FALL(scalar) {
+VALUES(10.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_0_seven_seg0_6_delay:
+CELL_RISE(scalar) {
+VALUES(10.0);
+}
+CELL_FALL(scalar) {
+VALUES(10.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_1_seven_seg1_0_delay:
+CELL_RISE(scalar) {
+VALUES(10.0);
+}
+CELL_FALL(scalar) {
+VALUES(10.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_1_seven_seg1_1_delay:
+CELL_RISE(scalar) {
+VALUES(10.0);
+}
+CELL_FALL(scalar) {
+VALUES(10.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_1_seven_seg1_2_delay:
+CELL_RISE(scalar) {
+VALUES(10.0);
+}
+CELL_FALL(scalar) {
+VALUES(10.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_1_seven_seg1_3_delay:
+CELL_RISE(scalar) {
+VALUES(10.0);
+}
+CELL_FALL(scalar) {
+VALUES(10.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_1_seven_seg1_4_delay:
+CELL_RISE(scalar) {
+VALUES(10.0);
+}
+CELL_FALL(scalar) {
+VALUES(10.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_1_seven_seg1_5_delay:
+CELL_RISE(scalar) {
+VALUES(10.0);
+}
+CELL_FALL(scalar) {
+VALUES(10.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_2_seven_seg1_6_delay:
+CELL_RISE(scalar) {
+VALUES(10.0);
+}
+CELL_FALL(scalar) {
+VALUES(10.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_3_seven_seg1_6_delay:
+CELL_RISE(scalar) {
+VALUES(10.0);
+}
+CELL_FALL(scalar) {
+VALUES(10.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_4_seven_seg1_6_delay:
+CELL_RISE(scalar) {
+VALUES(10.0);
+}
+CELL_FALL(scalar) {
+VALUES(10.0);
+}
+ENDARCDATA
+
+ARCDATA
+binary_5_seven_seg1_6_delay:
+CELL_RISE(scalar) {
+VALUES(10.0);
+}
+CELL_FALL(scalar) {
+VALUES(10.0);
+}
+ENDARCDATA
+
+ENDTIMINGDATA
+ENDMODELDATA

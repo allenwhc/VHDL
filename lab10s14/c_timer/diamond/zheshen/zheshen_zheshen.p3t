@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "zheshen_zheshen.log"
+-o "zheshen_zheshen.csv"
+-pr "zheshen_zheshen.prf"

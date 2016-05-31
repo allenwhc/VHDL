@@ -1,0 +1,20 @@
+@N: CD630 :"H:\ese382\lab10s14\c_timer\src\timer.vhd":5:7:5:22|Synthesizing work.count_down_timer.dataflow 
+@N: CD233 :"H:\ese382\lab10s14\c_timer\src\timer.vhd":42:18:42:19|Using sequential encoding for type inhib_state
+@N: CD364 :"H:\ese382\lab10s14\c_timer\src\timer.vhd":96:5:96:14|Removed redundant assignment
+@N: CD364 :"H:\ese382\lab10s14\c_timer\src\timer.vhd":97:5:97:14|Removed redundant assignment
+@N: CD630 :"H:\ese382\lab10s14\c_timer\src\c_timer.vhd":5:7:5:20|Synthesizing work.settable_timer.dataflow 
+@N: CD630 :"H:\ese382\lab10s14\c_timer\src\rotary_encoder_decoder_fsm.vhd":28:7:28:32|Synthesizing work.rotary_encoder_decoder_fsm.behavioral 
+Post processing for work.rotary_encoder_decoder_fsm.behavioral
+@N: CD630 :"H:\ese382\lab10s14\c_timer\src\minutes_counter.vhd":29:7:29:21|Synthesizing work.minutes_counter.behavioral 
+Post processing for work.minutes_counter.behavioral
+@N: CD630 :"H:\ese382\lab10s14\c_timer\src\seconds_counter.vhd":10:7:10:21|Synthesizing work.seconds_counter.dataflow 
+Post processing for work.seconds_counter.dataflow
+Post processing for work.settable_timer.dataflow
+Post processing for work.count_down_timer.dataflow
+@W: CL117 :"H:\ese382\lab10s14\c_timer\src\timer.vhd":67:2:67:5|Latch generated from process for signal alarm, probably caused by a missing assignment in an if or case stmt
+@W: CL117 :"H:\ese382\lab10s14\c_timer\src\timer.vhd":67:2:67:5|Latch generated from process for signal inhib_output.sec_counts(5 downto 0), probably caused by a missing assignment in an if or case stmt
+@W: CL117 :"H:\ese382\lab10s14\c_timer\src\timer.vhd":67:2:67:5|Latch generated from process for signal inhib_output.min_counts(3 downto 0), probably caused by a missing assignment in an if or case stmt
+@W: CL113 :"H:\ese382\lab10s14\c_timer\src\timer.vhd":111:2:111:5|Feedback mux created for signal next_state[1:0].
+@W: CL190 :"H:\ese382\lab10s14\c_timer\src\timer.vhd":111:2:111:5|Optimizing register bit next_state(run) to a constant 0
+@W: CL169 :"H:\ese382\lab10s14\c_timer\src\timer.vhd":111:2:111:5|Pruning Register next_state(run)  
+@W: CL154 :"H:\ese382\lab10s14\c_timer\src\timer.vhd":111:2:111:5|Clock on register next_state is tied to a constant

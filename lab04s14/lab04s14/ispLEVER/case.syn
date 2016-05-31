@@ -1,0 +1,10 @@
+JDF B
+// Created by Version 7.0 
+PROJECT case
+DESIGN case Normal
+DEVKIT ispGAL22V10C-10LJ
+ENTRY EDIF
+MODULE ..\synplify\rev_1\task1.edf
+MODSTYLE converter_case Normal
+SYNTHESIS_TOOL Synplify
+TOPMODULE converter_case

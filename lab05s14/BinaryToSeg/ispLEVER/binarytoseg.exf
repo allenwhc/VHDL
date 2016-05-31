@@ -1,0 +1,261 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      binary(5:0)                   binary                  5          6            -1
+      Port          2      seven_seg0(6:0)               seven_seg0                  6          7            -1
+      Port          3      seven_seg1(6:0)               seven_seg1                  6          7            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      binary_5_                   binary[5]                       1            0            
+        Port      binary_4_                   binary[4]                       1            1            
+        Port      binary_3_                   binary[3]                       1            2            
+        Port      binary_2_                   binary[2]                       1            3            
+        Port      binary_1_                   binary[1]                       1            4            
+        Port      binary_0_                   binary[0]                       1            5            
+        Port      seven_seg0_6_               seven_seg0[6]                       2            0            
+        Port      seven_seg0_5_               seven_seg0[5]                       2            1            
+        Port      seven_seg0_4_               seven_seg0[4]                       2            2            
+        Port      seven_seg0_3_               seven_seg0[3]                       2            3            
+        Port      seven_seg0_2_               seven_seg0[2]                       2            4            
+        Port      seven_seg0_1_               seven_seg0[1]                       2            5            
+        Port      seven_seg0_0_               seven_seg0[0]                       2            6            
+        Port      seven_seg1_6_               seven_seg1[6]                       3            0            
+        Port      seven_seg1_5_               seven_seg1[5]                       3            1            
+        Port      seven_seg1_4_               seven_seg1[4]                       3            2            
+        Port      seven_seg1_3_               seven_seg1[3]                       3            3            
+        Port      seven_seg1_2_               seven_seg1[2]                       3            4            
+        Port      seven_seg1_1_               seven_seg1[1]                       3            5            
+        Port      seven_seg1_0_               seven_seg1[0]                       3            6            
+End
+Section Cross Reference File
+Design 'BinaryToSeg' created Tue Mar 11 13:41:55 2014
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst              binary_0_                                 binary[0]
+   Inst              binary_1_                                 binary[1]
+   Inst              binary_2_                                 binary[2]
+   Inst              binary_3_                                 binary[3]
+   Inst              binary_4_                                 binary[4]
+   Inst              binary_5_                                 binary[5]
+   Inst          seven_seg0_0_                             seven_seg0[0]
+   Inst          seven_seg0_1_                             seven_seg0[1]
+   Inst          seven_seg0_2_                             seven_seg0[2]
+   Inst          seven_seg0_3_                             seven_seg0[3]
+   Inst          seven_seg0_4_                             seven_seg0[4]
+   Inst          seven_seg0_5_                             seven_seg0[5]
+   Inst          seven_seg0_6_                             seven_seg0[6]
+   Inst          seven_seg1_0_                             seven_seg1[0]
+   Inst          seven_seg1_1_                             seven_seg1[1]
+   Inst          seven_seg1_2_                             seven_seg1[2]
+   Inst          seven_seg1_3_                             seven_seg1[3]
+   Inst          seven_seg1_4_                             seven_seg1[4]
+   Inst          seven_seg1_5_                             seven_seg1[5]
+   Inst          seven_seg1_6_                             seven_seg1[6]
+   Inst            output_1_1_                               output_1[1]
+   Inst              output_1_                                 output[1]
+   Inst         output_15_1_0_                            output_15_1[0]
+   Inst           output_15_0_                              output_15[0]
+   Inst          binary_c_i_4_                             binary_c_i[4]
+   Inst   seven_seg1_1_i_a3_1_2_                    seven_seg1_1_i_a3_1[2]
+   Inst   seven_seg1_1_i_a3_2_                      seven_seg1_1_i_a3[2]
+   Inst   seven_seg0_1_i_a4_1_2_                    seven_seg0_1_i_a4_1[2]
+   Inst   seven_seg0_1_i_a4_2_                      seven_seg0_1_i_a4[2]
+   Inst    seven_seg0_1_i_1_2_                       seven_seg0_1_i_1[2]
+   Inst    seven_seg0_1_i_2_2_                       seven_seg0_1_i_2[2]
+   Inst      seven_seg0_1_i_2_                         seven_seg0_1_i[2]
+   Inst    seven_seg0_1_i_1_3_                       seven_seg0_1_i_1[3]
+   Inst      seven_seg0_1_i_3_                         seven_seg0_1_i[3]
+   Inst    seven_seg1_1_0_i_3_                       seven_seg1_1_0_i[3]
+   Inst    seven_seg1_1_0_i_0_                       seven_seg1_1_0_i[0]
+   Inst        un20_temp1_i_3_                           un20_temp1_i[3]
+   Inst         output_15_i_0_                            output_15_i[0]
+   Inst          binary_c_i_1_                             binary_c_i[1]
+   Inst         output_10_i_0_                            output_10_i[0]
+   Inst          binary_c_i_2_                             binary_c_i[2]
+   Inst          binary_c_i_3_                             binary_c_i[3]
+   Inst   seven_seg0_1_0_o4_i_0_                    seven_seg0_1_0_o4_i[0]
+   Inst    seven_seg0_1_0_i_0_                       seven_seg0_1_0_i[0]
+   Inst    seven_seg0_1_0_i_6_                       seven_seg0_1_0_i[6]
+   Inst   convert_seven_seg17_i                     convert.seven_seg17_i
+   Inst   seven_seg1_1_i_o2_i_2_                    seven_seg1_1_i_o2_i[2]
+   Inst   convert_seven_seg013_i                    convert.seven_seg013_i
+   Inst            output_i_3_                               output_i[3]
+   Inst            output_i_2_                               output_i[2]
+   Inst            output_i_1_                               output_i[1]
+   Inst   seven_seg0_1_i_a4_1_3_                    seven_seg0_1_i_a4_1[3]
+   Inst   seven_seg0_1_0_a3_5_                      seven_seg0_1_0_a3[5]
+   Inst   seven_seg0_1_0_a3_6_                      seven_seg0_1_0_a3[6]
+   Inst   seven_seg0_1_0_a3_0_6_                    seven_seg0_1_0_a3_0[6]
+   Inst      seven_seg0_1_0_6_                         seven_seg0_1_0[6]
+   Inst   seven_seg0_1_i_a4_1_                      seven_seg0_1_i_a4[1]
+   Inst   seven_seg0_1_i_a4_0_3_                    seven_seg0_1_i_a4_0[3]
+   Inst      seven_seg0_1_0_0_                         seven_seg0_1_0[0]
+   Inst      seven_seg0_1_i_1_                         seven_seg0_1_i[1]
+   Inst   seven_seg0_1_0_o4_0_                      seven_seg0_1_0_o4[0]
+   Inst            binary_i_0_                               binary_i[0]
+   Inst   convert_seven_seg013_1                    convert.seven_seg013_1
+   Inst      seven_seg1_1_0_0_                         seven_seg1_1_0[0]
+   Inst      seven_seg1_1_i_1_                         seven_seg1_1_i[1]
+   Inst      seven_seg1_1_i_2_                         seven_seg1_1_i[2]
+   Inst      seven_seg1_1_0_3_                         seven_seg1_1_0[3]
+   Inst   seven_seg1_1_i_o2_2_                      seven_seg1_1_i_o2[2]
+   Inst         un4_temp1_i_3_                            un4_temp1_i[3]
+   Inst           output_10_0_                              output_10[0]
+   Inst    convert_seven_seg17                       convert.seven_seg17
+   Inst       un4_temp1_i_i_1_                          un4_temp1_i_i[1]
+   Inst         output_10_1__r                            output_10_1_.r
+   Inst         output_10_1__m                            output_10_1_.m
+   Inst         output_10_1__n                            output_10_1_.n
+   Inst         output_10_1__p                            output_10_1_.p
+   Inst           output_10_2_                              output_10[2]
+   Inst      un12_temp1_i_i_1_                         un12_temp1_i_i[1]
+   Inst         output_15_1__r                            output_15_1_.r
+   Inst         output_15_1__m                            output_15_1_.m
+   Inst         output_15_1__n                            output_15_1_.n
+   Inst         output_15_1__p                            output_15_1_.p
+   Inst         output_15_2__r                            output_15_2_.r
+   Inst         output_15_2__m                            output_15_2_.m
+   Inst         output_15_2__n                            output_15_2_.n
+   Inst         output_15_2__p                            output_15_2_.p
+   Inst      un20_temp1_i_i_1_                         un20_temp1_i_i[1]
+   Inst            output_2__r                               output_2_.r
+   Inst            output_2__m                               output_2_.m
+   Inst            output_2__n                               output_2_.n
+   Inst            output_2__p                               output_2_.p
+   Inst            output_3__r                               output_3_.r
+   Inst            output_3__m                               output_3_.m
+   Inst            output_3__n                               output_3_.n
+   Inst            output_3__p                               output_3_.p
+   Inst   seven_seg1_1_i_a3_6_                      seven_seg1_1_i_a3[6]
+   Inst      seven_seg1_1_i_6_                         seven_seg1_1_i[6]
+   Inst        un12_temp1_i_3_                           un12_temp1_i[3]
+   Inst   seven_seg1_1_0_a2_3_                      seven_seg1_1_0_a2[3]
+   Net    convert_seven_seg013_n                      convert.seven_seg013
+   Net    convert_seven_seg17_n                       convert.seven_seg17
+   Net          un4_temp1_3__n                              un4_temp1[3]
+   Net          output_10_2__n                              output_10[2]
+   Net         un12_temp1_3__n                             un12_temp1[3]
+   Net          output_15_0__n                              output_15[0]
+   Net          output_15_2__n                              output_15[2]
+   Net             output_1__n                                 output[1]
+   Net       seven_seg0_1_6__n                           seven_seg0_1[6]
+   Net       seven_seg0_1_5__n                           seven_seg0_1[5]
+   Net       seven_seg0_1_0__n                           seven_seg0_1[0]
+   Net       seven_seg1_1_0__n                           seven_seg1_1[0]
+   Net       seven_seg1_1_3__n                           seven_seg1_1[3]
+   Net       seven_seg1_1_4__n                           seven_seg1_1[4]
+   Net       un12_temp1_i_1__n                           un12_temp1_i[1]
+   Net       un20_temp1_i_1__n                           un20_temp1_i[1]
+   Net          output_10_0__n                              output_10[0]
+   Net          output_10_1__n                              output_10[1]
+   Net          output_15_1__n                              output_15[1]
+   Net         un20_temp1_3__n                             un20_temp1[3]
+   Net          convert_un30_n                              convert.un30
+   Net          convert_un31_n                              convert.un31
+   Net         un12_temp1_2__n                             un12_temp1[2]
+   Net         un20_temp1_2__n                             un20_temp1[2]
+   Net        un4_temp1_i_1__n                            un4_temp1_i[1]
+   Net             output_2__n                                 output[2]
+   Net             output_3__n                                 output[3]
+   Net         convert_un1_i_n                             convert.un1_i
+   Net          convert_un37_n                              convert.un37
+   Net          convert_un40_n                              convert.un40
+   Net          convert_un38_n                              convert.un38
+   Net        convert_un38_1_n                            convert.un38_1
+   Net         binary_i_0_0__n                             binary_i_0[0]
+   Net        un4_temp1_i_3__n                            un4_temp1_i[3]
+   Net     un12_temp1_i_0_3__n                         un12_temp1_i_0[3]
+   Net     un20_temp1_i_i_1__n                         un20_temp1_i_i[1]
+   Net     un12_temp1_i_i_1__n                         un12_temp1_i_i[1]
+   Net      un4_temp1_i_i_1__n                          un4_temp1_i_i[1]
+   Net           binary_c_0__n                               binary_c[0]
+   Net             binary_0__n                                 binary[0]
+   Net           binary_c_1__n                               binary_c[1]
+   Net             binary_1__n                                 binary[1]
+   Net           binary_c_2__n                               binary_c[2]
+   Net             binary_2__n                                 binary[2]
+   Net           binary_c_3__n                               binary_c[3]
+   Net             binary_3__n                                 binary[3]
+   Net           binary_c_4__n                               binary_c[4]
+   Net             binary_4__n                                 binary[4]
+   Net           binary_c_5__n                               binary_c[5]
+   Net         seven_seg0_0__n                             seven_seg0[0]
+   Net         seven_seg0_1__n                             seven_seg0[1]
+   Net         seven_seg0_2__n                             seven_seg0[2]
+   Net         seven_seg0_3__n                             seven_seg0[3]
+   Net         seven_seg0_4__n                             seven_seg0[4]
+   Net         seven_seg0_5__n                             seven_seg0[5]
+   Net         seven_seg1_0__n                             seven_seg1[0]
+   Net         seven_seg1_1__n                             seven_seg1[1]
+   Net         seven_seg1_2__n                             seven_seg1[2]
+   Net         seven_seg1_3__n                             seven_seg1[3]
+   Net         seven_seg1_4__n                             seven_seg1[4]
+   Net         seven_seg1_5__n                             seven_seg1[5]
+   Net    convert_seven_seg013_i_n                    convert.seven_seg013_i
+   Net           output_i_3__n                               output_i[3]
+   Net        convert_un38_i_n                            convert.un38_i
+   Net           output_i_2__n                               output_i[2]
+   Net           output_i_1__n                               output_i[1]
+   Net      convert_un38_1_i_n                          convert.un38_1_i
+   Net     seven_seg0_1_0_0__n                         seven_seg0_1_0[0]
+   Net     seven_seg0_1_0_6__n                         seven_seg0_1_0[6]
+   Net        convert_un40_i_n                            convert.un40_i
+   Net        convert_un37_i_n                            convert.un37_i
+   Net        convert_un42_i_n                            convert.un42_i
+   Net       convert_un1_i_i_n                           convert.un1_i_i
+   Net    convert_seven_seg17_i_n                     convert.seven_seg17_i
+   Net     seven_seg1_1_0_4__n                         seven_seg1_1_0[4]
+   Net     seven_seg1_1_0_3__n                         seven_seg1_1_0[3]
+   Net     seven_seg1_1_0_0__n                         seven_seg1_1_0[0]
+   Net        convert_un31_i_n                            convert.un31_i
+   Net        convert_un30_i_n                            convert.un30_i
+   Net       un20_temp1_i_3__n                           un20_temp1_i[3]
+   Net        output_15_i_0__n                            output_15_i[0]
+   Net         binary_c_i_1__n                             binary_c_i[1]
+   Net        output_10_i_0__n                            output_10_i[0]
+   Net         binary_c_i_2__n                             binary_c_i[2]
+   Net         binary_c_i_3__n                             binary_c_i[3]
+   Net         binary_c_i_4__n                             binary_c_i[4]
+   Net     un20_temp1_i_1_1__n                         un20_temp1_i_1[1]
+   Net           output_1_1__n                               output_1[1]
+   Net     un12_temp1_i_1_1__n                         un12_temp1_i_1[1]
+   Net        output_15_1_0__n                            output_15_1[0]
+   Net      output_10_1__un3_n                          output_10_1_.un3
+   Net      output_10_1__un1_n                          output_10_1_.un1
+   Net      output_10_1__un0_n                          output_10_1_.un0
+   Net      output_15_1__un3_n                          output_15_1_.un3
+   Net      output_15_1__un1_n                          output_15_1_.un1
+   Net      output_15_1__un0_n                          output_15_1_.un0
+   Net      output_15_2__un3_n                          output_15_2_.un3
+   Net      output_15_2__un1_n                          output_15_2_.un1
+   Net      output_15_2__un0_n                          output_15_2_.un0
+   Net         output_2__un3_n                             output_2_.un3
+   Net         output_2__un1_n                             output_2_.un1
+   Net         output_2__un0_n                             output_2_.un0
+   Net         output_3__un3_n                             output_3_.un3
+   Net         output_3__un1_n                             output_3_.un1
+   Net         output_3__un0_n                             output_3_.un0
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     binary_5_
+        Input     binary_4_
+        Input     binary_3_
+        Input     binary_2_
+        Input     binary_1_
+        Input     binary_0_
+        Output     seven_seg0_6_
+        Output     seven_seg1_6_
+        Output     seven_seg0_5_
+        Output     seven_seg0_4_
+        Output     seven_seg0_3_
+        Output     seven_seg0_2_
+        Output     seven_seg0_1_
+        Output     seven_seg0_0_
+        Output     seven_seg1_5_
+        Output     seven_seg1_4_
+        Output     seven_seg1_3_
+        Output     seven_seg1_2_
+        Output     seven_seg1_1_
+        Output     seven_seg1_0_
+End

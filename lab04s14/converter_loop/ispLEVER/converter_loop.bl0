@@ -1,0 +1,76 @@
+#$ DATE Thu Mar 06 12:21:26 2014
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE converter_loop
+#$ PINS 8 p:3'ke'  q:4'ke'  r:5'ke'  s:6'ke'  a:24'ke'  b:25'ke'  c:26'ke'  d:27'ke' 
+#$ NODES 24 loopy_0_output_5_2__n loopy_0_output_5_3__n input_2_2__n loopy_0_op_lt_output14_n N_7 N_22 N_25 input_2_i_3__n N_28 N_28_i \
+#  input_2_i_i_3__n loopy_0_op_lt_output14_i_n p_i a_i r_i p_c q_c r_c a_c N_22_i \
+#  N_25_0 loopy_0_output_5_2__un3_n loopy_0_output_5_2__un1_n loopy_0_output_5_2__un0_n 
+.model converter_loop
+.inputs p.BLIF q.BLIF r.BLIF s.BLIF loopy_0_output_5_2__n.BLIF loopy_0_output_5_3__n.BLIF input_2_2__n.BLIF loopy_0_op_lt_output14_n.BLIF N_7.BLIF \
+  N_22.BLIF N_25.BLIF input_2_i_3__n.BLIF N_28.BLIF N_28_i.BLIF input_2_i_i_3__n.BLIF loopy_0_op_lt_output14_i_n.BLIF p_i.BLIF a_i.BLIF \
+  r_i.BLIF p_c.BLIF q_c.BLIF r_c.BLIF a_c.BLIF N_22_i.BLIF N_25_0.BLIF loopy_0_output_5_2__un3_n.BLIF loopy_0_output_5_2__un1_n.BLIF \
+  loopy_0_output_5_2__un0_n.BLIF  
+.outputs a b c d loopy_0_output_5_2__n loopy_0_output_5_3__n input_2_2__n loopy_0_op_lt_output14_n N_7 N_22 N_25 \
+  input_2_i_3__n N_28 N_28_i input_2_i_i_3__n loopy_0_op_lt_output14_i_n p_i a_i r_i p_c q_c r_c \
+  a_c N_22_i N_25_0 loopy_0_output_5_2__un3_n loopy_0_output_5_2__un1_n loopy_0_output_5_2__un0_n
+.names  p.BLIF p_c
+1 1
+.names  q.BLIF q_c
+1 1
+.names  r.BLIF r_c
+1 1
+.names  s.BLIF a_c
+1 1
+.names  a_c.BLIF a
+1 1
+.names  N_28_i.BLIF b
+1 1
+.names  loopy_0_output_5_2__n.BLIF c
+1 1
+.names  loopy_0_output_5_3__n.BLIF d
+1 1
+.names  N_22.BLIF N_22_i
+0 1
+.names  N_25_0.BLIF N_25
+0 1
+.names  q_c.BLIF r_c.BLIF N_7
+11 1
+.names  a_c.BLIF a_i
+0 1
+.names  r_c.BLIF r_i
+0 1
+.names  a_i.BLIF r_i.BLIF N_22
+11 1
+.names  N_22_i.BLIF q_c.BLIF N_25_0
+11 1
+.names  p_c.BLIF p_i
+0 1
+.names  N_25.BLIF p_i.BLIF loopy_0_op_lt_output14_n
+11 1
+.names  q_c.BLIF r_c.BLIF input_2_2__n
+01 1
+10 1
+.names  N_7.BLIF p_c.BLIF input_2_i_3__n
+01 1
+10 1
+.names  loopy_0_op_lt_output14_n.BLIF loopy_0_output_5_2__un3_n
+0 1
+.names  q_c.BLIF loopy_0_op_lt_output14_n.BLIF loopy_0_output_5_2__un1_n
+11 1
+.names  input_2_2__n.BLIF loopy_0_output_5_2__un3_n.BLIF loopy_0_output_5_2__un0_n
+11 1
+.names  loopy_0_output_5_2__un1_n.BLIF loopy_0_output_5_2__un0_n.BLIF loopy_0_output_5_2__n
+1- 1
+-1 1
+.names  input_2_i_3__n.BLIF input_2_i_i_3__n
+0 1
+.names  loopy_0_op_lt_output14_n.BLIF loopy_0_op_lt_output14_i_n
+0 1
+.names  input_2_i_i_3__n.BLIF loopy_0_op_lt_output14_i_n.BLIF loopy_0_output_5_3__n
+11 1
+.names  loopy_0_op_lt_output14_n.BLIF r_c.BLIF N_28
+01 1
+10 1
+.names  N_28.BLIF N_28_i
+0 1
+.end

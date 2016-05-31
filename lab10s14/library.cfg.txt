@@ -1,0 +1,3 @@
+$include = "$VSIMSALIBRARYCFG"
+c_timer = "./c_timer/c_timer.LIB" 1398171026344
+set_time = "./set_time/set_time.LIB" 1398171442825

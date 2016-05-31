@@ -1,0 +1,10 @@
+"h:\ese382\lab10s14\setable_timer\src\minutes_counter.vhd" VHDL setable_timer 1 0 0 -02
+"h:\ese382\lab10s14\setable_timer\src\seconds_counter.vhd" VHDL setable_timer 1 0 0 -02
+"h:\ese382\lab10s14\setable_timer\src\rotary_encoder_decoder_fsm.vhd" VHDL setable_timer 1 0 0 -02
+"h:\ese382\lab10s14\setable_timer\src\settable_timer.vhd" VHDL setable_timer 1 0 0 -02
+"h:\ese382\lab10s14\setable_timer\src\fsm.vhd" VHDL setable_timer 1 0 0 -02
+"h:\ese382\lab10s14\setable_timer\src\pedgefsm.vhd" VHDL setable_timer 1 0 0 -02
+"h:\ese382\lab10s14\setable_timer\src\count_down_timer.vhd" VHDL setable_timer 1 0 0 -02
+"h:\ese382\lab10s14\setable_timer\src\rotary_encoder_decoder_fsm_TB.vhd" VHDL setable_timer 1 0 0 -02
+"h:\ese382\lab10s14\setable_timer\src\count_down_timer_TB.vhd" VHDL setable_timer 1 0 0 -02
+. . 0 0 0

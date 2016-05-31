@@ -1,0 +1,5 @@
+88
+~E 1 "./src/BinaryToBCD.vhd" 29 BinaryToBCD
+~A 1 "./src/BinaryToBCD.vhd" 43 BinaryToBCD
+~E 1 "./src/BinaryToBCD_TB.vhd" 8 converter_2421_bcd_tb
+~A 1 "./src/BinaryToBCD_TB.vhd" 9 tb_architecture

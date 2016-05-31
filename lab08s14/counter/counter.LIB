@@ -1,0 +1,45 @@
+timestamp=1396965306000
+
+[counter]
+A/behavior=21|./src/counter.vhd|15|1*3708
+BinI32/behavior=3*0
+I=0*608
+I/behavior=0*1320
+M=11|0|v98|1396961577383|./src/counter.vhd|0*221*0xa533fc2938c38c14bef901163f5d1d455aa37ad6|0*533*0xab32bc1a2daf049573e14469f634e0e6
+M/behavior=21|0|v98|1396965305817|./src/counter.vhd|0*771*0xfcf6438a3020f959133d266305597abe4cf92834|0*1233*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/counter.vhd|5
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/behavior=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[counter_tb]
+A/tb_architecture=A/TB_ARCHITECTURE 21|./src/TestBench/counter_TB.vhd|10|1*5562
+I=0*1858
+I/tb_architecture=I/TB_ARCHITECTURE 0*2704
+M=11|0|v98|1396965305953|./src/TestBench/counter_TB.vhd|0*1568*0x4b1c3bc536f2326b17acb3449dd106eadc65f10d|0*1767*0xab32bc1a2daf049573e14469f634e0e6
+M/tb_architecture=M/TB_ARCHITECTURE 21|0|v98|1396965305969|./src/TestBench/counter_TB.vhd|0*2024*0x8dd6a5b0e73aca3599990a5a3bda54e200668e00|0*2594*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/TestBench/counter_TB.vhd|7
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+Version/tb_architecture=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[testbench_for_counter]
+Configures=counter_tb.TB_ARCHITECTURE
+E=1*7815
+I=0*3329
+M=2|0|v98|1396965305973|./src/TestBench/counter_TB.vhd|0*2940*0x117669ac6ff75db3471f6ea3d47217d209cebbaf|0*3214*0x9883a4debb77c3d3c4860cd1e2edf83c
+R=./src/TestBench/counter_TB.vhd|47
+Version=9.1.2353.4205  (Windows)|00000004789cd34d494a0700030f015b
+
+[~A]
+ModifyID=21
+Version=73
+
+[~MFT]
+0=16|0counter.mgf|3329|0
+1=6|1counter.mgf|7815|3708
+3=0|3counter.mgf|0|0
+
+[~U]
+counter=11|0*0|
+counter_tb=11|0*1492|
+testbench_for_counter=TESTBENCH_FOR_counter 2||
+

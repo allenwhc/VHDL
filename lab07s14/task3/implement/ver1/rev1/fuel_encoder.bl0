@@ -1,0 +1,47 @@
+#$ DATE Tue Apr 01 09:51:34 2014
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE fuel_encoder
+#$ PINS 9 fuel_3_ leds_3_ empty fuel_2_ fuel_1_ fuel_0_ leds_2_ leds_1_ leds_0_
+#$ NODES 13 gnd_n_n leds6 un3_empty N_4 fuel_i_3__n un3_empty_i fuel_i_2__n fuel_i_1__n fuel_c_1__n fuel_c_2__n \
+#  fuel_c_3__n N_4_0 fuel_0__n 
+.model fuel_encoder
+.inputs fuel_3_.BLIF fuel_2_.BLIF fuel_1_.BLIF fuel_0_.BLIF gnd_n_n.BLIF leds6.BLIF un3_empty.BLIF N_4.BLIF fuel_i_3__n.BLIF \
+  un3_empty_i.BLIF fuel_i_2__n.BLIF fuel_i_1__n.BLIF fuel_c_1__n.BLIF fuel_c_2__n.BLIF fuel_c_3__n.BLIF N_4_0.BLIF fuel_0__n.BLIF  
+.outputs leds_3_ empty leds_2_ leds_1_ leds_0_ gnd_n_n leds6 un3_empty N_4 fuel_i_3__n un3_empty_i \
+  fuel_i_2__n fuel_i_1__n fuel_c_1__n fuel_c_2__n fuel_c_3__n N_4_0 fuel_0__n
+.names  fuel_1_.BLIF fuel_c_1__n
+1 1
+.names  fuel_2_.BLIF fuel_c_2__n
+1 1
+.names  fuel_3_.BLIF fuel_c_3__n
+1 1
+.names  un3_empty_i.BLIF empty
+1 1
+.names  gnd_n_n.BLIF leds_0_
+1 1
+.names  leds6.BLIF leds_1_
+1 1
+.names  fuel_i_3__n.BLIF leds_2_
+1 1
+.names  N_4.BLIF leds_3_
+1 1
+.names  N_4_0.BLIF N_4
+0 1
+.names  fuel_c_1__n.BLIF fuel_i_1__n
+0 1
+.names  fuel_i_1__n.BLIF leds6.BLIF un3_empty
+11 1
+.names  fuel_i_2__n.BLIF fuel_i_3__n.BLIF leds6
+11 1
+.names  fuel_c_2__n.BLIF fuel_i_2__n
+0 1
+.names  fuel_c_2__n.BLIF fuel_c_3__n.BLIF N_4_0
+11 1
+.names  fuel_c_3__n.BLIF fuel_i_3__n
+0 1
+.names  un3_empty.BLIF un3_empty_i
+0 1
+.names  gnd_n_n
+.names  fuel_0_.BLIF fuel_0__n
+1 1
+.end

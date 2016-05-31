@@ -1,0 +1,9 @@
+C:\Synopsys\fpga_E201103SP2\bin\m_cpld.exe  -prodtype synplify_pro -encrypt  -pro  -part ispGAL22V10C  -package LJ  -grade -10   -areadelay 0 -minc      -oedif  "H:\ese382\project file\lab02bs14\rev_1\lab02bs14.edf"  -freq 1.000  "H:\ese382\project file\lab02bs14\rev_1\lab02bs14.srs"  -devicelib  C:\Synopsys\fpga_E201103SP2\lib\cpld\lattice.v  -ologparam  "H:\ese382\project file\lab02bs14\rev_1\syntmp\lab02bs14.plg"  -osyn  "H:\ese382\project file\lab02bs14\rev_1\lab02bs14.srm"  -prjdir "H:\ese382\project file\lab02bs14\"  -log  "H:\ese382\project file\lab02bs14\rev_1\synlog\lab02bs14_ispGAL_Mapper.srr" 
+rc:0 success:1
+H:\ese382\project file\lab02bs14\rev_1\lab02bs14.edf|o|1392731544|4178
+H:\ese382\project file\lab02bs14\rev_1\lab02bs14.srs|i|1392731542|2006
+C:\Synopsys\fpga_E201103SP2\lib\cpld\lattice.v|i|1304986162|210380
+"H:\ese382\project file\lab02bs14\rev_1\syntmp\lab02bs14.plg"|o|0|0
+H:\ese382\project file\lab02bs14\rev_1\lab02bs14.srm|o|1392731544|2252
+H:\ese382\project file\lab02bs14\rev_1\synlog\lab02bs14_ispGAL_Mapper.srr|o|1392731544|904
+C:\Synopsys\fpga_E201103SP2\bin\m_cpld.exe|i|1305645716|8888320

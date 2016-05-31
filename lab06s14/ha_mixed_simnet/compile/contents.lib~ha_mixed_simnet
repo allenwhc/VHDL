@@ -1,0 +1,5 @@
+73
+~E 1 "./src/ha_mixed.vhq" 33 ha_mixed
+~A 1 "./src/ha_mixed.vhq" 95 structure
+~E 1 "./src/ha_test_tb.vhd" 29 ha_mixed_tb
+~A 1 "./src/ha_test_tb.vhd" 34 behavior

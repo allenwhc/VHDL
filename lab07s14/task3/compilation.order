@@ -1,0 +1,5 @@
+.\src\fuel_encoder.vhd
+.\src\fuel_tb.vhd
+.\synthesis\fuel_encoder\fuel_encoder.edf
+.\synthesis\fuel_encoder\fuel_encoder.vhm
+.\implement\ver1\rev1\isp_task3.vhq

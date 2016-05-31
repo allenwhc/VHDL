@@ -1,0 +1,208 @@
+#PLAFILE seq.tt4
+#DATE    2002
+#DESIGN  <no design name>
+#DEVICE  mach463a
+
+DATA LOCATION RN_serial_out:B_0	// NOD {serial_out}
+DATA LOCATION clk:*_*_11	// Cin
+DATA LOCATION d_0_:B_*_15	// INP
+DATA LOCATION d_1_:A_*_9	// INP
+DATA LOCATION d_2_:A_*_8	// INP
+DATA LOCATION d_3_:A_*_7	// INP
+DATA LOCATION d_4_:A_*_6	// INP
+DATA LOCATION d_5_:A_*_5	// INP
+DATA LOCATION d_6_:A_*_4	// INP
+DATA LOCATION d_7_:A_*_3	// INP
+DATA LOCATION load:A_*_2	// INP
+DATA LOCATION rst_bar:*_*_33	// INP
+DATA LOCATION sample_clk:C_0_26	// OUT
+DATA LOCATION send:B_*_14	// INP
+DATA LOCATION serial_out:B_0_19	//  IO {RN_serial_out}
+DATA LOCATION u0_q1_1_:B_2	// NOD
+DATA LOCATION u0_q1_2_:B_13	// NOD
+DATA LOCATION u0_q1_3_:B_9	// NOD
+DATA LOCATION u0_q1_4_:B_5	// NOD
+DATA LOCATION u0_q1_5_:B_1	// NOD
+DATA LOCATION u0_q1_6_:B_12	// NOD
+DATA LOCATION u0_q1_7_:B_6	// NOD
+DATA LOCATION u1_cnt_int_count_0_:A_0	// NOD
+DATA LOCATION u1_cnt_int_count_10_:C_6	// NOD
+DATA LOCATION u1_cnt_int_count_11_:C_2	// NOD
+DATA LOCATION u1_cnt_int_count_12_:D_13	// NOD
+DATA LOCATION u1_cnt_int_count_13_:C_13	// NOD
+DATA LOCATION u1_cnt_int_count_14_:C_7	// NOD
+DATA LOCATION u1_cnt_int_count_15_:D_6	// NOD
+DATA LOCATION u1_cnt_int_count_16_:D_2	// NOD
+DATA LOCATION u1_cnt_int_count_17_:A_9	// NOD
+DATA LOCATION u1_cnt_int_count_18_:A_11	// NOD
+DATA LOCATION u1_cnt_int_count_19_:A_7	// NOD
+DATA LOCATION u1_cnt_int_count_1_:C_8	// NOD
+DATA LOCATION u1_cnt_int_count_20_:D_9	// NOD
+DATA LOCATION u1_cnt_int_count_21_:A_3	// NOD
+DATA LOCATION u1_cnt_int_count_22_:D_5	// NOD
+DATA LOCATION u1_cnt_int_count_23_:D_1	// NOD
+DATA LOCATION u1_cnt_int_count_24_:A_14	// NOD
+DATA LOCATION u1_cnt_int_count_25_:D_12	// NOD
+DATA LOCATION u1_cnt_int_count_26_:A_10	// NOD
+DATA LOCATION u1_cnt_int_count_27_:A_6	// NOD
+DATA LOCATION u1_cnt_int_count_28_:A_2	// NOD
+DATA LOCATION u1_cnt_int_count_29_:A_13	// NOD
+DATA LOCATION u1_cnt_int_count_2_:A_12	// NOD
+DATA LOCATION u1_cnt_int_count_30_:C_9	// NOD
+DATA LOCATION u1_cnt_int_count_31_:C_5	// NOD
+DATA LOCATION u1_cnt_int_count_3_:C_12	// NOD
+DATA LOCATION u1_cnt_int_count_4_:A_8	// NOD
+DATA LOCATION u1_cnt_int_count_5_:A_4	// NOD
+DATA LOCATION u1_cnt_int_count_6_:A_1	// NOD
+DATA LOCATION u1_cnt_int_count_7_:C_1	// NOD
+DATA LOCATION u1_cnt_int_count_8_:C_14	// NOD
+DATA LOCATION u1_cnt_int_count_9_:C_10	// NOD
+DATA LOCATION u1_cnt_int_un5_count_26_n:A_15	// NOD
+DATA LOCATION u1_cnt_int_un5_count_27_n:D_0	// NOD
+DATA LOCATION u1_cnt_int_un5_count_28_n:C_3	// NOD
+DATA LOCATION u1_n_109_n:D_4	// NOD
+DATA LOCATION u1_n_58_n:B_8	// NOD
+DATA LOCATION u1_n_85_n:D_8	// NOD
+DATA LOCATION u1_q_3_:A_5	// NOD
+DATA LOCATION u2_q:B_4	// NOD
+DATA LOCATION valid:C_4_24	// OUT
+DATA IO_DIR   clk:IN
+DATA IO_DIR   d_0_:IN
+DATA IO_DIR   d_1_:IN
+DATA IO_DIR   d_2_:IN
+DATA IO_DIR   d_3_:IN
+DATA IO_DIR   d_4_:IN
+DATA IO_DIR   d_5_:IN
+DATA IO_DIR   d_6_:IN
+DATA IO_DIR   d_7_:IN
+DATA IO_DIR   load:IN
+DATA IO_DIR   rst_bar:IN
+DATA IO_DIR   sample_clk:OUT
+DATA IO_DIR   send:IN
+DATA IO_DIR   serial_out:OUT
+DATA IO_DIR   valid:OUT
+DATA GLB_CLOCK  clk
+DATA PW_LEVEL  d_7_:0
+DATA SLEW      d_7_:0
+DATA PW_LEVEL  load:0
+DATA SLEW      load:0
+DATA PW_LEVEL  send:0
+DATA SLEW      send:0
+DATA SLEW      clk:0
+DATA SLEW      rst_bar:0
+DATA PW_LEVEL  valid:0
+DATA SLEW      valid:0
+DATA PW_LEVEL  sample_clk:0
+DATA SLEW      sample_clk:0
+DATA PW_LEVEL  d_6_:0
+DATA SLEW      d_6_:0
+DATA PW_LEVEL  d_5_:0
+DATA SLEW      d_5_:0
+DATA PW_LEVEL  d_4_:0
+DATA SLEW      d_4_:0
+DATA PW_LEVEL  d_3_:0
+DATA SLEW      d_3_:0
+DATA PW_LEVEL  d_2_:0
+DATA SLEW      d_2_:0
+DATA PW_LEVEL  d_1_:0
+DATA SLEW      d_1_:0
+DATA PW_LEVEL  d_0_:0
+DATA SLEW      d_0_:0
+DATA PW_LEVEL  serial_out:0
+DATA SLEW      serial_out:0
+DATA PW_LEVEL  u2_q:0
+DATA SLEW      u2_q:0
+DATA PW_LEVEL  u1_q_3_:0
+DATA SLEW      u1_q_3_:0
+DATA PW_LEVEL  u1_cnt_int_count_0_:0
+DATA SLEW      u1_cnt_int_count_0_:0
+DATA PW_LEVEL  u1_cnt_int_un5_count_26_n:0
+DATA SLEW      u1_cnt_int_un5_count_26_n:0
+DATA PW_LEVEL  u1_cnt_int_un5_count_27_n:0
+DATA SLEW      u1_cnt_int_un5_count_27_n:0
+DATA PW_LEVEL  u1_cnt_int_un5_count_28_n:0
+DATA SLEW      u1_cnt_int_un5_count_28_n:0
+DATA PW_LEVEL  u1_cnt_int_count_1_:0
+DATA SLEW      u1_cnt_int_count_1_:0
+DATA PW_LEVEL  u1_cnt_int_count_2_:0
+DATA SLEW      u1_cnt_int_count_2_:0
+DATA PW_LEVEL  u1_cnt_int_count_3_:0
+DATA SLEW      u1_cnt_int_count_3_:0
+DATA PW_LEVEL  u1_cnt_int_count_4_:0
+DATA SLEW      u1_cnt_int_count_4_:0
+DATA PW_LEVEL  u1_cnt_int_count_5_:0
+DATA SLEW      u1_cnt_int_count_5_:0
+DATA PW_LEVEL  u1_cnt_int_count_6_:0
+DATA SLEW      u1_cnt_int_count_6_:0
+DATA PW_LEVEL  u1_cnt_int_count_7_:0
+DATA SLEW      u1_cnt_int_count_7_:0
+DATA PW_LEVEL  u1_cnt_int_count_8_:0
+DATA SLEW      u1_cnt_int_count_8_:0
+DATA PW_LEVEL  u1_cnt_int_count_9_:0
+DATA SLEW      u1_cnt_int_count_9_:0
+DATA PW_LEVEL  u1_cnt_int_count_10_:0
+DATA SLEW      u1_cnt_int_count_10_:0
+DATA PW_LEVEL  u1_cnt_int_count_11_:0
+DATA SLEW      u1_cnt_int_count_11_:0
+DATA PW_LEVEL  u1_cnt_int_count_12_:0
+DATA SLEW      u1_cnt_int_count_12_:0
+DATA PW_LEVEL  u1_cnt_int_count_13_:0
+DATA SLEW      u1_cnt_int_count_13_:0
+DATA PW_LEVEL  u1_cnt_int_count_14_:0
+DATA SLEW      u1_cnt_int_count_14_:0
+DATA PW_LEVEL  u1_cnt_int_count_15_:0
+DATA SLEW      u1_cnt_int_count_15_:0
+DATA PW_LEVEL  u1_cnt_int_count_16_:0
+DATA SLEW      u1_cnt_int_count_16_:0
+DATA PW_LEVEL  u1_cnt_int_count_17_:0
+DATA SLEW      u1_cnt_int_count_17_:0
+DATA PW_LEVEL  u1_cnt_int_count_18_:0
+DATA SLEW      u1_cnt_int_count_18_:0
+DATA PW_LEVEL  u1_cnt_int_count_19_:0
+DATA SLEW      u1_cnt_int_count_19_:0
+DATA PW_LEVEL  u1_cnt_int_count_20_:0
+DATA SLEW      u1_cnt_int_count_20_:0
+DATA PW_LEVEL  u1_cnt_int_count_21_:0
+DATA SLEW      u1_cnt_int_count_21_:0
+DATA PW_LEVEL  u1_cnt_int_count_22_:0
+DATA SLEW      u1_cnt_int_count_22_:0
+DATA PW_LEVEL  u1_cnt_int_count_23_:0
+DATA SLEW      u1_cnt_int_count_23_:0
+DATA PW_LEVEL  u1_cnt_int_count_24_:0
+DATA SLEW      u1_cnt_int_count_24_:0
+DATA PW_LEVEL  u1_cnt_int_count_25_:0
+DATA SLEW      u1_cnt_int_count_25_:0
+DATA PW_LEVEL  u1_cnt_int_count_26_:0
+DATA SLEW      u1_cnt_int_count_26_:0
+DATA PW_LEVEL  u1_cnt_int_count_27_:0
+DATA SLEW      u1_cnt_int_count_27_:0
+DATA PW_LEVEL  u1_cnt_int_count_28_:0
+DATA SLEW      u1_cnt_int_count_28_:0
+DATA PW_LEVEL  u1_cnt_int_count_29_:0
+DATA SLEW      u1_cnt_int_count_29_:0
+DATA PW_LEVEL  u1_cnt_int_count_30_:0
+DATA SLEW      u1_cnt_int_count_30_:0
+DATA PW_LEVEL  u1_cnt_int_count_31_:0
+DATA SLEW      u1_cnt_int_count_31_:0
+DATA PW_LEVEL  u1_n_58_n:0
+DATA SLEW      u1_n_58_n:0
+DATA PW_LEVEL  u1_n_85_n:0
+DATA SLEW      u1_n_85_n:0
+DATA PW_LEVEL  u1_n_109_n:0
+DATA SLEW      u1_n_109_n:0
+DATA PW_LEVEL  u0_q1_1_:0
+DATA SLEW      u0_q1_1_:0
+DATA PW_LEVEL  u0_q1_2_:0
+DATA SLEW      u0_q1_2_:0
+DATA PW_LEVEL  u0_q1_3_:0
+DATA SLEW      u0_q1_3_:0
+DATA PW_LEVEL  u0_q1_4_:0
+DATA SLEW      u0_q1_4_:0
+DATA PW_LEVEL  u0_q1_5_:0
+DATA SLEW      u0_q1_5_:0
+DATA PW_LEVEL  u0_q1_6_:0
+DATA SLEW      u0_q1_6_:0
+DATA PW_LEVEL  u0_q1_7_:0
+DATA SLEW      u0_q1_7_:0
+DATA PW_LEVEL  RN_serial_out:0
+END

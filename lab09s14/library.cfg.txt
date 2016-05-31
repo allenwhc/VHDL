@@ -1,0 +1,2 @@
+$include = "$VSIMSALIBRARYCFG"
+casadedDownCounter = "./casadedDownCounter/casadedDownCounter/casadedDownCounter.lib" 1397521917105

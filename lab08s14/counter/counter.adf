@@ -1,0 +1,74 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=counter
+
+[Library]
+counter=.\counter.LIB
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=Schematic
+LANGUAGE=VHDL
+FLOWTOOLS=NONE
+REFRESH_FLOW=1
+FAMILY=Lattice GAL
+IMPL_TOOL=
+SYNTH_TOOL=
+fileopenfolder=H:\ese382\download
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=1
+
+[$LibMap$]
+counter=.
+Active_lib=
+xilinxun=
+UnlinkedDesignLibrary=
+DESIGNS=
+
+[Folders]
+Name3=Makefiles
+Directory3=\\esdl-2k3\Users\usr53\ese382\lab08s14\counter\
+Extension3=mak
+Name4=Memory
+Directory4=\\esdl-2k3\Users\usr53\ese382\lab08s14\counter\src
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=\\esdl-2k3\Users\usr53\ese382\lab08s14\counter\
+Extension5=dll
+Name6=PDF
+Directory6=\\esdl-2k3\Users\usr53\ese382\lab08s14\counter\
+Extension6=pdf
+Name7=HTML
+Directory7=\\esdl-2k3\Users\usr53\ese382\lab08s14\counter\
+Extension7=
+
+[Groups]
+TestBench=1
+
+[Files]
+/counter.vhd=-1
+TestBench/counter_TB.vhd=-1
+TestBench/counter_TB_runtest.do=-1
+
+[Files.Data]
+.\src\counter.vhd=VHDL Source Code
+.\src\TestBench\counter_TB.vhd=VHDL Source Code
+.\src\TestBench\counter_TB_runtest.do=Macro
+

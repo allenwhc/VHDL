@@ -1,0 +1,40 @@
+Active-HDL 9.2.2499.sp1.36.4586  2014-05-06 10:09:50
+
+Elaboration top modules:
+Architecture                  tb_architecture(count_down_timer_tb)
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+Entity                     | Architecture     | Library       | Info | Compiler Version                | Compilation Options
+-----------------------------------------------------------------------------------------------------------------------------
+count_down_timer_tb        | tb_architecture  | setable_timer |      | 9.2.2499.sp1.36.4586  (Windows) | -O3
+count_down_timer           | count_down_timer | setable_timer |      | 9.2.2499.sp1.36.4586  (Windows) | -O3
+rotary_encoder_decoder_fsm | behavioral       | setable_timer |      | 9.2.2499.sp1.36.4586  (Windows) | -O3
+seconds_counter            | dataflow         | setable_timer |      | 9.2.2499.sp1.36.4586  (Windows) | -O3
+minutes_counter            | behavioral       | setable_timer |      | 9.2.2499.sp1.36.4586  (Windows) | -O3
+pedgefsm                   | pedgefsm         | setable_timer |      | 9.2.2499.sp1.36.4586  (Windows) | -O3
+control_unit               | fsm              | setable_timer |      | 9.2.2499.sp1.36.4586  (Windows) | -O3
+-----------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------
+VHDL Package                                  | Library       | Info | Compiler Version                | Compilation Options
+-----------------------------------------------------------------------------------------------------------------------------
+standard                                      | std           |      |                                 | <unavailable>
+TEXTIO                                        | std           |      | 9.2.2499.sp1.36.4586  (Windows) |  -2008
+std_logic_1164                                | ieee          |      | 9.2.2499.sp1.36.4586  (Windows) |  -2008
+NUMERIC_STD                                   | ieee          |      | 9.2.2499.sp1.36.4586  (Windows) |  -2008
+-----------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------
+Library                                       | Comment
+-----------------------------------------------------------------------------------------------------------------------------
+ieee                                          | Standard IEEE packages library
+setable_timer                                 | None
+std                                           | Standard VHDL library
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+count_down_timer_tb count_down_timer_tb tb_architecture
+
+
+The performance of simulation is reduced. Version EDU Edition

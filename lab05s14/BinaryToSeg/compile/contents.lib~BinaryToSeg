@@ -1,0 +1,5 @@
+74
+~E 1 "./src/BinaryToSeg.vhd" 29 BinaryToSeg
+~A 1 "./src/BinaryToSeg.vhd" 45 BinaryToSeg
+~E 1 "./src/BinaryToSeg_TB.vhd" 6 converter_2421_bcd_tb
+~A 1 "./src/BinaryToSeg_TB.vhd" 9 tb_architecture

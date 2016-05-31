@@ -1,0 +1,1 @@
+-w -s "h:\ese382\lab07s14\library.cfg"  -j "h:\ese382\lab07s14\task2\projlib.cfg"  -d "h:\ese382\lab07s14\task2\compile"   -work task2  -dbg -e 100 -2002 "h:\ese382\lab07s14\task2\src\j_tb.vhd"

@@ -1,0 +1,74 @@
+#$ DATE Tue Feb 25 11:26:14 2014
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE selected
+#$ PINS 8 p:3'ke'  q:4'ke'  r:5'ke'  s:6'ke'  a:24'ke'  b:25'ke'  c:26'ke'  d:27'ke' 
+#$ NODES 25 d_1 un1_s_4_1 un1_s_1 un1_s_2 un1_s_4 r_i a_i p_i q_i p_c \
+#  q_c r_c a_c un1_s_5_i un1_s_2_i un1_s_4_i d_1_i un1_s_1_i un1_s_4_1_i un1_d_i \
+#  un1_s_1_1 d_1_1 un1_s_2_1 un1_s_5_i_1 un1_s_5_i_2 
+.model selected
+.inputs p.BLIF q.BLIF r.BLIF s.BLIF d_1.BLIF un1_s_4_1.BLIF un1_s_1.BLIF un1_s_2.BLIF un1_s_4.BLIF \
+  r_i.BLIF a_i.BLIF p_i.BLIF q_i.BLIF p_c.BLIF q_c.BLIF r_c.BLIF a_c.BLIF un1_s_5_i.BLIF \
+  un1_s_2_i.BLIF un1_s_4_i.BLIF d_1_i.BLIF un1_s_1_i.BLIF un1_s_4_1_i.BLIF un1_d_i.BLIF un1_s_1_1.BLIF d_1_1.BLIF un1_s_2_1.BLIF \
+  un1_s_5_i_1.BLIF un1_s_5_i_2.BLIF  
+.outputs a b c d d_1 un1_s_4_1 un1_s_1 un1_s_2 un1_s_4 r_i a_i \
+  p_i q_i p_c q_c r_c a_c un1_s_5_i un1_s_2_i un1_s_4_i d_1_i un1_s_1_i \
+  un1_s_4_1_i un1_d_i un1_s_1_1 d_1_1 un1_s_2_1 un1_s_5_i_1 un1_s_5_i_2
+.names  p.BLIF p_c
+1 1
+.names  q.BLIF q_c
+1 1
+.names  r.BLIF r_c
+1 1
+.names  s.BLIF a_c
+1 1
+.names  a_c.BLIF a
+1 1
+.names  un1_s_5_i.BLIF b
+1 1
+.names  un1_d_i.BLIF c
+1 1
+.names  d_1.BLIF d
+1 1
+.names  un1_s_2.BLIF un1_s_2_i
+0 1
+.names  un1_s_4.BLIF un1_s_4_i
+0 1
+.names  d_1.BLIF d_1_i
+0 1
+.names  un1_s_1.BLIF un1_s_1_i
+0 1
+.names  un1_s_4_1.BLIF un1_s_4_1_i
+0 1
+.names  r_c.BLIF a_c.BLIF un1_s_1_1
+11 1
+.names  un1_s_1_1.BLIF p_c.BLIF un1_s_1
+11 1
+.names  p_c.BLIF q_c.BLIF d_1_1
+11 1
+.names  d_1_1.BLIF r_c.BLIF d_1
+11 1
+.names  r_i.BLIF a_i.BLIF un1_s_2_1
+11 1
+.names  un1_s_2_1.BLIF p_i.BLIF un1_s_2
+11 1
+.names  d_1_i.BLIF un1_s_1_i.BLIF un1_s_5_i_1
+11 1
+.names  un1_s_2_i.BLIF un1_s_4_i.BLIF un1_s_5_i_2
+11 1
+.names  un1_s_5_i_1.BLIF un1_s_5_i_2.BLIF un1_s_5_i
+11 1
+.names  q_c.BLIF q_i
+0 1
+.names  p_i.BLIF q_i.BLIF un1_s_4_1
+11 1
+.names  d_1_i.BLIF un1_s_4_1_i.BLIF un1_d_i
+11 1
+.names  p_c.BLIF p_i
+0 1
+.names  a_c.BLIF a_i
+0 1
+.names  r_c.BLIF r_i
+0 1
+.names  r_i.BLIF un1_s_4_1.BLIF un1_s_4
+11 1
+.end

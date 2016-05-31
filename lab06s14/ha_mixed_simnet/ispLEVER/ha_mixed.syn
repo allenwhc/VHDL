@@ -1,0 +1,10 @@
+JDF B
+// Created by Version 7.0 
+PROJECT ha_mixed
+DESIGN ha_mixed Normal
+DEVKIT ispGAL22V10C-10LJ
+ENTRY EDIF
+MODULE ..\synplify\rev_1\ha_mixed.edf
+MODSTYLE ha_mixed Normal
+SYNTHESIS_TOOL Synplify
+TOPMODULE ha_mixed

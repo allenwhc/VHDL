@@ -1,0 +1,36 @@
+Active-HDL 9.1.2353.4205  2014-02-18 09:02:59
+
+Elaboration top modules:
+Architecture                  behavior(testbench)
+
+
+---------------------------------------------------------------------------------------------
+Entity     | Architecture | Library  | Info | Compiler Version         | Compilation Options
+---------------------------------------------------------------------------------------------
+testbench  | behavior     | lab02s14 |      | 9.1.2353.4205  (Windows) | -dbg
+half_adder | beh          | lab02s14 |      | 9.1.2353.4205  (Windows) | -dbg
+IBUF       | beh          | lab02s14 |      | 9.1.2353.4205  (Windows) | -dbg
+OBUF       | beh          | lab02s14 |      | 9.1.2353.4205  (Windows) | -dbg
+AND2       | beh          | lab02s14 |      | 9.1.2353.4205  (Windows) | -dbg
+INV        | beh          | lab02s14 |      | 9.1.2353.4205  (Windows) | -dbg
+XOR2       | beh          | lab02s14 |      | 9.1.2353.4205  (Windows) | -dbg
+---------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------
+VHDL Package              | Library  | Info | Compiler Version         | Compilation Options
+---------------------------------------------------------------------------------------------
+standard                  | std      |      |                          | <unavailable>
+TEXTIO                    | std      |      | 9.1.2353.4205  (Windows) |  -2008
+std_logic_1164            | ieee     |      | 9.1.2353.4205  (Windows) |  -2008
+components                | synplify |      | 9.1.2353.4205  (Windows) | 
+NUMERIC_STD               | ieee     |      | 9.1.2353.4205  (Windows) |  -2008
+---------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------
+Library                   | Comment
+---------------------------------------------------------------------------------------------
+ieee                      | Standard IEEE packages library
+lab02s14                  | None
+std                       | Standard VHDL library
+synplify                  | SYNOPSYS FPGA PRODUCTS F-2011.09, SYNPLIFY VHDL LIBRARY
+---------------------------------------------------------------------------------------------

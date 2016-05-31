@@ -1,0 +1,1004 @@
+#$ DATE Tue Apr 08 14:10:55 2014
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE seq_sys
+#$ PINS 15 d_7_:3'ke'  load:2'ke'  send:14'ke'  clk:11'ke'  rst_bar:33'ke'  serial_out:19'ke'  valid:24'ke'  sample_clk:26'ke'  d_6_:4'ke'  d_5_:5'ke'  d_4_:6'ke'  d_3_:7'ke'  d_2_:8'ke'  d_1_:9'ke'  d_0_:15'ke' 
+#$ NODES 349 u1_cnt_int_un5_count_20_n u1_cnt_int_un5_count_21_n u1_cnt_int_un5_count_22_n u2_q u1_cnt_int_un5_count_23_n u1_q_3_ u1_cnt_int_un5_count_24_n u1_cnt_int_un5_count_25_n u1_cnt_int_count_0_ u1_cnt_int_un5_count_26_n \
+#  u1_un1_en_count_inv_n u1_cnt_int_un5_count_27_n u1_un1_count_28__n u1_cnt_int_un5_count_28_n u1_un1_count_27__n u1_cnt_int_un5_count_29_n u1_un1_count_26__n u1_cnt_int_un5_count_30_n u1_un1_count_25__n u1_un1_count_m_1_29__n \
+#  u1_un1_count_24__n u0_q1_0_3__un3_n u1_un1_count_23__n u0_q1_0_3__un1_n u1_un1_count_22__n u0_q1_0_3__un0_n u1_un1_count_21__n u0_q1_0_2__un3_n u1_un1_count_20__n u0_q1_0_2__un1_n \
+#  u1_un1_count_19__n u0_q1_0_2__un0_n u1_un1_count_18__n u0_q1_0_1__un3_n u1_un1_count_17__n u0_q1_0_1__un1_n u1_un1_count_16__n u0_q1_0_1__un0_n u1_un1_count_15__n u0_q1_0_0__un3_n \
+#  u1_un1_count_14__n u0_q1_0_0__un1_n u1_un1_count_13__n u0_q1_0_0__un0_n u1_un1_count_12__n u0_q1_4_6__un3_n u1_un1_count_11__n u0_q1_4_6__un1_n u1_un1_count_10__n u0_q1_4_6__un0_n \
+#  u1_un1_count_9__n u0_q1_4_5__un3_n u1_un1_count_8__n u0_q1_4_5__un1_n u1_un1_count_7__n u0_q1_4_5__un0_n u1_un1_count_6__n u0_q1_4_4__un3_n u1_un1_count_5__n u0_q1_4_4__un1_n \
+#  u1_un1_count_4__n u0_q1_4_4__un0_n u1_un1_count_3__n u0_q1_4_3__un3_n u1_un1_count_2__n u0_q1_4_3__un1_n u1_un1_count_1__n u0_q1_4_3__un0_n u1_cnt_int_count_1_ u0_q1_4_2__un3_n \
+#  u1_cnt_int_count_2_ u0_q1_4_2__un1_n u1_cnt_int_count_3_ u0_q1_4_2__un0_n u1_cnt_int_count_4_ u0_q1_4_1__un3_n u1_cnt_int_count_5_ u0_q1_4_1__un1_n u1_cnt_int_count_6_ u0_q1_4_1__un0_n \
+#  u1_cnt_int_count_7_ u0_q1_4_0__un3_n u1_cnt_int_count_8_ u0_q1_4_0__un1_n u1_cnt_int_count_9_ u0_q1_4_0__un0_n u1_cnt_int_count_10_ u0_q1_0_7__un3_n u1_cnt_int_count_11_ u0_q1_0_7__un1_n \
+#  u1_cnt_int_count_12_ u0_q1_0_7__un0_n u1_cnt_int_count_13_ u0_q1_0_6__un3_n u1_cnt_int_count_14_ u0_q1_0_6__un1_n u1_cnt_int_count_15_ u0_q1_0_6__un0_n u1_cnt_int_count_16_ u0_q1_0_5__un3_n \
+#  u1_cnt_int_count_17_ u0_q1_0_5__un1_n u1_cnt_int_count_18_ u0_q1_0_5__un0_n u1_cnt_int_count_19_ u0_q1_0_4__un3_n u1_cnt_int_count_20_ u0_q1_0_4__un1_n u1_cnt_int_count_21_ u0_q1_0_4__un0_n \
+#  u1_cnt_int_count_22_ u1_cnt_int_count_0_0__un3_n u1_cnt_int_count_23_ u1_cnt_int_count_0_0__un1_n u1_cnt_int_count_24_ u1_cnt_int_count_0_0__un0_n u1_cnt_int_count_25_ u1_cnt_int_count_0_1__un3_n u1_cnt_int_count_26_ u1_cnt_int_count_0_1__un1_n \
+#  u1_cnt_int_count_27_ u1_cnt_int_count_0_1__un0_n u1_cnt_int_count_28_ u1_cnt_int_count_0_2__un3_n u1_cnt_int_count_29_ u1_cnt_int_count_0_2__un1_n u1_cnt_int_count_30_ u1_cnt_int_count_0_2__un0_n u1_cnt_int_count_31_ u1_cnt_int_count_0_3__un3_n \
+#  u1_cnt_int_count_0_3__un1_n u1_cnt_int_count_0_3__un0_n u1_cnt_int_count_0_26__un3_n u1_cnt_int_count_0_26__un1_n u1_cnt_int_count_0_26__un0_n u1_cnt_int_count_0_27__un3_n u1_cnt_int_count_0_27__un1_n u1_cnt_int_count_0_27__un0_n u1_cnt_int_count_0_28__un3_n u1_cnt_int_count_0_28__un1_n \
+#  u1_cnt_int_count_0_28__un0_n u1_cnt_int_count_0_29__un3_n u1_cnt_int_count_0_29__un1_n u1_cnt_int_count_0_29__un0_n u1_cnt_int_count_0_30__un3_n u1_cnt_int_count_0_30__un1_n u1_cnt_int_count_0_30__un0_n u1_cnt_int_count_0_31__un3_n u1_cnt_int_count_0_31__un1_n u1_cnt_int_count_0_31__un0_n \
+#  u1_cnt_int_count_0_11__un3_n u1_cnt_int_count_0_11__un1_n u1_cnt_int_count_0_11__un0_n u1_cnt_int_count_0_12__un3_n u1_cnt_int_count_0_12__un1_n u1_cnt_int_count_0_12__un0_n u1_cnt_int_count_0_13__un3_n u1_cnt_int_count_0_13__un1_n u1_cnt_int_count_0_13__un0_n u1_cnt_int_count_0_14__un3_n \
+#  u1_cnt_int_count_0_14__un1_n u1_cnt_int_count_0_14__un0_n u1_cnt_int_count_0_15__un3_n u1_n_46_n u1_cnt_int_count_0_15__un1_n u1_n_49_n u1_cnt_int_count_0_15__un0_n u1_n_52_n u1_cnt_int_count_0_16__un3_n u1_n_55_n \
+#  u1_cnt_int_count_0_16__un1_n u1_n_58_n u1_cnt_int_count_0_16__un0_n u1_n_61_n u1_cnt_int_count_0_17__un3_n u1_n_64_n u1_cnt_int_count_0_17__un1_n u1_n_67_n u1_cnt_int_count_0_17__un0_n u1_n_70_n \
+#  u1_cnt_int_count_0_18__un3_n u1_n_73_n u1_cnt_int_count_0_18__un1_n u1_n_76_n u1_cnt_int_count_0_18__un0_n u1_n_79_n u1_cnt_int_count_0_19__un3_n u1_n_82_n u1_cnt_int_count_0_19__un1_n u1_n_85_n \
+#  u1_cnt_int_count_0_19__un0_n u1_n_88_n u1_cnt_int_count_0_20__un3_n u1_n_91_n u1_cnt_int_count_0_20__un1_n u1_n_94_n u1_cnt_int_count_0_20__un0_n u1_n_97_n u1_cnt_int_count_0_21__un3_n u1_n_100_n \
+#  u1_cnt_int_count_0_21__un1_n u1_n_103_n u1_cnt_int_count_0_21__un0_n u1_n_106_n u1_cnt_int_count_0_22__un3_n u1_n_109_n u1_cnt_int_count_0_22__un1_n u1_n_112_n u1_cnt_int_count_0_22__un0_n u1_n_115_n \
+#  u1_cnt_int_count_0_23__un3_n u1_n_118_n u1_cnt_int_count_0_23__un1_n u1_n_121_n u1_cnt_int_count_0_23__un0_n u1_n_124_n u1_cnt_int_count_0_24__un3_n u1_n_127_n u1_cnt_int_count_0_24__un1_n u0_q1_1_ \
+#  u1_cnt_int_count_0_24__un0_n u0_q1_2_ u1_cnt_int_count_0_25__un3_n u0_q1_3_ u1_cnt_int_count_0_25__un1_n u0_q1_4_ u1_cnt_int_count_0_25__un0_n u0_q1_5_ u1_cnt_int_count_0_4__un3_n u0_q1_6_ \
+#  u1_cnt_int_count_0_4__un1_n u0_q1_7_ u1_cnt_int_count_0_4__un0_n u1_cnt_int_count_0_5__un3_n u1_cnt_int_count_0_5__un1_n u1_cnt_int_count_0_5__un0_n u1_cnt_int_count_0_6__un3_n u1_cnt_int_count_0_6__un1_n u1_cnt_int_count_0_6__un0_n u1_cnt_int_count_0_7__un3_n \
+#  u1_cnt_int_count_0_7__un1_n u1_un2_count_0__n u1_cnt_int_count_0_7__un0_n u1_un1_count_31__n u1_cnt_int_count_0_8__un3_n u1_un1_count_30__n u1_cnt_int_count_0_8__un1_n u1_un2_count_3__n u1_cnt_int_count_0_8__un0_n u1_n_40_n \
+#  u1_cnt_int_count_0_9__un3_n u1_n_43_n u1_cnt_int_count_0_9__un1_n u1_un1_count_29__n u1_cnt_int_count_0_9__un0_n u1_cnt_int_un5_count_n u1_cnt_int_count_0_10__un3_n u1_un1_q_2_n u1_cnt_int_count_0_10__un1_n u1_q_m_3__n \
+#  u1_cnt_int_count_0_10__un0_n u1_un1_count_m_29__n u0_q1_4_7__n u0_q1_4_6__n u0_q1_4_5__n u0_q1_4_4__n u0_q1_4_3__n u0_q1_4_2__n u0_q1_4_1__n u0_q1_4_0__n \
+#  u0_un1_en_shift_n u1_cnt_int_un5_count_i_n load_i q_i temp_i_3__n clk_i u1_cnt_int_count_i_2__n u1_cnt_int_count_i_0_1__n u1_cnt_int_count_i_0__n u1_un1_count_i_27__n \
+#  u1_un1_count_i_28__n u1_un1_count_i_25__n u1_un1_count_i_26__n u1_un1_count_i_2__n u1_un1_count_i_1__n u1_un1_count_i_4__n u1_un1_count_i_3__n u1_un1_count_i_6__n u1_un1_count_i_5__n u1_un1_count_i_8__n \
+#  u1_un1_count_i_7__n u1_un1_count_i_10__n u1_un1_count_i_9__n u1_un1_count_i_12__n u1_un1_count_i_11__n u1_un1_count_i_14__n u1_un1_count_i_13__n u1_un1_count_i_16__n u1_un1_count_i_15__n u1_un1_count_i_18__n \
+#  u1_un1_count_i_17__n u1_un1_count_i_20__n u1_un1_count_i_19__n u1_un1_count_i_22__n u1_un1_count_i_21__n rst_bar_i u1_un1_count_i_23__n u1_un1_count_i_24__n load_c send_c \
+#  clk_c rst_bar_c d_c_0__n d_c_1__n d_c_2__n d_c_3__n d_c_4__n d_c_5__n d_c_6__n d_c_7__n \
+#  u0_q1_0_reg valid_c sample_clk_c u0_un1_en_shift_0_n u1_un1_en_count_inv_0_n u1_un1_count_m_i_29__n u1_q_m_i_3__n u1_un1_q_2_0_n send_c_i a_i \
+#  u1_cnt_int_un5_count_1_n u1_cnt_int_un5_count_2_n u1_cnt_int_un5_count_3_n u1_cnt_int_un5_count_4_n u1_cnt_int_un5_count_5_n u1_cnt_int_un5_count_6_n u1_cnt_int_un5_count_7_n u1_cnt_int_un5_count_8_n u1_cnt_int_un5_count_9_n u1_cnt_int_un5_count_10_n \
+#  u1_cnt_int_un5_count_11_n u1_cnt_int_un5_count_12_n u1_cnt_int_un5_count_13_n u1_cnt_int_un5_count_14_n u1_cnt_int_un5_count_15_n u1_cnt_int_un5_count_16_n u1_cnt_int_un5_count_17_n u1_cnt_int_un5_count_18_n u1_cnt_int_un5_count_19_n 
+.model seq_sys
+.inputs d_7_.BLIF load.BLIF send.BLIF clk.BLIF rst_bar.BLIF d_6_.BLIF d_5_.BLIF d_4_.BLIF d_3_.BLIF \
+  d_2_.BLIF d_1_.BLIF d_0_.BLIF u1_cnt_int_un5_count_20_n.BLIF u1_cnt_int_un5_count_21_n.BLIF u1_cnt_int_un5_count_22_n.BLIF u2_q.BLIF u1_cnt_int_un5_count_23_n.BLIF u1_q_3_.BLIF \
+  u1_cnt_int_un5_count_24_n.BLIF u1_cnt_int_un5_count_25_n.BLIF u1_cnt_int_count_0_.BLIF u1_cnt_int_un5_count_26_n.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_un5_count_27_n.BLIF u1_un1_count_28__n.BLIF u1_cnt_int_un5_count_28_n.BLIF u1_un1_count_27__n.BLIF \
+  u1_cnt_int_un5_count_29_n.BLIF u1_un1_count_26__n.BLIF u1_cnt_int_un5_count_30_n.BLIF u1_un1_count_25__n.BLIF u1_un1_count_m_1_29__n.BLIF u1_un1_count_24__n.BLIF u0_q1_0_3__un3_n.BLIF u1_un1_count_23__n.BLIF u0_q1_0_3__un1_n.BLIF \
+  u1_un1_count_22__n.BLIF u0_q1_0_3__un0_n.BLIF u1_un1_count_21__n.BLIF u0_q1_0_2__un3_n.BLIF u1_un1_count_20__n.BLIF u0_q1_0_2__un1_n.BLIF u1_un1_count_19__n.BLIF u0_q1_0_2__un0_n.BLIF u1_un1_count_18__n.BLIF \
+  u0_q1_0_1__un3_n.BLIF u1_un1_count_17__n.BLIF u0_q1_0_1__un1_n.BLIF u1_un1_count_16__n.BLIF u0_q1_0_1__un0_n.BLIF u1_un1_count_15__n.BLIF u0_q1_0_0__un3_n.BLIF u1_un1_count_14__n.BLIF u0_q1_0_0__un1_n.BLIF \
+  u1_un1_count_13__n.BLIF u0_q1_0_0__un0_n.BLIF u1_un1_count_12__n.BLIF u0_q1_4_6__un3_n.BLIF u1_un1_count_11__n.BLIF u0_q1_4_6__un1_n.BLIF u1_un1_count_10__n.BLIF u0_q1_4_6__un0_n.BLIF u1_un1_count_9__n.BLIF \
+  u0_q1_4_5__un3_n.BLIF u1_un1_count_8__n.BLIF u0_q1_4_5__un1_n.BLIF u1_un1_count_7__n.BLIF u0_q1_4_5__un0_n.BLIF u1_un1_count_6__n.BLIF u0_q1_4_4__un3_n.BLIF u1_un1_count_5__n.BLIF u0_q1_4_4__un1_n.BLIF \
+  u1_un1_count_4__n.BLIF u0_q1_4_4__un0_n.BLIF u1_un1_count_3__n.BLIF u0_q1_4_3__un3_n.BLIF u1_un1_count_2__n.BLIF u0_q1_4_3__un1_n.BLIF u1_un1_count_1__n.BLIF u0_q1_4_3__un0_n.BLIF u1_cnt_int_count_1_.BLIF \
+  u0_q1_4_2__un3_n.BLIF u1_cnt_int_count_2_.BLIF u0_q1_4_2__un1_n.BLIF u1_cnt_int_count_3_.BLIF u0_q1_4_2__un0_n.BLIF u1_cnt_int_count_4_.BLIF u0_q1_4_1__un3_n.BLIF u1_cnt_int_count_5_.BLIF u0_q1_4_1__un1_n.BLIF \
+  u1_cnt_int_count_6_.BLIF u0_q1_4_1__un0_n.BLIF u1_cnt_int_count_7_.BLIF u0_q1_4_0__un3_n.BLIF u1_cnt_int_count_8_.BLIF u0_q1_4_0__un1_n.BLIF u1_cnt_int_count_9_.BLIF u0_q1_4_0__un0_n.BLIF u1_cnt_int_count_10_.BLIF \
+  u0_q1_0_7__un3_n.BLIF u1_cnt_int_count_11_.BLIF u0_q1_0_7__un1_n.BLIF u1_cnt_int_count_12_.BLIF u0_q1_0_7__un0_n.BLIF u1_cnt_int_count_13_.BLIF u0_q1_0_6__un3_n.BLIF u1_cnt_int_count_14_.BLIF u0_q1_0_6__un1_n.BLIF \
+  u1_cnt_int_count_15_.BLIF u0_q1_0_6__un0_n.BLIF u1_cnt_int_count_16_.BLIF u0_q1_0_5__un3_n.BLIF u1_cnt_int_count_17_.BLIF u0_q1_0_5__un1_n.BLIF u1_cnt_int_count_18_.BLIF u0_q1_0_5__un0_n.BLIF u1_cnt_int_count_19_.BLIF \
+  u0_q1_0_4__un3_n.BLIF u1_cnt_int_count_20_.BLIF u0_q1_0_4__un1_n.BLIF u1_cnt_int_count_21_.BLIF u0_q1_0_4__un0_n.BLIF u1_cnt_int_count_22_.BLIF u1_cnt_int_count_0_0__un3_n.BLIF u1_cnt_int_count_23_.BLIF u1_cnt_int_count_0_0__un1_n.BLIF \
+  u1_cnt_int_count_24_.BLIF u1_cnt_int_count_0_0__un0_n.BLIF u1_cnt_int_count_25_.BLIF u1_cnt_int_count_0_1__un3_n.BLIF u1_cnt_int_count_26_.BLIF u1_cnt_int_count_0_1__un1_n.BLIF u1_cnt_int_count_27_.BLIF u1_cnt_int_count_0_1__un0_n.BLIF u1_cnt_int_count_28_.BLIF \
+  u1_cnt_int_count_0_2__un3_n.BLIF u1_cnt_int_count_29_.BLIF u1_cnt_int_count_0_2__un1_n.BLIF u1_cnt_int_count_30_.BLIF u1_cnt_int_count_0_2__un0_n.BLIF u1_cnt_int_count_31_.BLIF u1_cnt_int_count_0_3__un3_n.BLIF u1_cnt_int_count_0_3__un1_n.BLIF u1_cnt_int_count_0_3__un0_n.BLIF \
+  u1_cnt_int_count_0_26__un3_n.BLIF u1_cnt_int_count_0_26__un1_n.BLIF u1_cnt_int_count_0_26__un0_n.BLIF u1_cnt_int_count_0_27__un3_n.BLIF u1_cnt_int_count_0_27__un1_n.BLIF u1_cnt_int_count_0_27__un0_n.BLIF u1_cnt_int_count_0_28__un3_n.BLIF u1_cnt_int_count_0_28__un1_n.BLIF u1_cnt_int_count_0_28__un0_n.BLIF \
+  u1_cnt_int_count_0_29__un3_n.BLIF u1_cnt_int_count_0_29__un1_n.BLIF u1_cnt_int_count_0_29__un0_n.BLIF u1_cnt_int_count_0_30__un3_n.BLIF u1_cnt_int_count_0_30__un1_n.BLIF u1_cnt_int_count_0_30__un0_n.BLIF u1_cnt_int_count_0_31__un3_n.BLIF u1_cnt_int_count_0_31__un1_n.BLIF u1_cnt_int_count_0_31__un0_n.BLIF \
+  u1_cnt_int_count_0_11__un3_n.BLIF u1_cnt_int_count_0_11__un1_n.BLIF u1_cnt_int_count_0_11__un0_n.BLIF u1_cnt_int_count_0_12__un3_n.BLIF u1_cnt_int_count_0_12__un1_n.BLIF u1_cnt_int_count_0_12__un0_n.BLIF u1_cnt_int_count_0_13__un3_n.BLIF u1_cnt_int_count_0_13__un1_n.BLIF u1_cnt_int_count_0_13__un0_n.BLIF \
+  u1_cnt_int_count_0_14__un3_n.BLIF u1_cnt_int_count_0_14__un1_n.BLIF u1_cnt_int_count_0_14__un0_n.BLIF u1_cnt_int_count_0_15__un3_n.BLIF u1_n_46_n.BLIF u1_cnt_int_count_0_15__un1_n.BLIF u1_n_49_n.BLIF u1_cnt_int_count_0_15__un0_n.BLIF u1_n_52_n.BLIF \
+  u1_cnt_int_count_0_16__un3_n.BLIF u1_n_55_n.BLIF u1_cnt_int_count_0_16__un1_n.BLIF u1_n_58_n.BLIF u1_cnt_int_count_0_16__un0_n.BLIF u1_n_61_n.BLIF u1_cnt_int_count_0_17__un3_n.BLIF u1_n_64_n.BLIF u1_cnt_int_count_0_17__un1_n.BLIF \
+  u1_n_67_n.BLIF u1_cnt_int_count_0_17__un0_n.BLIF u1_n_70_n.BLIF u1_cnt_int_count_0_18__un3_n.BLIF u1_n_73_n.BLIF u1_cnt_int_count_0_18__un1_n.BLIF u1_n_76_n.BLIF u1_cnt_int_count_0_18__un0_n.BLIF u1_n_79_n.BLIF \
+  u1_cnt_int_count_0_19__un3_n.BLIF u1_n_82_n.BLIF u1_cnt_int_count_0_19__un1_n.BLIF u1_n_85_n.BLIF u1_cnt_int_count_0_19__un0_n.BLIF u1_n_88_n.BLIF u1_cnt_int_count_0_20__un3_n.BLIF u1_n_91_n.BLIF u1_cnt_int_count_0_20__un1_n.BLIF \
+  u1_n_94_n.BLIF u1_cnt_int_count_0_20__un0_n.BLIF u1_n_97_n.BLIF u1_cnt_int_count_0_21__un3_n.BLIF u1_n_100_n.BLIF u1_cnt_int_count_0_21__un1_n.BLIF u1_n_103_n.BLIF u1_cnt_int_count_0_21__un0_n.BLIF u1_n_106_n.BLIF \
+  u1_cnt_int_count_0_22__un3_n.BLIF u1_n_109_n.BLIF u1_cnt_int_count_0_22__un1_n.BLIF u1_n_112_n.BLIF u1_cnt_int_count_0_22__un0_n.BLIF u1_n_115_n.BLIF u1_cnt_int_count_0_23__un3_n.BLIF u1_n_118_n.BLIF u1_cnt_int_count_0_23__un1_n.BLIF \
+  u1_n_121_n.BLIF u1_cnt_int_count_0_23__un0_n.BLIF u1_n_124_n.BLIF u1_cnt_int_count_0_24__un3_n.BLIF u1_n_127_n.BLIF u1_cnt_int_count_0_24__un1_n.BLIF u0_q1_1_.BLIF u1_cnt_int_count_0_24__un0_n.BLIF u0_q1_2_.BLIF \
+  u1_cnt_int_count_0_25__un3_n.BLIF u0_q1_3_.BLIF u1_cnt_int_count_0_25__un1_n.BLIF u0_q1_4_.BLIF u1_cnt_int_count_0_25__un0_n.BLIF u0_q1_5_.BLIF u1_cnt_int_count_0_4__un3_n.BLIF u0_q1_6_.BLIF u1_cnt_int_count_0_4__un1_n.BLIF \
+  u0_q1_7_.BLIF u1_cnt_int_count_0_4__un0_n.BLIF u1_cnt_int_count_0_5__un3_n.BLIF u1_cnt_int_count_0_5__un1_n.BLIF u1_cnt_int_count_0_5__un0_n.BLIF u1_cnt_int_count_0_6__un3_n.BLIF u1_cnt_int_count_0_6__un1_n.BLIF u1_cnt_int_count_0_6__un0_n.BLIF u1_cnt_int_count_0_7__un3_n.BLIF \
+  u1_cnt_int_count_0_7__un1_n.BLIF u1_un2_count_0__n.BLIF u1_cnt_int_count_0_7__un0_n.BLIF u1_un1_count_31__n.BLIF u1_cnt_int_count_0_8__un3_n.BLIF u1_un1_count_30__n.BLIF u1_cnt_int_count_0_8__un1_n.BLIF u1_un2_count_3__n.BLIF u1_cnt_int_count_0_8__un0_n.BLIF \
+  u1_n_40_n.BLIF u1_cnt_int_count_0_9__un3_n.BLIF u1_n_43_n.BLIF u1_cnt_int_count_0_9__un1_n.BLIF u1_un1_count_29__n.BLIF u1_cnt_int_count_0_9__un0_n.BLIF u1_cnt_int_un5_count_n.BLIF u1_cnt_int_count_0_10__un3_n.BLIF u1_un1_q_2_n.BLIF \
+  u1_cnt_int_count_0_10__un1_n.BLIF u1_q_m_3__n.BLIF u1_cnt_int_count_0_10__un0_n.BLIF u1_un1_count_m_29__n.BLIF u0_q1_4_7__n.BLIF u0_q1_4_6__n.BLIF u0_q1_4_5__n.BLIF u0_q1_4_4__n.BLIF u0_q1_4_3__n.BLIF \
+  u0_q1_4_2__n.BLIF u0_q1_4_1__n.BLIF u0_q1_4_0__n.BLIF u0_un1_en_shift_n.BLIF u1_cnt_int_un5_count_i_n.BLIF load_i.BLIF q_i.BLIF temp_i_3__n.BLIF clk_i.BLIF \
+  u1_cnt_int_count_i_2__n.BLIF u1_cnt_int_count_i_0_1__n.BLIF u1_cnt_int_count_i_0__n.BLIF u1_un1_count_i_27__n.BLIF u1_un1_count_i_28__n.BLIF u1_un1_count_i_25__n.BLIF u1_un1_count_i_26__n.BLIF u1_un1_count_i_2__n.BLIF u1_un1_count_i_1__n.BLIF \
+  u1_un1_count_i_4__n.BLIF u1_un1_count_i_3__n.BLIF u1_un1_count_i_6__n.BLIF u1_un1_count_i_5__n.BLIF u1_un1_count_i_8__n.BLIF u1_un1_count_i_7__n.BLIF u1_un1_count_i_10__n.BLIF u1_un1_count_i_9__n.BLIF u1_un1_count_i_12__n.BLIF \
+  u1_un1_count_i_11__n.BLIF u1_un1_count_i_14__n.BLIF u1_un1_count_i_13__n.BLIF u1_un1_count_i_16__n.BLIF u1_un1_count_i_15__n.BLIF u1_un1_count_i_18__n.BLIF u1_un1_count_i_17__n.BLIF u1_un1_count_i_20__n.BLIF u1_un1_count_i_19__n.BLIF \
+  u1_un1_count_i_22__n.BLIF u1_un1_count_i_21__n.BLIF rst_bar_i.BLIF u1_un1_count_i_23__n.BLIF u1_un1_count_i_24__n.BLIF load_c.BLIF send_c.BLIF clk_c.BLIF rst_bar_c.BLIF \
+  d_c_0__n.BLIF d_c_1__n.BLIF d_c_2__n.BLIF d_c_3__n.BLIF d_c_4__n.BLIF d_c_5__n.BLIF d_c_6__n.BLIF d_c_7__n.BLIF u0_q1_0_reg.BLIF \
+  valid_c.BLIF sample_clk_c.BLIF u0_un1_en_shift_0_n.BLIF u1_un1_en_count_inv_0_n.BLIF u1_un1_count_m_i_29__n.BLIF u1_q_m_i_3__n.BLIF u1_un1_q_2_0_n.BLIF send_c_i.BLIF a_i.BLIF \
+  u1_cnt_int_un5_count_1_n.BLIF u1_cnt_int_un5_count_2_n.BLIF u1_cnt_int_un5_count_3_n.BLIF u1_cnt_int_un5_count_4_n.BLIF u1_cnt_int_un5_count_5_n.BLIF u1_cnt_int_un5_count_6_n.BLIF u1_cnt_int_un5_count_7_n.BLIF u1_cnt_int_un5_count_8_n.BLIF u1_cnt_int_un5_count_9_n.BLIF \
+  u1_cnt_int_un5_count_10_n.BLIF u1_cnt_int_un5_count_11_n.BLIF u1_cnt_int_un5_count_12_n.BLIF u1_cnt_int_un5_count_13_n.BLIF u1_cnt_int_un5_count_14_n.BLIF u1_cnt_int_un5_count_15_n.BLIF u1_cnt_int_un5_count_16_n.BLIF u1_cnt_int_un5_count_17_n.BLIF u1_cnt_int_un5_count_18_n.BLIF \
+  u1_cnt_int_un5_count_19_n.BLIF  
+.outputs serial_out valid sample_clk u0_q1_3_.D u0_q1_3_.C u0_q1_3_.AR u0_q1_4_.D u0_q1_4_.C u0_q1_4_.AR u0_q1_5_.D u0_q1_5_.C \
+  u0_q1_5_.AR u0_q1_6_.D u0_q1_6_.C u0_q1_6_.AR u0_q1_7_.D u0_q1_7_.C u0_q1_7_.AR u0_q1_0_reg.D u0_q1_0_reg.C u0_q1_0_reg.AR u0_q1_1_.D \
+  u0_q1_1_.C u0_q1_1_.AR u0_q1_2_.D u0_q1_2_.C u0_q1_2_.AR u1_cnt_int_count_19_.D u1_cnt_int_count_19_.C u1_cnt_int_count_20_.D u1_cnt_int_count_20_.C u1_cnt_int_count_21_.D u1_cnt_int_count_21_.C \
+  u1_cnt_int_count_22_.D u1_cnt_int_count_22_.C u1_cnt_int_count_23_.D u1_cnt_int_count_23_.C u1_cnt_int_count_24_.D u1_cnt_int_count_24_.C u1_cnt_int_count_25_.D u1_cnt_int_count_25_.C u1_cnt_int_count_26_.D u1_cnt_int_count_26_.C u1_cnt_int_count_27_.D \
+  u1_cnt_int_count_27_.C u1_cnt_int_count_28_.D u1_cnt_int_count_28_.C u1_cnt_int_count_29_.D u1_cnt_int_count_29_.C u1_cnt_int_count_30_.D u1_cnt_int_count_30_.C u1_cnt_int_count_31_.D u1_cnt_int_count_31_.C u1_cnt_int_count_4_.D u1_cnt_int_count_4_.C \
+  u1_cnt_int_count_5_.D u1_cnt_int_count_5_.C u1_cnt_int_count_6_.D u1_cnt_int_count_6_.C u1_cnt_int_count_7_.D u1_cnt_int_count_7_.C u1_cnt_int_count_8_.D u1_cnt_int_count_8_.C u1_cnt_int_count_9_.D u1_cnt_int_count_9_.C u1_cnt_int_count_10_.D \
+  u1_cnt_int_count_10_.C u1_cnt_int_count_11_.D u1_cnt_int_count_11_.C u1_cnt_int_count_12_.D u1_cnt_int_count_12_.C u1_cnt_int_count_13_.D u1_cnt_int_count_13_.C u1_cnt_int_count_14_.D u1_cnt_int_count_14_.C u1_cnt_int_count_15_.D u1_cnt_int_count_15_.C \
+  u1_cnt_int_count_16_.D u1_cnt_int_count_16_.C u1_cnt_int_count_17_.D u1_cnt_int_count_17_.C u1_cnt_int_count_18_.D u1_cnt_int_count_18_.C u1_q_3_.D u1_q_3_.C u1_q_3_.AR u1_cnt_int_count_0_.D u1_cnt_int_count_0_.C \
+  u1_cnt_int_count_1_.D u1_cnt_int_count_1_.C u1_cnt_int_count_2_.D u1_cnt_int_count_2_.C u1_cnt_int_count_3_.D u1_cnt_int_count_3_.C u2_q.D u2_q.C u2_q.AR u1_cnt_int_un5_count_20_n u1_cnt_int_un5_count_21_n \
+  u1_cnt_int_un5_count_22_n u1_cnt_int_un5_count_23_n u1_cnt_int_un5_count_24_n u1_cnt_int_un5_count_25_n u1_cnt_int_un5_count_26_n u1_un1_en_count_inv_n u1_cnt_int_un5_count_27_n u1_un1_count_28__n u1_cnt_int_un5_count_28_n u1_un1_count_27__n u1_cnt_int_un5_count_29_n \
+  u1_un1_count_26__n u1_cnt_int_un5_count_30_n u1_un1_count_25__n u1_un1_count_m_1_29__n u1_un1_count_24__n u0_q1_0_3__un3_n u1_un1_count_23__n u0_q1_0_3__un1_n u1_un1_count_22__n u0_q1_0_3__un0_n u1_un1_count_21__n \
+  u0_q1_0_2__un3_n u1_un1_count_20__n u0_q1_0_2__un1_n u1_un1_count_19__n u0_q1_0_2__un0_n u1_un1_count_18__n u0_q1_0_1__un3_n u1_un1_count_17__n u0_q1_0_1__un1_n u1_un1_count_16__n u0_q1_0_1__un0_n \
+  u1_un1_count_15__n u0_q1_0_0__un3_n u1_un1_count_14__n u0_q1_0_0__un1_n u1_un1_count_13__n u0_q1_0_0__un0_n u1_un1_count_12__n u0_q1_4_6__un3_n u1_un1_count_11__n u0_q1_4_6__un1_n u1_un1_count_10__n \
+  u0_q1_4_6__un0_n u1_un1_count_9__n u0_q1_4_5__un3_n u1_un1_count_8__n u0_q1_4_5__un1_n u1_un1_count_7__n u0_q1_4_5__un0_n u1_un1_count_6__n u0_q1_4_4__un3_n u1_un1_count_5__n u0_q1_4_4__un1_n \
+  u1_un1_count_4__n u0_q1_4_4__un0_n u1_un1_count_3__n u0_q1_4_3__un3_n u1_un1_count_2__n u0_q1_4_3__un1_n u1_un1_count_1__n u0_q1_4_3__un0_n u0_q1_4_2__un3_n u0_q1_4_2__un1_n u0_q1_4_2__un0_n \
+  u0_q1_4_1__un3_n u0_q1_4_1__un1_n u0_q1_4_1__un0_n u0_q1_4_0__un3_n u0_q1_4_0__un1_n u0_q1_4_0__un0_n u0_q1_0_7__un3_n u0_q1_0_7__un1_n u0_q1_0_7__un0_n u0_q1_0_6__un3_n u0_q1_0_6__un1_n \
+  u0_q1_0_6__un0_n u0_q1_0_5__un3_n u0_q1_0_5__un1_n u0_q1_0_5__un0_n u0_q1_0_4__un3_n u0_q1_0_4__un1_n u0_q1_0_4__un0_n u1_cnt_int_count_0_0__un3_n u1_cnt_int_count_0_0__un1_n u1_cnt_int_count_0_0__un0_n u1_cnt_int_count_0_1__un3_n \
+  u1_cnt_int_count_0_1__un1_n u1_cnt_int_count_0_1__un0_n u1_cnt_int_count_0_2__un3_n u1_cnt_int_count_0_2__un1_n u1_cnt_int_count_0_2__un0_n u1_cnt_int_count_0_3__un3_n u1_cnt_int_count_0_3__un1_n u1_cnt_int_count_0_3__un0_n u1_cnt_int_count_0_26__un3_n u1_cnt_int_count_0_26__un1_n u1_cnt_int_count_0_26__un0_n \
+  u1_cnt_int_count_0_27__un3_n u1_cnt_int_count_0_27__un1_n u1_cnt_int_count_0_27__un0_n u1_cnt_int_count_0_28__un3_n u1_cnt_int_count_0_28__un1_n u1_cnt_int_count_0_28__un0_n u1_cnt_int_count_0_29__un3_n u1_cnt_int_count_0_29__un1_n u1_cnt_int_count_0_29__un0_n u1_cnt_int_count_0_30__un3_n u1_cnt_int_count_0_30__un1_n \
+  u1_cnt_int_count_0_30__un0_n u1_cnt_int_count_0_31__un3_n u1_cnt_int_count_0_31__un1_n u1_cnt_int_count_0_31__un0_n u1_cnt_int_count_0_11__un3_n u1_cnt_int_count_0_11__un1_n u1_cnt_int_count_0_11__un0_n u1_cnt_int_count_0_12__un3_n u1_cnt_int_count_0_12__un1_n u1_cnt_int_count_0_12__un0_n u1_cnt_int_count_0_13__un3_n \
+  u1_cnt_int_count_0_13__un1_n u1_cnt_int_count_0_13__un0_n u1_cnt_int_count_0_14__un3_n u1_cnt_int_count_0_14__un1_n u1_cnt_int_count_0_14__un0_n u1_cnt_int_count_0_15__un3_n u1_n_46_n u1_cnt_int_count_0_15__un1_n u1_n_49_n u1_cnt_int_count_0_15__un0_n u1_n_52_n \
+  u1_cnt_int_count_0_16__un3_n u1_n_55_n u1_cnt_int_count_0_16__un1_n u1_n_58_n u1_cnt_int_count_0_16__un0_n u1_n_61_n u1_cnt_int_count_0_17__un3_n u1_n_64_n u1_cnt_int_count_0_17__un1_n u1_n_67_n u1_cnt_int_count_0_17__un0_n \
+  u1_n_70_n u1_cnt_int_count_0_18__un3_n u1_n_73_n u1_cnt_int_count_0_18__un1_n u1_n_76_n u1_cnt_int_count_0_18__un0_n u1_n_79_n u1_cnt_int_count_0_19__un3_n u1_n_82_n u1_cnt_int_count_0_19__un1_n u1_n_85_n \
+  u1_cnt_int_count_0_19__un0_n u1_n_88_n u1_cnt_int_count_0_20__un3_n u1_n_91_n u1_cnt_int_count_0_20__un1_n u1_n_94_n u1_cnt_int_count_0_20__un0_n u1_n_97_n u1_cnt_int_count_0_21__un3_n u1_n_100_n u1_cnt_int_count_0_21__un1_n \
+  u1_n_103_n u1_cnt_int_count_0_21__un0_n u1_n_106_n u1_cnt_int_count_0_22__un3_n u1_n_109_n u1_cnt_int_count_0_22__un1_n u1_n_112_n u1_cnt_int_count_0_22__un0_n u1_n_115_n u1_cnt_int_count_0_23__un3_n u1_n_118_n \
+  u1_cnt_int_count_0_23__un1_n u1_n_121_n u1_cnt_int_count_0_23__un0_n u1_n_124_n u1_cnt_int_count_0_24__un3_n u1_n_127_n u1_cnt_int_count_0_24__un1_n u1_cnt_int_count_0_24__un0_n u1_cnt_int_count_0_25__un3_n u1_cnt_int_count_0_25__un1_n u1_cnt_int_count_0_25__un0_n \
+  u1_cnt_int_count_0_4__un3_n u1_cnt_int_count_0_4__un1_n u1_cnt_int_count_0_4__un0_n u1_cnt_int_count_0_5__un3_n u1_cnt_int_count_0_5__un1_n u1_cnt_int_count_0_5__un0_n u1_cnt_int_count_0_6__un3_n u1_cnt_int_count_0_6__un1_n u1_cnt_int_count_0_6__un0_n u1_cnt_int_count_0_7__un3_n u1_cnt_int_count_0_7__un1_n \
+  u1_un2_count_0__n u1_cnt_int_count_0_7__un0_n u1_un1_count_31__n u1_cnt_int_count_0_8__un3_n u1_un1_count_30__n u1_cnt_int_count_0_8__un1_n u1_un2_count_3__n u1_cnt_int_count_0_8__un0_n u1_n_40_n u1_cnt_int_count_0_9__un3_n u1_n_43_n \
+  u1_cnt_int_count_0_9__un1_n u1_un1_count_29__n u1_cnt_int_count_0_9__un0_n u1_cnt_int_un5_count_n u1_cnt_int_count_0_10__un3_n u1_un1_q_2_n u1_cnt_int_count_0_10__un1_n u1_q_m_3__n u1_cnt_int_count_0_10__un0_n u1_un1_count_m_29__n u0_q1_4_7__n \
+  u0_q1_4_6__n u0_q1_4_5__n u0_q1_4_4__n u0_q1_4_3__n u0_q1_4_2__n u0_q1_4_1__n u0_q1_4_0__n u0_un1_en_shift_n u1_cnt_int_un5_count_i_n load_i q_i \
+  temp_i_3__n clk_i u1_cnt_int_count_i_2__n u1_cnt_int_count_i_0_1__n u1_cnt_int_count_i_0__n u1_un1_count_i_27__n u1_un1_count_i_28__n u1_un1_count_i_25__n u1_un1_count_i_26__n u1_un1_count_i_2__n u1_un1_count_i_1__n \
+  u1_un1_count_i_4__n u1_un1_count_i_3__n u1_un1_count_i_6__n u1_un1_count_i_5__n u1_un1_count_i_8__n u1_un1_count_i_7__n u1_un1_count_i_10__n u1_un1_count_i_9__n u1_un1_count_i_12__n u1_un1_count_i_11__n u1_un1_count_i_14__n \
+  u1_un1_count_i_13__n u1_un1_count_i_16__n u1_un1_count_i_15__n u1_un1_count_i_18__n u1_un1_count_i_17__n u1_un1_count_i_20__n u1_un1_count_i_19__n u1_un1_count_i_22__n u1_un1_count_i_21__n rst_bar_i u1_un1_count_i_23__n \
+  u1_un1_count_i_24__n load_c send_c clk_c rst_bar_c d_c_0__n d_c_1__n d_c_2__n d_c_3__n d_c_4__n d_c_5__n \
+  d_c_6__n d_c_7__n valid_c sample_clk_c u0_un1_en_shift_0_n u1_un1_en_count_inv_0_n u1_un1_count_m_i_29__n u1_q_m_i_3__n u1_un1_q_2_0_n send_c_i a_i \
+  u1_cnt_int_un5_count_1_n u1_cnt_int_un5_count_2_n u1_cnt_int_un5_count_3_n u1_cnt_int_un5_count_4_n u1_cnt_int_un5_count_5_n u1_cnt_int_un5_count_6_n u1_cnt_int_un5_count_7_n u1_cnt_int_un5_count_8_n u1_cnt_int_un5_count_9_n u1_cnt_int_un5_count_10_n u1_cnt_int_un5_count_11_n \
+  u1_cnt_int_un5_count_12_n u1_cnt_int_un5_count_13_n u1_cnt_int_un5_count_14_n u1_cnt_int_un5_count_15_n u1_cnt_int_un5_count_16_n u1_cnt_int_un5_count_17_n u1_cnt_int_un5_count_18_n u1_cnt_int_un5_count_19_n
+.names  u1_n_109_n.BLIF u1_cnt_int_count_25_.BLIF u1_n_112_n
+11 1
+.names  u1_n_112_n.BLIF u1_cnt_int_count_26_.BLIF u1_n_115_n
+11 1
+.names  clk_c.BLIF u1_cnt_int_count_4_.C
+1 1
+.names  u1_n_115_n.BLIF u1_cnt_int_count_27_.BLIF u1_n_118_n
+11 1
+.names  u1_n_118_n.BLIF u1_cnt_int_count_28_.BLIF u1_n_121_n
+11 1
+.names  u1_n_121_n.BLIF u1_cnt_int_count_29_.BLIF u1_n_124_n
+11 1
+.names  u1_n_124_n.BLIF u1_cnt_int_count_30_.BLIF u1_n_127_n
+11 1
+.names  clk_c.BLIF u1_cnt_int_count_5_.C
+1 1
+.names  u1_un1_count_23__n.BLIF u1_un1_count_i_23__n
+0 1
+.names  u1_un1_count_24__n.BLIF u1_un1_count_i_24__n
+0 1
+.names  u1_n_46_n.BLIF u1_cnt_int_count_4_.BLIF u1_un1_count_28__n
+01 1
+10 1
+.names  u1_n_49_n.BLIF u1_cnt_int_count_5_.BLIF u1_un1_count_27__n
+01 1
+10 1
+.names  clk_c.BLIF u1_cnt_int_count_6_.C
+1 1
+.names  u1_n_52_n.BLIF u1_cnt_int_count_6_.BLIF u1_un1_count_26__n
+01 1
+10 1
+.names  u1_n_55_n.BLIF u1_cnt_int_count_7_.BLIF u1_un1_count_25__n
+01 1
+10 1
+.names  u1_n_58_n.BLIF u1_cnt_int_count_8_.BLIF u1_un1_count_24__n
+01 1
+10 1
+.names  u1_n_61_n.BLIF u1_cnt_int_count_9_.BLIF u1_un1_count_23__n
+01 1
+10 1
+.names  clk_c.BLIF u1_cnt_int_count_7_.C
+1 1
+.names  u1_n_64_n.BLIF u1_cnt_int_count_10_.BLIF u1_un1_count_22__n
+01 1
+10 1
+.names  u1_n_64_n.BLIF u1_cnt_int_count_10_.BLIF u1_n_67_n
+11 1
+.names  u1_n_67_n.BLIF u1_cnt_int_count_11_.BLIF u1_n_70_n
+11 1
+.names  u1_n_70_n.BLIF u1_cnt_int_count_12_.BLIF u1_n_73_n
+11 1
+.names  clk_c.BLIF u1_cnt_int_count_8_.C
+1 1
+.names  u1_n_73_n.BLIF u1_cnt_int_count_13_.BLIF u1_n_76_n
+11 1
+.names  u1_n_76_n.BLIF u1_cnt_int_count_14_.BLIF u1_n_79_n
+11 1
+.names  u1_n_79_n.BLIF u1_cnt_int_count_15_.BLIF u1_n_82_n
+11 1
+.names  u1_n_82_n.BLIF u1_cnt_int_count_16_.BLIF u1_n_85_n
+11 1
+.names  clk_c.BLIF u1_cnt_int_count_9_.C
+1 1
+.names  u1_n_85_n.BLIF u1_cnt_int_count_17_.BLIF u1_n_88_n
+11 1
+.names  u1_n_88_n.BLIF u1_cnt_int_count_18_.BLIF u1_n_91_n
+11 1
+.names  u1_n_91_n.BLIF u1_cnt_int_count_19_.BLIF u1_n_94_n
+11 1
+.names  u1_n_94_n.BLIF u1_cnt_int_count_20_.BLIF u1_n_97_n
+11 1
+.names  clk_c.BLIF u1_cnt_int_count_10_.C
+1 1
+.names  u1_n_97_n.BLIF u1_cnt_int_count_21_.BLIF u1_n_100_n
+11 1
+.names  u1_n_100_n.BLIF u1_cnt_int_count_22_.BLIF u1_n_103_n
+11 1
+.names  u1_n_103_n.BLIF u1_cnt_int_count_23_.BLIF u1_n_106_n
+11 1
+.names  u1_n_106_n.BLIF u1_cnt_int_count_24_.BLIF u1_n_109_n
+11 1
+.names  clk_c.BLIF u1_cnt_int_count_11_.C
+1 1
+.names  u1_n_46_n.BLIF u1_cnt_int_count_4_.BLIF u1_n_49_n
+11 1
+.names  u1_n_49_n.BLIF u1_cnt_int_count_5_.BLIF u1_n_52_n
+11 1
+.names  u1_n_52_n.BLIF u1_cnt_int_count_6_.BLIF u1_n_55_n
+11 1
+.names  u1_n_55_n.BLIF u1_cnt_int_count_7_.BLIF u1_n_58_n
+11 1
+.names  clk_c.BLIF u1_cnt_int_count_12_.C
+1 1
+.names  u1_n_58_n.BLIF u1_cnt_int_count_8_.BLIF u1_n_61_n
+11 1
+.names  u1_n_61_n.BLIF u1_cnt_int_count_9_.BLIF u1_n_64_n
+11 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_26__un3_n
+0 1
+.names  u1_cnt_int_count_26_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_26__un1_n
+11 1
+.names  clk_c.BLIF u1_cnt_int_count_13_.C
+1 1
+.names  u1_un1_count_6__n.BLIF u1_cnt_int_count_0_26__un3_n.BLIF u1_cnt_int_count_0_26__un0_n
+11 1
+.names  u1_cnt_int_count_0_26__un1_n.BLIF u1_cnt_int_count_0_26__un0_n.BLIF u1_cnt_int_count_26_.D
+1- 1
+-1 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_27__un3_n
+0 1
+.names  u1_cnt_int_count_27_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_27__un1_n
+11 1
+.names  clk_c.BLIF u1_cnt_int_count_14_.C
+1 1
+.names  u1_un1_count_5__n.BLIF u1_cnt_int_count_0_27__un3_n.BLIF u1_cnt_int_count_0_27__un0_n
+11 1
+.names  u1_cnt_int_count_0_27__un1_n.BLIF u1_cnt_int_count_0_27__un0_n.BLIF u1_cnt_int_count_27_.D
+1- 1
+-1 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_28__un3_n
+0 1
+.names  u1_cnt_int_count_28_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_28__un1_n
+11 1
+.names  clk_c.BLIF u1_cnt_int_count_15_.C
+1 1
+.names  u1_un1_count_4__n.BLIF u1_cnt_int_count_0_28__un3_n.BLIF u1_cnt_int_count_0_28__un0_n
+11 1
+.names  u1_cnt_int_count_0_28__un1_n.BLIF u1_cnt_int_count_0_28__un0_n.BLIF u1_cnt_int_count_28_.D
+1- 1
+-1 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_29__un3_n
+0 1
+.names  u1_cnt_int_count_29_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_29__un1_n
+11 1
+.names  clk_c.BLIF u1_cnt_int_count_16_.C
+1 1
+.names  u1_un1_count_3__n.BLIF u1_cnt_int_count_0_29__un3_n.BLIF u1_cnt_int_count_0_29__un0_n
+11 1
+.names  u1_cnt_int_count_0_29__un1_n.BLIF u1_cnt_int_count_0_29__un0_n.BLIF u1_cnt_int_count_29_.D
+1- 1
+-1 1
+.names  load.BLIF load_c
+1 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_30__un3_n
+0 1
+.names  send.BLIF send_c
+1 1
+.names  u1_cnt_int_count_30_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_30__un1_n
+11 1
+.names  clk_c.BLIF u1_cnt_int_count_17_.C
+1 1
+.names  clk.BLIF clk_c
+1 1
+.names  u1_un1_count_2__n.BLIF u1_cnt_int_count_0_30__un3_n.BLIF u1_cnt_int_count_0_30__un0_n
+11 1
+.names  rst_bar.BLIF rst_bar_c
+1 1
+.names  u1_cnt_int_count_0_30__un1_n.BLIF u1_cnt_int_count_0_30__un0_n.BLIF u1_cnt_int_count_30_.D
+1- 1
+-1 1
+.names  d_0_.BLIF d_c_0__n
+1 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_31__un3_n
+0 1
+.names  d_1_.BLIF d_c_1__n
+1 1
+.names  u1_cnt_int_count_31_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_31__un1_n
+11 1
+.names  clk_c.BLIF u1_cnt_int_count_18_.C
+1 1
+.names  d_2_.BLIF d_c_2__n
+1 1
+.names  u1_un1_count_1__n.BLIF u1_cnt_int_count_0_31__un3_n.BLIF u1_cnt_int_count_0_31__un0_n
+11 1
+.names  d_3_.BLIF d_c_3__n
+1 1
+.names  u1_cnt_int_count_0_31__un1_n.BLIF u1_cnt_int_count_0_31__un0_n.BLIF u1_cnt_int_count_31_.D
+1- 1
+-1 1
+.names  d_4_.BLIF d_c_4__n
+1 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_11__un3_n
+0 1
+.names  d_5_.BLIF d_c_5__n
+1 1
+.names  u1_cnt_int_count_11_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_11__un1_n
+11 1
+.names  clk_c.BLIF u1_q_3_.C
+1 1
+.names  d_6_.BLIF d_c_6__n
+1 1
+.names  u1_un1_count_21__n.BLIF u1_cnt_int_count_0_11__un3_n.BLIF u1_cnt_int_count_0_11__un0_n
+11 1
+.names  d_7_.BLIF d_c_7__n
+1 1
+.names  u1_cnt_int_count_0_11__un1_n.BLIF u1_cnt_int_count_0_11__un0_n.BLIF u1_cnt_int_count_11_.D
+1- 1
+-1 1
+.names  u0_q1_0_reg.BLIF serial_out
+1 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_12__un3_n
+0 1
+.names  valid_c.BLIF valid
+1 1
+.names  u1_cnt_int_count_12_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_12__un1_n
+11 1
+.names  sample_clk_c.BLIF sample_clk
+1 1
+.names  u1_un1_count_20__n.BLIF u1_cnt_int_count_0_12__un3_n.BLIF u1_cnt_int_count_0_12__un0_n
+11 1
+.names  clk_c.BLIF u1_cnt_int_count_0_.C
+1 1
+.names  u1_cnt_int_un5_count_7_n.BLIF u1_cnt_int_un5_count_8_n.BLIF u1_cnt_int_un5_count_20_n
+11 1
+.names  u1_cnt_int_count_0_12__un1_n.BLIF u1_cnt_int_count_0_12__un0_n.BLIF u1_cnt_int_count_12_.D
+1- 1
+-1 1
+.names  u1_cnt_int_un5_count_9_n.BLIF u1_cnt_int_un5_count_10_n.BLIF u1_cnt_int_un5_count_21_n
+11 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_13__un3_n
+0 1
+.names  u1_cnt_int_un5_count_11_n.BLIF u1_cnt_int_un5_count_12_n.BLIF u1_cnt_int_un5_count_22_n
+11 1
+.names  u1_cnt_int_count_13_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_13__un1_n
+11 1
+.names  u1_cnt_int_un5_count_13_n.BLIF u1_cnt_int_un5_count_14_n.BLIF u1_cnt_int_un5_count_23_n
+11 1
+.names  u1_un1_count_19__n.BLIF u1_cnt_int_count_0_13__un3_n.BLIF u1_cnt_int_count_0_13__un0_n
+11 1
+.names  clk_c.BLIF u1_cnt_int_count_1_.C
+1 1
+.names  u1_cnt_int_un5_count_15_n.BLIF u1_cnt_int_un5_count_16_n.BLIF u1_cnt_int_un5_count_24_n
+11 1
+.names  u1_cnt_int_count_0_13__un1_n.BLIF u1_cnt_int_count_0_13__un0_n.BLIF u1_cnt_int_count_13_.D
+1- 1
+-1 1
+.names  u1_cnt_int_un5_count_17_n.BLIF u1_cnt_int_un5_count_18_n.BLIF u1_cnt_int_un5_count_25_n
+11 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_14__un3_n
+0 1
+.names  u1_cnt_int_un5_count_19_n.BLIF u1_cnt_int_un5_count_20_n.BLIF u1_cnt_int_un5_count_26_n
+11 1
+.names  u1_cnt_int_count_14_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_14__un1_n
+11 1
+.names  u1_cnt_int_un5_count_21_n.BLIF u1_cnt_int_un5_count_22_n.BLIF u1_cnt_int_un5_count_27_n
+11 1
+.names  u1_un1_count_18__n.BLIF u1_cnt_int_count_0_14__un3_n.BLIF u1_cnt_int_count_0_14__un0_n
+11 1
+.names  clk_c.BLIF u1_cnt_int_count_2_.C
+1 1
+.names  u1_cnt_int_un5_count_23_n.BLIF u1_cnt_int_un5_count_24_n.BLIF u1_cnt_int_un5_count_28_n
+11 1
+.names  u1_cnt_int_count_0_14__un1_n.BLIF u1_cnt_int_count_0_14__un0_n.BLIF u1_cnt_int_count_14_.D
+1- 1
+-1 1
+.names  u1_cnt_int_un5_count_25_n.BLIF u1_cnt_int_un5_count_26_n.BLIF u1_cnt_int_un5_count_29_n
+11 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_15__un3_n
+0 1
+.names  u1_cnt_int_un5_count_27_n.BLIF u1_cnt_int_un5_count_28_n.BLIF u1_cnt_int_un5_count_30_n
+11 1
+.names  u1_cnt_int_count_15_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_15__un1_n
+11 1
+.names  u1_cnt_int_un5_count_29_n.BLIF u1_cnt_int_un5_count_30_n.BLIF u1_cnt_int_un5_count_n
+11 1
+.names  u1_un1_count_17__n.BLIF u1_cnt_int_count_0_15__un3_n.BLIF u1_cnt_int_count_0_15__un0_n
+11 1
+.names  clk_c.BLIF u1_cnt_int_count_3_.C
+1 1
+.names  u1_un1_count_29__n.BLIF u2_q.BLIF u1_un1_count_m_1_29__n
+11 1
+.names  u1_cnt_int_count_0_15__un1_n.BLIF u1_cnt_int_count_0_15__un0_n.BLIF u1_cnt_int_count_15_.D
+1- 1
+-1 1
+.names  u1_un1_count_m_1_29__n.BLIF u1_cnt_int_un5_count_i_n.BLIF u1_un1_count_m_29__n
+11 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_16__un3_n
+0 1
+.names  u1_un1_count_i_5__n.BLIF u1_un1_count_i_6__n.BLIF u1_cnt_int_un5_count_5_n
+11 1
+.names  u1_cnt_int_count_16_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_16__un1_n
+11 1
+.names  u1_un1_count_i_7__n.BLIF u1_un1_count_i_8__n.BLIF u1_cnt_int_un5_count_6_n
+11 1
+.names  u1_un1_count_16__n.BLIF u1_cnt_int_count_0_16__un3_n.BLIF u1_cnt_int_count_0_16__un0_n
+11 1
+.names  clk_c.BLIF u2_q.C
+1 1
+.names  u1_un1_count_i_9__n.BLIF u1_un1_count_i_10__n.BLIF u1_cnt_int_un5_count_7_n
+11 1
+.names  u1_cnt_int_count_0_16__un1_n.BLIF u1_cnt_int_count_0_16__un0_n.BLIF u1_cnt_int_count_16_.D
+1- 1
+-1 1
+.names  u1_un1_count_i_11__n.BLIF u1_un1_count_i_12__n.BLIF u1_cnt_int_un5_count_8_n
+11 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_17__un3_n
+0 1
+.names  rst_bar_i.BLIF u2_q.AR
+1 1
+.names  u1_un1_count_i_13__n.BLIF u1_un1_count_i_14__n.BLIF u1_cnt_int_un5_count_9_n
+11 1
+.names  u1_cnt_int_count_17_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_17__un1_n
+11 1
+.names  u1_un1_count_i_15__n.BLIF u1_un1_count_i_16__n.BLIF u1_cnt_int_un5_count_10_n
+11 1
+.names  u1_un1_count_15__n.BLIF u1_cnt_int_count_0_17__un3_n.BLIF u1_cnt_int_count_0_17__un0_n
+11 1
+.names  u1_un1_count_i_17__n.BLIF u1_un1_count_i_18__n.BLIF u1_cnt_int_un5_count_11_n
+11 1
+.names  u1_cnt_int_count_0_17__un1_n.BLIF u1_cnt_int_count_0_17__un0_n.BLIF u1_cnt_int_count_17_.D
+1- 1
+-1 1
+.names  u1_un1_count_i_19__n.BLIF u1_un1_count_i_20__n.BLIF u1_cnt_int_un5_count_12_n
+11 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_18__un3_n
+0 1
+.names  u1_un1_count_i_21__n.BLIF u1_un1_count_i_22__n.BLIF u1_cnt_int_un5_count_13_n
+11 1
+.names  u1_cnt_int_count_18_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_18__un1_n
+11 1
+.names  u1_un1_count_i_23__n.BLIF u1_un1_count_i_24__n.BLIF u1_cnt_int_un5_count_14_n
+11 1
+.names  u1_un1_count_14__n.BLIF u1_cnt_int_count_0_18__un3_n.BLIF u1_cnt_int_count_0_18__un0_n
+11 1
+.names  u1_un1_count_i_25__n.BLIF u1_un1_count_i_26__n.BLIF u1_cnt_int_un5_count_15_n
+11 1
+.names  u1_cnt_int_count_0_18__un1_n.BLIF u1_cnt_int_count_0_18__un0_n.BLIF u1_cnt_int_count_18_.D
+1- 1
+-1 1
+.names  u1_un1_count_i_27__n.BLIF u1_un1_count_i_28__n.BLIF u1_cnt_int_un5_count_16_n
+11 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_19__un3_n
+0 1
+.names  u1_cnt_int_un5_count_1_n.BLIF u1_cnt_int_un5_count_2_n.BLIF u1_cnt_int_un5_count_17_n
+11 1
+.names  u1_cnt_int_count_19_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_19__un1_n
+11 1
+.names  u1_cnt_int_un5_count_3_n.BLIF u1_cnt_int_un5_count_4_n.BLIF u1_cnt_int_un5_count_18_n
+11 1
+.names  u1_un1_count_13__n.BLIF u1_cnt_int_count_0_19__un3_n.BLIF u1_cnt_int_count_0_19__un0_n
+11 1
+.names  u1_cnt_int_un5_count_5_n.BLIF u1_cnt_int_un5_count_6_n.BLIF u1_cnt_int_un5_count_19_n
+11 1
+.names  u1_cnt_int_count_0_19__un1_n.BLIF u1_cnt_int_count_0_19__un0_n.BLIF u1_cnt_int_count_19_.D
+1- 1
+-1 1
+.names  u0_un1_en_shift_0_n.BLIF u0_un1_en_shift_n
+0 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_20__un3_n
+0 1
+.names  u1_un1_en_count_inv_0_n.BLIF u1_un1_en_count_inv_n
+0 1
+.names  u1_cnt_int_count_20_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_20__un1_n
+11 1
+.names  u1_un1_count_m_29__n.BLIF u1_un1_count_m_i_29__n
+0 1
+.names  u1_un1_count_12__n.BLIF u1_cnt_int_count_0_20__un3_n.BLIF u1_cnt_int_count_0_20__un0_n
+11 1
+.names  u1_q_m_3__n.BLIF u1_q_m_i_3__n
+0 1
+.names  u1_cnt_int_count_0_20__un1_n.BLIF u1_cnt_int_count_0_20__un0_n.BLIF u1_cnt_int_count_20_.D
+1- 1
+-1 1
+.names  u1_un1_q_2_0_n.BLIF u1_un1_q_2_n
+0 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_21__un3_n
+0 1
+.names  send_c.BLIF send_c_i
+0 1
+.names  u1_cnt_int_count_21_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_21__un1_n
+11 1
+.names  a_i.BLIF u2_q.D
+0 1
+.names  u1_un1_count_11__n.BLIF u1_cnt_int_count_0_21__un3_n.BLIF u1_cnt_int_count_0_21__un0_n
+11 1
+.names  u1_cnt_int_count_3_.BLIF u1_cnt_int_count_i_0__n.BLIF u1_cnt_int_un5_count_1_n
+11 1
+.names  u1_cnt_int_count_0_21__un1_n.BLIF u1_cnt_int_count_0_21__un0_n.BLIF u1_cnt_int_count_21_.D
+1- 1
+-1 1
+.names  u1_cnt_int_count_i_2__n.BLIF u1_cnt_int_count_i_0_1__n.BLIF u1_cnt_int_un5_count_2_n
+11 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_22__un3_n
+0 1
+.names  u1_un1_count_i_1__n.BLIF u1_un1_count_i_2__n.BLIF u1_cnt_int_un5_count_3_n
+11 1
+.names  u1_cnt_int_count_22_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_22__un1_n
+11 1
+.names  u1_un1_count_i_3__n.BLIF u1_un1_count_i_4__n.BLIF u1_cnt_int_un5_count_4_n
+11 1
+.names  u1_un1_count_10__n.BLIF u1_cnt_int_count_0_22__un3_n.BLIF u1_cnt_int_count_0_22__un0_n
+11 1
+.names  u0_un1_en_shift_n.BLIF u0_q1_0_3__un3_n
+0 1
+.names  u1_cnt_int_count_0_22__un1_n.BLIF u1_cnt_int_count_0_22__un0_n.BLIF u1_cnt_int_count_22_.D
+1- 1
+-1 1
+.names  u0_q1_4_3__n.BLIF u0_un1_en_shift_n.BLIF u0_q1_0_3__un1_n
+11 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_23__un3_n
+0 1
+.names  u0_q1_3_.BLIF u0_q1_0_3__un3_n.BLIF u0_q1_0_3__un0_n
+11 1
+.names  u1_cnt_int_count_23_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_23__un1_n
+11 1
+.names  u0_q1_0_3__un1_n.BLIF u0_q1_0_3__un0_n.BLIF u0_q1_3_.D
+1- 1
+-1 1
+.names  u1_un1_count_9__n.BLIF u1_cnt_int_count_0_23__un3_n.BLIF u1_cnt_int_count_0_23__un0_n
+11 1
+.names  u0_un1_en_shift_n.BLIF u0_q1_0_2__un3_n
+0 1
+.names  u1_cnt_int_count_0_23__un1_n.BLIF u1_cnt_int_count_0_23__un0_n.BLIF u1_cnt_int_count_23_.D
+1- 1
+-1 1
+.names  u0_q1_4_2__n.BLIF u0_un1_en_shift_n.BLIF u0_q1_0_2__un1_n
+11 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_24__un3_n
+0 1
+.names  u0_q1_2_.BLIF u0_q1_0_2__un3_n.BLIF u0_q1_0_2__un0_n
+11 1
+.names  u1_cnt_int_count_24_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_24__un1_n
+11 1
+.names  u0_q1_0_2__un1_n.BLIF u0_q1_0_2__un0_n.BLIF u0_q1_2_.D
+1- 1
+-1 1
+.names  u1_un1_count_8__n.BLIF u1_cnt_int_count_0_24__un3_n.BLIF u1_cnt_int_count_0_24__un0_n
+11 1
+.names  u0_un1_en_shift_n.BLIF u0_q1_0_1__un3_n
+0 1
+.names  u1_cnt_int_count_0_24__un1_n.BLIF u1_cnt_int_count_0_24__un0_n.BLIF u1_cnt_int_count_24_.D
+1- 1
+-1 1
+.names  u0_q1_4_1__n.BLIF u0_un1_en_shift_n.BLIF u0_q1_0_1__un1_n
+11 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_25__un3_n
+0 1
+.names  u0_q1_1_.BLIF u0_q1_0_1__un3_n.BLIF u0_q1_0_1__un0_n
+11 1
+.names  u1_cnt_int_count_25_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_25__un1_n
+11 1
+.names  u0_q1_0_1__un1_n.BLIF u0_q1_0_1__un0_n.BLIF u0_q1_1_.D
+1- 1
+-1 1
+.names  u1_un1_count_7__n.BLIF u1_cnt_int_count_0_25__un3_n.BLIF u1_cnt_int_count_0_25__un0_n
+11 1
+.names  u0_un1_en_shift_n.BLIF u0_q1_0_0__un3_n
+0 1
+.names  u1_cnt_int_count_0_25__un1_n.BLIF u1_cnt_int_count_0_25__un0_n.BLIF u1_cnt_int_count_25_.D
+1- 1
+-1 1
+.names  u0_q1_4_0__n.BLIF u0_un1_en_shift_n.BLIF u0_q1_0_0__un1_n
+11 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_4__un3_n
+0 1
+.names  u0_q1_0_reg.BLIF u0_q1_0_0__un3_n.BLIF u0_q1_0_0__un0_n
+11 1
+.names  u1_cnt_int_count_4_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_4__un1_n
+11 1
+.names  u0_q1_0_0__un1_n.BLIF u0_q1_0_0__un0_n.BLIF u0_q1_0_reg.D
+1- 1
+-1 1
+.names  u1_un1_count_28__n.BLIF u1_cnt_int_count_0_4__un3_n.BLIF u1_cnt_int_count_0_4__un0_n
+11 1
+.names  load_i.BLIF u1_un1_q_2_n.BLIF u1_q_3_.D
+11 1
+.names  u1_cnt_int_count_0_4__un1_n.BLIF u1_cnt_int_count_0_4__un0_n.BLIF u1_cnt_int_count_4_.D
+1- 1
+-1 1
+.names  u1_cnt_int_un5_count_n.BLIF u1_cnt_int_un5_count_i_n
+0 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_5__un3_n
+0 1
+.names  d_c_7__n.BLIF load_c.BLIF u0_q1_4_7__n
+11 1
+.names  u1_cnt_int_count_5_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_5__un1_n
+11 1
+.names  load_c.BLIF u0_q1_4_6__un3_n
+0 1
+.names  u1_un1_count_27__n.BLIF u1_cnt_int_count_0_5__un3_n.BLIF u1_cnt_int_count_0_5__un0_n
+11 1
+.names  d_c_6__n.BLIF load_c.BLIF u0_q1_4_6__un1_n
+11 1
+.names  u1_cnt_int_count_0_5__un1_n.BLIF u1_cnt_int_count_0_5__un0_n.BLIF u1_cnt_int_count_5_.D
+1- 1
+-1 1
+.names  u0_q1_7_.BLIF u0_q1_4_6__un3_n.BLIF u0_q1_4_6__un0_n
+11 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_6__un3_n
+0 1
+.names  u0_q1_4_6__un1_n.BLIF u0_q1_4_6__un0_n.BLIF u0_q1_4_6__n
+1- 1
+-1 1
+.names  u1_cnt_int_count_6_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_6__un1_n
+11 1
+.names  load_c.BLIF u0_q1_4_5__un3_n
+0 1
+.names  u1_un1_count_26__n.BLIF u1_cnt_int_count_0_6__un3_n.BLIF u1_cnt_int_count_0_6__un0_n
+11 1
+.names  d_c_5__n.BLIF load_c.BLIF u0_q1_4_5__un1_n
+11 1
+.names  u1_cnt_int_count_0_6__un1_n.BLIF u1_cnt_int_count_0_6__un0_n.BLIF u1_cnt_int_count_6_.D
+1- 1
+-1 1
+.names  u0_q1_6_.BLIF u0_q1_4_5__un3_n.BLIF u0_q1_4_5__un0_n
+11 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_7__un3_n
+0 1
+.names  u0_q1_4_5__un1_n.BLIF u0_q1_4_5__un0_n.BLIF u0_q1_4_5__n
+1- 1
+-1 1
+.names  u1_cnt_int_count_7_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_7__un1_n
+11 1
+.names  load_c.BLIF u0_q1_4_4__un3_n
+0 1
+.names  u1_un1_count_25__n.BLIF u1_cnt_int_count_0_7__un3_n.BLIF u1_cnt_int_count_0_7__un0_n
+11 1
+.names  d_c_4__n.BLIF load_c.BLIF u0_q1_4_4__un1_n
+11 1
+.names  u1_cnt_int_count_0_7__un1_n.BLIF u1_cnt_int_count_0_7__un0_n.BLIF u1_cnt_int_count_7_.D
+1- 1
+-1 1
+.names  u0_q1_5_.BLIF u0_q1_4_4__un3_n.BLIF u0_q1_4_4__un0_n
+11 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_8__un3_n
+0 1
+.names  u0_q1_4_4__un1_n.BLIF u0_q1_4_4__un0_n.BLIF u0_q1_4_4__n
+1- 1
+-1 1
+.names  u1_cnt_int_count_8_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_8__un1_n
+11 1
+.names  load_c.BLIF u0_q1_4_3__un3_n
+0 1
+.names  u1_un1_count_24__n.BLIF u1_cnt_int_count_0_8__un3_n.BLIF u1_cnt_int_count_0_8__un0_n
+11 1
+.names  d_c_3__n.BLIF load_c.BLIF u0_q1_4_3__un1_n
+11 1
+.names  u1_cnt_int_count_0_8__un1_n.BLIF u1_cnt_int_count_0_8__un0_n.BLIF u1_cnt_int_count_8_.D
+1- 1
+-1 1
+.names  u0_q1_4_.BLIF u0_q1_4_3__un3_n.BLIF u0_q1_4_3__un0_n
+11 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_9__un3_n
+0 1
+.names  u0_q1_4_3__un1_n.BLIF u0_q1_4_3__un0_n.BLIF u0_q1_4_3__n
+1- 1
+-1 1
+.names  u1_cnt_int_count_9_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_9__un1_n
+11 1
+.names  load_c.BLIF u0_q1_4_2__un3_n
+0 1
+.names  u1_un1_count_23__n.BLIF u1_cnt_int_count_0_9__un3_n.BLIF u1_cnt_int_count_0_9__un0_n
+11 1
+.names  d_c_2__n.BLIF load_c.BLIF u0_q1_4_2__un1_n
+11 1
+.names  u1_cnt_int_count_0_9__un1_n.BLIF u1_cnt_int_count_0_9__un0_n.BLIF u1_cnt_int_count_9_.D
+1- 1
+-1 1
+.names  u0_q1_3_.BLIF u0_q1_4_2__un3_n.BLIF u0_q1_4_2__un0_n
+11 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_10__un3_n
+0 1
+.names  u0_q1_4_2__un1_n.BLIF u0_q1_4_2__un0_n.BLIF u0_q1_4_2__n
+1- 1
+-1 1
+.names  u1_cnt_int_count_10_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_10__un1_n
+11 1
+.names  load_c.BLIF u0_q1_4_1__un3_n
+0 1
+.names  u1_un1_count_22__n.BLIF u1_cnt_int_count_0_10__un3_n.BLIF u1_cnt_int_count_0_10__un0_n
+11 1
+.names  d_c_1__n.BLIF load_c.BLIF u0_q1_4_1__un1_n
+11 1
+.names  u1_cnt_int_count_0_10__un1_n.BLIF u1_cnt_int_count_0_10__un0_n.BLIF u1_cnt_int_count_10_.D
+1- 1
+-1 1
+.names  u0_q1_2_.BLIF u0_q1_4_1__un3_n.BLIF u0_q1_4_1__un0_n
+11 1
+.names  u1_q_3_.AR
+.names  u0_q1_4_1__un1_n.BLIF u0_q1_4_1__un0_n.BLIF u0_q1_4_1__n
+1- 1
+-1 1
+.names  load_c.BLIF u0_q1_4_0__un3_n
+0 1
+.names  d_c_0__n.BLIF load_c.BLIF u0_q1_4_0__un1_n
+11 1
+.names  u0_q1_1_.BLIF u0_q1_4_0__un3_n.BLIF u0_q1_4_0__un0_n
+11 1
+.names  u0_q1_4_0__un1_n.BLIF u0_q1_4_0__un0_n.BLIF u0_q1_4_0__n
+1- 1
+-1 1
+.names  a_i.BLIF load_i.BLIF u0_un1_en_shift_0_n
+11 1
+.names  u0_un1_en_shift_n.BLIF u0_q1_0_7__un3_n
+0 1
+.names  u0_q1_4_7__n.BLIF u0_un1_en_shift_n.BLIF u0_q1_0_7__un1_n
+11 1
+.names  u0_q1_7_.BLIF u0_q1_0_7__un3_n.BLIF u0_q1_0_7__un0_n
+11 1
+.names  clk_c.BLIF u0_q1_3_.C
+1 1
+.names  u0_q1_0_7__un1_n.BLIF u0_q1_0_7__un0_n.BLIF u0_q1_7_.D
+1- 1
+-1 1
+.names  u0_un1_en_shift_n.BLIF u0_q1_0_6__un3_n
+0 1
+.names  rst_bar_i.BLIF u0_q1_3_.AR
+1 1
+.names  u0_q1_4_6__n.BLIF u0_un1_en_shift_n.BLIF u0_q1_0_6__un1_n
+11 1
+.names  u0_q1_6_.BLIF u0_q1_0_6__un3_n.BLIF u0_q1_0_6__un0_n
+11 1
+.names  u0_q1_0_6__un1_n.BLIF u0_q1_0_6__un0_n.BLIF u0_q1_6_.D
+1- 1
+-1 1
+.names  u0_un1_en_shift_n.BLIF u0_q1_0_5__un3_n
+0 1
+.names  clk_c.BLIF u0_q1_4_.C
+1 1
+.names  u0_q1_4_5__n.BLIF u0_un1_en_shift_n.BLIF u0_q1_0_5__un1_n
+11 1
+.names  u0_q1_5_.BLIF u0_q1_0_5__un3_n.BLIF u0_q1_0_5__un0_n
+11 1
+.names  rst_bar_i.BLIF u0_q1_4_.AR
+1 1
+.names  u0_q1_0_5__un1_n.BLIF u0_q1_0_5__un0_n.BLIF u0_q1_5_.D
+1- 1
+-1 1
+.names  u0_un1_en_shift_n.BLIF u0_q1_0_4__un3_n
+0 1
+.names  u0_q1_4_4__n.BLIF u0_un1_en_shift_n.BLIF u0_q1_0_4__un1_n
+11 1
+.names  u0_q1_4_.BLIF u0_q1_0_4__un3_n.BLIF u0_q1_0_4__un0_n
+11 1
+.names  clk_c.BLIF u0_q1_5_.C
+1 1
+.names  u0_q1_0_4__un1_n.BLIF u0_q1_0_4__un0_n.BLIF u0_q1_4_.D
+1- 1
+-1 1
+.names  u1_cnt_int_un5_count_i_n.BLIF u1_un1_count_29__n.BLIF u1_un2_count_3__n
+11 1
+.names  rst_bar_i.BLIF u0_q1_5_.AR
+1 1
+.names  u1_cnt_int_count_i_0__n.BLIF u1_cnt_int_un5_count_i_n.BLIF u1_un2_count_0__n
+11 1
+.names  u1_cnt_int_count_0_.BLIF u1_cnt_int_count_i_0__n
+0 1
+.names  u1_cnt_int_count_2_.BLIF u1_cnt_int_count_i_2__n
+0 1
+.names  u1_cnt_int_count_1_.BLIF u1_cnt_int_count_i_0_1__n
+0 1
+.names  clk_c.BLIF u0_q1_6_.C
+1 1
+.names  clk_c.BLIF clk_i
+0 1
+.names  clk_i.BLIF valid_c.BLIF sample_clk_c
+11 1
+.names  rst_bar_i.BLIF u0_q1_6_.AR
+1 1
+.names  u1_q_3_.BLIF temp_i_3__n
+0 1
+.names  u2_q.BLIF temp_i_3__n.BLIF valid_c
+11 1
+.names  q_i.BLIF send_c_i.BLIF a_i
+11 1
+.names  u1_q_m_i_3__n.BLIF u1_un1_count_m_i_29__n.BLIF u1_un1_q_2_0_n
+11 1
+.names  clk_c.BLIF u0_q1_7_.C
+1 1
+.names  q_i.BLIF u1_q_3_.BLIF u1_q_m_3__n
+11 1
+.names  u2_q.BLIF q_i
+0 1
+.names  rst_bar_i.BLIF u0_q1_7_.AR
+1 1
+.names  load_i.BLIF u2_q.BLIF u1_un1_en_count_inv_0_n
+11 1
+.names  load_c.BLIF load_i
+0 1
+.names  u1_un1_count_1__n.BLIF u1_un1_count_i_1__n
+0 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_0__un3_n
+0 1
+.names  clk_c.BLIF u0_q1_0_reg.C
+1 1
+.names  u1_cnt_int_count_0_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_0__un1_n
+11 1
+.names  u1_un2_count_0__n.BLIF u1_cnt_int_count_0_0__un3_n.BLIF u1_cnt_int_count_0_0__un0_n
+11 1
+.names  rst_bar_i.BLIF u0_q1_0_reg.AR
+1 1
+.names  u1_cnt_int_count_0_0__un1_n.BLIF u1_cnt_int_count_0_0__un0_n.BLIF u1_cnt_int_count_0_.D
+1- 1
+-1 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_1__un3_n
+0 1
+.names  u1_cnt_int_count_1_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_1__un1_n
+11 1
+.names  u1_un1_count_31__n.BLIF u1_cnt_int_count_0_1__un3_n.BLIF u1_cnt_int_count_0_1__un0_n
+11 1
+.names  clk_c.BLIF u0_q1_1_.C
+1 1
+.names  u1_cnt_int_count_0_1__un1_n.BLIF u1_cnt_int_count_0_1__un0_n.BLIF u1_cnt_int_count_1_.D
+1- 1
+-1 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_2__un3_n
+0 1
+.names  rst_bar_i.BLIF u0_q1_1_.AR
+1 1
+.names  u1_cnt_int_count_2_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_2__un1_n
+11 1
+.names  u1_un1_count_30__n.BLIF u1_cnt_int_count_0_2__un3_n.BLIF u1_cnt_int_count_0_2__un0_n
+11 1
+.names  u1_cnt_int_count_0_2__un1_n.BLIF u1_cnt_int_count_0_2__un0_n.BLIF u1_cnt_int_count_2_.D
+1- 1
+-1 1
+.names  u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_3__un3_n
+0 1
+.names  clk_c.BLIF u0_q1_2_.C
+1 1
+.names  u1_cnt_int_count_3_.BLIF u1_un1_en_count_inv_n.BLIF u1_cnt_int_count_0_3__un1_n
+11 1
+.names  u1_un2_count_3__n.BLIF u1_cnt_int_count_0_3__un3_n.BLIF u1_cnt_int_count_0_3__un0_n
+11 1
+.names  rst_bar_i.BLIF u0_q1_2_.AR
+1 1
+.names  u1_cnt_int_count_0_3__un1_n.BLIF u1_cnt_int_count_0_3__un0_n.BLIF u1_cnt_int_count_3_.D
+1- 1
+-1 1
+.names  u1_cnt_int_count_0_.BLIF u1_cnt_int_count_1_.BLIF u1_n_40_n
+11 1
+.names  u1_n_40_n.BLIF u1_cnt_int_count_2_.BLIF u1_n_43_n
+11 1
+.names  u1_n_43_n.BLIF u1_cnt_int_count_3_.BLIF u1_n_46_n
+11 1
+.names  clk_c.BLIF u1_cnt_int_count_19_.C
+1 1
+.names  u1_un1_count_25__n.BLIF u1_un1_count_i_25__n
+0 1
+.names  u1_un1_count_26__n.BLIF u1_un1_count_i_26__n
+0 1
+.names  u1_un1_count_27__n.BLIF u1_un1_count_i_27__n
+0 1
+.names  u1_un1_count_28__n.BLIF u1_un1_count_i_28__n
+0 1
+.names  clk_c.BLIF u1_cnt_int_count_20_.C
+1 1
+.names  u1_cnt_int_count_0_.BLIF u1_cnt_int_count_1_.BLIF u1_un1_count_31__n
+01 1
+10 1
+.names  u1_n_40_n.BLIF u1_cnt_int_count_2_.BLIF u1_un1_count_30__n
+01 1
+10 1
+.names  u1_n_43_n.BLIF u1_cnt_int_count_3_.BLIF u1_un1_count_29__n
+01 1
+10 1
+.names  u1_un1_count_16__n.BLIF u1_un1_count_i_16__n
+0 1
+.names  clk_c.BLIF u1_cnt_int_count_21_.C
+1 1
+.names  u1_un1_count_15__n.BLIF u1_un1_count_i_15__n
+0 1
+.names  u1_un1_count_14__n.BLIF u1_un1_count_i_14__n
+0 1
+.names  u1_un1_count_13__n.BLIF u1_un1_count_i_13__n
+0 1
+.names  u1_un1_count_12__n.BLIF u1_un1_count_i_12__n
+0 1
+.names  clk_c.BLIF u1_cnt_int_count_22_.C
+1 1
+.names  u1_un1_count_11__n.BLIF u1_un1_count_i_11__n
+0 1
+.names  u1_un1_count_10__n.BLIF u1_un1_count_i_10__n
+0 1
+.names  u1_un1_count_9__n.BLIF u1_un1_count_i_9__n
+0 1
+.names  u1_un1_count_8__n.BLIF u1_un1_count_i_8__n
+0 1
+.names  clk_c.BLIF u1_cnt_int_count_23_.C
+1 1
+.names  u1_un1_count_7__n.BLIF u1_un1_count_i_7__n
+0 1
+.names  u1_un1_count_6__n.BLIF u1_un1_count_i_6__n
+0 1
+.names  u1_un1_count_5__n.BLIF u1_un1_count_i_5__n
+0 1
+.names  u1_un1_count_4__n.BLIF u1_un1_count_i_4__n
+0 1
+.names  clk_c.BLIF u1_cnt_int_count_24_.C
+1 1
+.names  u1_un1_count_3__n.BLIF u1_un1_count_i_3__n
+0 1
+.names  u1_un1_count_2__n.BLIF u1_un1_count_i_2__n
+0 1
+.names  u1_n_112_n.BLIF u1_cnt_int_count_26_.BLIF u1_un1_count_6__n
+01 1
+10 1
+.names  u1_n_115_n.BLIF u1_cnt_int_count_27_.BLIF u1_un1_count_5__n
+01 1
+10 1
+.names  clk_c.BLIF u1_cnt_int_count_25_.C
+1 1
+.names  u1_n_118_n.BLIF u1_cnt_int_count_28_.BLIF u1_un1_count_4__n
+01 1
+10 1
+.names  u1_n_121_n.BLIF u1_cnt_int_count_29_.BLIF u1_un1_count_3__n
+01 1
+10 1
+.names  u1_n_124_n.BLIF u1_cnt_int_count_30_.BLIF u1_un1_count_2__n
+01 1
+10 1
+.names  u1_n_127_n.BLIF u1_cnt_int_count_31_.BLIF u1_un1_count_1__n
+01 1
+10 1
+.names  clk_c.BLIF u1_cnt_int_count_26_.C
+1 1
+.names  rst_bar_c.BLIF rst_bar_i
+0 1
+.names  u1_un1_count_22__n.BLIF u1_un1_count_i_22__n
+0 1
+.names  u1_un1_count_21__n.BLIF u1_un1_count_i_21__n
+0 1
+.names  u1_un1_count_20__n.BLIF u1_un1_count_i_20__n
+0 1
+.names  clk_c.BLIF u1_cnt_int_count_27_.C
+1 1
+.names  u1_un1_count_19__n.BLIF u1_un1_count_i_19__n
+0 1
+.names  u1_un1_count_18__n.BLIF u1_un1_count_i_18__n
+0 1
+.names  u1_un1_count_17__n.BLIF u1_un1_count_i_17__n
+0 1
+.names  u1_n_67_n.BLIF u1_cnt_int_count_11_.BLIF u1_un1_count_21__n
+01 1
+10 1
+.names  clk_c.BLIF u1_cnt_int_count_28_.C
+1 1
+.names  u1_n_70_n.BLIF u1_cnt_int_count_12_.BLIF u1_un1_count_20__n
+01 1
+10 1
+.names  u1_n_73_n.BLIF u1_cnt_int_count_13_.BLIF u1_un1_count_19__n
+01 1
+10 1
+.names  u1_n_76_n.BLIF u1_cnt_int_count_14_.BLIF u1_un1_count_18__n
+01 1
+10 1
+.names  u1_n_79_n.BLIF u1_cnt_int_count_15_.BLIF u1_un1_count_17__n
+01 1
+10 1
+.names  clk_c.BLIF u1_cnt_int_count_29_.C
+1 1
+.names  u1_n_82_n.BLIF u1_cnt_int_count_16_.BLIF u1_un1_count_16__n
+01 1
+10 1
+.names  u1_n_85_n.BLIF u1_cnt_int_count_17_.BLIF u1_un1_count_15__n
+01 1
+10 1
+.names  u1_n_88_n.BLIF u1_cnt_int_count_18_.BLIF u1_un1_count_14__n
+01 1
+10 1
+.names  u1_n_91_n.BLIF u1_cnt_int_count_19_.BLIF u1_un1_count_13__n
+01 1
+10 1
+.names  clk_c.BLIF u1_cnt_int_count_30_.C
+1 1
+.names  u1_n_94_n.BLIF u1_cnt_int_count_20_.BLIF u1_un1_count_12__n
+01 1
+10 1
+.names  u1_n_97_n.BLIF u1_cnt_int_count_21_.BLIF u1_un1_count_11__n
+01 1
+10 1
+.names  u1_n_100_n.BLIF u1_cnt_int_count_22_.BLIF u1_un1_count_10__n
+01 1
+10 1
+.names  u1_n_103_n.BLIF u1_cnt_int_count_23_.BLIF u1_un1_count_9__n
+01 1
+10 1
+.names  clk_c.BLIF u1_cnt_int_count_31_.C
+1 1
+.names  u1_n_106_n.BLIF u1_cnt_int_count_24_.BLIF u1_un1_count_8__n
+01 1
+10 1
+.names  u1_n_109_n.BLIF u1_cnt_int_count_25_.BLIF u1_un1_count_7__n
+01 1
+10 1
+.end

@@ -1,0 +1,4 @@
+$include = "$VSIMSALIBRARYCFG"
+ha_mixed_simnet = "./ha_mixed_simnet/ha_mixed_simnet.LIB" 1395751091544
+ha_simnet_hier = "./ha_simnet_hier/ha_simnet_hier.LIB" 1395751427097
+fa_simnet_hier = "./fa_simnet_hier/fa_simnet_hier.LIB" 1395751603781

@@ -1,0 +1,67 @@
+#$ DATE Tue Mar 25 09:51:17 2014
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE full_adder
+#$ PINS 5 a b carry_in sum carry_out
+#$ NODES 24 u1_uut_o1_and_n u1_uut_o2_and_n s_s c1 u2_uut_o1_and_n u2_uut_o2_and_n c2 b_i a_i carry_in_i \
+#  a_c b_c carry_in_c sum_c carry_out_c c1_i c2_i carry_out_c_0 u2_uut_o1_and_i_n u2_uut_o2_and_i_n \
+#  sum_c_0 u1_uut_o1_and_i_n u1_uut_o2_and_i_n s_s_i 
+.model full_adder
+.inputs a.BLIF b.BLIF carry_in.BLIF u1_uut_o1_and_n.BLIF u1_uut_o2_and_n.BLIF s_s.BLIF c1.BLIF u2_uut_o1_and_n.BLIF u2_uut_o2_and_n.BLIF \
+  c2.BLIF b_i.BLIF a_i.BLIF carry_in_i.BLIF a_c.BLIF b_c.BLIF carry_in_c.BLIF sum_c.BLIF carry_out_c.BLIF \
+  c1_i.BLIF c2_i.BLIF carry_out_c_0.BLIF u2_uut_o1_and_i_n.BLIF u2_uut_o2_and_i_n.BLIF sum_c_0.BLIF u1_uut_o1_and_i_n.BLIF u1_uut_o2_and_i_n.BLIF s_s_i.BLIF  
+.outputs sum carry_out u1_uut_o1_and_n u1_uut_o2_and_n s_s c1 u2_uut_o1_and_n u2_uut_o2_and_n c2 b_i a_i \
+  carry_in_i a_c b_c carry_in_c sum_c carry_out_c c1_i c2_i carry_out_c_0 u2_uut_o1_and_i_n u2_uut_o2_and_i_n \
+  sum_c_0 u1_uut_o1_and_i_n u1_uut_o2_and_i_n s_s_i
+.names  a.BLIF a_c
+1 1
+.names  b.BLIF b_c
+1 1
+.names  carry_in.BLIF carry_in_c
+1 1
+.names  sum_c.BLIF sum
+1 1
+.names  carry_out_c.BLIF carry_out
+1 1
+.names  c1.BLIF c1_i
+0 1
+.names  c2.BLIF c2_i
+0 1
+.names  carry_out_c_0.BLIF carry_out_c
+0 1
+.names  u2_uut_o1_and_n.BLIF u2_uut_o1_and_i_n
+0 1
+.names  u2_uut_o2_and_n.BLIF u2_uut_o2_and_i_n
+0 1
+.names  sum_c_0.BLIF sum_c
+0 1
+.names  u1_uut_o1_and_n.BLIF u1_uut_o1_and_i_n
+0 1
+.names  u1_uut_o2_and_n.BLIF u1_uut_o2_and_i_n
+0 1
+.names  s_s_i.BLIF s_s
+0 1
+.names  carry_in_c.BLIF carry_in_i
+0 1
+.names  a_c.BLIF carry_in_i.BLIF u1_uut_o1_and_n
+11 1
+.names  a_c.BLIF a_i
+0 1
+.names  a_i.BLIF carry_in_c.BLIF u1_uut_o2_and_n
+11 1
+.names  u1_uut_o1_and_i_n.BLIF u1_uut_o2_and_i_n.BLIF s_s_i
+11 1
+.names  a_c.BLIF carry_in_c.BLIF c1
+11 1
+.names  b_c.BLIF b_i
+0 1
+.names  b_i.BLIF s_s.BLIF u2_uut_o1_and_n
+11 1
+.names  b_c.BLIF s_s_i.BLIF u2_uut_o2_and_n
+11 1
+.names  u2_uut_o1_and_i_n.BLIF u2_uut_o2_and_i_n.BLIF sum_c_0
+11 1
+.names  b_c.BLIF s_s.BLIF c2
+11 1
+.names  c1_i.BLIF c2_i.BLIF carry_out_c_0
+11 1
+.end
